@@ -1,4 +1,4 @@
-# C Examples
+# C++ Examples
 
 To run the tests:
 
