@@ -3,6 +3,6 @@
 To run the tests:
 
 ```
-gcc run_tests.c && ./a.out
+gcc -std=c11 run_tests.c && ./a.out
 ```
 
