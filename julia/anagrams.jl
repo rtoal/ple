@@ -1,5 +1,5 @@
 if length(ARGS) != 1
-  println("Exactly one argument is required")
+  println(STDERR, "Exactly one argument is required")
   exit(1)
 end
 
