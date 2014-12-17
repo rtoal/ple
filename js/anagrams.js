@@ -8,11 +8,11 @@ generatePermutations(word.length-1, word.split(''));
 
 function generatePermutations(n, a) {
     if (n === 0) {
-        console.log(a.join(''))
+        console.log(a.join(''));
     } else {
         for (var i = 0; i <= n; i++) {
             generatePermutations(n-1, a);
-            swap(a, n % 2 === 0 ? i : 0, n)
+            swap(a, n % 2 === 0 ? i : 0, n);
         }
     }
 }
@@ -22,3 +22,4 @@ function swap(a, i, j) {
     a[i] = a[j];
     a[j] = saved;
 }
+
