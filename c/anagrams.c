@@ -30,6 +30,6 @@ int main (int argc, const char* argv[]) {
     char * word = malloc(len + 1); // Remember null terminator
     word = strncpy(word, argv[1], len);
     
-    generate_permutations(len, word);
+    generate_permutations(len - 1, word);
     return 0;
 }
