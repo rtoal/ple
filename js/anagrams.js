@@ -1,4 +1,4 @@
-if (process.argv.length != 3) {
+if (process.argv.length !== 3) {
     console.error('Exactly one argument is required');
     process.exit(1);
 }
