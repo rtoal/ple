@@ -7,13 +7,12 @@ import (
 )
 
 func main() {
-	word := os.Args[1]
 	if len(os.Args) != 2 {
 		fmt.Println("Exactly one argument is required")
 		os.Exit(1)
 	}
-	s := strings.Split(word, "")
-	generatePermutations(len(word)-1, s)
+	word := os.Args[1]
+	generatePermutations(len(word)-1, strings.Split(word, ""))
 }
 
 func generatePermutations(n int, a []string) {
@@ -22,7 +21,7 @@ func generatePermutations(n int, a []string) {
 	} else {
 		for i := 0; i <= n; i++ {
 			generatePermutations(n-1, a)
-			if n%2 == 0 {
+			if n % 2 == 0 {
 				a[i], a[n] = a[n], a[i]
 			} else {
 				a[0], a[n] = a[n], a[0]
