@@ -9,28 +9,29 @@ typedef struct _node_t_ {
     struct _node_t_ *next;
 } node_t;
 
-typedef struct _hash_table_t_ {
+typedef struct _hashmap_t_ {
     int size;
+    int table_size;
     node_t **table;
-} hash_table_t;
+} hashmap_t;
 
-hash_table_t* create_hash_table (int size) {
-    hash_table_t *new_table;
+hashmap_t* create_hash_table (int table_size) {
+    hashmap_t *new_table;
 
-    if (size < 1)
+    if (table_size < 1)
         return NULL;
 
-    new_table = malloc(sizeof(hash_table_t));
+    new_table = malloc(sizeof(hashmap_t));
     if (new_table == NULL) return NULL;
 
-    new_table->table = malloc(sizeof(node_t*) * size);
+    new_table->table = malloc(sizeof(node_t*) * table_size);
     if (new_table->table == NULL) return NULL;
 
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < table_size; i++) {
         new_table->table[i] = NULL;
     }
 
-    new_table->size = size;
+    new_table->table_size = table_size;
 
     return new_table;
 }
@@ -54,11 +55,11 @@ int hash_string (const char* str, int max) {
 /*
   Looks up a string, and returns a pointer to the count if it is found, else, it returns NULL
 */
-int* lookup_val (const char *str, hash_table_t* ht) {
+int* lookup_val (const char *str, hashmap_t* ht) {
     int str_hash = hash_string(str, ht->size);
 
     for (node_t *n = ht->table[str_hash]; n != NULL; n = n->next) {
-        if (strcmp(str, n->string)) {
+        if (strcmp(str, n->string) == 0) {
             return &n->count;
         }
     }
@@ -69,7 +70,7 @@ int* lookup_val (const char *str, hash_table_t* ht) {
 /*
   Adds a string to the hashmap. Returns a bool for success
 */
-bool add_val (const char *str, int value, hash_table_t* ht) {
+bool add_val (const char *str, int value, hashmap_t* ht) {
     node_t *new_node = malloc(sizeof(node_t));
     if (new_node == NULL) return false;
 
@@ -83,5 +84,33 @@ bool add_val (const char *str, int value, hash_table_t* ht) {
     new_node->next = ht->table[str_hash];
     ht->table[str_hash] = new_node;
 
+    ht->size++;
+
     return true;
+}
+/*
+  Simple node comparator
+*/
+int node_compare (const void *n1, const void *n2) {
+    return strcmp(((node_t*)n1)->string, ((node_t*)n2)->string);
+}
+
+/*
+  Allocates a new array and puts pointers to the node_ts in it.
+*/
+node_t** to_sorted_array (const hashmap_t* ht) {
+    node_t **result = malloc(sizeof(node_t*) * ht->size);
+    node_t **p = result;
+
+    for (int i = 0; i < ht->table_size; i++) {
+        node_t *n = ht->table[i];
+        while (n != NULL) {
+            *p++ = n;
+            n = n->next;
+        }
+    }
+
+    qsort(result, ht->size, sizeof(node_t*), &node_compare);
+
+    return result;
 }
