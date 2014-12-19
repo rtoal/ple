@@ -4,12 +4,12 @@
 
 /*
   Null terminates first word, and returns a pointer to the start of the next word. If it hits the null
-  terminator, it will return 0.
+  terminator, it will return NULL.
 */
 char* find_next_word (char *str) {
     while ((*str >= 'a' && *str <= 'z') || (*str >= 'A' && *str <= 'Z') || *str == '\'' || *str == '\0') {
         if (*str == '\0')
-            return 0;
+            return NULL;
 
         str++;
     }
@@ -18,7 +18,7 @@ char* find_next_word (char *str) {
 
     while (!((*str >= 'a' && *str <= 'z') || (*str >= 'A' && *str <= 'Z') || *str == '\'') || *str == '\0') {
         if (*str == '\0')
-            return 0;
+            return NULL;
 
         str++;
     }
