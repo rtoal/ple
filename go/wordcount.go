@@ -4,19 +4,23 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
+	"regexp"
 	"sort"
 	"strings"
 )
 
 func WordCount(s string) map[string]int {
+	r := regexp.MustCompile(`[a-z\']+`)
 	substrings := strings.Fields(s)
 	counts := make(map[string]int)
 
 	for _, word := range substrings {
-		if _, ok := counts[word]; ok {
-			counts[word] += 1
-		} else {
-			counts[word] = 1
+		if w := r.FindString(word); w != "" {
+			if _, ok := counts[w]; ok {
+				counts[w] += 1
+			} else {
+				counts[w] = 1
+			}
 		}
 	}
 
