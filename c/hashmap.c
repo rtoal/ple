@@ -42,9 +42,9 @@ int hash_string (const char* str, int max) {
     const uint64_t FNV_offset_basis = 0xcbf29ce484222325;
     const uint64_t FNV_prime = 0x100000001b3;
     uint64_t hash = FNV_offset_basis;
-    while (str*) {
+    while (*str) {
         hash *= FNV_prime;
-        hash = hash ^ str*;
+        hash = hash ^ *str;
         str++;
     }
     return hash % max;
@@ -53,7 +53,7 @@ int hash_string (const char* str, int max) {
 /*
   Looks up a string, and returns a pointer to the count if it is found, else, it returns NULL
 */
-int* lookup_val (const char* str, hash_table_t* ht) {
+int* lookup_val (const char *str, hash_table_t* ht) {
     int str_hash = hash_string(str, ht->size);
 
     node_t *n = ht->table[str_hash];
