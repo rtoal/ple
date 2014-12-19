@@ -36,21 +36,18 @@ hash_table_t* create_hash_table (int size) {
 
 /*
   Generates a hash for the string between 0 and max.
-
-  Note: this just uses a simple sum based on letter pairs, less liable to skewing
-  then sum based on character values. Still not great.
+  Uses the Fowler–Noll–Vo hash function: http://en.wikipedia.org/wiki/Fowler–Noll–Vo_hash_function
 */
-int hash_string (char* str, int max) {
-    uint64_t sum = 0;
-    while (*str && str[1]) {
-        sum += *(uint16_t*)str;
-        str += 2;
+int hash_string (const char* str, int max) {
+    const uint64_t FNV_offset_basis = 0xcbf29ce484222325;
+    const uint64_t FNV_prime = 0x100000001b3;
+    uint64_t hash = FNV_offset_basis;
+    while (str*) {
+        hash *= FNV_prime;
+        hash = hash ^ str*;
+        str++;
     }
-
-    if (str)
-        sum += *str;
-
-    return sum % max;
+    return hash % max;
 }
 
 /*
