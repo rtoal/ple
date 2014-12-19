@@ -28,7 +28,6 @@ hash_table_t* create_hash_table (int size) {
     for (int i = 0; i < size; i++)
         new_table->table[i] = NULL;
 
-
     new_table->size = size;
 
     return new_table;
@@ -65,4 +64,24 @@ int* lookup_val (const char *str, hash_table_t* ht) {
     }
 
     return NULL;
+}
+
+/*
+  Adds a string to the hashmap. Returns a bool for success
+*/
+bool add_val (const char *str, int value, hash_table_t* ht) {
+    node_t *new_node = malloc(sizeof(node_t));
+    if (new_node == NULL) return false;
+
+    char* new_node->string = malloc(strlen(str + 1));
+    if (new_node->string == NULL) return false;
+    strcpy(new_node->string, str);
+
+    new_node->count = value;
+
+    int str_hash = hash_string(new_node->string, ht->size);
+    new_node->next = ht->table[str_hash];
+    ht->table[str_hash] = new_node;
+
+    return true;
 }
