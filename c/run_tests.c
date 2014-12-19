@@ -22,7 +22,25 @@ void test_find_next_word() {
     const char* helo = "Hello, world!";
     char hello[14];
     strcpy(hello, helo);
-    assert(find_next_word(hello) == &hello[7]);
+    assert(*find_next_word(hello) == 'w');
+
+    const char* dar = "The dårk and størmy night's cat";
+    char *dark = malloc(strlen(dar + 1));
+    strcpy(dark, dar);
+    dark = find_next_word(dark);
+    assert(*dark == 'd');
+    dark = find_next_word(dark);
+    assert(*dark == 'r');
+    dark = find_next_word(dark);
+    assert(*dark == 'a');
+    dark = find_next_word(dark);
+    assert(*dark == 's');
+    dark = find_next_word(dark);
+    assert(*dark == 'r');
+    dark = find_next_word(dark);
+    assert(*dark == 'n');
+    dark = find_next_word(dark);
+    assert(*dark == 'c');
 }
 
 int main() {
