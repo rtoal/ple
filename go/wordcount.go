@@ -39,7 +39,7 @@ func main() {
 		sort.Strings(words)
 
 		for _, word := range words {
-			fmt.Printf("%s %d\n", word, m[word])
+			fmt.Println(word, m[word])
 		}
 	}
 }
