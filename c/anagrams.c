@@ -19,7 +19,6 @@ void generate_permutations (int n, char* a) {
     }
 }
 
-
 int main (int argc, const char* argv[]) {
     if (argc != 2) {
         fprintf(stderr, "Need exactly one argument!\n");
