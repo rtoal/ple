@@ -10,13 +10,18 @@ char* find_next_word (char *str) {
     while ((*str >= 'a' && *str <= 'z') || (*str >= 'A' && *str <= 'Z') || *str == '\'' || *str == '\0') {
         if (*str == '\0')
             return 0;
+
         str++;
     }
+
     *str++ = '\0'; // Found end of first word
+
     while (!((*str >= 'a' && *str <= 'z') || (*str >= 'A' && *str <= 'Z') || *str == '\'') || *str == '\0') {
         if (*str == '\0')
             return 0;
+
         str++;
     }
+
     return str; // Found begining of second word
 }
