@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <inttypes.h>
+#include <stdbool.h>
 
 typedef struct _node_t_ {
     char *string;
@@ -19,14 +20,15 @@ hash_table_t* create_hash_table (int size) {
     if (size < 1)
         return NULL;
 
-    if ((new_table = malloc(sizeof(hash_table_t))) == NULL)
-        return NULL;
+    new_table = malloc(sizeof(hash_table_t));
+    if (new_table == NULL) return NULL;
 
-    if ((new_table->table = malloc(sizeof(node_t*) * size)) == NULL)
-        return NULL;
+    new_table->table = malloc(sizeof(node_t*) * size);
+    if (new_table->table == NULL) return NULL;
 
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < size; i++) {
         new_table->table[i] = NULL;
+    }
 
     new_table->size = size;
 
@@ -55,12 +57,10 @@ int hash_string (const char* str, int max) {
 int* lookup_val (const char *str, hash_table_t* ht) {
     int str_hash = hash_string(str, ht->size);
 
-    node_t *n = ht->table[str_hash];
-    while (n != NULL) {
-        if (strcmp(str, n->string))
+    for (node_t *n = ht->table[str_hash]; n != NULL; n = n->next) {
+        if (strcmp(str, n->string)) {
             return &n->count;
-
-        n = n->next;
+        }
     }
 
     return NULL;
@@ -73,7 +73,7 @@ bool add_val (const char *str, int value, hash_table_t* ht) {
     node_t *new_node = malloc(sizeof(node_t));
     if (new_node == NULL) return false;
 
-    char* new_node->string = malloc(strlen(str + 1));
+    new_node->string = malloc(strlen(str + 1));
     if (new_node->string == NULL) return false;
     strcpy(new_node->string, str);
 
