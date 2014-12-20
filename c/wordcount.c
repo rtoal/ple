@@ -28,9 +28,8 @@ int main(int argc, char const *argv[]) {
         to_lower_case(read_buf);
 
         count = lookup_val(read_buf, hm);
-        printf("%n\n", count);
         if (count != NULL) {
-            *count += 1;
+            *count = *count + 1;
         } else {
             add_val(read_buf, 1, hm);
         }

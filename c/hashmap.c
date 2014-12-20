@@ -80,6 +80,7 @@ bool add_val (const char *str, int value, hashmap_t* ht) {
     strcpy(new_node->string, str);
 
     new_node->count = value;
+    printf("added with count: %d\n", new_node->count);
 
     int str_hash = hash_string(new_node->string, ht->table_size);
     new_node->next = ht->table[str_hash];
@@ -113,7 +114,7 @@ node_t** to_sorted_array (const hashmap_t* ht) {
         }
     }
 
-    qsort(result, ht->size, sizeof(node_t*), &node_compare);
+    qsort(result, ht->size, sizeof(node_t*), node_compare);
 
     return result;
 }
