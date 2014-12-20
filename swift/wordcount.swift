@@ -1,12 +1,11 @@
+#!/usr/bin/env xcrun swift
+
 import Foundation
 
-var inputString = "Hello @stEVE my name is -e28a~Jack! hello" as NSString
-var splitArray = inputString.lowercaseString.componentsSeparatedByString(" ")
-var regex = NSRegularExpression(pattern: "([a-z\']+)", options: nil, error: nil)
-
-
-func countWords () -> Dictionary<String, Int> {
-    var wordCounts = Dictionary<String, Int>()
+func countWords (splitArray : [String]) -> Dictionary<String, Int> {
+    var wordCounts = Dictionary<String, Int>(),
+        regex = NSRegularExpression(pattern: "([a-z\']+)", options: nil, error: nil)
+    
     for word in splitArray {
         var matches = regex?.matchesInString(word, options: nil, range: NSMakeRange(0, countElements(word))) as [NSTextCheckingResult]
         for match in matches {
@@ -27,10 +26,13 @@ func printWordCounts (wordCounts : Dictionary<String, Int>) {
     }
 }
 
-
-
-var joiner = " "
-var elements : Array<String> = Process.arguments
-var eleCount = countElements(elements)
-var els : Array<String> = Array(elements[1...(eleCount)])
-var line = joiner.join(els)
+if (Process.arguments.count < 2) {
+    println("2 or more arguments are required");
+    exit(1)
+} else {
+    var subArr = Process.arguments[1..<Process.arguments.count],
+        joiner = " ",
+        joinedStrings = joiner.join(subArr),
+        splitStrings = joinedStrings.lowercaseString.componentsSeparatedByString(joiner)
+    printWordCounts(countWords(splitStrings))
+}
