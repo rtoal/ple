@@ -15,7 +15,8 @@ typedef struct _hashmap_t_ {
     node_t **table;
 } hashmap_t;
 
-hashmap_t* create_hash_table (int table_size) {
+
+hashmap_t* create_hash_map (int table_size) {
     hashmap_t *new_table;
 
     if (table_size < 1)
@@ -45,8 +46,8 @@ int hash_string (const char* str, int max) {
     const uint64_t FNV_prime = 0x100000001b3;
     uint64_t hash = FNV_offset_basis;
     while (*str) {
-        hash *= FNV_prime;
         hash = hash ^ *str;
+        hash *= FNV_prime;
         str++;
     }
     return hash % max;
@@ -56,7 +57,7 @@ int hash_string (const char* str, int max) {
   Looks up a string, and returns a pointer to the count if it is found, else, it returns NULL
 */
 int* lookup_val (const char *str, hashmap_t* ht) {
-    int str_hash = hash_string(str, ht->size);
+    int str_hash = hash_string(str, ht->table_size);
 
     for (node_t *n = ht->table[str_hash]; n != NULL; n = n->next) {
         if (strcmp(str, n->string) == 0) {
@@ -80,7 +81,7 @@ bool add_val (const char *str, int value, hashmap_t* ht) {
 
     new_node->count = value;
 
-    int str_hash = hash_string(new_node->string, ht->size);
+    int str_hash = hash_string(new_node->string, ht->table_size);
     new_node->next = ht->table[str_hash];
     ht->table[str_hash] = new_node;
 
@@ -88,6 +89,8 @@ bool add_val (const char *str, int value, hashmap_t* ht) {
 
     return true;
 }
+
+
 /*
   Simple node comparator
 */
