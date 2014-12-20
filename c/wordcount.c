@@ -11,8 +11,7 @@
 */
 void to_lower_case (char *str) {
     while (*str) {
-        if (isupper(*str))
-            tolower(*str);
+        *str = tolower(*str);
         str++;
     }
 }
