@@ -1,4 +1,10 @@
+import 'dart:io';
+
 void main(List<String> args) {
+  if (args.length != 1) {
+    stderr.write('Please supply only one argument\n');
+    exit(1);
+  }
   var word = args[0];
   generatePermutations(word.split(''));
 }

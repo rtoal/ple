@@ -9,7 +9,7 @@ void main() {
 }
 
 void addLines(String data) {
-  data.split(new RegExp(r'\s')).forEach((word) =>
+  data.toLowerCase().split(new RegExp(r"[^a-z']")).forEach((word) =>
       words[word] = words.putIfAbsent(word, () => 0) + 1);
 }
 
