@@ -1,3 +1,7 @@
+#!/usr/bin/env xcrun swift
+
+import Foundation
+
 func generatePermutations (var n : Int, var a : [Character]) {
     if (n == 0) {
         println("".join(a.map{"\($0)"}))
@@ -16,5 +20,11 @@ func swap (var a: [Character], i : Int, j : Int) -> ([Character]) {
     return a
 }
 
-var word = "1234"
+if (Process.arguments.count != 2) {
+    println("Exactly one argument is required");
+    exit(1)
+}
+
+var word = Process.arguments[1]
 generatePermutations((countElements(word) - 1), Array(word))
+
