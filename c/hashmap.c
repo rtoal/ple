@@ -80,7 +80,6 @@ bool add_val (const char *str, int value, hashmap_t* ht) {
     strcpy(new_node->string, str);
 
     new_node->count = value;
-    printf("added with count: %d\n", new_node->count);
 
     int str_hash = hash_string(new_node->string, ht->table_size);
     new_node->next = ht->table[str_hash];
@@ -91,12 +90,13 @@ bool add_val (const char *str, int value, hashmap_t* ht) {
     return true;
 }
 
-
 /*
   Simple node comparator
 */
-int node_compare (const void *n1, const void *n2) {
-    return strcmp(((node_t*)n1)->string, ((node_t*)n2)->string);
+int node_compare (const void *p1, const void *p2) {
+    node_t *n1 = *(node_t**)p1;
+    node_t *n2 = *(node_t**)p2;
+    return strcmp(n1->string, n2->string);
 }
 
 /*
@@ -109,12 +109,13 @@ node_t** to_sorted_array (const hashmap_t* ht) {
     for (int i = 0; i < ht->table_size; i++) {
         node_t *n = ht->table[i];
         while (n != NULL) {
+            // printf("%s\n", n->string);
             *p++ = n;
             n = n->next;
         }
     }
 
-    qsort(result, ht->size, sizeof(node_t*), node_compare);
+    qsort(result, ht->size, sizeof(node_t*), &node_compare);
 
     return result;
 }

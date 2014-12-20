@@ -20,18 +20,23 @@ int main(int argc, char const *argv[]) {
     char* read_buf = malloc(READ_BUF_LEN);
     hashmap_t *hm = create_hash_map(HASHMAP_SIZE);
 
-    int result = 0;
+    int result = scanf("%511[a-z|A-Z|']", read_buf);
     int *count;
     while (result != EOF) {
-        result = scanf("%s", read_buf);
-        to_lower_case(read_buf);
+        if (result == 1) {
+            to_lower_case(read_buf);
 
-        count = lookup_val(read_buf, hm);
-        if (count != NULL) {
-            *count = *count + 1;
-        } else {
-            add_val(read_buf, 1, hm);
+            count = lookup_val(read_buf, hm);
+            if (count != NULL) {
+                *count = *count + 1;
+            } else {
+                add_val(read_buf, 1, hm);
+            }
+        } else if (result == 0) {
+            scanf("%511[^a-z|A-Z|']", read_buf);
         }
+
+        result = scanf("%511[a-z|A-Z|']", read_buf);
     }
 
     node_t **words = to_sorted_array(hm);
