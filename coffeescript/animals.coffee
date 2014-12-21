@@ -2,7 +2,7 @@ class Animal
   constructor: (@name) ->
 
   speak: ->
-    "#{@name} says #{this.sound()}"
+    "#{@name} says #{@sound()}"
 
 class Cow extends Animal
   sound: -> "moooo"
