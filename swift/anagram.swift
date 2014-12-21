@@ -1,5 +1,3 @@
-#!/usr/bin/env xcrun swift
-
 import Foundation
 
 func swap(inout a: [Character], i : Int, j : Int) {
@@ -20,7 +18,9 @@ func generatePermutations(n : Int, inout a : [Character]) {
 }
 
 if Process.arguments.count != 2 {
-    println("Exactly one argument is required");
+    let stderr = NSFileHandle.fileHandleWithStandardError()
+    let errorMessage = "Exactly one argument is required\n"
+    stderr.writeData(errorMessage.dataUsingEncoding(NSUTF8StringEncoding)!)
     exit(1)
 }
 
