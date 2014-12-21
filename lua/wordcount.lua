@@ -10,4 +10,6 @@ for word, count in pairs(wordTable) do
   table.insert(displayTable, string.format('%s %d', word, count))
 end
 table.sort(displayTable)
-for i,n in ipairs(displayTable) do print(n) end
+for i, line in ipairs(displayTable) do
+  print(line)
+end
