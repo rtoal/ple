@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 #include "sum_of_even_squares.c"
+#include "wordcount.c"
 
 static int a[] = {7, 3, -8, 4, 1, 0, 11, 2};
 
