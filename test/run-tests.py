@@ -64,15 +64,18 @@ class Test:
     def run_test(self):
         ENVIRONMENT.update({
             'TESTDIR': MAIN_DIR + self.language,
-            'TESTNAME': self.name
+            'TESTNAME': self.name,
+            'TESTARGS': ' '.join(self.args)
         })
-        #ENVIRONMENT.update(os.environ)
+        env_vars = {}
+        env_vars.update(os.environ)
+        env_vars.update(ENVIRONMENT)
         run_test_file = glob.glob(MAIN_DIR + self.language + TEST_FILE)
-        test = subprocess.Popen([run_test_file[0]] + self.args,
+        test = subprocess.Popen(run_test_file[0],
                                 stdout=subprocess.PIPE,
                                 stderr=subprocess.PIPE,
                                 stdin=subprocess.PIPE,
-                                env=ENVIRONMENT,
+                                env=env_vars,
                                 shell=True)
         stdout, stderr = test.communicate(input=self.stdin)
         valid_stdout, valid_stderr = self.valid_stdout, self.valid_stderr
@@ -121,8 +124,8 @@ class TripleTest(Test):
 
     @property
     def valid_stdout(self):
-        with open(SCRIPT_DIR + '/triple_expected_result') as triple_output:
-            return triple_output.read()
+        with open(SCRIPT_DIR + '/triple_expected_result') as trip_out:
+            return trip_out.read()
 
 
 class WordCountTest(Test):
@@ -132,13 +135,13 @@ class WordCountTest(Test):
 
     @property
     def stdin(self):
-        with open(SCRIPT_DIR + '/word_count_input') as word_count_input:
-            return word_count_input.read()
+        with open(SCRIPT_DIR + '/word_count_input') as wc_in:
+            return wc_in.read()
 
     @property
     def valid_stdout(self):
-        with open(SCRIPT_DIR + '/word_count_expected_result') as word_count_output:
-            return word_count_output.read()
+        with open(SCRIPT_DIR + '/word_count_expected_result') as wc_out:
+            return wc_out.read()
 
 
 class AnimalsTest(Test):

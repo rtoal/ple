@@ -49,6 +49,9 @@ be written in any language you like as long as the following conditions are met:
     $ chmod +x <filename>
     $ git update-index --chmod=+x <filename>
     ```
+  * Preferably, redirect any output from compilers, etc to /dev/null, though
+    this is not required.
+  * Preferably, clean up after any temporary files made. Again, not required.
 * `prereq` script requirements:
   * This one is simple. It must check to see if the compilers/interpretors needed
     to run the script exist. **NOTE**: If versions matter (E.G. python, rust),
@@ -64,12 +67,11 @@ be written in any language you like as long as the following conditions are met:
     optionally write something to `stderr`. Any `stderr` output will be passed
     on to the user (E.G. how to download/install the prerequisites).
 * `test` script requirements:
-  * This one is also simple. The first argument it receives is the program type
-    (E.G. `wordcount`, `triples`, etc). Any/all other arguments along with the
-    standard input must be passed to the program that is being run.
   * The `test` script has the following environmental variables available to it:
     * `TMPDIR` - Temporary directory (useful for compilation output)
     * `TESTDIR` - Directory that the test is in
+    * `TESTNAME` - name of the test that is being run
+    * `TESTARGS` - arguments to pass through to the test. 
   * Any standard output, standard error, and the exit code must be passed back
     to the caller.
   * Preferably, use the `TMPDIR` environmental variables to avoid cluttering
