@@ -170,7 +170,6 @@ if __name__ == '__main__':
     valid_dirs = get_valid_directories_from_list(dirs)
 
     tests_to_run = determine_tests_to_run(valid_dirs)
-    print(tests_to_run)
     for lang, tests in tests_to_run.items():
         for test_name in tests:
             if test_name in NAME_TO_TEST_MAPPING:
