@@ -44,6 +44,11 @@ be written in any language you like as long as the following conditions are met:
   * For [portability](http://en.wikipedia.org/wiki/Shebang_%28Unix%29#Portability),
     please prefer using `/usr/bin/env <interpretor>` over
     `/usr/bin/<interpretor>`.
+  * The script must be executable by the current user:
+    ```bash
+    $ chmod +x <filename>
+    $ git update-index --chmod=+x <filename>
+    ```
 * `prereq` script requirements:
   * This one is simple. It must check to see if the compilers/interpretors needed
     to run the script exist. **NOTE**: If versions matter (E.G. python, rust),

@@ -4,6 +4,8 @@ import os.path
 import glob
 import subprocess
 import abc
+import tempfile
+import shlex
 # Config vars
 
 SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
@@ -11,6 +13,12 @@ MAIN_DIR = SCRIPT_DIR + '/../'
 TEST_FILE = '/test*'
 PREREQ_FILE = '/prereq*'
 NEEDED_FILES = (TEST_FILE, PREREQ_FILE)
+
+# The TESTDIR variable will be added when passed to the subprocess - any other
+# environmental variables that need to be exposed to the process should be set
+# here.
+ENVIRONMENT = {'TEMPDIR': tempfile.gettempdir()}
+
 
 # End config vars
 
@@ -38,7 +46,7 @@ def check_prereq(directory):
             print(stderr)
         return False
     else:
-        return stdout.split(',')
+        return stdout.strip().split(',')
 
 
 def determine_tests_to_run(directories):
@@ -54,14 +62,22 @@ class Test:
         self.language = language
 
     def run_test(self):
+        ENVIRONMENT.update({
+            'TESTDIR': MAIN_DIR + self.language,
+            'TESTNAME': self.name
+        })
+        #ENVIRONMENT.update(os.environ)
         run_test_file = glob.glob(MAIN_DIR + self.language + TEST_FILE)
-        test = subprocess.Popen([run_test_file] + self.args,
+        test = subprocess.Popen([run_test_file[0]] + self.args,
+                                stdout=subprocess.PIPE,
+                                stderr=subprocess.PIPE,
                                 stdin=subprocess.PIPE,
-                                stdout=subprocess.PIPE)
+                                env=ENVIRONMENT,
+                                shell=True)
         stdout, stderr = test.communicate(input=self.stdin)
         valid_stdout, valid_stderr = self.valid_stdout, self.valid_stderr
         if stdout != valid_stdout or stderr != valid_stderr:
-            print('Test %s for language %s failed!' % self.name, self.language)
+            print('Test {test} for language {lang} failed!'.format(test=self.name, lang=self.language))
             if stdout != valid_stdout:
                 print('Expected stdout:')
                 print(valid_stdout)
@@ -74,7 +90,7 @@ class Test:
                 print(stderr)
             return False
         else:
-            print('Test %s for language %s passed!' % self.name, self.language)
+            print('Test {test} for language {lang} passed!'.format(test=self.name, lang=self.language))
             return True
 
     @property
@@ -91,11 +107,11 @@ class Test:
 
     @property
     def valid_stdout(self):
-        return None
+        return ''
 
     @property
     def valid_stderr(self):
-        return None
+        return ''
 
 
 class TripleTest(Test):
@@ -105,39 +121,56 @@ class TripleTest(Test):
 
     @property
     def valid_stdout(self):
-        with open(SCRIPT_DIR + 'triple_expected_result') as triple_output:
+        with open(SCRIPT_DIR + '/triple_expected_result') as triple_output:
             return triple_output.read()
 
 
 class WordCountTest(Test):
     @property
     def name(self):
-        return 'word count'
+        return 'wordcount'
 
     @property
     def stdin(self):
-        with open(SCRIPT_DIR + 'word_count_input') as word_count_input:
+        with open(SCRIPT_DIR + '/word_count_input') as word_count_input:
             return word_count_input.read()
 
     @property
     def valid_stdout(self):
-        with open(SCRIPT_DIR + 'word_count_output') as word_count_output:
+        with open(SCRIPT_DIR + '/word_count_expected_result') as word_count_output:
             return word_count_output.read()
 
 
-class Animals(Test):
+class AnimalsTest(Test):
     @property
     def name(self):
         return 'animals'
 
     @property
     def valid_stdout(self):
-        with open(SCRIPT_DIR + 'animals_expected_result') as animals_output:
+        with open(SCRIPT_DIR + '/animals_expected_result') as animals_output:
             return animals_output.read()
 
+# Any changes to the classes above need to be accompanied by a change to the
+# mapping below
+
+NAME_TO_TEST_MAPPING = {
+    'animals': AnimalsTest,
+    'wordcount': WordCountTest,
+    'triple': TripleTest
+    # TODO: Anagrams
+}
 
 if __name__ == '__main__':
     dirs = get_directory_list()
     valid_dirs = get_valid_directories_from_list(dirs)
 
     tests_to_run = determine_tests_to_run(valid_dirs)
+    print(tests_to_run)
+    for lang, tests in tests_to_run.items():
+        for test_name in tests:
+            if test_name in NAME_TO_TEST_MAPPING:
+                test_to_run = NAME_TO_TEST_MAPPING[test_name](lang)
+                test_to_run.run_test()
+            else:
+                print('Test %s not available' % test_name)
