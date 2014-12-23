@@ -5,7 +5,6 @@ import glob
 import subprocess
 import abc
 import tempfile
-import shlex
 # Config vars
 
 SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
@@ -80,7 +79,8 @@ class Test:
         stdout, stderr = test.communicate(input=self.stdin)
         valid_stdout, valid_stderr = self.valid_stdout, self.valid_stderr
         if stdout != valid_stdout or stderr != valid_stderr:
-            print('Test {test} for language {lang} failed!'.format(test=self.name, lang=self.language))
+            print('Test {test} for language {lang} failed!'
+                  .format(test=self.name, lang=self.language))
             if stdout != valid_stdout:
                 print('Expected stdout:')
                 print(valid_stdout)
@@ -93,7 +93,8 @@ class Test:
                 print(stderr)
             return False
         else:
-            print('Test {test} for language {lang} passed!'.format(test=self.name, lang=self.language))
+            print('Test {test} for language {lang} passed!'
+                  .format(test=self.name, lang=self.language))
             return True
 
     @property
