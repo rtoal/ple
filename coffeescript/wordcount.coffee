@@ -5,9 +5,8 @@ counts = {}
 process.stdin.setEncoding 'utf8'
 
 process.stdin.pipe(split()).on 'data', (line) ->
-  (line.toLowerCase().match(/[a-z\']+/g) || []).forEach (word) ->
-    counts[word] = (counts[word] || 0) + 1
+  for word in (line.toLowerCase().match(/[a-z\']+/g) or [])
+    counts[word] = (counts[word] or 0) + 1
 
 process.stdin.on 'end', (line) ->
-  Object.keys(counts).sort().forEach (word) ->
-    console.log '%s %d', word, counts[word]
+  console.log "#{word} #{counts[word]}" for word in Object.keys(counts).sort()
