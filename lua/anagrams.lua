@@ -1,12 +1,7 @@
 if #arg ~= 1 then
-  print('Exactly one argument required')
+  io.stderr:write('Exactly one argument required\n')
   os.exit(1)
 end
-
-permTable = {}
-arg[1]:gsub('.', function(c)
-  table.insert(permTable, c)
-end)
 
 function generatePermutations(n, a)
   if n == 0 then
@@ -20,4 +15,6 @@ function generatePermutations(n, a)
   end
 end
 
-generatePermutations(#permTable, permTable)
+word = {}
+arg[1]:gsub('.', function(c) table.insert(word, c) end)
+generatePermutations(#word, word)
