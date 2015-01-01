@@ -5,6 +5,6 @@ for line in eachline(STDIN)
     counts[word] = get(counts, word, 0) + 1
   end
 end
-for word in sort(collect(keys(counts)))
-  println("$word $(counts[word])")
+for (word, count) in sort(collect(counts))
+  println("$word $count")
 end
