@@ -11,13 +11,10 @@ import (
 
 func WordCount(s string) map[string]int {
 	r := regexp.MustCompile(`[a-z\']+`)
-	substrings := strings.Fields(s)
 	counts := make(map[string]int)
 
-	for _, word := range substrings {
-		if w := r.FindString(strings.ToLower(word)); w != "" {
-			counts[w] += 1
-		}
+	for _, word := range r.FindAllString(strings.ToLower(s), -1) {
+		counts[word] += 1
 	}
 
 	return counts
