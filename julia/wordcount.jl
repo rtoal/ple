@@ -1,4 +1,4 @@
-counts = (String => UInt64)[]
+counts = (String => Uint64)[]
 
 for line in eachline(STDIN)
   for word in matchall(r"[a-z\']+", lowercase(line))
