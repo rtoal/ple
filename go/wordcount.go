@@ -16,11 +16,7 @@ func WordCount(s string) map[string]int {
 
 	for _, word := range substrings {
 		if w := r.FindString(strings.ToLower(word)); w != "" {
-			if _, ok := counts[w]; ok {
-				counts[w] += 1
-			} else {
-				counts[w] = 1
-			}
+			counts[w] += 1
 		}
 	}
 
