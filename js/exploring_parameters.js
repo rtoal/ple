@@ -9,7 +9,7 @@ function f(a, b, c) {
   console.log(g);     // See it changed
   a = 500;            // We can write to the parameter
   console.log(x);     // But the argument DID NOT change
-  var b = 300;        // Changing a parameter again
+  b = 300;            // Changing a parameter again
   console.log(y);     // Argument still intact
   c[1] = 400;         // But we CAN change through a reference!
   console.log(z);     // See the change!
