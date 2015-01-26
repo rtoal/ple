@@ -4,6 +4,6 @@ if [[ $? -ne 0 ]]; then
     echo Install CoffeeScript from https://www.coffeescript.org/ >&2
     exit 1
 else
-    echo anagrams,triple,wordcount
+    echo anagrams,triple,wordcount,animals
     exit 0
 fi

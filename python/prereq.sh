@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-which dart &> /dev/null
+which python &> /dev/null
 if [[ $? -ne 0 ]]; then
-    echo Install dart from https://www.dartlang.org/ >&2
+    echo Install Python from https://www.python.org/ >&2
     exit 1
 else
     echo anagrams,triple,wordcount,animals
