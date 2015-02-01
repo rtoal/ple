@@ -1,6 +1,6 @@
 person =
   name: 'Alice'
-  sayHelloTheWrongWay: (delay) ->
+  tryToSayHelloButFail: (delay) ->
     setTimeout (() -> console.log "Hi... from #{@name}"), delay
   sayHelloUsingAnExtraVariable: (delay) ->
     self = this
@@ -8,6 +8,6 @@ person =
   sayHello: (delay) ->
     setTimeout (() => console.log "Hi from #{@name} :)"), delay
 
-person.sayHelloTheWrongWay(1000)
+person.tryToSayHelloButFail(1000)
 person.sayHelloUsingAnExtraVariable(1000)
 person.sayHello(1000)

@@ -1,13 +1,16 @@
-exports.x = 100;
-var f = function (y, z) {return this.x + y + z};
-var a = {x: 200, g: f};
-var b = {x: 300};
-var c = {x: 400};
-var d = {x: 500};
+global.name = 'JavaScript';
 
-console.log(this.x);
-console.log(f(1, 2));
-console.log(a.g(3, 4));            // 207, uses a.x
-console.log(a.g.call(b, 5, 6));    // 311, uses b.x
-console.log(a.g.apply(c, [7, 8])); // 415, uses c.x
-console.log(a.g.bind(d)(9, 10));   // 519, uses d.x
+function talkTo(message, suffix) {
+  console.log(message + ', ' + this.name + suffix);
+}
+var alice = {name: 'Alice', address: talkTo};
+var bob = {name: 'Bob'};
+
+talkTo('Hi', '.');                         // Hi, JavaScript.
+alice.address('Hello', '.');               // Hello, Alice.
+alice.address.call(bob, 'Yo', '!');        // Yo, Bob!
+alice.address.apply(bob, ['Bye', '...']);  // Bye, Bob...
+alice.address.bind(bob)('Right', '?');     // Right, Bob?
+
+bob.greet = alice.address;
+bob.greet('Oh', ' :(');                    // Oh, Bob :(

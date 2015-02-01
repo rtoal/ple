@@ -1,6 +1,6 @@
 split = require 'split'
 
-counts = {}
+counts = Object.create null
 
 process.stdin.setEncoding 'utf8'
 
