@@ -8,6 +8,6 @@ person =
   sayHello: (delay) ->
     setTimeout (() => console.log "Hi from #{@name} :)"), delay
 
-person.tryToSayHelloButFail(1000)
-person.sayHelloUsingAnExtraVariable(1000)
-person.sayHello(1000)
+person.tryToSayHelloButFail(1000)           # Hi... from undefined
+person.sayHelloUsingAnExtraVariable(1000)   # Hi from Alice!
+person.sayHello(1000)                       # Hi from Alice :)
