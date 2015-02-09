@@ -1,7 +1,7 @@
 Object subclass: Animal [
     | name |
-    Animal class >> new: n [^super new init: n]
-    init: n [name := n]
+    Animal class >> named: aString [^self new name: aString]
+    name: aString [name := aString]
     speak [^name, ' says ', self sound]
 ]
 
@@ -17,8 +17,8 @@ Animal subclass: Cow [
     sound [^'moooo']
 ]
 
-h := Horse new: 'CJ'.
+h := Horse named: 'CJ'.
 h speak displayNl.
-c := Cow new: 'Bessie'.
+c := Cow named: 'Bessie'.
 c speak displayNl.
-(Sheep new: 'Little Lamb') speak displayNl.
+(Sheep named: 'Little Lamb') speak displayNl.
