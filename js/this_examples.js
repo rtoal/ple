@@ -1,4 +1,4 @@
-global.name = 'JavaScript';
+name = 'JavaScript';    // N.B. no var or let; forces global
 
 function talkTo(message, suffix) {
   console.log(message + ', ' + this.name + suffix);
