@@ -1,0 +1,13 @@
+#!/usr/bin/env escript
+main(_) ->
+    lists:foreach(fun (C) ->
+        lists:foreach(fun (B) ->
+            lists:foreach(fun (A) ->
+                if A*A+B*B==C*C ->
+                    io:format("~p, ~p, ~p~n", [A,B,C]);
+                true ->
+                    false
+                end
+            end, lists:seq(1,B))
+        end, lists:seq(1,C))
+    end, lists:seq(1,50)).
