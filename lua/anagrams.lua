@@ -5,7 +5,7 @@ end
 
 function generatePermutations(n, a)
   if n == 0 then
-    print(table.concat(a, ''))
+    print(utf8.char(table.unpack(a)))
   else
     for i = 1, n do
       generatePermutations(n-1, a)
@@ -15,6 +15,5 @@ function generatePermutations(n, a)
   end
 end
 
-word = {}
-arg[1]:gsub('.', function(c) table.insert(word, c) end)
+word = {utf8.codepoint(arg[1], 1, utf8.len(arg[1]))}
 generatePermutations(#word, word)
