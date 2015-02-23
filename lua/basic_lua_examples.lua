@@ -1,11 +1,9 @@
-print(x)         -- Does not fail! It's just nil
-print(#"café")   -- It's 5, because it counts UTF-8 bytes
+print(x)                     -- Does not fail! Just nil
 
-if 0 then
-  print "0 is truthy"
-else
-  print "0 is falsy"
-end
+s = "caf\u{e9}"
+print(s)
+assert(#s == 5)              -- counts bytes
+assert(utf8.len(s) == 4)     -- counts characters
 
 function firstFewPrimes()
   return {2, 3, 5, 7, 9, 11, 13}
@@ -17,3 +15,7 @@ assert(type('message') == "string")
 assert(type(nil) == "nil")
 assert(type(firstFewPrimes) == "function")
 assert(type(firstFewPrimes()) == "table")
+assert(type(coroutine.create(firstFewPrimes) == "thread"))
+
+assert(0 and "" and 0/0)     -- all of these are truthy!
+assert(not(false or nil))    -- only false and nil are falsy
