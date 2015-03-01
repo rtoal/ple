@@ -1,15 +1,11 @@
-Point = {
-  new = function (x, y)
-    return setmetatable({x=x, y=y}, {__index=Point})
-  end,
-  color = 'black',
-  distance_to_origin = function (self)
-    return math.sqrt(self.x*self.x + self.y*self.y)
-  end
+p = {x = 8, y = 7}
+q = {x = 3, y = 5}
+
+meta = {
+  __add = function (a,b) return a.x + b.x, a.y + b.y end
 }
 
-q = Point.new(3, 4)
-print(q.x)
-print(q.y)
-print(q.color)
-print(q:distance_to_origin())
+setmetatable(p, meta)
+setmetatable(q, meta)
+
+print(p + q)

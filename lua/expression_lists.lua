@@ -1,5 +1,5 @@
 function three()
-    return 5, 6, 7
+  return 5, 6, 7
 end
 
 a, b = three()            -- 5, 6

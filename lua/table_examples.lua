@@ -1,16 +1,20 @@
-t = {
+widget = {
   weight = 5.0,
-  ['part number'] = 1011882,
-  'green',
-  'round',
+  ['part number'] = 'C8122-X',
+  'green',                       -- key is 1
+  'round',                       -- key is 2
+  [4] = 'magnetic',
   imported = false,
-  'metal',
+  'metal',                       -- key is 3
 }
 
-for key, value in pairs(t) do
+print('pairs iterates through ALL pairs in arbitrary order')
+for key, value in pairs(widget) do
   print(key .. ' => ' .. tostring(value))
 end
 
-for key, value in ipairs(t) do
+
+print('ipairs iterates integer-keyed pairs from 1 in order')
+for key, value in ipairs(widget) do
   print(key .. ' => ' .. tostring(value))
 end
