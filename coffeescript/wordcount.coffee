@@ -9,4 +9,5 @@ process.stdin.pipe(split()).on 'data', (line) ->
     counts[word] = (counts[word] or 0) + 1
 
 process.stdin.on 'end', ->
-  console.log "#{word} #{counts[word]}" for word in Object.keys(counts).sort()
+  for word in Object.keys(counts).sort()
+    console.log "#{word} #{counts[word]}"
