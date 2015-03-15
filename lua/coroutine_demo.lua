@@ -1,14 +1,12 @@
 nextSquare = coroutine.create(function ()
-  local value = -1
-  while true do
-    value = value + 1
+  for value = 1, 5 do
     coroutine.yield(value * value)
   end
+  return "Thank you"
 end)
 
-print(coroutine.resume(nextSquare))
-print(coroutine.resume(nextSquare))
-print(coroutine.resume(nextSquare))
-print(coroutine.resume(nextSquare))
-print(coroutine.resume(nextSquare))
-print(coroutine.resume(nextSquare))
+for i = 1, 8 do
+  local status = coroutine.status(nextSquare)
+  local success, values = coroutine.resume(nextSquare)
+  print(status, success, values)
+end
