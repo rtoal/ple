@@ -1,10 +1,8 @@
-if (process.argv.length !== 3) {
-  console.error('Exactly one argument is required');
-  process.exit(1);
+function swap(a, i, j) {
+  var saved = a[i];
+  a[i] = a[j];
+  a[j] = saved;
 }
-
-var word = process.argv[2];
-generatePermutations(word.length-1, word.split(''));
 
 function generatePermutations(n, a) {
   if (n === 0) {
@@ -17,8 +15,9 @@ function generatePermutations(n, a) {
   }
 }
 
-function swap(a, i, j) {
-  var saved = a[i];
-  a[i] = a[j];
-  a[j] = saved;
+if (process.argv.length !== 3) {
+  console.error('Exactly one argument is required');
+  process.exit(1);
 }
+var word = process.argv[2];
+generatePermutations(word.length-1, word.split(''));
