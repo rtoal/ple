@@ -1,10 +1,12 @@
 #![feature(exit_status)]
 #![feature(collections)]
 
+use std::io::Write;
+
 fn main() {
     let args = std::env::args();
     if args.len() != 2 {
-        println!("Please enter only one argument.");
+        writeln!(&mut std::io::stderr(), "Please enter only one argument.").unwrap();
         std::env::set_exit_status(1);
         return;
     }
