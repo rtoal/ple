@@ -1,3 +1,4 @@
+# Many built-in types have built-in names
 assert(type(5) == int)
 assert(type(True) == bool)
 assert(type(5.7) == float)
@@ -10,11 +11,18 @@ assert(type(range(1,10)) == range)
 assert(type({1, 2, 3}) == set)
 assert(type(frozenset([1, 2, 3])) == frozenset)
 assert(type({'x': 1, 'y': 2}) == dict)
-assert(type(int) == type)
-assert(type(type) == type)
-assert(type(enumerate([])) == enumerate)
-assert(type(slice([])) == slice)
+assert(type(slice([1, 2, 3])) == slice)
 
+# Some do not, but we can still "see" them
 assert(str(type(None)) == "<class 'NoneType'>")
 assert(str(type(NotImplemented)) == "<class 'NotImplementedType'>")
-assert(str(type(abs)) == "<class 'builtin_function_or_method'>")
+
+# Built-in vs. User-defined functions
+def plus_two(x):
+    return x + 2
+assert(str(type(plus_two)) == "<class 'function'>")
+assert(str(type(max)) == "<class 'builtin_function_or_method'>")
+
+# Even modules are types!
+import math
+assert(str(type(math)) == "<class 'module'>")
