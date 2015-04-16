@@ -1,5 +1,5 @@
 var g = 100;          // Outside of f but visible to it
-var x = 200;          // Going to be passed to q
+var x = 200;          // Going to be passed to a
 var y = [1,2,3];      // Going to be passed to b
 var z = [2,3,4];      // Going to be passed to c
 
