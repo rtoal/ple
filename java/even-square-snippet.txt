@@ -1,0 +1,3 @@
+public static int sumOfEvenSquares(int[] a) {
+    return IntStream.of(a).filter(x -> x%2==0).map(x -> x*x).sum();
+}
