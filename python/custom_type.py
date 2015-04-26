@@ -8,8 +8,8 @@ class Circle:
 
 c = Circle(10)
 
-assert(type(c) == Circle)
-assert(type(Circle) == type)
+assert(type(c) == Circle)            # Circle is a type!
+assert(type(Circle) == type)         # It really is!
 
 assert(str(type(Circle.area)) == "<class 'function'>")
 assert(str(type(c.area)) == "<class 'method'>")
