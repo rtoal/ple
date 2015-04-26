@@ -1,3 +1,3 @@
 #/usr/bin/env bash
-python $TESTDIR/$TESTNAME.py $TESTARGS
+python3 $TESTDIR/$TESTNAME.py $TESTARGS
 exit $?
