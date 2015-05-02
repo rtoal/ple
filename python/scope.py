@@ -1,11 +1,17 @@
-x, y, z = 1, 2, 3   # Three global variables
+a, b, c = 1, 2, 3   # Three global variables
 
 def f(x):
-    x = 4           # parameters are local
-    y = 5           # local y, shadows global y
-    w = 6           # makes a local w
-    global z
-    z = 7           # overwrites global z
+    d = 4           # Brand new local!
+    a = 5           # Local to f, shadows global
+    def g():
+        x = 1       # Local to g, shadows f's x
+        nonlocal a  # allows access to f's a
+        a = 6       # updates the nonlocal
+        global c
+        c = 7
+    g()
+    assert(a == 6)  # assert that it changed
+    assert(b == 2)  # globals are visible
 
 f(10)
-assert(x == 1 and y == 2 and z == 7)
+assert(a == 1 and b == 2 and c == 7)
