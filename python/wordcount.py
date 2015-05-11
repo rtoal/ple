@@ -6,4 +6,4 @@ for line in sys.stdin:
         counts[word] = counts.get(word, 0) + 1
 
 for word, count in sorted(counts.items()):
-    print(word, count, sep=' ')
+    print(word, count)
