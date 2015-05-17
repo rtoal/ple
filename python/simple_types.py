@@ -26,3 +26,7 @@ assert(str(type(max)) == "<class 'builtin_function_or_method'>")
 # Even modules are types!
 import math
 assert(str(type(math)) == "<class 'module'>")
+
+# Many built-in modules define their own types
+from datetime import date
+assert(type(date(1969,7,20)) == date)
