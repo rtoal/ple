@@ -4,7 +4,8 @@ public class AnagramApp {
             System.err.println("Exactly one argument is required");
             System.exit(1);
         }
-        generatePermutations(args[0].length()-1, args[0].toCharArray());
+        String word = args[0];
+        generatePermutations(word.length()-1, word.toCharArray());
     }
 
     private static void generatePermutations(int n, char[] a) {
