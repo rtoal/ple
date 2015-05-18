@@ -1,4 +1,4 @@
-#!/usr/bin/env escript
+% First line is ignored when running with escript
 main(_) ->
     lists:foreach(fun (C) ->
         lists:foreach(fun (B) ->

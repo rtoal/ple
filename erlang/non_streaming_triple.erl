@@ -1,4 +1,4 @@
-#!/usr/bin/env escript
+% First line is ignored when running with escript
 main(_) ->
     [io:format("~p, ~p, ~p~n", [A,B,C]) ||
         C <- lists:seq(1,50),
