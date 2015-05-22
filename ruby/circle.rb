@@ -16,6 +16,6 @@ class Circle
 end
 
 c = Circle.new(5, 4, 10)
-puts c
-puts "#{c.center}"
-puts c.area
+puts "The center is #{c.center}"   # Method call
+puts c.area                        # Another method call
+puts c                             # calls c.to_s
