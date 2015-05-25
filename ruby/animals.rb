@@ -3,7 +3,7 @@ class Animal
     @name = name
   end
   def speak()
-    "#{@name} says #{sound()}"
+    puts "#{@name} says #{sound()}"
   end
 end
 
@@ -27,8 +27,8 @@ end
 
 if __FILE__ == $0
   s = Horse.new "CJ"
-  puts s.speak()
+  s.speak()
   c = Cow.new("Bessie")
-  puts c.speak()
-  puts Sheep.new("Little Lamb").speak()
+  c.speak()
+  Sheep.new("Little Lamb").speak()
 end
