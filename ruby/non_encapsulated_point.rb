@@ -1,4 +1,4 @@
-# Non-idiomatic, non-recommended code
+# This code is controversial at best
 class Point
   attr_accessor :x, :y
   def to_s(); "(#{x},#{y})"; end
