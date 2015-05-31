@@ -1,10 +1,9 @@
-module A; end
-module B; include A; end
-module C; include A, B; end
-module D; include C; end
-module E; end
-module F; include E; end
-module G; include F; include C; end
+module G; end
+module F; end
+module E; include F; end
+module D; end
+module C; include D; include E; end
+module B; include G; include F; end
+class A; include B; include C; end
 
-p G.ancestors
-
+p A.ancestors
