@@ -6,13 +6,15 @@ import java.io.IOException;
 
 public class WordCountApp {
 
-    private static Pattern wordPattern = Pattern.compile("(?i)[a-z']+");
-    private static Map<String, Integer> counts = new TreeMap<>();
-
     public static void main(String[] args) {
-        for (Scanner sc = new Scanner(System.in); sc.hasNextLine(); sc.nextLine()) {
+        Pattern wordPattern = Pattern.compile("(?i)[a-z']+");
+        Map<String, Integer> counts = new TreeMap<>();
+
+        for (Scanner scanner = new Scanner(System.in);
+                scanner.hasNextLine();
+                scanner.nextLine()) {
             String word;
-            while ((word = sc.findInLine(wordPattern)) != null) {
+            while ((word = scanner.findInLine(wordPattern)) != null) {
                 word = word.toLowerCase();
                 counts.put(word, counts.getOrDefault(word, 0) + 1);
             }
