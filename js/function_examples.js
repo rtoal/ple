@@ -1,6 +1,5 @@
 // We don't have to name functions to call them
-var y = (function (x) {return x + 5})(10);
-console.log(y);                       // 15
+console.log(function (x) {return x + 5})(10)); // 15
 
 // We can assign function values to variables
 var square = function (x) {return x * x};
