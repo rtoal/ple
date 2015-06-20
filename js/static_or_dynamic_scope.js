@@ -1,4 +1,4 @@
-var x = 'GLOBAL';
+let x = 'GLOBAL';
 function second() {console.log(x)}
-function first() {var x = 'FIRST'; second();};
+function first() {let x = 'FIRST'; second();};
 first();
