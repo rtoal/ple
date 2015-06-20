@@ -1,5 +1,5 @@
-var a = {x: 3, y: 5};  // creates an object
-var b = a.y;           // simply puts 5 into b
-var c = null;          // simply puts null into c
-var d = {x: 3, y: 5};  // creates an object
-var e = d;             // does not create an object
+let a = {x: 3, y: 5};  // creates an object
+let b = a.y;           // simply puts 5 into b
+let c = null;          // simply puts null into c
+let d = {x: 3, y: 5};  // creates an object
+let e = d;             // does not create an object
