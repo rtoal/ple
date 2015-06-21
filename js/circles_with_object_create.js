@@ -1,17 +1,17 @@
-var unitCircle = {
+let unitCircle = {
   x: 0,
   y: 0,
   radius: 1,
   color: 'black',
-  area: function () {return Math.PI * this.radius * this.radius},
-  circumference: function () {return 2 * Math.PI * this.radius}
+  area() {return Math.PI * this.radius * this.radius},
+  circumference() {return 2 * Math.PI * this.radius}
 };
 
-var c1 = Object.create(unitCircle);
+let c1 = Object.create(unitCircle);
 c1.x = 3;
 c1.color = 'green';
 
-var c2 = Object.create(unitCircle);
+let c2 = Object.create(unitCircle);
 c2.radius = 5;
 
-var c3 = Object.create(unitCircle);
+let c3 = Object.create(unitCircle);

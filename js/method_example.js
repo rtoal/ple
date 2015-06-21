@@ -1,4 +1,4 @@
-var circle = {
+let circle = {
   radius: 10,
   area: function () {return Math.PI * this.radius * this.radius},
   circumference: function () {return 2 * Math.PI * this.radius},

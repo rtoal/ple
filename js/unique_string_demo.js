@@ -1,4 +1,4 @@
-var generateString = require('./string_generator.js');
+let generateString = require('./string_generator.js');
 
 console.log(generateString('v'));   // v1
 console.log(generateString('v'));   // v2

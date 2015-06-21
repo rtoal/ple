@@ -1,8 +1,8 @@
-function Circle(centerX, centerY, radius, color) {
-  this.x = centerX || 0;
-  this.y = centerY || 0;
-  this.radius = radius || 1;
-  this.color = color || 'black';
+function Circle(centerX=0, centerY=0, radius=1, color='black') {
+  this.x = centerX;
+  this.y = centerY;
+  this.radius = radius;
+  this.color = color;
 }
 
 Circle.prototype.area = function () {
@@ -13,5 +13,6 @@ Circle.prototype.circumference = function () {
   return 2 * Math.PI * this.radius;
 };
 
-var c = new Circle(1, 5);
+let c = new Circle(1, 5);
+console.log(JSON.stringify(c));
 console.log(c.area());
