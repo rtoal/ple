@@ -1,8 +1,8 @@
 for (var i = 0; i < 10; i++) {
-    button = document.createElement("button");
-    button.innerHTML = i;
-    button.onclick = (function (i) {
-        return function () {alert(i);}
-    }(i));
-    document.body.appendChild(button);
+  button = document.createElement("button");
+  button.innerHTML = i;
+  button.onclick = (function (i) {
+    return function () {alert(i);}
+  }(i));
+  document.body.appendChild(button);
 }
