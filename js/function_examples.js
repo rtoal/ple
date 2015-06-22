@@ -7,7 +7,7 @@ let odd = x => Math.abs(x % 2) === 1;
 let lessThanTen = x => x < 10;
 let twice = (f, x) => f(f(x));
 
-// We can pass function values by name, or anonymously
+// We can pass function values
 console.log(twice(square, -3));       // 81
 console.log(twice(x => x + 1, 5));    // 7
 
