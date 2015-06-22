@@ -1,4 +1,4 @@
-let split = require('split');
+import split from 'split';
 
 let counts = Object.create(null);
 
