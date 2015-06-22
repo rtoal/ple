@@ -1,6 +1,6 @@
 let counters = Object.create(null);
 
-module.exports = function (prefix) {
+export default function (prefix) {
   counters[prefix] = (counters[prefix] || 0) + 1;
   return prefix + counters[prefix];
 }
