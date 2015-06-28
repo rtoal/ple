@@ -13,7 +13,6 @@ for key, value in pairs(widget) do
   print(key .. ' => ' .. tostring(value))
 end
 
-
 print('ipairs iterates integer-keyed pairs from 1 in order')
 for key, value in ipairs(widget) do
   print(key .. ' => ' .. tostring(value))

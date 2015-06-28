@@ -6,3 +6,4 @@
     place: {name: 'Everest', loc: [27.9881,86.9253]}}
 
 console.log x, y, a, b, mountain, lat, lon
+  # 20 10 5 3 'Everest' 27.9881 86.9253

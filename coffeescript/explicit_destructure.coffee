@@ -7,4 +7,4 @@ lat = destination.place.loc[0]
 lon = destination.place.loc[1]
 
 console.log lat, lon, mountain
-
+  # 27.9881 86.9253 'Everest'
