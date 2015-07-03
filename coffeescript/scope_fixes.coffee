@@ -7,7 +7,7 @@ okay = ->
   ((b) -> b = 20)()        # writes to local b
 
 better = ->
-  do (w=30) ->             # writes to local c
+  do (c=30) ->             # writes to local c
 
 bad(); okay(); better()
 console.log a, b, c        # 10 2 3
