@@ -1,11 +1,13 @@
 class Dog
-  def bark(); "woof"; end
+  def bark()
+    "woof"
+  end
 end
 
 spot = Dog.new
 spike = Dog.new
 
-def spike.bite();
+def spike.bite()
   "ouch"
 end
 
