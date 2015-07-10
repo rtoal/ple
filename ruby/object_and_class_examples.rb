@@ -10,5 +10,3 @@ fail unless (1..5).class == Range
 fail unless [1,2,3,4,5].class == Array
 fail unless {x: 1, y: 2}.class == Hash
 fail unless {'x' => 1, 'y' => 2}.class == Hash
-
-
