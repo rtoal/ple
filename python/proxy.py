@@ -14,10 +14,7 @@ class Proxy(object):
         return "calling m2 from Proxy x = {}".format(self.x)
 
     def __getattr__(self, name):
-        if hasattr(self.prototype, name):
-            return getattr(self.prototype, name)
-        else:
-            raise AttributeError
+        return getattr(self.prototype, name)
 
 c1 = C(5)
 c2 = Proxy(c1)
