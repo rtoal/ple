@@ -1,9 +1,9 @@
-function generatePermutations(n, a)
+function generatePermutations(a, n)
   if n == 1
     println(join(a, ""))
   else
     for i = 1:n
-      generatePermutations(n-1, a)
+      generatePermutations(a, n-1)
       local j = iseven(n) ? 1 : i
       a[j], a[n] = a[n], a[j]
     end
@@ -14,4 +14,4 @@ if length(ARGS) != 1
   println(STDERR, "Exactly one argument is required")
   exit(1)
 end
-generatePermutations(length(ARGS[1]), split(ARGS[1], ""))
+generatePermutations(split(ARGS[1], ""), length(ARGS[1]))
