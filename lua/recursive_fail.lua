@@ -5,5 +5,6 @@ factorial = function (n)
   return f(n, 1)                      -- calls local f
 end
 
-_, reason = pcall(factorial, 10)      -- hoping for 3628800
+ok, reason = pcall(factorial, 10)     -- hoping for 3628800
+assert(ok == false)
 print(reason)
