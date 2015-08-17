@@ -5,10 +5,10 @@
 From polyglot directory:
 
 ```bash
-$ test/run-test.py
+$ test/run-tests.py
 ```
 
-This will kick off a run of all avaiable tests on the system.
+This will kick off a run of all avaiable tests that can be discovered.
 
 The following arguments are available:
 * `--test` - comma separated list of tests to be run
@@ -16,8 +16,8 @@ The following arguments are available:
 
 ## Implementation:
 
-The framework is rather simple to use. The only thing that is needed is a
-`prereq` and a `test` file in each directory needed to test There can optionally
+The framework is quite simple to use. The only thing that is needed is a
+`prereq` and a `test` file in each directory containing tests. There can optionally
 be a file extension that refers to the language being used. The two files can
 be written in any language you like as long as the following conditions are met:
 * The language is a scripting language or otherwise can be run without
@@ -71,7 +71,7 @@ be written in any language you like as long as the following conditions are met:
     * `TMPDIR` - Temporary directory (useful for compilation output)
     * `TESTDIR` - Directory that the test is in
     * `TESTNAME` - name of the test that is being run
-    * `TESTARGS` - arguments to pass through to the test. 
+    * `TESTARGS` - arguments to pass through to the test.
   * Any standard output, standard error, and the exit code must be passed back
     to the caller.
   * Preferably, use the `TMPDIR` environmental variables to avoid cluttering
