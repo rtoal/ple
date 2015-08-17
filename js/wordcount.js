@@ -1,11 +1,13 @@
 import split from 'split';
+import {XRegExp} from 'xregexp'
 
 let counts = Object.create(null);
 
 process.stdin.setEncoding('utf8');
 
 process.stdin.pipe(split()).on('data', line =>
-  (line.toLowerCase().match(/[a-z\']+/g) || []).forEach(word =>
+  let wordPattern = XRegExp("[\\p{L}']+", 'g');
+  (line.toLowerCase().match(wordPattern) || []).forEach(word =>
     counts[word] = (counts[word] || 0) + 1
   )
 );
