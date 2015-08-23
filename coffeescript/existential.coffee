@@ -1,13 +1,9 @@
-c =
-  if employee?
-    _supervisor = employee.supervisor
-    if _supervisor?
-      _city = _supervisor.city
-      if _city?
-        _city.name
-      else
-        undefined
-    else
-      undefined
-  else
-    undefined
+assert = require 'assert'
+
+assert 78.8? is true
+assert false? is true
+assert []? is true
+assert undefined? is false
+assert null? is false
+x = 9;
+assert x? is true
