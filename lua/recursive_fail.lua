@@ -7,4 +7,4 @@ end
 
 ok, reason = pcall(factorial, 10)     -- hoping for 3628800
 assert(ok == false)
-print(reason)
+print(reason)                         -- your output will vary

@@ -20,8 +20,9 @@ end)({}, {}, {})
 
 u = Vector.new(3, 4)
 v = Vector.new(-5, 10)
-print(u.i)                 -- <3,4>
-print(u.j)                 -- <-5,10>
-print(u:magnitude())       -- 5.0
-print(u + v)               -- <-2,14>
-print(u * v)               -- 25
+assert(tostring(u) == "<3,4>")
+assert(tostring(v) == "<-5,10>")
+assert(u.j == 4)
+assert(u:magnitude() == 5.0)
+assert(tostring(u + v) == "<-2,14>")
+assert(u * v == 25)

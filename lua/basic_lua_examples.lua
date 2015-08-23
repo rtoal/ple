@@ -1,7 +1,6 @@
-print(x)                     -- Does not fail! Just nil
+assert(x == nil)             -- Does not fail! x is nil
 
 s = "caf\u{e9}"
-print(s)
 assert(#s == 5)              -- counts bytes
 assert(utf8.len(s) == 4)     -- counts characters
 
