@@ -5,6 +5,7 @@ let circle = {
   expand: function (scale) {this.radius *= scale}
 };
 
-console.log(circle.area());
+import assert from 'assert';
+assert(circle.area() === 100 * Math.PI);
 circle.expand(2);
-console.log(circle.circumference());
+assert(circle.circumference() === 40 * Math.PI);

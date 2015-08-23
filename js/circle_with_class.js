@@ -5,14 +5,11 @@ class Circle {
     this.radius = radius;
     this.color = color;
   }
-  area() {
-    return Math.PI * this.radius * this.radius;
-  }
-  circumference() {
-    return 2 * Math.PI * this.radius;
-  }
+  area() {return Math.PI * this.radius * this.radius;}
+  circumference() {return 2 * Math.PI * this.radius;}
 }
 
+import assert from 'assert'
 let c = new Circle(1, 5);
-console.log(c.circumference());       // 6.283185307179586
-console.log(typeof Circle);           // function
+assert(c.circumference() === 2 * Math.PI);
+assert(typeof Circle === 'function');

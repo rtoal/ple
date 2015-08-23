@@ -6,6 +6,7 @@ let nextSquare = () => {
   }
 }();
 
-console.log(nextSquare());    // prints 0
-console.log(nextSquare());    // prints 1
-console.log(nextSquare());    // prints 4
+import assert from 'assert';
+assert(nextSquare() === 0);
+assert(nextSquare() === 1);
+assert(nextSquare() === 4);

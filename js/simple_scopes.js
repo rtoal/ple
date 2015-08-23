@@ -1,18 +1,20 @@
+import assert from 'assert';
+
 let a = 1, b = 2;
 
 function main() {
-  console.log(a);    // undefined, local `a` in scope
-  console.log(b);    // 2, since its the global b we see
+  assert(a === undefined);   // the local `a` is in scope
+  assert(b === 2);           // we see the global `b`
 
   if (true) {
-    var a = 100;     // scoped to whole function!
-    let b = 200;     // scoped only inside this block
-    let c = 300;     // scoped only inside this block
+    var a = 100;             // scoped to whole function!
+    let b = 200;             // scoped only inside this block
+    let c = 300;             // scoped only inside this block
   }
-  console.log(a);    // 100, since it's been initialized
-  console.log(b);    // 2, since we see the global b again
+  assert(a === 100);         // it's been initialized
+  assert(b === 2);           // global, because local used `let`
 
-  try {console.log(c);} catch (e) {console.log('Block scope!')}
+  assert.throws(() => c);    // there's no `c` out here at all
 }
 
 main()

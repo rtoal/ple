@@ -1,20 +1,17 @@
 import assert from 'assert';
 
-let g = 100;          // Outside of f but visible to it
-let x = 200;          // Going to be passed to a
-let y = [1,2,3];      // Going to be passed to b
-let z = [2,3,4];      // Going to be passed to c
+let g = 100;                      // Note declared outside of f
+let x = [1,2,3];                  // Will pass this to a
+let y = [4,5,6];                  // Will pass this to b
 
-function f(a, b, c) {
-  assert(g === 100);  // Yes, we can see enclosing scope
-  g = 300;            // We can even change vars in enclosing scope
-  assert(g === 300);  // See it changed -> 300
-  a = 400;            // We can write to the parameter
-  assert(x === 200);  // But the argument DID NOT change
-  b = 500;            // Change another parameter
-  assert.deepEqual(y, [1,2,3]);    // Argument still intact
-  c[1] = 600;                      // We CAN change via reference
-  assert.deepEqual(z, [2,600,4]);  // See the change!
+function f(a, b) {
+  assert(g === 100);              // We can see enclosing scope
+  g = 200;                        // Change var in enclosing scope
+  assert(g === 200);              // See it changed
+  a = 300;                        // Change a parameter
+  assert.deepEqual(x, [1,2,3]);   // But argument still intact!
+  b[1] = 400;                     // Change property
+  assert.deepEqual(y, [4,400,6]); // See the change!
 }
 
-f(x, y, z);
+f(x, y);

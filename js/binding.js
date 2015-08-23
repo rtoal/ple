@@ -5,7 +5,7 @@ function second(f) {
 
 function first() {
   let name = 'old';
-  let printName = function () {console.log(name)};
+  let printName = () => console.log(name);
   second(printName);
 }
 

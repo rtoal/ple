@@ -13,6 +13,7 @@ Circle.prototype.circumference = function () {
   return 2 * Math.PI * this.radius;
 };
 
+import assert from 'assert';
 let c = new Circle(1, 5);
-console.log(JSON.stringify(c));
-console.log(c.area());
+assert.deepEqual(c, {x:1, y:5, radius:1, color:'black'})
+assert(c.area() === Math.PI);
