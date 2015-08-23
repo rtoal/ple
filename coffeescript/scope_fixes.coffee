@@ -10,4 +10,5 @@ better = ->
   do (c=30) ->             # writes to local c
 
 bad(); okay(); better()
-console.log a, b, c        # 10 2 3
+assert = require 'assert'
+assert.deepEqual([a,b,c], [10,2,3])

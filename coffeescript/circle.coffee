@@ -5,6 +5,7 @@ class Circle
   expand: (scale) -> @radius *= scale
 
 circles = [(new Circle 3, 5, 10, 'blue'), (new Circle)]
-console.log c.area(), c.circumference() for c in circles
-circles[1].expand(5)
-console.log c.radius
+
+assert = require 'assert'
+assert circles[0].color is 'blue'
+assert circles[1].circumference() is 2 * Math.PI
