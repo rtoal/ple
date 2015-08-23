@@ -1,6 +1,8 @@
-import generateString from './string_generator.js';
+import generateString, {countOf} from './string_generator.js';
+import assert from 'assert';
 
-console.log(generateString('v'));   // v1
-console.log(generateString('v'));   // v2
-console.log(generateString('f'));   // f1
-console.log(generateString('v'));   // v3
+assert(generateString('v') === 'v1');
+assert(generateString('v') === 'v2');
+assert(generateString('f') === 'f1');
+assert(generateString('v') === 'v3');
+assert(countOf('v') === 3)
