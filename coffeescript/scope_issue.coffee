@@ -3,8 +3,7 @@
   a = 100      # Overwrites global: there's an a out there
   b = 200      # Overwrites global: there's a b out there
   d = 300)()   # Local, because there's no d out there
-console.log '%d %d %d', a, b, c
-try
-  console.log(d)
-catch
-  console.log 'd is not defined out here'
+
+assert = require 'assert'
+assert.deepEqual([a,b,c], [100,200,2])
+assert.throws (-> d), ReferenceError

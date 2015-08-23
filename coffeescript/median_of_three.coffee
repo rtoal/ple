@@ -1,5 +1,7 @@
 medianOfThree = (x, y, z) ->
   return x + y + z - (Math.max x, y, z) - Math.min x, y, z
 
+assert = require 'assert'
 numbers = [80, 20, 55]
-console.log medianOfThree numbers...    # args will be unpacked
+middle = medianOfThree numbers...
+assert middle is 55
