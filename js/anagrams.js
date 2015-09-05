@@ -1,5 +1,5 @@
 function swap(a, i, j) {
-  [a[i],a[j]] = [a[j],a[i]]
+  [a[i],a[j]] = [a[j],a[i]];
 }
 
 function generatePermutations(a, n) {
