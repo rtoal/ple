@@ -1,7 +1,7 @@
-[a, b, c] = [1, 2, 3]      # globals
+[a, b, c] = [1, 2, 3]
 
 bad = ->
-  a = 10                   # clobbers global a
+  a = 10                   # clobbers outer a
 
 okay = ->
   ((b) -> b = 20)()        # writes to local b
