@@ -20,5 +20,5 @@ class VocalCow < Cow
 end
 
 c = VocalCow.new 'Bessie'
-c.speak
+puts c.speak
 c.vocalize

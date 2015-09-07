@@ -3,7 +3,7 @@ class Animal
     @name = name
   end
   def speak()
-    puts "#{@name} says #{sound()}"
+    "#{@name} says #{sound()}"
   end
 end
 
@@ -27,8 +27,8 @@ end
 
 if __FILE__ == $0
   s = Horse.new "CJ"
-  s.speak()
+  fail unless s.speak == "CJ says neigh"
   c = Cow.new("Bessie")
-  c.speak()
-  Sheep.new("Little Lamb").speak()
+  fail unless c.speak == "Bessie says moooo"
+  fail unless Sheep.new("Little Lamb").speak == "Little Lamb says baaaa"
 end

@@ -8,7 +8,7 @@ class OneTwoThree
 end
 
 t = OneTwoThree.new
-puts t.first
-puts t.map {|x| x * 100}
-puts t.select {|x| x.even?}
-puts t.all? {|x| x > 0}
+fail unless t.first == 1
+fail unless t.map {|x| x * 100} == [100, 200, 300]
+fail unless t.select {|x| x.even?} == [2]
+fail unless t.all? {|x| x > 0} == true

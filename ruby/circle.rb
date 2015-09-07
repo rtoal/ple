@@ -16,6 +16,8 @@ class Circle
 end
 
 c = Circle.new(5, 4, 10)
-puts "The center is #{c.center}"   # Method call
-puts c.area                        # Another method call
-puts c                             # calls c.to_s
+fail unless c.center == [5, 4]
+fail unless c.area == 100 * Math::PI
+
+# to_s is automatically called when in string context
+fail unless "#{c}" == "Circle at (5, 4) with radius 10"
