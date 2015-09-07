@@ -19,8 +19,8 @@ class Vector:
 
 u = Vector(3, 4)
 v = Vector(-5, 10)
-print(u.i)                 # 3
-print(u.j)                 # 4
-print(u.magnitude())       # 5.0
-print(u + v)               # <-2,14>
-print(u * v)               # 25
+assert u.i == 3
+assert u.j == 4
+assert u.magnitude() == 5.0
+assert str(u + v) == '<-2,14>'
+assert u * v == 25

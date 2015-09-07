@@ -2,7 +2,7 @@ class Animal(object):
     def __init__(self, name):
         self.name = name
     def speak(self):
-        print(self.name, 'says', self.sound())
+        return '{} says {}'.format(self.name, self.sound())
 
 class Cow(Animal):
     def sound(self):
@@ -18,7 +18,7 @@ class Sheep(Animal):
 
 if __name__ == '__main__':
     s = Horse('CJ')
-    s.speak()
+    assert s.speak() == 'CJ says neigh'
     c = Cow('Bessie')
-    c.speak()
-    Sheep('Little Lamb').speak()
+    assert c.speak() == 'Bessie says moooo'
+    assert Sheep('Little Lamb').speak() == 'Little Lamb says baaaa'

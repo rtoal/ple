@@ -10,8 +10,8 @@ for i in powers_of_two(70):
 
 # Explore the mechanism
 g = powers_of_two(100)
-assert(str(type(powers_of_two)) == "<class 'function'>")
-assert(str(type(g)) == "<class 'generator'>")
-assert(g.__next__() == 1)
-assert(g.__next__() == 2)
-assert(next(g) == 4)
+assert str(type(powers_of_two)) == "<class 'function'>"
+assert str(type(g)) == "<class 'generator'>"
+assert g.__next__() == 1
+assert g.__next__() == 2
+assert next(g) == 4

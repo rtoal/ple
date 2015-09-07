@@ -10,8 +10,9 @@ def f(x):
         global c
         c = 7
     g()
-    assert(a == 6)  # assert that it changed
-    assert(b == 2)  # globals are visible
+    assert x == 10  # g's x did not overwrite f's x
+    assert a == 6   # assert that it changed
+    assert b == 2   # globals are visible
 
 f(10)
-assert(a == 1 and b == 2 and c == 7)
+assert a == 1 and b == 2 and c == 7

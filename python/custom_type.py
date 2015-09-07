@@ -8,11 +8,11 @@ class Circle:
 
 c = Circle(10)
 
-assert(type(c) == Circle)            # Circle is a type!
-assert(type(Circle) == type)         # It really is!
+assert type(c) == Circle            # Circle is a type!
+assert type(Circle) == type         # It really is!
 
-assert(str(type(Circle.area)) == "<class 'function'>")
-assert(str(type(c.area)) == "<class 'method'>")
+assert str(type(Circle.area)) == "<class 'function'>"
+assert str(type(c.area)) == "<class 'method'>"
 
-assert(c.area() == math.pi * 100)    # A method call...
-assert(Circle.area(c) == c.area())   # ...is just sugar
+assert c.area() == math.pi * 100    # A method call...
+assert Circle.area(c) == c.area()   # ...is just sugar

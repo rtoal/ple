@@ -10,5 +10,5 @@ class VocalCow(Vocalizer, Cow):
     pass
 
 c = VocalCow('Bessie')
-c.speak()
-c.vocalize()
+print(c.speak())        # speak is inherited from Cow
+c.vocalize()            # vocalize is inherited from Vocalizer
