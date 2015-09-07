@@ -6,5 +6,6 @@
     place: {name: 'Everest', loc: [27.9881,86.9253]}}
 
 assert = require 'assert'
+assert x is 20 and y is 10
 assert.deepEqual [x, y, a, b, mountain, lat, lon],
   [20, 10, 5, 3, 'Everest', 27.9881, 86.9253]
