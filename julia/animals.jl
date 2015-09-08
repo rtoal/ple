@@ -17,7 +17,7 @@ end
 sound(s::Sheep) = "baaaa"
 
 s = Horse("CJ")
-println(speak(s))
+@assert speak(s) == "CJ says neigh"
 c = Cow("Bessie")
-println(speak(c))
-println(speak(Sheep("Little Lamb")))
+@assert speak(c) == "Bessie says moooo"
+@assert speak(Sheep("Little Lamb")) == "Little Lamb says baaaa"

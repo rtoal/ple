@@ -1,4 +1,4 @@
 x = 2
-function f() global x=5; println(x) end
+function f() global x=5; @assert x == 5 end
 f()
-println(x)
+@assert x == 5

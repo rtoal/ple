@@ -6,5 +6,5 @@
 
 @assert Float64 <: Real
 @assert isa(7, Signed) and isa(7, Number)
-@assert isa(subtype(Type), Array)
+@assert isa(subtypes(Type), Array)
 @assert isa(Array, Type)
