@@ -1,26 +1,19 @@
-import java.util.regex.Pattern;
-import java.util.Map;
 import java.util.TreeMap;
-import java.util.Scanner;
-import java.io.IOException;
+import java.util.Arrays;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import static java.util.function.Function.identity;
+import static java.util.stream.Collectors.groupingBy;
+import static java.util.stream.Collectors.counting;
 
 public class WordCountApp {
 
     public static void main(String[] args) {
-        Pattern wordPattern = Pattern.compile("(?i)[a-z']+");
-        Map<String, Integer> counts = new TreeMap<>();
-
-        for (Scanner scanner = new Scanner(System.in);
-                scanner.hasNextLine();
-                scanner.nextLine()) {
-            String word;
-            while ((word = scanner.findInLine(wordPattern)) != null) {
-                word = word.toLowerCase();
-                counts.put(word, counts.getOrDefault(word, 0) + 1);
-            }
-        }
-        for (Map.Entry<String, Integer> e : counts.entrySet()) {
-            System.out.printf("%s %d\n", e.getKey(), e.getValue());
-        }
+        ((new BufferedReader(new InputStreamReader(System.in)))
+            .lines()
+            .flatMap(line -> Arrays.stream((line.toLowerCase()).split("[^a-z']+")))
+            .collect(groupingBy(identity(), TreeMap::new, counting())))
+        .forEach((word, count) -> System.out.printf("%s %d\n", word, count));
     }
+    
 }
