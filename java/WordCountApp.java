@@ -11,9 +11,9 @@ public class WordCountApp {
     public static void main(String[] args) {
         ((new BufferedReader(new InputStreamReader(System.in)))
             .lines()
-            .flatMap(line -> Arrays.stream((line.toLowerCase()).split("[^a-z']+")))
-            .collect(groupingBy(identity(), TreeMap::new, counting())))
+            .flatMap(line -> Arrays.stream(line.split("[^a-zA-Z']+")))
+            .collect(groupingBy(String::toLowerCase, TreeMap::new, counting())))
         .forEach((word, count) -> System.out.printf("%s %d\n", word, count));
     }
-    
+
 }
