@@ -6,7 +6,7 @@ let nextSquare = () => {
   }
 }();
 
-import assert from 'assert';
+let assert = require('assert');
 assert(nextSquare() === 0);
 assert(nextSquare() === 1);
 assert(nextSquare() === 4);

@@ -13,7 +13,11 @@ Circle.prototype.circumference = function () {
   return 2 * Math.PI * this.radius;
 };
 
-import assert from 'assert';
+let assert = require('assert');
 let c = new Circle(1, 5);
 assert.deepEqual(c, {x:1, y:5, radius:1, color:'black'})
 assert(c.area() === Math.PI);
+assert(c.circumference() === 2 * Math.PI);
+assert(Object.getPrototypeOf(c) === Circle.prototype);
+assert(c.constructor) === Circle;
+assert(typeof(c) === 'object');

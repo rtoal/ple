@@ -15,3 +15,7 @@ let c2 = Object.create(unitCircle);
 c2.radius = 5;
 
 let c3 = Object.create(unitCircle);
+
+let assert = require('assert')
+assert(c2.color === 'black' && c2.area() === 25 * Math.PI);
+assert(c3.y === 0 && c3.area() === Math.PI);

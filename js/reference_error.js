@@ -1,4 +1,4 @@
-import assert from 'assert';
+let assert = require('assert');
 
 let p = {x: 3, y: 5}
 assert(p.z === undefined);                    // There's no p.z

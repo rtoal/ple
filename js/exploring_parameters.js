@@ -1,4 +1,4 @@
-import assert from 'assert';
+let assert = require('assert');
 
 let x = [1,2,3];                  // Will pass this to a
 let y = [4,5,6];                  // Will pass this to b

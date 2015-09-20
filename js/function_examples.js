@@ -1,4 +1,4 @@
-import assert from 'assert';
+let assert = require('assert');
 
 // Function values can use `=>` or `function`
 let square = x => x * x;
