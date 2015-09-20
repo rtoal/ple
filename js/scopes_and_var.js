@@ -6,6 +6,6 @@ var a = 0, b = 1, c = 2;
   var d = 300;   // Local, will not exist after return
 }();
 
-import assert from 'assert'
+let assert = require('assert')
 assert.deepEqual([a,b,c], [0, 200, 2])
 assert.throws(() => d, ReferenceError)
