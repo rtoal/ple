@@ -1,5 +1,6 @@
 u = Union{UInt8, Bool}          # A new type
-@assert typeof(u) == Union      # Julia has a type for all union types
+@assert typeof(u) == Union
+@assert isa(u, Type)            # A union type is a type
 
 @assert isa(0x08, u)            # Uint8 values belong
 @assert isa(false, u)           # Boolean values belong
