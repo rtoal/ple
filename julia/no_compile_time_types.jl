@@ -1,5 +1,5 @@
 function g()
-  local x::String
+  local x::AbstractString
   x = 2
 end
 
