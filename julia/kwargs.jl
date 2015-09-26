@@ -1,7 +1,8 @@
-function f(x; y=1, z=2)
-  x^2 + 2y + z
+function f(a, b=1 ; c=2, d=3)
+  [a, b, c, d]
 end
 
-@assert f(4) == 20
-@assert f(3, z=10) == 21
-@assert f(3, z=1, y=2) == 14
+@assert f(100) == [100, 1, 2, 3]
+@assert f(100, 200) == [100, 200, 2, 3]
+@assert f(100, d=10) == [100, 1, 2, 10]
+@assert f(100, 200, d=400, c=300) == [100, 200, 300, 400]
