@@ -2,4 +2,4 @@
 @assert zeros(Int64, 2, 2) == [0 0; 0 0]
 @assert ones(Int64, 3, 2) == [1 1; 1 1; 1 1]
 @assert eye(Int32, 3) == [1 0 0; 0 1 0; 0 0 1]
-@assert fill(5, 2, 1) == [5, 5]
+@assert fill(5, 1, 2) == [5 5]
