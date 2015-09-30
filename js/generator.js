@@ -1,10 +1,10 @@
-let nextSquare = () => {
+let nextSquare = (() => {
   let previous = -1;
   return () => {
     previous++;
     return previous * previous;
   }
-}();
+}());
 
 let assert = require('assert');
 assert(nextSquare() === 0);
