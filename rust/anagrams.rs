@@ -7,7 +7,7 @@ fn main() {
         std::process::exit(1);
     }
     if let Some(last_arg) = args.last() {
-        let mut word: Vec<char> = last_arg.chars().collect();
+        let mut word: Vec<_> = last_arg.chars().collect();
         generate_permutations(word.len() - 1, &mut word);
     }
 }
