@@ -1,4 +1,4 @@
-use std::io::Write;
+use std::io::Write; // Needed for writing to stderr
 
 fn main() {
     let args = std::env::args();
