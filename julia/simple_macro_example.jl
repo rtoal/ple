@@ -1,12 +1,14 @@
-x = 1
+macro addTwoToX()
+  println("hello");
+  :(x += 2)
+end
 
-macro m() println(88); :(global x = 2) end
-function f() @m() end
+function f()
+  x = 2;
+  @addTwoToX()
+end
 
-#println(x)
-#f()
-#println(x)
-#x = 1
-#f()
-#println(x)
-
+@assert f() == 4
+@assert f() == 4
+@assert f() == 4
+@assert f() == 4
