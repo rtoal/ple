@@ -6,7 +6,7 @@ let odd = x => Math.abs(x % 2) === 1;
 let lessThanTen = function (x) {return x < 10};
 let twice = (f, x) => f(f(x));
 
-// We don't have to name functions to call them
+// An anonymous function call
 assert((x => x + 5)(10) === 15);
 
 // We can pass function values to other functions
