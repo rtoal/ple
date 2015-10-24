@@ -1,29 +1,27 @@
-import Foundation
+import Darwin
 
-func swap(inout a: [Character], i : Int, j : Int) {
-    var saved = a[i]
+func swap(index i: Int, with j: Int, inout ofArray a: [Character]) {
+    let saved = a[i]
     a[i] = a[j]
     a[j] = saved
 }
 
-func generatePermutations(n : Int, inout a : [Character]) {
+func generatePermutations(inout a : [Character], upTo n: Int) {
     if n == 0 {
-        println("".join(a.map{"\($0)"}))
+        print((a.map{"\($0)"}).joinWithSeparator(""))
     } else {
         for i in 0...n {
-            generatePermutations(n-1, &a)
-            swap(&a, n % 2 == 0 ? i : 0, n)
+            generatePermutations(&a, upTo: n-1)
+            swap(index: (n % 2 == 0 ? i : 0), with: n, ofArray: &a)
         }
     }
 }
 
 if Process.arguments.count != 2 {
-    let stderr = NSFileHandle.fileHandleWithStandardError()
-    let errorMessage = "Exactly one argument is required\n"
-    stderr.writeData(errorMessage.dataUsingEncoding(NSUTF8StringEncoding)!)
+    fputs("Exactly one argument is required\n", __stderrp)
     exit(1)
 }
 
 var word = Process.arguments[1]
-var charArray = Array(word)
-generatePermutations(countElements(word)-1, &charArray)
+var charArray = word.characters.map {$0}
+generatePermutations(&charArray, upTo: charArray.count-1)
