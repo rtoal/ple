@@ -1,38 +1,24 @@
-#!/usr/bin/env xcrun swift
-
 import Foundation
 
-func countWords (splitArray : [String]) -> Dictionary<String, Int> {
-    var wordCounts = Dictionary<String, Int>(),
-        regex = NSRegularExpression(pattern: "([a-z\']+)", options: nil, error: nil)
-    
-    for word in splitArray {
-        var matches = regex?.matchesInString(word, options: nil, range: NSMakeRange(0, countElements(word))) as [NSTextCheckingResult]
-        for match in matches {
-            var regWord = word[advance(word.startIndex, match.range.location)..<advance(word.startIndex, (match.range.location + match.range.length))]
-            if (wordCounts[regWord] == nil) {
-                wordCounts[regWord] = 1
-            } else {
-                wordCounts[regWord] = wordCounts[regWord]! + 1
-            }
-        }
-    }
-    return wordCounts
+// Should be fixed: This reads in all of standard input
+let standardInput = NSFileHandle.fileHandleWithStandardInput()
+let input = standardInput.availableData
+let text = String(data: input, encoding: NSUTF8StringEncoding)!
+
+var counts = [String: Int]()
+
+func isWordChar (c: Character) -> Bool {
+    return "abcdefghijklmnopqrstuvwxyz'".rangeOfString("\(c)") != nil
 }
 
-func printWordCounts (wordCounts : Dictionary<String, Int>) {
-    for (word, wordCount) in wordCounts {
-        println("\(word) : \(wordCount)")
+for word in (text.lowercaseString.characters.split{!isWordChar($0)}.map(String.init)) {
+    if let count = counts[word] {
+        counts[word] = count + 1
+    } else {
+        counts[word] = 1
     }
 }
 
-if (Process.arguments.count < 2) {
-    println("2 or more arguments are required");
-    exit(1)
-} else {
-    var subArr = Process.arguments[1..<Process.arguments.count],
-        joiner = " ",
-        joinedStrings = joiner.join(subArr),
-        splitStrings = joinedStrings.lowercaseString.componentsSeparatedByString(joiner)
-    printWordCounts(countWords(splitStrings))
+for (word, count) in (counts.sort { $0.0 < $1.0 }) {
+    print("\(word) \(count)")
 }
