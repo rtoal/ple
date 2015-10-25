@@ -1,5 +1,3 @@
-import Foundation
-
 class Animal {
     private let name : String?
     
@@ -12,7 +10,7 @@ class Animal {
     }
     
     func speak () {
-        println("\(self.name!) says \(self.sound())")
+        print("\(self.name!) says \(self.sound())")
     }
 }
 
@@ -46,7 +44,7 @@ class Sheep : Animal {
     }
 }
 
-let s : Animal = Horse(name : "CJ")
+let s : Animal = Horse(name: "CJ")
 s.speak()
 let c: Animal = Cow(name: "Bessie")
 c.speak()
