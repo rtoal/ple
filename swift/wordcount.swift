@@ -12,11 +12,7 @@ func isWordChar (c: Character) -> Bool {
 }
 
 for word in (text.lowercaseString.characters.split{!isWordChar($0)}.map(String.init)) {
-    if let count = counts[word] {
-        counts[word] = count + 1
-    } else {
-        counts[word] = 1
-    }
+    counts[word] = (counts[word] ?? 0) + 1
 }
 
 for (word, count) in (counts.sort { $0.0 < $1.0 }) {
