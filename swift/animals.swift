@@ -1,21 +1,21 @@
 class Animal {
-    private let name : String?
+    private let name: String
     
-    init (name: String) {
+    init(name: String) {
         self.name = name
     }
     
-    func sound () -> String {
+    func sound() -> String {
         preconditionFailure("This method must be overridden")
     }
     
-    func speak () {
-        print("\(self.name!) says \(self.sound())")
+    func speak() -> String {
+        return "\(self.name) says \(self.sound())"
     }
 }
 
-class Cow : Animal {
-    override init (name : String) {
+class Cow: Animal {
+    override init(name: String) {
         super.init(name: name)
     }
     
@@ -24,8 +24,8 @@ class Cow : Animal {
     }
 }
 
-class Horse : Animal {
-    override init (name : String) {
+class Horse: Animal {
+    override init(name: String) {
         super.init(name: name)
     }
     
@@ -34,8 +34,8 @@ class Horse : Animal {
     }
 }
 
-class Sheep : Animal {
-    override init (name : String) {
+class Sheep: Animal {
+    override init(name: String) {
         super.init(name: name)
     }
     
@@ -44,8 +44,8 @@ class Sheep : Animal {
     }
 }
 
-let s : Animal = Horse(name: "CJ")
-s.speak()
+let h: Animal = Horse(name: "CJ")
+assert(h.speak() == "CJ says neigh")
 let c: Animal = Cow(name: "Bessie")
-c.speak()
-Sheep(name:"Little Lamb").speak()
+assert(c.speak() == "Bessie says moooo")
+assert(Sheep(name:"Little Lamb").speak() == "Little Lamb says baaaa")
