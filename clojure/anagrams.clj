@@ -6,10 +6,11 @@
     (println (apply str v))
 
     (loop [i 0 a v]
-      (if (<= i n)
+      (if (< i n)
         (do
           (generatePermutations a (dec n))
-          (recur (inc i) (swap a (if (even? n) i 0) n)))))))
+          (recur (inc i) (swap a (if (even? n) i 0) n)))
+        (generatePermutations a (dec n))))))
 
 (if (not= (count *command-line-args*) 1)
   (do
