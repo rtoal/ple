@@ -16,5 +16,5 @@
   (do
     (println "Exactly one argument is required")
     (System/exit 1))
-  (let [word (-> *command-line-args* first vec)]
+  (let [word (->> *command-line-args* first vec)]
     (generatePermutations word (dec (count word)))))
