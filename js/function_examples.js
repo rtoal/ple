@@ -26,5 +26,5 @@ let a = [9, 7, 4, -1, 8];
 assert(!a.every(odd));
 assert(a.some(odd));
 assert(a.every(lessThanTen));
-assert.deepEqual(a.filter(odd), [9, 7, -1]);
-assert.deepEqual(a.map(square), [81, 49, 16, 1, 64]);
+assert.deepStrictEqual(a.filter(odd), [9, 7, -1]);
+assert.deepStrictEqual(a.map(square), [81, 49, 16, 1, 64]);
