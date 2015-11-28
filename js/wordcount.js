@@ -4,11 +4,11 @@ let counts = new Map();
 
 reader.on('line', line => {
   let wordPattern = XRegExp("[\\p{L}']+", 'g');
-  (line.toLowerCase().match(wordPattern) || []).forEach(word =>
+  for (let word of line.toLowerCase().match(wordPattern) || []) {
     counts.set(word, (counts.get(word) || 0) + 1)
-  );
-}).on('close', () =>
-  Array.from(counts.keys()).sort().forEach(word =>
+  }
+}).on('close', () => {
+  for (let word of Array.from(counts.keys()).sort()) {
     console.log('%s %d', word, counts.get(word))
-  )
-);
+  }
+});
