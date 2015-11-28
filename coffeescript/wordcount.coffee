@@ -1,12 +1,12 @@
 reader = require('readline').createInterface process.stdin, null
 {XRegExp} = require 'xregexp'
-counts = Object.create null
+counts = new Map()
 
 reader.on 'line', (line) ->
   wordPattern = XRegExp("[\\p{L}']+", 'g')
   for word in (line.toLowerCase().match(wordPattern) or [])
-    counts[word] = (counts[word] or 0) + 1
+    counts.set word, (counts.get(word) or 0) + 1
 
-reader.on 'end', ->
-  for word in Object.keys(counts).sort()
-    console.log "#{word} #{counts[word]}"
+reader.on 'close', ->
+  for word in Array.from(counts.keys()).sort()
+    console.log "#{word} #{counts.get word}"
