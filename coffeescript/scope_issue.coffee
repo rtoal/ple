@@ -5,5 +5,5 @@
   d = 300)()   # Local, because there's no d out there
 
 assert = require 'assert'
-assert.deepEqual([a,b,c], [100,200,2])
+assert.deepStrictEqual([a,b,c], [100,200,2])
 assert.throws (-> d), ReferenceError

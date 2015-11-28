@@ -11,4 +11,4 @@ better = ->
 
 bad(); okay(); better()
 assert = require 'assert'
-assert.deepEqual([a,b,c], [10,2,3])
+assert.deepStrictEqual([a,b,c], [10,2,3])

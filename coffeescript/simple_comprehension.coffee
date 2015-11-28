@@ -8,4 +8,6 @@ employees = [
 
 assert = require 'assert'
 highEarners = (e.name for e in employees when e.salary > 80000)
-assert.deepEqual(highEarners, ['alice', 'dinh', 'ekaterina'])
+shortNames = (e.name for e in employees when e.name.length < 4)
+assert.deepStrictEqual highEarners, ['alice', 'dinh', 'ekaterina']
+assert.deepStrictEqual shortNames, ['bob', 'chi']
