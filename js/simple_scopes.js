@@ -2,7 +2,7 @@ let assert = require('assert');
 
 let a = 1, b = 2;
 
-function main() {
+(function () {
   assert(a === undefined);   // the local `a` is in scope
   assert(b === 2);           // we see the outer `b`
 
@@ -15,6 +15,4 @@ function main() {
   assert(b === 2);           // outer, because local used `let`
 
   assert.throws(() => c);    // there's no `c` out here at all
-}
-
-main()
+})()
