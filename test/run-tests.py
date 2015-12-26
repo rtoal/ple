@@ -1,12 +1,12 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 import os
 import os.path
 import glob
 import subprocess
 import abc
 import tempfile
-# Config vars
 
+# Config vars
 SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
 MAIN_DIR = SCRIPT_DIR + '/../'
 TEST_FILE = '/test*'
@@ -17,9 +17,6 @@ NEEDED_FILES = (TEST_FILE, PREREQ_FILE)
 # environmental variables that need to be exposed to the process should be set
 # here.
 ENVIRONMENT = {'TEMPDIR': tempfile.gettempdir()}
-
-
-# End config vars
 
 
 def get_directory_list():
@@ -45,7 +42,7 @@ def check_prereq(directory):
             print(stderr)
         return False
     else:
-        return stdout.strip().split(',')
+        return str(stdout).strip().split(',')
 
 
 def determine_tests_to_run(directories):
