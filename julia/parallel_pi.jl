@@ -6,4 +6,4 @@ hits = @parallel (+) for i = 1:trials
 end
 
 approximation = hits/trials * 4
-@assert(3.1 < approximation && approximation < 3.2)
+@assert(3.1 < approximation < 3.2)
