@@ -1,6 +1,6 @@
 addprocs(3)
 @assert nprocs() == 4
-ref = remotecall(4, factor, 3690764180561429)
+ref = remotecall(4, factor, 21883298135690819)
 @assert isa(ref, RemoteRef)
 factors = fetch(ref)
-@assert Set(keys(factors)) == Set([2477,53,4637,163861,37])
+@assert factors == Dict(234711901=>1,93234719=>1)

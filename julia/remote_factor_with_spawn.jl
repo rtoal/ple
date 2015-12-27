@@ -1,4 +1,4 @@
 addprocs(3)
-ref = @spawn factor(3690764180561429)
+ref = @spawn factor(21883298135690819)
 factors = fetch(ref)
-@assert Set(keys(factors)) == Set([2477,53,4637,163861,37])
+@assert factors == Dict(234711901=>1,93234719=>1)
