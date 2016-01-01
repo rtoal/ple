@@ -1,1 +1,1 @@
-sumofevensquares: {+/(~x!2)*x^2}
+sumofevensquares: {+/x[&~x!2]^2}
