@@ -1,4 +1,4 @@
-
+% First line is ignored when running with escript
 main(_) ->
   print_counts(process_line(orddict:new())).
 
@@ -6,12 +6,13 @@ process_line(Counts) ->
   case io:get_line("") of
     eof -> Counts;
     Line -> 
-      Words = case re:run(string:to_lower(Line), "[a-z']+", [global,{capture,first,list}]) of
+      Options = [global,{capture,first,list}]
+      Words = case re:run(string:to_lower(Line), "[a-z']+", Options) of
         {match, C} -> [hd(C) || C<-C];                                          
         nomatch -> []                                       
       end,
-      NewCounts = lists:foldl(fun(W,D)->orddict:update_counter(W,1,D) end, Counts, Words),
-      process_line(NewCounts)
+      process_line(lists:foldl(
+        fun(W,D)->orddict:update_counter(W,1,D) end, Counts, Words)
   end.
   
 print_counts(Counts) ->
