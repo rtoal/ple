@@ -8,7 +8,7 @@ process_lines(Counts) ->
     Line ->
       Options = [global,{capture,first,list}],
       Words = case re:run(string:to_lower(Line), "[a-z']+", Options) of
-        {match, C} -> [hd(C) || C<-C];
+        {match, Captures} -> lists:map(fun erlang:hd/1, Captures);
         nomatch -> []
       end,
       process_lines(lists:foldl(
