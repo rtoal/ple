@@ -5,11 +5,11 @@ macro unless(condition, body)
 end
 
 x, y = 0, 1
-@unless (x == 5) begin   # should execute
-  y = 3
+@unless (x == 5) begin
+  y = 3                  # should execute
 end
-@unless (x == 0) begin   # should not execute
-  y = 5
+@unless (x == 0) begin
+  y = 5                  # should not execute
 end
 
 @assert y == 3

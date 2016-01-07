@@ -2,7 +2,7 @@
 @assert super(Signed) == Integer
 @assert super(Integer) == Real
 @assert super(Symbol) == Any
-@assert subtypes(Type) == [DataType, TypeConstructor, Union]
+@assert Set(subtypes(Type)) == Set([DataType, TypeConstructor, Union])
 
 @assert Float64 <: Real
 @assert isa(subtypes(Type), Array)

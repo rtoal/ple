@@ -1,12 +1,11 @@
-x = 10
+f(x) = x + 100
 
-macro g()
-  local x = 1
-  :(x + 5)
-end
+macro g()         # According to Julia docs, ...
+  :(f(x) + 5)     # ... f is global, x is local, right?
+end               # if so, f should refer to the f above?
 
-(function f()
+(function main()
   local x = 3
-  @assert eval(:(x + 5)) == 15    # x eval'd in global scope!
-  @assert @g() == 8               # x evaluated here
+  f(x) = x - 100  # f in the call environment subtracts 100
+  println(@g())   # So why does this do -92?
 end)()
