@@ -12,15 +12,15 @@ func main() {
 		os.Exit(1)
 	}
 	word := os.Args[1]
-	generatePermutations(len(word)-1, strings.Split(word, ""))
+	generatePermutations(strings.Split(word, ""), len(word)-1)
 }
 
-func generatePermutations(n int, a []string) {
+func generatePermutations(a []string, n int) {
 	if n == 0 {
 		fmt.Println(strings.Join(a, ""))
 	} else {
 		for i := 0; i <= n; i++ {
-			generatePermutations(n-1, a)
+			generatePermutations(a, n-1)
 			if n % 2 == 0 {
 				a[i], a[n] = a[n], a[i]
 			} else {
