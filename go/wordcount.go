@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
+	"bufio"
 	"os"
 	"regexp"
 	"sort"
@@ -10,16 +10,16 @@ import (
 )
 
 func main() {
-	if bytes, err := ioutil.ReadAll(os.Stdin); err != nil {
-		panic(err)
-	} else {
-		counts := make(map[string]int)
-		r := regexp.MustCompile(`[a-z\']+`)
-		for _, word := range r.FindAllString(strings.ToLower(string(bytes)), -1) {
+	counts := make(map[string]int)
+	scanner := bufio.NewScanner(os.Stdin)
+	r := regexp.MustCompile(`[a-z\']+`)
+	for scanner.Scan() {
+		line := strings.ToLower(scanner.Text())
+		for _, word := range r.FindAllString(line, -1) {
 			counts[word] += 1
 		}
-		report(counts)
 	}
+	report(counts)
 }
 
 func report(counts map[string]int) {
