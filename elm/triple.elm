@@ -1,13 +1,11 @@
-import Text (plainText)
-import List (map,concatMap,filter)
-import String (join)
+import Html exposing (ul, li, text)
+import List exposing (map, concatMap, filter)
 
 values =
-  [1..50] |> concatMap (\z ->
+  [1..40] |> concatMap (\z ->
     [1..z-1] |> concatMap (\y ->
       [1..y-1] |> map (\x -> (x,y,z)))) |>
         filter (\(x,y,z) -> x*x+y*y==z*z)
 
-
 main =
-  values |> map toString |> join "\n" |> plainText
+  ul [] (values |> map (\t -> li [] [text(toString(t))]))
