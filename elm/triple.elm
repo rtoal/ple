@@ -1,11 +1,11 @@
 import Html exposing (ul, li, text)
-import List exposing (map, concatMap, filter)
+import List exposing (map, concatMap, filter, repeat)
 
 values =
-  [1..40] |> concatMap (\z ->
-    [1..z-1] |> concatMap (\y ->
-      [1..y-1] |> map (\x -> (x,y,z)))) |>
-        filter (\(x,y,z) -> x*x+y*y==z*z)
+  [1..40] |> concatMap (\c ->
+    [1..c-1] |> concatMap (\b ->
+      [1..b-1] |> map (\a -> (a,b,c)))) |>
+        filter (\(a,b,c) -> a*a + b*b == c*c)
 
 main =
-  ul [] (values |> map (\t -> li [] [text(toString(t))]))
+  values |> map (toString >> text >> repeat 1 >> li []) |> ul []
