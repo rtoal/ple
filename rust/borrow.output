@@ -1,0 +1,15 @@
+borrow.rs:4:17: 4:18 error: cannot borrow `a` as mutable because it is also borrowed as immutable [E0502]
+borrow.rs:4     borrow(&mut a);
+                            ^
+borrow.rs:3:9: 3:14 note: previous borrow of `a` occurs here; the immutable borrow prevents subsequent moves or mutable borrows of `a` until the borrow ends
+borrow.rs:3     let ref c = a;
+                    ^~~~~
+borrow.rs:6:2: 6:2 note: previous borrow ends here
+borrow.rs:1 fn main() {
+borrow.rs:2     let mut a = 5;
+borrow.rs:3     let ref c = a;
+borrow.rs:4     borrow(&mut a);
+borrow.rs:5     println!("Here is a: {}", a);
+borrow.rs:6 }
+            ^
+error: aborting due to previous error
