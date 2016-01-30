@@ -2,11 +2,12 @@ function generatePermutations(a, n)
   if n == 1
     println(join(a, ""))
   else
-    for i = 1:n
+    for i = 1:n-1
       generatePermutations(a, n-1)
-      local j = iseven(n) ? 1 : i
+      local j = iseven(n) ? i : 1
       a[j], a[n] = a[n], a[j]
     end
+    generatePermutations(a, n-1)
   end
 end
 
