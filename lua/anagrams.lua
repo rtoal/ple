@@ -2,11 +2,12 @@ function generatePermutations(a, n)
   if n == 0 then
     print(utf8.char(table.unpack(a)))
   else
-    for i = 1, n do
+    for i = 1, n-1 do
       generatePermutations(a, n-1)
-      swapIndex = n % 2 == 0 and i or 1
-      a[swapIndex], a[n] = a[n], a[swapIndex]
+      local j = n % 2 == 0 and i or 1
+      a[j], a[n] = a[n], a[j]
     end
+    generatePermutations(a, n-1)
   end
 end
 

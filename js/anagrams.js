@@ -4,7 +4,7 @@ function generatePermutations(a, n) {
   } else {
     for (let i = 0; i < n; i++) {
       generatePermutations(a, n - 1);
-      let j = n % 2 === 0 ? i : 0;
+      let j = n % 2 === 0 ? 0 : i;
       [a[j], a[n]] = [a[n], a[j]];
     }
     generatePermutations(a, n - 1);

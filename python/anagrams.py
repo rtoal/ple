@@ -4,10 +4,11 @@ def generatePermutations(a, n):
     if n == 0:
         print(''.join(a))
     else:
-        for i in range(n+1):
+        for i in range(n):
             generatePermutations(a, n-1)
-            swap_index = i if n % 2 == 0 else 0
-            a[swap_index], a[n] = a[n], a[swap_index]
+            j = 0 if n % 2 == 0 else i
+            a[j], a[n] = a[n], a[j]
+        generatePermutations(a, n-1)
 
 if len(sys.argv) != 2:
     sys.stderr.write('Exactly one argument is required\n')

@@ -1,15 +1,13 @@
-def swap(a, i, j)
-  a[i], a[j] = a[j], a[i]
-end
-
 def generatePermutations(a, n)
   if n == 0
     puts a.join
   else
-    0.upto(n) do |i|
+    0.upto(n-1) do |i|
       generatePermutations a, n-1
-      swap(a, n % 2 == 0 ? i : 0, n)
+      j = n.even? ? 0 : i
+      a[j], a[n] = a[n], a[j]
     end
+    generatePermutations a, n-1
   end
 end
 
