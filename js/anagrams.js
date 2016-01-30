@@ -1,15 +1,13 @@
-function swap(a, i, j) {
-  [a[i],a[j]] = [a[j],a[i]];
-}
-
 function generatePermutations(a, n) {
   if (n === 0) {
     console.log(a.join(''));
   } else {
-    for (let i = 0; i <= n; i++) {
+    for (let i = 0; i < n; i++) {
       generatePermutations(a, n - 1);
-      swap(a, n % 2 === 0 ? i : 0, n);
+      let j = n % 2 === 0 ? i : 0;
+      [a[j], a[n]] = [a[n], a[j]];
     }
+    generatePermutations(a, n - 1);
   }
 }
 
