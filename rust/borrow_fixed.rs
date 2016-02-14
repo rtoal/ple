@@ -1,7 +1,7 @@
 fn main() {
     let mut a = 5;
     {
-        let ref c = a;
+        let c = a;
     }
     borrow(&mut a);
     println!("Here is a: {}", a);
