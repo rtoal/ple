@@ -7,4 +7,8 @@ main(_) ->
   Dogs = [rex, sparky, spike],
   rex = hd(Dogs),
   [sparky, spike] = tl(Dogs),
-  3 = length(Dogs).
+  3 = length(Dogs),
+  98 = list_to_integer("98"),
+  22 = max(8, 22),
+  {10,20} = setelement(2, {10,30}, 20),
+  {{_,_,_}, {_,_,_}} = erlang:universaltime().
