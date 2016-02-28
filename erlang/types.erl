@@ -6,4 +6,5 @@ main(_) ->
   true = is_function(fun (X) -> X*X end),
   true = is_reference(make_ref()),
   true = is_tuple({dog,5,'G-SHEP'}),
-  true = is_list("a string").
+  true = is_list("a string"),
+  true = is_map(#{name => "Nika", breed => 'G-SHEP'}).
