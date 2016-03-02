@@ -5,6 +5,6 @@ main(_) ->
   true = is_float(-3.55e-8),
   true = is_function(fun (X) -> X*X end),
   true = is_reference(make_ref()),
-  true = is_tuple({dog,5,'G-SHEP'}),
+  true = is_tuple({dog, "Nika", 5, 'G-SHEP'}),
   true = is_list("a string"),
-  true = is_map(#{name => "Nika", breed => 'G-SHEP'}).
+  true = is_map(#{name => "Nika", age => 5, breed => 'G-SHEP'}).
