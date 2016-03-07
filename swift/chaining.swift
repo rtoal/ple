@@ -12,4 +12,3 @@ var a = Person(name: "Alice")
 var b = Person(name: "Bob", supervisor: a)
 assert(a.supervisor?.name == nil)
 assert(b.supervisor?.name == "Alice")
-
