@@ -1,8 +1,8 @@
 // e with acute accent
-let s1 = "\u{e9}"                 // precomposed character
-let s2 = "e\u{301}"               // e + combining accent
-assert(s1 == s2)                  // == is normalized
-assert(s2.characters.count == 1)  // Swift knows
+let s1 = "e\u{301}"               // e + combining acute accent
+let s2 = "\u{e9}"                 // the precomposed character
+assert(s1.characters.count == 1)  // Swift combines to count
+assert(s1 == s2)                  // == compares the characters
 
 // x in a circle
 let s = "x\u{20dd}"               // x + combining circle
