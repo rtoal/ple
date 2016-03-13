@@ -1,4 +1,4 @@
-import Darwin
+import Foundation
 
 func generatePermutations(inout a : [Character], upTo n: Int) {
     if n == 0 {
