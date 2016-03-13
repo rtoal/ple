@@ -2,31 +2,30 @@ import Foundation
 
 struct Vector: CustomStringConvertible {
 
-    let x: Double
-    let y: Double
+    let i: Double
+    let j: Double
 
     func magnititude() -> Double {
-        return sqrt(x * x + y * y)
+        return sqrt(i * i + j * j)
     }
 
     var description: String {
-        return "<\(x),\(y)>"
+        return "<\(i),\(j)>"
     }
 }
 
 func + (left: Vector, right: Vector) -> Vector {
-    return Vector(x: left.x + right.x, y: left.y + right.y)
+    return Vector(i: left.i + right.i, j: left.j + right.j)
 }
 
 func * (left: Vector, right: Vector) -> Double {
-    return left.x * right.x + left.y * right.y
+    return left.i * right.i + left.j * right.j
 }
 
-let u = Vector(x: 3, y: 4)
-let v = Vector(x: -5, y: 10)
-
-assert(u.x == 3)
-assert(u.y == 4)
+let u = Vector(i: 3, j: 4)
+let v = Vector(i: -5, j: 10)
+assert(u.i == 3)
+assert(u.j == 4)
 assert(u.magnititude() == 5)
 assert(String(u + v) == "<-2.0,14.0>")
 assert(u * v == 25)
