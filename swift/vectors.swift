@@ -5,11 +5,6 @@ struct Vector: CustomStringConvertible {
     let x: Double
     let y: Double
 
-    init(x: Double, y: Double){
-        self.x = x;
-        self.y = y;
-    }
-
     func magnititude() -> Double {
         return sqrt(x * x + y * y)
     }
