@@ -1,16 +1,16 @@
 interface A {
-    public static final int x = 1;
+    int X = 1;            // implicitly public static final
     default void f() {}
 }
 
 interface B {
-    public static final int x = 2;
+    int X = 2;            // implicitly public static final
     default void f() {}
 }
 
 // class C implements A, B { // WILL NOT COMPILE DUE TO f()
 //     public static void main(String[] args) {
-//         System.out.println(x); // WILL NOT COMPILE (x ambiguous)
+//         System.out.println(X); // WILL NOT COMPILE (X ambiguous)
 //         f();
 //     }
 // }
