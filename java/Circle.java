@@ -10,7 +10,7 @@ class Circle {
         this.r = r;
     }
 
-    public static Circle createCircle(double x, double y, double r) {
+    public static Circle create(double x, double y, double r) {
         return new Circle(x, y, r);
     }
 
@@ -21,5 +21,4 @@ class Circle {
     public static double area(double r) {
         return Math.PI * r * r;
     }
-
 }
