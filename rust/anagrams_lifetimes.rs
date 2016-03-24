@@ -3,7 +3,7 @@ use std::io::Write; // Needed for writing to stderr
 fn main() {
     let args = std::env::args();
     if args.len() != 2 {
-        let _ = writeln!(std::io::stderr(), "Please enter exactly one argument");
+        let _ = writeln!(std::io::stderr(), "Single argument required");
         std::process::exit(1);
     }
     if let Some(last_arg) = args.last() {
