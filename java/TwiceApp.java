@@ -1,14 +1,14 @@
 @FunctionalInterface
 interface Function {
-    double eval(double x);
+    double apply(double x);
 }
 
 public class TwiceApp {
     private static double twice(Function f, double x) {
-        return f.eval(f.eval(x));
+        return f.apply(f.apply(x));
     }
     public static void main(String[] args) {
-        System.out.println(twice((x)->x+2, 10));
-        System.out.println(twice((x)->x*x, 4));
+        assert twice((x)->x+2, 10) == 14;
+        assert twice(Math::floor, -11.77) == -12;
     }
 }
