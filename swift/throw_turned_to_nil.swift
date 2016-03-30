@@ -8,7 +8,8 @@ func third() throws -> Int {
 }
 
 func second() -> Int {
-    return (try? third()) ?? 5
+    let x: Int? = try? third()
+    return x ?? 6
 }
 
 func first() {
