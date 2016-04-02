@@ -1,13 +1,9 @@
 public class CovariantArrayDemo {
 
-    static class Animal {}
-    static class Dog extends Animal {}
-    static class Cat extends Animal {}
-
     public static void main(String[] args) {
-        Animal[] animals = new Dog[10];       // Covariance, hmmm
+        Animal[] animals = new Sheep[10];       // Covariance, sadly
         try {
-            animals[0] = new Cat();
+            animals[0] = new Cow("Bessie");
         } catch (ArrayStoreException e) {
             System.out.println("Runtime type checking!");
         }
