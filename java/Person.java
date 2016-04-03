@@ -5,7 +5,7 @@ class Person {
     private String name;
     private Optional<Person> boss;
 
-    public Person(String name, Optional<Person> boss) {
+    private Person(String name, Optional<Person> boss) {
         this.name = Objects.requireNonNull(name);
         this.boss = boss;
     }
