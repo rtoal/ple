@@ -1,9 +1,9 @@
 import java.util.List;
 import java.util.Arrays;
 
-public class NoiseDemo {
-    public static <T extends Animal> void chorus(List<T> animals) {
-        for (T animal : animals) {
+public class AnimalChorusApp {
+    public static void chorus(List<? extends Animal> animals) {
+        for (Animal animal : animals) {
             System.out.println(animal.speak());
         }
     }
