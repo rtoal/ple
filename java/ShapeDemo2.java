@@ -1,6 +1,6 @@
 interface Drawable {
-    void outline(Color outlineColor);
-    void fill(Color fillColor);
+    void outline(Color color);
+    void fill(Color color);
     default void render(Color outlineColor, Color fillColor) {
         fill(fillColor);
         outline(outlineColor);
@@ -10,6 +10,6 @@ interface Drawable {
 class Color {}
 
 public class ShapeDemo2 implements Drawable {
-    public void outline(Color outlineColor) {}
-    public void fill(Color fillColor) {}
+    public void outline(Color color) {}
+    public void fill(Color color) {}
 }
