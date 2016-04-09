@@ -4,21 +4,23 @@ public class Restaurant {
         Agent(String name) {
             super(name);
         }
-        void say(String message) {
-            System.out.printf("%s %s\n", currentThread().getName(), message);
+        void log(String action) {
+            synchronized (System.out) {
+                System.out.println(getName() + " " + action);
+            }
         }
-        void go(String message, int maxDelay) throws InterruptedException {
-            say(message);
-            Thread.sleep((int)Math.random() * maxDelay/2 + maxDelay/2);
+        void act(String action, int time) throws InterruptedException {
+            log(action);
+            Thread.sleep((int)(Math.random() * time/2 + time/2));
         }
     }
 
     public static void main(String[] args) {
         for (int i = 0; i < 3; i++) {
-            new Cook("Cook" + i).start();
+            new Cook("Cook-" + i).start();
         }
         for (int i = 0; i < 15; i++) {
-            new Customer("Customer" + i).start();
+            new Customer("Customer-" + i).start();
         }
     }
 }

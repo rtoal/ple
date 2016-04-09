@@ -8,28 +8,30 @@ public class Order {
 
     private String content;
     private Customer customer;
-    private Cook preparedBy;
+    private Cook cook;
 
-    Order(Customer customer, String content) {
+    private Order(Customer customer, String content) {
         this.customer = customer;
         this.content = content;
     }
 
-    boolean place() throws InterruptedException {
-        return orders.offer(this, 10, TimeUnit.SECONDS);
+    static boolean place(Customer customer, String content, int maxWait)
+            throws InterruptedException {
+        Order order = new Order(customer, content);
+        return orders.offer(order, maxWait, TimeUnit.MILLISECONDS);
     }
 
     static Order begin() throws InterruptedException {
         return orders.take();
     }
 
-    void finish() throws InterruptedException {
-        preparedBy = (Cook)Thread.currentThread();
+    void serve() throws InterruptedException {
+        cook = (Cook)Thread.currentThread();
         customer.serve(this);
     }
 
     @Override public String toString() {
-        return content + " for " + customer.getName() +
-            (preparedBy == null ? "" : " by " + preparedBy.getName());
+        return content + (cook == null ? " for " + customer.getName()
+                : " cooked by " + cook.getName());
     }
 }

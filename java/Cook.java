@@ -9,11 +9,11 @@ class Cook extends Restaurant.Agent {
         try {
             while (true) {
                 Order order = Order.begin();
-                go("cooking " + order, 12000);
-                order.finish();
+                act("cooking " + order, 12000);
+                order.serve();
             }
         } catch (InterruptedException e) {
-            say("got fired from the restaurant");
+            log("got fired from the restaurant");
         }
     }
 }

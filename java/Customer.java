@@ -2,28 +2,28 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.SynchronousQueue;
 
 public class Customer extends Restaurant.Agent {
-    private BlockingQueue<Order> meals = new SynchronousQueue<>();
+    private BlockingQueue<Order> meal = new SynchronousQueue<>();
 
     Customer(String name) {
         super(name);
     }
 
+    void serve(Order order) throws InterruptedException {
+        meal.put(order);
+    }
+
     @Override public void run() {
         try {
             for (int i = 0; i < 10; i++) {
-                if (new Order(this, "pancakes").place()) {
-                    Order order = meals.take();
-                    go("eating " + order, 20000);
+                if (Order.place(this, "pancakes", 7000)) {
+                    Order order = meal.take();
+                    act("eating " + order, 10000);
                 } else {
-                    go("can't place order, going shopping", 5000);
+                    act("can't place order, may return later", 5000);
                 }
             }
         } catch (InterruptedException e) {
-            say("in trouble, going home");
+            log("banished from restaurant");
         }
-    }
-
-    void serve(Order order) throws InterruptedException {
-        meals.put(order);
     }
 }
