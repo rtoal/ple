@@ -4,7 +4,8 @@
 (is (= (type 4/7) clojure.lang.Ratio))
 (is (= (type 5N) clojure.lang.BigInt))
 (is (= (type 5.88M) BigDecimal))
-(is (= (type "Hello") String))
+(is (= (type "Hello
+  World") String))
 (is (= (type \z) Character))
 (is (= (type false) Boolean))
 (is (= (type nil) nil))
