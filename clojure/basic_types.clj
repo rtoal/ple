@@ -10,7 +10,5 @@
 (is (= (type nil) nil))
 (is (= (type 'dog) clojure.lang.Symbol))
 (is (= (type :dog) clojure.lang.Keyword))
-
-; And of course....
 (is (= (type Long) java.lang.Class))
 (is (= (type java.lang.Class) java.lang.Class))
