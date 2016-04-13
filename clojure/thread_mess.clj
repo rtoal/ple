@@ -1,2 +1,2 @@
 (dotimes [i 10]
-  (->> (Thread. (fn [] (println (repeat i "*")))) .start))
+  (.start (Thread. (fn [] (println (repeat i "*"))))))
