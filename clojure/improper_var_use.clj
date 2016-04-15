@@ -10,11 +10,11 @@
 (println "BAD" x)
 
 (def y 0)
+(def lock (Object.))
 (def newlatch (java.util.concurrent.CountDownLatch. 10))
 (dotimes [i 10]
   (.start (Thread. (fn []
-    (dotimes [j 10] (locking y (def y (+ y 1))))
+    (dotimes [j 10] (locking lock (def y (+ y 1))))
     (.countDown newlatch)))))
 (.await newlatch)
 (println "GOOD" y)
-
