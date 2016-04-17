@@ -12,8 +12,19 @@
 (defmethod sound :sheep [s] "baaaa")
 
 (use 'clojure.test)
-(def s (horse "CJ"))
-(is (= (speak s) "CJ says neigh"))
+(def h (horse "CJ"))
+(is (= (speak h) "CJ says neigh"))
 (def c (cow "Bessie"))
 (is (= (speak c) "Bessie says moooo"))
 (is (= (speak (sheep "Little Lamb")) "Little Lamb says baaaa"))
+
+; Add a new kind of animal
+(defn dog [name] {:Animal :dog :name name})
+
+; Add a new method
+(defmulti emoji :Animal)
+(defmethod emoji :horse [h] "\uD83D\uDC0E")
+(defmethod emoji :cow [c] "\uD83D\uDC04")
+(defmethod emoji :sheep [s] "\uD83D\uDC11")
+(defmethod emoji :dog [d] "\uD83D\uDC15")
+(doseq [a [h c (sheep "Wooly") (dog "Spike")]] (println (emoji a)))
