@@ -1,6 +1,6 @@
 import Anagrams exposing (anagrams)
 import List exposing (map)
-import Signal exposing (Address)
+import Signal exposing (Address, message)
 import Html exposing (Html, Attribute, div, text, input)
 import Html.Attributes exposing (placeholder, value, maxlength)
 import Html.Events exposing (on, targetValue)
@@ -23,6 +23,6 @@ view address string =
       [ placeholder "Text to anagram"
       , value string
       , maxlength 6
-      , on "input" targetValue (Signal.message address)
+      , on "input" targetValue (message address)
       ]
       []) :: map (\s -> div [] [text s]) (anagrams string))

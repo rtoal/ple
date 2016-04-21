@@ -12,5 +12,6 @@ insertEverywhere x xs =
 permutations : List a -> List (List a)
 permutations = foldr (concatMap << insertEverywhere) [[]]
 
+anagrams : String -> List String
 anagrams s =
   s |> toList |> permutations |> map fromList
