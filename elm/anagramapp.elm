@@ -9,10 +9,11 @@ import StartApp.Simple as StartApp
 type alias Model = String
 type alias Action = String
 
+main : Signal Html
 main =
   StartApp.start { model = "", view = view, update = update }
 
-update: Action -> Model -> Model
+update : Action -> Model -> Model
 update new old =
   new
 
