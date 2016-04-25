@@ -1,4 +1,4 @@
-module Anagrams where
+module Anagrams(anagrams) where
 
 import String exposing (toList, fromList)
 import List exposing (concatMap, map, foldr)
