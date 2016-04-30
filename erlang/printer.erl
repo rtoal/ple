@@ -4,7 +4,6 @@
 print_server() ->
   receive
     shutdown ->
-      io:format("sgsdgsdgsd~n"),
       ok;
     N ->
       io:format("~p ", [N]),
