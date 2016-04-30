@@ -1,4 +1,4 @@
-% A reall % First line is ignored when running with escript
+% First line is ignored when running with escript
 main(_) ->
   X = 38,
 
