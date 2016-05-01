@@ -2,7 +2,7 @@
 -export([print_if_prime/2]).
 
 print_if_prime(N, Printer) ->
-  Check = fun Check(D) ->
+  (fun Check(D) ->
     if
       D * D > N ->
         Printer ! N;
@@ -11,5 +11,4 @@ print_if_prime(N, Printer) ->
       true ->
         Check(D+1)
     end
-  end,
-  Check(2).
+  end)(2).
