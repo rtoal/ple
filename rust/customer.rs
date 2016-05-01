@@ -4,15 +4,15 @@ use std::sync::mpsc::{channel,Sender,Receiver,SyncSender};
 use std::thread::JoinHandle;
 
 
-struct Customer {
-    tx: Sender<Order>,
-    rx: Receiver<Order>,
-    order_queue: SyncSender<Order>
+struct Customer <'a> {
+    tx: Sender<Order<'a>>,
+    rx: Receiver<Order<'a>>,
+    order_queue: SyncSender<Order<'a>>
 }
 
 
 
-impl Agent for Customer {
+impl <'a> Agent for Customer<'a> {
     fn run(&self) {
         let mut meals_eaten = 0;
         while meals_eaten < 10 {
@@ -31,7 +31,7 @@ impl Agent for Customer {
     }
 }
 
-impl Customer {
+impl <'a> Customer <'a> {
     fn serve(&self, order: Order) {
         if let Err(why) = self.tx.send(order) {
             panic!("Error serving customer: {}", why);

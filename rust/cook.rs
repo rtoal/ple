@@ -4,11 +4,11 @@ use std::thread::JoinHandle;
 use restaurant::Agent;
 use order::Order;
 
-struct Cook {
-    rx: Receiver<Order>
+struct Cook<'a> {
+    rx: Receiver<Order<'a>>
 }
 
-impl Cook {
+impl <'a> Cook<'a> {
     fn new(name: String, order_rx: Receiver<Order>) -> JoinHandle<()> {
         let c = Cook {
             rx: order_rx
@@ -18,7 +18,7 @@ impl Cook {
 
 }
 
-impl Agent for Cook {
+impl <'a> Agent for Cook<'a> {
     fn run(&self) {
         loop {
             if let Some(order) = Order::begin(self.rx) {

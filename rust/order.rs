@@ -4,14 +4,14 @@ use std::time::Instant;
 use std::sync::mpsc::{SyncSender,Receiver,sync_channel};
 use std::fmt;
 
-struct Order {
+struct Order<'a> {
     content: String,
-    customer: &Customer,
+    customer: &'a Customer<'a>,
     cook_name: Option<String>
 }
 
-impl Order {
-    fn new(customer: &Customer, content: String) -> Order {
+impl <'a> Order<'a> {
+    fn new(customer: &Customer, content: String) -> Order<'a> {
         Order {
             content: content,
             customer: customer,
@@ -41,7 +41,7 @@ impl Order {
     }
 }
 
-impl fmt::Display for Order {
+impl <'a> fmt::Display for Order<'a> {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         let attribute = match self.cook_name {
             Some(name) => format!("cooked by {}", name),
