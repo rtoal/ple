@@ -9,4 +9,4 @@ main(_) ->
         end
       end, lists:seq(1,B))
     end, lists:seq(1,C))
-  end, lists:seq(1,50)).
+  end, lists:seq(1,40)).
