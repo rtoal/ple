@@ -4,7 +4,7 @@ area({rectangle, W, L}) -> W * L.
 
 % Pattern matching in case expressions
 roll() ->
-  case {random:uniform(6), random:uniform(6)} of
+  case {rand:uniform(6), rand:uniform(6)} of
     {D, D} -> {"You rolled doubles", D+D};
     {X1, Y1} -> {"Uninteresting roll", X1+Y1}
   end.
