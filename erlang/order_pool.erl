@@ -1,4 +1,4 @@
--module(order_queue).
+-module(order_pool).
 -export([run/1]).
 
 run(Orders) ->
