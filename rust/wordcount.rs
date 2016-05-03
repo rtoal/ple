@@ -3,7 +3,7 @@ use std::io;
 use std::io::BufRead;
 
 fn main() {
-    let mut counts: BTreeMap<String, isize> = BTreeMap::new();
+    let mut counts: BTreeMap<String, u64> = BTreeMap::new();
     let stdin = io::stdin();
     for line_result in stdin.lock().lines() {
         match line_result {
