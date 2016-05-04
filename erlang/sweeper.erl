@@ -21,5 +21,5 @@ launch() ->
 main(_) ->
   register(launcher, spawn(fun () -> launch() end)),
   launcher ! start,
-  timer:sleep(10000),
+  timer:sleep(5000),
   io:format("~nSimulation over~n").
