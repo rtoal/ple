@@ -10,7 +10,8 @@ type Point struct {
 func ExampleStructs() {
     p := Point{8, 5, "green"}
     q := Point{Color: "blue", Y: -2.0}
-    r := struct{Name string; Ok bool}{"ABC", true}
-    fmt.Println(p, q, r, p.Y)
-    // Output: {8 5 green} {0 -2 blue} {ABC true} 5
+    var r Point
+    s := struct{Name string; Ok bool}{"ABC", true}
+    fmt.Println(p, q, r, s, p.Y)
+    // Output: {8 5 green} {0 -2 blue} {0 0 } {ABC true} 5
 }
