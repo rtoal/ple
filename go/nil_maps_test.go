@@ -6,13 +6,16 @@ func ExampleMapsWithNil() {
     var m1 map[string]int         // nil, immutable
     m2 := map[string]int{}        // A mutable empty map
 
-    fmt.Println(m1==nil, m2==nil, len(m1), len(m2))
+    fmt.Print(m1==nil, m2==nil, len(m1), len(m2))
 
     defer func() {
-        recover();
-        fmt.Println("Nil assignment")
+        if recovery := recover(); recovery != nil {
+            fmt.Println(" fail")
+        }
     }()
-    m1["A"] = 1
-    // Output: true false 0 0
-    // Nil assignment
+    m2["A"] = 1                   // acceptable
+    fmt.Print(" ok")
+    m1["A"] = 1                   // panics
+
+    // Output: true false 0 0 ok fail
 }
