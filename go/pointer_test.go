@@ -8,9 +8,9 @@ func mutateThroughPointer(a *[5]int, b *struct{x, y int}) {
 }
 
 func ExampleMutation() {
-    a := [5]int{0, 0, 0, 0, 0}
-    b := struct{x, y int}{1, 2}
-    mutateThroughPointer(&a, &b)
-    fmt.Println(a, b)
+    z := [5]int{0, 0, 0, 0, 0}
+    p := struct{x, y int}{1, 2}
+    mutateThroughPointer(&z, &p)
+    fmt.Println(z, p)
     // Output: [10 0 0 0 0] {5 2}
 }
