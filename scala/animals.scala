@@ -1,5 +1,5 @@
 abstract class Animal(name: String) {
-  def speak = name + " says " + sound
+  def speak = s"$name says $sound"
   def sound: String
 }
 
