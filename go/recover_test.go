@@ -9,7 +9,6 @@ func g() {
 }
 
 func f () {
-    // recover() should be used rarely, if at all, in practice.
     defer func() {
         fmt.Println("Cleaning up f")
         r := recover();
@@ -19,8 +18,13 @@ func f () {
     fmt.Println("This message will not be displayed")
 }
 
-func main() {
+func Example() {
     defer fmt.Println("Cleaning up main")
     f()
     fmt.Println("f completed normally")
+    // Output: Cleaning up g
+    // Cleaning up f
+    // Recovered the panic value "Oh no"
+    // f completed normally
+    // Cleaning up main
 }
