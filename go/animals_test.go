@@ -15,25 +15,19 @@ func speak(a Animal) string {
     return fmt.Sprintf("%s says %s", a.name, a.sound())
 }
 
-type Horse struct {
-    Animal
-}
+type Horse struct {}
 
 func (h Horse) sound() string {
     return "neigh"
 }
 
-type Cow struct {
-    Animal
-}
+type Cow struct {}
 
 func (c Cow) sound() string {
     return "moooo"
 }
 
-type Sheep struct {
-    Animal
-}
+type Sheep struct {}
 
 func (s Sheep) sound() string {
     return "baaaa"
@@ -45,8 +39,7 @@ func ExampleAnimals() {
     c := Animal{Cow{}, "Bessie"}
     fmt.Println(speak(c))
     fmt.Println(speak(Animal{Sheep{}, "Little Lamb"}))
-    // Output:
-    // CJ says neigh
+    // Output: CJ says neigh
     // Bessie says moooo
     // Little Lamb says baaaa
 }
