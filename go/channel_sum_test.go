@@ -12,7 +12,7 @@ func sum(a []int, ch chan int) {
 
 func Example() {
     var numbers [100000]int
-    for i := range(numbers) {
+    for i := range numbers {
         numbers[i] = i
     }
     ch := make(chan int, 2)
