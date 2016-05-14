@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func sum(a []int, ch chan int) {
+func sum(a []int, ch chan<- int) {
     result := 0
     for _, value := range a {
         result += value
