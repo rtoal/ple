@@ -15,6 +15,7 @@ go run primes.go && \
 go test nil_maps_test.go && \
 go test pointer_test.go && \
 go test recover_test.go && \
+go build restaurant/*.go && \
 go test shapes_test.go && \
 go test simple_types_test.go && \
 go test slice_test.go && \
