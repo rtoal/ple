@@ -10,8 +10,8 @@ func generateMessages(ch chan string, n int) {
 }
 
 func main() {
-	messages := make(chan string)
-	go generateMessages(messages, 3)
+	messages := make(chan string, 5)
+	go generateMessages(messages, 100)
 	for message := range messages {
 		fmt.Println(message)
 	}
