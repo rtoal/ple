@@ -4,7 +4,7 @@ let nextSquare = (() => {
     previous++;
     return previous * previous;
   }
-}());
+})();
 
 let assert = require('assert');
 assert(nextSquare() === 0);
