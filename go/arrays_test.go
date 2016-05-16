@@ -7,6 +7,6 @@ func ExampleArrays() {
     powers := [5]int{1, 2, 4, 8, 16}
     identity := [2][2]float64{{1,0},{0,1}}
 
-    fmt.Printf("%v %v %v", flags, powers, identity)
+    fmt.Println(flags, powers, identity)
     // Output: [false false false] [1 2 4 8 16] [[1 0] [0 1]]
 }
