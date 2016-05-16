@@ -8,6 +8,6 @@ reader.on('line', line => {
   }
 }).on('close', () => {
   for (let word of Array.from(counts.keys()).sort()) {
-    console.log(`${word}, ${counts.get(word)}`);
+    console.log(`${word} ${counts.get(word)}`);
   }
 });
