@@ -1,3 +1,4 @@
+#/usr/bin/env bash
 node anagrams.js rats | diff ../test/rats_heap_expected - && \
 node bad_constructor.js && \
 node binding.js && \
