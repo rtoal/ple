@@ -6,7 +6,7 @@ func generatePermutations(inout a : [Character], upTo n: Int) {
     } else {
         for i in 0..<n {
             generatePermutations(&a, upTo: n-1)
-            swap(&a[n % 2 == 0 ? i : 0], &a[n])
+            swap(&a[n % 2 == 0 ? 0 : i], &a[n])
         }
         generatePermutations(&a, upTo: n-1)
     }
