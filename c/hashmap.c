@@ -16,7 +16,7 @@ typedef struct _hashmap_t_ {
 } hashmap_t;
 
 
-hashmap_t* create_hash_map (int table_size) {
+hashmap_t* create_hash_map(int table_size) {
     hashmap_t *new_table;
 
     if (table_size < 1)
@@ -39,9 +39,10 @@ hashmap_t* create_hash_map (int table_size) {
 
 /*
   Generates a hash for the string between 0 and max.
-  Uses the Fowler–Noll–Vo hash function: http://en.wikipedia.org/wiki/Fowler–Noll–Vo_hash_function
+  Uses the Fowler–Noll–Vo hash function:
+  http://en.wikipedia.org/wiki/Fowler–Noll–Vo_hash_function
 */
-int hash_string (const char* str, int max) {
+int hash_string(const char* str, int max) {
     const uint64_t FNV_offset_basis = 0xcbf29ce484222325;
     const uint64_t FNV_prime = 0x100000001b3;
     uint64_t hash = FNV_offset_basis;
@@ -54,9 +55,10 @@ int hash_string (const char* str, int max) {
 }
 
 /*
-  Looks up a string, and returns a pointer to the count if it is found, else, it returns NULL
+  Looks up a string, and returns a pointer to the count
+  if it is found, else returns NULL.
 */
-int* lookup_val (const char *str, hashmap_t* ht) {
+int* lookup_val(const char *str, hashmap_t* ht) {
     int str_hash = hash_string(str, ht->table_size);
 
     for (node_t *n = ht->table[str_hash]; n != NULL; n = n->next) {
@@ -69,9 +71,9 @@ int* lookup_val (const char *str, hashmap_t* ht) {
 }
 
 /*
-  Adds a string to the hashmap. Returns a bool for success
+  Adds a string to the hashmap. Returns a bool for success.
 */
-bool add_val (const char *str, int value, hashmap_t* ht) {
+bool add_val(const char *str, int value, hashmap_t* ht) {
     node_t *new_node = malloc(sizeof(node_t));
     if (new_node == NULL) return false;
 
@@ -90,26 +92,19 @@ bool add_val (const char *str, int value, hashmap_t* ht) {
     return true;
 }
 
-/*
-  Simple node comparator
-*/
-int node_compare (const void *p1, const void *p2) {
+int node_compare(const void *p1, const void *p2) {
     node_t *n1 = *(node_t**)p1;
     node_t *n2 = *(node_t**)p2;
     return strcmp(n1->string, n2->string);
 }
 
-/*
-  Allocates a new array and puts pointers to the node_ts in it.
-*/
-node_t** to_sorted_array (const hashmap_t* ht) {
+node_t** to_sorted_array(const hashmap_t* ht) {
     node_t **result = malloc(sizeof(node_t*) * ht->size);
     node_t **p = result;
 
     for (int i = 0; i < ht->table_size; i++) {
         node_t *n = ht->table[i];
         while (n != NULL) {
-            // printf("%s\n", n->string);
             *p++ = n;
             n = n->next;
         }
