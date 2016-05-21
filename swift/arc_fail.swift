@@ -1,9 +1,8 @@
-var (initCount, deinitCount) = (0, 0)
-
 class Person {
     var name: String
     var boss: Person?
-    var assistant: Person?
+    var assistant: Person?   // CAUSES A MEMORY LEAK
+
     init(name: String, boss: Person? = nil) {
         initCount += 1
         self.name = name
@@ -20,6 +19,6 @@ func main() {
     alice.assistant = bob
 }
 
+var (initCount, deinitCount) = (0, 0)
 main()
-print(initCount, deinitCount)
 assert(initCount == 2 && deinitCount == 0)
