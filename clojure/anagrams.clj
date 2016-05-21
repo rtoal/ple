@@ -9,7 +9,7 @@
       (if (< i n)
         (do
           (generatePermutations a (dec n))
-          (recur (inc i) (swap a (if (even? n) i 0) n)))
+          (recur (inc i) (swap a (if (even? n) 0 i) n)))
         (generatePermutations a (dec n))))))
 
 (if (not= (count *command-line-args*) 1)
