@@ -5,21 +5,18 @@ class C {
     deinit {history.append("deinit")}
 }
 
-func f(c: C) {
-    history.append("enter f")
-    let x = c
-    print(x)
-    history.append("exit f")
-}
+func f(c: C) {               // 3. count==2
+    history.append("f")
+    print(c)
+    history.append("/f")
+}                            // 4. c out of scope, count == 1
 
 func main() {
-    history.append("enter main")
-    let c = C()
-    f(c)
-    history.append("exit main")
-}
+    history.append("main")
+    let x = C()              // 1. object created, count==1
+    f(x)                     // 2. reference passed
+    history.append("/main")
+}                            // 5. x out of scope, count == 0
 
-history.append("begin script")
 main()
-history.append("end script")
-print(history)
+assert(history == ["main", "init", "f", "/f", "/main", "deinit"])
