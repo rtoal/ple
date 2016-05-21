@@ -6,11 +6,12 @@ void generatePermutations(char* s, int n) {
   if (n == 0) {
     std::cout << s << std::endl;
   } else {
-    for (int i = 0; i <= n; i++) {
+    for (int i = 0; i < n; i++) {
       generatePermutations(s, n-1);
-      int j = n % 2 == 0 ? i : 0;
+      int j = n % 2 == 0 ? 0 : i;
       std::swap(s[j], s[n]);
     }
+    generatePermutations(s, n-1);
   }
 }
 
