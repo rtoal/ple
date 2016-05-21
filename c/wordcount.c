@@ -1,14 +1,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 #include "hashmap.c"
 
 #define READ_BUF_LEN 512
 #define HASHMAP_SIZE 1024
 
-/*
-  Normalizes case to lowercase
-*/
 void to_lower_case (char *str) {
     while (*str) {
         *str = tolower(*str);
