@@ -3,13 +3,13 @@
 
 (defn generatePermutations [v n]
   (if (zero? n)
-    (println (apply str v))
+    (do (println (apply str v)) v)
 
     (loop [i 0 a v]
       (if (< i n)
         (do
-          (generatePermutations a (dec n))
-          (recur (inc i) (swap a (if (even? n) 0 i) n)))
+          (let [a (generatePermutations a (dec n))]
+          (recur (inc i) (swap a (if (even? n) 0 i) n))))
         (generatePermutations a (dec n))))))
 
 (if (not= (count *command-line-args*) 1)
