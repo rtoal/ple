@@ -4,14 +4,15 @@ def swap(a: Array[Char], i: Int, j: Int) {
   a(j) = saved
 }
 
-def generatePermutations(n: Int, a: Array[Char]) {
+def generatePermutations(a: Array[Char], n: Int) {
   if (n == 0) {
     println(String.valueOf(a))
   } else {
-    for (i <- 0 to n) {
-      generatePermutations(n-1, a)
-      swap(a, if (n % 2 == 0) i else 0, n)
+    for (i <- 0 until n) {
+      generatePermutations(a, n-1)
+      swap(a, if (n % 2 == 0) 0 else i, n)
     }
+    generatePermutations(a, n-1)
   }
 }
 
@@ -20,4 +21,4 @@ if (args.length != 1) {
   sys.exit(1)
 }
 var word = args(0)
-generatePermutations(word.length-1, word.toCharArray)
+generatePermutations(word.toCharArray, word.length-1)
