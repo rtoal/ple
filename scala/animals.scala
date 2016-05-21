@@ -16,7 +16,7 @@ class Sheep(name: String) extends Animal(name) {
 }
 
 var h = new Horse("CJ")
-println(h.speak)
+assert(h.speak == "CJ says neigh")
 var c = new Cow("Bessie")
-println(c.speak)
-println(new Sheep("Little Lamb").speak)
+assert(c.speak == "Bessie says moooo")
+assert(new Sheep("Little Lamb").speak == "Little Lamb says baaaa")
