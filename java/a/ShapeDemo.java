@@ -5,7 +5,7 @@ interface Drawable {
 
 class Color {}
 
-public class ShapeDemo1 implements Drawable {
+public class ShapeDemo implements Drawable {
     public void outline(Color color) {}
     public void fill(Color color) {}
 }
