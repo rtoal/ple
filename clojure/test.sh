@@ -10,9 +10,12 @@ clj count_and_conj.clj && \
 clj division.clj && \
 clj energy.clj && \
 clj fib.clj && \
+clj hints.clj && \
 clj improper_var_use.clj && \
+clj incorrect_factorial.clj && \
 clj infix.clj && \
 clj more_collection_examples.clj && \
+clj mystery.clj && \
 clj namespace_example.clj && \
 clj or.clj && \
 clj overflow.clj && \
