@@ -3,7 +3,6 @@ javac *.java && \
 javac a/*.java && \
 javac b/*.java && \
 java -ea AnagramApp rats | diff ../test/rats_heap_expected - && \
-java -ea AnagramApp && \
 java -ea AnimalChorusApp && \
 java -ea AnimalsApp && \
 java -ea CircleApp && \
@@ -18,7 +17,7 @@ java -ea RaceConditionDemo && \
 java -ea ReflectionExample && \
 java -ea SheepAdder && \
 java -ea ThreeIsFive && \
-java -ea TraditionalWordCountApp < ../test/wordcount_ascii_input | diff ../test/wordcount_ascii_expected -
+java -ea TraditionalWordCountApp < ../test/wordcount_ascii_input | diff ../test/wordcount_ascii_expected - && \
 java -ea TripleApp | diff ../test/triple_expected - && \
 java -ea TwiceApp && \
 java -ea TypeExperiment && \
