@@ -16,14 +16,15 @@ void generatePermutations(List<String> word, [int index]) {
     if (index == null) {
       index = word.length - 1;
     }
-    for (var i = 0; i <= index; i++) {
+    for (var i = 0; i < index; i++) {
       generatePermutations(word, index - 1);
       var swap = (list, left, right) {
         var saved = list[left];
         list[left] = list[right];
         list[right] = saved;
       };
-      swap(word, index % 2 == 0 ? i : 0, index);
+      swap(word, index % 2 == 0 ? 0 : i, index);
     }
+    generatePermutations(word, index - 1);
   }
 }

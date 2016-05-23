@@ -3,10 +3,9 @@ void main() {
   (() {
     var a = 100;   // Local declaration, global a is safe!
     b = 200;       // Unlike javascript, dart won't overwrite global variables - this is a runtime error
-    d = 300;       
     var e = 400;   // Local, will not exist after return
   }());
-  print("$a $b $c $d");
+  print("$a $b $c");
   try {
     print(e);
   } catch (error) {
