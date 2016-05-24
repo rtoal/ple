@@ -3,7 +3,7 @@ escript anagrams.erl rats | diff ../test/rats_recursive_expected - && \
 escript bifs.erl && \
 escript catches.erl && \
 escript clockhands.erl && \
-erlc cook.erl && erlc customer.erl && erlc order_pool.erl && \
+erlc counter.erl && erlc cook.erl && erlc customer.erl && erlc order_pool.erl && \
 escript countdown.erl && \
 escript destructure.erl && \
 escript factorial.erl && \
