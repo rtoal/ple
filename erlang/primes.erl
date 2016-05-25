@@ -6,7 +6,7 @@ main(_) ->
     fun (N) ->
       spawn(prime_checker, is_prime, [N, Printer])
     end,
-    lists:seq(2, 1000)),
+    lists:seq(2, Max)),
   wait(Max-1).
 
 wait(0) -> io:format("~n");

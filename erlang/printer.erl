@@ -3,10 +3,10 @@
 
 print_server(Observer) ->
   receive
-    false ->
-      Observer ! false;
-    N ->
+    N when is_integer(N) ->
       io:format("~p ", [N]),
-      Observer ! true
+      Observer ! true;
+    _ ->
+      Observer ! false
   end,
   print_server(Observer).
