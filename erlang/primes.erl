@@ -8,4 +8,4 @@ main(_) ->
       spawn(prime_printer, print_if_prime, [N, Printer, Counter])
     end,
     lists:seq(2, Max)),
-  receive done -> io:format("done~n") end.
+  receive done -> io:format("~n") end.
