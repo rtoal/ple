@@ -1,9 +1,12 @@
 -module(printer).
--export([print_server/0]).
+-export([print_server/1]).
 
-print_server() ->
+print_server(Observer) ->
   receive
+    false ->
+      Observer ! false;
     N ->
       io:format("~p ", [N]),
-      print_server()
-  end.
+      Observer ! true
+  end,
+  print_server(Observer).
