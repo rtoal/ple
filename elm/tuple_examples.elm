@@ -11,7 +11,6 @@ magnitude v =
   let (x, y) = v in
     sqrt(x * x + y * y)
 
-main : Program Never
 main =
   runSuite <| suite "Tuples"
     [ test "Value Semantics for =" ((6,8) `assertEqual` (7-1,4*2))
