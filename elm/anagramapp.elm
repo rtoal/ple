@@ -1,29 +1,25 @@
 import Anagrams exposing (anagrams)
 import List exposing (map)
-import Signal exposing (Address, message)
-import Html exposing (Html, Attribute, div, text, input)
+import Html exposing (div, text, input)
 import Html.Attributes exposing (placeholder, value, maxlength)
-import Html.Events exposing (on, targetValue)
-import StartApp.Simple as StartApp
+import Html.Events exposing (onInput, targetValue)
+import Html.App as Html
 
 type alias Model = String
-type alias Action = String
+type alias Msg = String
 
-main : Signal Html
 main =
-  StartApp.start { model = "", view = view, update = update }
+  Html.beginnerProgram { model = "", view = view, update = update }
 
-update : Action -> Model -> Model
-update new old =
-  new
+update message model =
+  message
 
-view : Address Action -> Model -> Html
-view address string =
+view model =
   div []
     ((input
       [ placeholder "Text to anagram"
-      , value string
+      , value model
       , maxlength 6
-      , on "input" targetValue (message address)
+      , onInput (\s -> s)
       ]
-      []) :: map (\s -> div [] [text s]) (anagrams string))
+      []) :: map (\s -> div [] [text s]) (anagrams model))
