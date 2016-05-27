@@ -1,4 +1,4 @@
-module Exp where
+module Exp exposing (..)
 
 type Exp
   = Num {value: Float}

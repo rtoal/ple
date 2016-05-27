@@ -1,4 +1,4 @@
-module Shapes where
+module Shapes exposing (..)
 
 type Shape
   = Circle Float
