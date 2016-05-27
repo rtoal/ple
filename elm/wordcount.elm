@@ -1,8 +1,8 @@
 import Regex exposing (regex, find)
-import List exposing (map, foldl)
+import List exposing (map, foldl, repeat)
 import Dict exposing (Dict, insert, get, toList)
 import String exposing (toLower)
-import Graphics.Element exposing (show, flow, down)
+import Html exposing (text, div)
 import Maybe exposing (withDefault)
 
 message =
@@ -17,5 +17,5 @@ main =
     |> map (.match >> toLower)
     |> foldl countWord Dict.empty
     |> toList
-    |> map show
-    |> flow down
+    |> map (div [] << repeat 1 << text << toString)
+    |> div []
