@@ -1,7 +1,5 @@
-import Graphics.Element exposing (Element, show, flow, down)
+import ElmTest exposing (suite, defaultTest, runSuite, assertEqual)
 import List exposing (map)
-
---import ElmTest exposing (elementRunner, suite, test, assertEqual)
 
 type Kind = Cow | Horse | Sheep
 
@@ -26,9 +24,8 @@ cow n = {name = n, kind = Cow}
 sheep n = {name = n, kind = Sheep}
 
 main =
-  flow down <| map show
-    [ (let h = horse("CJ") in speak h)
-    , (let c = cow("Bessie") in speak c)
-    , speak(sheep("Little Lamb"))
+  runSuite <| suite "Animal Tests"
+    [ defaultTest <| "CJ says neigh" `assertEqual` (let h = horse("CJ") in speak h)
+    , defaultTest <| "Bessie says moooo" `assertEqual` (let c = cow("Bessie") in speak c)
+    , defaultTest <| "Little Lamb says baaaa" `assertEqual` speak(sheep("Little Lamb"))
     ]
-
