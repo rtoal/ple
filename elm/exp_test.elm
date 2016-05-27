@@ -7,7 +7,7 @@ main =
     e2 = Unary { op = negate, operand = e1 }
     e3 = Binary { op = (*), left = e2, right = e1 }
   in
-    elementRunner <| suite "Expression evaluation"
+    runSuite <| suite "Expression evaluation"
       [ defaultTest <| 5.0 `assertEqual` eval(e1)
       , defaultTest <| -5.0 `assertEqual` eval(e2)
       , defaultTest <| -25.0 `assertEqual` eval(e3)

@@ -1,5 +1,5 @@
 import List exposing (map, sum, foldr)
-import ElmTest exposing (elementRunner, suite, defaultTest, assertEqual)
+import ElmTest exposing (runSuite, suite, defaultTest, assertEqual)
 
 type Tree a
   = Empty
@@ -28,7 +28,7 @@ main =
     t2 = Node 17 [Node 31 [], Node 53 []]
     t3 = Node 41 [t2, t2, Empty, Node 3 []]
   in
-    elementRunner <| suite "Demonstrate Trees" <| map defaultTest
+    runSuite <| suite "Demonstrate Trees" <| map defaultTest
       [ 0 `assertEqual` size t0
       , 1 `assertEqual` size t1
       , 3 `assertEqual` size t2
