@@ -1,4 +1,4 @@
-import ElmTest exposing (elementRunner, suite, defaultTest, assertEqual)
+import ElmTest exposing (suite, defaultTest, runSuite, assertEqual)
 import Exp exposing (Exp(Num, Unary, Binary), eval)
 
 main =
