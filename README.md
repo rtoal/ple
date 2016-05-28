@@ -4,10 +4,10 @@ Source code for the examples in a forthcoming book.
 
 See the `test.sh` files within the individual directories to see how to build and run the examples, most of which are scripts with internal assertions.
 
-The examples here have been tested on the following platforms:
+The examples here have been tested on a Mac running OS X using the following language implementations and versions:
 
 <table>
-<tr><th>Language<td>Version<td>Notes
+<tr><th>Language<th>Version<th>Notes
 <tr><td>C<td><td>
 <tr><td>Clojure<td>1.8.0<td>
 <tr><td>CoffeeScript<td>1.10.0<td>(Run under Node 6.2.0)
