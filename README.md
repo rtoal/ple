@@ -12,33 +12,42 @@ The examples here have been tested on a Mac running OS X using the following lan
 <tr><td>C#<td><td>
 <tr><td>Clojure
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/clojure-logo.png"><td>1.8.0<td>
-<tr><td>CoffeeScript<td>1.10.0<td>(Run under Node 6.2.0)
+<tr><td>CoffeeScript
+    <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/coffeescript-logo.png"><td>1.10.0<td>(Run under Node 6.2.0)
 <tr><td>C++<td><td>Apple LLVM version 7.3.0 (clang-703.0.31)
-<tr><td>Dart<td>1.16.0<td>
+<tr><td>Dart
+    <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/dart-logo.png"><td>1.16.0<td>
 <tr><td>Elm
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/elm-logo.png"><td>0.17.0<td>
 <tr><td>Erlang<td>Erlang/OTP 18<td>
 <tr><td>F#<td><td>
 <tr><td>Fortran<td>GNU Fortran (GCC) 6.1.0<td>
-<tr><td>Go<td>1.6.2<td>
+<tr><td>Go
+    <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/go-logo.png"><td>1.6.2<td>
 <tr><td>Haskell
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/haskell-logo.png"><td><td>
-<tr><td>Java<td>1.8.0_66<td>
+<tr><td>Java
+    <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/java-logo.png"><td>1.8.0_66<td>
 <tr><td>JavaScript
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/javascript-logo.png"><td>Node 6.2.0<td>
-<tr><td>Julia<td>0.4.5<td>
-<tr><td>K<td>Kona Win.3.39-69<td>Kona is an open source version of K
-<tr><td>Lua<td>5.3.2<td>
+<tr><td>Julia
+    <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/julia-logo.png"><td>0.4.5<td>
+<tr><td>K
+    <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/k-logo.png"><td>Kona Win.3.39-69<td>Kona is an open source version of K
+<tr><td>Lua
+    <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/lua-logo.png"><td>5.3.2<td>
 <tr><td>Nasm<td>2.12.01<td>
 <tr><td>Nim
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/nim-logo.png"><td>2.12.01<td>
-<tr><td>OCaml<td><td>
+<tr><td>OCaml
+    <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/ocaml-logo.png"><td><td>
 <tr><td>Prolog<td><td>
 <tr><td>Python
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/python-logo.png"><td>3.5.1<td>
 <tr><td>Ruby
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/ruby-logo.png"><td>2.3.1<td>
-<tr><td>Rust<td>1.9.0<td>
+<tr><td>Rust
+    <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/rust-logo.png"><td>1.9.0<td>
 <tr><td>Scala
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/scala-logo.png"><td>2.11.8<td>
 <tr><td>Smalltalk<td><td>
