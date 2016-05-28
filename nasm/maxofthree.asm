@@ -6,9 +6,9 @@
 ; Note that the parameters have already been passed in rdi,
 ; rsi, and rdx.  We just have to return the value in rax.
 
-        global  maxofthree
+        global  _maxofthree
         section .text
-maxofthree:
+_maxofthree:
         mov     rax, rdi        ; result (rax) initially holds x
         cmp     rax, rsi        ; is x less than y?
         cmovl   rax, rsi        ; if so, set result to y
