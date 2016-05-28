@@ -1,9 +1,6 @@
-import Html exposing (Html, text, div)
-import Html.Attributes exposing (style)
+import Html exposing (Html, img)
+import Html.Attributes exposing (style, src)
 import Html.App as App
-import Collage exposing (collage, move, circle, filled)
-import Element exposing (toHtml)
-import Color exposing (green)
 import Mouse
 
 main =
@@ -17,12 +14,12 @@ main =
 type alias Model =
   { x : Int
   , y : Int
-  , radius : Int
+  , image : String
   }
 
 init : (Model, Cmd Msg)
 init =
-  ({x = 0, y = 0, radius = 20}, Cmd.none)
+  ({x = 0, y = 0, image = "js"}, Cmd.none)
 
 type Msg
   = Down
@@ -33,9 +30,9 @@ update: Msg -> Model -> (Model, Cmd Msg)
 update msg model =
   case msg of
     Down ->
-      ({model | radius = 25}, Cmd.none)
+      ({model | image = "elm"}, Cmd.none)
     Up ->
-      ({model | radius = 20}, Cmd.none)
+      ({model | image = "js"}, Cmd.none)
     MoveTo x y ->
       ({model | x = x, y = y}, Cmd.none)
 
@@ -49,11 +46,12 @@ subscriptions model =
 
 view: Model -> Html Msg
 view model =
-  div
+  img
     [ style
       [ ("position", "absolute")
-      , ("left", toString model.x ++ "px")
-      , ("top", toString model.y ++ "px")
+      , ("left", toString (model.x+2) ++ "px")
+      , ("top", toString (model.y+2) ++ "px")
       ]
+    , src (model.image ++ "-logo.png")
     ]
-  [text "HELLO"]
+    []
