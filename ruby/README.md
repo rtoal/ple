@@ -1,9 +1,15 @@
 # Ruby Examples
 
+To get Ruby:
+
+```
+brew install ruby
+```
+
 To run the tests:
 
 ```
-ruby run_tests.rb
+./test.sh
 ```
 
 # Ruby Resources
