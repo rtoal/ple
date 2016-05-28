@@ -1,4 +1,4 @@
-import Html exposing (text, div)
+import Html exposing (text, ul, li)
 import List exposing (map, concatMap, filterMap, repeat)
 
 main =
@@ -6,5 +6,5 @@ main =
     [1..c-1] |> concatMap (\b ->
       [1..b-1] |> filterMap (\a ->
         (if a*a+b*b==c*c then Just (a,b,c) else Nothing))))
-    |> map (toString >> text >> repeat 1 >> div [])
-    |> div []
+    |> map (toString >> text >> repeat 1 >> li [])
+    |> ul []
