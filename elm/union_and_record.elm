@@ -5,6 +5,4 @@ type Widget
 
 p : Person
 p = Person { name = "Alice", id = 239 }
--- We now cannot say
--- w : Widget
--- w = p
+-- w : Widget; w = p -- would be a syntax error now.
