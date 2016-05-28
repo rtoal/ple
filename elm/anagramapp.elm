@@ -3,13 +3,13 @@ import List exposing (map)
 import Html exposing (div, text, input)
 import Html.Attributes exposing (placeholder, value, maxlength)
 import Html.Events exposing (onInput, targetValue)
-import Html.App as Html
+import Html.App as App
 
 type alias Model = String
 type Message = ChangeTo String
 
 main =
-  Html.beginnerProgram { model = "", view = view, update = update }
+  App.beginnerProgram { model = "", view = view, update = update }
 
 update (ChangeTo newModel) model =
   newModel
