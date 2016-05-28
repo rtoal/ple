@@ -8,21 +8,25 @@ The examples here have been tested on a Mac running OS X using the following lan
 
 <table>
 <tr><th>Language<th>Version<th>Notes
-<tr><td>C<td><td>
+<tr><td>C<td>c11<td>Apple LLVM version 7.3.0 (clang-703.0.31)
+<tr><td>C#<td><td>
 <tr><td>Clojure<td>1.8.0<td>
 <tr><td>CoffeeScript<td>1.10.0<td>(Run under Node 6.2.0)
-<tr><td>C++<td><td>
+<tr><td>C++<td><td>Apple LLVM version 7.3.0 (clang-703.0.31)
 <tr><td>Dart<td>1.16.0<td>
 <tr><td>Elm<td>0.17.0<td>
-<tr><td>Erlang<td>Erlang/OTP 18 [erts-7.3]<td>
-<tr><td>Fortran<td><td>
+<tr><td>Erlang<td>Erlang/OTP 18<td>
+<tr><td>F#<td><td>
+<tr><td>Fortran<td>GNU Fortran (GCC) 6.1.0<td>
 <tr><td>Go<td>1.6.2<td>
+<tr><td>Haskell<td><td>
 <tr><td>Java<td>1.8.0_66<td>
 <tr><td>JavaScript<td>Node 6.2.0<td>
 <tr><td>Julia<td>0.4.5<td>
 <tr><td>K<td>Kona Win.3.39-69<td>Kona is an open source version of K
 <tr><td>Lua<td>5.3.2<td>
-<tr><td>Nasm<td><td>
+<tr><td>Nasm<td>2.12.01<td>
+<tr><td>Nim<td>2.12.01<td>
 <tr><td>OCaml<td><td>
 <tr><td>Prolog<td><td>
 <tr><td>Python<td>3.5.1<td>
