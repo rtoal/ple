@@ -16,9 +16,10 @@ fn generate_permutations(n: usize, a: &mut Vec<char>) {
     if n == 0 {
         println!("{}", a.clone().into_iter().collect::<String>());
     } else {
-        for i in 0..n+1 {
+        for i in 0..n {
             generate_permutations(n - 1, a);
-            a.swap(if n % 2 == 0 { i } else { 0 }, n);
+            a.swap(if n % 2 == 0 { 0 } else { i }, n);
         }
+        generate_permutations(n - 1, a);
     }
 }
