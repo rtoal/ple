@@ -1,10 +1,2 @@
-animals
-binding
-borrow_fixed
-circle
-safe_string_sort
-static_or_dynamic_scope
-triple
-wordcount
-anagrams
-anagrams-heap
+target
+Cargo.lock

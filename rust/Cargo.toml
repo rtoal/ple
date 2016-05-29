@@ -1,0 +1,8 @@
+[package]
+name = "rust-examples"
+version = "0.0.1"
+authors = ["example@example.com"]
+description = "A collection of Rust examples"
+
+[dependencies]
+regex = "0.1"
