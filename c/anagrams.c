@@ -23,7 +23,7 @@ void generate_permutations(char* a, int n) {
 int main(int argc, const char* argv[]) {
 
     if (argc != 2) {
-        fprintf(stderr, "Need exactly one argument!\n");
+        fprintf(stderr, "Exactly one argument is required\n");
         return 1;
     }
 
