@@ -1,16 +1,21 @@
 #/usr/bin/env bash
 
-# The Rust directory is highly experimental. It needs to be cleaned up badly.
-
-rustc anagrams.rs && ./anagrams rats | diff ../test/rats_heap_expected - && \
-rustc animals.rs && ./animals && \
-rustc binding.rs && ./binding && \
-rustc borrow_fixed.rs && ./borrow_fixed && \
-rustc circle.rs && ./circle && \
-rustc safe_string_sort.rs && ./safe_string_sort && \
-rustc static_or_dynamic_scope.rs && ./static_or_dynamic_scope && \
-rustc triple.rs | ./triple | diff ../test/triple_expected - && \
-rustc wordcount.rs && ./wordcount < ../test/wordcount_ascii_input | diff ../test/wordcount_ascii_expected -
+cargo build && \
+target/debug/anagrams rats | diff ../test/rats_heap_expected - && \
+target/debug/anagrams_lifetimes rats | diff ../test/rats_heap_expected - && \
+target/debug/animals && \
+target/debug/animals_improved_deriving && \
+target/debug/animals_improved_generics && \
+target/debug/animals_improved_oo && \
+target/debug/animals_improved_overload && \
+target/debug/binding && \
+target/debug/borrow_fixed && \
+target/debug/circle_new && \
+target/debug/safe_string_sort && \
+target/debug/static_or_dynamic_scope && \
+target/debug/triple | diff ../test/triple_expected - && \
+target/debug/unsafe_string_sort && \
+target/debug/wordcount < ../test/wordcount_ascii_input | diff ../test/wordcount_ascii_expected -
 
 if [ $? -ne 0 ]; then
     echo
