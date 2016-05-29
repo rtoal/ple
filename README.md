@@ -10,17 +10,24 @@ The examples here have been tested on a Mac running OS X using the following lan
 <tr><th>Language<th>Version<th>Notes
 <tr><td>C<td>c11<td>Apple LLVM version 7.3.0 (clang-703.0.31)
 <tr><td>C#<td><td>
+<tr><td>C++<td><td>Apple LLVM version 7.3.0 (clang-703.0.31)
+<tr><td>Chapel
+    <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/chapel-logo.png"><td><td>
 <tr><td>Clojure
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/clojure-logo.png"><td>1.8.0<td>
 <tr><td>CoffeeScript
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/coffeescript-logo.png"><td>1.10.0<td>(Run under Node 6.2.0)
-<tr><td>C++<td><td>Apple LLVM version 7.3.0 (clang-703.0.31)
 <tr><td>Dart
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/dart-logo.png"><td>1.16.0<td>
+<tr><td>Elixir
+    <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/elixir-logo.png"><td><td>
 <tr><td>Elm
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/elm-logo.png"><td>0.17.0<td>
-<tr><td>Erlang<td>Erlang/OTP 18<td>
-<tr><td>F#<td><td>
+<tr><td>Erlang
+    <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/erlang-logo.png"><td>Erlang/OTP 18<td>
+<tr><td>Factor<td><td>
+<tr><td>F#
+    <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/fsharp-logo.png"><td><td>
 <tr><td>Fortran<td>GNU Fortran (GCC) 6.1.0<td>
 <tr><td>Go
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/go-logo.png"><td>1.6.2<td>
@@ -36,7 +43,8 @@ The examples here have been tested on a Mac running OS X using the following lan
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/k-logo.png"><td>Kona Win.3.39-69<td>Kona is an open source version of K
 <tr><td>Lua
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/lua-logo.png"><td>5.3.2<td>
-<tr><td>Nasm<td>2.12.01<td>
+<tr><td>Nasm<
+    <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/nasm-logo.png">td>2.12.01<td>
 <tr><td>Nim
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/nim-logo.png"><td>2.12.01<td>
 <tr><td>OCaml
