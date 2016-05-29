@@ -17,14 +17,22 @@ type alias Model =
   , image : String
   }
 
-init : (Model, Cmd Msg)
-init =
-  ({x = 0, y = 0, image = "js"}, Cmd.none)
-
 type Msg
   = Down
   | Up
   | MoveTo Int Int
+
+init : (Model, Cmd Msg)
+init =
+  ({x = 0, y = 0, image = "js"}, Cmd.none)
+
+subscriptions : Model -> Sub Msg
+subscriptions model =
+  Sub.batch
+    [ Mouse.moves (\{x, y} -> MoveTo x y)
+    , Mouse.downs (\_ -> Down)
+    , Mouse.ups (\_ -> Up)
+    ]
 
 update: Msg -> Model -> (Model, Cmd Msg)
 update msg model =
@@ -35,14 +43,6 @@ update msg model =
       ({model | image = "js"}, Cmd.none)
     MoveTo x y ->
       ({model | x = x, y = y}, Cmd.none)
-
-subscriptions : Model -> Sub Msg
-subscriptions model =
-  Sub.batch
-    [ Mouse.moves (\{x, y} -> MoveTo x y)
-    , Mouse.downs (\_ -> Down)
-    , Mouse.ups (\_ -> Up)
-    ]
 
 view: Model -> Html Msg
 view model =
