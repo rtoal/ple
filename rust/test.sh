@@ -11,6 +11,7 @@ target/debug/animals_improved_overload && \
 target/debug/binding && \
 target/debug/borrow_fixed && \
 target/debug/circle_new && \
+target/debug/move && \
 target/debug/safe_string_sort && \
 target/debug/static_or_dynamic_scope && \
 target/debug/triple | diff ../test/triple_expected - && \
