@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <string.h>
 
-void swap(char *source, int i, int j) {
-    char saved = source[i];
-    source[i] = source[j];
-    source[j] = saved;
+void swap(char *i, char *j) {
+    char saved = *i;
+    *i = *j;
+    *j = saved;
 }
 
 void generate_permutations(char* a, int n) {
@@ -14,7 +14,7 @@ void generate_permutations(char* a, int n) {
     } else {
         for (int i = 0; i < n; i++) {
             generate_permutations(a, n-1);
-            swap(a, n % 2 == 0 ? 0 : i, n);
+            swap(&a[n % 2 == 0 ? 0 : i], &a[n]);
         }
         generate_permutations(a, n-1);
     }
