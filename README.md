@@ -8,6 +8,8 @@ The examples here have been tested on a Mac running OS X using the following lan
 
 <table>
 <tr><th>Language<th>Version<th>Notes
+<tr><td>Bash
+    <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/bash-logo.png"><td><td>
 <tr><td>C<td>c11<td>Apple LLVM version 7.3.0 (clang-703.0.31)
 <tr><td>C#<td><td>
 <tr><td>C++<td><td>Apple LLVM version 7.3.0 (clang-703.0.31)
@@ -43,8 +45,8 @@ The examples here have been tested on a Mac running OS X using the following lan
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/k-logo.png"><td>Kona Win.3.39-69<td>Kona is an open source version of K
 <tr><td>Lua
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/lua-logo.png"><td>5.3.2<td>
-<tr><td>Nasm<
-    <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/nasm-logo.png">td>2.12.01<td>
+<tr><td>Nasm
+    <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/nasm-logo.png"><td>2.12.01<td>
 <tr><td>Nim
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/nim-logo.png"><td>2.12.01<td>
 <tr><td>OCaml
@@ -52,13 +54,16 @@ The examples here have been tested on a Mac running OS X using the following lan
 <tr><td>Prolog<td><td>
 <tr><td>Python
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/python-logo.png"><td>3.5.1<td>
+<tr><td>R
+    <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/r-logo.png"><td><td>
 <tr><td>Ruby
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/ruby-logo.png"><td>2.3.1<td>
 <tr><td>Rust
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/rust-logo.png"><td>1.9.0<td>
 <tr><td>Scala
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/scala-logo.png"><td>2.11.8<td>
-<tr><td>Smalltalk<td><td>
+<tr><td>Smalltalk
+    <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/smalltalk-logo.png"><td><td>
 <tr><td>Swift
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/swift-logo.png"><td>2.2<td>Installed under XCode 7.3.1
 </table>
