@@ -13,7 +13,9 @@ main =
     }
 
 type alias Model = Int
-type Msg = Tick Time
+
+type Msg
+  = Tick Time
 
 init : (Model, Cmd Msg)
 init =
