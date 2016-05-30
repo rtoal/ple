@@ -3,4 +3,4 @@ let y: Int? = nil
 
 assert(x ?? 3 == 5)
 assert(y ?? 3 == 3)
-assert(x ?? (1/0) == 5)  // short circuit
+assert(x ?? [1,2,3][100] == 5)  // short circuit
