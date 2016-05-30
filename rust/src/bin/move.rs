@@ -4,4 +4,4 @@ fn main() {
 
     // println!("{:?}", b); will not compile!
     println!("{:?}", b);    // This works, b is the owner
-}
+}                           // vector deallocated, b out of scope
