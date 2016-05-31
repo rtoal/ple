@@ -51,6 +51,8 @@ The examples here have been tested on a Mac running OS X using the following lan
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/nim-logo.png"><td>2.12.01<td>
 <tr><td>OCaml
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/ocaml-logo.png"><td><td>
+<tr><td>Perl
+    <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/perl-logo.png"><td>5.24.0<td>
 <tr><td>Prolog<td><td>
 <tr><td>Python
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/python-logo.png"><td>3.5.1<td>
