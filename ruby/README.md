@@ -1,3 +1,4 @@
+<img align="right" src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/ruby-logo-large.png">
 # Ruby Examples
 
 To get Ruby:
@@ -14,6 +15,7 @@ To run the tests:
 
 # Ruby Resources
 
+* [Awesome Ruby](https://github.com/markets/awesome-ruby)
 * [Writing our Own Class in Ruby](http://rubylearning.com/satishtalim/writing_our_own_class_in_ruby.html)
 * [Ruby is Object-Oriented, not Callable-Oriented](http://yehudakatz.com/2010/02/21/ruby-is-not-a-callable-oriented-language/)
 * [Classes, Objects, and Variables](http://phrogz.net/programmingruby/tut_classes.html)

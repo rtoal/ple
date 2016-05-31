@@ -1,3 +1,4 @@
+<img align="right" src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/elm-logo-large.png">
 # Elm Examples
 
 To get Elm:
