@@ -64,6 +64,7 @@ The examples here have been tested on a Mac running OS X using the following lan
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/scala-logo.png"><td>2.11.8<td>
 <tr><td>Smalltalk
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/smalltalk-logo.png"><td><td>
+<tr><td>Standard ML<td>mlton-20130715<td>
 <tr><td>Swift
     <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/swift-logo.png"><td>2.2<td>Installed under XCode 7.3.1
 </table>
