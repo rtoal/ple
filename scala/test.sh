@@ -1,4 +1,4 @@
-#/usr/bin/env bash
+#!/usr/bin/env bash
 scala anagrams.scala rats | diff ../test/rats_heap_expected - && \
 scala animals.scala && \
 scala triple.scala | diff ../test/triple_expected -

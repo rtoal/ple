@@ -1,4 +1,4 @@
-#/usr/bin/env bash
+#!/usr/bin/env bash
 g++ -std=c++14 anagrams.cpp && ./a.out rats | diff ../test/rats_heap_expected - && \
 g++ -std=c++14 animals.cpp && ./a.out && \
 g++ -std=c++14 maps.cpp && ./a.out && \

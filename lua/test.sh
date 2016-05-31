@@ -1,4 +1,4 @@
-#/usr/bin/env bash
+#!/usr/bin/env bash
 lua anagrams.lua rats | diff ../test/rats_heap_expected - && \
 lua and_or_demo.lua && \
 lua basic_lua_examples.lua && \

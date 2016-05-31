@@ -1,4 +1,4 @@
-#/usr/bin/env bash
+#!/usr/bin/env bash
 ruby access.rb && \
 ruby anagrams_heap.rb rats | diff ../test/rats_heap_expected - && \
 ruby anagrams.rb rats && \

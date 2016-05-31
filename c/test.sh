@@ -1,4 +1,4 @@
-#/usr/bin/env bash
+#!/usr/bin/env bash
 gcc -std=c11 anagrams.c && ./a.out rats | diff ../test/rats_heap_expected - && \
 gcc -std=c11 -c hashmap.c && \
 gcc -std=c11 sum_of_even_squares.c && ./a.out && \

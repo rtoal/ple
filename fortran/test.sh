@@ -1,4 +1,4 @@
-#/usr/bin/env bash
+#!/usr/bin/env bash
 gfortran collatz.f95 && ./a.out
 
 if [ $? -ne 0 ]; then

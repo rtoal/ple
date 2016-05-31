@@ -1,4 +1,4 @@
-#/usr/bin/env bash
+#!/usr/bin/env bash
 elm make alias.elm && \
 elm make Anagrams.elm anagramapp.elm && \
 elm make Anagrams.elm anagrams_test.elm --output tests.js && node tests.js && \

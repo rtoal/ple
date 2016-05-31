@@ -1,4 +1,4 @@
-#/usr/bin/env bash
+#!/usr/bin/env bash
 clj agent_example.clj && \
 clj anagrams.clj rats | diff ../test/rats_heap_expected - && \
 clj animals_multi.clj rats && \

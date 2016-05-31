@@ -1,4 +1,4 @@
-#/usr/bin/env bash
+#!/usr/bin/env bash
 escript anagrams.erl rats | diff ../test/rats_recursive_expected - && \
 escript bifs.erl && \
 escript catches.erl && \

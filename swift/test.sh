@@ -1,4 +1,4 @@
-#/usr/bin/env bash
+#!/usr/bin/env bash
 swift anagrams.swift rats | diff ../test/rats_heap_expected - && \
 swift animals.swift && \
 swift array_and_function_chaining.swift && \

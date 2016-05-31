@@ -1,5 +1,4 @@
-#/usr/bin/env bash
-
+#!/usr/bin/env bash
 cargo build && \
 target/debug/anagrams rats | diff ../test/rats_heap_expected - && \
 target/debug/anagrams_lifetimes rats | diff ../test/rats_heap_expected - && \

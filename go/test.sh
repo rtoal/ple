@@ -1,4 +1,4 @@
-#/usr/bin/env bash
+#!/usr/bin/env bash
 go run anagrams.go rats | diff ../test/rats_heap_expected - && \
 go test animals_test.go && \
 go test arrays_test.go && \

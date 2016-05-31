@@ -1,4 +1,4 @@
-#/usr/bin/env bash
+#!/usr/bin/env bash
 python3 anagrams.py rats | diff ../test/rats_heap_expected - && \
 python3 anagrams_itertools.py rats && \
 python3 animals.py && \

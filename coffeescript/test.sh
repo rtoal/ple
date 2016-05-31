@@ -1,4 +1,4 @@
-#/usr/bin/env bash
+#!/usr/bin/env bash
 coffee anagrams.coffee rats | diff ../test/rats_heap_expected - && \
 coffee animals.coffee && \
 coffee average_with_splats.coffee && \
