@@ -16,3 +16,5 @@ To run the tests:
 # Go Resources
 
 * [Awesome Go](https://github.com/avelino/awesome-go)
+* [Everyday Hassles in Go](http://crufter.com/2014/12/01/everyday-hassles-in-go/)
+
