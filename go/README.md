@@ -15,4 +15,4 @@ To run the tests:
 
 # Go Resources
 
-* [Awesome Go](hhttps://github.com/avelino/awesome-go)
+* [Awesome Go](https://github.com/avelino/awesome-go)
