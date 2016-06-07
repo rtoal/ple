@@ -13,6 +13,8 @@ The examples here have been tested on a Mac running OS X using the following lan
     src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/ada-logo-24.png">
     <td><td>
 <tr><td>APL
+    &nbsp;&nbsp;<img
+    src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/apl-logo-24.png">
     <td><td>
 <tr><td>Bash
     &nbsp;&nbsp;<img
@@ -96,7 +98,7 @@ The examples here have been tested on a Mac running OS X using the following lan
     <td>5.3.2<td>
 <tr><td>Nasm
     &nbsp;&nbsp;<img
-    src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/nasm-logo.png">
+    src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/nasm-logo-24.png">
     <td>2.12.01<td>
 <tr><td>Nim
     &nbsp;&nbsp;<img
@@ -108,7 +110,7 @@ The examples here have been tested on a Mac running OS X using the following lan
     <td><td>
 <tr><td>Perl
     &nbsp;&nbsp;<img
-    src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/perl-logo.png">
+    src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/perl-logo-24.png">
     <td>5.24.0<td>
 <tr><td>Prolog
     <td><td>
@@ -118,7 +120,7 @@ The examples here have been tested on a Mac running OS X using the following lan
     <td>3.5.1<td>
 <tr><td>R
     &nbsp;&nbsp;<img
-    src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/r-logo.png">
+    src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/r-logo-24.png">
     <td><td>
 <tr><td>Ruby
     &nbsp;&nbsp;<img
