@@ -35,7 +35,7 @@ swift triple.swift | diff ../test/triple_expected - && \
 swift trivial_arc_example.swift && \
 swift value_vs_reference.swift && \
 swift vectors.swift && \
-swift wordcount.swift < ../test/wordcount_input | diff ../test/word_and_number_count_expected - && \
+swift wordcount.swift < ../test/wordcount_input | diff ../test/word_and_number_count_expected -
 
 if [ $? -ne 0 ]; then
     echo

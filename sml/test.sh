@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 mlton hello.sml && ./hello && \
 mlton quicksort.sml && ./quicksort && \
-mlton quicksort.sml && ./stack && \
+mlton stack.sml && ./stack
 
 if [ $? -ne 0 ]; then
     echo
