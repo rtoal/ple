@@ -22,7 +22,7 @@ coffee switch_example.coffee && \
 coffee this_example.coffee && \
 coffee triple.coffee | diff ../test/triple_expected - && \
 coffee types_and_type_errors.coffee && \
-coffee wordcount.coffee < ../test/wordcount_input | diff ../test/wordcount_expected - && \
+coffee wordcount.coffee < ../test/wordcount_input | diff ../test/wordcount_expected -
 
 if [ $? -ne 0 ]; then
     echo

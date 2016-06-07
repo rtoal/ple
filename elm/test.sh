@@ -20,7 +20,7 @@ elm make tree.elm && \
 elm make triple.elm && \
 elm make tuple_examples.elm && \
 elm make union_and_record.elm && \
-elm make wordcount.elm && \
+elm make wordcount.elm
 # TODO test triple and wordcount against expected results
 
 if [ $? -ne 0 ]; then

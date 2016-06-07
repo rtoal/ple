@@ -12,7 +12,7 @@ dart scopes_and_var.dart && \
 dart static_or_dynamic_scope.dart && \
 dart triple.dart | diff ../test/triple_expected - && \
 dart unique_string_demo.dart && \
-dart wordcount.dart < ../test/wordcount_ascii_input | diff ../test/wordcount_ascii_expected - && \
+dart wordcount.dart < ../test/wordcount_ascii_input | diff ../test/wordcount_ascii_expected -
 
 if [ $? -ne 0 ]; then
     echo
