@@ -15,7 +15,7 @@ The examples here have been tested on a Mac running OS X using the following lan
 <tr><td>APL
     &nbsp;&nbsp;<img
     src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/apl-logo-24.png">
-    <td><td>
+    <td>[ngn/apl demo](http://ngn.github.io/apl/web/index.html)<td>
 <tr><td>Bash
     &nbsp;&nbsp;<img
     src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/bash-logo-24.png">
