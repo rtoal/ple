@@ -32,6 +32,10 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
     <td>
     <td>Apple LLVM version 7.3.0 (clang-703.0.31)
+<tr><td>Ceylon
+    <td><img align="center" valign="middle" src="resources/ceylon-logo-24.png">
+    <td>
+    <td>
 <tr><td>Chapel
     <td><img align="center" valign="middle" src="resources/chapel-logo-24.png">
     <td>
@@ -96,6 +100,10 @@ The examples here have been tested on a machine running macOS using the followin
     <td><img align="center" valign="middle" src="resources/k-logo-24.png">
     <td>Kona Win.3.39-69
     <td>Kona is an open source version of K
+<tr><td>Kotlin
+    <td><img align="center" valign="middle" src="resources/kotlin-logo-24.png">
+    <td>
+    <td>
 <tr><td>LOLCODE
     <td><img align="center" valign="middle" src="resources/lolcode-logo-24.png">
     <td>
@@ -149,7 +157,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
     <td>
 <tr><td>Standard ML
-    <td>
+    <td><img align="center" valign="middle" src="resources/sml-logo-24.png">
     <td>mlton-20130715
     <td>
 <tr><td>Swift
