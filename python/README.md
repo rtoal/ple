@@ -1,7 +1,7 @@
 <img align="right" src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/python-logo-300.png">
 # Python Examples
 
-To get Ruby:
+To get Python:
 
 ```
 brew install python3
@@ -15,6 +15,6 @@ To run the tests:
 
 # Python Resources
 
-* [Awesome Ruby](https://github.com/vinta/awesome-python)
+* [Awesome Python](https://github.com/vinta/awesome-python)
 * [Python Home](https://www.python.org/)
 * [Python Docs Home](https://www.python.org/doc/)
