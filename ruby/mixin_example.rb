@@ -1,6 +1,6 @@
 require './animals.rb'
 
-# The originial Animal class did not define a name method.
+# The original Animal class did not define a name method.
 # But in Ruby, we can *add* one! Classes are *open*.
 class Animal
   attr_reader :name
