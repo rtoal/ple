@@ -58,11 +58,11 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Elm
     <td align="center"><img valign="middle" src="resources/elm-logo-24.png">
-    <td>0.17.0
+    <td>0.17.1
     <td>
 <tr><td>Erlang
     <td align="center"><img valign="middle" src="resources/erlang-logo-24.png">
-    <td>Erlang/OTP 18
+    <td>Erlang/OTP 19.0.2
     <td>
 <tr><td>Factor
     <td>
@@ -90,7 +90,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>JavaScript
     <td align="center"><img valign="middle" src="resources/javascript-logo-24.png">
-    <td>Node 6.2.0
+    <td>Node 6.3.0
     <td>
 <tr><td>Julia
     <td align="center"><img valign="middle" src="resources/julia-logo-24.png">
@@ -118,7 +118,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Nim
     <td align="center"><img valign="middle" src="resources/nim-logo-24.png">
-    <td>2.12.01
+    <td>
     <td>
 <tr><td>OCaml
     <td align="center"><img valign="middle" src="resources/ocaml-logo-24.png">
@@ -134,7 +134,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Python
     <td align="center"><img valign="middle" src="resources/python-logo-24.png">
-    <td>3.5.1
+    <td>3.5.2
     <td>
 <tr><td>R
     <td align="center"><img valign="middle" src="resources/r-logo-24.png">
@@ -146,7 +146,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Rust
     <td align="center"><img valign="middle" src="resources/rust-logo-24.png">
-    <td>1.9.0
+    <td>1.10.0
     <td>
 <tr><td>Scala
     <td align="center"><img valign="middle" src="resources/scala-logo-24.png">
