@@ -25,3 +25,4 @@ println(gcd': 5 8 66 99 144 89 27 63)
 println(sort 17 22 9 8 -6 11 89 33)
 println(collatz 18)
 println(factorial 2)
+\\
