@@ -1,7 +1,7 @@
 using System;
 class Tripler
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
         for (int c = 1; c <= 40; c++)
         {
