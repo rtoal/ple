@@ -1,7 +1,10 @@
-public class Greeter
+namespace Examples
 {
-    public static void Main ()
+    static class Greeter
     {
-        System.Console.WriteLine ("Hello, world");
+        static void Main ()
+        {
+            System.Console.WriteLine ("Hello, world");
+        }
     }
 }

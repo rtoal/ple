@@ -1,9 +1,11 @@
-    using System;
-    using System.Collections.Generic;
-    using System.Text.RegularExpressions;
-    using System.IO;
-    using System.Linq;
+using System;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
+using System.IO;
+using System.Linq;
 
+namespace Examples
+{
     class WordCounter
     {
         static void Main(string[] args)
@@ -26,3 +28,4 @@
             }
         }
     }
+}

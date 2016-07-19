@@ -2,25 +2,28 @@ using System;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
 
-class TraditionalWordCounter
+namespace Examples
 {
-    static void Main(string[] args)
+    static class TraditionalWordCounter
     {
-        var counts = new SortedDictionary<string, int>();
-        var wordRegex = new Regex(@"[\p{L}']+");
-        string line;
-        while ((line = Console.ReadLine()?.ToLower()) != null)
+        static void Main(string[] args)
         {
-            foreach (Match match in wordRegex.Matches(line))
+            var counts = new SortedDictionary<string, int>();
+            var wordRegex = new Regex(@"[\p{L}']+");
+            string line;
+            while ((line = Console.ReadLine()?.ToLower()) != null)
             {
-                int count;
-                counts.TryGetValue(match.Value, out count);
-                counts[match.Value] = ++count;
+                foreach (Match match in wordRegex.Matches(line))
+                {
+                    int count;
+                    counts.TryGetValue(match.Value, out count);
+                    counts[match.Value] = count + 1;
+                }
             }
-        }
-        foreach (var pair in counts)
-        {
-            Console.WriteLine("{0} {1}", pair.Key, pair.Value);
+            foreach (var pair in counts)
+            {
+                Console.WriteLine("{0} {1}", pair.Key, pair.Value);
+            }
         }
     }
 }

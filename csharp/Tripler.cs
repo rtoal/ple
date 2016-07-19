@@ -1,17 +1,21 @@
 using System;
-class Tripler
+
+namespace Examples
 {
-    public static void Main(string[] args)
+    class Tripler
     {
-        for (int c = 1; c <= 40; c++)
+        public static void Main(string[] args)
         {
-            for (int b = 1; b < c; b++)
+            for (int c = 1; c <= 40; c++)
             {
-                for (int a = 1; a < b; a++)
+                for (int b = 1; b < c; b++)
                 {
-                    if (a * a + b * b == c * c)
+                    for (int a = 1; a < b; a++)
                     {
-                        Console.WriteLine("{0:D}, {1:D}, {2:D}", a, b, c);
+                        if (a * a + b * b == c * c)
+                        {
+                            Console.WriteLine("{0:D}, {1:D}, {2:D}", a, b, c);
+                        }
                     }
                 }
             }
