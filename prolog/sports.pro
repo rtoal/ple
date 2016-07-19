@@ -2,7 +2,7 @@ plays(kira,waterpolo).
 plays(colette,diving).
 plays(emily,waterpolo).
 plays(olivia,diving).
-plays(tiffany,piano).
+plays(michelle,piano).
 club(colette,rosebowl).
 club(kira,rosebowl).
 club(emily,rosebowl).
