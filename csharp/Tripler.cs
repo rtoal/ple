@@ -2,9 +2,9 @@ using System;
 
 namespace Examples
 {
-    class Tripler
+    static class Tripler
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             for (int c = 1; c <= 40; c++)
             {

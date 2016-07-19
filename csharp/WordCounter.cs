@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace Examples
 {
-    class WordCounter
+    static class WordCounter
     {
         static void Main(string[] args)
         {
