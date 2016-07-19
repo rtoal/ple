@@ -1,6 +1,6 @@
-let readline = require('readline');
-let reader = readline.createInterface(process.stdin, null);
-let counts = new Map();
+const readline = require('readline');
+const reader = readline.createInterface(process.stdin, null);
+const counts = new Map();
 
 reader.on('line', line => {
   for (let word of line.toLowerCase().match(/[a-z']+/g) || []) {

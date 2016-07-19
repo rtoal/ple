@@ -9,7 +9,7 @@ class Circle {
   circumference() {return 2 * Math.PI * this.radius;}
 }
 
-let assert = require('assert');
-let c = new Circle(1, 5);
+const assert = require('assert');
+const c = new Circle(1, 5);
 assert(c.circumference() === 2 * Math.PI);
 assert(typeof Circle === 'function');

@@ -1,7 +1,7 @@
 window.addEventListener('load', e => {
-  var canvas = document.createElement('canvas');
-  var ctx = canvas.getContext('2d');
-  var drawing = false;
+  const canvas = document.createElement('canvas');
+  const ctx = canvas.getContext('2d');
+  let drawing = false;
   canvas.style.border = '2px solid purple';
   canvas.addEventListener('mousedown', e => {
     drawing = true;
@@ -13,7 +13,7 @@ window.addEventListener('load', e => {
       ctx.stroke();
     }
   });
-  let stopDrawing = e => {drawing = false};
+  const stopDrawing = e => {drawing = false};
   canvas.addEventListener('mouseup', stopDrawing);
   canvas.addEventListener('mouseout', stopDrawing);
   document.body.appendChild(canvas);

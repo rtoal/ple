@@ -1,4 +1,4 @@
-let x = 'OUTER';
+const x = 'OUTER';
 function second() {console.log(x);}
-function first() {let x = 'FIRST'; second();}
+function first() {const x = 'FIRST'; second();}
 first();

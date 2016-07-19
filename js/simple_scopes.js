@@ -1,6 +1,6 @@
-let assert = require('assert');
+const assert = require('assert');
 
-let a = 1, b = 2;
+const a = 1, b = 2;
 
 (function () {
   assert(a === undefined);   // the local `a` is in scope
@@ -9,7 +9,7 @@ let a = 1, b = 2;
   if (true) {
     var a = 100;             // scoped to whole function!
     let b = 200;             // scoped only inside this block
-    let c = 300;             // scoped only inside this block
+    const c = 300;             // scoped only inside this block
   }
   assert(a === 100);         // it's been initialized
   assert(b === 2);           // outer, because local used `let`

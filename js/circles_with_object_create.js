@@ -1,4 +1,4 @@
-let unitCircle = {
+const unitCircle = {
   x: 0,
   y: 0,
   radius: 1,
@@ -7,15 +7,15 @@ let unitCircle = {
   circumference() {return 2 * Math.PI * this.radius}
 };
 
-let c1 = Object.create(unitCircle);
+const c1 = Object.create(unitCircle);
 c1.x = 3;
 c1.color = 'green';
 
-let c2 = Object.create(unitCircle);
+const c2 = Object.create(unitCircle);
 c2.radius = 5;
 
-let c3 = Object.create(unitCircle);
+const c3 = Object.create(unitCircle);
 
-let assert = require('assert')
+const assert = require('assert')
 assert(c2.color === 'black' && c2.area() === 25 * Math.PI);
 assert(c3.y === 0 && c3.area() === Math.PI);

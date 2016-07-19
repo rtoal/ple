@@ -1,4 +1,4 @@
-let nextSquare = (() => {
+const nextSquare = (() => {
   let previous = -1;
   return () => {
     previous++;
@@ -6,7 +6,7 @@ let nextSquare = (() => {
   }
 })();
 
-let assert = require('assert');
+const assert = require('assert');
 assert(nextSquare() === 0);
 assert(nextSquare() === 1);
 assert(nextSquare() === 4);

@@ -1,7 +1,7 @@
-let assert = require('assert');
+const assert = require('assert');
 
-let x = [1,2,3];
-let y = [4,5,6];
+const x = [1,2,3];
+const y = [4,5,6];
 
 function f(a, b) {
   a = 300;                              // Change *parameter*

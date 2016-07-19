@@ -1,7 +1,7 @@
 (function () {
   "use strict";
-  let canvas = document.createElement('canvas');
-  let context = canvas.getContext('2d');
+  const canvas = document.createElement('canvas');
+  const context = canvas.getContext('2d');
   let drawing = false;
   canvas.style.border = '2px solid green';
   canvas.onmousedown = (e) => {
