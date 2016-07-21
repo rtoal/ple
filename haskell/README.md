@@ -13,7 +13,7 @@ To run the tests:
 ./test.sh
 ```
 
-# Ruby Resources
+# Haskell Resources
 
 * [Awesome Haskell](https://github.com/krispo/awesome-haskell)
 * [Haskell Home Page](https://www.haskell.org/)
