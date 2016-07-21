@@ -16,3 +16,5 @@ To run the tests:
 # JavaScript Resources
 
 * [Awesome JavaScript](https://github.com/sorrycc/awesome-javascript)
+* [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+* [Axel Rauschmayer's 2ality](http://www.2ality.com/)
