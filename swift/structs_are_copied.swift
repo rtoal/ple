@@ -3,9 +3,10 @@ struct Point {
     var y: Int
 }
 
-func move(var p: Point, left dx: Int, up dy: Int) {
-    p.x += dx
-    p.y += dy
+func move(_ p: Point, left dx: Int, up dy: Int) {
+    var q = p
+    q.x += dx
+    q.y += dy
 }
 
 var p = Point(x: 4, y: 3)

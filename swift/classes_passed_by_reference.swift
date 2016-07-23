@@ -3,7 +3,7 @@ class Point {
     var y: Int = 0
 }
 
-func move(let p: Point, left dx: Int, up dy: Int) {
+func move(_ p: Point, left dx: Int, up dy: Int) {
     p.x += dx
     p.y += dy
 }

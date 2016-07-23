@@ -1,10 +1,10 @@
-enum BadLength: ErrorType {
-    case TooLong(by: Int)
-    case TooShort
+enum BadLength: ErrorProtocol {
+    case tooLong(by: Int)
+    case tooShort
 }
 
-func third() throws -> Int {
-    throw BadLength.TooLong(by: 3)
+func third() throws -> () {
+    throw BadLength.tooLong(by: 3)
 }
 
 func second() throws {
@@ -14,9 +14,9 @@ func second() throws {
 func first() {
     do {
         try second()
-    } catch BadLength.TooShort {
+    } catch BadLength.tooShort {
         print("Too short")
-    } catch BadLength.TooLong(let howMuch) {
+    } catch BadLength.tooLong(let howMuch) {
         print("Too long by \(howMuch)")
     } catch {
         print("Something else")

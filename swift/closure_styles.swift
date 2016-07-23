@@ -1,4 +1,4 @@
-func p(x: Int, _ y: Int, _ f: (Int, Int, Int) -> Int) -> () {
+func p(_ x: Int, _ y: Int, _ f: (Int, Int, Int) -> Int) -> () {
     print(f(x * x, y * y, 1))
 }
 

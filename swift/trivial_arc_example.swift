@@ -5,7 +5,7 @@ class C {
     deinit {history.append("deinit")}
 }
 
-func f(c: C) {               // 3. count==2
+func f(_ c: C) {             // 3. count==2
     history.append("f")
     print(c)
     history.append("/f")

@@ -1,4 +1,4 @@
-func twice<T>(x: T) -> [T] {
+func twice<T>(_ x: T) -> [T] {
     return [x, x]
 }
 

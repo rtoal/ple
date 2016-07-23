@@ -1,4 +1,4 @@
-func median<T:Comparable>(x: T, _ y: T, _ z: T) -> T {
+func median<T:Comparable>(_ x: T, _ y: T, _ z: T) -> T {
     let (a, b) = (min(x, y), max(x, y))
     return b < z ? b : max(a, z)
 }

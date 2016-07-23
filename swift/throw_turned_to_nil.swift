@@ -1,10 +1,10 @@
-enum BadLength: ErrorType {
-    case TooLong(by: Int)
-    case TooShort
+enum BadLength: ErrorProtocol {
+    case tooLong(by: Int)
+    case tooShort
 }
 
 func third() throws -> Int {
-    throw BadLength.TooLong(by: 3)
+    throw BadLength.tooLong(by: 3)
 }
 
 func second() -> Int {

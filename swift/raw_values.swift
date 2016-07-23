@@ -1,11 +1,11 @@
 enum Suit: String {
-    case Spades, Hearts, Diamonds, Clubs
+    case spades, hearts, diamonds, clubs
 }
 
 enum Direction: Int {
-    case North = 0, East = 90, South = 180, West = 270
+    case north = 0, east = 90, south = 180, west = 270
 }
 
-assert(Suit.Hearts.rawValue == "Hearts")
-assert(Direction.South.rawValue == 180)
-assert(Direction.West == Direction(rawValue: 270))
+assert(Suit.hearts.rawValue == "hearts")
+assert(Direction.south.rawValue == 180)
+assert(Direction.west == Direction(rawValue: 270))

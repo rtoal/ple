@@ -7,7 +7,7 @@ let capitals = [
 
 assert(capitals.count == 4)
 assert(capitals.keys.contains("Aruba"))
-assert(capitals.values.sort().last == "Willemstad")
+assert(capitals.values.sorted().last == "Willemstad")
 
 for (country, capital) in capitals {
     print("The capital of \(country) is \(capital).")

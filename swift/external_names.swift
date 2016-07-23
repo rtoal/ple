@@ -4,7 +4,7 @@ func average(of x: Int, and y: Int) -> Double {
 }
 
 // Remove external names for subsequent params
-func middle(x: Int, _ y: Int) -> Double {
+func middle(_ x: Int, _ y: Int) -> Double {
     return Double(x + y) / 2.0
 }
 

@@ -1,19 +1,19 @@
 enum Token {
-    case Plus
-    case Minus
-    case Number(Double)
-    case Identifier(String)
+    case plus
+    case minus
+    case number(Double)
+    case identifier(String)
 
     func lexeme() -> String {
         switch self {
-            case .Plus: return "+"
-            case .Minus: return "-"
-            case .Number(let value): return String(value)
-            case .Identifier(let name): return name
+            case .plus: return "+"
+            case .minus: return "-"
+            case .number(let value): return String(value)
+            case .identifier(let name): return name
         }
     }
 }
 
-let expression: [Token] = [.Number(4.0), .Plus, .Identifier("x")]
-let text = expression.map{$0.lexeme()}.joinWithSeparator(" ")
+let expression: [Token] = [.number(4.0), .plus, .identifier("x")]
+let text = expression.map{$0.lexeme()}.joined(separator: " ")
 assert(text == "4.0 + x")
