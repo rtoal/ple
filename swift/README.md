@@ -14,3 +14,8 @@ To run the tests:
 # Swift Resources
 
 * [Awesome Swift](https://github.com/matteocrippa/awesome-swift)
+* [Swift Home at Swift.org](https://swift.org/)
+* [Swift Home at Apple Developer](https://developer.apple.com/swift/)
+* [XCode 8 + Swift 3 at Apple Developer](https://developer.apple.com/swift/resources/)
+* [Swift Standard Library](https://developer.apple.com/reference/swift)
+* [Swift Programming Language](https://developer.apple.com/library/prerelease/content/documentation/Swift/Conceptual/Swift_Programming_Language/)
