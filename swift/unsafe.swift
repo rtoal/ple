@@ -5,7 +5,7 @@ p = UnsafeMutablePointer<Int>(allocatingCapacity: 1)
 p.pointee = 8
 // now p is initialized
 assert(p.pointee == 8)
-p.deinitialize()
+p.deinitialize(count: 1)
 // at this point, the memory p points to is "garbage"
 p.deallocateCapacity(1)
 // now the memory is all freed up
