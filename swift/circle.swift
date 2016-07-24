@@ -9,6 +9,6 @@ struct Circle {
 }
 
 var c = Circle(radius: 10)
-assert(c.radius == 10 && c.area == 100*M_PI)
-c.area = 16*M_PI
+assert(c.radius == 10 && c.area == 100*M_PI)  // get property
+c.area = 16*M_PI                              // set property
 assert(c.radius == 4 && c.area == 16*M_PI)
