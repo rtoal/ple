@@ -38,7 +38,7 @@ exec c state =
         Assign v e -> Just (insert v (eval e store) store, infile, outfile)
         Read v -> case infile of
           [] -> Nothing
-          (x::rest) -> Just (insert v x store, rest, outfile ++ [x])
+          (x::rest) -> Just (insert v x store, rest, outfile)
         Print e -> Just (store, infile, outfile ++ [eval e store])
         Seq c1 c2 -> exec c2 (exec c1 state)
 
@@ -46,9 +46,13 @@ main =
   let
     p0 = Print (Literal 5)
     p1 = Print (Plus (Literal 8) (Var "x"))
-    run com = exec com (Just (Dict.empty, [], []))
+    p2 = Seq (Assign "x" (Literal 5))
+      (Seq (Read "y") (Print (Plus (Var "x") (Var "y"))))
+    run com input = exec com (Just (Dict.empty, input, []))
   in
     runSuite <| suite "Test execution" <| map defaultTest
-      [ Just (Dict.empty, [], [5]) `assertEqual` (run p0)
-      , Just (Dict.empty, [], [8]) `assertEqual` (run p1)
+      [ Just (Dict.empty, [], [5]) `assertEqual` (run p0 [])
+      , Just (Dict.empty, [], [8]) `assertEqual` (run p1 [])
+      , Just (Dict.fromList [("y",8),("x",5)], [], [13])
+          `assertEqual` (run p2 [8])
       ]
