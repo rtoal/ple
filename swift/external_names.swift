@@ -1,4 +1,4 @@
-func perimeter(base: Int, height: Int) {
+func perimeter(base: Int, height: Int) -> Int {
     return 2 * (base + height)
 }
 
