@@ -4,6 +4,7 @@ elm make Anagrams.elm anagramapp.elm && \
 elm make Anagrams.elm anagrams_test.elm --output tests.js && node tests.js && \
 elm make animals.elm --output tests.js && node tests.js && \
 elm make another_mystery.elm && \
+elm make chained_maybes.elm --output tests.js && node tests.js && \
 elm make countdown.elm && \
 elm make double.elm --output tests.js && node tests.js && \
 elm make Exp.elm exp_test.elm && \
