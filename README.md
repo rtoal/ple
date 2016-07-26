@@ -162,6 +162,6 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Swift
     <td align="center"><img valign="middle" src="resources/swift-logo-24.png">
-    <td>2.2
-    <td>Installed under XCode 7.3.1
+    <td>3.0
+    <td>Iswiftlang-800.0.33.1 clang-800.0.31
 </table>
