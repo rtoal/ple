@@ -1,10 +1,8 @@
--- Define new types
 data PrimaryColor = Red | Green | Blue
 data Shape = Circle Float | Rectangle Float Float
 data Response a = Ok a | Error String
 data Tree a = Leaf a | Internal a [Tree a]
 
--- Introduce type aliases, no new types created
 type Point = (Float, Float)
 type Polygon = [Point]
 
