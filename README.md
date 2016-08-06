@@ -26,8 +26,8 @@ The examples here have been tested on a machine running macOS using the followin
     <td>Apple LLVM version 7.3.0 (clang-703.0.31)
 <tr><td>C#
     <td>
-    <td>Mono 4.4.1
     <td>
+    <td>Mono 4.4.1
 <tr><td>C++
     <td>
     <td>
@@ -50,7 +50,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>(Run under Node 6.2.0)
 <tr><td>Dart
     <td align="center"><img valign="middle" src="resources/dart-logo-24.png">
-    <td>1.16.0
+    <td>1.18.1
     <td>
 <tr><td>Elixir
     <td align="center"><img valign="middle" src="resources/elixir-logo-24.png">
@@ -82,8 +82,8 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Haskell
     <td align="center"><img valign="middle" src="resources/haskell-logo-24.png">
-    <td>
-    <td>
+    <td>2010
+    <td>The Glorious Glasgow Haskell Compilation System, version 8.0.1
 <tr><td>Java
     <td align="center"><img valign="middle" src="resources/java-logo-24.png">
     <td>1.8.0_66
