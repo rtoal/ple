@@ -106,7 +106,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>LOLCODE
     <td align="center"><img valign="middle" src="resources/lolcode-logo-24.png">
-    <td>
+    <td>0.11.2
     <td>
 <tr><td>Lua
     <td align="center"><img valign="middle" src="resources/lua-logo-24.png">
