@@ -1,7 +1,7 @@
-class OneTwoThree(object):
+class OneTwoThree:
     def __iter__(self):
         value = 0
-        class OneTwoThreeIterator():
+        class OneTwoThreeIterator:
             def __next__(self):
                 nonlocal value
                 value += 1

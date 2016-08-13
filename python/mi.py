@@ -2,7 +2,7 @@ from subprocess import call
 from animals import Cow
 
 # Disclaimer: This only works on an O.S. with a say command.
-class Vocalizer(object):
+class Vocalizer:
     def vocalize(self):
         call(['say', self.name + 'says' + self.sound()])
 
