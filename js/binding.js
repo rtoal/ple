@@ -1,11 +1,11 @@
 function second(f) {
-  var name = 'new';
+  const name = 'new';
   f();
 }
 
 function first() {
-  var name = 'old';
-  var printName = function () {console.log(name)};
+  const name = 'old';
+  const printName = () => console.log(name);
   second(printName);
 }
 

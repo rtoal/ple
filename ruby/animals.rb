@@ -27,8 +27,8 @@ end
 
 if __FILE__ == $0
   s = Horse.new "CJ"
-  puts s.speak()
+  fail unless s.speak == "CJ says neigh"
   c = Cow.new("Bessie")
-  puts c.speak()
-  puts Sheep.new("Little Lamb").speak()
+  fail unless c.speak == "Bessie says moooo"
+  fail unless Sheep.new("Little Lamb").speak == "Little Lamb says baaaa"
 end

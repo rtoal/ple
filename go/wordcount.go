@@ -2,37 +2,33 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
+	"bufio"
 	"os"
 	"regexp"
 	"sort"
 	"strings"
 )
 
-func WordCount(s string) map[string]int {
-	r := regexp.MustCompile(`[a-z\']+`)
+func main() {
 	counts := make(map[string]int)
-
-	for _, word := range r.FindAllString(strings.ToLower(s), -1) {
-		counts[word] += 1
+	scanner := bufio.NewScanner(os.Stdin)
+	r := regexp.MustCompile(`[a-z\']+`)
+	for scanner.Scan() {
+		line := strings.ToLower(scanner.Text())
+		for _, word := range r.FindAllString(line, -1) {
+			counts[word] += 1
+		}
 	}
-
-	return counts
+	report(counts)
 }
 
-func main() {
-	if bytes, err := ioutil.ReadAll(os.Stdin); err != nil {
-		panic(err)
-	} else {
-		m := WordCount(string(bytes))
-		var words []string
-		for word := range m {
-			words = append(words, word)
-		}
-		sort.Strings(words)
-
-		for _, word := range words {
-			fmt.Println(word, m[word])
-		}
+func report(counts map[string]int) {
+	var words []string
+	for word := range counts {
+		words = append(words, word)
+	}
+	sort.Strings(words)
+	for _, word := range words {
+		fmt.Println(word, counts[word])
 	}
 }

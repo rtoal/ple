@@ -1,11 +1,12 @@
-var nextSquare = (function () {
-  var previous = -1;
-  return function () {
+const nextSquare = (() => {
+  let previous = -1;
+  return () => {
     previous++;
     return previous * previous;
   }
-}());
+})();
 
-console.log(nextSquare());    // prints 0
-console.log(nextSquare());    // prints 1
-console.log(nextSquare());    // prints 4
+const assert = require('assert');
+assert(nextSquare() === 0);
+assert(nextSquare() === 1);
+assert(nextSquare() === 4);

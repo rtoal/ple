@@ -1,7 +1,7 @@
 medianOfThree = (x, y, z) ->
-  # Not the most efficient code
-  return x + y + z - (Math.max x, y, z) - Math.min x, y, z
+  x + y + z - (Math.max x, y, z) - Math.min x, y, z
 
-# An example of a call using splats
+assert = require 'assert'
 numbers = [80, 20, 55]
-console.log medianOfThree numbers...
+middle = medianOfThree numbers...
+assert middle is 55

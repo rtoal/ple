@@ -1,4 +1,4 @@
-var x = 'GLOBAL';
-function second() {console.log(x)}
-function first() {var x = 'FIRST'; second();};
+const x = 'OUTER';
+function second() {console.log(x);}
+function first() {const x = 'FIRST'; second();}
 first();

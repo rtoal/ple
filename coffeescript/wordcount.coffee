@@ -1,12 +1,12 @@
-split = require 'split'
+reader = require('readline').createInterface process.stdin, null
+{XRegExp} = require 'xregexp'
+counts = new Map()
 
-counts = {}
+reader.on 'line', (line) ->
+  wordPattern = XRegExp("[\\p{L}']+", 'g')
+  for word in (line.toLowerCase().match(wordPattern) or [])
+    counts.set word, (counts.get(word) or 0) + 1
 
-process.stdin.setEncoding 'utf8'
-
-process.stdin.pipe(split()).on 'data', (line) ->
-  for word in (line.toLowerCase().match(/[a-z\']+/g) or [])
-    counts[word] = (counts[word] or 0) + 1
-
-process.stdin.on 'end', ->
-  console.log "#{word} #{counts[word]}" for word in Object.keys(counts).sort()
+reader.on 'close', ->
+  for word in Array.from(counts.keys()).sort()
+    console.log "#{word} #{counts.get word}"

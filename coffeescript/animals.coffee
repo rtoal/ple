@@ -1,20 +1,19 @@
 class Animal
   constructor: (@name) ->
-
-  speak: ->
-    "#{@name} says #{@sound()}"
+  speak: -> "#{@name} says #{@sound()}"
 
 class Cow extends Animal
-  sound: -> "moooo"
+  sound: -> 'moooo'
 
 class Horse extends Animal
-  sound: -> "neigh"
+  sound: -> 'neigh'
 
 class Sheep extends Animal
-  sound: -> "baaaa"
+  sound: -> 'baaaa'
 
-s = new Horse "CJ"
-console.log s.speak()
-c = new Cow "Bessie"
-console.log c.speak()
-console.log new Sheep("Little Lamb").speak()
+assert = require 'assert'
+h = new Horse 'CJ'
+assert h.speak() is 'CJ says neigh'
+c = new Cow 'Bessie'
+assert c.speak() is 'Bessie says moooo'
+assert new Sheep('Little Lamb').speak() is 'Little Lamb says baaaa'

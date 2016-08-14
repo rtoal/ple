@@ -4,3 +4,6 @@ a.out
 *.o
 *.obj
 *.exe
+*.hi
+.*
+node_modules

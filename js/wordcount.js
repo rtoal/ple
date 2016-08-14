@@ -1,17 +1,14 @@
-var split = require('split')
+const reader = require('readline').createInterface(process.stdin, null);
+const XRegExp = require('xregexp').XRegExp;
+const counts = new Map();
 
-var counts = {}
-
-process.stdin.setEncoding('utf8');
-
-process.stdin.pipe(split()).on('data', function (line) {
-  (line.toLowerCase().match(/[a-z\']+/g) || []).forEach(function (word) {
-    counts[word] = (counts.hasOwnProperty(word) ? counts[word] : 0) + 1;
-  });
-});
-
-process.stdin.on('end', function () {
-  Object.keys(counts).sort().forEach(function (word) {
-    console.log('%s %d', word, counts[word]);
-  });
+reader.on('line', line => {
+  const wordPattern = XRegExp("[\\p{L}']+", 'g');
+  for (let word of line.toLowerCase().match(wordPattern) || []) {
+    counts.set(word, (counts.get(word) || 0) + 1);
+  }
+}).on('close', () => {
+  for (let word of Array.from(counts.keys()).sort()) {
+    console.log(`${word} ${counts.get(word)}`);
+  }
 });

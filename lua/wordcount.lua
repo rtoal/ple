@@ -1,15 +1,15 @@
-wordTable = {}
+counts = {}
 for line in io.lines() do
-  line:lower():gsub('[a-z\']+', function(w)
-    wordTable[w] = (wordTable[w] or 0) + 1
+  line:lower():gsub('[a-z\']+', function(word)
+    counts[word] = (counts[word] or 0) + 1
   end)
 end
 
-displayTable = {}
-for word, count in pairs(wordTable) do
-  table.insert(displayTable, string.format('%s %d', word, count))
+report = {}
+for word, count in pairs(counts) do
+  table.insert(report, string.format('%s %d', word, count))
 end
-table.sort(displayTable)
-for i, line in ipairs(displayTable) do
+table.sort(report)
+for _, line in ipairs(report) do
   print(line)
 end

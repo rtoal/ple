@@ -4,17 +4,19 @@ public class AnagramApp {
             System.err.println("Exactly one argument is required");
             System.exit(1);
         }
-        generatePermutations(args[0].length()-1, args[0].toCharArray());
+        String word = args[0];
+        generatePermutations(word.toCharArray(), word.length()-1);
     }
 
-    private static void generatePermutations(int n, char[] a) {
+    private static void generatePermutations(char[] a, int n) {
         if (n == 0) {
             System.out.println(String.valueOf(a));
         } else {
-            for (int i = 0; i <= n; i++) {
-                generatePermutations(n-1, a);
-                swap(a, n % 2 == 0 ? i : 0, n);
+            for (int i = 0; i < n; i++) {
+                generatePermutations(a, n-1);
+                swap(a, n % 2 == 0 ? 0 : i, n);
             }
+            generatePermutations(a, n-1);
         }
     }
 
