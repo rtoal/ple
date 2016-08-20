@@ -1,1 +1,183 @@
-This will be a companion website for a book.
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      body {
+        margin: 3em auto;
+        max-width: 960px;
+        background-color: white;
+        color: #221c22;
+        font: 110%/1.5em sans-serif;
+      }
+      .container {
+        padding: 0 10px;
+      }
+      .bookcover {
+        float: right;
+        padding-left: 20px;
+      }
+      .booktitle {
+        font-size: 2.5em;
+        font-weight: bold;
+        line-height: 1.2em;
+      }
+      .authors {
+        font-style: italic;
+        margin-top: 0.75em;
+        margin-left: 3px;
+        font-size: 90%;
+      }
+      .publisher {
+        margin-bottom: 2.5em;
+        margin-left: 3px;
+        font-size: 90%;
+      }
+      p.summary {
+        margin: 1em 0 2em 0;
+      }
+      .sectionheading {
+        color: #4b2538;
+        margin-top: 1.5em;
+        font-weight: bold;
+        font-size: 1.5em;
+      }
+      ul li {
+        color: #a20841;
+      }
+      ul li span {
+        color: #221c22;
+      }
+      a:link {
+        color: #221c62;
+      }
+      a:visited {
+        color: #9488ff;
+      }
+      a img {
+        border-style: none;
+      }
+      .errata-item, ol.exercises > li {
+        margin-top: 2.5em;
+        padding-top: 0.5em;
+        border-top: 2px solid #fcb814;
+      }
+      ol.exercises > li > ol > li {
+        list-style-type: lower-alpha;
+      }
+      pre {
+        margin-left: 40px;
+        font-family: "Lucida Console", "Courier New", monospace;
+        line-height: 1.2em;
+        letter-spacing: -0.2ex;
+      }
+      code, pre.prettyprint {
+        font-family: "Lucida Console", "Courier New", monospace;
+        font-size: 90%;
+        background-color: #e4f3ff;
+      }
+      .console {
+        white-space: pre;
+        font-family: "Lucida Console", "Courier New", monospace;
+        background-color: #002;
+        color: white;
+        padding: .75em  .75em .75em 1em;
+      }
+      .console kbd {
+        font-family: inherit;
+        color: yellow;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="bookcover">
+        <a href=""><img src="resources/book-cover.png" alt="book cover"
+        style="border:1px solid #4b2538"></a>
+      </div>
+
+      <div class="booktitle">Programming Language Explorations</div>
+
+      <div class="authors">
+        <a href="http://cs.lmu.edu/~ray/">Ray Toal,</a>
+        <a href="http://www.lmu.edu/">Loyola Marymount University</a>
+        <br>
+        Rachel Rivera,
+        <a href="http://www.pandora.com/about">Pandora</a>
+        <br>
+        Alex Schneider,
+        <a href="https://www.microsoft.com/en-us/about/">Microsoft</a>
+        <br>
+        Elieen Choe,
+        <a href="http://www.jpl.nasa.gov/">Jet Propusion Laboratory</a>
+      </div>
+      <div class="publisher">
+        &copy; 2017 <a href="https://www.crcpress.com/">CRC Press</a>
+      </div>
+
+      <p class="summary">This text covers all the usual programming language
+      concepts, including binding, scope, parameterization, modularity, concurrency,
+      and meta&shy;programming, not with a dry summary of each concept, but rather
+      within the context of whole-language overviews with plenty of runnable
+      example scripts. We aim to help developers learn a bit of theory, and
+      introduce students to a number of modern languages. Check out the
+      <a href="https://github.com/rtoal/ple">source code</a> for the examples
+      given in the book.</p>
+
+      <div class="sectionheading">Brief Contents</div>
+      <ol>
+        <li value="0">Introduction
+          &mdash; <i>where we explain why the study of languages is fun and give you a hint of what&rsquo;s coming</i>
+        <li value="1">JavaScript
+        <li value="2">CoffeeScript
+        <li value="3">Lua
+        <li value="4">Python
+        <li value="5">Ruby
+        <li value="6">Julia
+        <li value="7">Java
+        <li value="8">Clojure
+        <li value="9">Elm
+        <li value="10">Erlang
+        <li value="11">Go
+        <li value="12">Swift
+        <li value="13">Additional Languages
+          &mdash; <i>where we mention and sometimes provide examples for Fortran,
+          COBOL, Lisp, Algol, Simula, Smalltalk, C, C++, Rust, CLU, Ada, C#,
+          Scala, Bash, Perl, Standard ML, OCaml, Haskell, F#, Idris, ParaSail,
+          Chapel, Elixir, PHP, Hack, TypeScript, Dart, APL, Prolog, K, Io, Factor,
+          Brainfuck, Befunge, LOLCODE, and nasm</i>
+        <li value="14">Afterword
+          &mdash; <i>where we review language concepts in a Socratic fashion</i>
+        <li value="1" type="A">Numbers
+          &mdash; <i>where we five encodings of fixed-size integers and IEEE
+          754 floating point</i>
+        <li value="2" type="A">Text
+          &mdash; <i>where we summarize what you need to know about Unicode,
+          and a little more</i>
+      </ol>
+
+      <div class="sectionheading">Source Code</div>
+
+      <p>All of the source code from the book, as well as dozens of other sample
+      programs, can be found in <a href="https://github.com/rtoal/ple">this
+      GitHub repository</a>. The repo contains pointers to additional resources
+      for each of the programming languages covered.</p>
+
+      <div class="sectionheading">Errata</div>
+
+      <p>Nothing found yet, but please let us know if you find anything.
+      Email one of the authors or submit a pull request for this file.</p>
+
+      <div class="sectionheading">Additional Exercises</div>
+
+      <p>The text features 300 exercies, most of which are &ldquo;further
+      explorations&rdquo; in which you find or install a language interpreter,
+      investigate aspects of the language not covered in the chapter proper,
+      muse about language designers&rsquo; intents, and try your hand at
+      both large and small programming exercises. If you would like to contribute
+      additional exercises, submit a pull request for this file.
+    </div>
+  </body>
+</html>
