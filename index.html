@@ -189,8 +189,8 @@
         <dd>Object-orientation and much more within an overview of the language
         billed as &ldquo;A programmer&rsquo;s best friend.&rdquo; We define
         messaging, encapsulation, inheritance, and polymorphism, and look
-        at access controls, and singleton classes. Ruby&rsquo;s blocks and
-        mixins bring up some new issues, as does the langauge&rsquo;s extensive
+        at access controls and singleton classes. Ruby&rsquo;s blocks and
+        mixins bring up some new issues, as does the language&rsquo;s extensive
         metaprogramming capabilities.
 
         <dt>Chapter 6 Julia
@@ -209,29 +209,59 @@
         <dt>Chapter 8 Clojure
         <dd>A tour of the mostly-functional language known as a Lisp for
         the JVM. We look at its interesting syntax, its rich set of data
-        types, and namespaces; then introduce persistent data structures,
-        transients, software transactional memory, and agents. We look at
-        two approaches to the expression problem and discuss how Clojure&rsquo;s
-        hygienic macros compare to Julia&rsquo;s.
+        types, and its implementation of namespaces; then introduce persistent
+        data structures, transients, software transactional memory, and agents.
+        We look at two approaches to the expression problem (protocols and
+        multimethods) and discuss how Clojure&rsquo;s hygienic macros compare
+        to Julia&rsquo;s.
 
         <dt>Chapter 9 Elm
-        <dd>TODO
+        <dd>An overview of the member of the ML-family of languages that
+        makes it fun to write reactive web clients in a functional style.
+        Our tour introduces the beautiful aspects of the ML-family&mdash;Hindley-Milner
+        typing with type variables and extensive type inference, pattern-matching,
+        and tagged union types&mdash;as well as Elm&rsquo;s contributions, including
+        record types and subscriptions. This chapter (together with
+        the overview of Haskell in Chapter 14) talks about the general problem
+        of managing side-effects in pure functional programming.
 
         <dt>Chapter 10 Erlang
-        <dd>TODO
+        <dd>The language known for scalability and incredible availablity that
+        powers the messaging infrastructure behind Whisper and WhatsApp. A
+        functional language like the previous two but with its own syntactic
+        feel, this chapter continues our discussion on loop-free, matching-oriented
+        programming with immutable data. But what makes Erlang Erlang is its
+        messaging system based on processes without shared memory, and its
+        acheivement of high availability through a philosophy known,
+        perhaps surprisingly, as &ldquo;Let it Crash.&rdquo;
 
         <dt>Chapter 11 Go
-        <dd>TODO
+        <dd>Another language emphasizing distributed programming via message
+        passing, but unlike Erlang, places the focus on channels rather than
+        named processes. Our tour introduces a few other concepts, too,
+        such as explicit switch fallthrough, defer statements, explicit pointers,
+        slices, and panics. We examine Go&rsquo;s level of type inference which
+        falls somewhere in between Java&rsquo;s and Elm&rsquo;s.
 
         <dt>Chapter 12 Swift
-        <dd>TODO
+        <dd>A look at the elegantly-designed, safe, fun, and powerful
+        modern language most often used for writing native applications in macOS,
+        iOS, tvOS, and watchOS. Here we see character processing done right,
+        common collections implemented as library types rather than hardwired
+        into the language (though with syntactic sugar to trick you), more on
+        optionals, custom operator definitions, extensions, and protocols.
+        And of course, we introduce automatic reference counting.
 
         <dt>Chapter 13 Additional Languages
         <dd>Brief looks at Fortran, COBOL, Lisp, Algol, Simula, Smalltalk, C,
         C++, Rust, CLU, Ada, C#, Scala, Bash, Perl, Standard ML, OCaml, Haskell,
         F#, Idris, ParaSail, Chapel, Elixir, PHP, Hack, TypeScript, Dart, APL,
         Prolog, K, Io, Factor, Brainfuck, Befunge, LOLCODE, and nasm (an assembly
-        language for the x86 architecture).
+        language for the x86 architecture). This chapter is by no means and
+        afterthought or an aside; the sections on Rust and C, in particular,
+        have a bit to say about dealing with explicit pointers without
+        a garbage collector, while other sections introduce new programming
+        paradigms not covered in the twelve featured language chapters.
 
         <dt>Chapter 14 Afterword
         <dd>A review of language concepts in a Socratic fashion.
@@ -264,19 +294,34 @@
       <a href="http://www.kyleblaney.com/software-blog/2012/6/29/comments-are-a-failure.html">Uncle
       Bob tells us why comments are not &ldquo;pure good.&rdquo;</a></p>
 
+      <p>By the way, please note the book is <em>not</em> a treatise based on formal
+      syntax and semantics. For deeper theory, see, for example,
+      <a href="http://www.cambridge.org/us/academic/subjects/computer-science/programming-languages-and-applied-logic/practical-foundations-programming-languages-2nd-edition">Harper</a>,
+      <a href="https://mitpress.mit.edu/books/types-and-programming-languages">Pierce</a>, or
+      <a href="https://mitpress.mit.edu/books/design-concepts-programming-languages">Turbak and Gifford</a>.
+      Looking for more on history? Start with Wikipedia&rsquo;s articles on programming language
+      history and follow links. Make sure to go way back and read some early papers, for example by
+      <a href="http://www.mirrorservice.org/sites/www.bitsavers.org/pdf/stanford/cs_techReports/STAN-CS-76-562_EarlyDevelPgmgLang_Aug76.pdf">Knuth</a>
+      and <a href="http://worrydream.com/EarlyHistoryOfSmalltalk/">Kay</a>.
+      Finally, for an approach to language practice and theory
+      orgranized around programming style, don't miss
+      <a href="https://www.crcpress.com/Exercises-in-Programming-Style/Lopes/p/book/9781482227376">Lopes</a>.
+
 
       <div class="sectionheading">Additional Resources</div>
 
       <p>We&rsquo;ve put all of our examples, and unit tests galore, on
       <a href="https://github.com/rtoal/ple">GitHub</a>, of course.
-      The repo contains pointers to additional resources for each of the
-      programming languages covered. See something wrong or want to
-      add anything? Send us a pull request.</p>
+      The repo contains pointers to additional resources (books, papers,
+      applications, frameworks, etc.) for each of the
+      programming languages covered in their respective README.md files.
+      See something wrong or want to add anything? Send us a pull request.</p>
 
 
       <div class="sectionheading">Errata</div>
 
-      <p>Please let us know if you find anything.
+      <p>We&rsquo;ll list the mistakes in the book right here as they come in.
+      Please let us know if you find anything.
       Email one of the authors or submit a pull request for this file.</p>
 
 
@@ -286,8 +331,9 @@
       explorations&rdquo; in which you find or install compilers or interpreters,
       investigate aspects of a language not covered in the chapter proper,
       muse about language designers&rsquo; intents, and try your hand at
-      both large and small programming tasks. If you would like to contribute
-      additional exercises, submit a pull request for this file.
+      both large and small programming tasks. We&rsquo;ll provide
+      a page with a few more. (It&rsquo;s not yet begun, however.) If you
+      would like to contribute additional exercises, submit a pull request.
 
 
       <div id="bottomline">
@@ -323,7 +369,7 @@
         <img src="resources/rust-logo-24.png" title="Rust">
         <img src="resources/scala-logo-24.png" title="Scala">
         <img src="resources/smalltalk-logo-24.png" title="Smalltalk">
-        <img src="resources/sml-logo-24.png" title="Standard ML">
+        <img src="resources/sml-alt-logo-24.png" title="Standard ML">
         <img src="resources/swift-logo-24.png" title="Swift">
       </div>
     </div>
