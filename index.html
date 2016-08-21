@@ -38,10 +38,10 @@
       }
       .sectionheading {
         color: #4b2538;
-        margin-top: 1.75em;
+        margin-top: 2em;
         font-weight: bold;
         font-size: 1.75em;
-        margin-bottom: 0.5em;
+        margin-bottom: 1em;
       }
       dl {
         background-color: #fffff2;
@@ -71,6 +71,9 @@
         border-style: none;
       }
       #bottomline {
+        border-top: 2px solid #ffa0e4;
+        margin-top: 40px;
+        padding: 20px 50px 0 50px;
         text-align: center;
       }
       .errata-item, ol.exercises > li {
@@ -114,8 +117,8 @@
         style="border:1px solid #4b2538"></a>
       </div>
 
-      <div class="booktitle">Programming Language Explorations</div>
 
+      <div class="booktitle">Programming Language Explorations</div>
       <div class="authors">
         <a href="http://cs.lmu.edu/~ray/">Ray Toal,</a>
         <a href="http://www.lmu.edu/">Loyola Marymount University</a>
@@ -143,7 +146,8 @@
       can be found in <a href="https://github.com/rtoal/ple">this GitHub
       repository</a>.</p>
 
-      <div class="sectionheading">Brief Contents</div>
+
+      <div class="sectionheading">Contents</div>
 
       <dl>
         <dt>Chapter 0 Introduction
@@ -160,40 +164,55 @@
 
         <dt>Chapter 2 CoffeeScript
         <dd>A tour of a language that compiles to JavaScript, or as is sometimes
-        said, <em>is</em> JavaScript&mdash;though with an alternate syntax
-        (with a <em>lot</em> less clutter). We&rsquo;ll take a first look at
-        destructuring and existential operators, and look at a very interesting
-        design decision that avoids shadowing almost everywhere.
+        said, <strong>is</strong> JavaScript&mdash;though with an alternate syntax
+        (you&rsquo;ll notice a <em>lot</em> less clutter). We take a first
+        look at destructuring and existential operators, and explore a very
+        interesting design decision that avoids shadowing almost everywhere.
 
         <dt>Chapter 3 Lua
-        <dd>A tour of lightweight scripting language ...
+        <dd>A tour of the well-loved lightweight scripting language behind
+        World of Warcraft and Angry Birds (among others), introducing
+        some new types, an approach to errors that avoids exceptions,
+        and a unification of arrays and dictionaries known as the table.
+        We also see metatables, which provide both differential inheritance
+        and operator overloading, and see coroutines for the first time.
 
         <dt>Chapter 4 Python
-        <dd>where we
+        <dd>Our first language with a sophisticated type system, where types
+        are objects within the language, and in which the programmer can
+        define new types. This chapter introduces supertype-subtype
+        relationships, multiple inheritance, keyword arguments,
+        pass-by-sharing, special methods, iterators and generators,
+        and decorators.
 
         <dt>Chapter 5 Ruby
-        <dd>where we
+        <dd>Object-orientation and much more within an overview of the language
+        billed as &ldquo;A programmer&rsquo;s best friend.&rdquo; We define
+        messaging, encapsulation, inheritance, and polymorphism, and look
+        at access controls, and singleton classes. Ruby&rsquo;s blocks and
+        mixins bring up some new issues, as does the langauge&rsquo;s extensive
+        metaprogramming capabilities.
 
         <dt>Chapter 6 Julia
-        <dd>where we
+        <dd>TODO
 
         <dt>Chapter 7 Java
-        <dd>where we
+        <dd>Our first statically-typed language TODO
 
         <dt>Chapter 8 Clojure
-        <dd>where we
+        <dd>TODO
 
         <dt>Chapter 9 Elm
-        <dd>where we
+        <dd>TODO
 
         <dt>Chapter 10 Erlang
-        <dd>where we
+        <dd>TODO
 
         <dt>Chapter 11 Go
-        <dd>where we
+        <dd>TODO
 
         <dt>Chapter 12 Swift
-        <dd>where we
+        <dd>TODO
 
         <dt>Chapter 13 Additional Languages
         <dd>Brief looks at Fortran, COBOL, Lisp, Algol, Simula, Smalltalk, C,
@@ -214,9 +233,10 @@
         little bit more.
       </dl>
 
+
       <div class="sectionheading">Good to Know</div>
 
-      <p>This book is not for beginning programmers. We&rsquo;re assuming you
+      <p>This book is not for beginning programmers. We assume you
       know at least two languages pretty well, and hopefully a couple more.
       You should know the basic concepts surrounding variables, expressions,
       operators, functions, and basic data structures, and have experience
@@ -228,7 +248,7 @@
 
       <p>Most of the code examples are written as their own unit tests,
       which should help you learn the concepts as you read the code itself.
-      We favor this style over comments, which, you know, can become
+      We favor this style over excessive comments, which, you know, can become
       stale and misleading.
       <a href="http://www.kyleblaney.com/software-blog/2012/6/29/comments-are-a-failure.html">Uncle
       Bob tells us why comments are not &ldquo;pure good.&rdquo;</a></p>
@@ -242,10 +262,12 @@
       programming languages covered. See something wrong or want to
       add anything? Send us a pull request.</p>
 
+
       <div class="sectionheading">Errata</div>
 
       <p>Please let us know if you find anything.
       Email one of the authors or submit a pull request for this file.</p>
+
 
       <div class="sectionheading">Additional Exercises</div>
 
@@ -255,6 +277,7 @@
       muse about language designers&rsquo; intents, and try your hand at
       both large and small programming tasks. If you would like to contribute
       additional exercises, submit a pull request for this file.
+
 
       <div id="bottomline">
         <img src="resources/ada-logo-24.png">
