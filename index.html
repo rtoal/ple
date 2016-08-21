@@ -138,7 +138,7 @@
 
       <p class="summary">This text covers all the usual programming language
       concepts, including binding, scope, typing, parameterization, modularity, concurrency,
-      and meta&shy;programming, not via a dry summary of each concept, but rather
+      and meta&shy;programming, not via a dry explanation of each topic, but rather
       within the context of whole-language overviews with plenty of runnable
       example scripts. We aim to help developers learn a bit of theory, and
       introduce students to a number of modern languages. All of the source
@@ -197,14 +197,16 @@
         <dd>A tour of the new dynamic language for scientific computing where
         we encounter abstract types, parametric types, sum and product types,
         and the notions of covariance, contravariance, and invariance. We see
-        polymorphism with multiple dispatch, a metaprogramming facility with
+        polymorphism with multiple dispatch (differing from the single-receiver
+        forms of previous languages), a metaprogramming facility with
         hygienic macros, and language support for parallel and distributed
         computing.
 
         <dt>Chapter 7 Java
         <dd>An exploration of our first statically-typed language with coverage
-        of classes, modifiers, interfaces, generics, optionals, reflection,
-        and quite a lot about threads.
+        of classes, modifiers, interfaces, generics, optionals (and their
+        relationship to the billion dollar mistake), reflection,
+        and quite a lot about threads and synchronization.
 
         <dt>Chapter 8 Clojure
         <dd>A tour of the mostly-functional language known as a Lisp for
@@ -226,7 +228,8 @@
         of managing side-effects in pure functional programming.
 
         <dt>Chapter 10 Erlang
-        <dd>The language known for scalability and incredible availablity that
+        <dd>The language known for scalability and incredible seven-nines
+        availablity that
         powers the messaging infrastructure behind Whisper and WhatsApp. A
         functional language like the previous two but with its own syntactic
         feel, this chapter continues our discussion on loop-free, matching-oriented
@@ -239,8 +242,8 @@
         <dd>Another language emphasizing distributed programming via message
         passing, but unlike Erlang, places the focus on channels rather than
         named processes. Our tour introduces a few other concepts, too,
-        such as explicit switch fallthrough, defer statements, explicit pointers,
-        slices, and panics. We examine Go&rsquo;s level of type inference which
+        such as multiple-value function returns, defer statements, explicit pointers,
+        slices, and panics. We examine Go&rsquo;s level of type inference, which
         falls somewhere in between Java&rsquo;s and Elm&rsquo;s.
 
         <dt>Chapter 12 Swift
@@ -250,7 +253,7 @@
         common collections implemented as library types rather than hardwired
         into the language (though with syntactic sugar to trick you), more on
         optionals, custom operator definitions, extensions, and protocols.
-        And of course, we introduce automatic reference counting.
+        And of course, automatic reference counting.
 
         <dt>Chapter 13 Additional Languages
         <dd>Brief looks at Fortran, COBOL, Lisp, Algol, Simula, Smalltalk, C,
@@ -286,7 +289,9 @@
       <em>tutorial</em>. We cover many interesting (and often powerful) features,
       and <strong>purposely do so with code that is often very dense and sometimes
       cryptic, even when presenting unfamiliar paradigms for the first
-      time</strong>.</p>
+      time</strong>. If you like to learn by reading example code, you should
+      find the approach to your liking&mdash;but be prepared to put in some
+      time for study and practice.</p>
 
       <p>Most of the code examples are written as their own unit tests,
       which should help you learn the concepts as you read the code itself.
@@ -294,17 +299,19 @@
       <a href="http://www.kyleblaney.com/software-blog/2012/6/29/comments-are-a-failure.html">Uncle
       Bob tells us why comments are not &ldquo;pure good.&rdquo;</a></p>
 
-      <p>By the way, please note the book is <em>not</em> a treatise based on formal
+      <p>Please note the book is <em>not</em> a treatise based on formal
       syntax and semantics. For deeper theory, see, for example,
       <a href="http://www.cambridge.org/us/academic/subjects/computer-science/programming-languages-and-applied-logic/practical-foundations-programming-languages-2nd-edition">Harper</a>,
       <a href="https://mitpress.mit.edu/books/types-and-programming-languages">Pierce</a>, or
       <a href="https://mitpress.mit.edu/books/design-concepts-programming-languages">Turbak and Gifford</a>.
       Looking for more on history? Start with Wikipedia&rsquo;s articles on programming language
-      history and follow links. Make sure to go way back and read some early papers, for example by
+      history and follow links. Make sure to go way back and read some early papers;
+      the classics by
       <a href="http://www.mirrorservice.org/sites/www.bitsavers.org/pdf/stanford/cs_techReports/STAN-CS-76-562_EarlyDevelPgmgLang_Aug76.pdf">Knuth</a>
-      and <a href="http://worrydream.com/EarlyHistoryOfSmalltalk/">Kay</a>.
+      and <a href="http://worrydream.com/EarlyHistoryOfSmalltalk/">Kay</a> are must
+      reads for anyone that values the roots of the discipline.
       Finally, for an approach to language practice and theory
-      orgranized around programming style, don't miss
+      orgranized around programming style and paradigms, don't miss
       <a href="https://www.crcpress.com/Exercises-in-Programming-Style/Lopes/p/book/9781482227376">Lopes</a>.
 
 
