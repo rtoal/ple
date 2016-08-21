@@ -38,9 +38,14 @@
       }
       .sectionheading {
         color: #4b2538;
-        margin-top: 1.5em;
+        margin-top: 1.75em;
         font-weight: bold;
         font-size: 1.75em;
+        margin-bottom: 0.5em;
+      }
+      dl {
+        background-color: #fffff2;
+        padding-left: 3px;
       }
       dt {
         margin-top: 10px;
@@ -64,6 +69,9 @@
       }
       a img {
         border-style: none;
+      }
+      #bottomline {
+        text-align: center;
       }
       .errata-item, ol.exercises > li {
         margin-top: 2.5em;
@@ -136,46 +144,95 @@
       repository</a>.</p>
 
       <div class="sectionheading">Brief Contents</div>
+
       <dl>
         <dt>Chapter 0 Introduction
         <dd>A little on why the study of languages is fun and some hints about
-        what&rsquo;s coming up in the rest of the book
+        what&rsquo;s coming up in the rest of the book.
+
         <dt>Chapter 1 JavaScript
-        <dd>where we
+        <dd>A tour of one of the world&rsquo;s most popular languages, introducing
+        assignment, references, shallow and deep copies, null and undefined, weak
+        typing, assertions, anonymous and higher-order functions, stack frames,
+        closures, static vs. dynamic scope, shallow vs. deep binding,
+        methods, prototypes, and asynchronous programming with both
+        callbacks and promises.
+
         <dt>Chapter 2 CoffeeScript
-        <dd>where we
+        <dd>A tour of a language that compiles to JavaScript, or as is sometimes
+        said, <em>is</em> JavaScript&mdash;though with an alternate syntax
+        (with a <em>lot</em> less clutter). We&rsquo;ll take a first look at
+        destructuring and existential operators, and look at a very interesting
+        design decision that avoids shadowing almost everywhere.
+
         <dt>Chapter 3 Lua
-        <dd>where we
+        <dd>A tour of lightweight scripting language ...
+
         <dt>Chapter 4 Python
         <dd>where we
+
         <dt>Chapter 5 Ruby
         <dd>where we
+
         <dt>Chapter 6 Julia
         <dd>where we
+
         <dt>Chapter 7 Java
         <dd>where we
+
         <dt>Chapter 8 Clojure
         <dd>where we
+
         <dt>Chapter 9 Elm
         <dd>where we
+
         <dt>Chapter 10 Erlang
         <dd>where we
+
         <dt>Chapter 11 Go
         <dd>where we
+
         <dt>Chapter 12 Swift
         <dd>where we
+
         <dt>Chapter 13 Additional Languages
         <dd>Brief looks at Fortran, COBOL, Lisp, Algol, Simula, Smalltalk, C,
         C++, Rust, CLU, Ada, C#, Scala, Bash, Perl, Standard ML, OCaml, Haskell,
         F#, Idris, ParaSail, Chapel, Elixir, PHP, Hack, TypeScript, Dart, APL,
-        Prolog, K, Io, Factor, Brainfuck, Befunge, LOLCODE, and nasm
+        Prolog, K, Io, Factor, Brainfuck, Befunge, LOLCODE, and nasm (an assembly
+        language for the x86 architecture).
+
         <dt>Chapter 14 Afterword
-        <dd>A review of language concepts in a Socratic fashion
+        <dd>A review of language concepts in a Socratic fashion.
+
         <dt>Appendix A Numbers
-        <dd>Encodings of fixed-size integers and IEEE-754 floating point numbers
+        <dd>Encodings of fixed-size integers and IEEE-754 floating point numbers.
+
         <dt>Appendix B Text
-        <dd>All you need to know about Unicode, and a little bit more
-     </dl>
+        <dd>All you need to know about Unicode (including what extended
+        grapheme clusters are, and how exactly UTF-8 works), and a
+        little bit more.
+      </dl>
+
+      <div class="sectionheading">Good to Know</div>
+
+      <p>This book is not for beginning programmers. We&rsquo;re assuming you
+      know at least two languages pretty well, and hopefully a couple more.
+      You should know the basic concepts surrounding variables, expressions,
+      operators, functions, and basic data structures, and have experience
+      writing nontrivial applications&mdash;this book is a <em>tour</em>, not a
+      <em>tutorial</em>. We cover many interesting (and often powerful) features,
+      and <strong>purposely do so with code that is often very dense and sometimes
+      cryptic, even when presenting unfamiliar paradigms for the first
+      time</strong>.</p>
+
+      <p>Most of the code examples are written as their own unit tests,
+      which should help you learn the concepts as you read the code itself.
+      We favor this style over comments, which, you know, can become
+      stale and misleading.
+      <a href="http://www.kyleblaney.com/software-blog/2012/6/29/comments-are-a-failure.html">Uncle
+      Bob tells us why comments are not &ldquo;pure good.&rdquo;</a></p>
+
 
       <div class="sectionheading">Additional Resources</div>
 
@@ -198,6 +255,43 @@
       muse about language designers&rsquo; intents, and try your hand at
       both large and small programming tasks. If you would like to contribute
       additional exercises, submit a pull request for this file.
+
+      <div id="bottomline">
+        <img src="resources/ada-logo-24.png">
+        <img src="resources/apl-logo-24.png">
+        <img src="resources/bash-logo-24.png">
+        <img src="resources/c-logo-24.png">
+        <img src="resources/ceylon-logo-24.png">
+        <img src="resources/chapel-logo-24.png">
+        <img src="resources/clojure-logo-24.png">
+        <img src="resources/coffeescript-logo-24.png">
+        <img src="resources/dart-logo-24.png">
+        <img src="resources/elixir-logo-24.png">
+        <img src="resources/elm-logo-24.png">
+        <img src="resources/erlang-logo-24.png">
+        <img src="resources/fsharp-logo-24.png">
+        <img src="resources/go-logo-24.png">
+        <img src="resources/haskell-logo-24.png">
+        <img src="resources/java-logo-24.png">
+        <img src="resources/javascript-logo-24.png">
+        <img src="resources/julia-logo-24.png">
+        <img src="resources/k-logo-24.png">
+        <img src="resources/kotlin-logo-24.png">
+        <img src="resources/lolcode-logo-24.png">
+        <img src="resources/lua-logo-24.png">
+        <img src="resources/nasm-logo-24.png">
+        <img src="resources/nim-logo-24.png">
+        <img src="resources/ocaml-logo-24.png">
+        <img src="resources/perl-logo-24.png">
+        <img src="resources/python-logo-24.png">
+        <img src="resources/r-logo-24.png">
+        <img src="resources/ruby-logo-24.png">
+        <img src="resources/rust-logo-24.png">
+        <img src="resources/scala-logo-24.png">
+        <img src="resources/smalltalk-logo-24.png">
+        <img src="resources/sml-logo-24.png">
+        <img src="resources/swift-logo-24.png">
+      </div>
     </div>
   </body>
 </html>
