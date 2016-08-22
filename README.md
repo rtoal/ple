@@ -1,6 +1,6 @@
 # Programming Language Explorations
 
-Source code for the examples in a forthcoming book.
+Source code for the examples in <a href="http://rtoal.github.io/ple">a book</a>.
 
 See the `test.sh` files within the individual directories to see how to build and run the examples, most of which are scripts with internal assertions.
 
@@ -29,7 +29,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
     <td>Mono 4.4.1
 <tr><td>C++
-    <td>
+    <td align="center"><img valign="middle" src="resources/cpp-logo-24.png">
     <td>
     <td>Apple LLVM version 7.3.0 (clang-703.0.31)
 <tr><td>Ceylon
@@ -65,7 +65,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>Erlang/OTP 19.0.2
     <td>
 <tr><td>Factor
-    <td>
+    <td align="center"><img valign="middle" src="resources/factor-logo-24.png">
     <td>
     <td>
 <tr><td>F#
@@ -84,6 +84,14 @@ The examples here have been tested on a machine running macOS using the followin
     <td align="center"><img valign="middle" src="resources/haskell-logo-24.png">
     <td>2010
     <td>The Glorious Glasgow Haskell Compilation System, version 8.0.1
+<tr><td>Idris
+    <td align="center"><img valign="middle" src="resources/idris-logo-24.png">
+    <td>
+    <td>
+<tr><td>Io
+    <td align="center"><img valign="middle" src="resources/io-logo-24.png">
+    <td>
+    <td>
 <tr><td>Java
     <td align="center"><img valign="middle" src="resources/java-logo-24.png">
     <td>1.8.0_66
