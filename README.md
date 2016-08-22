@@ -47,7 +47,7 @@ The examples here have been tested on a machine running macOS using the followin
 <tr><td>CoffeeScript
     <td align="center"><img valign="middle" src="resources/coffeescript-logo-24.png">
     <td>1.10.0
-    <td>(Run under Node 6.2.0)
+    <td>(Run under Node 6.3.0)
 <tr><td>Dart
     <td align="center"><img valign="middle" src="resources/dart-logo-24.png">
     <td>1.18.1
@@ -78,7 +78,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Go
     <td align="center"><img valign="middle" src="resources/go-logo-24.png">
-    <td>1.6.2
+    <td>1.7
     <td>
 <tr><td>Haskell
     <td align="center"><img valign="middle" src="resources/haskell-logo-24.png">
@@ -122,7 +122,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Nasm
     <td align="center"><img valign="middle" src="resources/nasm-logo-24.png">
-    <td>2.12.01
+    <td>2.12.02
     <td>
 <tr><td>Nim
     <td align="center"><img valign="middle" src="resources/nim-logo-24.png">
@@ -154,7 +154,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Rust
     <td align="center"><img valign="middle" src="resources/rust-logo-24.png">
-    <td>1.10.0
+    <td>1.11.0
     <td>
 <tr><td>Scala
     <td align="center"><img valign="middle" src="resources/scala-logo-24.png">
@@ -165,7 +165,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
     <td>
 <tr><td>Standard ML
-    <td align="center"><img valign="middle" src="resources/sml-logo-24.png">
+    <td align="center"><img valign="middle" src="resources/sml-alt-logo-24.png">
     <td>mlton-20130715
     <td>
 <tr><td>Swift
