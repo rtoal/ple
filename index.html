@@ -17,6 +17,9 @@
         float: right;
         padding-left: 20px;
       }
+      .bookcover img {
+        border:1px solid #4b2538;
+      }
       .booktitle {
         font-size: 2.5em;
         font-weight: bold;
@@ -113,8 +116,8 @@
   <body>
     <div class="container">
       <div class="bookcover">
-        <a href=""><img src="resources/book-cover.png" alt="book cover"
-        style="border:1px solid #4b2538"></a>
+        <a href="https://www.crcpress.com/Programming-Language-Explorations/Toal-Rivera-Schneider-Choe/p/book/9781498738460"><img
+        src="resources/book-cover.png" alt="book cover"></a>
       </div>
 
 
@@ -138,12 +141,12 @@
 
       <p class="summary">This text covers all the usual programming language
       concepts, including binding, scope, typing, parameterization, modularity, concurrency,
-      and meta&shy;programming, not via a dry explanation of each topic, but rather
+      and meta&shy;programming, not through a dry explanation of each topic, but rather
       within the context of whole-language overviews with plenty of runnable
       example scripts. We aim to help developers learn a bit of theory, and
       introduce students to a number of modern languages. All of the source
       code for the book&rsquo;s examples, as well as number of bonus scripts,
-      can be found in <a href="https://github.com/rtoal/ple">this GitHub
+      are found in <a href="https://github.com/rtoal/ple">a GitHub
       repository</a>.</p>
 
 
@@ -188,7 +191,7 @@
         <dt>Chapter 5 Ruby
         <dd>Object-orientation and much more within an overview of the language
         billed as &ldquo;A programmer&rsquo;s best friend.&rdquo; We define
-        messaging, encapsulation, inheritance, and polymorphism, and look
+        messaging, encapsulation, (class-based) inheritance, and polymorphism, and look
         at access controls and singleton classes. Ruby&rsquo;s blocks and
         mixins bring up some new issues, as does the language&rsquo;s extensive
         metaprogramming capabilities.
@@ -209,8 +212,8 @@
         and quite a lot about threads and synchronization.
 
         <dt>Chapter 8 Clojure
-        <dd>A tour of the mostly-functional language known as a Lisp for
-        the JVM. We look at its interesting syntax, its rich set of data
+        <dd>A tour of the mostly-functional, modern dialect of Lisp, that
+        inter&shy;operates with Java. We look at its interesting syntax, its rich set of data
         types, and its implementation of namespaces; then introduce persistent
         data structures, transients, software transactional memory, and agents.
         We look at two approaches to the expression problem (protocols and
@@ -224,19 +227,19 @@
         typing with type variables and extensive type inference, pattern-matching,
         and tagged union types&mdash;as well as Elm&rsquo;s contributions, including
         record types and subscriptions. This chapter (together with
-        the overview of Haskell in Chapter 14) talks about the general problem
+        the overviews of Haskell and Idris in Chapter 14) discusses the general problem
         of managing side-effects in pure functional programming.
 
         <dt>Chapter 10 Erlang
         <dd>The language known for scalability and incredible seven-nines
-        availablity that
-        powers the messaging infrastructure behind Whisper and WhatsApp. A
-        functional language like the previous two but with its own syntactic
-        feel, this chapter continues our discussion on loop-free, matching-oriented
-        programming with immutable data. But what makes Erlang Erlang is its
-        messaging system based on processes without shared memory, and its
-        acheivement of high availability through a philosophy known,
-        perhaps surprisingly, as &ldquo;Let it Crash.&rdquo;
+        availablity that powers the messaging infrastructure behind Whisper and
+        WhatsApp. As Erlang is a functional language like Clojure and Elm (though
+        with a rather unique syntax), this chapter continues our discussion on
+        loop-free, matching-oriented programming with immutable data. But what
+        makes Erlang Erlang is its messaging system based on processes
+        without shared memory, and its acheivement of high availability
+        through a philosophy known, perhaps surprisingly, as &ldquo;Let it
+        Crash.&rdquo;
 
         <dt>Chapter 11 Go
         <dd>Another language emphasizing distributed programming via message
@@ -253,7 +256,7 @@
         common collections implemented as library types rather than hardwired
         into the language (though with syntactic sugar to trick you), more on
         optionals, custom operator definitions, extensions, and protocols.
-        And of course, automatic reference counting.
+        We also spend time on the details of automatic reference counting (ARC).
 
         <dt>Chapter 13 Additional Languages
         <dd>Brief looks at Fortran, COBOL, Lisp, Algol, Simula, Smalltalk, C,
@@ -289,9 +292,9 @@
       <em>tutorial</em>. We cover many interesting (and often powerful) features,
       and <strong>purposely do so with code that is often very dense and sometimes
       cryptic, even when presenting unfamiliar paradigms for the first
-      time</strong>. If you like to learn by reading example code, you should
-      find the approach to your liking&mdash;but be prepared to put in some
-      time for study and practice.</p>
+      time</strong>. If you like to learn by reading example code, and
+      performing your own experiments, you should
+      find the approach to your liking.</p>
 
       <p>Most of the code examples are written as their own unit tests,
       which should help you learn the concepts as you read the code itself.
@@ -309,7 +312,7 @@
       the classics by
       <a href="http://www.mirrorservice.org/sites/www.bitsavers.org/pdf/stanford/cs_techReports/STAN-CS-76-562_EarlyDevelPgmgLang_Aug76.pdf">Knuth</a>
       and <a href="http://worrydream.com/EarlyHistoryOfSmalltalk/">Kay</a> are must
-      reads for anyone that values the roots of the discipline.
+      reads for anyone that appreciates and values where the field has come from.
       Finally, for an approach to language practice and theory
       orgranized around programming style and paradigms, don't miss
       <a href="https://www.crcpress.com/Exercises-in-Programming-Style/Lopes/p/book/9781482227376">Lopes</a>.
