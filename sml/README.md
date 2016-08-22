@@ -1,4 +1,4 @@
-<img align="right" src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/sml=alt-logo-300.png">
+<img align="right" src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/sml-alt-logo-300.png">
 # Standard ML Examples
 
 There are many implementations of Standard ML. To get MLton:
