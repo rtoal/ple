@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      body {
+        margin: 0 auto;
+        background-color: white;
+        overflow: hidden;
+        height: 100%;
+      }
+      #content {
+        position: absolute;
+        top: 0;
+        left: 200px;
+        width: calc(100% - 200px);
+        height: 100%;
+      }
+      .element {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+      }
+      #container {
+        position: absolute;
+        top: 0;
+        width: 200px;
+        overflow: hidden;
+        height: 100%;
+      }
+      #sidebar {
+        position: absolute;
+        top: 0;
+        font: 18px/1.5 sans-serif;
+        padding-left: 8px;
+        background-color: black;
+        color: white;
+        width: 250px;
+        height: 100%;
+        overflow-y: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="sidebar">
+      </div>
+    </div>
+    <div id="content">
+      <div class="element">
+        <img id="logo" valign=middle src="resources/ada-logo-300.png">
+      </div>
+    </div>
+    <script>
+      var languages = ("ada apl bash c ceylon chapel clojure " +
+        "coffeescript cpp dart elixir elm erlang factor falcon " +
+        "fsharp go haskell idris io java javascript julia k " +
+        "kitten kotlin lolcode lua mercury nasm nemerle nim " +
+        "ocaml perl purescript python r racket ruby rust scala " +
+        "scratch smalltalk sml-alt swift"
+      ).split(" ");
+      var sidebar = document.getElementById("sidebar");
+      for (let i = 0; i < languages.length; i++) {
+        let element = document.createElement("div");
+        let text = document.createTextNode(languages[i]);
+        element.appendChild(text);
+        element.name = languages[i];
+        sidebar.appendChild(element);
+        element.onclick = function () {
+          show(element.name);
+        }
+      }
+      var imageElement = document.getElementById("logo");
+      var show = function (name) {
+        imageElement.src = 'resources/' + name + '-logo-300.png';
+      };
+    </script>
+  </body>
+</html>
