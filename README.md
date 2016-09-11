@@ -48,6 +48,10 @@ The examples here have been tested on a machine running macOS using the followin
     <td align="center"><img valign="middle" src="resources/coffeescript-logo-24.png">
     <td>1.10.0
     <td>(Run under Node 6.3.0)
+<tr><td>D
+    <td align="center"><img valign="middle" src="resources/d-logo-24.png">
+    <td>
+    <td>
 <tr><td>Dart
     <td align="center"><img valign="middle" src="resources/dart-logo-24.png">
     <td>1.18.1
@@ -148,6 +152,10 @@ The examples here have been tested on a machine running macOS using the followin
     <td align="center"><img valign="middle" src="resources/r-logo-24.png">
     <td>
     <td>
+<tr><td>Racket
+    <td align="center"><img valign="middle" src="resources/racket-logo-24.png">
+    <td>
+    <td>
 <tr><td>Ruby
     <td align="center"><img valign="middle" src="resources/ruby-logo-24.png">
     <td>2.3.1
@@ -171,5 +179,5 @@ The examples here have been tested on a machine running macOS using the followin
 <tr><td>Swift
     <td align="center"><img valign="middle" src="resources/swift-logo-24.png">
     <td>3.0
-    <td>Iswiftlang-800.0.33.1 clang-800.0.31
+    <td>swiftlang-800.0.33.1 clang-800.0.31
 </table>
