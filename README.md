@@ -25,7 +25,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>c11
     <td>Apple LLVM version 7.3.0 (clang-703.0.31)
 <tr><td>C#
-    <td align="center"><img valign="middle" src="resources/sml-logo-24.png">
+    <td align="center"><img valign="middle" src="resources/csharp-logo-24.png">
     <td>
     <td>Mono 4.4.1
 <tr><td>C++
@@ -164,7 +164,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td align="center"><img valign="middle" src="resources/smalltalk-logo-24.png">
     <td>
     <td>
-<tr><td>Standard ML
+<tr><td>Standard&nbsp;ML
     <td align="center"><img valign="middle" src="resources/sml-logo-24.png">
     <td>mlton-20130715
     <td>
