@@ -15,6 +15,9 @@
         left: 200px;
         width: calc(100% - 200px);
         height: 100%;
+        font: 18px serif;
+        text-align: center;
+        overflow: scroll;
       }
       .element {
         position: absolute;
@@ -49,32 +52,243 @@
     </div>
     <div id="content">
       <div class="element">
-        <img id="logo" valign=middle src="resources/ada-logo-300.png">
+        <div><img id="logo" valign=middle src="resources/ada-logo-300.png"></div>
+        <p id="description"></p>
       </div>
     </div>
     <script>
-      var languages = ("ada apl bash boo c ceylon chapel clojure " +
-        "coffeescript cpp d dart elixir elm erlang factor falcon " +
-        "fsharp go gosu haskell idris io java javascript julia k " +
-        "kitten kotlin lolcode lua mercury nasm nemerle nim " +
-        "ocaml perl purescript python r racket ruby rust scala " +
-        "scratch smalltalk sml swift"
-      ).split(" ");
+      var langs = [
+        {
+          i: 'ada', n: 'Ada', h: 'http://www.adaic.org/',
+          w: 'Ada_(programming_language)',
+          d: 'Ada is a language suited to both massive software systems and embedded systems. It was introduced in 1983 as a winning entry in a competition sponsored by the U.S. DoD to create a single language to take the place of hundreds of existing languages used by the department.',
+          f: 1983, v: ['88', '95', '2012'],
+          r: 'Code safety and maintainability',
+          u: 'Avionics, air-traffic control, satellites, defense systems',
+          t: ['Structured', 'Imperative', 'Static', 'Concurrent']
+        },
+        {
+          i: 'apl', n: 'APL', h: 'https://en.wikipedia.org/wiki/APL_(programming_language)',
+          w: 'APL_(programming_language)',
+          d: 'APL is the earliest array-oriented language, known for its heavy use of non-ASCII symbols for operators, and its ability to express concise code.',
+          f: 1962,
+          r: 'Concise code, array-orientation, symbolic alphabet',
+          u: 'Finance, scientific research',
+          t: ['Array-based', 'Dynamic']
+        },
+        {
+          i: 'bash', n: 'Bash', h: 'https://tiswww.case.edu/php/chet/bash/bashtop.html',
+          w: 'Bash_(programming_language)',
+          d: 'Bash is one of the most popular of the Unix shell languages.'
+        },
+        {
+          i: 'boo', n: 'Boo', h: 'http://boo-lang.org/',
+          w: 'Boo_(programming_language)',
+          d: 'Boo is a .NET language with a Python-inspired syntax.',
+        },
+        {
+          i: 'c', n: 'C',
+          w: 'C_(programming_language)',
+          d: 'C is the world&rsquo;s most popular systems programming language.',
+        },
+        {
+          i: 'ceylon', n: 'Ceylon', h: 'http://ceylon-lang.org/',
+          w: 'Ceylon_(programming_language)',
+          d: 'Ceylon is an expessive language that can interoperate with both Java and JavaScript. It is known for a rich type system and flow-sensitive typing.',
+        },
+        {
+          i: 'chapel', n: 'Chapel', h: 'http://chapel.cray.com/',
+          w: 'Chapel_(programming_language)',
+        },
+        {
+          i: 'clojure', n: 'Clojure', h: 'http://clojure.org/',
+          w: 'Clojure',
+        },
+        {
+          i: 'coffeescript', n: 'CoffeeScript', h: 'http://coffeescript.org/',
+          w: 'CoffeeScript',
+        },
+        {
+          i: 'cpp', n: 'C++',
+          w: 'C%2B%2B',
+        },
+        {
+          i: 'csharp', n: 'C#', h: 'https://msdn.microsoft.com/en-us/library/z1zx9t92.aspx',
+          w: 'C_Sharp_(programming_language)',
+        },
+        {
+          i: 'd', n: 'D', h: 'https://dlang.org/',
+          w: 'D_(programming_language)',
+        },
+        {
+          i: 'dart', n: 'Dart', h: 'https://www.dartlang.org/',
+          w: 'Dart_(programming_language)',
+        },
+        {
+          i: 'elixir', n: 'Elixir', h: 'http://elixir-lang.org/',
+          w: 'Elixir_(programming_language)',
+        },
+        {
+          i: 'elm', n: 'Elm', h: 'http://elm-lang.org/',
+          w: 'Elm_(programming_language)',
+        },
+        {
+          i: 'erlang', n: 'Erlang', h: 'https://www.erlang.org/',
+          w: 'Erlang_(programming_language)',
+        },
+        {
+          i: 'factor', n: 'Factor', h: 'http://factorcode.org/',
+          w: 'Factor_(programming_language)',
+        },
+        {
+          i: 'falcon', n: 'Falcon', h: 'http://www.falconpl.org/',
+          w: 'Falcon_(programming_language)',
+        },
+        {
+          i: 'fsharp', n: 'F#', h: 'http://fsharp.org/',
+          w: 'F_Sharp_(programming_language)',
+        },
+        {
+          i: 'go', n: 'Go', h: 'https://golang.org/',
+          w: 'Go_(programming_language)',
+        },
+        {
+          i: 'gosu', n: 'Gosu', h: 'https://gosu-lang.github.io/',
+          w: 'Gosu_(programming_language)',
+        },
+        {
+          i: 'haskell', n: 'Haskell', h: 'https://www.haskell.org/',
+          w: 'Haskell_(programming_language)',
+        },
+        {
+          i: 'idris', n: 'Idris', h: 'http://www.idris-lang.org/',
+          w: 'Idris_(programming_language)',
+        },
+        {
+          i: 'io', n: 'Io', h: 'http://iolanguage.org/',
+        },
+        {
+          i: 'java', n: 'Java', h: 'https://www.oracle.com/java/',
+        },
+        {
+          i: 'javascript', n: 'JavaScript',
+        },
+        {
+          i: 'julia', n: 'Julia', h: 'http://julialang.org/',
+        },
+        {
+          i: 'k', n: 'K',
+        },
+        {
+          i: 'kitten', n: 'Kitten', h: 'http://kittenlang.org/',
+        },
+        {
+          i: 'kotlin', n: 'Kotlin', h: 'https://kotlinlang.org/',
+        },
+        {
+          i: 'lolcode', n: 'LOLCODE', h: 'http://lolcode.org/',
+        },
+        {
+          i: 'lua', n: 'Lua', h: 'https://www.lua.org/',
+        },
+        {
+          i: 'mercury', n: 'Mercury', h: 'https://mercurylang.org/',
+        },
+        {
+          i: 'nasm', n: 'NASM', h: 'http://www.nasm.us/',
+        },
+        {
+          i: 'nemerle', n: 'Nemerle', h: 'http://www.nemerle.org/'
+        },
+        {
+          i: 'nim', n: 'Nim', h: 'http://nim-lang.org/',
+        },
+        {
+          i: 'ocaml', n: 'OCaml', h: 'https://ocaml.org/',
+        },
+        {
+          i: 'perl', n: 'Perl', h: 'https://www.perl.org/',
+        },
+        {
+          i: 'purescript', n: 'PureScript', h: 'http://www.purescript.org/',
+        },
+        {
+          i: 'python', n: 'Python', h: 'https://www.python.org/',
+        },
+        {
+          i: 'r', n: 'R', h: 'https://www.r-project.org/',
+        },
+        {
+          i: 'racket', n: 'Racket', h: 'https://racket-lang.org/',
+        },
+        {
+          i: 'ruby', n: 'Ruby', h: 'https://www.ruby-lang.org/en/',
+        },
+        {
+          i: 'rust', n: 'Rust', h: 'https://www.rust-lang.org/',
+        },
+        {
+          i: 'scala', n: 'Scala', h: 'http://www.scala-lang.org/',
+        },
+        {
+          i: 'scratch', n: 'Scratch', h: 'https://scratch.mit.edu/',
+        },
+        {
+          i: 'smalltalk', n: 'Smalltalk',
+        },
+        {
+          i: 'sml', n: 'Standard ML',
+        },
+        {
+          i: 'swift', n: 'Swift', h: 'https://swift.org/',
+        },
+        {
+          i: 'tcl', n: 'Tcl', h: 'https://tcl.tk/',
+        },
+        {
+          i: 'whiley', n: 'Whiley', h: 'http://whiley.org/',
+          w: 'Whiley_(programming_language)',
+        },
+      ];
+      var currentIndex = 0;
+      addEventListener("keydown", function(event) {
+        if (event.keyCode === 38) {
+          show(currentIndex ? currentIndex - 1 : langs.length - 1);
+        } else if (event.keyCode === 40) {
+          show((currentIndex + 1) % langs.length);
+        }
+      });
       var sidebar = document.getElementById("sidebar");
-      for (let i = 0; i < languages.length; i++) {
+      for (let i = 0; i < langs.length; i++) {
         let element = document.createElement("div");
-        let text = document.createTextNode(languages[i]);
+        let text = document.createTextNode(langs[i].n);
         element.appendChild(text);
-        element.name = languages[i];
+        langs[i].element = element;
         sidebar.appendChild(element);
         element.onclick = function () {
-          show(element.name);
+          show(i);
+        }
+        if (langs[i].h && langs[i].d) {
+          langs[i].d = langs[i].d.replace(langs[i].n,
+            '<a href=' + langs[i].h + '>' + langs[i].n + '</a>');
         }
       }
       var imageElement = document.getElementById("logo");
-      var show = function (name) {
-        imageElement.src = 'resources/' + name + '-logo-300.png';
+      var description = document.getElementById("description");
+      var show = function (indexToShow) {
+        var language = langs[indexToShow];
+        imageElement.src = 'resources/' + language.i + '-logo-300.png';
+        if (language.d) {
+          description.innerHTML = language.d;
+          description.style.display = 'block';
+        } else {
+          description.style.display = 'none';
+        }
+        langs[currentIndex].element.style.backgroundColor = 'black';
+        currentIndex = indexToShow;
+        langs[currentIndex].element.style.backgroundColor = '#333';
       };
+      show(0);
     </script>
   </body>
 </html>
