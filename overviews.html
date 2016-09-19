@@ -21,6 +21,7 @@
       }
       .element {
         position: absolute;
+        width: 90%;
         top: 50%;
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
@@ -43,6 +44,14 @@
         height: 100%;
         overflow-y: auto;
       }
+      .tag {
+        font-family: Arial, sans-serif;
+        font-size: 90%;
+        border: 1px solid blue;
+        padding: 3px;
+        color: white;
+        background-color: blue;
+      }
     </style>
   </head>
   <body>
@@ -53,7 +62,11 @@
     <div id="content">
       <div class="element">
         <div><img id="logo" valign=middle src="resources/ada-logo-300.png"></div>
-        <p id="description"></p>
+        <div style="max-width: 600px;margin: 32px auto">
+          <p id="description"></p>
+          <p id="info"></p>
+          <p id="tags"></p>
+        </div>
       </div>
     </div>
     <script>
@@ -61,8 +74,8 @@
         {
           i: 'ada', n: 'Ada', h: 'http://www.adaic.org/',
           w: 'Ada_(programming_language)',
-          d: 'Ada is a language suited to both massive software systems and embedded systems. It was introduced in 1983 as a winning entry in a competition sponsored by the U.S. DoD to create a single language to take the place of hundreds of existing languages used by the department.',
-          f: 1983, v: ['88', '95', '2012'],
+          d: 'Ada is a language designed for both massive software systems and low-level, embedded systems.',
+          f: 1983, v: ['83', '95', '2012'],
           r: 'Code safety and maintainability',
           u: 'Avionics, air-traffic control, satellites, defense systems',
           t: ['Structured', 'Imperative', 'Static', 'Concurrent']
@@ -70,7 +83,7 @@
         {
           i: 'apl', n: 'APL', h: 'https://en.wikipedia.org/wiki/APL_(programming_language)',
           w: 'APL_(programming_language)',
-          d: 'APL is the earliest array-oriented language, known for its heavy use of non-ASCII symbols for operators, and its ability to express concise code.',
+          d: 'APL is the earliest array-oriented language, known for its heavy use of non-ASCII operator symbols, and its ability to express concise code.',
           f: 1962,
           r: 'Concise code, array-orientation, symbolic alphabet',
           u: 'Finance, scientific research',
@@ -90,6 +103,11 @@
           i: 'c', n: 'C',
           w: 'C_(programming_language)',
           d: 'C is the world&rsquo;s most popular systems programming language.',
+          f: 1972,
+          v: ['K & R (1972)', 'ISO (1989/90)', '99 (1999)', '11 (2011)'],
+          r: 'Systems programming',
+          u: 'Unix and Unix-like operating systems',
+          t: ['Imperative', 'Low-level', 'System', 'Non-managed']
         },
         {
           i: 'ceylon', n: 'Ceylon', h: 'http://ceylon-lang.org/',
@@ -99,14 +117,36 @@
         {
           i: 'chapel', n: 'Chapel', h: 'http://chapel.cray.com/',
           w: 'Chapel_(programming_language)',
+          d: 'Chapel is a expressive parallel programming language in which many aspects of parallelism are defined by language constructs rather than relegated to libraries.',
+          f: 2009,
+          v: ['1.7 (2013)', '1.13 (2016)'],
+          r: 'Separation of parallelism and locality',
+          u: 'High-performance computing',
+          t: ['Parallel', 'Portable', 'Scalable']
         },
         {
           i: 'clojure', n: 'Clojure', h: 'http://clojure.org/',
           w: 'Clojure',
+          d: 'Clojure is a modern Lisp dialect targeted to the JVM',
+          f: 2007,
+          v: ['1.0 (2009)', '1.7 (2015)'],
+          r: 'Macros, Lisp-ness, Concurrency support, Java interoperability',
+          u: 'Data mining, Artificial intelligence',
+          t: ['Functional', 'Dynamic', 'Concurrent', 'Homoiconic']
         },
         {
           i: 'coffeescript', n: 'CoffeeScript', h: 'http://coffeescript.org/',
           w: 'CoffeeScript',
+          d: 'CoffeeScript attempts to &ldquo;expose the good parts of JavaScript in a simple way.&rdquo;',
+          f: 2009,
+          v: ['1.0 (2010)', '1.10 (2015)'],
+          r: 'Transpiling to JavaScript, Expressiveness',
+          u: 'Web application clients',
+          t: ['Functional', 'Expression-Oriented', 'Dynamic']
+        },
+        {
+          i: 'commonlisp', n: 'Common Lisp', h: 'https://common-lisp.net/',
+          w: 'Common_Lisp',
         },
         {
           i: 'cpp', n: 'C++',
@@ -123,6 +163,12 @@
         {
           i: 'dart', n: 'Dart', h: 'https://www.dartlang.org/',
           w: 'Dart_(programming_language)',
+          d: 'Dart is an language used to create very large applications. Originally seen as an alternative to JavaScript, the language features optional typing, abstract classes, and generics.',
+          f: 2011,
+          v: ['1.12.0 (2015)', '1.16.0 (2016)'],
+          r: 'Optional typing, Isolates, SIMD support',
+          u: 'AdWords, AdSense, Google Fiber',
+          t: ['Object-oriented', 'Imperative', 'Functional']
         },
         {
           i: 'elixir', n: 'Elixir', h: 'http://elixir-lang.org/',
@@ -131,18 +177,46 @@
         {
           i: 'elm', n: 'Elm', h: 'http://elm-lang.org/',
           w: 'Elm_(programming_language)',
+          d: 'Elm is a functional language ideal for interactive applications.',
+          f: 2011,
+          v: ['0.10 (2013)', '0.14 (2014)', '0.17 (2016)'],
+          r: 'Interactive functional programming',
+          u: 'User interfaces, Games',
+          t: ['Functional', 'Statically-typed', 'Subscription-oriented']
         },
         {
           i: 'erlang', n: 'Erlang', h: 'https://www.erlang.org/',
           w: 'Erlang_(programming_language)',
+          d: 'Erlang was designed for building fault-tolerant, long-lived applications that handle a large number of concurrent activities, meet real-time constraints, scale across large distributed networks, and are able to be modified while running.',
+          f: 1986,
+          v: ['R15B (2011)', '17.0 (2014)', '19.0 (2016)'],
+          r: 'Concurrency support through message passing, &ldquo;Let it Crash&rdquo; philosophy',
+          u: 'Telecom',
+          t: ['Concurrent', 'Scalable']
         },
         {
           i: 'factor', n: 'Factor', h: 'http://factorcode.org/',
           w: 'Factor_(programming_language)',
+          d: 'Factor is a modern, concatenative, and extensible language.',
+          f: 2003,
+          v: ['0.97 (2014)'],
+          r: 'Flexibility, Large standard library',
+          u: 'Research into optimization techniques',
+          t: ['Stack-based', 'Concatenative']
         },
         {
           i: 'falcon', n: 'Falcon', h: 'http://www.falconpl.org/',
           w: 'Falcon_(programming_language)',
+        },
+        {
+          i: 'fortran', n: 'Fortran',
+          w: 'Fortran',
+          d: 'Fortran debuted at a time when the need for high-level languages was still being question, so its designers worked hard to make sure generated code could be incredibly efficient',
+          f: 1957,
+          v: ['I', 'II', 'IV', 66, 77, 90, 95, 2003, 2008, 2015],
+          r: 'Likely being the first high-level general purpose programming language',
+          u: 'Numeric computation, scientific computing',
+          t: ['Imperative', 'High-performance']
         },
         {
           i: 'fsharp', n: 'F#', h: 'http://fsharp.org/',
@@ -151,6 +225,12 @@
         {
           i: 'go', n: 'Go', h: 'https://golang.org/',
           w: 'Go_(programming_language)',
+          d: 'Go is Google&rsquo;s open source anguage for building simple, reliable, and efficient software',
+          f: 2009,
+          v: ['1 (2012)', '1.5 (2015)'],
+          r: 'Being simpler than C++, Goroutines',
+          u: 'Servers',
+          t: ['Statically Typed', 'Concurrent', 'Channel-Oriented']
         },
         {
           i: 'gosu', n: 'Gosu', h: 'https://gosu-lang.github.io/',
@@ -169,12 +249,29 @@
         },
         {
           i: 'java', n: 'Java', h: 'https://www.oracle.com/java/',
+          d: 'Java is an extremely popular enterprise programming language, designed with, among other things, thread-based concurrency and security in mind.',
+          f: 1995,
+          v: ['1.1 (1997)', '5 (2004)', '8 (2014)', '9 (2017)'],
+          r: 'Classes, Threads, Mature platform',
+          u: 'Enterprise computing, Android applications',
+          t: ['Architecture-neutral', 'Multithreaded', 'High-performance']
         },
         {
           i: 'javascript', n: 'JavaScript',
+          d: 'JavaScript interpreters exist in every major web browser.',
+          f: '1995', v: ['ES3 (1999)', 'ES5 (2000)', 'ES2015 (2015)'],
+          r: 'First-class functions, Weak typing, Prototypes',
+          u: 'Web application clients, Asynchronous servers',
+          t: ['Imperative', 'Functional', 'Dynamic', 'Prototypal']
         },
         {
           i: 'julia', n: 'Julia', h: 'http://julialang.org/',
+          d: 'Julia is a modern language for scientific and technical computing.',
+          f: 2012,
+          v: ['0.4 (2015)', '0.5 (2016)'],
+          r: 'Multi-dispatch, Macros, Multicore support',
+          u: 'Data Science, Statistics, Numerical Analysis',
+          t: ['High-performance', 'Dynamic', 'Multi-dispatch']
         },
         {
           i: 'k', n: 'K',
@@ -190,6 +287,12 @@
         },
         {
           i: 'lua', n: 'Lua', h: 'https://www.lua.org/',
+          d: 'Lua is a powerful, fast, lightweight, embeddable scripting language.',
+          f: 1993,
+          v: ['5.0 (2003)', '5.1 (2006)', '5.2 (2011)', '5.3 (2015)'],
+          r: 'Tables, Interoperability with C',
+          u: 'World of Warcraft, Angry Birds, Scripting',
+          t: ['Imperative', 'Prototypal', 'Scripting']
         },
         {
           i: 'mercury', n: 'Mercury', h: 'https://mercurylang.org/',
@@ -214,6 +317,12 @@
         },
         {
           i: 'python', n: 'Python', h: 'https://www.python.org/',
+          d: 'Python is a powerful and expressive programming language that &ldquo;lets you work quickly and integrate systems more effectively.&rdquo;',
+          f: 1991,
+          v: ['2.2 (2001)', '3.0 (2008)', '2.7 (2010)', '3.5 (2015)'],
+          r: 'Expressiveness',
+          u: 'Web servers, Scripting, Data science',
+          t: ['Imperative', 'Glue', 'Dynamic', 'Scripting']
         },
         {
           i: 'r', n: 'R', h: 'https://www.r-project.org/',
@@ -226,6 +335,12 @@
         },
         {
           i: 'ruby', n: 'Ruby', h: 'https://www.ruby-lang.org/en/',
+          d: 'Ruby was created, in the words of its designer, to help every programmer in the world to be productive, and to enjoy programming, and to be happy.',
+          f: 1995,
+          v: ['1.8 (2003)', '1.9 (2007)', '2.0 (2013)', '2.3 (2015)'],
+          r: 'OOP, Metaprogramming, DSL construction',
+          u: 'Web servers, Scripting',
+          t: ['Object-oriented', 'Expression-oriented', 'Dynamic'],
         },
         {
           i: 'rust', n: 'Rust', h: 'https://www.rust-lang.org/',
@@ -238,12 +353,24 @@
         },
         {
           i: 'smalltalk', n: 'Smalltalk',
+          d: 'Smalltalk was conceived and grew up in the same laboratory&mdash;Xerox PARC&mdash; as did the mouse-driven user interface, Ethernet, and the laser printer.',
+          f: 1972,
+          v: [71, 72, 74, 76, 80],
+          r: 'GUI Workstations, Metaprogramming, Object-orientation (Objects all the way down)',
+          u: 'Education, Financial analysis and modeling',
+          t: ['Object-oriented', 'Dynamic', 'Reflective']
         },
         {
           i: 'sml', n: 'Standard ML',
         },
         {
           i: 'swift', n: 'Swift', h: 'https://swift.org/',
+          d: 'Swift is an innovative, open source language developed by Apple to make software safer, faster, and more fun to create.',
+          f: 2014,
+          v: ['1.0 (2014)', '2 (2015)', '3 (2016)'],
+          r: 'Being the modern alternative to Objective-C',
+          u: 'Native applications for macOS, iOS, watchOS, and tvOS',
+          t: ['Imperative', 'Safe']
         },
         {
           i: 'tcl', n: 'Tcl', h: 'https://tcl.tk/',
@@ -278,15 +405,49 @@
       }
       var imageElement = document.getElementById("logo");
       var description = document.getElementById("description");
+      var info = document.getElementById("info");
+      var tags = document.getElementById("tags");
+
       var show = function (indexToShow) {
         var language = langs[indexToShow];
-        imageElement.src = 'resources/' + language.i + '-logo-300.png';
+
+        imageElement.src = 'resources/' + language.i + (language.i<='g'? '-logo-240.png' : '-logo-300.png');
         if (language.d) {
           description.innerHTML = language.d;
           description.style.display = 'block';
         } else {
           description.style.display = 'none';
         }
+
+        if (language.f || language.v || language.r || language.u) {
+          info.style.display = 'block'
+          var text = [];
+          if (language.f) {
+            text.push("<b>First appeared</b>: " + language.f);
+          }
+          if (language.v && language.v.length > 0) {
+            text.push("<b>Notable Versions</b>: " + language.v.join(", "));
+          }
+          if (language.r) {
+            text.push("<b>Recognized for</b>: " + language.r);
+          }
+          if (language.u) {
+            text.push("<b>Used in</b>: " + language.u);
+          }
+          info.innerHTML = text.join(" &bull; ")
+        } else {
+          info.style.display = 'none'
+        }
+
+        if (language.t) {
+          tags.style.display = 'block'
+          tags.innerHTML = language.t.map(function (t) {
+            return '<span class="tag">' + t + '</span>';
+          }).join(" ");
+        } else {
+          tags.style.display = 'none'
+        }
+
         langs[currentIndex].element.style.backgroundColor = 'black';
         currentIndex = indexToShow;
         langs[currentIndex].element.style.backgroundColor = '#333';
