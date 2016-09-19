@@ -74,7 +74,7 @@
         {
           i: 'ada', n: 'Ada', h: 'http://www.adaic.org/',
           w: 'Ada_(programming_language)',
-          d: 'Ada is a language designed for both massive software systems and low-level, embedded systems.',
+          d: 'Ada is a language designed for both massively large software systems and low-level, embedded systems.',
           f: 1983, v: ['83', '95', '2012'],
           r: 'Code safety and maintainability',
           u: 'Avionics, air-traffic control, satellites, defense systems',
@@ -127,7 +127,7 @@
         {
           i: 'clojure', n: 'Clojure', h: 'http://clojure.org/',
           w: 'Clojure',
-          d: 'Clojure is a modern Lisp dialect targeted to the JVM',
+          d: 'Clojure is a modern Lisp dialect targeted to modern platforms such as the JVM.',
           f: 2007,
           v: ['1.0 (2009)', '1.7 (2015)'],
           r: 'Macros, Lisp-ness, Concurrency support, Java interoperability',
@@ -147,6 +147,12 @@
         {
           i: 'commonlisp', n: 'Common Lisp', h: 'https://common-lisp.net/',
           w: 'Common_Lisp',
+          d: 'Common Lisp is one of the major dialects of Lisp. It was created in the early 1980s in the hopes of unifying a number of existing dialects into a single standard.',
+          f: 1984,
+          v: ['ANSI Standard (1994)'],
+          r: 'CLOS (the Common Lisp Object System), Generic functions, Methods, Macros, Homoiconicity',
+          u: 'Artificial intelligence, Graphics, Scheduling, Search',
+          t: ['Dynamic', 'Homoiconic']
         },
         {
           i: 'cpp', n: 'C++',
@@ -411,7 +417,7 @@
       var show = function (indexToShow) {
         var language = langs[indexToShow];
 
-        imageElement.src = 'resources/' + language.i + (language.i<='g'? '-logo-240.png' : '-logo-300.png');
+        imageElement.src = 'resources/' + language.i + (language.i<='j'? '-logo-240.png' : '-logo-300.png');
         if (language.d) {
           description.innerHTML = language.d;
           description.style.display = 'block';
