@@ -436,8 +436,8 @@
 
       var sidebar = document.getElementById("sidebar");
       langs.forEach(function (lang, i) {
-        let element = document.createElement("div");
-        let text = document.createTextNode(lang.n);
+        var element = document.createElement("div");
+        var text = document.createTextNode(lang.n);
         element.appendChild(text);
         lang.element = element;
         sidebar.appendChild(element);
