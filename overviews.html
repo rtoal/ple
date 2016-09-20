@@ -73,7 +73,7 @@
       var langs = [
         {
           i: 'ada', n: 'Ada', h: 'http://www.adaic.org/',
-          w: 'Ada_(programming_language)', g: 'ada', rc: 'Ada',
+          w: 'Ada_(programming_language)', g: 'ada', rc: 'Ada', pp: 'ada',
           d: 'Ada is a language designed for both massively large software systems and low-level, embedded systems.',
           f: 1983, v: ['83', '95', '2012'],
           r: 'Code safety and maintainability',
@@ -82,7 +82,7 @@
         },
         {
           i: 'apl', n: 'APL',
-          w: 'APL_(programming_language)', g: 'apl', rc: 'APL',
+          w: 'APL_(programming_language)', g: 'apl', rc: 'APL', pp: 'apl',
           d: 'APL is the earliest array-oriented language, known for its heavy use of non-ASCII operator symbols, and its ability to express concise code.',
           f: 1962,
           r: 'Concise code, array-orientation, symbolic alphabet',
@@ -101,7 +101,7 @@
         },
         {
           i: 'boo', n: 'Boo', h: 'http://boo-lang.org/',
-          w: 'Boo_(programming_language)', g: 'boo', rc: 'Boo',
+          w: 'Boo_(programming_language)', g: 'boo', rc: 'Boo', pp: 'boo',
           d: 'Boo is a .NET language with a Python-inspired syntax.',
           r: 'Being a pleasant language for writing .NET applications',
           f: 2003,
@@ -110,7 +110,7 @@
         },
         {
           i: 'c', n: 'C',
-          w: 'C_(programming_language)', g: 'c', rc: 'C',
+          w: 'C_(programming_language)', g: 'c', rc: 'C', pp: 'c',
           d: 'C is the world&rsquo;s most popular systems programming language.',
           f: 1972,
           v: ['K & R (1972)', 'ISO (1989/90)', '99 (1999)', '11 (2011)'],
@@ -120,7 +120,7 @@
         },
         {
           i: 'ceylon', n: 'Ceylon', h: 'http://ceylon-lang.org/',
-          w: 'Ceylon_(programming_language)', g: 'ceylon', rc: 'Ceylon',
+          w: 'Ceylon_(programming_language)', g: 'ceylon', rc: 'Ceylon', pp: 'ceylon',
           d: 'Ceylon is an expessive language that can interoperate with both Java and JavaScript. It is known for a rich type system and flow-sensitive typing.',
           f: 2011,
           v: ['1.2.0 (2015)', '1.3.0 (2016)'],
@@ -169,7 +169,7 @@
         },
         {
           i: 'cpp', n: 'C++', h: 'http://www.stroustrup.com/C++.html',
-          w: 'C%2B%2B', g: 'cpp', rc: 'C++',
+          w: 'C%2B%2B', g: 'cpp', rc: 'C++', pp: 'c-plus-plus',
           d: 'C++ is a general purpose language for both high-level and low-level applications.',
           f: 1983,
           v: ['98 (1998)', '03 (2003)', '11 (2011)', '14 (2014)'],
@@ -179,7 +179,7 @@
         },
         {
           i: 'csharp', n: 'C#', h: 'https://msdn.microsoft.com/en-us/library/z1zx9t92.aspx',
-          w: 'C_Sharp_(programming_language)', g: 'c%23', rc: 'C_sharp',
+          w: 'C_Sharp_(programming_language)', g: 'c%23', rc: 'C_sharp', pp: 'c-sharp',
           d: 'C# is the flagship enterprise language for the .NET framework.',
           f: 2000,
           v: ['2.0 (2005)', '3.0 (2007)', '4.0 (2010)', '6.0 (2015)'],
@@ -189,7 +189,7 @@
         },
         {
           i: 'd', n: 'D', h: 'https://dlang.org/',
-          w: 'D_(programming_language)', g: 'd', rc: 'D',
+          w: 'D_(programming_language)', g: 'd', rc: 'D', pp: 'd',
           d: 'D is a modern language with systems programming features.',
           f: 1999,
           v: ['D2 (2007)'],
@@ -199,7 +199,7 @@
         },
         {
           i: 'dart', n: 'Dart', h: 'https://www.dartlang.org/',
-          w: 'Dart_(programming_language)', g: 'dart', rc: 'Dart',
+          w: 'Dart_(programming_language)', g: 'dart', rc: 'Dart', pp: 'dart',
           d: 'Dart is an language used to create very large applications. Originally seen as an alternative to JavaScript, the language features optional typing, abstract classes, and generics.',
           f: 2011,
           v: ['1.12.0 (2015)', '1.16.0 (2016)'],
@@ -444,12 +444,13 @@
         element.onclick = function () {
           show(i);
         }
-        if ((lang.h || lang.w || lang.g || lang.rc) && lang.d) {
+        if ((lang.h || lang.w || lang.g || lang.rc || lang.pp) && lang.d) {
           var icons = [];
           if (lang.h) icons.push(iconFor('home', lang.h));
           if (lang.w) icons.push(iconFor('wikipedia', 'https://en.wikipedia.org/wiki/' + lang.w));
           if (lang.g) icons.push(iconFor('github', 'https://github.com/search?l=' + lang.g + '&q=stars%3A%3E1&s=stars&type=Repositories'));
           if (lang.rc) icons.push(iconFor('rosetta-code', 'https://rosettacode.org/wiki/Category:' + lang.rc));
+          if (lang.pp) icons.push(iconFor('progopedia', 'http://progopedia.com/language/' + lang.pp + '/'));
           if (icons) {
             lang.d += ' ' + icons.join('&nbsp;');
           }
