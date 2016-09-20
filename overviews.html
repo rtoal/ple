@@ -15,7 +15,7 @@
         left: 200px;
         width: calc(100% - 200px);
         height: 100%;
-        font: 18px serif;
+        font: 20px serif;
         text-align: center;
         overflow: scroll;
       }
@@ -73,7 +73,7 @@
       var langs = [
         {
           i: 'ada', n: 'Ada', h: 'http://www.adaic.org/',
-          w: 'Ada_(programming_language)',
+          w: 'Ada_(programming_language)', g: 'ada', rc: 'Ada',
           d: 'Ada is a language designed for both massively large software systems and low-level, embedded systems.',
           f: 1983, v: ['83', '95', '2012'],
           r: 'Code safety and maintainability',
@@ -81,8 +81,8 @@
           t: ['Structured', 'Imperative', 'Static', 'Concurrent']
         },
         {
-          i: 'apl', n: 'APL', h: 'https://en.wikipedia.org/wiki/APL_(programming_language)',
-          w: 'APL_(programming_language)',
+          i: 'apl', n: 'APL',
+          w: 'APL_(programming_language)', g: 'apl', rc: 'APL',
           d: 'APL is the earliest array-oriented language, known for its heavy use of non-ASCII operator symbols, and its ability to express concise code.',
           f: 1962,
           r: 'Concise code, array-orientation, symbolic alphabet',
@@ -91,17 +91,17 @@
         },
         {
           i: 'bash', n: 'Bash', h: 'https://tiswww.case.edu/php/chet/bash/bashtop.html',
-          w: 'Bash_(programming_language)',
+          w: 'Bash_(programming_language)', rc: 'UNIX_Shell',
           d: 'Bash is one of the most popular of the Unix shell languages.'
         },
         {
           i: 'boo', n: 'Boo', h: 'http://boo-lang.org/',
-          w: 'Boo_(programming_language)',
+          w: 'Boo_(programming_language)', g: 'boo', rc: 'Boo',
           d: 'Boo is a .NET language with a Python-inspired syntax.',
         },
         {
           i: 'c', n: 'C',
-          w: 'C_(programming_language)',
+          w: 'C_(programming_language)', g: 'c', rc: 'C',
           d: 'C is the world&rsquo;s most popular systems programming language.',
           f: 1972,
           v: ['K & R (1972)', 'ISO (1989/90)', '99 (1999)', '11 (2011)'],
@@ -111,12 +111,12 @@
         },
         {
           i: 'ceylon', n: 'Ceylon', h: 'http://ceylon-lang.org/',
-          w: 'Ceylon_(programming_language)',
+          w: 'Ceylon_(programming_language)', g: 'ceylon', rc: 'Ceylon',
           d: 'Ceylon is an expessive language that can interoperate with both Java and JavaScript. It is known for a rich type system and flow-sensitive typing.',
         },
         {
           i: 'chapel', n: 'Chapel', h: 'http://chapel.cray.com/',
-          w: 'Chapel_(programming_language)',
+          w: 'Chapel_(programming_language)', g: 'chapel', rc: 'Chapel',
           d: 'Chapel is a expressive parallel programming language in which many aspects of parallelism are defined by language constructs rather than relegated to libraries.',
           f: 2009,
           v: ['1.7 (2013)', '1.13 (2016)'],
@@ -126,7 +126,7 @@
         },
         {
           i: 'clojure', n: 'Clojure', h: 'http://clojure.org/',
-          w: 'Clojure',
+          w: 'Clojure', g: 'clojure', rc: 'Clojure',
           d: 'Clojure is a modern Lisp dialect targeted to modern platforms such as the JVM.',
           f: 2007,
           v: ['1.0 (2009)', '1.7 (2015)'],
@@ -136,7 +136,7 @@
         },
         {
           i: 'coffeescript', n: 'CoffeeScript', h: 'http://coffeescript.org/',
-          w: 'CoffeeScript',
+          w: 'CoffeeScript', g: 'coffeescript', rc: 'CoffeeScript',
           d: 'CoffeeScript attempts to &ldquo;expose the good parts of JavaScript in a simple way.&rdquo;',
           f: 2009,
           v: ['1.0 (2010)', '1.10 (2015)'],
@@ -146,7 +146,7 @@
         },
         {
           i: 'commonlisp', n: 'Common Lisp', h: 'https://common-lisp.net/',
-          w: 'Common_Lisp',
+          w: 'Common_Lisp', g: 'common-lisp', rc: 'Common_Lisp',
           d: 'Common Lisp is one of the major dialects of Lisp. It was created in the early 1980s in the hopes of unifying a number of existing dialects into a single standard.',
           f: 1984,
           v: ['ANSI Standard (1994)'],
@@ -386,6 +386,11 @@
           w: 'Whiley_(programming_language)',
         },
       ];
+
+      var iconFor = function (iconName, uri) {
+        return "<a href=" + uri + "><img src=resources/" + iconName + "-icon.png height=20></a>";
+      }
+
       var currentIndex = 0;
       addEventListener("keydown", function(event) {
         if (event.keyCode === 38) {
@@ -394,21 +399,30 @@
           show(Math.min(currentIndex + 1, langs.length - 1));
         }
       });
+
       var sidebar = document.getElementById("sidebar");
-      for (let i = 0; i < langs.length; i++) {
+      langs.forEach(function (lang, i) {
         let element = document.createElement("div");
-        let text = document.createTextNode(langs[i].n);
+        let text = document.createTextNode(lang.n);
         element.appendChild(text);
-        langs[i].element = element;
+        lang.element = element;
         sidebar.appendChild(element);
         element.onclick = function () {
           show(i);
         }
-        if (langs[i].h && langs[i].d) {
-          langs[i].d = langs[i].d.replace(langs[i].n,
-            '<a href=' + langs[i].h + '>' + langs[i].n + '</a>');
+        if ((lang.h || lang.w || lang.g || lang.rc) && lang.d) {
+          var icons = [];
+          if (lang.h) icons.push(iconFor('home', lang.h));
+          if (lang.w) icons.push(iconFor('wikipedia', 'https://en.wikipedia.org/wiki/' + lang.w));
+          if (lang.g) icons.push(iconFor('github', 'https://github.com/search?l=' + lang.g + '&q=stars%3A%3E1&s=stars&type=Repositories'));
+          if (lang.rc) icons.push(iconFor('rosetta-code', 'https://rosettacode.org/wiki/Category:' + lang.rc));
+          if (icons) {
+            lang.d += ' ' + icons.join('&nbsp;');
+          }
+          console.log(icons);
         }
-      }
+      });
+
       var imageElement = document.getElementById("logo");
       var description = document.getElementById("description");
       var info = document.getElementById("info");
@@ -417,7 +431,7 @@
       var show = function (indexToShow) {
         var language = langs[indexToShow];
 
-        imageElement.src = 'resources/' + language.i + (language.i<='j'? '-logo-240.png' : '-logo-300.png');
+        imageElement.src = 'resources/' + language.i + (language.i<='l'? '-logo-240.png' : '-logo-300.png');
         if (language.d) {
           description.innerHTML = language.d;
           description.style.display = 'block';
@@ -458,8 +472,16 @@
         currentIndex = indexToShow;
         langs[currentIndex].element.style.backgroundColor = '#333';
         langs[currentIndex].element.scrollIntoView(false);
+        localStorage.setItem('ple_language_overview_last', currentIndex);
       };
-      show(0);
+      window.onload = window.onpopstate = function () {
+        var retrieved = Math.round(localStorage.getItem('ple_language_overview_last'));
+        if (retrieved && retrieved >= 0 && retrieved < langs.length) {
+          show(retrieved);
+        } else {
+          show(0);
+        }
+      };
     </script>
   </body>
 </html>
