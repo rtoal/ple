@@ -92,12 +92,21 @@
         {
           i: 'bash', n: 'Bash', h: 'https://tiswww.case.edu/php/chet/bash/bashtop.html',
           w: 'Bash_(programming_language)', rc: 'UNIX_Shell',
-          d: 'Bash is one of the most popular of the Unix shell languages.'
+          d: 'Bash is one of the most popular of the Unix shell languages.',
+          f: 1989,
+          v: ['3 (2004)', '4 (2009)', '4.2 (2011)'],
+          r: 'Shell scripting, Text processing',
+          u: 'Primary shell for the popular GNU and macOS operating systems',
+          t: ['Scripting'],
         },
         {
           i: 'boo', n: 'Boo', h: 'http://boo-lang.org/',
           w: 'Boo_(programming_language)', g: 'boo', rc: 'Boo',
           d: 'Boo is a .NET language with a Python-inspired syntax.',
+          r: 'Being a pleasant language for writing .NET applications',
+          f: 2003,
+          u: 'Scripts for the Unity Game Engine',
+          t: ['Statically-typed'],
         },
         {
           i: 'c', n: 'C',
@@ -113,6 +122,10 @@
           i: 'ceylon', n: 'Ceylon', h: 'http://ceylon-lang.org/',
           w: 'Ceylon_(programming_language)', g: 'ceylon', rc: 'Ceylon',
           d: 'Ceylon is an expessive language that can interoperate with both Java and JavaScript. It is known for a rich type system and flow-sensitive typing.',
+          f: 2011,
+          v: ['1.2.0 (2015)', '1.3.0 (2016)'],
+          r: 'Modules',
+          t: ['Imperative', 'Statically-typed'],
         },
         {
           i: 'chapel', n: 'Chapel', h: 'http://chapel.cray.com/',
@@ -155,20 +168,38 @@
           t: ['Dynamic', 'Homoiconic']
         },
         {
-          i: 'cpp', n: 'C++',
-          w: 'C%2B%2B',
+          i: 'cpp', n: 'C++', h: 'http://www.stroustrup.com/C++.html',
+          w: 'C%2B%2B', g: 'cpp', rc: 'C++',
+          d: 'C++ is a general purpose language for both high-level and low-level applications.',
+          f: 1983,
+          v: ['98 (1998)', '03 (2003)', '11 (2011)', '14 (2014)'],
+          r: 'Extending C with classes and much more',
+          u: 'Simulation, Game engines, General purpose computing',
+          t: ['Systems', 'Procedural', 'Static', 'Class-based', 'Non-managed'],
         },
         {
           i: 'csharp', n: 'C#', h: 'https://msdn.microsoft.com/en-us/library/z1zx9t92.aspx',
-          w: 'C_Sharp_(programming_language)',
+          w: 'C_Sharp_(programming_language)', g: 'c%23', rc: 'C_sharp',
+          d: 'C# is the flagship enterprise language for the .NET framework.',
+          f: 2000,
+          v: ['2.0 (2005)', '3.0 (2007)', '4.0 (2010)', '6.0 (2015)'],
+          r: '.NET integration, delegates, properties, extension methods, LINQ',
+          u: 'Enterprise applications',
+          t: ['Static', 'Object-oriented', 'Multi-paradigm', 'Safe'],
         },
         {
           i: 'd', n: 'D', h: 'https://dlang.org/',
-          w: 'D_(programming_language)',
+          w: 'D_(programming_language)', g: 'd', rc: 'D',
+          d: 'D is a modern language with systems programming features.',
+          f: 1999,
+          v: ['D2 (2007)'],
+          r: 'Optional garbage collection',
+          u: 'Operating systems, Data science',
+          t: ['Systems', 'Static']
         },
         {
           i: 'dart', n: 'Dart', h: 'https://www.dartlang.org/',
-          w: 'Dart_(programming_language)',
+          w: 'Dart_(programming_language)', g: 'dart', rc: 'Dart',
           d: 'Dart is an language used to create very large applications. Originally seen as an alternative to JavaScript, the language features optional typing, abstract classes, and generics.',
           f: 2011,
           v: ['1.12.0 (2015)', '1.16.0 (2016)'],
@@ -336,9 +367,9 @@
         {
           i: 'racket', n: 'Racket', h: 'https://racket-lang.org/',
         },
-        {
-          i: 'roy', n: 'Roy', h: 'http://roy.brianmckenna.org/',
-        },
+        //{
+        //  i: 'roy', n: 'Roy', h: 'http://roy.brianmckenna.org/',
+        //},
         {
           i: 'ruby', n: 'Ruby', h: 'https://www.ruby-lang.org/en/',
           d: 'Ruby was created, in the words of its designer, to help every programmer in the world to be productive, and to enjoy programming, and to be happy.',
@@ -368,6 +399,9 @@
         },
         {
           i: 'sml', n: 'Standard ML',
+        },
+        {
+          i: 'snap', n: 'Snap!', h: 'http://snap.berkeley.edu/',
         },
         {
           i: 'swift', n: 'Swift', h: 'https://swift.org/',
@@ -431,7 +465,7 @@
       var show = function (indexToShow) {
         var language = langs[indexToShow];
 
-        imageElement.src = 'resources/' + language.i + (language.i<='l'? '-logo-240.png' : '-logo-300.png');
+        imageElement.src = 'resources/' + language.i + '-logo-240.png';
         if (language.d) {
           description.innerHTML = language.d;
           description.style.display = 'block';
