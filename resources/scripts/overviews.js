@@ -391,7 +391,7 @@ langs.forEach(function (lang, i) {
     if (lang.rc) icons.push(iconFor('rosetta-code', 'https://rosettacode.org/wiki/Category:' + lang.rc));
     if (lang.pp) icons.push(iconFor('progopedia', 'http://progopedia.com/language/' + lang.pp + '/'));
     if (icons) {
-      lang.d += ' ' + icons.join('&nbsp;');
+      lang.d += '&nbsp;<span style="white-space:nowrap">' + icons.join('&nbsp;') + '</span>';
     }
   }
 });
