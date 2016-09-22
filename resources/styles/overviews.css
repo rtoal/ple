@@ -1,0 +1,59 @@
+body {
+  margin: 0 auto;
+  background-color: white;
+  overflow: hidden;
+  height: 100%;
+}
+
+#content {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  width: calc(100% - 200px);
+  height: 100%;
+  font: 20px serif;
+  text-align: center;
+  overflow: scroll;
+}
+
+.element {
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+#text {
+  max-width: 600px;
+  margin: 32px auto;
+}
+
+#sidebarwrapper {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  overflow: hidden;
+  height: 100%;
+}
+
+#sidebar {
+  position: absolute;
+  top: 0;
+  font: 18px/1.5 sans-serif;
+  padding-left: 8px;
+  background-color: black;
+  color: white;
+  width: 250px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.tag {
+  font-family: Arial, sans-serif;
+  font-size: 90%;
+  border: 1px solid blue;
+  padding: 3px;
+  color: white;
+  background-color: blue;
+}
