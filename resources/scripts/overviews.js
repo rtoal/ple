@@ -275,7 +275,13 @@ var langs = [
     t: ['High-performance', 'Dynamic', 'Multi-dispatch']
   },
   {
-    i: 'k', n: 'K',
+    i: 'k', n: 'K', h: 'http://www.kparc.com/',
+    w: 'K_(programming_language)', rc: 'K', pp: 'k',
+    d: 'K is an array-oriented language influenced by APL.',
+    f: 1993,
+    r: 'Array operations, Expressive syntax',
+    u: 'Finance',
+    t: ['Array-based', 'Dynamic']
   },
   {
     i: 'kitten', n: 'Kitten', h: 'http://kittenlang.org/',
