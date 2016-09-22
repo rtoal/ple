@@ -67,7 +67,7 @@ var langs = [
   },
   {
     i: 'clojure', n: 'Clojure', h: 'http://clojure.org/',
-    w: 'Clojure', g: 'clojure', rc: 'Clojure',
+    w: 'Clojure', g: 'clojure', rc: 'Clojure', pp: '../dialect/clojure',
     d: 'Clojure is a modern Lisp dialect targeted to modern platforms such as the JVM.',
     f: 2007,
     v: ['1.0 (2009)', '1.7 (2015)'],
@@ -87,7 +87,7 @@ var langs = [
   },
   {
     i: 'commonlisp', n: 'Common Lisp', h: 'https://common-lisp.net/',
-    w: 'Common_Lisp', g: 'common-lisp', rc: 'Common_Lisp',
+    w: 'Common_Lisp', g: 'common-lisp', rc: 'Common_Lisp', pp: '../dialect/common-lisp',
     d: 'Common Lisp is one of the major dialects of Lisp. It was created in the early 1980s in the hopes of unifying a number of existing dialects into a single standard.',
     f: 1984,
     v: ['ANSI Standard (1994)'],
@@ -137,11 +137,17 @@ var langs = [
   },
   {
     i: 'elixir', n: 'Elixir', h: 'http://elixir-lang.org/',
-    w: 'Elixir_(programming_language)',
+    w: 'Elixir_(programming_language)', g: 'elixir', rc: 'Elixir',
+    d: 'Elixir is a dynamic functional language targeted to the Erlang virtual machine with a Ruby-inspired syntax.',
+    f: 2012,
+    v: ['1.0 (2014)', '1.3.0 (2016)'],
+    r: 'Concurrency, Reliability, Interoperability with Erlang',
+    u: 'Applications within Pintrest and Brightcove',
+    t: ['Functional', 'Concurrent', 'Process-Oriented']
   },
   {
     i: 'elm', n: 'Elm', h: 'http://elm-lang.org/',
-    w: 'Elm_(programming_language)',
+    w: 'Elm_(programming_language)', g: 'elm', rc: 'Elm',
     d: 'Elm is a functional language ideal for interactive applications.',
     f: 2011,
     v: ['0.10 (2013)', '0.14 (2014)', '0.17 (2016)'],
@@ -151,7 +157,7 @@ var langs = [
   },
   {
     i: 'erlang', n: 'Erlang', h: 'https://www.erlang.org/',
-    w: 'Erlang_(programming_language)',
+    w: 'Erlang_(programming_language)', g: 'erlang', rc: 'Erlang', pp: 'Erlang',
     d: 'Erlang was designed for building fault-tolerant, long-lived applications that handle a large number of concurrent activities, meet real-time constraints, scale across large distributed networks, and are able to be modified while running.',
     f: 1986,
     v: ['R15B (2011)', '17.0 (2014)', '19.0 (2016)'],
@@ -161,7 +167,7 @@ var langs = [
   },
   {
     i: 'factor', n: 'Factor', h: 'http://factorcode.org/',
-    w: 'Factor_(programming_language)',
+    w: 'Factor_(programming_language)', g: 'factor', rc: 'Factor', pp: 'factor',
     d: 'Factor is a modern, concatenative, and extensible language.',
     f: 2003,
     v: ['0.97 (2014)'],
@@ -171,11 +177,14 @@ var langs = [
   },
   {
     i: 'falcon', n: 'Falcon', h: 'http://www.falconpl.org/',
-    w: 'Falcon_(programming_language)',
+    w: 'Falcon_(programming_language)', rc: 'Falcon', pp: 'falcon',
+    d: 'Falcon is a simple and easy-to-learn multiparadigm language.',
+    f: 2003,
+    t: ['Multi-paradigm']
   },
   {
     i: 'fortran', n: 'Fortran',
-    w: 'Fortran',
+    w: 'Fortran', g: 'fortran', rc: 'Fortran', pp: 'Fortran',
     d: 'Fortran debuted at a time when the need for high-level languages was still being question, so its designers worked hard to make sure generated code could be incredibly efficient',
     f: 1957,
     v: ['I', 'II', 'IV', 66, 77, 90, 95, 2003, 2008, 2015],
@@ -185,11 +194,17 @@ var langs = [
   },
   {
     i: 'fsharp', n: 'F#', h: 'http://fsharp.org/',
-    w: 'F_Sharp_(programming_language)',
+    w: 'F_Sharp_(programming_language)', g: 'fsharp', rc: 'F_Sharp', pp: 'f-sharp',
+    d: 'F# is a modern ML for the .NET world.',
+    f: 2005,
+    v: ['1.0 (2005)', '2.0 (2010)', '3.0 (2012)', '4.0 (2016)'],
+    r: 'Being a modern ML',
+    u: 'Machine learning, Business Intelligence, Analytics, Gaming',
+    t: ['Static', 'Functional', 'Multi-paradigm']
   },
   {
     i: 'go', n: 'Go', h: 'https://golang.org/',
-    w: 'Go_(programming_language)',
+    w: 'Go_(programming_language)', g: 'go', rc: 'Go', pp: 'go',
     d: 'Go is Google&rsquo;s open source anguage for building simple, reliable, and efficient software',
     f: 2009,
     v: ['1 (2012)', '1.5 (2015)'],
@@ -203,14 +218,32 @@ var langs = [
   },
   {
     i: 'haskell', n: 'Haskell', h: 'https://www.haskell.org/',
-    w: 'Haskell_(programming_language)',
+    w: 'Haskell_(programming_language)', g: 'haskell', rc: 'Haskell', pp: 'haskell',
+    d: 'Haskell is the most popular pure functional language.',
+    f: 1990,
+    v: ['1.0 (1990)', '98 (1998)', '2010 (2010)'],
+    r: 'Pure functions, non-strict semantics, type classes, monads',
+    u: 'Academia, Software validation and verification, Modeling, Compilers',
+    t: ['Non-strict', 'Lazy', 'Functional']
   },
   {
     i: 'idris', n: 'Idris', h: 'http://www.idris-lang.org/',
-    w: 'Idris_(programming_language)',
+    w: 'Idris_(programming_language)', g: 'idris', rc: 'Idris',
+    d: 'Idris is a language with dependent types',
+    f: 2009,
+    v: ['0.10 (2016)', '0.11 (2016)'],
+    r: 'Dependent types',
+    u: 'Research, Mechanical Theorem Proving',
+    t: ['Pure', 'Functional']
   },
   {
     i: 'io', n: 'Io', h: 'http://iolanguage.org/',
+    w: 'Io_(programming_language)', g: 'io', rc: 'Io', pp: 'io',
+    d: 'Io is a syntactically and semantic simple prototype-based language',
+    f: 2002,
+    r: 'Simplicity of design',
+    u: 'Exploratory software development',
+    t: ['Prototypal'],
   },
   {
     i: 'java', n: 'Java', h: 'https://www.oracle.com/java/',
@@ -294,6 +327,7 @@ var langs = [
   {
     i: 'python', n: 'Python', h: 'https://www.python.org/',
     d: 'Python is a powerful and expressive programming language that &ldquo;lets you work quickly and integrate systems more effectively.&rdquo;',
+    w: 'Python_(programming_language)', g: 'python', rc: 'Python', pp: 'python',
     f: 1991,
     v: ['2.2 (2001)', '3.0 (2008)', '2.7 (2010)', '3.5 (2015)'],
     r: 'Expressiveness',
@@ -311,6 +345,7 @@ var langs = [
   //},
   {
     i: 'ruby', n: 'Ruby', h: 'https://www.ruby-lang.org/en/',
+    w: 'Ruby_(programming_language)', g: 'ruby', rc: 'Ruby', pp: 'ruby',
     d: 'Ruby was created, in the words of its designer, to help every programmer in the world to be productive, and to enjoy programming, and to be happy.',
     f: 1995,
     v: ['1.8 (2003)', '1.9 (2007)', '2.0 (2013)', '2.3 (2015)'],
@@ -329,6 +364,7 @@ var langs = [
   },
   {
     i: 'smalltalk', n: 'Smalltalk',
+    w: 'Smalltalk', g: 'smalltalk', rc: 'Smalltalk', pp: 'smalltalk',
     d: 'Smalltalk was conceived and grew up in the same laboratory&mdash;Xerox PARC&mdash; as did the mouse-driven user interface, Ethernet, and the laser printer.',
     f: 1972,
     v: [71, 72, 74, 76, 80],
@@ -344,6 +380,7 @@ var langs = [
   },
   {
     i: 'swift', n: 'Swift', h: 'https://swift.org/',
+    w: 'Swift_(programming_language)', g: 'swift', rc: 'Swift', pp: 'swift',
     d: 'Swift is an innovative, open source language developed by Apple to make software safer, faster, and more fun to create.',
     f: 2014,
     v: ['1.0 (2014)', '2 (2015)', '3 (2016)'],
