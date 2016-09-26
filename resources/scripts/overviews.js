@@ -346,9 +346,14 @@ var langs = [
   {
     i: 'racket', n: 'Racket', h: 'https://racket-lang.org/',
   },
-  //{
-  //  i: 'roy', n: 'Roy', h: 'http://roy.brianmckenna.org/',
-  //},
+  {
+    i: 'roy', n: 'Roy', h: 'http://roy.brianmckenna.org/',
+    d: 'Roy is an experimental language that compiles to JavaScript. It contains many features of ML-style languages such as Hindley-Milner type inference, pattern matching, and structural typing.',
+    f: 2011,
+    r: 'Being a precursor to PureScript',
+    u: 'Research',
+    t: ['Static', 'Research', 'Experimental']
+  },
   {
     i: 'ruby', n: 'Ruby', h: 'https://www.ruby-lang.org/en/',
     w: 'Ruby_(programming_language)', g: 'ruby', rc: 'Ruby', pp: 'ruby',
