@@ -322,6 +322,9 @@ var langs = [
     i: 'nim', n: 'Nim', h: 'http://nim-lang.org/',
   },
   {
+    i: 'oberon', n: 'Oberon', h: 'http://www.oberon.ethz.ch/',
+  },
+  {
     i: 'ocaml', n: 'OCaml', h: 'https://ocaml.org/',
   },
   {
