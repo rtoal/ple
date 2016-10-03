@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Languages</title>
+    <style>
+      body {
+        margin: 0 auto;
+        max-width: 880px;
+        text-align: center;
+        background-color: #fffeff;
+      }
+      span.cell {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        margin: 4px;
+        background-color: white;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      var langs = [
+        'ada', 'apl', 'awk', 'bash', 'boo', 'c', 'ceylon', 'chapel', 'clojure',
+        'coffeescript', 'commonlisp', 'cpp', 'csharp', 'd', 'dart', 'elixir',
+        'elm', 'erlang', 'factor', 'falcon', 'fortran', 'fsharp', 'go',
+        'gosu', 'groovy', 'hack',
+        'haskell', 'idris', 'io', 'java', 'javascript', 'julia', 'k', 'kitten',
+        'kotlin', 'lolcode', 'lua', 'matlab', 'mercury', 'nasm', 'nemerle', 'nim',
+        'ocaml', 'perl', 'php', 'purescript', 'python', 'r', 'racket',
+        'roy', 'ruby', 'rust', 'scala', 'scratch', 'smalltalk',
+        'sml', 'snap', 'swift', 'tcl', 'whiley'
+      ];
+      langs.forEach(lang => {
+        var span = document.createElement('span');
+        var attribute = document.createAttribute('class');
+        attribute.value = 'cell';
+        span.setAttributeNode(attribute);
+        span.style.backgroundImage = 'url(resources/' + lang + '-logo-64.png)';
+        document.body.appendChild(span);
+      })
+    </script>
+  </body>
+</html>
