@@ -372,9 +372,23 @@
 
       <div class="sectionheading">Errata</div>
 
-      <p>We&rsquo;ll list the mistakes in the book right here as they come in.
-      Please let us know if you find anything.
+      <p>Here are the mistakes in the printed text we know about (along
+      with any lame or valid excuses that may apply).
+      Please let us know if <em>you</em> find anything.
       Email one of the authors or submit a pull request for this file.</p>
+
+      <ul>
+      <li><b>Changes due to evolution of Swift</b>. The first printing took place when Swift 3 was in beta. The release version of Swift 3 included significant language changes, requiring several scripts and a couple pages to be rewritten.
+        <ul>
+        <li><b>Page 2, third script</b>. Remove <tt>combine:</tt>.
+        <li><b>Page 244, second script</b>. Replace <tt>Process</tt> with <tt>CommandLine</tt>.
+        <li><b>Page 253, second script</b>. Replace <tt>ErrorProtocol</tt> with <tt>Error</tt>, and make the same replacement in the text of line 3 of the following page.
+        <li><b>Page 254-256</b>. The mechanisms for operator precedence and the definitions of custom operators have been drastically changed. Replacement pages are here (TODO - link).
+        <li><b>Page 255</b>. The argument to <tt>String()</tt> must now be prefixed with <tt>describing:</tt>.
+        <li><b>Page 258</b>. Remove <tt>combine:</tt> from the script.
+        </ul>
+      <li><b>Typographical, spelling, and grammar errors</b>.
+      </ul>
 
 
       <div class="sectionheading">Additional Exercises</div>
