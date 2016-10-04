@@ -1,5 +1,6 @@
-infix operator ~|*|~ {precedence 145 associativity left}
-postfix operator ^^ {}
+precedencegroup A {higherThan: AdditionPrecedence lowerThan: MultiplicationPrecedence associativity: left }
+infix operator ~|*|~ : A
+postfix operator ^^
 
 func ~|*|~ (x: Int, y: Int) -> Int {
     return 2 * x + y

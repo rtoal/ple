@@ -1,4 +1,4 @@
-enum BadLength: ErrorProtocol {
+enum BadLength: Error {
     case tooLong(by: Int)
     case tooShort
 }

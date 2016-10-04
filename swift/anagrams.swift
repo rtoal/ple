@@ -12,10 +12,10 @@ func generatePermutations(of a: inout [Character], upTo n: Int) {
     }
 }
 
-if Process.arguments.count != 2 {
+if CommandLine.arguments.count != 2 {
     fputs("Exactly one argument is required\n", __stderrp)
     exit(1)
 }
-let word = Process.arguments[1]
+let word = CommandLine.arguments[1]
 var charArray = Array(word.characters)
 generatePermutations(of: &charArray, upTo: charArray.count-1)
