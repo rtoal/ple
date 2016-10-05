@@ -1,4 +1,9 @@
-precedencegroup A {higherThan: AdditionPrecedence lowerThan: MultiplicationPrecedence associativity: left }
+precedencegroup A {
+  higherThan: AdditionPrecedence
+  lowerThan: MultiplicationPrecedence
+  associativity: left
+}
+
 infix operator ~|*|~ : A
 postfix operator ^^
 
