@@ -1,52 +1,51 @@
 body {
   margin: 0 auto;
   background-color: white;
-  overflow: hidden;
-  height: 100%;
-}
-
-#content {
-  position: absolute;
-  top: 0;
-  left: 200px;
-  width: calc(100% - 200px);
-  height: 100%;
-  font: 20px serif;
   text-align: center;
-  overflow: scroll;
+  font: 20px serif;
 }
 
-.element {
-  position: absolute;
-  width: 90%;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
+span.cell {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin: 4px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-#text {
-  max-width: 600px;
-  margin: 32px auto;
-}
-
-#sidebarwrapper {
-  position: absolute;
-  top: 0;
-  width: 200px;
-  overflow: hidden;
-  height: 100%;
-}
-
-#sidebar {
-  position: absolute;
-  top: 0;
-  font: 18px/1.5 sans-serif;
-  padding-left: 8px;
+#bar {
+  margin: 0;
   background-color: black;
+  text-align: center;
+  padding: 5px;
   color: white;
-  width: 250px;
-  height: 100%;
-  overflow-y: auto;
+  font: 18px Helvetica, sans-serif;
+}
+
+#wrapper {
+  background-color: white;
+  width: 100%;
+  margin: 0;
+}
+
+#content, #single-language {
+  margin: 0 auto;
+  padding-top: 20px;
+  max-width: 880px;
+}
+
+#single-language {
+  display: none;
+}
+
+#logo {
+  height: 320px;
+  margin-bottom: 20px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .tag {
@@ -56,4 +55,26 @@ body {
   padding: 3px;
   color: white;
   background-color: blue;
+}
+
+#text {
+  max-width: 800px;
+  margin: 32px auto;
+}
+
+#footer {
+  color: blue;
+  font-family: Helvetica, sans-serif;
+  font-size: 75%;
+  padding-top: 8px;
+  margin-top: 80px;
+  width: 100%;
+}
+
+#prev {
+  float: left;
+}
+
+#next {
+  float: right;
 }

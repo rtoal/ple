@@ -3,77 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Languages</title>
-    <style>
-      body {
-        margin: 0 auto;
-        background-color: white;
-        text-align: center;
-        font: 20px serif;
-      }
-      span.cell {
-        display: inline-block;
-        width: 80px;
-        height: 80px;
-        margin: 4px;
-        background-color: white;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
-      #bar {
-        margin: 0;
-        background-color: black;
-        text-align: center;
-        padding: 5px;
-        color: white;
-        font: 18px Helvetica, sans-serif;
-      }
-      #wrapper {
-        background-color: white;
-        width: 100%;
-        margin: 0;
-      }
-      #content, #single-language {
-        margin: 0 auto;
-        padding-top: 20px;
-        max-width: 880px;
-      }
-      #single-language {
-        display: none;
-      }
-      .tag {
-        font-family: Arial, sans-serif;
-        font-size: 90%;
-        border: 1px solid blue;
-        padding: 3px;
-        color: white;
-        background-color: blue;
-      }
-      #text {
-        max-width: 800px;
-        margin: 32px auto;
-      }
-      #footer {
-        color: blue;
-        font-family: Helvetica, sans-serif;
-        font-size: 75%;
-        padding-top: 8px;
-        margin-top: 80px;
-        width: 100%;
-      }
-      #prev {
-        float: left;
-      }
-      #next {
-        float: right;
-      }
-    </style>
+    <link rel="stylesheet" href="resources/styles/overviews.css">
   </head>
   <body>
     <div id="bar"></div>
     <div id="wrapper">
       <div id="content"></div>
       <div id="single-language">
-        <div><img id="logo"></div>
+        <div id="logo"></div>
         <div id="text">
           <p id="description"></p>
           <p id="info"></p>
@@ -82,7 +19,7 @@
         <div id="footer">
           <span id="prev"></span>
           <span id="next"></span>
-          <span id="index">&#x2191; HOME</span>
+          <span id="index">&#x2191; Contents</span>
         </div>
         <div style="clear: both"></div>
       </div>
