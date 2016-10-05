@@ -19,6 +19,7 @@ var langs = [
   },
   {
     i: 'awk', n: 'AWK',
+    d: 'AWK is ...',
   },
   {
     i: 'bash', n: 'Bash', h: 'https://tiswww.case.edu/php/chet/bash/bashtop.html',
@@ -218,12 +219,15 @@ var langs = [
   {
     i: 'gosu', n: 'Gosu', h: 'https://gosu-lang.github.io/',
     w: 'Gosu_(programming_language)',
+    d: 'Gosu is ...',
   },
   {
     i: 'groovy', n: 'Groovy',
+    d: 'Groovy is ...',
   },
   {
     i: 'hack', n: 'Hack',
+    d: 'Hack is ...',
   },
   {
     i: 'haskell', n: 'Haskell', h: 'https://www.haskell.org/',
@@ -294,6 +298,7 @@ var langs = [
   },
   {
     i: 'kitten', n: 'Kitten', h: 'http://kittenlang.org/',
+    d: 'Kitten is ...',
   },
   {
     i: 'kotlin', n: 'Kotlin', h: 'https://kotlinlang.org/',
@@ -307,6 +312,7 @@ var langs = [
   },
   {
     i: 'lolcode', n: 'LOLCODE', h: 'http://lolcode.org/',
+    d: 'LOLCODE (capitalized because cats talk in all caps) is ...',
   },
   {
     i: 'lua', n: 'Lua', h: 'https://www.lua.org/',
@@ -320,30 +326,39 @@ var langs = [
   },
   {
     i: 'matlab', n: 'MATLAB',
+    d: 'MATLAB (conventionally capitalized even though it is not an acronym) is ...',
   },
   {
     i: 'mercury', n: 'Mercury', h: 'https://mercurylang.org/',
+    d: 'Mercury is ...',
   },
   {
     i: 'nasm', n: 'NASM', h: 'http://www.nasm.us/',
+    d: 'NASM is ...',
   },
   {
-    i: 'nemerle', n: 'Nemerle', h: 'http://www.nemerle.org/'
+    i: 'nemerle', n: 'Nemerle', h: 'http://www.nemerle.org/',
+    d: 'Nemerle is ...',
   },
   {
     i: 'nim', n: 'Nim', h: 'http://nim-lang.org/',
+    d: 'Nim is ...',
   },
   {
     i: 'ocaml', n: 'OCaml', h: 'https://ocaml.org/',
+    d: 'OCaml (also known as Objective Caml) is ...',
   },
   {
     i: 'perl', n: 'Perl', h: 'https://www.perl.org/',
+    d: 'Perl is ...',
   },
   {
     i: 'php', n: 'PHP',
+    d: 'PHP is ...',
   },
   {
     i: 'purescript', n: 'PureScript', h: 'http://www.purescript.org/',
+    d: 'PureScript is ...',
   },
   {
     i: 'python', n: 'Python', h: 'https://www.python.org/',
@@ -357,9 +372,11 @@ var langs = [
   },
   {
     i: 'r', n: 'R', h: 'https://www.r-project.org/',
+    d: 'R is ...',
   },
   {
     i: 'racket', n: 'Racket', h: 'https://racket-lang.org/',
+    d: 'Racket is ...',
   },
   {
     i: 'roy', n: 'Roy', h: 'http://roy.brianmckenna.org/',
@@ -381,12 +398,15 @@ var langs = [
   },
   {
     i: 'rust', n: 'Rust', h: 'https://www.rust-lang.org/',
+    d: 'Rust is ...',
   },
   {
     i: 'scala', n: 'Scala', h: 'http://www.scala-lang.org/',
+    d: 'Scala is ...',
   },
   {
     i: 'scratch', n: 'Scratch', h: 'https://scratch.mit.edu/',
+    d: 'Scratch is ...',
   },
   {
     i: 'smalltalk', n: 'Smalltalk',
@@ -400,9 +420,11 @@ var langs = [
   },
   {
     i: 'sml', n: 'Standard ML',
+    d: 'Standard ML is ...',
   },
   {
     i: 'snap', n: 'Snap!', h: 'http://snap.berkeley.edu/',
+    d: 'Snap is ...',
   },
   {
     i: 'swift', n: 'Swift', h: 'https://swift.org/',
@@ -416,10 +438,12 @@ var langs = [
   },
   {
     i: 'tcl', n: 'Tcl', h: 'https://tcl.tk/',
+    d: 'Tcl is ...',
   },
   {
     i: 'whiley', n: 'Whiley', h: 'http://whiley.org/',
     w: 'Whiley_(programming_language)',
+    d: 'Whiley is ...',
   },
 ];
 
@@ -468,7 +492,7 @@ var show = function (language) {
   document.getElementById("single-language").style.display = 'block';
   document.getElementById("bar").innerHTML = language.n;
 
-  imageElement.src = 'resources/' + language.i + '-logo-240.png';
+  imageElement.style.backgroundImage = 'url(resources/' + language.i + '-logo-240.png)';
   if (language.d) {
     description.innerHTML = language.d;
     description.style.display = 'block';
