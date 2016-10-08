@@ -1,7 +1,6 @@
 import Foundation
 
 struct Vector: CustomStringConvertible {
-
     let i: Double
     let j: Double
 

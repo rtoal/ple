@@ -1,10 +1,10 @@
-precedencegroup A {
+precedencegroup JustForFun {
   higherThan: AdditionPrecedence
   lowerThan: MultiplicationPrecedence
   associativity: left
 }
 
-infix operator ~|*|~ : A
+infix operator ~|*|~ : JustForFun
 postfix operator ^^
 
 func ~|*|~ (x: Int, y: Int) -> Int {
