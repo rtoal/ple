@@ -124,9 +124,17 @@ The examples here have been tested on a machine running macOS using the followin
     <td align="center"><img valign="middle" src="resources/lua-logo-24.png">
     <td>5.3.2
     <td>
+<tr><td>Mercury
+    <td align="center"><img valign="middle" src="resources/mercury-logo-24.png">
+    <td>
+    <td>
 <tr><td>Nasm
     <td align="center"><img valign="middle" src="resources/nasm-logo-24.png">
     <td>2.12.02
+    <td>
+<tr><td>Nemerle
+    <td align="center"><img valign="middle" src="resources/nemerle-logo-24.png">
+    <td>
     <td>
 <tr><td>Nim
     <td align="center"><img valign="middle" src="resources/nim-logo-24.png">
@@ -179,5 +187,17 @@ The examples here have been tested on a machine running macOS using the followin
 <tr><td>Swift
     <td align="center"><img valign="middle" src="resources/swift-logo-24.png">
     <td>3.0
-    <td>swiftlang-800.0.33.1 clang-800.0.31
+    <td>swiftlang-800.0.46.2 clang-800.0.38
+<tr><td>Tcl
+    <td align="center"><img valign="middle" src="resources/tcl-logo-24.png">
+    <td>
+    <td>
+<tr><td>Wake
+    <td align="center"><img valign="middle" src="resources/wake-logo-24.png">
+    <td>
+    <td>
+<tr><td>Whiley
+    <td align="center"><img valign="middle" src="resources/whiley-logo-24.png">
+    <td>
+    <td>
 </table>
