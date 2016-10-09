@@ -52,6 +52,10 @@ The examples here have been tested on a machine running macOS using the followin
     <td align="center"><img valign="middle" src="resources/coffeescript-logo-24.png">
     <td>1.10.0
     <td>(Run under Node 6.3.0)
+<tr><td>Crystal
+    <td align="center"><img valign="middle" src="resources/crystal-logo-24.png">
+    <td>
+    <td>
 <tr><td>D
     <td align="center"><img valign="middle" src="resources/d-logo-24.png">
     <td>
@@ -87,6 +91,10 @@ The examples here have been tested on a machine running macOS using the followin
 <tr><td>Go
     <td align="center"><img valign="middle" src="resources/go-logo-24.png">
     <td>1.7
+    <td>
+<tr><td>Hack
+    <td align="center"><img valign="middle" src="resources/hack-logo-24.png">
+    <td>
     <td>
 <tr><td>Haskell
     <td align="center"><img valign="middle" src="resources/haskell-logo-24.png">
