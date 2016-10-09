@@ -1,4 +1,4 @@
-<img align="right" src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/scala-logo-300.png">
+<img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/scala-logo-64.png">
 # Scala Examples
 
 To get Scala:

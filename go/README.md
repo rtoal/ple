@@ -1,4 +1,4 @@
-<img align="right" src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/go-logo-300.png">
+<img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/go-logo-64.png">
 # Go Examples
 
 To get Go:
@@ -17,4 +17,3 @@ To run the tests:
 
 * [Awesome Go](https://github.com/avelino/awesome-go)
 * [Everyday Hassles in Go](http://crufter.com/2014/12/01/everyday-hassles-in-go/)
-

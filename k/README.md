@@ -1,4 +1,4 @@
-<img align="right" src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/k-logo-300.png">
+<img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/k-logo-64.png">
 # K Examples
 
 To get K:

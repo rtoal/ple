@@ -1,4 +1,4 @@
-<img align="right" src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/swift-logo-300.png">
+<img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/swift-logo-64.png">
 # Swift Examples
 
 To get Swift:

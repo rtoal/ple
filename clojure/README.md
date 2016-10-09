@@ -1,4 +1,4 @@
-<img align="right" src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/clojure-logo-300.png">
+<img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/clojure-logo-64.png">
 # Clojure Examples
 
 To get Clojure:
