@@ -16,6 +16,10 @@ The examples here have been tested on a machine running macOS using the followin
     <td align="center"><img valign="middle" src="resources/apl-logo-24.png">
     <td><a href="http://ngn.github.io/apl/web/index.html">ngn/apl demo</a>
     <td>
+<tr><td>AWK
+    <td align="center"><img valign="middle" src="resources/awk-logo-24.png">
+    <td>
+    <td>
 <tr><td>Bash
     <td align="center"><img valign="middle" src="resources/bash-logo-24.png">
     <td>
@@ -77,7 +81,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
     <td>
 <tr><td>Fortran
-    <td>
+    <td align="center"><img valign="middle" src="resources/fortran-logo-24.png">
     <td>GNU Fortran (GCC) 6.1.0
     <td>
 <tr><td>Go
@@ -151,6 +155,10 @@ The examples here have been tested on a machine running macOS using the followin
 <tr><td>Prolog
     <td>
     <td>
+    <td>
+<tr><td>PureScript
+    <td align="center"><img valign="middle" src="resources/purescript-logo-24.png">
+    <td>3.5.2
     <td>
 <tr><td>Python
     <td align="center"><img valign="middle" src="resources/python-logo-24.png">
