@@ -19,7 +19,12 @@ var langs = [
   },
   {
     i: 'awk', n: 'AWK',
-    d: 'AWK is ...',
+    w: 'AWK', g: 'awk', rc: 'AWK', pp: 'awk',
+    d: 'AWK excels at terse scripts for processing text files, due to its implicit main loop over the lines of a file, implicit variables, and regular expression support.',
+    f: 1977,
+    r: 'Being a successor of sed and a predecessor of Perl',
+    u: 'Text processing',
+    t: ['Dynamic', 'Scripting', 'Line-oriented']
   },
   {
     i: 'bash', n: 'Bash', h: 'https://tiswww.case.edu/php/chet/bash/bashtop.html',
@@ -184,12 +189,15 @@ var langs = [
     w: 'Falcon_(programming_language)', rc: 'Falcon', pp: 'falcon',
     d: 'Falcon is a simple and easy-to-learn multiparadigm language.',
     f: 2003,
+    v: ['0.9 (2009)'],
+    r: 'Interoperability with C++',
+    u: 'Data streaming, scripting',
     t: ['Multi-paradigm']
   },
   {
     i: 'fortran', n: 'Fortran',
     w: 'Fortran', g: 'fortran', rc: 'Fortran', pp: 'Fortran',
-    d: 'Fortran debuted at a time when the need for high-level languages was still being question, so its designers worked hard to make sure generated code could be incredibly efficient',
+    d: 'Fortran debuted at a time when the need for high-level languages was still being question, so its designers worked hard to make sure generated code could be incredibly efficient.',
     f: 1957,
     v: ['I', 'II', 'IV', 66, 77, 90, 95, 2003, 2008, 2015],
     r: 'Likely being the first high-level general purpose programming language',
@@ -209,7 +217,7 @@ var langs = [
   {
     i: 'go', n: 'Go', h: 'https://golang.org/',
     w: 'Go_(programming_language)', g: 'go', rc: 'Go', pp: 'go',
-    d: 'Go is Google&rsquo;s open source anguage for building simple, reliable, and efficient software',
+    d: 'Go is Google&rsquo;s open source anguage for building simple, reliable, and efficient software.',
     f: 2009,
     v: ['1 (2012)', '1.5 (2015)'],
     r: 'Being simpler than C++, Goroutines',
@@ -218,12 +226,18 @@ var langs = [
   },
   {
     i: 'gosu', n: 'Gosu', h: 'https://gosu-lang.github.io/',
-    w: 'Gosu_(programming_language)',
-    d: 'Gosu is ...',
+    w: 'Gosu_(programming_language)', g: 'gosu', rc: 'Gosu',
+    d: 'Gosu is a simple and pragmatic language designed to run on the JVM.',
   },
   {
-    i: 'groovy', n: 'Groovy',
-    d: 'Groovy is ...',
+    i: 'groovy', n: 'Groovy', h: 'http://www.groovy-lang.org/',
+    w: 'Groovy_(programming_language)', g: 'groovy', rc: 'Groovy', pp: 'groovy',
+    d: 'Groovy is a dynamic, object-oriented langauge targeted to the JVM.',
+    f: 2003,
+    v: ['1.0 (2007)', '2.0 (2012)'],
+    r: 'Java interoperability',
+    u: 'Gradle plugins',
+    t: ['Dynamic', 'Scripting', 'Object-oriented']
   },
   {
     i: 'hack', n: 'Hack',
