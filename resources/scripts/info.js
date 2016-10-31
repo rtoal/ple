@@ -434,7 +434,13 @@ var langs = [
   },
   {
     i: 'sml', n: 'Standard ML',
-    d: 'Standard ML is ...',
+    w: 'Standard_ML', g: 'standard-ml', rc: 'Standard_ML', pp: 'standard-ml',
+    d: 'Standard ML is one of the major languages in the ML family, with an excellent module system. (<a href="http://blog.bugyo.tk/lyrical/archives/1877"><small>Logo found here)</small></a>',
+    f: 1984,
+    v: ['90 (1990)', '97 (1997)'],
+    r: 'Pattern matching, Hindley-Milner typing, sophisticated modules',
+    u: 'Theorem proving',
+    t: ['Functional']
   },
   {
     i: 'snap', n: 'Snap!', h: 'http://snap.berkeley.edu/',
