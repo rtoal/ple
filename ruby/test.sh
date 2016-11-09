@@ -13,7 +13,7 @@ ruby class_definition.rb && \
 ruby class_new_example.rb && \
 ruby common_class_summary.rb && \
 ruby globals.rb && \
-ruby make_enums.rb && \
+ruby make_enum.rb && \
 ruby mixin_example.rb && \
 ruby multi.rb && \
 ruby multiple_mixins.rb && \
