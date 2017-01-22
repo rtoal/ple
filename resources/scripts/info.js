@@ -2,7 +2,7 @@ var langs = [
   {
     i: 'ada', n: 'Ada', h: 'http://www.adaic.org/',
     w: 'Ada_(programming_language)', g: 'ada', rc: 'Ada', pp: 'ada',
-    d: 'Ada is a language designed for both massively large software systems and low-level, embedded systems.',
+    d: 'Ada is a language designed for both ultra-large software systems and low-level, embedded systems.',
     f: 1983, v: ['83', '95', '2012'],
     r: 'Code safety and maintainability',
     u: 'Avionics, air-traffic control, satellites, defense systems',
@@ -11,7 +11,7 @@ var langs = [
   {
     i: 'apl', n: 'APL',
     w: 'APL_(programming_language)', g: 'apl', rc: 'APL', pp: 'apl',
-    d: 'APL is the earliest array-oriented language, known for its heavy use of non-ASCII operator symbols, and its ability to express concise code.',
+    d: 'APL is the earliest array-oriented language, known for its heavy use of non-ASCII operator symbols, and its ability to express complex algorithms in a single line of code.',
     f: 1962,
     r: 'Concise code, array-orientation, symbolic alphabet',
     u: 'Finance, scientific research',
@@ -32,7 +32,7 @@ var langs = [
     d: 'Bash is one of the most popular of the Unix shell languages.',
     f: 1989,
     v: ['3 (2004)', '4 (2009)', '4.2 (2011)'],
-    r: 'Shell scripting, Text processing',
+    r: 'Shell scripting, text processing',
     u: 'Primary shell for the popular GNU and macOS operating systems',
     t: ['Scripting'],
   },
@@ -80,7 +80,7 @@ var langs = [
     d: 'Clojure is a modern Lisp dialect targeted to modern platforms such as the JVM.',
     f: 2007,
     v: ['1.0 (2009)', '1.7 (2015)'],
-    r: 'Macros, Lisp-ness, Concurrency support, Java interoperability',
+    r: 'Macros, Lisp-ness, concurrency support, Java interoperability',
     u: 'Data mining, Artificial intelligence',
     t: ['Functional', 'Dynamic', 'Concurrent', 'Homoiconic']
   },
@@ -90,7 +90,7 @@ var langs = [
     d: 'CoffeeScript attempts to &ldquo;expose the good parts of JavaScript in a simple way.&rdquo;',
     f: 2009,
     v: ['1.0 (2010)', '1.10 (2015)'],
-    r: 'Transpiling to JavaScript, Expressiveness',
+    r: 'Transpiling to JavaScript, expressiveness',
     u: 'Web application clients',
     t: ['Functional', 'Expression-Oriented', 'Dynamic']
   },
@@ -100,7 +100,7 @@ var langs = [
     d: 'Common Lisp is one of the major dialects of Lisp. It was created in the early 1980s in the hopes of unifying a number of existing dialects into a single standard.',
     f: 1984,
     v: ['ANSI Standard (1994)'],
-    r: 'CLOS (the Common Lisp Object System), Generic functions, Methods, Macros, Homoiconicity',
+    r: 'CLOS (the Common Lisp Object System), generic functions, methods, macros, homoiconicity',
     u: 'Artificial intelligence, Graphics, Scheduling, Search',
     t: ['Dynamic', 'Homoiconic']
   },
@@ -140,7 +140,7 @@ var langs = [
     d: 'Dart is an language used to create very large applications. Originally seen as an alternative to JavaScript, the language features optional typing, abstract classes, and generics.',
     f: 2011,
     v: ['1.12.0 (2015)', '1.16.0 (2016)'],
-    r: 'Optional typing, Isolates, SIMD support',
+    r: 'Optional typing, isolates, SIMD support',
     u: 'AdWords, AdSense, Google Fiber',
     t: ['Object-oriented', 'Imperative', 'Functional']
   },
@@ -150,7 +150,7 @@ var langs = [
     d: 'Elixir is a dynamic functional language targeted to the Erlang virtual machine with a Ruby-inspired syntax.',
     f: 2012,
     v: ['1.0 (2014)', '1.3.0 (2016)'],
-    r: 'Concurrency, Reliability, Interoperability with Erlang',
+    r: 'Concurrency, reliability, interoperability with Erlang',
     u: 'Applications within Pintrest and Brightcove',
     t: ['Functional', 'Concurrent', 'Process-Oriented']
   },
@@ -180,7 +180,7 @@ var langs = [
     d: 'Factor is a modern, concatenative, and extensible language.',
     f: 2003,
     v: ['0.97 (2014)'],
-    r: 'Flexibility, Large standard library',
+    r: 'Flexibility, large standard library',
     u: 'Research into optimization techniques',
     t: ['Stack-based', 'Concatenative']
   },
@@ -220,14 +220,19 @@ var langs = [
     d: 'Go is Google&rsquo;s open source anguage for building simple, reliable, and efficient software.',
     f: 2009,
     v: ['1 (2012)', '1.5 (2015)'],
-    r: 'Being simpler than C++, Goroutines',
+    r: 'Being simpler than C++, goroutines',
     u: 'Servers',
     t: ['Statically Typed', 'Concurrent', 'Channel-Oriented']
   },
   {
     i: 'gosu', n: 'Gosu', h: 'https://gosu-lang.github.io/',
     w: 'Gosu_(programming_language)', g: 'gosu', rc: 'Gosu',
-    d: 'Gosu is a simple and pragmatic language designed to run on the JVM.',
+    d: 'Gosu is a pragmatic language designed to run on the JVM.',
+    f: 2002,
+    v: ['0.7 (2010)', '1.10 (2016)'],
+    r: 'Scripting language features in a statically-typed language, running on the JVM, templates, extensible types, reified generics',
+    u: 'Insurance industry products',
+    t: ['Static', 'Scripting']
   },
   {
     i: 'groovy', n: 'Groovy', h: 'http://www.groovy-lang.org/',
@@ -240,8 +245,13 @@ var langs = [
     t: ['Dynamic', 'Scripting', 'Object-oriented']
   },
   {
-    i: 'hack', n: 'Hack',
-    d: 'Hack is ...',
+    i: 'hack', n:  'Hack', h: 'http://hacklang.org/',
+    w: 'Hack_(programming_language)', g: 'hack', rc: 'Hack',
+    d: 'Hack is a PHP-compatible language with a variety of modern features, such as type-annotations, generics, nullables, lambdas, type-aliasing, shapes, and async support.',
+    f: 2014,
+    r: 'Being a better PHP',
+    u: 'Facebook',
+    t: ['Imperative', 'Gradually Typed']
   },
   {
     i: 'haskell', n: 'Haskell', h: 'https://www.haskell.org/',
@@ -278,7 +288,7 @@ var langs = [
     w: 'Java_(programming_language)', g: 'java', rc: 'Java', pp: 'java',
     f: 1995,
     v: ['1.1 (1997)', '5 (2004)', '8 (2014)', '9 (2017)'],
-    r: 'Classes, Threads, Mature platform',
+    r: 'Classes, threads, mature platform',
     u: 'Enterprise computing, Android applications',
     t: ['Architecture-neutral', 'Multithreaded', 'High-performance']
   },
@@ -287,7 +297,7 @@ var langs = [
     d: 'JavaScript interpreters exist in every major web browser.',
     w: 'JavaScript', g: 'javascript', rc: 'JavaScript', pp: 'javascript',
     f: '1995', v: ['ES3 (1999)', 'ES5 (2000)', 'ES2015 (2015)'],
-    r: 'First-class functions, Weak typing, Prototypes',
+    r: 'First-class functions, weak typing, prototypes',
     u: 'Web application clients, Asynchronous servers',
     t: ['Imperative', 'Functional', 'Dynamic', 'Prototypal']
   },
@@ -297,7 +307,7 @@ var langs = [
     w: 'Julia_(programming_language)', g: 'julia', rc: 'Julia',
     f: 2012,
     v: ['0.4 (2015)', '0.5 (2016)'],
-    r: 'Multi-dispatch, Macros, Multicore support',
+    r: 'Multi-dispatch, macros, multicore support',
     u: 'Data Science, Statistics, Numerical Analysis',
     t: ['High-performance', 'Dynamic', 'Multi-dispatch']
   },
@@ -306,13 +316,16 @@ var langs = [
     w: 'K_(programming_language)', rc: 'K', pp: 'k',
     d: 'K is an array-oriented language influenced by APL.',
     f: 1993,
-    r: 'Array operations, Expressive syntax',
+    r: 'Array operations, expressive syntax',
     u: 'Finance',
     t: ['Array-based', 'Dynamic']
   },
   {
     i: 'kitten', n: 'Kitten', h: 'http://kittenlang.org/',
-    d: 'Kitten is ...',
+    d: 'Kitten is a statically-typed, functional, concatenative language',
+    f: 2011,
+    r: 'The notion of <em>effects</em> for bridging the functional and stack-based aspects of the language.',
+    t: ['Concatenative', 'Functional']
   },
   {
     i: 'kotlin', n: 'Kotlin', h: 'https://kotlinlang.org/',
@@ -320,13 +333,17 @@ var langs = [
     d: 'Kotlin is a Java-interoperable language intended to be a &ldquo;better Java.&rdquo; Its key contribution is its treatment of nullable vs non-nullable values',
     f: 2011,
     v: ['1.0 (2016)'],
-    r: 'Nullables, Interoperability with Java',
+    r: 'Nullables, interoperability with Java',
     u: 'Replacing Java',
     t: ['Object-oriented', 'Static']
   },
   {
     i: 'lolcode', n: 'LOLCODE', h: 'http://lolcode.org/',
-    d: 'LOLCODE (capitalized because cats talk in all caps) is ...',
+    w: 'LOLCODE', g: 'lolcode', rc: 'LOLCODE', pp: 'lolcode',
+    d: 'LOLCODE (capitalized because cats talk in all caps) is an esoteric programming language with a syntax inspired by lolspeak.',
+    f: 2007,
+    r: 'lolcats-inspired keywords and grammar',
+    t: ['Esoteric', 'Imperative'],
   },
   {
     i: 'lua', n: 'Lua', h: 'https://www.lua.org/',
@@ -334,13 +351,19 @@ var langs = [
     w: 'Lua_(programming_language)', g: 'lua', rc: 'Lua', pp: 'lua',
     f: 1993,
     v: ['5.0 (2003)', '5.1 (2006)', '5.2 (2011)', '5.3 (2015)'],
-    r: 'Tables, Interoperability with C',
+    r: 'Tables, interoperability with C',
     u: 'World of Warcraft, Angry Birds, Scripting',
     t: ['Imperative', 'Prototypal', 'Scripting']
   },
   {
-    i: 'matlab', n: 'MATLAB',
-    d: 'MATLAB (conventionally capitalized even though it is not an acronym) is ...',
+    i: 'matlab', n: 'MATLAB', h: 'https://www.mathworks.com/products/matlab.html',
+    d: 'MATLAB refers to both a programming language and a proprietary computing environment, with strengths in scientific computing.',
+    w: 'MATLAB', g: 'matlab', rc: 'MATLAB', pp: 'matlab',
+    f: 1984,
+    v: ['6.0 (2000)', '7 (2004)', '8.2 (2013)', '9.0 (2016)'],
+    r: 'Matrix processing',
+    u: 'Scientific computing, education',
+    t: ['Numeric', 'Dynamic']
   },
   {
     i: 'mercury', n: 'Mercury', h: 'https://mercurylang.org/',
@@ -406,7 +429,7 @@ var langs = [
     d: 'Ruby was created, in the words of its designer, to help every programmer in the world to be productive, and to enjoy programming, and to be happy.',
     f: 1995,
     v: ['1.8 (2003)', '1.9 (2007)', '2.0 (2013)', '2.3 (2015)'],
-    r: 'OOP, Metaprogramming, DSL construction',
+    r: 'OOP, metaprogramming, DSL construction',
     u: 'Web servers, Scripting',
     t: ['Object-oriented', 'Expression-oriented', 'Dynamic'],
   },
@@ -428,7 +451,7 @@ var langs = [
     d: 'Smalltalk was conceived and grew up in the same laboratory&mdash;Xerox PARC&mdash; as did the mouse-driven user interface, Ethernet, and the laser printer.',
     f: 1972,
     v: [71, 72, 74, 76, 80],
-    r: 'GUI Workstations, Metaprogramming, Object-orientation (Objects all the way down)',
+    r: 'GUI Workstations, metaprogramming, Object-orientation (Objects all the way down)',
     u: 'Education, Financial analysis and modeling',
     t: ['Object-oriented', 'Dynamic', 'Reflective']
   },
