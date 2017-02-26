@@ -10,7 +10,7 @@ The examples here have been tested on a machine running macOS using the followin
 <tr><th colspan="2">Language<th>Version<th>Notes
 <tr><td>Ada
     <td align="center"><img valign="middle" src="resources/ada-logo-24.png">
-    <td>
+    <td>2015
     <td>
 <tr><td>APL
     <td align="center"><img valign="middle" src="resources/apl-logo-24.png">
@@ -18,7 +18,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>AWK
     <td align="center"><img valign="middle" src="resources/awk-logo-24.png">
-    <td>
+    <td>20070501
     <td>
 <tr><td>Bash
     <td align="center"><img valign="middle" src="resources/bash-logo-24.png">
@@ -27,7 +27,7 @@ The examples here have been tested on a machine running macOS using the followin
 <tr><td>C
     <td align="center"><img valign="middle" src="resources/c-logo-24.png">
     <td>c11
-    <td>Apple LLVM version 7.3.0 (clang-703.0.31)
+    <td>Apple LLVM version 8.0.0 (clang-800.0.42.1)
 <tr><td>C#
     <td align="center"><img valign="middle" src="resources/csharp-logo-24.png">
     <td>
@@ -35,7 +35,7 @@ The examples here have been tested on a machine running macOS using the followin
 <tr><td>C++
     <td align="center"><img valign="middle" src="resources/cpp-logo-24.png">
     <td>
-    <td>Apple LLVM version 7.3.0 (clang-703.0.31)
+    <td>Apple LLVM version 8.0.0 (clang-800.0.42.1)
 <tr><td>Ceylon
     <td align="center"><img valign="middle" src="resources/ceylon-logo-24.png">
     <td>
