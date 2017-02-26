@@ -14,8 +14,7 @@
         padding: 0 10px;
       }
       .bookcover {
-        float: right;
-        padding-left: 20px;
+        padding: 0;
       }
       .bookcover img {
         border:1px solid #4b2538;
@@ -106,6 +105,12 @@
         font-family: inherit;
         color: yellow;
         font-weight: 600;
+      }
+      @media (min-width: 640px) {
+        .bookcover {
+          float: right;
+          padding-left: 20px;
+        }
       }
     </style>
   </head>
@@ -387,7 +392,11 @@
         <li><b>Page 255</b>. The argument to <tt>String()</tt> must now be prefixed with <tt>describing:</tt>.
         <li><b>Page 254-256</b>. The mechanisms for operator precedence have been drastically changed. <a href="resources/book-replacement-pages/swift3updates.pdf">Download replacement pages for the book</a>.
         </ul>
-      <li><b>Typographical, spelling, and grammar errors</b>. We&rsquo;re not aware of any just yet....
+      <li><b>Typographical, spelling, and grammar errors</b>.
+        <ul>
+          <li><b>Page 221, line 2 of text</b>. Insert <tt>and</tt> between <tt>creating</tt> and <tt>modifying</tt>.
+          <li><b>Page 221, line 5 of text</b>. Remove the word <tt>more</tt>.
+        </ul>
       </ul>
 
 
