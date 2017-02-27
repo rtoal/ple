@@ -106,7 +106,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Io
     <td align="center"><img valign="middle" src="resources/io-logo-24.png">
-    <td>
+    <td>20140919
     <td>
 <tr><td>Java
     <td align="center"><img valign="middle" src="resources/java-logo-24.png">
@@ -114,12 +114,12 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>JavaScript
     <td align="center"><img valign="middle" src="resources/javascript-logo-24.png">
+    <td>ES2016
     <td>Node 7.6.0
-    <td>
 <tr><td>Julia
     <td align="center"><img valign="middle" src="resources/julia-logo-24.png">
     <td>0.4.5
-    <td>
+    <td>(Need to upgrade to 0.5&mdash;MAJOR CHANGES since book was published)
 <tr><td>K
     <td align="center"><img valign="middle" src="resources/k-logo-24.png">
     <td>Kona Win.3.39-69
