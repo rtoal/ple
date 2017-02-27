@@ -50,8 +50,8 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>CoffeeScript
     <td align="center"><img valign="middle" src="resources/coffeescript-logo-24.png">
-    <td>1.10.0
-    <td>(Run under Node 6.3.0)
+    <td>1.12.2
+    <td>(Run under Node 7.6.0)
 <tr><td>Crystal
     <td align="center"><img valign="middle" src="resources/crystal-logo-24.png">
     <td>
@@ -62,7 +62,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Dart
     <td align="center"><img valign="middle" src="resources/dart-logo-24.png">
-    <td>1.18.1
+    <td>1.22.1
     <td>
 <tr><td>Elixir
     <td align="center"><img valign="middle" src="resources/elixir-logo-24.png">
@@ -90,7 +90,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Go
     <td align="center"><img valign="middle" src="resources/go-logo-24.png">
-    <td>1.7
+    <td>1.8
     <td>
 <tr><td>Hack
     <td align="center"><img valign="middle" src="resources/hack-logo-24.png">
@@ -114,7 +114,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>JavaScript
     <td align="center"><img valign="middle" src="resources/javascript-logo-24.png">
-    <td>Node 6.3.0
+    <td>Node 7.6.0
     <td>
 <tr><td>Julia
     <td align="center"><img valign="middle" src="resources/julia-logo-24.png">
@@ -134,7 +134,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Lua
     <td align="center"><img valign="middle" src="resources/lua-logo-24.png">
-    <td>5.3.2
+    <td>5.3.4
     <td>
 <tr><td>Mercury
     <td align="center"><img valign="middle" src="resources/mercury-logo-24.png">
@@ -154,7 +154,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>OCaml
     <td align="center"><img valign="middle" src="resources/ocaml-logo-24.png">
-    <td>
+    <td>4.04.0
     <td>
 <tr><td>Perl
     <td align="center"><img valign="middle" src="resources/perl-logo-24.png">
@@ -166,11 +166,11 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>PureScript
     <td align="center"><img valign="middle" src="resources/purescript-logo-24.png">
-    <td>3.5.2
+    <td>0.10.7
     <td>
 <tr><td>Python
     <td align="center"><img valign="middle" src="resources/python-logo-24.png">
-    <td>3.5.2
+    <td>3.6.0
     <td>
 <tr><td>R
     <td align="center"><img valign="middle" src="resources/r-logo-24.png">
@@ -182,15 +182,15 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Ruby
     <td align="center"><img valign="middle" src="resources/ruby-logo-24.png">
-    <td>2.3.1
+    <td>2.4.0
     <td>
 <tr><td>Rust
     <td align="center"><img valign="middle" src="resources/rust-logo-24.png">
-    <td>1.11.0
+    <td>1.15.1
     <td>
 <tr><td>Scala
     <td align="center"><img valign="middle" src="resources/scala-logo-24.png">
-    <td>2.11.8
+    <td>2.12.1
     <td>
 <tr><td>Smalltalk
     <td align="center"><img valign="middle" src="resources/smalltalk-logo-24.png">
@@ -202,8 +202,8 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Swift
     <td align="center"><img valign="middle" src="resources/swift-logo-24.png">
-    <td>3.0
-    <td>swiftlang-800.0.46.2 clang-800.0.38
+    <td>3.0.2
+    <td>swiftlang-800.0.63 clang-800.0.42.1
 <tr><td>Tcl
     <td align="center"><img valign="middle" src="resources/tcl-logo-24.png">
     <td>
