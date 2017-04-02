@@ -1,5 +1,5 @@
 reader = require('readline').createInterface process.stdin, null
-{XRegExp} = require 'xregexp'
+XRegExp = require 'xregexp'
 counts = new Map()
 
 reader.on 'line', (line) ->
