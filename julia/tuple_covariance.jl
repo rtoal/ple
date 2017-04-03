@@ -1,6 +1,6 @@
 t = (3, "hello")
-@assert typeof(t) == Tuple{Int64, ASCIIString}
-@assert isa(t, Tuple{Real, ASCIIString})
+@assert typeof(t) == Tuple{Int64, String}
+@assert isa(t, Tuple{Real, String})
 @assert isa(t, Tuple{Integer, AbstractString})
 @assert isa(t, Tuple{Number, Any})
 
