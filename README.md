@@ -50,7 +50,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Chapel
     <td align="center"><img valign="middle" src="resources/chapel-logo-24.png">
-    <td>
+    <td>1.14
     <td>
 <tr><td>Clojure
     <td align="center"><img valign="middle" src="resources/clojure-logo-24.png">
@@ -126,8 +126,8 @@ The examples here have been tested on a machine running macOS using the followin
     <td>Node 7.8.0
 <tr><td>Julia
     <td align="center"><img valign="middle" src="resources/julia-logo-24.png">
-    <td>0.4.5
-    <td>(Need to upgrade to 0.5&mdash;MAJOR CHANGES since book was published)
+    <td>0.5.1
+    <td>
 <tr><td>K
     <td align="center"><img valign="middle" src="resources/k-logo-24.png">
     <td>Kona Win.3.39-69
@@ -194,7 +194,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Rust
     <td align="center"><img valign="middle" src="resources/rust-logo-24.png">
-    <td>1.15.1
+    <td>1.16.0
     <td>
 <tr><td>Scala
     <td align="center"><img valign="middle" src="resources/scala-logo-24.png">
