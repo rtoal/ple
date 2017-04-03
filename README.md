@@ -24,10 +24,18 @@ The examples here have been tested on a machine running macOS using the followin
     <td align="center"><img valign="middle" src="resources/bash-logo-24.png">
     <td>
     <td>
+<tr><td>Befunge
+    <td align="center">
+    <td>
+    <td>
+<tr><td>Brainfuck
+    <td align="center">
+    <td>
+    <td>
 <tr><td>C
     <td align="center"><img valign="middle" src="resources/c-logo-24.png">
     <td>c11
-    <td>Apple LLVM version 8.0.0 (clang-800.0.42.1)
+    <td>Apple LLVM version 8.1.0 (clang-802.0.38)
 <tr><td>C#
     <td align="center"><img valign="middle" src="resources/csharp-logo-24.png">
     <td>
@@ -35,7 +43,7 @@ The examples here have been tested on a machine running macOS using the followin
 <tr><td>C++
     <td align="center"><img valign="middle" src="resources/cpp-logo-24.png">
     <td>
-    <td>Apple LLVM version 8.0.0 (clang-800.0.42.1)
+    <td>Apple LLVM version 8.1.0 (clang-802.0.38)
 <tr><td>Ceylon
     <td align="center"><img valign="middle" src="resources/ceylon-logo-24.png">
     <td>
@@ -51,7 +59,7 @@ The examples here have been tested on a machine running macOS using the followin
 <tr><td>CoffeeScript
     <td align="center"><img valign="middle" src="resources/coffeescript-logo-24.png">
     <td>1.12.2
-    <td>(Run under Node 7.6.0)
+    <td>(Run under Node 7.8.0)
 <tr><td>Crystal
     <td align="center"><img valign="middle" src="resources/crystal-logo-24.png">
     <td>
@@ -102,7 +110,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>The Glorious Glasgow Haskell Compilation System, version 8.0.1
 <tr><td>Idris
     <td align="center"><img valign="middle" src="resources/idris-logo-24.png">
-    <td>
+    <td>1.0
     <td>
 <tr><td>Io
     <td align="center"><img valign="middle" src="resources/io-logo-24.png">
@@ -115,7 +123,7 @@ The examples here have been tested on a machine running macOS using the followin
 <tr><td>JavaScript
     <td align="center"><img valign="middle" src="resources/javascript-logo-24.png">
     <td>ES2016
-    <td>Node 7.6.0
+    <td>Node 7.8.0
 <tr><td>Julia
     <td align="center"><img valign="middle" src="resources/julia-logo-24.png">
     <td>0.4.5
@@ -202,8 +210,8 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Swift
     <td align="center"><img valign="middle" src="resources/swift-logo-24.png">
-    <td>3.0.2
-    <td>swiftlang-800.0.63 clang-800.0.42.1
+    <td>3.1
+    <td>swiftlang-802.0.48 clang-802.0.38
 <tr><td>Tcl
     <td align="center"><img valign="middle" src="resources/tcl-logo-24.png">
     <td>
