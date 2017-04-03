@@ -45,6 +45,13 @@
         font-size: 1.75em;
         margin-bottom: 1em;
       }
+      .subsectionheading {
+        color: #937303;
+        margin-top: 1em;
+        font-weight: bold;
+        font-size: 1.25em;
+        margin-bottom: 0.75em;
+      }
       dl {
         background-color: #fffff2;
         padding-left: 3px;
@@ -91,7 +98,7 @@
       }
       code, pre.prettyprint {
         font-family: "Lucida Console", "Courier New", monospace;
-        font-size: 90%;
+        font-size: 95%;
         background-color: #e4f3ff;
       }
       .console {
@@ -376,27 +383,49 @@
       little &ldquo;browser&rdquo; of language highlights</a> for each of the
       languages from the book and many others as well.</p>
 
+      <div class="sectionheading">Updates</div>
+
+      <p>The languages covered in the book are evolving! Sometimes this means the text in the book goes out of date. We’ll do our best to keep with breaking changes and provide text changes and replacement pages here. Here’s what we know so far:</p>
+
+      <div class="subsectionheading">Changes to Swift</div>
+      <p>The first printing took place when Swift 3 was in beta. The release version of Swift 3 included significant language changes, requiring several scripts and a couple pages to be rewritten.</p>
+      <ul>
+      <li><b>Page 2, third script</b>, and <b>Page 258</b>. Remove <code>combine:</code> in <code>reduce</code> call.
+      <li><b>Page 244, second script</b>. Replace <code>Process</code> with <code>CommandLine</code>.
+      <li><b>Page 248, third script and Page 259, third script</b>. Replace all uses of <code>M_PI</code> with <code>Double.pi</code>.
+      <li><b>Page 253, second script</b>. Replace <code>ErrorProtocol</code> with <code>Error</code>, and make the same replacement in the text of line 3 of the following page.
+      <li><b>Page 255</b>. The argument to <code>String()</code> must now be prefixed with <code>describing:</code>.
+      <li><b>Page 254-256</b>. The mechanisms for operator precedence have been drastically changed. <a href="resources/book-replacement-pages/swift3updates.pdf">Download replacement pages for the book</a>.
+      </ul>
+
+      <div class="subsectionheading">Changes to the xregexp library used in JavaScript and CoffeeScript</div>
+      <p>Recent versions of the xregexp library now export the <code>XRegExp</code> function as the module default, therefore:</p>
+      <ul>
+      <li><b>Page 25, second script</b>. Remove <code>.XRegExp</code> near the end of the second line.
+      <li><b>Page 33, first script</b>. Remove the braces around <code>XRegExp</code> in the second line.
+      <li><b>Page 44</b>. Remove Exercise 2.19, which no longer applies, thanks to this library change.
+      </ul>
+
+      <div class="subsectionheading">Changes to Elm</div>
+      <p>The first printing of the book took place when Elm was at version 0.17. Recent language changes have been quite significant.</p>
+      <ul>
+      <li><i>Changes coming soon</i>.
+      </ul>
+
+      <div class="subsectionheading">Changes to Julia</div>
+      <p>The first printing of the book took place when Julia was at version 0.4.0. Recent language changes have been quite significant.</p>
+      <ul>
+      <li><b>Pages 103-109</b>. There have been changes to the type hierarachy. The types <code>ASCIIString</code> and <code>UTF8String</code> have been removed. Array slicing of rows now produces vectors. The supertype of <code>Set{T}</code> has changed. The function <code>super</code> is now <code>supertype</code>. Functions now have special types. <a href="resources/book-replacement-pages/juliaupdates.pdf">Download replacement pages for the book</a>.
+      <li><b>Pages</b>.
+      </ul>
+
       <div class="sectionheading">Errata</div>
 
-      <p>Here are the mistakes in the printed text we know about (along
-      with any lame or valid excuses that may apply).
-      Please let us know if <em>you</em> find anything.
-      Email one of the authors or submit a pull request for this file.</p>
+      <p>Here are the outright mistakes in the printed text we know about that are not due to language evolution. Please let us know if <em>you</em> find anything. Email one of the authors or submit a pull request for this file.</p>
 
       <ul>
-      <li><b>Changes due to evolution of Swift</b>. The first printing took place when Swift 3 was in beta. The release version of Swift 3 included significant language changes, requiring several scripts and a couple pages to be rewritten.
-        <ul>
-        <li><b>Page 2, third script</b>, and <b>Page 258</b>. Remove <tt>combine:</tt> in <tt>reduce</tt> call.
-        <li><b>Page 244, second script</b>. Replace <tt>Process</tt> with <tt>CommandLine</tt>.
-        <li><b>Page 253, second script</b>. Replace <tt>ErrorProtocol</tt> with <tt>Error</tt>, and make the same replacement in the text of line 3 of the following page.
-        <li><b>Page 255</b>. The argument to <tt>String()</tt> must now be prefixed with <tt>describing:</tt>.
-        <li><b>Page 254-256</b>. The mechanisms for operator precedence have been drastically changed. <a href="resources/book-replacement-pages/swift3updates.pdf">Download replacement pages for the book</a>.
-        </ul>
-      <li><b>Typographical, spelling, and grammar errors</b>.
-        <ul>
-          <li><b>Page 221, line 2 of text</b>. Insert <tt>and</tt> between <tt>creating</tt> and <tt>modifying</tt>.
-          <li><b>Page 221, line 5 of text</b>. Remove the word <tt>more</tt>.
-        </ul>
+        <li><b>Page 221, line 2 of text</b>. Insert <tt>and</tt> between <tt>creating</tt> and <tt>modifying</tt>.
+        <li><b>Page 221, line 5 of text</b>. Remove the word <tt>more</tt>.
       </ul>
 
 
