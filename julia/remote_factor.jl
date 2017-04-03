@@ -1,5 +1,5 @@
 addprocs(3)
-using Primes
+using Primes.factor
 @assert nprocs() == 4
 future = remotecall(factor, 4, 21883298135690819)
 @assert isa(future, Future)
