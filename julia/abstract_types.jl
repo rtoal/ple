@@ -1,7 +1,7 @@
-@assert super(Int32) == Signed
-@assert super(Signed) == Integer
-@assert super(Integer) == Real
-@assert super(Symbol) == Any
+@assert supertype(Int32) == Signed
+@assert supertype(Signed) == Integer
+@assert supertype(Integer) == Real
+@assert supertype(Symbol) == Any
 @assert Set(subtypes(Type)) == Set([DataType, TypeConstructor, Union])
 
 @assert Float64 <: Real
