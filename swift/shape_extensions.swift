@@ -23,13 +23,13 @@ assert(s.perimeter() == 40)
 import Foundation
 struct Circle: Shape, Boundaried {
     var radius: Double
-    func area() -> Double {return M_PI * radius * radius}
-    func perimeter() -> Double {return 2 * M_PI * radius}
+    func area() -> Double {return Double.pi * radius * radius}
+    func perimeter() -> Double {return 2 * Double.pi * radius}
 }
 
 let c = Circle(radius: 8)
-assert(c.area() == 64 * M_PI)
-assert(c.perimeter() == 16 * M_PI)
+assert(c.area() == 64 * Double.pi)
+assert(c.perimeter() == 16 * Double.pi)
 
 extension Shape {
     var json: String { return "{\"area\": \(area())}" }
