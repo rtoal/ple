@@ -1,6 +1,7 @@
 addprocs(3)
+using Primes
 @assert nprocs() == 4
-ref = remotecall(4, factor, 21883298135690819)
-@assert isa(ref, RemoteRef)
-factors = fetch(ref)
+future = remotecall(factor, 4, 21883298135690819)
+@assert isa(future, Future)
+factors = fetch(future)
 @assert factors == Dict(234711901=>1,93234719=>1)

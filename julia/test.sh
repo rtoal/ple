@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+julia -e 'Pkg.add("Primes")' && \
 julia abstract_types.jl && \
 julia all_types.jl && \
 julia anagrams.jl rats | diff ../test/rats_heap_expected - && \
