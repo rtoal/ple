@@ -1,5 +1,5 @@
 const reader = require('readline').createInterface(process.stdin, null);
-const XRegExp = require('xregexp').XRegExp;
+const XRegExp = require('xregexp');
 const counts = new Map();
 
 reader.on('line', line => {
