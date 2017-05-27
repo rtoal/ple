@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/javascript-logo-64.png">
+<img src="https://raw.githubusercontent.com/rtoal/polyglot/master/docs/resources/javascript-logo-64.png">
 # JavaScript Examples
 
 To get JavaScript:

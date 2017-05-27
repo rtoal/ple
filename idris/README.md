@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/idris-logo-64.png">
+<img src="https://raw.githubusercontent.com/rtoal/polyglot/master/docs/resources/idris-logo-64.png">
 # Idris Examples
 
 To get Idris:

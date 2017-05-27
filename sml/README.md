@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/rtoal/polyglot/master/resources/sml-logo-64.png">
+<img src="https://raw.githubusercontent.com/rtoal/polyglot/master/docs/resources/sml-logo-64.png">
 
 # Standard ML Examples
 
