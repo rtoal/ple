@@ -1,4 +1,5 @@
 <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/docs/resources/erlang-logo-64.png">
+
 # Erlang Examples
 
 To get Erlang:

@@ -1,4 +1,5 @@
 <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/docs/resources/haskell-logo-64.png">
+
 # Haskell Examples
 
 To get Haskell:
