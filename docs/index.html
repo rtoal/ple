@@ -424,6 +424,7 @@
       <p>Here are the outright mistakes in the printed text we know about that are not due to language evolution. Please let us know if <em>you</em> find anything. Email one of the authors or submit a pull request for this file.</p>
 
       <ul>
+        <li><b>Page 102, near the bottom</b>. The Python interactive session was completely wrong. The use of the existing variable in the list comprehension (or equivalently, the “leakage” of the comprehension index variable) was a feature of Python 2 and no longer appears in modern Python (3+). We have fixed this to highlight CoffeeScript instead, which does behave this way. <a href="resources/book-replacement-pages/list-comprehension-fix.pdf">Download the replacement page</a>. Thank you to Edgar R. Chavez for discovering the problem.
         <li><b>Page 221, line 2 of text</b>. Insert <tt>and</tt> between <tt>creating</tt> and <tt>modifying</tt>.
         <li><b>Page 221, line 5 of text</b>. Remove the word <tt>more</tt>.
       </ul>
