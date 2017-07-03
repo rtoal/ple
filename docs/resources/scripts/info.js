@@ -115,6 +115,16 @@ var langs = [
     t: ['Systems', 'Procedural', 'Static', 'Class-based', 'Non-managed'],
   },
   {
+    i: 'crystal', n: 'Crystal', h: 'https://crystal-lang.org/',
+    w: 'Crystal_(programming_language)', g: 'crystal', rc: 'Crystal',
+    d: 'Crystal is a modern, statically-typed programming language, with a syntax inspired by Ruby.',
+    f: 2013,
+    v: ['0.1.0 (2014)', '0.23.0 (2017)'],
+    r: 'Looking like Ruby but compiled to LLVM',
+    u: 'Gaming, Analytics',
+    t: ['Static'],
+  },
+  {
     i: 'csharp', n: 'C#', h: 'https://msdn.microsoft.com/en-us/library/z1zx9t92.aspx',
     w: 'C_Sharp_(programming_language)', g: 'c%23', rc: 'C_sharp', pp: 'c-sharp',
     d: 'C# is the flagship enterprise language for the .NET framework.',
@@ -215,6 +225,14 @@ var langs = [
     t: ['Static', 'Functional', 'Multi-paradigm']
   },
   {
+    i: 'gml', n: 'GML', h: 'https://docs.yoyogames.com/source/dadiospice/002_reference/001_gml%20language%20overview/',
+    w: 'GameMaker_Studio',
+    d: 'GML is the scripting language used in GameMaker Studio',
+    f: 1999,
+    u: 'Games',
+    t: ['Scripting']
+  },
+  {
     i: 'go', n: 'Go', h: 'https://golang.org/',
     w: 'Go_(programming_language)', g: 'go', rc: 'Go', pp: 'go',
     d: 'Go is Google&rsquo;s open source anguage for building simple, reliable, and efficient software.',
@@ -233,6 +251,14 @@ var langs = [
     r: 'Scripting language features in a statically-typed language, running on the JVM, templates, extensible types, reified generics',
     u: 'Insurance industry products',
     t: ['Static', 'Scripting']
+  },
+  {
+    i: 'gp', n: 'GP', h: 'https://gpblocks.org/',
+    d: 'GP is a general-purpose, extensible, blocks language.',
+    f: 2017,
+    r: 'Expanding the range of application areas for blocks-based programming',
+    u: 'Multimedia, Simulation, Data analysis, Education',
+    t: ['Blocks', 'General Purpose']
   },
   {
     i: 'groovy', n: 'Groovy', h: 'http://www.groovy-lang.org/',
@@ -368,6 +394,10 @@ var langs = [
   {
     i: 'mercury', n: 'Mercury', h: 'https://mercurylang.org/',
     d: 'Mercury is ...',
+  },
+  {
+    i: 'miranda', n: 'Miranda', h: 'http://miranda.org.uk/',
+    d: 'Miranda is ...',
   },
   {
     i: 'nasm', n: 'NASM', h: 'http://www.nasm.us/',
