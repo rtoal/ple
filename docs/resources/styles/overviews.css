@@ -71,6 +71,11 @@ span.cell {
   width: 100%;
 }
 
+#mainfooter {
+  font: italic 85% Georgia, serif;
+  margin-top: 60px;
+}
+
 #prev {
   float: left;
 }
