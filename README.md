@@ -22,8 +22,8 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Bash
     <td align="center"><img valign="middle" src="docs/resources/bash-logo-24.png">
-    <td>
-    <td>
+    <td>3.2.57
+    <td>(This was the version pre-installed on my MacBook Pro, though newer versions exist)
 <tr><td>Befunge
     <td align="center">
     <td>
@@ -34,32 +34,32 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>C
     <td align="center"><img valign="middle" src="docs/resources/c-logo-24.png">
-    <td>c11
-    <td>Apple LLVM version 8.1.0 (clang-802.0.38)
+    <td>C11
+    <td>Apple LLVM version 8.1.0 (clang-802.0.42)
 <tr><td>C#
     <td align="center"><img valign="middle" src="docs/resources/csharp-logo-24.png">
     <td>
     <td>Mono 4.4.1
 <tr><td>C++
     <td align="center"><img valign="middle" src="docs/resources/cpp-logo-24.png">
-    <td>
-    <td>Apple LLVM version 8.1.0 (clang-802.0.38)
+    <td>C++14
+    <td>Apple LLVM version 8.1.0 (clang-802.0.42)
 <tr><td>Ceylon
     <td align="center"><img valign="middle" src="docs/resources/ceylon-logo-24.png">
     <td>
     <td>
 <tr><td>Chapel
     <td align="center"><img valign="middle" src="docs/resources/chapel-logo-24.png">
-    <td>1.14
+    <td>1.15.0
     <td>
 <tr><td>Clojure
     <td align="center"><img valign="middle" src="docs/resources/clojure-logo-24.png">
     <td>1.8.0
-    <td>
+    <td>(Using Leinengen 2.7.1 and Java 1.8.0_66)
 <tr><td>CoffeeScript
     <td align="center"><img valign="middle" src="docs/resources/coffeescript-logo-24.png">
     <td>1.12.2
-    <td>(Run under Node 7.8.0)
+    <td>(Run under Node 8.1.3)
 <tr><td>Crystal
     <td align="center"><img valign="middle" src="docs/resources/crystal-logo-24.png">
     <td>
@@ -70,7 +70,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Dart
     <td align="center"><img valign="middle" src="docs/resources/dart-logo-24.png">
-    <td>1.22.1
+    <td>1.24.2
     <td>
 <tr><td>Elixir
     <td align="center"><img valign="middle" src="docs/resources/elixir-logo-24.png">
@@ -82,7 +82,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Erlang
     <td align="center"><img valign="middle" src="docs/resources/erlang-logo-24.png">
-    <td>Erlang/OTP 19.0.2
+    <td>Erlang/OTP 20
     <td>
 <tr><td>Factor
     <td align="center"><img valign="middle" src="docs/resources/factor-logo-24.png">
@@ -98,8 +98,8 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Go
     <td align="center"><img valign="middle" src="docs/resources/go-logo-24.png">
-    <td>1.8
-    <td>
+    <td>1.8.3
+    <td>go version go1.8.3 darwin/amd64
 <tr><td>Hack
     <td align="center"><img valign="middle" src="docs/resources/hack-logo-24.png">
     <td>
@@ -107,7 +107,7 @@ The examples here have been tested on a machine running macOS using the followin
 <tr><td>Haskell
     <td align="center"><img valign="middle" src="docs/resources/haskell-logo-24.png">
     <td>2010
-    <td>The Glorious Glasgow Haskell Compilation System, version 8.0.1
+    <td>The Glorious Glasgow Haskell Compilation System, version 8.0.2
 <tr><td>Idris
     <td align="center"><img valign="middle" src="docs/resources/idris-logo-24.png">
     <td>1.0
@@ -123,7 +123,7 @@ The examples here have been tested on a machine running macOS using the followin
 <tr><td>JavaScript
     <td align="center"><img valign="middle" src="docs/resources/javascript-logo-24.png">
     <td>ES2016
-    <td>Node 7.8.0
+    <td>Node 8.1.3
 <tr><td>Julia
     <td align="center"><img valign="middle" src="docs/resources/julia-logo-24.png">
     <td>0.5.1
@@ -150,7 +150,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Nasm
     <td align="center"><img valign="middle" src="docs/resources/nasm-logo-24.png">
-    <td>2.12.02
+    <td>2.13.01
     <td>
 <tr><td>Nemerle
     <td align="center"><img valign="middle" src="docs/resources/nemerle-logo-24.png">
@@ -162,11 +162,11 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>OCaml
     <td align="center"><img valign="middle" src="docs/resources/ocaml-logo-24.png">
-    <td>4.04.0
+    <td>4.04.2
     <td>
 <tr><td>Perl
     <td align="center"><img valign="middle" src="docs/resources/perl-logo-24.png">
-    <td>5.24.0
+    <td>5.26.0
     <td>
 <tr><td>Prolog
     <td>
@@ -174,11 +174,11 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>PureScript
     <td align="center"><img valign="middle" src="docs/resources/purescript-logo-24.png">
-    <td>0.10.7
+    <td>0.11.5
     <td>
 <tr><td>Python
     <td align="center"><img valign="middle" src="docs/resources/python-logo-24.png">
-    <td>3.6.0
+    <td>3.6.1
     <td>
 <tr><td>R
     <td align="center"><img valign="middle" src="docs/resources/r-logo-24.png">
@@ -190,15 +190,15 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Ruby
     <td align="center"><img valign="middle" src="docs/resources/ruby-logo-24.png">
-    <td>2.4.0
+    <td>2.4.1p111
     <td>
 <tr><td>Rust
     <td align="center"><img valign="middle" src="docs/resources/rust-logo-24.png">
-    <td>1.16.0
+    <td>1.18.0
     <td>
 <tr><td>Scala
     <td align="center"><img valign="middle" src="docs/resources/scala-logo-24.png">
-    <td>2.12.1
+    <td>2.12.2
     <td>
 <tr><td>Smalltalk
     <td align="center"><img valign="middle" src="docs/resources/smalltalk-logo-24.png">
@@ -211,7 +211,7 @@ The examples here have been tested on a machine running macOS using the followin
 <tr><td>Swift
     <td align="center"><img valign="middle" src="docs/resources/swift-logo-24.png">
     <td>3.1
-    <td>swiftlang-802.0.48 clang-802.0.38
+    <td>swiftlang-802.0.53 clang-802.0.42
 <tr><td>Tcl
     <td align="center"><img valign="middle" src="docs/resources/tcl-logo-24.png">
     <td>
