@@ -1,16 +1,14 @@
-import ElmTest exposing (runSuite, suite, defaultTest, assertEqual)
+import Html exposing (text)
 
 type Response a
-  = Ok a
-  | Error String
+    = Ok a
+    | Error String
 
-squareRoot: number -> Response number
 squareRoot x =
-  if x < 0 then Error "negative" else Ok (sqrt x)
+    if x < 0 then Error "negative" else Ok (sqrt x)
 
-main =
-  runSuite <| suite "Demonstrate Response tagged union"
-    [ defaultTest <| squareRoot 9 `assertEqual` Ok 3
-    , defaultTest <| squareRoot 100.0 `assertEqual` Ok 10.0
-    , defaultTest <| squareRoot -4 `assertEqual` Error "negative"
-    ]
+main = text <| toString <| if List.all(\(x, y) -> squareRoot x == y)
+    [ (9, Ok 3)
+    , (100.0, Ok 10.0)
+    , (-4, Error "negative")
+    ] then () else Debug.crash ""

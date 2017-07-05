@@ -1,8 +1,6 @@
-import ElmTest exposing (runSuite, suite, test, assertEqual)
+import Html exposing (text)
 
-main =
-  let (input, expected) = ([10, 20, 30], [15, 25, 35]) in
-    runSuite <| suite "Use + in prefix position"
-      [ test "Arrow" (List.map (\x->x+5) input `assertEqual` expected)
-      , test "Prefix" (List.map ((+)5) input `assertEqual` expected)
-      ]
+main = text <| toString <| if List.all ((==) True)
+    [ (List.map (\x -> x + 5) [10, 20, 30] == [15, 25, 35])
+    , (List.map ((+) 5) [10, 20, 30] == [15, 25, 35])
+    ] then () else Debug.crash ""

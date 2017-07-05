@@ -1,10 +1,9 @@
-import Html exposing (Html, img)
+import Html exposing (Html, program, img)
 import Html.Attributes exposing (style, src)
-import Html.App as App
 import Mouse
 
 main =
-  App.program
+  Html.program
     { init = init
     , view = view
     , update = update

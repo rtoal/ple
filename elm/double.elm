@@ -1,14 +1,13 @@
-import ElmTest exposing (suite, defaultTest, runSuite, assertEqual)
+import Html exposing (text)
 
 double : List a -> List a
 double list =
-  case list of
-    [] -> []
-    x :: xs -> x :: x :: double xs
+    case list of
+        [] -> []
+        x :: xs -> x :: x :: double xs
 
-main =
-  runSuite <| suite "Test the doubler"
-    [ defaultTest <| [] `assertEqual` double []
-    , defaultTest <| [5, 5, 5, 5] `assertEqual` double [5, 5]
-    , defaultTest <| [2, 2, 5, 5, 3, 3] `assertEqual` double [2, 5, 3]
-    ]
+main = text <| toString <| if List.all (\(x, y) -> double x == y)
+    [ ([], [])
+    , ([5, 5], [5, 5, 5, 5])
+    , ([2, 5, 3], [2, 2, 5, 5, 3, 3])
+    ] then () else Debug.crash ""

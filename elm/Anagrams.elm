@@ -5,14 +5,14 @@ import List exposing (concatMap, map, foldr)
 
 insertEverywhere : a -> List a -> List (List a)
 insertEverywhere x xs =
-  case xs of
-    [] -> [[x]]
-    (y::ys) -> (x::y::ys) :: map ((::)y) (insertEverywhere x ys)
+    case xs of
+      [] -> [[x]]
+      (y::ys) -> (x::y::ys) :: map ((::)y) (insertEverywhere x ys)
 
 permutations : List a -> List (List a)
 permutations =
-  foldr (concatMap << insertEverywhere) [[]]
+    foldr (concatMap << insertEverywhere) [[]]
 
 anagrams : String -> List String
 anagrams s =
-  s |> toList |> permutations |> map fromList
+    s |> toList |> permutations |> map fromList

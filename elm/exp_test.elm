@@ -1,14 +1,14 @@
-import ElmTest exposing (suite, defaultTest, runSuite, assertEqual)
+import Html exposing (text)
 import Exp exposing (Exp(Num, Unary, Binary), eval)
 
 main =
-  let
-    e1 = Num { value = 5.0 }
-    e2 = Unary { op = negate, operand = e1 }
-    e3 = Binary { op = (*), left = e2, right = e1 }
-  in
-    runSuite <| suite "Expression evaluation"
-      [ defaultTest <| 5.0 `assertEqual` eval(e1)
-      , defaultTest <| -5.0 `assertEqual` eval(e2)
-      , defaultTest <| -25.0 `assertEqual` eval(e3)
-      ]
+    let
+        e1 = Num { value = 5.0 }
+        e2 = Unary { op = negate, operand = e1 }
+        e3 = Binary { op = (*), left = e2, right = e1 }
+    in
+        text <| toString <| if List.all (\(x, y) -> eval x == y)
+            [ (e1, 5.0)
+            , (e2, -5.0)
+            , (e3, -25.0)
+            ] then () else Debug.crash ""
