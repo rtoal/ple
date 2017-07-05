@@ -1,7 +1,7 @@
 import Anagrams exposing (anagrams)
 import Html exposing (div, text, input, beginnerProgram)
 import Html.Attributes exposing (placeholder, value, maxlength)
-import Html.Events exposing (onInput, targetValue)
+import Html.Events exposing (onInput)
 
 type alias Model =
     String

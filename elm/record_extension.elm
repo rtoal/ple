@@ -13,4 +13,5 @@ main =
         robotAtEnd = move robotAtStart 7 -2 9
         expectedEnd = { name = "Mari", x = 10, y = 6, z = 7 }
     in
-        text <| toString <| if robotAtEnd == expectedEnd then () else Debug.crash ""
+        text <| toString <|
+            if robotAtEnd == expectedEnd then () else Debug.crash ""

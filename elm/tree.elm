@@ -19,7 +19,9 @@ str t =
         Empty ->
             "()"
         Node value children ->
-            "(" ++ toString value ++ (foldr (++) "" <| map str children) ++ ")"
+            "(" ++ toString value
+                ++ (foldr (++) "" <| map str children) 
+                ++ ")"
 
 main =
     let
