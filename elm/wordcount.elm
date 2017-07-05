@@ -1,4 +1,4 @@
-import List exposing (map, foldl, repeat)
+import List exposing (map, foldl)
 import Dict exposing (Dict, insert, get, toList)
 import String exposing (toLower)
 import Regex exposing (regex, find)

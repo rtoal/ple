@@ -15,11 +15,11 @@ supervisor p =
         Guo -> Just Chi
 
 bossOfBossOfBoss p =
-    supervisor p |> andThen supervisor |> andThen supervisor
+    p |> supervisor |> andThen supervisor |> andThen supervisor
 
-main = text <| toString <| if List.all (\(p, b) -> bossOfBossOfBoss p == b)
-    [ (Emmy, Just Alice)
-    , (Chi, Nothing)
-    , (Guo, Nothing)
-    , (Faye, Just Bob)
+main = text <| toString <| if List.all ((==) True)
+    [ bossOfBossOfBoss Emmy == Just Alice
+    , bossOfBossOfBoss Chi == Nothing
+    , bossOfBossOfBoss Guo == Nothing
+    , bossOfBossOfBoss Faye == Just Bob
     ] then () else Debug.crash ""

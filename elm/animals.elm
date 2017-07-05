@@ -24,5 +24,5 @@ sheep n = { name = n, kind = Sheep }
 main = text <| toString <| if List.all ((==) True)
     [ "CJ says neigh" == (let h = horse("CJ") in speak h)
     , "Bessie says moooo" == (let c = cow("Bessie") in speak c)
-    , "Little Lamb says baaaa" == speak(sheep("Little Lamb"))
+    , "Little Lamb says baaaa" == speak (sheep "Little Lamb")
     ] then () else Debug.crash ""

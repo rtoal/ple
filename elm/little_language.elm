@@ -49,8 +49,8 @@ main =
             (Seq (Read "y") (Print (Plus (Var "x") (Var "y"))))
         run com input = exec com (Just (Dict.empty, input, []))
     in
-        text <| toString <| if List.all (\(p, args, out) -> run p args == out)
-            [ (p0, [], Just (Dict.empty, [], [5]))
-            , (p1, [], Just (Dict.empty, [], [8]))
-            , (p2, [8], Just (Dict.fromList [("y",8),("x",5)], [], [13]))
+        text <| toString <| if List.all ((==) True)
+            [ run p0 [] == Just (Dict.empty, [], [5])
+            , run p1 [] == Just (Dict.empty, [], [8])
+            , run p2 [8] == Just (Dict.fromList [("y",8),("x",5)], [], [13])
         ] then () else Debug.crash ""
