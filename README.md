@@ -78,7 +78,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Elm
     <td align="center"><img valign="middle" src="docs/resources/elm-logo-24.png">
-    <td>0.17.1
+    <td>0.18.0
     <td>
 <tr><td>Erlang
     <td align="center"><img valign="middle" src="docs/resources/erlang-logo-24.png">
