@@ -1,7 +1,7 @@
 -- An astract syntax and denotational semantics of
 -- a little language
 
-import Html exposing (..)
+import SimpleAssert exposing (assertAll)
 import Dict exposing (Dict, insert, get)
 import Maybe exposing (withDefault)
 
@@ -49,8 +49,8 @@ main =
             (Seq (Read "y") (Print (Plus (Var "x") (Var "y"))))
         run com input = exec com (Just (Dict.empty, input, []))
     in
-        text <| toString <| if List.all ((==) True)
+        assertAll
             [ run p0 [] == Just (Dict.empty, [], [5])
             , run p1 [] == Just (Dict.empty, [], [8])
             , run p2 [8] == Just (Dict.fromList [("y",8),("x",5)], [], [13])
-        ] then () else Debug.crash ""
+        ]

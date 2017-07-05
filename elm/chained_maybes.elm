@@ -1,4 +1,4 @@
-import Html exposing (text)
+import SimpleAssert exposing (assertAll)
 import Maybe exposing (andThen)
 
 type Person = Alice | Bob | Chi | Dinh | Emmy | Faye | Guo
@@ -17,9 +17,9 @@ supervisor p =
 bossOfBossOfBoss p =
     p |> supervisor |> andThen supervisor |> andThen supervisor
 
-main = text <| toString <| if List.all ((==) True)
+main = assertAll
     [ bossOfBossOfBoss Emmy == Just Alice
     , bossOfBossOfBoss Chi == Nothing
     , bossOfBossOfBoss Guo == Nothing
     , bossOfBossOfBoss Faye == Just Bob
-    ] then () else Debug.crash ""
+    ]

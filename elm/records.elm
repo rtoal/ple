@@ -1,4 +1,4 @@
-import Html exposing (text)
+import SimpleAssert exposing (assertAll)
 
 boss = {name = "Alice", salary = 200000 }
 worker = {name = "Bob", salary = 50000, supervisor = boss}
@@ -8,9 +8,9 @@ payrollTax : {a | salary : Float} -> Float
 payrollTax {salary} =
     salary * 0.15
 
-main = text <| toString <| if List.all ((==) True)
+main = assertAll
     [ .name boss == "Alice"
     , worker.supervisor == boss
     , payrollTax worker == 7500.0
     , newWorker.supervisor == boss
-    ] then () else Debug.crash ""
+    ]

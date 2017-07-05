@@ -1,4 +1,4 @@
-import Html exposing (text)
+import SimpleAssert exposing (assertAll)
 
 type alias Positioned a =
     { a | x : Float, y : Float, z : Float }
@@ -13,5 +13,4 @@ main =
         robotAtEnd = move robotAtStart 7 -2 9
         expectedEnd = { name = "Mari", x = 10, y = 6, z = 7 }
     in
-        text <| toString <|
-            if robotAtEnd == expectedEnd then () else Debug.crash ""
+        assertAll [ robotAtEnd == expectedEnd ]

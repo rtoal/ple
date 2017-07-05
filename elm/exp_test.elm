@@ -1,4 +1,4 @@
-import Html exposing (text)
+import SimpleAssert exposing (assertAll)
 import Exp exposing (Exp(Num, Unary, Binary), eval)
 
 main =
@@ -7,8 +7,8 @@ main =
         e2 = Unary { op = negate, operand = e1 }
         e3 = Binary { op = (*), left = e2, right = e1 }
     in
-        text <| toString <| if List.all ((==) True)
+        assertAll
             [ eval e1 == 5.0
             , eval e2 == -5.0
             , eval e3 == -25.0
-            ] then () else Debug.crash ""
+            ]

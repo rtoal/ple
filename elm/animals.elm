@@ -1,4 +1,4 @@
-import Html exposing (text)
+import SimpleAssert exposing (assertAll)
 
 type Kind = Cow | Horse | Sheep
 
@@ -21,8 +21,8 @@ horse n = { name = n, kind = Horse }
 cow n = { name = n, kind = Cow }
 sheep n = { name = n, kind = Sheep }
 
-main = text <| toString <| if List.all ((==) True)
+main = assertAll
     [ "CJ says neigh" == (let h = horse("CJ") in speak h)
     , "Bessie says moooo" == (let c = cow("Bessie") in speak c)
     , "Little Lamb says baaaa" == speak (sheep "Little Lamb")
-    ] then () else Debug.crash ""
+    ]

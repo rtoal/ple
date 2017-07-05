@@ -1,4 +1,4 @@
-import Html exposing (text)
+import SimpleAssert exposing (assertAll)
 
 (<-*->): Int -> Int -> Int
 (<-*->) x y =
@@ -11,7 +11,7 @@ import Html exposing (text)
 infix 8 <-*->
 infix 2 >*<
 
-main = text <| toString <| if List.all ((==) True)
+main = assertAll
     [ (8 * 3 <-*-> 5) == 88       -- 8*(2*3+5)
     , (8 * 3 >*< 5) == 53         -- 2*(8*2)+5
-    ] then () else Debug.crash ""
+    ]
