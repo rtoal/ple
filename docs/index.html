@@ -270,7 +270,7 @@
         C++, Rust, CLU, Ada, C#, Scala, Bash, Perl, Standard ML, OCaml, Haskell,
         F#, Idris, ParaSail, Chapel, Elixir, PHP, Hack, TypeScript, Dart, APL,
         Prolog, K, Io, Factor, Brainfuck, Befunge, LOLCODE, and nasm (an assembly
-        language for the x86 architecture). This chapter is by no means and
+        language for the x86 architecture). This chapter is by no means an
         afterthought or an aside; the sections on Rust and C, in particular,
         discuss how one deals with explicit pointers without
         a garbage collector, while other sections introduce new programming
@@ -409,16 +409,15 @@
       </ul>
 
       <div class="subsectionheading">Changes to Elm</div>
-      <p>The first printing of the book took place when Elm was at version 0.17. Recent language changes have been quite significant.</p>
-      <ul>
-      <li><i>Changes coming soon</i>.
-      </ul>
+      <p>The first printing of the book took place when Elm was at version 0.17. Recent language changes have been quite significant; for example, primes are no longer allowed in identifiers, the argument order for <code>andThen</code> has changed, and range expressions such as <code>[1..10]</code> have been removed from the language. More significantly, the <code>elm-test</code> package has been completely changed. We have decided to remove <code>elm-test</code> assertions from our sample code and replace them with simple <code>if</code>-expressions that invoke <code>Debug.crash</code> on failure. This means that <em>the entire chapter has had to be rewritten</em>; the new chapter will appear in the second printing.</p>
+
+      <p>The rewritten scripts do, however, <a href="https://github.com/rtoal/ple/tree/master/elm">already appear in the GitHub repository</a>.</p>
 
       <div class="subsectionheading">Changes to Julia</div>
       <p>The first printing of the book took place when Julia was at version 0.4.0. Recent language changes have been quite significant.</p>
       <ul>
       <li><b>Pages 103-109</b>. There have been changes to the type hierarachy. The types <code>ASCIIString</code> and <code>UTF8String</code> have been removed. Array slicing of rows now produces vectors. The supertype of <code>Set{T}</code> has changed. The function <code>super</code> is now <code>supertype</code>. Functions now have special types. <a href="resources/book-replacement-pages/julia-type-updates.pdf">Download replacement pages for the book</a>.
-      <li><b>Page 114</b>. RemoteRefs are now called Futures, and factoring is now part of a package, breaking the two scripts on the page. <a href="resources/book-replacement-pages/julia-remote-updates.pdf">Download the replacement page</a>.
+      <li><b>Page 114</b>. RemoteRefs are now called Futures, and factoring is now part of a package, so we had to rewrite the scripts on the page. <a href="resources/book-replacement-pages/julia-remote-updates.pdf">Download the replacement page</a>.
       </ul>
 
       <div class="sectionheading">Errata</div>
