@@ -4,5 +4,5 @@ import Html exposing (text)
 
 assertAll assertions = text <| toString <|
     if List.all ((==) True) assertions
-        then toString (List.length assertions) ++ " tests passed"
+        then "All tests passed"
         else Debug.crash "Assertion failure"

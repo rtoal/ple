@@ -1,8 +1,8 @@
-module Exp exposing (..)
+module Exp exposing (Exp(Num, Unary, Binary), eval)
 
 type Exp
-    = Num {value: Float}
-    | Unary {op: Float -> Float, operand: Exp}
+    = Num { value: Float }
+    | Unary { op: Float -> Float, operand: Exp }
     | Binary
         { op: Float -> Float -> Float
         , left: Exp
@@ -12,9 +12,9 @@ type Exp
 eval: Exp -> Float
 eval e =
     case e of
-        Num {value} ->
+        Num { value } ->
             value
-        Unary {op, operand} ->
+        Unary { op, operand } ->
             op (eval operand)
-        Binary {op, left, right} ->
+        Binary { op, left, right } ->
             op (eval left) (eval right)

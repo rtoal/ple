@@ -14,7 +14,7 @@ countWord word counts =
     insert word (withDefault 0 (get word counts) + 1) counts
 
 tableCell data =
-    td [] [text (toString data)]
+    td [] [text <| toString data]
 
 main =
     find Regex.All (regex "[A-Za-z']+") message
