@@ -1,12 +1,10 @@
 import SimpleAssert exposing (assertAll)
 
 (<-*->): Int -> Int -> Int
-(<-*->) x y =
-    2 * x + y
+(<-*->) x y = 2 * x + y
 
 (>*<): Int -> Int -> Int
-(>*<) x y =
-    2 * x + y
+(>*<) x y = 2 * x + y
 
 infix 8 <-*->
 infix 2 >*<

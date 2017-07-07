@@ -14,7 +14,9 @@ type alias PixelColor =
 
 p : Person
 p = { name = "Alice", id = 239 }
+
 w : Widget
 w = p           -- Disappointing perhaps, but legal
+
 g : PixelColor
 g = Green
