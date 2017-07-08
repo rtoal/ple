@@ -37,7 +37,7 @@ def show(c)
 end
 
 show(Class)
-show(Fixnum)
+show(Integer)
 show(Float)
 show(String)
 show(Array)
