@@ -39,7 +39,7 @@ The examples here have been tested on a machine running macOS using the followin
 <tr><td>C#
     <td align="center"><img valign="middle" src="docs/resources/csharp-logo-24.png">
     <td>
-    <td>Mono 4.4.1
+    <td>Mono C# compiler version 4.4.1.0
 <tr><td>C++
     <td align="center"><img valign="middle" src="docs/resources/cpp-logo-24.png">
     <td>C++14
@@ -66,7 +66,7 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>D
     <td align="center"><img valign="middle" src="docs/resources/d-logo-24.png">
-    <td>
+    <td>DMD64 D Compiler v2.076.0
     <td>
 <tr><td>Dart
     <td align="center"><img valign="middle" src="docs/resources/dart-logo-24.png">
@@ -98,8 +98,8 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Go
     <td align="center"><img valign="middle" src="docs/resources/go-logo-24.png">
-    <td>1.8.3
-    <td>go version go1.8.3 darwin/amd64
+    <td>1.9
+    <td>go version go1.9 darwin/amd64
 <tr><td>Hack
     <td align="center"><img valign="middle" src="docs/resources/hack-logo-24.png">
     <td>
