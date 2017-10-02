@@ -11,5 +11,4 @@ int main() {
   for (auto& c: capitals) {
     std::cout << c.first << "'s capital is " << c.second << '\n';
   }
-  return 0;
 }

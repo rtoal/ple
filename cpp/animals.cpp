@@ -1,6 +1,7 @@
-#include <string>
 #include <iostream>
 #include <sstream>
+#include <string>
+#include <cassert>
 using namespace std;
 
 class Animal {
@@ -48,5 +49,4 @@ int main(int, char**) {
   Animal* c = new Cow("Bessie");
   assert(c->speak() == "Bessie says moooo");
   assert((new Sheep("Little Lamb"))->speak() == "Little Lamb says baaaa");
-  return 0;
 }
