@@ -1,4 +1,3 @@
-#include <iostream>
 #include <sstream>
 #include <string>
 #include <cassert>
@@ -11,13 +10,13 @@ protected:
 public:
   Animal(string name): name(name) {}
   string speak() {
-    return (std::stringstream() << name << " says " << sound()).str();
+    return (stringstream() << name << " says " << sound()).str();
   }
 };
 
 class Cow: public Animal {
 protected:
-  string sound() {
+  string sound() override {
     return "moooo";
   }
 public:
@@ -26,7 +25,7 @@ public:
 
 class Horse: public Animal {
 protected:
-  string sound() {
+  string sound() override {
     return "neigh";
   }
 public:
@@ -35,14 +34,13 @@ public:
 
 class Sheep: public Animal {
 protected:
-  string sound() {
+  string sound() override {
     return "baaaa";
   }
 public:
   Sheep(string name): Animal(name) {}
 };
 
-#include <cassert>
 int main(int, char**) {
   Animal* h = new Horse("CJ");
   assert(h->speak() == "CJ says neigh");
