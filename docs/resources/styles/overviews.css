@@ -9,10 +9,17 @@ span.cell {
   display: inline-block;
   width: 80px;
   height: 80px;
-  margin: 4px;
+  border: 1px solid white;
+  margin: 3px;
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+span.cell:hover {
+  border: 1px dotted grey;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 #bar {
@@ -30,7 +37,8 @@ span.cell {
   margin: 0;
 }
 
-#content, #single-language {
+#content,
+#single-language {
   margin: 0 auto;
   padding-top: 20px;
   max-width: 980px;
@@ -58,7 +66,7 @@ span.cell {
 }
 
 #text {
-  max-width: 800px;
+  max-width: 816px;
   margin: 32px auto;
 }
 
