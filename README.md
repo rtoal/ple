@@ -2,9 +2,11 @@
 
 Source code for the examples in <a href="http://rtoal.github.io/ple">a book</a>.
 
-See the `test.sh` files within the individual directories to see how to build and run the examples, most of which are scripts with internal assertions.
+See the `test.sh` files within the individual directories to see how to build
+and run the examples, most of which are scripts with internal assertions.
 
-The examples here have been tested on a machine running macOS using the following language implementations and versions:
+The examples here have been tested on a machine running macOS using the
+following language implementations and versions:
 
 <table>
 <tr><th colspan="2">Language<th>Version<th>Notes
@@ -210,8 +212,8 @@ The examples here have been tested on a machine running macOS using the followin
     <td>
 <tr><td>Swift
     <td align="center"><img valign="middle" src="docs/resources/swift-logo-24.png">
-    <td>3.1
-    <td>swiftlang-802.0.53 clang-802.0.42
+    <td>4.03
+    <td>swiftlang-900.0.74.1 clang-900.0.39.2
 <tr><td>Tcl
     <td align="center"><img valign="middle" src="docs/resources/tcl-logo-24.png">
     <td>
