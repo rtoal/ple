@@ -394,14 +394,15 @@
 
 
       <div class="subsectionheading">Changes to Swift</div>
-      <p>The first printing took place when Swift 3 was in beta. The release version of Swift 3 included significant language changes, requiring several scripts and a couple pages to be rewritten.</p>
+      <p>The first printing took place when Swift 3 was in beta. We are now at Swift 4. In the meantime, there have been significant language changes requiring several scripts and a couple pages to be rewritten.</p>
       <ul>
       <li><b>Page 2, third script</b>, and <b>Page 258</b>. Remove <code>combine:</code> in <code>reduce</code> call.
-      <li><b>Page 244, second script</b>. Replace <code>Process</code> with <code>CommandLine</code>.
+      <li><b>Page 244, second script</b>. Replace <code>Process</code> with <code>CommandLine</code>; remove <code>.characters</code> in the second to last line, and use the <code>swapAt</code> method instead of the <code>swap</code> function. The new line should read <code>a.swapAt(n % 2 == 0 ? 0 : i, n)</code>.
       <li><b>Page 248, third script and Page 259, third script</b>. Replace all uses of <code>M_PI</code> with <code>Double.pi</code>.
       <li><b>Page 253, second script</b>. Replace <code>ErrorProtocol</code> with <code>Error</code>, and make the same replacement in the text of line 3 of the following page.
       <li><b>Page 255</b>. The argument to <code>String()</code> must now be prefixed with <code>describing:</code>.
       <li><b>Page 254-256</b>. The mechanisms for operator precedence have been drastically changed. <a href="resources/book-replacement-pages/swift3updates.pdf">Download replacement pages for the book</a>.
+      <li><b>Page 258</b>. The property <code>allZeros</code> is no longer part of Swift. Replace it with <code>0</code>.
       </ul>
 
       <div class="subsectionheading">Changes to the xregexp library used in JavaScript and CoffeeScript</div>

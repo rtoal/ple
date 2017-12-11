@@ -6,7 +6,7 @@ func generatePermutations(of a: inout [Character], upTo n: Int) {
     } else {
         for i in 0..<n {
             generatePermutations(of: &a, upTo: n-1)
-            swap(&a[n % 2 == 0 ? 0 : i], &a[n])
+            a.swapAt(n % 2 == 0 ? 0 : i, n)
         }
         generatePermutations(of: &a, upTo: n-1)
     }
@@ -17,5 +17,5 @@ if CommandLine.arguments.count != 2 {
     exit(1)
 }
 let word = CommandLine.arguments[1]
-var charArray = Array(word.characters)
+var charArray = Array(word)
 generatePermutations(of: &charArray, upTo: charArray.count-1)
