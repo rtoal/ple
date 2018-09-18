@@ -52,7 +52,7 @@ following language implementations and versions:
     <td>
 <tr><td>Chapel
     <td align="center"><img valign="middle" src="docs/resources/chapel-logo-24.png">
-    <td>1.15.0
+    <td>1.17.1
     <td>
 <tr><td>Clojure
     <td align="center"><img valign="middle" src="docs/resources/clojure-logo-24.png">
@@ -84,7 +84,7 @@ following language implementations and versions:
     <td>
 <tr><td>Erlang
     <td align="center"><img valign="middle" src="docs/resources/erlang-logo-24.png">
-    <td>Erlang/OTP 20
+    <td>Erlang/OTP 21
     <td>
 <tr><td>Factor
     <td align="center"><img valign="middle" src="docs/resources/factor-logo-24.png">
@@ -112,7 +112,7 @@ following language implementations and versions:
     <td>The Glorious Glasgow Haskell Compilation System, version 8.0.2
 <tr><td>Idris
     <td align="center"><img valign="middle" src="docs/resources/idris-logo-24.png">
-    <td>1.0
+    <td>1.3.0
     <td>
 <tr><td>Io
     <td align="center"><img valign="middle" src="docs/resources/io-logo-24.png">
@@ -125,7 +125,7 @@ following language implementations and versions:
 <tr><td>JavaScript
     <td align="center"><img valign="middle" src="docs/resources/javascript-logo-24.png">
     <td>ES2016
-    <td>Node 8.1.3
+    <td>Node 10.6.0
 <tr><td>Julia
     <td align="center"><img valign="middle" src="docs/resources/julia-logo-24.png">
     <td>0.5.1
