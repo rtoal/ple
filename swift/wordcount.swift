@@ -3,9 +3,8 @@ import Foundation
 var counts = [String: Int]()
 
 while let line = readLine()?.lowercased() {
-    let range = line.startIndex ..< line.endIndex
-    line.enumerateSubstrings(in: range, options: .byWords) {w,_,_,_ in
-        guard let word = w else {return}
+    let words = line.components(separatedBy: CharacterSet.alphanumerics.inverted).filter{$0 != ""}
+    for word in words {
         counts[word] = (counts[word] ?? 0) + 1
     }
 }
