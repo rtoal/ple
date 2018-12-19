@@ -677,6 +677,12 @@ var langs = [
     t: ["Imperative", "Glue", "Dynamic", "Scripting"]
   },
   {
+    i: "quorum",
+    n: "Quorum",
+    h: "https://quorumlanguage.com/",
+    d: "Quorum is ..."
+  },
+  {
     i: "r",
     n: "R",
     h: "https://www.r-project.org/",
@@ -732,6 +738,12 @@ var langs = [
     n: "Scratch",
     h: "https://scratch.mit.edu/",
     d: "Scratch is ..."
+  },
+  {
+    i: "self",
+    n: "Self",
+    h: "http://www.selflanguage.org/",
+    d: "Self is ..."
   },
   {
     i: "smalltalk",
@@ -793,12 +805,24 @@ var langs = [
     d: "Tcl is ..."
   },
   {
+    i: "typescript",
+    n: "TypeScript",
+    h: "https://www.typescriptlang.org/",
+    d: "TypeScript is a statically typed superset of JavaScript"
+  },
+  {
     i: "whiley",
     n: "Whiley",
     h: "http://whiley.org/",
     w: "Whiley_(programming_language)",
     d: "Whiley is ..."
-  }
+  },
+  {
+    i: "zig",
+    n: "Zig",
+    h: "https://ziglang.org/",
+    d: "Zig is ..."
+  },
 ];
 
 var languageNames = langs.map(lang => lang.i);
