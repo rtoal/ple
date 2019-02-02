@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-chpl hello.chpl && ./a.out && \
-chpl sum_of_even_squares.chpl && ./a.out && \
-chpl triple.chpl && ./a.out | diff ../test/triple_expected -
+chpl hello.chpl && ./hello && \
+chpl sum_of_even_squares.chpl && ./sum_of_even_squares && \
+chpl triple.chpl && ./triple | diff ../test/triple_expected -
 
 if [ $? -ne 0 ]; then
     echo
