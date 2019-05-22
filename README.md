@@ -100,8 +100,8 @@ following language implementations and versions:
     <td>
 <tr><td>Go
     <td align="center"><img valign="middle" src="docs/resources/go-logo-24.png">
-    <td>1.9
-    <td>go version go1.9 darwin/amd64
+    <td>1.12.5
+    <td>go version go1.12.5 darwin/amd64
 <tr><td>Hack
     <td align="center"><img valign="middle" src="docs/resources/hack-logo-24.png">
     <td>
@@ -112,7 +112,7 @@ following language implementations and versions:
     <td>The Glorious Glasgow Haskell Compilation System, version 8.0.2
 <tr><td>Idris
     <td align="center"><img valign="middle" src="docs/resources/idris-logo-24.png">
-    <td>1.3.0
+    <td>1.3.1
     <td>
 <tr><td>Io
     <td align="center"><img valign="middle" src="docs/resources/io-logo-24.png">
@@ -164,7 +164,7 @@ following language implementations and versions:
     <td>
 <tr><td>OCaml
     <td align="center"><img valign="middle" src="docs/resources/ocaml-logo-24.png">
-    <td>4.04.2
+    <td>4.07.1
     <td>
 <tr><td>Perl
     <td align="center"><img valign="middle" src="docs/resources/perl-logo-24.png">
@@ -200,7 +200,7 @@ following language implementations and versions:
     <td>
 <tr><td>Scala
     <td align="center"><img valign="middle" src="docs/resources/scala-logo-24.png">
-    <td>2.12.2
+    <td>2.12.8
     <td>
 <tr><td>Smalltalk
     <td align="center"><img valign="middle" src="docs/resources/smalltalk-logo-24.png">
@@ -208,12 +208,12 @@ following language implementations and versions:
     <td>
 <tr><td>Standard&nbsp;ML
     <td align="center"><img valign="middle" src="docs/resources/sml-logo-24.png">
-    <td>mlton-20130715
+    <td>mlton-20180207
     <td>
 <tr><td>Swift
     <td align="center"><img valign="middle" src="docs/resources/swift-logo-24.png">
-    <td>4.03
-    <td>swiftlang-900.0.74.1 clang-900.0.39.2
+    <td>4.2.1
+    <td>Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)
 <tr><td>Tcl
     <td align="center"><img valign="middle" src="docs/resources/tcl-logo-24.png">
     <td>
