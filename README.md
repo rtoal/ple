@@ -120,12 +120,12 @@ following language implementations and versions:
     <td>
 <tr><td>Java
     <td align="center"><img valign="middle" src="docs/resources/java-logo-24.png">
-    <td>1.8.0_66
+    <td>11.0.1
     <td>
 <tr><td>JavaScript
     <td align="center"><img valign="middle" src="docs/resources/javascript-logo-24.png">
     <td>ES2016
-    <td>Node 10.6.0
+    <td>Node 12.3.0
 <tr><td>Julia
     <td align="center"><img valign="middle" src="docs/resources/julia-logo-24.png">
     <td>0.5.1
