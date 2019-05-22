@@ -1,7 +1,7 @@
 function writerule(selector; options...)
   println("$selector {")
   for (prop, value) in options
-    println("  $(replace(string(prop), "_", "-")): $value;")
+    println("  $(replace(string(prop), "_" => "-")): $value;")
   end
   println("}")
 end

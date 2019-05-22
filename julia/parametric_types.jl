@@ -2,7 +2,7 @@
 @assert typeof(0x5 // 0x22) == Rational{UInt8}
 @assert typeof(5 // 34) == Rational{Int64}
 @assert typeof(8.75im) == Complex{Float64}
-@assert typeof(e) == Irrational{:e}
+@assert typeof(ℯ) == Irrational{:ℯ}
 @assert typeof([5,3]) == Array{Int64,1}
 @assert typeof([3, "abc"]) == Array{Any, 1}
 @assert typeof([]) == Array{Any, 1}

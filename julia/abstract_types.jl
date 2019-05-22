@@ -2,8 +2,9 @@
 @assert supertype(Signed) == Integer
 @assert supertype(Integer) == Real
 @assert supertype(Symbol) == Any
-@assert Set(subtypes(Type)) == Set([DataType, TypeConstructor, Union])
+@assert supertype(DataType) == Type
+@assert supertype(Union) == Type
+@assert supertype(UnionAll) == Type
 
 @assert Float64 <: Real
-@assert isa(subtypes(Type), Array)
 @assert isa(Array, Type)

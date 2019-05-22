@@ -1,3 +1,4 @@
+using Distributed
 addprocs(3)
 
 @everywhere function approximate_pi(trials::Int64)

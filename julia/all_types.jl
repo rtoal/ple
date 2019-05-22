@@ -1,3 +1,5 @@
+using InteractiveUtils
+
 function print_tree(t, indent)
   println("$(repeat("    ", indent))$t")
   for s in subtypes(t)

@@ -1,6 +1,6 @@
 times(x::Number, y::Number) = x * y
-times{T<:Number}(x::AbstractArray{T,1}, n::Number) = x .* n
-times{T<:Number}(n::Number, x::AbstractArray{T,1}) = x .* n
+times(x::AbstractArray{T,1}, n::Number) where {T<:Number} = x .* n
+times(n::Number, x::AbstractArray{T,1}) where {T<:Number} = x .* n
 times(s::AbstractString, n::Unsigned) = repeat(s, n)
 
 @assert times(5, -2.5) == -12.5

@@ -1,4 +1,4 @@
-e1 = parse("x * sqrt(9) - 5")
+e1 = Meta.parse("x * sqrt(9) - 5")
 e2 = :(x * sqrt(9) - 5)
 e3 = Expr(:call, :-, Expr(:call, :*, :x, Expr(:call, :sqrt, 9)), 5)
 

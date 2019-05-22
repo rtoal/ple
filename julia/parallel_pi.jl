@@ -1,7 +1,8 @@
+using Distributed
 addprocs(3)
 
 trials = 4000000
-hits = @parallel (+) for i = 1:trials
+hits = @distributed (+) for i = 1:trials
   Int(sum(rand(2).^2) < 1)
 end
 

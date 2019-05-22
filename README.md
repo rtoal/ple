@@ -128,7 +128,7 @@ following language implementations and versions:
     <td>Node 12.3.0
 <tr><td>Julia
     <td align="center"><img valign="middle" src="docs/resources/julia-logo-24.png">
-    <td>0.5.1
+    <td>1.1.1
     <td>
 <tr><td>K
     <td align="center"><img valign="middle" src="docs/resources/k-logo-24.png">

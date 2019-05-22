@@ -1,17 +1,17 @@
-abstract Animal
+abstract type Animal end
 speak(a::Animal) = "$(a.name) says $(sound(a))"
 
-type Horse <: Animal
+struct Horse <: Animal
   name
 end
 sound(h::Horse) = "neigh"
 
-type Cow <: Animal
+struct Cow <: Animal
   name
 end
 sound(c::Cow) = "moooo"
 
-type Sheep <: Animal
+struct Sheep <: Animal
   name
 end
 sound(s::Sheep) = "baaaa"
