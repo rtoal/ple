@@ -1,38 +1,38 @@
 #!/usr/bin/env bash
-clj agent_example.clj && \
-clj anagrams.clj rats | diff ../test/rats_heap_expected - && \
-clj animals_multi.clj rats && \
-clj animals_protocol.clj && \
-clj arithmetic.clj && \
-clj average.clj && \
-clj basic_types.clj && \
-clj count_and_conj.clj && \
-clj division.clj && \
-clj energy.clj && \
-clj fib.clj && \
-clj hints.clj && \
-clj improper_var_use.clj && \
-clj incorrect_factorial.clj && \
-clj infix.clj && \
-clj more_collection_examples.clj && \
-clj mystery.clj && \
-clj namespace_example.clj && \
-clj or.clj && \
-clj overflow.clj && \
-clj persistent_example.clj && \
-clj shape_multi.clj && \
-clj shape_protocol.clj && \
-clj simplest_macro.clj && \
-clj stm.clj && \
-clj sum_of_even_squares.clj && \
-clj thread_locking.clj && \
-clj thread_mess.clj && \
-clj triple.clj | diff ../test/triple_expected - && \
-clj unless.clj && \
-clj varargs.clj && \
-clj vars.clj && \
-clj word_count.clj < ../test/wordcount_ascii_input | diff ../test/wordcount_ascii_expected - && \
-clj word_count_slurp.clj < ../test/wordcount_ascii_input | diff ../test/wordcount_ascii_expected -
+clojure agent_example.clj && \
+clojure anagrams.clj rats | diff ../test/rats_heap_expected - && \
+clojure animals_multi.clj rats && \
+clojure animals_protocol.clj && \
+clojure arithmetic.clj && \
+clojure average.clj && \
+clojure basic_types.clj && \
+clojure count_and_conj.clj && \
+clojure division.clj && \
+clojure energy.clj && \
+clojure fib.clj && \
+clojure hints.clj && \
+clojure improper_var_use.clj && \
+clojure incorrect_factorial.clj && \
+clojure infix.clj && \
+clojure more_collection_examples.clj && \
+clojure mystery.clj && \
+clojure namespace_example.clj && \
+clojure or.clj && \
+clojure overflow.clj && \
+clojure persistent_example.clj && \
+clojure shape_multi.clj && \
+clojure shape_protocol.clj && \
+clojure simplest_macro.clj && \
+clojure stm.clj && \
+clojure sum_of_even_squares.clj && \
+clojure thread_locking.clj && \
+clojure thread_mess.clj && \
+clojure triple.clj | diff ../test/triple_expected - && \
+clojure unless.clj && \
+clojure varargs.clj && \
+clojure vars.clj && \
+clojure word_count.clj < ../test/wordcount_ascii_input | diff ../test/wordcount_ascii_expected - && \
+clojure word_count_slurp.clj < ../test/wordcount_ascii_input | diff ../test/wordcount_ascii_expected -
 
 if [ $? -ne 0 ]; then
     echo

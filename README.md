@@ -52,12 +52,12 @@ following language implementations and versions:
     <td>
 <tr><td>Chapel
     <td align="center"><img valign="middle" src="docs/resources/chapel-logo-24.png">
-    <td>1.17.1
+    <td>1.19.0
     <td>
 <tr><td>Clojure
     <td align="center"><img valign="middle" src="docs/resources/clojure-logo-24.png">
-    <td>1.8.0
-    <td>(Using Leinengen 2.7.1 and Java 1.8.0_66)
+    <td>1.10.0
+    <td>
 <tr><td>CoffeeScript
     <td align="center"><img valign="middle" src="docs/resources/coffeescript-logo-24.png">
     <td>1.12.2
