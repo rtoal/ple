@@ -6,3 +6,4 @@ description = "A collection of Rust examples"
 
 [dependencies]
 regex = "0.1"
+num = "0.2.0"
