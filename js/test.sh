@@ -22,8 +22,7 @@ node simple_scopes.js && \
 node static_or_dynamic_scope.js && \
 node this_examples.js && \
 node triple.js | diff ../test/triple_expected - && \
-node wordcount.js < ../test/wordcount_input | diff ../test/wordcount_expected - && \
-node wordcount_ascii.js < ../test/wordcount_ascii_input | diff ../test/wordcount_ascii_expected -
+node wordcount.js < ../test/wordcount_input | diff ../test/wordcount_expected -
 
 if [ $? -ne 0 ]; then
     echo

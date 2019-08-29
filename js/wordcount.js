@@ -1,10 +1,9 @@
-const reader = require('readline').createInterface(process.stdin, null);
-const XRegExp = require('xregexp');
+const readLine = require('readline');
+const reader = readLine.createInterface(process.stdin, null);
 const counts = new Map();
 
 reader.on('line', line => {
-  const wordPattern = XRegExp("[\\p{L}']+", 'g');
-  for (let word of line.toLowerCase().match(wordPattern) || []) {
+  for (let word of line.toLowerCase().match(/[\p{L}']+/ug) || []) {
     counts.set(word, (counts.get(word) || 0) + 1);
   }
 }).on('close', () => {
