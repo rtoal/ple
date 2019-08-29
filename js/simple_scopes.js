@@ -9,7 +9,7 @@ const a = 1, b = 2;
   if (true) {
     var a = 100;             // scoped to whole function!
     let b = 200;             // scoped only inside this block
-    const c = 300;             // scoped only inside this block
+    const c = 300;           // scoped only inside this block
   }
   assert(a === 100);         // it's been initialized
   assert(b === 2);           // outer, because local used `let`
