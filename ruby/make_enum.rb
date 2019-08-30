@@ -47,5 +47,5 @@ fail unless Order::Status::Canceled.to_s == 'Canceled'
 # of writing.
 
 fail unless Order::Status.constants.map{|sym| Order::Status.from_s(sym.to_s)} == [
-  Order::Status::Pending, Order::Status::Delivered, Order::Status::Canceled
+  Order::Status::Pending, Order::Status::Canceled, Order::Status::Delivered,
 ]
