@@ -5,13 +5,10 @@
 To get Clojure:
 
 ```
-brew install leiningen
+brew install clojure
 ```
 
 To run the tests:
-
-Create a script called `clj` to invoke Clojure directly and put it in your path. Mine looks like: `java -cp ~/lib/clojure-1.8.0.jar clojure.main $*`. Then:
-
 
 ```
 ./test.sh
