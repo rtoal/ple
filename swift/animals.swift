@@ -1,47 +1,34 @@
-class Animal {
-    let name: String
+// Swift does not have abstract classes, but instead relies heavily on protocols to compose behaviour
+protocol Animal {
+    var name: String {get}
+    
+    var sound: String {get}
+    
+    func speak() -> String
+}
 
-    init(name: String) {
-        self.name = name
-    }
-
-    func sound() -> String {
-        preconditionFailure("This method must be overridden")
-    }
-
+// By extending a protocol, compliant classes or structs will get default implementations
+extension Animal {
     func speak() -> String {
-        return "\(self.name) says \(self.sound())"
+        return "\(name) says \(sound)"
     }
 }
 
-class Cow: Animal {
-    override init(name: String) {
-        super.init(name: name)
-    }
-
-    override func sound() -> String {
-        return "moooo"
-    }
+struct Cow: Animal {
+    // Structs without explicit inits will have a default init for all its stored properties that aren't otherwise set
+    let name: String
+    // By setting `sound` directly, it needs not be specified in the default init
+    let sound = "moooo"
 }
 
-class Horse: Animal {
-    override init(name: String) {
-        super.init(name: name)
-    }
-
-    override func sound() -> String {
-        return "neigh"
-    }
+struct Horse: Animal {
+    let name: String
+    let sound = "neigh"
 }
 
-class Sheep: Animal {
-    override init(name: String) {
-        super.init(name: name)
-    }
-
-    override func sound() -> String {
-        return "baaaa"
-    }
+struct Sheep: Animal {
+    let name: String
+    let sound = "baaaa"
 }
 
 let h: Animal = Horse(name: "CJ")
