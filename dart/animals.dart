@@ -1,7 +1,7 @@
 class Animal {
     String name;
     Animal(this.name);
-
+    get sound => '';
     void speak() {
         print("$name says $sound");
     }

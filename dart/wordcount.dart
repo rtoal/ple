@@ -5,7 +5,7 @@ import 'dart:collection';
 final words = new SplayTreeMap<String, int>();
 
 void main() {
-  stdin.transform(UTF8.decoder)
+  stdin.transform(utf8.decoder)
     .transform(const LineSplitter())
     .listen(addLines, onDone: printWords);
 }

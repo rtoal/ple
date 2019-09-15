@@ -1,4 +1,4 @@
-import 'dart:math' as math;
+import 'dart:math' show pi;
 class Circle {
   num x;
   num y;
@@ -6,8 +6,8 @@ class Circle {
   String color;
   Circle({this.x: 1, this.y: 1, this.radius: 1, this.color: 'black'});
 
-  num get area => math.PI * this.radius * this.radius;
-  num get circumference => 2 * math.PI * this.radius;
+  num get area => pi * this.radius * this.radius;
+  num get circumference => 2 * pi * this.radius;
 }
 
 void main() {
