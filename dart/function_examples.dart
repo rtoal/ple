@@ -9,7 +9,7 @@ void main() {
   // Single line functions that return something can be expressed by a shorter
   // syntax. 
   var odd = (x) => (x % 2).abs() == 1;
-  var lessThanTen = (x) => x < 10;
+  bool Function(int) lessThanTen = (x) => x < 10;
   var twice = (f, x) => f(f(x));
 
   // We can pass function values by name, or anonymously
