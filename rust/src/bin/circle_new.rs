@@ -15,13 +15,19 @@ impl Circle {
     fn circumference(&self) -> f64 {
         PI * 2.0 * self.radius
     }
+
+    fn center(&self) -> (f64, f64) {
+        (self.x, self.y)
+    }
+
     fn new(x: f64, y: f64, radius: f64, color: String) -> Circle {
         Circle {x: x, y: y, radius: radius, color: color}
     }
-
 }
 
 fn main() {
     let origin = Circle::new(1.0, 5.0, 1.0, "black".to_string());
     println!("{}", Circle::area(&origin));
+    println!("{}", Circle::circumference(&origin));
+    println!("{:#?}", Circle::center(&origin));
 }
