@@ -1,5 +1,6 @@
 import Anagrams exposing (anagrams)
-import Html exposing (Html, div, text, input, beginnerProgram)
+import Browser exposing (sandbox)
+import Html exposing (Html, div, text, input)
 import Html.Attributes exposing (placeholder, value, maxlength)
 import Html.Events exposing (onInput)
 
@@ -10,7 +11,7 @@ type Message
     = ChangeTo String
 
 main =
-    Html.beginnerProgram { model = "", view = view, update = update }
+    Browser.sandbox { init = "", view = view, update = update }
 
 update : Message -> Model -> Model
 update (ChangeTo newModel) model =
