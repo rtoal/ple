@@ -600,7 +600,7 @@ var langs = [
     d: "Luna is a data processing and visualization environment",
     rc: "Luna",
     u: "Data science, Iot, bioinformatics, graphic design, and architecture",
-    r: "Immediate feedback as you type via interactive programming, and automatic parraqellism via functional programming",
+    r: "Immediate feedback as you type via interactive programming, and automatic parallelism via functional programming",
     f: 2015,
     t: ["Visual programming", "Type inference", "Object-oriented", "Statically typed", "Purely functional"],
   },
