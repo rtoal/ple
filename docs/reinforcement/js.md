@@ -22,15 +22,21 @@ If you are an [Anki](https://apps.ankiweb.net/) fan, consider adding some of the
 
 1. What are safe integers in JavaScript?
 
+1. If `x` has the value `NaN`, what is the value of the expression `x === NaN`? Why? What is the correct way to determine if an expression has the value `NaN`?
+
 1. How can you tell whether string `s` is a substring of string `t`?
 
 1. What two things can you do with backtick-delimited strings you can’t do with strings delimited with apostrophes or quotation marks?
+
+1. Why does `"🤣".length` have the value 2?
 
 1. Give an example that shows the `==` operator is not transitive.
 
 1. Why is `2 && 3` equal to 3, but `2 & 3` equal to 2?
 
 1. Name all the falsy values in JavaScript.
+
+1. How do you determing the type of an expression at runtime?
 
 1. When should you use `let` and when should you use `const`?
 
@@ -42,7 +48,9 @@ If you are an [Anki](https://apps.ankiweb.net/) fan, consider adding some of the
 
 1. If `x === 'y'` then what is `{ x: 3, [x]: 5 }` ?
 
-1. How do you write an object to the console (beautifully formatted)?
+1. Why is `[1,12] < [1,3]` true but `[1,42] < [1,3]` false?
+
+1. How do you write an _object_ to the console (beautifully formatted)?
 
 1. Describe how a prototype-based language (like JavaScript) differs from a class-based language (like Java), in terms of thinking about collections of objects that share the same structure and behavior.
 
@@ -61,6 +69,8 @@ If you are an [Anki](https://apps.ankiweb.net/) fan, consider adding some of the
 1. `a.push()` mutates `a`. How do you do a non-mutating push?
 
 1. What does `unshift` do? Does it mutate or not? What does it return?
+
+1. Give an expression that makes an array of length 100 in which each array item is `false`.
 
 1. What is the difference between value types and reference types?
 
@@ -112,6 +122,8 @@ If you are an [Anki](https://apps.ankiweb.net/) fan, consider adding some of the
 
 1. JavaScript doesn’t have classes, but it does have the word `class`. But the keyword `class` declares a function. How is this function defined? Give a short example.
 
+1. What happens under the hood when you write `class A extends B`? In particular what does `A.prototype` look like in this case?
+
 1. Why doesn’t Crockford like using `this`?
 
 1. What is the primary disadvantage of the Crockford-classless style of avoiding `this` and prototypes?
@@ -126,10 +138,19 @@ If you are an [Anki](https://apps.ankiweb.net/) fan, consider adding some of the
 
 1. What does the function `async function five() { return 5; }` actually return?
 
+1. Given `let f = async x => 1` and `let g = async => 2` what do the expressions `f()` and `g()` return? Why? Why is the definition of `g` even acceptable?
+
 1. Why do most API invocations, or operating system calls (like reading and writing files) take in callbacks or return promises?
+
+1. Does `await` actually wait (block) for anything? It not, what exactly does it do?
 
 1. What is the difference between an accessor property and a data property?
 
 1. How do you make a property read-only?
 
 1. What is the difference between sealing and freezing an object?
+
+1. How do you get the prototype of an object?
+
+1. How do you set an object’s prototype after the object has already been created?
+
