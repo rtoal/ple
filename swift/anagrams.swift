@@ -13,7 +13,7 @@ func generatePermutations(of a: inout [Character], upTo n: Int) {
 }
 
 if CommandLine.arguments.count != 2 {
-    fputs("Exactly one argument is required\n", __stderrp)
+    fputs("Exactly one argument is required\n", stderr)
     exit(1)
 }
 let word = CommandLine.arguments[1]
