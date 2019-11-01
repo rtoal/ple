@@ -40,6 +40,12 @@ If you are an [Anki](https://apps.ankiweb.net/) fan, consider adding some of the
 
 1. Name all the falsy values in Python.
 
+1. How do you write a one-element tuple?
+
+1. How are tuples compared with `<`, `<=`, `>`, and `>=`? Are lists compared the same way?
+
+1. If `{3, 5}` is a legal set expression, why is `{}` not a legal set expression?
+
 1. How do you “declare” a local variable in Python?
 
 1. What is the difference between `p.x` and `p[x]`?
@@ -49,6 +55,8 @@ If you are an [Anki](https://apps.ankiweb.net/) fan, consider adding some of the
 1. Does Python have an analog to JavaScript’s spread operator? If so, give an example of its use.
 
 1. You might often see the expression `a[:]`, for some list `a`. What does this expression do, exactly?
+
+1. Explain why `a[::-1]` is the idiom for a reversed list.
 
 1. How does one best create an array of size 100 in which every element is 0? (Do not write a loop.)
 
