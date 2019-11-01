@@ -1,4 +1,4 @@
-# Reinforcemt Problems
+# Reinforcement Problems
 
 Here are set of problems designed to help you reinforce (commit to memory) many programming language facts that are an important part of working knowledge.
 
