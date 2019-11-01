@@ -1,7 +1,7 @@
-# Haskell Reinforcement Problems
+<img src="https://raw.githubusercontent.com/rtoal/polyglot/master/docs/resources/haskell-logo-64.png">
 
-This problem set covers not only programming in Haskell, but concepts about Haskell. Don’t worry. It will not be graded. Work on it at your own pace. It is provided to you to help with your retention of course material.
+# Haskell Reinforcement Practice
 
-If you are an [Anki](https://apps.ankiweb.net/) fan, consider adding some of these questions into a deck. 😀
+Here are a set of problems designed to help you reinforce and retain some useful Haskell knowledge. If you are an [Anki](https://apps.ankiweb.net/) fan, consider adding some of these questions into a deck. 😀
 
 1. Who created Haskell and in what year?
