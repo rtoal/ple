@@ -36,7 +36,7 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. Name all the falsy values in JavaScript.
 
-1. How do you determing the type of an expression at runtime?
+1. How do you determine the type of an expression at runtime?
 
 1. When should you use `let` and when should you use `const`?
 
@@ -54,6 +54,8 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. Describe how a prototype-based language (like JavaScript) differs from a class-based language (like Java), in terms of thinking about collections of objects that share the same structure and behavior.
 
+1. Properties defined directly within an object are called ________________ properties. Properties of an object accessible on the object’s prototype chain are called ________________ properties.
+
 1. What do we mean when we say arrays are objects in JavaScript?
 
 1. Describe how `splice` works. Describe it to a friend on a whiteboard, or paper, with examples.
@@ -64,13 +66,11 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. How does one best create an array of size 100 in which every element is 0? (Do not write a loop.)
 
-1. Write `a.concat(b)`, where `a` and `b` are arrays, using spreads.
+1. Write an equivalent expression to `a.concat(b)`, where `a` and `b` are arrays, using spreads.
 
-1. `a.push()` mutates `a`. How do you do a non-mutating push?
+1. `a.push()` mutates `a`. How do you do a non-mutating “push“?
 
 1. What does `unshift` do? Does it mutate or not? What does it return?
-
-1. Give an expression that makes an array of length 100 in which each array item is `false`.
 
 1. What is the difference between value types and reference types?
 
@@ -102,6 +102,8 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. Write a function that takes in an object and returns the product of its x and y properties. If no argument is passed in, return 1. Write the function using a pattern for its parameter. Supply defaults so the function body is simply return `x * y`.
 
+1. Show how to declare the function that is called like this: `push({onTheStack: s, theValue: v})`? Use an object pattern in the parameter list.
+
 1. What are global scope, function scope, and block scope?
 
 1. How do let-bound and var-bound function-scope variables differ? (Make sure the phrase “temporal dead zone” appears in your answer.)
@@ -109,6 +111,10 @@ Here are a set of problems designed to help you reinforce and retain some useful
 1. Write a function that takes in a number and returns a function that adds that number to its argument. Is the function you wrote higher-order? Why or why not? Does that function illustrate a closure? Why or why not? Does that function illustrate currying? Why or why not?
 
 1. What is currying good for, anyway?
+
+1. Is JavaScript statically-scoped or dynamically scoped?
+
+1. Do JavaScript functions exhibit shallow binding or deep binding?
 
 1. Given `function* f() {yield 1; yield 2; yield 3;}`, what is wrong with writing `for (let i of f) {console.log(i)}`? 
 
@@ -118,9 +124,11 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. What does the expression `this` refer to inside of a function called with the `new` operator?
 
-1. For function f and object x, the expressions `f.call(x, 1, 2)` and `f.apply(x, [1, 2])` produce the same result. Write the equivalent expression using `bind`.
+1. Is `this` early-bound or late-bound?
 
-1. JavaScript doesn’t have classes, but it does have the word `class`. But the keyword `class` declares a function. How is this function defined? Give a short example.
+1. For function `f` and object `x`, the expressions `f.call(x, 1, 2)` and `f.apply(x, [1, 2])` produce the same result. Write the equivalent expression using `bind`.
+
+1. JavaScript doesn’t have classes, but it does have the word `class`. But the keyword `class` does declare a function. How is this “function” defined? Give a short example.
 
 1. What happens under the hood when you write `class A extends B`? In particular what does `A.prototype` look like in this case?
 
@@ -144,6 +152,8 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. Does `await` actually wait (block) for anything? It not, what exactly does it do?
 
+1. How does one “wait” for a whole bunch of async functions to all ”finish”?
+
 1. What is the difference between an accessor property and a data property?
 
 1. How do you make a property read-only?
@@ -153,4 +163,10 @@ Here are a set of problems designed to help you reinforce and retain some useful
 1. How do you get the prototype of an object?
 
 1. How do you set an object’s prototype after the object has already been created?
+
+1. What is the difference between `Object.keys` and `Object.getOwnPropertyNames`?
+
+1. How does `Object.entries` work?
+
+
 
