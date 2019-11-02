@@ -20,7 +20,7 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. Does JavaScript have separate types for integers and floating point values? If not, how can you tell whether a number is an integer or not?
 
-1. What are safe integers in JavaScript?
+1. What are **safe integers** in JavaScript?
 
 1. If `x` has the value `NaN`, what is the value of the expression `x === NaN`? Why? What is the correct way to determine if an expression has the value `NaN`?
 
@@ -58,9 +58,9 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. What do we mean when we say arrays are objects in JavaScript?
 
-1. Describe how `splice` works. Describe it to a friend on a whiteboard, or paper, with examples.
+1. Describe how `splice` works.
 
-1. What is the spread operator? Give an example of its use.
+1. What is the **spread operator**? Give an example of its use.
 
 1. You might often see the expression `a.slice()`, for some array `a`. What does this expression do, exactly?
 
@@ -72,7 +72,7 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. What does `unshift` do? Does it mutate or not? What does it return?
 
-1. What is the difference between value types and reference types?
+1. What is the difference between **value types** and **reference types**?
 
 1. Why do you think the JavaScript designer decided that objects should be reference types?
 
@@ -84,27 +84,27 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. In the function call `f(y, z)`, what do we call `y` and `z`?
 
-1. A function is called higher-order if it does at least one of two things. What two things?
+1. A function is called **higher-order** if it does at least one of two things. What two things?
 
 1. What do the array methods `map`, `filter`, `every`, `some`, `find`, and `findIndex` do?
 
-1. Write the function `function f(x = 3) { return x * y }` (where y is some global variable) without using a default parameter.
+1. Write the function `function f(x = 3) { return x * y }` (where `y` is some global variable) without using a default parameter.
 
-1. What is a rest parameter? Give an example.
+1. What is a **rest parameter**? Give an example.
 
 1. Can a function definition have multiple rest parameters? Why or why not?
 
 1. One could argue that all non-default parameters are really default parameters. Why?
 
-1. In many languages, assignment has the form IDENTIFIER = EXPRESSION. In JavaScript, the left hand side is not just an identifier. What exactly is the left hand side called?
+1. In many languages, assignment has the form IDENTIFIER = EXPRESSION. In JavaScript, the left hand side is _not_ just an identifier. What exactly is the left hand side called?
 
 1. The old-fashioned to write a function that takes in an array and returns the sum of its first and third elements is: `function f(a) {return a[0] + a[2];}` Rewrite this in a modern fashion, where the function parameter is a pattern.
 
-1. Write a function that takes in an object and returns the product of its x and y properties. If no argument is passed in, return 1. Write the function using a pattern for its parameter. Supply defaults so the function body is simply return `x * y`.
+1. Write a function that takes in an object and returns the product of its `x` and `y` properties. If no argument is passed, return 1. Write the function using a pattern for its parameter. Supply defaults so the function body is simply `return x * y;`.
 
 1. Show how to declare the function that is called like this: `push({onTheStack: s, theValue: v})`? Use an object pattern in the parameter list.
 
-1. What are global scope, function scope, and block scope?
+1. What are **global scope**, **function scope**, and **block scope**?
 
 1. How do let-bound and var-bound function-scope variables differ? (Make sure the phrase “temporal dead zone” appears in your answer.)
 
@@ -138,6 +138,8 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. How do you make a JavaScript object without a prototype?
 
+1. When would you see a `TypeError` thrown? A `RangeError`? A `SyntaxError`? A `ReferenceError`?
+
 1. What is **callback hell**?
 
 1. What is an advantage of promises over callbacks?
@@ -148,13 +150,19 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. Given `let f = async x => 1` and `let g = async => 2` what do the expressions `f()` and `g()` return? Why? Why is the definition of `g` even acceptable?
 
+1. What are the most common names given to the parameters of the `Promise` constructor? What are they for?
+
+1. What is the difference between `p.then(f, g)` and `p.then(f).catch(g)` for a promise `p`?
+
 1. Why do most API invocations, or operating system calls (like reading and writing files) take in callbacks or return promises?
+
+1. Give the expression, in client-side JavaScript using `fetch`, that hits the (hypothetical) endpoint `https://api.example.com/fortunes?limit=5` and, from its JSON response, places the first result in the DOM into the element with id `fortune`.
 
 1. Does `await` actually wait (block) for anything? It not, what exactly does it do?
 
 1. How does one “wait” for a whole bunch of async functions to all ”finish”?
 
-1. What is the difference between an accessor property and a data property?
+1. What is the difference between an **accessor property** and a **data property**? (Your answer should include all of the attributes for each kind of property.)
 
 1. How do you make a property read-only?
 
