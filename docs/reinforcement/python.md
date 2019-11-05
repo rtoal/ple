@@ -18,7 +18,7 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. Why do we not have to worry about the expression `range(1, 10000000)` taking up a lot of memory?
 
-1. How do you write the (conditional) expression “if x then y else z” in Python?
+1. How do you write the (conditional) expression that evaluates to `y` if `x` is truthy and to `z` if `x` is falsy.
 
 1. How do you get the type of a Python expression at runtime?
 
