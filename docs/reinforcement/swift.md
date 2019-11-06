@@ -52,12 +52,18 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. What is the method for getting the number of array elements, the number of set elements, and the number of dictionary entries?
 
-1. How do you determine if a value is in an array?
+1. How do you determine if a value is contained in a given array?
 
 1. How does the read-onliness of an array, set, or dictionary in Swift differ from the const-ness of an object in JavaScript?
 
 1. How do you arrange for a function call to _not_ require the external name of a parameter?
 
 1. For a function definition using `func`, are you allowed to omit the types of the parameters? Are you allowed to omit the return type?
+
+1. What is a **closure** in Swift?
+
+1. Write a closure that squares its argument with both the in-notation and the form with the shorthand argument names.
+
+1. 
 
 MANY MANY MORE TO FOLLOW
