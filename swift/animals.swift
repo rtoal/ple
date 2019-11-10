@@ -1,9 +1,7 @@
 // Rather than abstract classes, Swift uses protocols to compose behavior
 protocol Animal {
     var name: String {get}
-    
     var sound: String {get}
-    
     func speak() -> String
 }
 

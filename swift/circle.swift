@@ -1,7 +1,7 @@
 import Foundation
 
 struct Circle {
-    var radius = 1.0                               // stored property
+    var radius: Double                             // stored property
     var area: Double {                             // computed property
         get {return Double.pi * radius * radius}
         set(a) {radius = sqrt(a/Double.pi)}
