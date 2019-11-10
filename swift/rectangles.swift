@@ -1,6 +1,6 @@
 class Rectangle {
-    let width: Double;
-    let height: Double;
+    let width: Double
+    let height: Double
 
     init(width: Double, height: Double) {
         self.width = width
