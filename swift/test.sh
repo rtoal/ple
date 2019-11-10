@@ -19,6 +19,7 @@ swift let_contents_immutable.swift && \
 swift median.swift && \
 swift overflow.swift && \
 swift raw_values.swift && \
+swift rectangles.swift && \
 swift ses.swift && \
 swift set_example.swift && \
 swift shape_extensions.swift && \
@@ -26,6 +27,7 @@ swift simple_protocol.swift && \
 swift smart_strings.swift && \
 swift string_counting.swift && \
 swift string_to_int.swift && \
+swift string_to_int_with_guard.swift && \
 swift structs_are_copied.swift && \
 swift sum_of_even_squares.swift && \
 swift throw.swift && \
