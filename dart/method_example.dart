@@ -1,9 +1,9 @@
-import 'dart:math' as math;
+import 'dart:math' show pi;
 
 class Circle {
   static num radius = 10;
-  static num get area => math.PI * radius * radius;
-  static num get circumference => 2 * math.PI * radius;
+  static num get area => pi * radius * radius;
+  static num get circumference => 2 * pi * radius;
   static void expand(scale) { radius *= scale; }
 }
 

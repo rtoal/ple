@@ -9,6 +9,7 @@ target/debug/animals_improved_oo && \
 target/debug/animals_improved_overload && \
 target/debug/binding && \
 target/debug/borrow_fixed && \
+target/debug/circle && \
 target/debug/circle_new && \
 target/debug/move && \
 target/debug/safe_string_sort && \

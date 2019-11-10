@@ -1,4 +1,4 @@
-// Swift does not have abstract classes, but instead relies heavily on protocols to compose behaviour
+// Rather than abstract classes, Swift uses protocols to compose behavior
 protocol Animal {
     var name: String {get}
     
@@ -7,7 +7,7 @@ protocol Animal {
     func speak() -> String
 }
 
-// By extending a protocol, compliant classes or structs will get default implementations
+// Protocol extensions allow adaptees to get default implementations
 extension Animal {
     func speak() -> String {
         return "\(name) says \(sound)"
@@ -15,9 +15,7 @@ extension Animal {
 }
 
 struct Cow: Animal {
-    // Structs without explicit inits will have a default init for all its stored properties that aren't otherwise set
     let name: String
-    // By setting `sound` directly, it needs not be specified in the default init
     let sound = "moooo"
 }
 
@@ -35,4 +33,4 @@ let h: Animal = Horse(name: "CJ")
 assert(h.speak() == "CJ says neigh")
 let c: Animal = Cow(name: "Bessie")
 assert(c.speak() == "Bessie says moooo")
-assert(Sheep(name:"Little Lamb").speak() == "Little Lamb says baaaa")
+assert(Sheep(name: "Little Lamb").speak() == "Little Lamb says baaaa")

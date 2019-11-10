@@ -18,6 +18,6 @@ impl Circle {
 }
 
 fn main() {
-    let origin = Circle { x: 1.0, y: 5.0, radius: 1.0, color: "black".to_string() }; 
-    println!("{}", origin.area());
+    let origin = Circle { x: 1.0, y: 5.0, radius: 1.0, color: "black".to_string() };
+    println!("{} {}", origin.area(), origin.circumference());
 }

@@ -9,7 +9,7 @@ void f(num a, List<num> b, List<num> c) {
   print(g);
   a = 400;
   print(x);
-  b = 500;
+  b = [500];
   print(y);
   c[1] = 600;
   print(z);

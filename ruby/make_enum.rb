@@ -43,9 +43,9 @@ fail unless Order::Status::Pending.to_s == 'Pending'
 fail unless Order::Status::Delivered.to_s == 'Delivered'
 fail unless Order::Status::Canceled.to_s == 'Canceled'
 
-# Bonus test. You can still get the values of the enum, although it's takes a bit
-# of writing.
-
+# It takes work to get the actual values of an enum (not just the symbols)
 fail unless Order::Status.constants.map{|sym| Order::Status.from_s(sym.to_s)} == [
-  Order::Status::Pending, Order::Status::Canceled, Order::Status::Delivered,
+  Order::Status.from_s('Pending'),
+  Order::Status.from_s('Delivered'),
+  Order::Status.from_s('Canceled')
 ]

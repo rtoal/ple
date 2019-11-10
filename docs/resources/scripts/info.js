@@ -18,6 +18,7 @@ var langs = [
   {
     i: "apl",
     n: "APL",
+    h: "https://www.ibm.com/us-en/marketplace/apl2",
     w: "APL_(programming_language)",
     g: "apl",
     rc: "APL",
@@ -25,6 +26,7 @@ var langs = [
     d:
       "APL is the earliest array-oriented language, known for its heavy use of non-ASCII operator symbols, and its ability to express complex algorithms in a single line of code.",
     f: 1962,
+    v: ["APL\360 (1967)", "APL\1130 (1968)", "APL2 (1991)"],
     r: "Concise code, array-orientation, symbolic alphabet",
     u: "Finance, scientific research",
     t: ["Array-based", "Dynamic"]
@@ -32,6 +34,7 @@ var langs = [
   {
     i: "awk",
     n: "AWK",
+    h: "https://www.gnu.org/software/gawk/manual/gawk.html",
     w: "AWK",
     g: "awk",
     rc: "AWK",
@@ -39,6 +42,7 @@ var langs = [
     d:
       "AWK excels at terse scripts for processing text files, due to its implicit main loop over the lines of a file, implicit variables, and regular expression support.",
     f: 1977,
+    v: ["System V Release 3.1 (1985)", "GNU (1986)"],
     r: "Being a successor of sed and a predecessor of Perl",
     u: "Text processing",
     t: ["Dynamic", "Scripting", "Line-oriented"]
@@ -48,6 +52,7 @@ var langs = [
     n: "Bash",
     h: "https://tiswww.case.edu/php/chet/bash/bashtop.html",
     w: "Bash_(programming_language)",
+    g: "bash",
     rc: "UNIX_Shell",
     d: "Bash is one of the most popular of the Unix shell languages.",
     f: 1989,
@@ -73,6 +78,7 @@ var langs = [
   {
     i: "c",
     n: "C",
+    h: "https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html",
     w: "C_(programming_language)",
     g: "c",
     rc: "C",
@@ -317,6 +323,7 @@ var langs = [
   {
     i: "fortran",
     n: "Fortran",
+    h: "https://www.fortran.com/",
     w: "Fortran",
     g: "fortran",
     rc: "Fortran",
@@ -350,9 +357,12 @@ var langs = [
     h:
       "https://docs.yoyogames.com/source/dadiospice/002_reference/001_gml%20language%20overview/",
     w: "GameMaker_Studio",
+    rc: "GML",
     d: "GML is the scripting language used in GameMaker Studio",
     f: 1999,
+    v: ["1.2 (2017)"],
     u: "Games",
+    r: "Simplicity of using drag and drop actions to make games",
     t: ["Scripting"]
   },
   {
@@ -393,6 +403,7 @@ var langs = [
     d: "GP is a general-purpose, extensible, blocks language.",
     f: 2017,
     r: "Expanding the range of application areas for blocks-based programming",
+    v: ["Beta (2015)"],
     u: "Multimedia, Simulation, Data analysis, Education",
     t: ["Blocks", "General Purpose"]
   },
@@ -418,9 +429,11 @@ var langs = [
     w: "Hack_(programming_language)",
     g: "hack",
     rc: "Hack",
+    pp: "hack-vm",
     d:
       "Hack is a PHP-compatible language with a variety of modern features, such as type-annotations, generics, nullables, lambdas, type-aliasing, shapes, and async support.",
     f: 2014,
+    v: ["HHVM (2011)"],
     r: "Being a better PHP",
     u: "Facebook",
     t: ["Imperative", "Gradually Typed"]
@@ -529,6 +542,7 @@ var langs = [
     i: "kitten",
     n: "Kitten",
     h: "http://kittenlang.org/",
+    rc: "Kitten",
     d: "Kitten is a statically-typed, functional, concatenative language",
     f: 2011,
     r:
@@ -583,7 +597,12 @@ var langs = [
     i: "luna",
     n: "Luna",
     h: "http://www.luna-lang.org/",
-    d: "Luna is ..."
+    d: "Luna is a data processing and visualization environment",
+    rc: "Luna",
+    u: "Data science, Iot, bioinformatics, graphic design, and architecture",
+    r: "Immediate feedback as you type via interactive programming, and automatic parallelism via functional programming",
+    f: 2015,
+    t: ["Visual programming", "Type inference", "Object-oriented", "Statically typed", "Purely functional"],
   },
   {
     i: "matlab",
@@ -605,17 +624,28 @@ var langs = [
     i: "mercury",
     n: "Mercury",
     h: "https://mercurylang.org/",
-    d: "Mercury is ..."
+    pp: "mercury",
+    g: "mercury",
+    rc: "Mercury",
+    f: 1995,
+    w: "Mercury_(programming_language)",
+    d: "Mercury is a logic programming langugae meant to create large-scale applications",
+    t: ["Static", "Logic Programming", "Dynamically allocated memory", "Strongly typed"]
   },
   {
     i: "miranda",
     n: "Miranda",
     h: "http://miranda.org.uk/",
-    d: "Miranda is ..."
+    w: "Miranda_(programming_language)",
+    f: 1986,
+    d: "Miranda is a non-strict, polymorphic functional prograqmming language",
+    t: ["Polymorphic", "Functional", "Non-Strict", "Dynamic"],
   },
   {
     i: "nasm",
     n: "NASM",
+    rc: "NASM",
+    w: "Netwide_Assembler",
     h: "http://www.nasm.us/",
     d: "NASM is ..."
   },

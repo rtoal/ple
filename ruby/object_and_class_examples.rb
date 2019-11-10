@@ -1,8 +1,8 @@
 fail unless nil.class == NilClass
 fail unless false.class == FalseClass
 fail unless true.class == TrueClass
-fail unless 3.class == Integer
-fail unless (2**1000).class == Integer
+fail unless 3.class == Fixnum
+fail unless (2**1000).class == Bignum
 fail unless 2.0.class == Float
 fail unless :dog.class == Symbol
 fail unless "dog".class == String
