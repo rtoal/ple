@@ -32,7 +32,7 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. It is legal to write `var x = 1` but not legal to write `var a = []`. Why?
 
-1. When reading a line from a file in Python, an exception is raised when the file has been fully read. What happens in Swift? What is the return type of `readLine`?
+1. When reading a line from a file in Python, an exception is raised when the file has been fully read. What happens in Swift? (In other words, What is the return type of `readLine` and why?)
 
 1. How do you access the second element of the tuple t?
 
@@ -44,7 +44,9 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. How do structs and classes differ?
 
-1. What is the nicer way of writing the type expressions `Array<Int>` and `Dictionary<String, Bool>`?
+1. Why is it that the type `Int` is acutally a `struct`?
+
+1. What is the nicer way of writing the type expressions `Array<Int>`,  `Dictionary<String, Bool>`, and `Optional<Double>`?
 
 1. Are arrays, sets, and dictionaries structs or classes?
 
@@ -58,6 +60,8 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. How do you arrange for a function call to _not_ require the external name of a parameter?
 
+1. Why are external parameter names often prepositions, but local names are often nouns and noun phrases? Give a trivial example (both a definition and a call) that backs up your answer.
+
 1. For a function definition using `func`, are you allowed to omit the types of the parameters? Are you allowed to omit the return type?
 
 1. What is a **closure** in Swift?
@@ -68,9 +72,9 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. The two different kinds of properties are stored properties and ________________ properties.
 
-1. Suppose we had a struct called `Square` with a stored property called `side` representing its side length. Define the computed property `area` (which can be read and written).
+1. Suppose we had a struct called `Square` with a stored property called `sideLength`. Define the computed property `area` (which can be read and written).
 
-1. How do we employ the shorthand syntax for read-only computed properties?
+1. How do we employ the shorthand syntax for read-only computed properties? (That is, what exactly is omitted?)
 
 1. Give a definition for a Swift enumeration of the additive primary colors `red`, `green`, and `blue`.
 
@@ -94,19 +98,23 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. What does it mean that the `??` operator is short-circuit?
 
-1. Are `if-let`, `while-let`, or `guard-else` constructs required to access an element of an optional array? If not, how do we do this?
+1. Are `if-let`, `while-let`, or `guard-else` constructs required to access an element of an optional array? If not, what is a more concise way to access the element?
 
-1. Are `if-let`, `while-let`, or `guard-else` constructs required to access a property of an optional struct/class instance? If not, how do we do this?
+1. Are `if-let`, `while-let`, or `guard-else` constructs required to access a property of an optional struct/class instance? If not, what is a more concise way to access the property?
 
-1. If a function is defined to return a `String?`, can we simply use the statement `return "Hello"` or will this be a compile time error or a run time error?
+1. The `guard-else` handles scope weirdly compared to `if-let` and `while-let`. What is this odd scope rule, and why is it odd?
+
+1. If a function is defined to return a `String?`, can we simply place the statement `return "Hello"` in the body, or will this be a compile time error, or perhaps a run time error?
 
 1. Distinguish cases in which optionals should be used instead of throwing.
 
 1. What is the difference between the operator `+` and the operator `&+`?
 
+1. There is actually a shorter way to write the expression `reduce(0, {$0+$1})`. What is it?
+
 1. In Swift, the operator `+` both concatenates string and adds numbers. This is known to lead to huge headaches and funny surprises in JavaScript, and yet, it is not really a big deal in Swift. Why not?
 
-1. Oh no Swift does not have an exponentation operator. Could you, in principle, define `**` yourself?
+1. Swift does not have an exponentation operator. Could you, in principle, define `**` yourself?
 
 1. True or false? Swift’s standard library has over 100 structs/classes/enums.
 
@@ -136,7 +144,10 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. Why does ARC mean no tracing garbage collector is required?
 
-1. How do Swift programmers avoid memory leaks due to cycles of referneces on the heap?
+1. What is the advantage of ARC over tracing garbage collectors?
+
+1. How do Swift programmers avoid memory leaks due to cycles of references on the heap? (Hint: they use a particular kind of reference. What is this reference called and how does it work?)
+
 
 
 
