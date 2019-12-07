@@ -42,6 +42,8 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. Rewrite the definition `f x = g(h(g(x)))` in point-free form.
 
+1. Why did the designers of Haskell choose to put the type signatures on a separate line of code instead of embedding the type information into the parameter list as is done in Go, Rust, Swift, C++, C#, Java, and friends?
+
 1. Define (i.e., give a *function definition* for) the Haskell function that accepts a number and returns the value of 10 plus that number. Include a type signature in your definition.
 
 1. Give the Haskell function that accepts a number and returns the value of 10 plus that number, as a *function expression*.
@@ -184,8 +186,13 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. Write `x >>= y >>= z` in `do`-notation.
 
+1. What is the mondaic composition operator for the Haskell List type?
+
 1. Haskell is supposedly a pure functional language but real programs need effects, random numbers, and I/O. How does Haskell do these things, if at all?
 
 1. What is the type signature of `getLine` do? What does it do?
 
-1. What kind of type system does Haskell share with all the ML family of languages?
+1. Write a Haskell script (command line driven program) that writes the values 1 through 100 on a separate line. Explain how Haskell separates the pure and impure parts of this program.
+
+1. What is the name of the type system that Haskell shares with all the ML family of languages?
+
