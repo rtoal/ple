@@ -34,6 +34,8 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. Can an interface have methods with a body? Why or why not? If so, what is such a method known as and how even does it work?
 
+1. How do you write the JavaScript array literal `[13, 5, 8, 2]` in Java?
+
 1. Is `null` a member of every reference type in Java? If so, what were the designers of the language thinking when they included this “feature”?
 
 1. What is the inclusion of `null` as a member of every reference type referred to? Who called it that? Why?
@@ -58,9 +60,25 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. How do you create a stream producing the integers 1 through 100?
 
-1. How do you create an infinite stream of even numbers, starting at 20?
+1. How do you create an infinite stream of the even numbers starting at 20?
 
 1. How do you create an empty stream?
 
-1. 
+1. How do you create a stream of 100 zeros followed by 1000000 ones? (Note: the entire stream is to have exactly those 1000100 elements. The stream should, as streams do, generate elements on demand.)
+
+1. How do you create a stream from an array?
+
+1. Given an array `a`, what does `Arrays.stream(a).distinct().toArray()` do?
+
+1. For array `a`, what does `Arrays.stream(a).min()` return, exactly?
+
+1. Suppose `r` was a `Reader` object. How do you get the lines of the reader into an array?
+
+1. Suppose `r` was a `Reader` object. How do you get the lowercased lines of the reader into an array?
+
+1. Suppose `r` was a `Reader` object. How do you get the lowercased lines of the reader into an array, sorted by line?
+
+1. Suppose `r` was a `Reader` object. How do you get the lowercased lines of the reader into an array, eliminating all duplicates?
+
+
 
