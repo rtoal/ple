@@ -18,13 +18,15 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. What does `using namespace` do and why is it so common in C++?
 
-1. C++ has six different built-in character types. What are they?
+1. Show how to compile and run `hello.cpp` from the command line, using the `g++` compiler, using the 2017 standard version of the language.
+
+1. C++17 has six different [built-in character types](https://en.cppreference.com/w/cpp/language/types). What are they? There is one new character type added in C++20. What is it?
 
 1. Integers can be signed or ________________. They can be short, regular-sized, or ________________.
 
-1. In addition to `float` and `double`, C++ has two other floating-point types. What are they?
+1. In addition to `float` and `double`, C++ has one other floating-point type. What is it?
 
-1. You might see `int&` used where a type should appear (say in a variable or parameter declaration). One can argue this is not a type at all! What does this expression mean, and why do we say it is not a real type?
+1. You might see `int&` used where a type should appear (say, in a variable or parameter declaration). One can argue this is not a type at all! What does this expression mean, and why do we say it is not a real type?
 
 1. Is `void` a type? If not, what is it?
 
@@ -36,7 +38,7 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. Given `struct Point {int x; int y};` how do you declare a variable `p` of type `Point` whose `x` and `y` fields are initialized to 5 and 8, respectively?
 
-1. Do structs have value semantics or reference semantics?
+1. Do structs have value semantics or reference semantics? What about classes?
 
 1. Suppose `S` is a struct type whose instances are very large. How do you define a parameter of type `S` for a function in which the `S` object will not be changed?
 
@@ -56,22 +58,47 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. Every `new` must be matched with a what?
 
-1. What is the keyword for expression meaning a pointer that doesn’t point to anything?
+1. What is the keyword for the expression meaning a “pointer that doesn’t point to anything”?
 
 1. What do you have when you allocate a pointer with `new` but forget to deallocate it?
 
-1. Why do you have when a pointer has been deallocated but you try to dereference it?
+1. What do you have when a pointer has been deallocated but you try to dereference it?
 
-1. If we define `void inc(int* x) {(*x)++;}` and we wanted to use this function to increment a global variable `y`, how would we call the function?
+1. If we define `void inc(int* x) {(*x)++;}`, and we wanted to use this function to increment a global variable `y`, how would we call the function?
 
-1. It’s possible, but unusual to write `(*p).x`. What do we write instead?
+1. It’s possible, but unusual, to write `(*p).x`. What do we write instead?
 
 1. What is the expression for “a pointer to x”?
 
-1. Explain what `x` is being typed as in the declarator `char ***x[13][21]`.
+1. Explain what type `x` is given in the declarator `char ***x[13][21]`.
 
-1. Explain what `x` is being typed as in the declarator `int (*c)(long, long)`.
+1. Explain what type `c` is given in the declarator `int (*c)(long, long)`.
 
+1. What is the difference between an instance method and a class method?
+
+1. Python uses the `@classmethod` decorator to mark a class method. How do you mark a class method in C++?
+
+1. Why are constructors not considered to be methods?
+
+1. If you don’t write a constructor for a struct, can you still create an instance of the struct type and supply initial values to its fields? If so, how does this work?
+
+1. If you write a constructor for a struct type `S`that takes in a single argument, and no other constructor, can you define a variable like so: `S s;`. Why or why not? Can you define `S* p`? Why or why not?
+
+1. Why would you never see the expression `this.x` in C++?
+
+1. If you had an instance `x` of a struct type `S`, and no constructors were explicity defined for `S`, what does `S y(x);` do? Use the terms “construct,” “copy,” and “shallow” in your answer.
+
+1. If you had two instances `x` and `y` of a struct type `S`, and no methods were explicity defined for `S`, what does `x == y;` do? What, technically speaking, is invoked here?
+
+1. Suppose you were writing your very own `Set` class, for mathematical sets. Show how to declare (just declare, do not define) operators for intersection (use `&`), union (use `|`) and complement (use `~`).
+
+1. We know that `cout` is an instance of the class `ostream`. How did the creator of the `ostream` class get expressions like `cout << x` to work?
+
+1. What are the three explicit access control modifiers for structs (and classes)?
+
+1. What is the only difference between structs and classes in C++?
+
+1. Although the difference between structs and classes is incredibly trivial, 
 
 
 
