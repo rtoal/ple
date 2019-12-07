@@ -60,6 +60,8 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. What is the inferred type of the expression `\(x, y) -> tan x < 5 || y`?
 
+1. Haskell type inference is far more extensive than that of Java, Go, Rust, or Swift. What kinds of expressions can Haskell infer types for that these other languages cannot?
+
 1. Can a function take multiple arguments in Haskell? Why or why not? If not explain how one simulates a function of no arguments and one of multiple arguments?
 
 1. What are the six basic types?
@@ -150,11 +152,40 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. What would be the type signature of a function that takes in a tuple and produces `"LESS"` if the fist element of a tuple is less than its second, `"EQUAL"` if the two elements are the same, and `"GREATER"` otherwise.
 
-1. Haskell type inference is far more extensive than that of Java, Go, Rust, or Swift. What kinds of expressions can Haskell infer types for that these other languages cannot?
+1. What should functions that “search” or “lookup” values produce?
+
+1. How is the `Maybe` datatype defined?
+
+1. What would be a reasonable type signature for a function that accepts a list of numbers and either sucessfully computes a result which is a number, and can fail in three different ways (where only an error message is needed)?
+
+1. Define a datatype consisting entirely of the members `LOW`, `NORMAL`, and `HIGH`.
+
+1. Define a datatype for a tree in which every node has at least 0 children and at most 3 children.
+
+1. Define a datatype for a tree in which every node can have an arbitrary number of children. Also write a function that computes the size (number of nodes) of such a tree.
+
+1. Define a datatype for the components of a mini-programming language of expressions. These components, called _tokens_ are either: the plus operator, the times operator, a left parenthesis, a right parenthesis, a number (in which case you want to record the numeric value), or a variable (in which case you want to record its name).
+
+1. The expression `take 5 a` create a new list containing the first 5 elements of `a`. Are the elements of the original list copied or not?
+ 
+1. Haskell does not provide for mutable data structures. Instead, Haskell datatypes employ _________________ data structures.
+
+1. Given `a = [10,20,30,30,40,30]`, draw a picture of the world after `b = delete 30 a` that shows you understand persistent data structures. (`delete` is from `Data.List`).
+
+1. Suppose `a` was a very long lists. Why is `5:a` fast but `a ++ [5]` slow?
+
+1. Monads are types whose values are wrapped values from an underlying type. The function on monads that wrap a value must be an ________________ operation to an ________________ composition operator.
+
+1. What is the type signature of `>>=`? What does this operator do, exactly?
+
+1. What is the difference between `>>=` and `>>`?
+
+1. Write `x >> y >> z` in `do`-notation.
+
+1. Write `x >>= y >>= z` in `do`-notation.
 
 1. Haskell is supposedly a pure functional language but real programs need effects, random numbers, and I/O. How does Haskell do these things, if at all?
 
-1. Haskell does not provide for mutable data structures. Instead, Haskell datatypes employ _________________ data structures.
+1. What is the type signature of `getLine` do? What does it do?
 
-THESE ARE NOT DONE. I STILL HAVE MANY MORE TO WRITE.
-
+1. What kind of type system does Haskell share with all the ML family of languages?
