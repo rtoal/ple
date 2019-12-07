@@ -18,13 +18,13 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. Why do we never use the term *assignment* in Haskell? What do we use instead?
 
-1. What is the most popular Haskell REPL called?
+1. What is the most popular Haskell REPL?
 
 1. How do you write a “Hello world” Haskell program as a script to be run on the command line?
 
 1. Why is the Haskell “Hello world” program *not* simply `putStrLn("Hello, world")`?
 
-1. Assuming the file _hello.hs_ contained a command line Haskell program, how do you compile and run the program using `ghc`?
+1. Assuming the file _hello.hs_ contains a (command line based) Haskell program, how do you compile and run the program using `ghc`?
 
 1. What does Haskell use instead of curly braces for structure?
 
@@ -40,7 +40,7 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. Rewrite the expression `f(f(g(h(g(x)y))z))` replacing as many parentheses with `$` as possible.
 
-1. Rewrite the definition `f x = g(h(g(x)))` in point-free form.
+1. Rewrite the definition `f x = g(h(g(x)))` in [point-free](https://en.wikipedia.org/wiki/Tacit_programming) form.
 
 1. Why did the designers of Haskell choose to put the type signatures on a separate line of code instead of embedding the type information into the parameter list as is done in Go, Rust, Swift, C++, C#, Java, and friends?
 
@@ -80,7 +80,7 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. Why aren’t function types in the `Eq` or `Show` typeclass?
 
-1. The tuple type `(a,b)` is in the `Eq` typeclass. So does that mean a type which is a tuple a functions would be equatable?
+1. The tuple type `(a,b)` is in the `Eq` typeclass. So does that mean a type which is a tuple a functions would be equatable? Why or why not?
 
 1. What is the difference between `'a'` and `"a"`? (Show the types of each expression.)
 
@@ -174,9 +174,9 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. Given `a = [10,20,30,30,40,30]`, draw a picture of the world after `b = delete 30 a` that shows you understand persistent data structures. (`delete` is from `Data.List`).
 
-1. Suppose `a` was a very long lists. Why is `5:a` fast but `a ++ [5]` slow?
+1. Suppose `a` was a very long list. Why is `5:a` fast but `a ++ [5]` slow?
 
-1. Monads are types whose values are wrapped values from an underlying type. The function on monads that wrap a value must be an ________________ operation to an ________________ composition operator.
+1. Monads are types whose values are wrapped values from an underlying type. The function on monads that wrap a value must be a left and right ________________ to an ________________ composition operator.
 
 1. What is the type signature of `>>=`? What does this operator do, exactly?
 
@@ -190,7 +190,7 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. Haskell is supposedly a pure functional language but real programs need effects, random numbers, and I/O. How does Haskell do these things, if at all?
 
-1. What is the type signature of `getLine` do? What does it do?
+1. What is the type signature of `getLine`? What does it do?
 
 1. Write a Haskell script (command line driven program) that writes the values 1 through 100 on a separate line. Explain how Haskell separates the pure and impure parts of this program.
 
