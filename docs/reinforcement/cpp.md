@@ -174,7 +174,7 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. What are the types `u16string` and `u32string` for?
 
-1. C++ programs have to have a `main` function accepting the command line arguments. Does `main` take in an `std::vector` or `std:string` values? If not, what does it accept? Why?
+1. C++ programs have to have a `main` function accepting the command line arguments. Are the arguments represented as a `std::vector` of `std:string` objects? If not, how are the arguments passed? Why?
 
 1. How do you get the address of an lvalue?
 
