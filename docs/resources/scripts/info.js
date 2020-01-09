@@ -657,6 +657,7 @@ var langs = [
     h: "http://www.nasm.us/",
     w: "Netwide_Assembler",
     rc: "NASM",
+    d: "NASM is ...",
     f: 1996, 
     v: ["0.90 (1996)", "2.00 (2007)",  "2.07 (2009)"], 
   },
@@ -667,6 +668,7 @@ var langs = [
     g: "nemerle", 
     rc: "Nemerle",
     pp: "nemerle",
+    d: "Nemerle is ...",
     f: 2003,
     v: [],
   },
@@ -678,6 +680,7 @@ var langs = [
     g: "nim",
     rc: "Nim",
     pp: "nimrod",
+    d: "Nim is ...",
     f: 2004,
     v: [], 
   },
@@ -689,6 +692,7 @@ var langs = [
     g: "ocaml",
     rc: "OCaml",
     pp: "ocaml",
+    d: "OCaml is ...",
     f: 1996,
     v: [],
   },
@@ -696,35 +700,50 @@ var langs = [
     i: "parasail",
     n: "ParaSail",
     h: "https://forge.open-do.org/plugins/moinmoin/parasail/",
-    d: "ParaSail is ..."
+    d: "OCaml is ...",
+    v: [],
   },
   {
     i: "perl",
     n: "Perl",
     h: "https://www.perl.org/",
-    d: "Perl is ..."
+    w: "Perl",
+    g: "perl",
+    rc: "Perl",
+    pp: "perl",
+    d: "Perl is ...",
+    f: 1987,
+    v: [],
   },
   {
     i: "php",
     n: "PHP",
-    d: "PHP is ..."
+    w: "PHP",
+    g: "php",
+    rc: "PHP",
+    pp: "php",
+    d: "PHP is ...",
+    f: 1995,
+    v: [],
   },
   {
     i: "purescript",
     n: "PureScript",
     h: "http://www.purescript.org/",
-    d: "PureScript is ..."
+    g: "purescript",
+    d: "PureScript is ...",
+    v: [],
   },
   {
     i: "python",
     n: "Python",
     h: "https://www.python.org/",
-    d:
-      "Python is a powerful and expressive programming language that &ldquo;lets you work quickly and integrate systems more effectively.&rdquo;",
     w: "Python_(programming_language)",
     g: "python",
     rc: "Python",
     pp: "python",
+    d:
+      "Python is a powerful and expressive programming language that &ldquo;lets you work quickly and integrate systems more effectively.&rdquo;",
     f: 1991,
     v: ["2.2 (2001)", "3.0 (2008)", "2.7 (2010)", "3.5 (2015)"],
     r: "Expressiveness",
@@ -735,19 +754,31 @@ var langs = [
     i: "quorum",
     n: "Quorum",
     h: "https://quorumlanguage.com/",
-    d: "Quorum is ..."
+    d: "Quorum is ...",
+    v: []
   },
   {
     i: "r",
     n: "R",
     h: "https://www.r-project.org/",
-    d: "R is ..."
+    w: "R",
+    g: "r",
+    rc: "R",
+    pp: "r",
+    d: "R is ...",
+    f: 1993,
+    v: []
   },
   {
     i: "racket",
     n: "Racket",
     h: "https://racket-lang.org/",
-    d: "Racket is ..."
+    w: "Racket",
+    g: "racket",
+    rc: "Racket",
+    d: "Racket is ...",
+    f: 1995,
+    v: [],
   },
   {
     i: "roy",
@@ -756,6 +787,7 @@ var langs = [
     d:
       "Roy is an experimental language that compiles to JavaScript. It contains many features of ML-style languages such as Hindley-Milner type inference, pattern matching, and structural typing.",
     f: 2011,
+    v: [],
     r: "Being a precursor to PureScript",
     u: "Research",
     t: ["Static", "Research", "Experimental"]
@@ -780,25 +812,46 @@ var langs = [
     i: "rust",
     n: "Rust",
     h: "https://www.rust-lang.org/",
-    d: "Rust is ..."
+    w: "Rust",
+    g: "rust",
+    rc: "Rust",
+    pp: "rust",
+    d: "Rust is ...",
+    f: 2010,
+    v: []
   },
   {
     i: "scala",
     n: "Scala",
     h: "http://www.scala-lang.org/",
-    d: "Scala is ..."
+    w: "Scala",
+    g: "scala",
+    rc: "Scala",
+    pp: "scala",
+    d: "Scala is ...",
+    f: 2003,
+    v: []
   },
   {
     i: "scratch",
     n: "Scratch",
     h: "https://scratch.mit.edu/",
-    d: "Scratch is ..."
+    w: "Scratch",
+    rc: "Scratch",
+    pp: "scratch",
+    d: "Scratch is ...",
+    f:  2007,
+    v: []
   },
   {
     i: "self",
     n: "Self",
     h: "http://www.selflanguage.org/",
-    d: "Self is ..."
+    w: "Self",
+    rc: "Self",
+    d: "Self is ...",
+    f: 1987,
+    v: []
   },
   {
     i: "smalltalk",
@@ -832,10 +885,14 @@ var langs = [
     t: ["Functional"]
   },
   {
-    i: "snap",
+    i: "snap!",
     n: "Snap!",
     h: "http://snap.berkeley.edu/",
-    d: "Snap is ..."
+    w: "Snap!",
+    rc: "Snap!",
+    d: "Snap is ...",
+    f: 2011,
+    v: []
   },
   {
     i: "swift",
@@ -857,26 +914,42 @@ var langs = [
     i: "tcl",
     n: "Tcl",
     h: "https://tcl.tk/",
-    d: "Tcl is ..."
+    w: "Tcl",
+    g: "tcl",
+    rc: "Tcl",
+    pp: "tcl",
+    d: "Tcl is ...",
+    f: 1988,
+    v: []
   },
   {
     i: "typescript",
     n: "TypeScript",
     h: "https://www.typescriptlang.org/",
-    d: "TypeScript is a statically typed superset of JavaScript"
+    g: "typescript",
+    rc: "TypeScript",
+    d: "TypeScript is a statically typed superset of JavaScript",
+    f: 2012,
+    v: []
   },
   {
     i: "whiley",
     n: "Whiley",
     h: "http://whiley.org/",
     w: "Whiley_(programming_language)",
-    d: "Whiley is ..."
+    rc: "Whiley",
+    f: 2010,
+    d: "Whiley is ...",
+    v: []
   },
   {
     i: "zig",
     n: "Zig",
     h: "https://ziglang.org/",
-    d: "Zig is ..."
+    g: "zig",
+    rc: "Zig",
+    d: "Zig is ...",
+    v: []
   },
 ];
 
