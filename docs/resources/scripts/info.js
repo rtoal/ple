@@ -71,7 +71,7 @@ var langs = [
     pp: "boo",
     d: "Boo is a .NET language with a Python-inspired syntax.",
     f: 2003,
-    v: [], 
+    v: ["0.1.0 (2003)", "0.8.2 (2008)", "0.9.7 (2013)"], 
     r: "Being a pleasant language for writing .NET applications",
     u: "Scripts for the Unity Game Engine",
     t: ["Statically-typed"]
@@ -479,7 +479,7 @@ var langs = [
     pp: "io",
     d: "Io is a syntactically and semantic simple prototype-based language",
     f: 2002,
-    v: [],
+    v: ["20080107 (2008)", "20151111 (2015)"],
     r: "Simplicity of design",
     u: "Exploratory software development",
     t: ["Prototypal"]
@@ -581,8 +581,9 @@ var langs = [
     d:
       "LOLCODE (capitalized because cats talk in all caps) is an esoteric programming language with a syntax inspired by lolspeak.",
     f: 2007,
-    v: [], 
+    v: ["v0.10.5 (2014)", "v.0.11.2 (2014)"], 
     r: "lolcats-inspired keywords and grammar",
+    u: "Amusement",
     t: ["Esoteric", "Imperative"]
   },
   {
@@ -608,7 +609,7 @@ var langs = [
     d: "Luna is a data processing and visualization environment",
     f: 2015,
     v: [],
-    r: "Immediate feedback as you type via interactive programming, and automatic parallelism via functional programming",
+    r: "Immediate feedback as you type via interactive programming, and automatic parallelism via functional programming.",
     u: "Data science, Iot, bioinformatics, graphic design, and architecture",
     t: ["Visual programming", "Type inference", "Object-oriented", "Statically typed", "Purely functional"],
   },
@@ -638,7 +639,9 @@ var langs = [
     pp: "mercury",
     d: "Mercury is a logic programming langugae meant to create large-scale applications",
     f: 1995,
-    v: [], 
+    v: ["14.01 (2014)"], 
+    r: "Purely declarative programming style",
+    u: "Acts as the new-and-improved Prolog, which is a logic programming language, often associated with computational lingustics and artificial intelligence.",
     t: ["Static", "Logic Programming", "Dynamically allocated memory", "Strongly typed"]
   },
   {
@@ -648,7 +651,9 @@ var langs = [
     w: "Miranda_(programming_language)",
     d: "Miranda is a non-strict, polymorphic functional prograqmming language",
     f: 1986,
-    v: [], 
+    v: ["2.057 (2019)"], 
+    r: "Influencing widely used functional programming language, such as Haskell.",
+    u: "Research and teaching functional programming",
     t: ["Polymorphic", "Functional", "Non-Strict", "Dynamic"],
   },
   {
@@ -657,9 +662,12 @@ var langs = [
     h: "http://www.nasm.us/",
     w: "Netwide_Assembler",
     rc: "NASM",
-    d: "NASM is ...",
+    d: "NASM is an assembler and disassembler for the Intel x86 architecture, its extensions and its macros",
     f: 1996, 
-    v: ["0.90 (1996)", "2.00 (2007)",  "2.07 (2009)"], 
+    v: ["0.90 (1996)", "2.00 (2007)",  "2.07 (2009)", "2.14.02 (2015)"], 
+    r: "Being one of the most widely-used assemblers for Linux.",
+    u: "Assembling and disassembling for the Intel x86 architecture",
+    t: ["x86 Assembler"]
   },
   {
     i: "nemerle",
@@ -668,9 +676,12 @@ var langs = [
     g: "nemerle", 
     rc: "Nemerle",
     pp: "nemerle",
-    d: "Nemerle is ...",
+    d: "Nemerle is a general-purpose, multi-paradigm programming language whose purpose is to help create platforms built on Common Language Infrastructures, such as .NET and Mono. Nemerle's developers were hired by JetBrains to create the language workbench, Nitra. Nitra will likely be used to create newer versions of Nemerle",
     f: 2003,
-    v: [],
+    v: ["0.9.3 (2006)", "1.0.4 (2019)"],
+    r: "Its ability to be both functional and object-oriented.",
+    u: "Helps create platforms on Common Language Infrastructures.",
+    t: ["Functional", "Object-Oriented", "Metaprogramming", "Imperative"]
   },
   {
     i: "nim",
@@ -680,9 +691,12 @@ var langs = [
     g: "nim",
     rc: "Nim",
     pp: "nimrod",
-    d: "Nim is ...",
+    d: "Nim is a statically typed compiled systems programming language. It has a low barrier to entry to offer powerful features that are absent in other languages, such as the foreign function interface (FFI).",
     f: 2004,
-    v: [], 
+    v: ["0.8.8 (2010)"], 
+    r: "For being an efficient, expressive, elegant, and elevated version of older languages such as Python, Ada, or Modula.",
+    u: "Act as a new-and-improved Python, Ada, or Modula, and help with game development, web servers, kernels, and command-line applications.",
+    t: ["Multi-paradigm", "Concurrent", "Object-Oriented", "Functional", "Metaprogramming", "Systems programming"]
   },
   {
     i: "ocaml",
@@ -700,7 +714,7 @@ var langs = [
     i: "parasail",
     n: "ParaSail",
     h: "https://forge.open-do.org/plugins/moinmoin/parasail/",
-    d: "OCaml is ...",
+    d: "Parasail is ...",
     v: [],
   },
   {
