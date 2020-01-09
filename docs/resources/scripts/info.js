@@ -721,8 +721,8 @@ var langs = [
     d: "ParaSail, or Parallel Specification and Implementation Language is meant to help impelement parallel applications.",
     f: 2009,
     v: ["6.5 (2015)", "7.0 (2016)","8.0 (2019)", "8.4 (2019)"],
-    u: "Implementing Parallel Applications",
-    r: "Region-based garbage collection and parallelism",
+    u: "Implementing parallel applications.",
+    r: "Region-based garbage collection and parallelism.",
     t: ["Concurrent", "Imperative", "Object-Oriented", "Parallelism"]
   },
   {
@@ -733,9 +733,12 @@ var langs = [
     g: "perl",
     rc: "Perl",
     pp: "perl",
-    d: "Perl is ...",
+    d: "Perl is a general-purpose Unix scripting language.",
     f: 1987,
-    v: [],
+    v: ["Perl 1.0 (1987)", "Perl 5.0 (1994)", "Perl 5.30 (2019)"],
+    r: `Its regular expressions and string parsing abilities, its lack of readibility, and its acting as a "glue language", or a language that is meant to write and manage programs that connect different software together.`,
+    u: "System administration, network programming, finance, bioinformatics, and CGI.",
+    t: ["Multi-paradigm", "Functional", "Imperative", "Object-Oriented", "Reflective", "Dynamic"]
   },
   {
     i: "php",
