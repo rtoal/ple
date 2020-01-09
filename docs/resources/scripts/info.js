@@ -538,6 +538,7 @@ var langs = [
     pp: "k",
     d: "K is an array-oriented language influenced by APL.",
     f: 1993,
+    v: [], 
     r: "Array operations, expressive syntax",
     u: "Finance",
     t: ["Array-based", "Dynamic"]
@@ -580,6 +581,7 @@ var langs = [
     d:
       "LOLCODE (capitalized because cats talk in all caps) is an esoteric programming language with a syntax inspired by lolspeak.",
     f: 2007,
+    v: [], 
     r: "lolcats-inspired keywords and grammar",
     t: ["Esoteric", "Imperative"]
   },
@@ -605,6 +607,7 @@ var langs = [
     rc: "Luna",
     d: "Luna is a data processing and visualization environment",
     f: 2015,
+    v: [],
     r: "Immediate feedback as you type via interactive programming, and automatic parallelism via functional programming",
     u: "Data science, Iot, bioinformatics, graphic design, and architecture",
     t: ["Visual programming", "Type inference", "Object-oriented", "Statically typed", "Purely functional"],
@@ -635,6 +638,7 @@ var langs = [
     pp: "mercury",
     d: "Mercury is a logic programming langugae meant to create large-scale applications",
     f: 1995,
+    v: [], 
     t: ["Static", "Logic Programming", "Dynamically allocated memory", "Strongly typed"]
   },
   {
@@ -644,33 +648,49 @@ var langs = [
     w: "Miranda_(programming_language)",
     d: "Miranda is a non-strict, polymorphic functional prograqmming language",
     f: 1986,
+    v: [], 
     t: ["Polymorphic", "Functional", "Non-Strict", "Dynamic"],
   },
   {
     i: "nasm",
     n: "NASM",
-    rc: "NASM",
-    w: "Netwide_Assembler",
     h: "http://www.nasm.us/",
-    d: "NASM is ..."
+    w: "Netwide_Assembler",
+    rc: "NASM",
+    f: 1996, 
+    v: ["0.90 (1996)", "2.00 (2007)",  "2.07 (2009)"], 
   },
   {
     i: "nemerle",
     n: "Nemerle",
     h: "http://www.nemerle.org/",
-    d: "Nemerle is ..."
+    g: "nemerle", 
+    rc: "Nemerle",
+    pp: "nemerle",
+    f: 2003,
+    v: [],
   },
   {
     i: "nim",
     n: "Nim",
     h: "http://nim-lang.org/",
-    d: "Nim is ..."
+    w: "Nim",
+    g: "nim",
+    rc: "Nim",
+    pp: "nimrod",
+    f: 2004,
+    v: [], 
   },
   {
     i: "ocaml",
     n: "OCaml",
     h: "https://ocaml.org/",
-    d: "OCaml (also known as Objective Caml) is ..."
+    w: "OCaml",
+    g: "ocaml",
+    rc: "OCaml",
+    pp: "ocaml",
+    f: 1996,
+    v: [],
   },
   {
     i: "parasail",
