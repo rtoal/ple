@@ -676,10 +676,10 @@ var langs = [
     g: "nemerle", 
     rc: "Nemerle",
     pp: "nemerle",
-    d: "Nemerle is a general-purpose, multi-paradigm programming language whose purpose is to help create platforms built on Common Language Infrastructures, such as .NET and Mono. Nemerle's developers were hired by JetBrains to create the language workbench, Nitra. Nitra will likely be used to create newer versions of Nemerle",
+    d: "Nemerle is a general-purpose, multi-paradigm programming language whose purpose is to help create platforms built on Common Language Infrastructures, such as .NET and Mono.",
     f: 2003,
     v: ["0.9.3 (2006)", "1.0.4 (2019)"],
-    r: "Its ability to be both functional and object-oriented.",
+    r: "Nemerle's developers were hired by JetBrains to create the language workbench, Nitra. Nitra will likely be used to create newer versions of Nemerle.",
     u: "Helps create platforms on Common Language Infrastructures.",
     t: ["Functional", "Object-Oriented", "Metaprogramming", "Imperative"]
   },
@@ -696,7 +696,7 @@ var langs = [
     v: ["0.8.8 (2010)"], 
     r: "For being an efficient, expressive, elegant, and elevated version of older languages such as Python, Ada, or Modula.",
     u: "Act as a new-and-improved Python, Ada, or Modula, and help with game development, web servers, kernels, and command-line applications.",
-    t: ["Multi-paradigm", "Concurrent", "Object-Oriented", "Functional", "Metaprogramming", "Systems programming"]
+    t: ["Multi-paradigm", "Compile-Concurrent", "Object-Oriented", "Functional", "Metaprogramming", "Systems programming"]
   },
   {
     i: "ocaml",
@@ -706,16 +706,24 @@ var langs = [
     g: "ocaml",
     rc: "OCaml",
     pp: "ocaml",
-    d: "OCaml is ...",
+    d: "OCaml is an implementation of ML ",
     f: 1996,
-    v: [],
+    v: ["1.05 (1997)", "2.00 (1998)", "3.08 (2004)", "4.09 (2019)"],
+    r: "Its large standard library which proves useful for many applications written in Python and Perl, and its modularity and its being object-oriented serves well to support large-scale applications.",
+    u: "Initially, it's OCaml's main purpose was to support symbolic computation, e.g., automatic theorem proving, creating compilers and interpreters. It also ended up being widely used for teaching programming and supporting project, found in large code bases hosted by companies such as Microsoft and IBM.",
+    t: ["Multi-paradigm", "Functional", "Imperative", "Object-Oriented", "Pattern matching", "Polymorphic"]
   },
   {
     i: "parasail",
     n: "ParaSail",
     h: "https://forge.open-do.org/plugins/moinmoin/parasail/",
-    d: "Parasail is ...",
-    v: [],
+    w: "ParaSail",
+    d: "ParaSail, or Parallel Specification and Implementation Language is meant to help impelement parallel applications.",
+    f: 2009,
+    v: ["6.5 (2015)", "7.0 (2016)","8.0 (2019)", "8.4 (2019)"],
+    u: "Implementing Parallel Applications",
+    r: "Region-based garbage collection and parallelism",
+    t: ["Concurrent", "Imperative", "Object-Oriented", "Parallelism"]
   },
   {
     i: "perl",
