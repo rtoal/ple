@@ -747,9 +747,12 @@ var langs = [
     g: "php",
     rc: "PHP",
     pp: "php",
-    d: "PHP is ...",
+    d: "PHP is a server-side scripting language, whose original purpose was to help support web development. It stands for hypertext pre-processor.",
     f: 1995,
-    v: [],
+    v: ["1.0 (1995)", "2.0 (1997)", "4.3 (2002)", "5.3 (2009)", "5.5 (2013)", "7.4 (2019)"],
+    r: "Has built-in support for working with MySQL and is used to support over 20 million websites and internet applications.",
+    u: "Web development, standalone graphical applications, and robotics.",
+    t: ["Imperative", "Functional", "Object-Oriented", "Procedural", "Reflective", "Dynamic"]
   },
   {
     i: "purescript",
