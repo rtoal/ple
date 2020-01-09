@@ -759,8 +759,12 @@ var langs = [
     n: "PureScript",
     h: "http://www.purescript.org/",
     g: "purescript",
-    d: "PureScript is ...",
-    v: [],
+    d: "PureScript is a strongly-typed functional programming language that compiles to Javascript.",
+    f: 2013,
+    v: ["0.13.5 (2019)"],
+    r: "An alternative Haskell that compiles to JavaScript",
+    u: "Web development, web servers, and web applications.",
+    t: ["Functional", "Polymorphic", "Pattern matching"]
   },
   {
     i: "python",
