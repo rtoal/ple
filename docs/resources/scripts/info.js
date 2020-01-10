@@ -786,8 +786,12 @@ var langs = [
     i: "quorum",
     n: "Quorum",
     h: "https://quorumlanguage.com/",
-    d: "Quorum is ...",
-    v: []
+    d: "Quorum is a statically typed, object-oriented programming language, which was written in order to maximize the human capability to program. This was done after gathering research to see which qualities from a vast array of programming languages improved the human aptitude to be able to learn and get good at programming.",
+    f: 2016,
+    r: "Being the first evidence-oriented programming language, meaning it is written based on research comparing different computer programming language's performance in relation to human efficacy factors.",
+    u: "Education to make programming accessible to all.",
+    v: ["2.4.0 (2019)", "1.0.0 (2016)"],
+    t: ["Object-Oriented"]
   },
   {
     i: "r",
@@ -811,9 +815,12 @@ var langs = [
     w: "Racket",
     g: "racket",
     rc: "Racket",
-    d: "Racket is ...",
+    d: "Racket is a general-purpose programming language whose purpose is to allow programmers to write their own language.",
     f: 1995,
-    v: [],
+    v: ["Version 5.0 (2010)", "Version 7.5 (2019)"],
+    r: "It's the world's first ecosystem for language-oriented programming.",
+    u: "Creating other programming languages, scripting, computer science education, and research.",
+    t: ["Multi-paradigm", "Functional", "Imperative", "Metaprogramming", "Object-Oriented", "Reflective", "Dynamic"]
   },
   {
     i: "roy",
