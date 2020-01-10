@@ -900,9 +900,12 @@ var langs = [
     h: "http://www.selflanguage.org/",
     w: "Self",
     rc: "Self",
-    d: "Self is ...",
+    d: "Self is an object-oriented, prototype-based programming language modeled from Smalltalk.",
     f: 1987,
-    v: []
+    r: "For being prototype-based and having high performance.",
+    u: "It began as a better version of Smalltalk and evolved as an experimental test system for language design.",
+    v: ["2017.1 (2017)"],
+    t: ["Object-oriented"]
   },
   {
     i: "smalltalk",
@@ -941,9 +944,12 @@ var langs = [
     h: "http://snap.berkeley.edu/",
     w: "Snap!",
     rc: "Snap!",
-    d: "Snap is ...",
+    d: "Snap! is block-based, object-oriented programming language whose aim is to act as an educational programming language to peak people's interest in computer science.",
     f: 2011,
-    v: []
+    u: "Replace Scratch.",
+    r: "Offers anonymous and nested functions, high order functions, prototyping, and 2D-lists. These are all features that Scratch lacks.",
+    v: ["5.1.1 (2019)"],
+    t: ["Block-Based programming",  "Event-Driven", "Visual", "Object-Oriented", "Prototype-oriented"]
   },
   {
     i: "swift",
