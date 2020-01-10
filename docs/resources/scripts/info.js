@@ -797,9 +797,12 @@ var langs = [
     g: "r",
     rc: "R",
     pp: "r",
-    d: "R is ...",
+    d: "R is an object-oriented, functional programming language whose aim is to support statistical computing and assist in data mining and data analysis.",
     f: 1993,
-    v: []
+    v: ["0.49 (1997)", "1.0.0 (2000)", "2.0.0 (2004)", "3.0.0 (2013)", "3.6.2 (2019)"],
+    r: "Statistical graphics",
+    u: "Data science and statistical analysis.",
+    t: ["Multi-paradigm", "Imperative", "Reflective", "Functional", "Object-Oriented"]
   },
   {
     i: "racket",
