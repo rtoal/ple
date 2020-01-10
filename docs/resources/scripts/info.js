@@ -858,9 +858,12 @@ var langs = [
     g: "rust",
     rc: "Rust",
     pp: "rust",
-    d: "Rust is ...",
+    d: "Rust is a functional, statically-typed programming language. It is meant to be act as a kind of new-and-improved version of C++, but with beter memory saftety, wildst still maintaining high performance time.",
     f: 2010,
-    v: []
+    v: ["0.1 (2012)","1.40.0 (2019)"],
+    r: "Listed as Stack Overflow's most loved programming language since 2016.",
+    u: "It is meant to be used to create, maintain, and perserve large systems with its memory layout and concurrency.",
+    t: ["Multi-paradigm", "Concurrent", "Functional", "Imperative", "System language"]
   },
   {
     i: "scala",
@@ -870,9 +873,12 @@ var langs = [
     g: "scala",
     rc: "Scala",
     pp: "scala",
-    d: "Scala is ...",
+    d: "Scala is a statically-typed, functional, and object-oriented langauge, whose source code can be compiled into Java bytecode to be eecuted on Java virtual machines. Scala can also be compiled into javascript using the Scala.js compiler to be run on Node.",
     f: 2003,
-    v: []
+    v: ["1.0.0-b2 (2003)", "1.1.1 (2004)", "2.13.0 (2019)"],
+    r: "Being highly scalable.",
+    u: "Acting to replace and resolve many of the flaws of Java",
+    t: ["Multi-paradigm", "Concurrent", "Functional", "Imperative", "Object-Oriented", "Pattern matching"]
   },
   {
     i: "scratch",
@@ -881,9 +887,12 @@ var langs = [
     w: "Scratch",
     rc: "Scratch",
     pp: "scratch",
-    d: "Scratch is ...",
+    d: "Scratch is a educational, block-based, visual programming language whose primary aim is to teach people the general paradigms associated with programming by means of a visual and interactive coding interface.",
     f:  2007,
-    v: []
+    v: ["Scratch 1.0 (2007)", "Scratch 3.0 (2019)"],
+    r: "Educational, fun, and easy to learn to create games, art, and simulations.",
+    u: "Computer-science education",
+    t: ["Block-Based programming",  "Event-Driven", "Visual"]
   },
   {
     i: "self",
