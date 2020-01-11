@@ -975,9 +975,12 @@ var langs = [
     g: "tcl",
     rc: "Tcl",
     pp: "tcl",
-    d: "Tcl is ...",
+    d: "Tcl is a simple, yet powerful, dynamic programming language.",
     f: 1988,
-    v: []
+    v: ["8.0 (1997)", "8.6.10 (2019)"],
+    r: "For being very compact.",
+    u: "It is often used to embed into C applications for rapid prototyping, scripted applications, GUIs, and testing. It can also be purely used to create web and desktop applications, networking, and administration.",
+    t: ["Event-Driven", "Functional", "Imperative", "Object-Oriented", "Dynamic"]
   },
   {
     i: "typescript",
@@ -987,7 +990,10 @@ var langs = [
     rc: "TypeScript",
     d: "TypeScript is a statically typed superset of JavaScript",
     f: 2012,
-    v: []
+    v: ["1.1.0.1 (2014)","3.7.4 (2019)"],
+    r: "Adding optional static typing to JavaScript.",
+    u: "To support large applications, specifically those written in JavaScript for both server-side and client-side exection.",
+    t: ["Functional", "Imperative", "Object-Oriented"]
   },
   {
     i: "whiley",
@@ -997,7 +1003,9 @@ var langs = [
     rc: "Whiley",
     f: 2010,
     d: "Whiley is ...",
-    v: []
+    v: ["0.4.2 (2018)"],
+    
+    t: ["Experimental", "Functional", "Imperative"]
   },
   {
     i: "zig",
