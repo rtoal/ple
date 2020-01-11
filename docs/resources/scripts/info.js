@@ -1001,10 +1001,11 @@ var langs = [
     h: "http://whiley.org/",
     w: "Whiley_(programming_language)",
     rc: "Whiley",
-    f: 2010,
-    d: "Whiley is ...",
-    v: ["0.4.2 (2018)"],
-    
+    d: "Whiley is a functional programming language that uses flow-sensitive typing. Its purpose was to allow programmers to write scripts to test and eliminate bugs from their existing code.",
+    f: 2009,
+    v: ["v0.2.7 (2010)", "v0.4.2 (2018)"],
+    r: "Precondition, postconditions, and loop invariants to act as specifications to achieve the language's general aim to help test and eliminate bugs from existing code.",
+    u: "Testing and debugging",
     t: ["Experimental", "Functional", "Imperative"]
   },
   {
@@ -1013,8 +1014,12 @@ var langs = [
     h: "https://ziglang.org/",
     g: "zig",
     rc: "Zig",
-    d: "Zig is ...",
-    v: []
+    d: "Zig is a general-purpose, statically typed systems language.",
+    f: 2015,
+    v: ["0.6.0 (2020)", "0.1.1 (2017)"],
+    r: "Systems programming made easy.",
+    u: "Creating, maintaining, and managing large systems software.",
+    t: ["Imperative"]
   },
 ];
 
