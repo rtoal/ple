@@ -939,7 +939,7 @@ var langs = [
     t: ["Functional"]
   },
   {
-    i: "snap!",
+    i: "snap",
     n: "Snap!",
     h: "http://snap.berkeley.edu/",
     w: "Snap!",
