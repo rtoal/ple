@@ -10,6 +10,7 @@ Enjoy!
 
 - [JavaScript](js.md)
 - [Python](python.md)
+- [Ruby](ruby.md)
 - [Java](java.md)
 - [Swift](swift.md)
 - [Haskell](haskell.md)
