@@ -8,11 +8,11 @@ Most are the answers are covered in the [book](http://rtoal.github.io/ple/) or m
 
 Enjoy!
 
-* [JavaScript](js)
-* [Python](python)
-* [Java](java)
-* [Swift](swift)
-* [Haskell](haskell)
-* [C++](cpp)
-
-
+- [JavaScript](js.md)
+- [Python](python.md)
+- [Java](java.md)
+- [Swift](swift.md)
+- [Haskell](haskell.md)
+- [C++](cpp.md)
+- [Go](go.md)
+- [Erlang](erlang.md)
