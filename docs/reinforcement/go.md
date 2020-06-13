@@ -34,7 +34,7 @@ It is required. There is no such thing as a default package.
 </details>
 
 <details><summary>How do you get the command line arguments in a Go program?</summary>
-  They are in <code>os.Args</code>. (You have to import <code>os</code>.)
+They are in <code>os.Args</code>. (You have to import <code>os</code>.)
 </details>
 
 <details><summary>How do you split a string <code>s</code> on separator <code>sep</code>? How do you join the elements of <code>s</code> with separator <code>sep</code>?</summary>
@@ -53,7 +53,7 @@ Go does not have a conditional expression. You have to use an <code>if</code> st
 </details>
 
 <details><summary>How do you swap the values of two variables?</summary>
-<pre>  
+<pre>
 x, y = y, x
 </pre>
 </details>
@@ -72,23 +72,66 @@ found := false
 </details>
 
 <details><summary>How do you write a while-loop in Go?</summary>
-<pre>  
+<pre>
 for condition { body }
 </pre>
 </details>
 
 <details><summary>How do you iterate through the indices of array <code>a</code>?</summary>
-<pre> 
+<pre>
 for i := range a { body }
 </pre>
 </details>
 
 <details><summary>How do you iterate through the values of array <code>a</code>?</summary>
-<pre>  
+<pre>
 for _, x := range a { body }
 </pre>
 </details>
 
-<details><summary>Question</summary><p>Ans</details>
+<details><summary>Name all of the built-in integer types in Go. Include all aliases.</summary>
+<pre>
+int8(byte)   int16   int32(rune)   int64
+uint8   uint16   uint32   uint64
+int   uint   uintptr
+</pre>
+</details>
 
-<details><summary>Question</summary><p>Ans</details>
+<details><summary>Name all of the built-in floating point and complex number types in Go.</summary>
+<pre>
+float32   float64
+complex64   complex128
+</pre>
+</details>
+
+<details><summary>For each of the following types, give their default values: <code>int32</code>, <code>complex128</code>, <code>bool</code>, <code>string</code>.</summary>
+<pre>
+0
+0+0i
+false
+""
+</pre>
+</details>
+
+<details><summary>What is the value of <code>len("こんにちは世界")</code>? Why is it not 7? What expression, using <code>len</code> and the string <code>"こんにちは世界"</code>, does give 7?</summary>
+<code>len("こんにちは世界") is 21 because the UTF-8 encoding of the string has 21 bytes (each rune happens to be encoded in three bytes). The expression <code>len([]rune("こんにちは世界"))</code> is 7, because casting a string to a rune slice will give you a slice with each rune (code point).
+</details>
+
+<details><summary>Name the 8 composite types of Go.</summary>
+Arrays, functions, structs, maps, pointers, slices, interfaces, channels.
+</details>
+
+<details><summary>Question</summary>
+</details>
+
+<details><summary>Question</summary>
+</details>
+
+<details><summary>Question</summary>
+</details>
+
+<details><summary>Question</summary>
+</details>
+
+<details><summary>Question</summary>
+</details>
