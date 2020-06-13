@@ -114,24 +114,42 @@ false
 </details>
 
 <details><summary>What is the value of <code>len("こんにちは世界")</code>? Why is it not 7? What expression, using <code>len</code> and the string <code>"こんにちは世界"</code>, does give 7?</summary>
-<code>len("こんにちは世界") is 21 because the UTF-8 encoding of the string has 21 bytes (each rune happens to be encoded in three bytes). The expression <code>len([]rune("こんにちは世界"))</code> is 7, because casting a string to a rune slice will give you a slice with each rune (code point).
+<code>len("こんにちは世界")</code> is 21 because the UTF-8 encoding of the string has 21 bytes (each rune happens to be encoded in three bytes). The expression <code>len([]rune("こんにちは世界"))</code> is 7, because casting a string to a rune slice will give you a slice with each rune (code point).
 </details>
 
 <details><summary>Name the 8 composite types of Go.</summary>
 Arrays, functions, structs, maps, pointers, slices, interfaces, channels.
 </details>
 
-<details><summary>Question</summary>
+<details><summary>What are the default values of the types <code>[3]bool</code>, <code>[]string</code>, <code>struct {X int; Y string}</code>, <code>map[string][float64]</code>?</summary>
+<pre>
+[false false false]
+[]
+{0 ""}
+[]
+</pre>
 </details>
 
-<details><summary>Question</summary>
+<details><summary>What are the default values of the types <code>func(int)int</code>, <code>*complex128*</code>, <code>interface{}</code>, <code>chan bool</code>?</summary>
+<pre>
+nil
+nil
+nil
+nil
+</pre>
 </details>
 
-<details><summary>Question</summary>
+<details><summary>(TODO: Question about multiple return values)</summary>
 </details>
 
-<details><summary>Question</summary>
+<details><summary>(TODO: Question about named return values)</summary>
 </details>
 
-<details><summary>Question</summary>
+<details><summary>(TODO: Question about maps)</summary>
 </details>
+
+<details><summary>Go doesn’t have a <code>new</code> operator to allocate memory dynamically as does C++ and Java. What do you do instead to allocate memory? Why does this work?</summary>
+You simply write a pointer to an expression, e.g., <code>&amp;Tree{value, nil}</code>. Although this seems to be creating a pointer to a temporary value in the current stack frame, Go will escape it to the heap if necessary.
+</details>
+
+Many more problems to come
