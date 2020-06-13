@@ -23,7 +23,7 @@ main
 </pre>
 </details>
 
-<details><summary>What line of code writes `"Hello, world?`?</summary>
+<details><summary>What line of code writes <code>"Hello, world?</code>?</summary>
 <pre>
 fmt.Printf("Hello, world")
 </pre>
@@ -34,22 +34,22 @@ It is required. There is no such thing as a default package.
 </details>
 
 <details><summary>How do you get the command line arguments in a Go program?</summary>
-  They are in `os.Args`. (You have to import `os`.)
+  They are in <code>os.Args</code>. (You have to import <code>os</code>.)
 </details>
 
-<details><summary>How do you split a string `s` on separator `sep`? How do you join the elements of `s` with separator `sep`?</summary>
+<details><summary>How do you split a string <code>s</code> on separator <code>sep</code>? How do you join the elements of <code>s</code> with separator <code>sep</code>?</summary>
 <pre>
 strings.Split(s, sep)
 strings.Join(s, sep)
 </pre>
 </details>
 
-<details><summary>How do you pronounce the type `[]int`?</summary>
+<details><summary>How do you pronounce the type <code>[]int</code>?</summary>
 Slice of integers.
 </details>
 
 <details><summary>What does the conditional expression look like in Go?</summary>
-Go does not have a conditional expression. You have to use an `if` statement.
+Go does not have a conditional expression. You have to use an <code>if</code> statement.
 </details>
 
 <details><summary>How do you swap the values of two variables?</summary>
@@ -58,7 +58,7 @@ x, y = y, x
 </pre>
 </details>
 
-<details><summary>Show four different syntaxes for declaring a local variable `found` with initial value `false`.</summary>
+<details><summary>Show four different syntaxes for declaring a local variable <code>found</code> with initial value <code>false</code>.</summary>
 <pre>
 var found bool
 var found bool = false
@@ -77,13 +77,13 @@ for condition { body }
 </pre>
 </details>
 
-<details><summary>How do you iterate through the indices of array `a`?</summary>
+<details><summary>How do you iterate through the indices of array <code>a</code>?</summary>
 <pre> 
 for i := range a { body }
 </pre>
 </details>
 
-<details><summary>How do you iterate through the values of array `a`?</summary>
+<details><summary>How do you iterate through the values of array <code>a</code>?</summary>
 <pre>  
 for _, x := range a { body }
 </pre>
