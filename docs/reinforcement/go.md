@@ -8,12 +8,12 @@ Here are a set of problems designed to help you reinforce and retain some useful
 Google, 2009.
 </details>
 
-<details><summary>What is the url of the Go Language Home Page?</summary>
-https://golang.org
+<details><summary>What kind of animal is the mascot for Go?</summary>
+A gopher
 </details>
 
 <details><summary>What kinds of problems was Go crated to solve?</summary>
-Large scale (Google-sized) problems, running on distributed systems that must be efficient and reliable.
+Large scale “Google-sized” problems, running on distributed systems that must be efficient and reliable.
 </details>
 
 <details><summary>Go programs begin by calling a function called ________________ inside a package called ________________.</summary>
@@ -68,12 +68,12 @@ found := false
 </details>
 
 <details><summary>Can a variable ever be underfined in Go?</summary>
-  No, if a variable is not explictly initialized in code, Go will initialize it with the zero-value of its type.
+No, if a variable is not explictly initialized in code, Go will initialize it with the zero-value of its type.
 </details>
 
 <details><summary>How do you write a while-loop in Go?</summary>
 <pre>
-for condition { body }
+for <i>condition</i> { <i>body</i> }
 </pre>
 </details>
 
@@ -130,7 +130,7 @@ Arrays, functions, structs, maps, pointers, slices, interfaces, channels.
 </pre>
 </details>
 
-<details><summary>What are the default values of the types <code>func(int)int</code>, <code>*complex128*</code>, <code>interface{}</code>, <code>chan bool</code>?</summary>
+<details><summary>What are the default values of the types <code>func(int)int</code>, <code>\*complex128</code>, <code>interface{}</code>, <code>chan bool</code>?</summary>
 <pre>
 nil
 nil
@@ -139,17 +139,121 @@ nil
 </pre>
 </details>
 
-<details><summary>(TODO: Question about multiple return values)</summary>
+<details><summary>Give a Go function called <code>DivRem</code> which accepts two integers, <code>x</code> and <code>y</code>, and returns their integer quotient and integer remainder, respectively. Return the values in a single return statement.</summary>
+<pre>
+func DivRem(x, y int) (int, int) {
+    return x / y, x % y
+}
+</pre>
 </details>
 
-<details><summary>(TODO: Question about named return values)</summary>
+<details><summary>Give a Go function called <code>DivRem</code> which accepts two integers, <code>x</code> and <code>y</code>, and returns their integer quotient and integer remainder, respectively. Use named return values.</summary>
+<pre>
+func DivRem(x, y int) (quotent int, remainder int) {
+    quotient = x / y
+    remainder = x % y
+    return
+}
+</pre>
 </details>
 
-<details><summary>(TODO: Question about maps)</summary>
+<details><summary>Give an expression for a map in which <code>"Dog"</code> and <code>"Rat"</code> mapped to <code>true</code> but <code>"Cat"</code> mapped to <code>false</code>.</summary>
+<pre>
+map[string]bool{"Dog": true, "Rat": true, "Cat": false}
+</pre>
+</details>
+
+<details><summary>How do you add or update the corresponding value at key <code>x</code> in map <code>p</code> to be 21?</summary>
+p["x"] = 21
+</details>
+
+<details><summary>How do you print each of the key-value pairs of map <code>p</code>, one pair per line?</summary>
+<pre>
+for k, v := range p {
+    fmt.Println(k, v)
+}
+</pre>
+</details>
+
+<details><summary>Can we ever write an expression like <code>return (x, y)</code> in Go? Why or why not?</summary>
+No. Go does not have tuples (nor a comma operator), so the expression <code>(, y)</code> is a syntax error. You <em>can</em> however write <code>return x, y</code>. But note return multiple values is absolutely <em>not</em> the same as returning a tuple.
 </details>
 
 <details><summary>Go doesn’t have a <code>new</code> operator to allocate memory dynamically as does C++ and Java. What do you do instead to allocate memory? Why does this work?</summary>
 You simply write a pointer to an expression, e.g., <code>&amp;Tree{value, nil}</code>. Although this seems to be creating a pointer to a temporary value in the current stack frame, Go will escape it to the heap if necessary.
 </details>
 
-Many more problems to come
+<details><summary>How do you write the slice containing the values <code>"thelma"</code> and <code>"louise"</code>, in that order?</summary>
+<pre>
+[]string{"thelma", "louise"}
+</pre>
+</details>
+
+<details><summary>How do you get the length of a slice <code>a</code>? How do you get its capacity?</summary>
+<pre>
+len(a)
+cap(a)
+</pre>
+</details>
+
+<details><summary>What do the expressions <code>make([]bool, 5)</code> and <code>make([]bool, 5, 8)</code> do?</summary>
+The first makes a slice whose length and capacity are both 5. The second makes a slice with length 5 and capacity 8.
+</details>
+
+<details><summary>How does the value <code>make([]int, 5)</code> display when printed with <code>fmt.Println</code>?</summary>
+<pre>
+[0 0 0 0 0]
+</pre>
+</details>
+
+<details><summary>Given <code>var a [10]int; b := a[5:7]; c := a[2:6];</code>, what are the lengths and capacities of <code>b</code> and <code>c</code>?</summary>
+Length of b = 2<br>
+Capacity of b = 5<br>
+Length of c = 4<br>
+Capacity of c = 8
+</details>
+
+<details><summary>Given integer slices <code>a</code> and <code>b</code>, how do you append the values 5 and 8 to slice <code>s</code>? How do you append all of slice <code>t</code> to slice <code>s</code>?</summary>
+<pre>
+s = append(s, 5, 8)
+s = append(s, t...)
+</pre>
+</details>
+
+<details><summary>How do you copy one array into another?</summary>
+Just assign it with <code>=</code>.
+</details>
+
+<details><summary>If a function is declared to take in a slice parameter, can you pass it an array? Why or why not? If not, how can you get a function operating on a slice to work on your array?</summary>
+No, arrays are not slices. They are not compatible, nor will Go ever implcitly covert an array to a slice. If you have an array <code>a</code>, then pass <code>a[:]</code> to the function.
+</details>
+
+<details><summary>What is the most significant way in which Go interfaces differ from those in Java?</summary>
+In Java, a class must explicitly state that it is implementing an interface; in Go, a struct implements in interface simply by defining the appropriate methods.
+</details>
+
+<details><summary>Define an interface called <code>TripleJumper</code> for objects that can hop, skip, and jump.</summary>
+<pre>
+type TripleJumper interface {
+    Hop()
+    Skip()
+    Jump()
+}
+</pre>
+</details>
+
+<details><summary>Give an expression for a slice containing the values <code>3</code>, <code>"dog"</code>, and <code>true</code>.</summary>
+<pre>
+[]interface{}{3, "dog", true}
+</pre>
+</details>
+
+<details><summary></summary>
+</details>
+
+<details><summary></summary>
+</details>
+
+<details><summary></summary>
+</details>
+
