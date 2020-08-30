@@ -1,6 +1,6 @@
 # Programming Language Explorations
 
-Source code for the examples in <a href="http://rtoal.github.io/ple">a book</a>.
+Source code for the examples in <a href="https://rtoal.github.io/ple">a book</a>.
 
 See the `test.sh` files within the individual directories to see how to build
 and run the examples, most of which are scripts with internal assertions.
