@@ -16,7 +16,9 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. How do you access the third command line argument of a script, run on the command line, with node.js?
 
-1. Name the 7 data types of JavaScript (as of ES2019). Name the 8th that is coming soon.
+1. Name the 8 data types of JavaScript (as of ES2020).
+
+1. What is the difference between `null` and `undefined`?
 
 1. Does JavaScript have separate types for integers and floating point values? If not, how can you tell whether a number is an integer or not?
 
@@ -36,6 +38,8 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. Name all the falsy values in JavaScript.
 
+1. Name all the nullish values in JavaScript.
+
 1. How do you determine the type of an expression at runtime?
 
 1. When should you use `let` and when should you use `const`?
@@ -50,21 +54,29 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. Why is `[1,12] < [1,3]` true but `[1,42] < [1,3]` false?
 
+1. What is the difference between a deep copy and a shallow copy?
+
+1. What is the **spread operator**? Give an example of its use.
+
 1. How do you write an _object_ to the console (beautifully formatted)?
 
 1. Describe how a prototype-based language (like JavaScript) differs from a class-based language (like Java), in terms of thinking about collections of objects that share the same structure and behavior.
 
-1. Properties defined directly within an object are called ________________ properties. Properties of an object accessible on the object’s prototype chain are called ________________ properties.
+1. Properties defined directly within an object are called **\*\***\_\_\_\_**\*\*** properties. Properties of an object accessible on the object’s prototype chain are called **\*\***\_\_\_\_**\*\*** properties.
 
 1. What do we mean when we say arrays are objects in JavaScript?
 
 1. Describe how `splice` works.
 
-1. What is the **spread operator**? Give an example of its use.
+1. Why is using a spread operator inside `[` and `]` different from using it inside `{` and `}`?
 
 1. You might often see the expression `a.slice()`, for some array `a`. What does this expression do, exactly?
 
 1. How does one best create an array of size 100 in which every element is 0? (Do not write a loop.)
+
+1. How does one create an array of 50 random numbers with a loop?
+
+1. How does one create an array of 50 random number without a loop?
 
 1. Write an equivalent expression to `a.concat(b)`, where `a` and `b` are arrays, using spreads.
 
@@ -87,6 +99,8 @@ Here are a set of problems designed to help you reinforce and retain some useful
 1. A function is called **higher-order** if it does at least one of two things. What two things?
 
 1. What do the array methods `map`, `filter`, `every`, `some`, `find`, and `findIndex` do?
+
+1. Write an expression to compute the product of odd numbers in an arrays, using `filter`, `map`, and `reduce`?
 
 1. Write the function `function f(x = 3) { return x * y }` (where `y` is some global variable) without using a default parameter.
 
@@ -116,7 +130,7 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 1. Do JavaScript functions exhibit shallow binding or deep binding?
 
-1. Given `function* f() {yield 1; yield 2; yield 3;}`, what is wrong with writing `for (let i of f) {console.log(i)}`? 
+1. Given `function* f() {yield 1; yield 2; yield 3;}`, what is wrong with writing `for (let i of f) {console.log(i)}`?
 
 1. Why must (pretty much all reasonable) _methods_ be non-arrow functions?
 
@@ -175,6 +189,3 @@ Here are a set of problems designed to help you reinforce and retain some useful
 1. What is the difference between `Object.keys` and `Object.getOwnPropertyNames`?
 
 1. How does `Object.entries` work?
-
-
-
