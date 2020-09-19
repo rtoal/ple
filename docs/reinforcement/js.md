@@ -94,7 +94,7 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>Since strings can be very large, you might think strings would be reference types in JavaScript. After all, they are reference types in Java. But in JavaScript, they are considered primitive (value) types. This might lead you to believe JavaScript is necessarily slow because strings are always copied on assignment. However, this is not the case! Why?</summary>You don’t need to copy them because they are immutable! So behind the scenes they are probably implemented as references, but the programmer doesn’t care</details>
 
-<details><summary>Write an IIFE that applies, to the argument 100, the (anonymous, arrow) function that squares its argument.</summary><code>(x => x ** 2)(100)</details>
+<details><summary>Write an IIFE that applies, to the argument 100, the (anonymous, arrow) function that squares its argument.</summary><code>(x => x ** 2)(100)</code></details>
 
 <details><summary>In the function definition <code>function f(x, y) { return [x, y]; }</code>, what do we call <code>x</code> and <code>y</code>?</summary>Parameters</details>
 
