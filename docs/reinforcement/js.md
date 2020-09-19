@@ -14,7 +14,7 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>How do you change the text of an element in a web browser document?</summary><code><i>element</i>.innerText = <i>sometext</i></code></details>
 
-<details><summary>How do you access the third command line argument of a script, run on the command line, with node?</summary><code>process.argv[2]</code></details>?
+<details><summary>How do you access the third command line argument of a script, run on the command line, with node?</summary><code>process.argv[2]</code></details>
 
 <details><summary>Name the 8 data types of JavaScript (as of ES2020).</summary>Undefined, Null, Boolean, Number, String, Symbol, BigInt, Object</details>
 
@@ -50,7 +50,7 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>What is the difference between <code>p.x</code> and <code>p[x]</code>?</summary><code>p.x</code> accesses the property of <code>p</code> named <code>"x"</code>; <code>p[x]</code> accesses the property of <code>p</code> whose name is the value stored in the variable <code>x</code></details>
 
-<details><summary>If <code>x === 'y'</code> then what is <code>{ x: 3, [x]: 5 }</code>?</summary></details>
+<details><summary>If <code>x === 'y'</code> then what is <code>{ x: 3, [x]: 5 }</code>?</summary><code>{x: 3, y: 5}</code></details>
 
 <details><summary>Why is <code>[1,12] < [1,3]</code> true but <code>[1,42] < [1,3]</code> false?</summary></details>
 
@@ -62,23 +62,27 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>Describe how a prototype-based language (like JavaScript) differs from a class-based language (like Java), in terms of thinking about collections of objects that share the same structure and behavior.</summary></details>
 
-<details><summary>Properties defined directly within an object are called ________________ properties. Properties of an object accessible on the object’s prototype chain are called ________________ properties.</summary></details>
+<details><summary>Properties defined directly within an object are called ________________ properties. Properties of an object accessible from the object’s prototype chain are called ________________ properties.</summary>Own; inherited</details>
 
-<details><summary>What do we mean when we say arrays are objects in JavaScript?</summary></details>
+<details><summary>If <code>p == {x: 1, y: 8}</code> what is <code>Object.entries(x)</code>?</summary><code>[ [x, 1], [y, 8]]</details>
 
-<details><summary>Describe how <code>splice</code> works.</summary></details>
+<details><summary>If <code>a == ["x", "y"]</code> what is <code>a.entries()</code>?</summary><code>An iterator that produces <code>[0, "x"]</code> and then <code>[1, "y"]</code></details>
+
+<details><summary>What do we mean when we say arrays are objects in JavaScript?</summary>All types other than the seven primitive types in JavaScript are objects, hence arrays are objects</details>
+
+<details><summary>Describe how <code>splice</code> works.</summary>It deletes zero or more elements from a given position in an array and optionally replaces these values with (an arbitrary nunber of) new elements. It returns the deleted elements in a new array</details>
 
 <details><summary>Why is using a spread operator inside <code>[</code> and <code>]</code> different from using it inside <code>{</code> and <code>}</code>?</summary></details>
 
-<details><summary>You might often see the expression <code>a.slice()</code>, for some array <code>a</code>. What does this expression do, </summary></details>exactly?
+<details><summary>You might often see the expression <code>a.slice()</code>, for some array <code>a</code>. What does this expression do, exactly?</summary>It makes a shallow copy of <code>a</code></details>
 
-<details><summary>How does one best create an array of size 100 in which every element is 0? (Do not write a loop.)</summary></details>
+<details><summary>How does one best create an array of size 100 in which every element is 0? (Do not write a loop.)</summary><code>Array(100).fill(0)</code></details>
 
-<details><summary>How does one create an array of 50 random numbers with a loop?</summary></details>
+<details><summary>How does one create an array of 50 random numbers with a loop?</summary><code>const a = []; while (a.length < 50) { a.push(Math.random()) }</code></details>
 
 <details><summary>How does one create an array of 50 random number without a loop?</summary></details>
 
-<details><summary>Write an equivalent expression to <code>a.concat(b)</code>, where <code>a</code> and <code>b</code> are arrays, using spreads.</summary></details>
+<details><summary>Write an equivalent expression to <code>a.concat(b)</code>, where <code>a</code> and <code>b</code> are arrays, using spreads.</summary><code>[...a, ...b]</code></details>
 
 <details><summary><code>a.push()</code> mutates <code>a</code>. How do you do a non-mutating “push“?</summary></details>
 
@@ -88,15 +92,15 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>Why do you think the JavaScript designer decided that objects should be reference types?</summary></details>
 
-<details><summary>Since strings can be very large, you might think strings would be reference types in JavaScript. After all, they are reference types in Java. But in JavaScript, they are considered primitive (value) types. This might lead you to believe JavaScript is necessarily slow because strings are always copied on assignment. However, this is not the case! Why?</summary></details>
+<details><summary>Since strings can be very large, you might think strings would be reference types in JavaScript. After all, they are reference types in Java. But in JavaScript, they are considered primitive (value) types. This might lead you to believe JavaScript is necessarily slow because strings are always copied on assignment. However, this is not the case! Why?</summary>You don’t need to copy them because they are immutable! So behind the scenes they are probably implemented as references, but the programmer doesn’t care</details>
 
-<details><summary>Write an IIFE that applies the (anonymous, arrow) function that squares its argument to the value </summary></details>100.
+<details><summary>Write an IIFE that applies, to the argument 100, the (anonymous, arrow) function that squares its argument.</summary><code>(x => x ** 2)(100)</details>
 
-<details><summary>In the function definition <code>function f(x, y) { return [x, y]; }</code>, what do we call <code>x</code> and <code>y</code>?</summary></details>
+<details><summary>In the function definition <code>function f(x, y) { return [x, y]; }</code>, what do we call <code>x</code> and <code>y</code>?</summary>Parameters</details>
 
-<details><summary>In the function call <code>f(y, z)</code>, what do we call <code>y</code> and <code>z</code>?</summary></details>
+<details><summary>In the function call <code>f(y, z)</code>, what do we call <code>y</code> and <code>z</code>?</summary>Arguments</details>
 
-<details><summary>A function is called <b>higher-order</b> if it does at least one of two things. What two things?</summary></details>
+<details><summary>A function is called <b>higher-order</b> if it does at least one of two things. What two things?</summary>Accept functions as arguments; Return a function</details>
 
 <details><summary>What do the array methods <code>map</code>, <code>filter</code>, <code>every</code>, <code>some</code>, <code>find</code>, and <code>findIndex</code> do?</summary></details>
 
@@ -104,13 +108,13 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>Write the function <code>function f(x = 3) { return x * y }</code> (where <code>y</code> is some global variable) without using a default parameter.</summary></details>
 
-<details><summary>What is a **rest parameter**? Give an example.</summary></details>
+<details><summary>What is a <b>rest parameter</b>?</summary>A parameter that rolls up all the excess arguments into a single array. If there are no excess parameters the parameter value will be an empty array</details>
 
-<details><summary>Can a function definition have multiple rest parameters? Why or why not?</summary></details>
+<details><summary>Can a function definition have multiple rest parameters? Why or why not?</summary>No, you wouldn’t know how many excess arguments to give each parameter (unless the language made up a weird rule, but it would be hard to remember and likely not useful in practice)</details>
 
-<details><summary>One could argue that all non-default parameters are really default parameters. Why?</summary></details>
+<details><summary>One could argue that all non-default parameters are really default parameters. Why?</summary>They have a default value of <code>undefined</code>!</details>
 
-<details><summary>In many languages, assignment has the form IDENTIFIER = EXPRESSION. In JavaScript, the left hand side is _not_ just an identifier. What exactly is the left hand side called?</summary></details>
+<details><summary>In many languages, assignment has the form IDENTIFIER = EXPRESSION. In JavaScript, the left hand side is <em>not</em> just an identifier. What exactly is the left hand side called?</summary>A pattern</details>
 
 <details><summary>The old-fashioned to write a function that takes in an array and returns the sum of its first and third elements is: <code>function f(a) {return a[0] + a[2];}</code> Rewrite this in a modern fashion, where the function parameter is a pattern.</summary></details>
 
@@ -118,21 +122,21 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>Show how to declare the function that is called like this: <code>push({onTheStack: s, theValue: v})</code>? Use an object pattern in the parameter list.</summary></details>
 
-<details><summary>What are **global scope**, **function scope**, and **block scope**?</summary></details>
+<details><summary>What are <b>global scope</b>, <b>function scope</b>, and <b>block scope</b>?</summary></details>
 
 <details><summary>How do let-bound and var-bound function-scope variables differ? (Make sure the phrase “temporal dead zone” appears in your answer.)</summary></details>
 
 <details><summary>Write a function that takes in a number and returns a function that adds that number to its argument. Is the function you wrote higher-order? Why or why not? Does that function illustrate a closure? Why or why not? Does that function illustrate currying? Why or why not?</summary></details>
 
-<details><summary>What is currying good for, anyway?</summary></details>
+<details><summary>What is currying good for, anyway?</summary>Partial application. You can do the computation on the first (few) arguments just once and apply that over and over again in the future</details>
 
-<details><summary>Is JavaScript statically-scoped or dynamically scoped?</summary></details>
+<details><summary>Is JavaScript statically-scoped or dynamically scoped?</summary>Static</details>
 
 <details><summary>Do JavaScript functions exhibit shallow binding or deep binding?</summary></details>
 
 <details><summary>Given <code>function* f() {yield 1; yield 2; yield 3;}</code>, what is wrong with writing <code>for (let i of f) </summary></details>{console.log(i)}</code>?
 
-<details><summary>Why must (pretty much all reasonable) _methods_ be non-arrow functions?</summary></details>
+<details><summary>Why must (pretty much all reasonable) <em>methods</em> be non-arrow functions?</summary>If it’s a method, it’s more than likely using the <code>this</code> expression which you want to refer to the receiver. An arrow function’s <code>this</code> does not refer to the receiver</details>
 
 <details><summary>Why should callbacks generally be arrow functions?</summary></details>
 
@@ -150,21 +154,21 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>When would you see a <code>TypeError</code> thrown? A <code>RangeError</code>? A <code>SyntaxError</code>? A <code>ReferenceError</code>?</summary></details>
 
-<details><summary>What is **callback hell**?</summary></details>
+<details><summary>What is <b>callback hell</b>?</summary></details>
 
 <details><summary>What is an advantage of promises over callbacks?</summary></details>
 
-<details><summary>What exactly _is_ a promise?</summary></details>
+<details><summary>What exactly is a promise?</summary>An object representing a computation that may finish in the future</details>
 
 <details><summary>What does the function <code>async function five() { return 5; }</code> actually return?</summary></details>
 
 <details><summary>Given <code>let f = async x => 1</code> and <code>let g = async => 2</code> what do the expressions <code>f()</code> and <code>g()</code> </summary></details>return? Why? Why is the definition of <code>g</code> even acceptable?
 
-<details><summary>What are the most common names given to the parameters of the <code>Promise</code> constructor? What are </summary></details>they for?
+<details><summary>What are the most common names given to the parameters of the <code>Promise</code> constructor? What are they for?</summary></details>
 
 <details><summary>What is the difference between <code>p.then(f, g)</code> and <code>p.then(f).catch(g)</code> for a promise <code>p</code>?</summary></details>
 
-<details><summary>Why do most API invocations, or operating system calls (like reading and writing files) take in </summary></details>callbacks or return promises?
+<details><summary>Why do most API invocations, or operating system calls (like reading and writing files), take in callbacks or return promises?</summary>They take an indefinite and possibly long time to complete</details>
 
 <details><summary>Give the expression, in client-side JavaScript using <code>fetch</code>, that hits the (hypothetical) endpoint <code>https://api.example.com/fortunes?limit=5</code> and, from its JSON response, places the first result in the DOM into the element with id <code>fortune</code>.</summary></details>
 
@@ -172,7 +176,7 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>How does one “wait” for a whole bunch of async functions to all ”finish”?</summary></details>
 
-<details><summary>What is the difference between an **accessor property** and a **data property**? (Your answer </summary></details>should include all of the attributes for each kind of property.)
+<details><summary>What is the difference between an <b>accessor property</b> and a <b>data property</b>? (Your answer should include all of the attributes for each kind of property.)</summary></details>
 
 <details><summary>How do you make a property read-only?</summary></details>
 
@@ -183,5 +187,3 @@ Here are a set of problems designed to help you reinforce and retain some useful
 <details><summary>How do you set an object’s prototype after the object has already been created?</summary></details>
 
 <details><summary>What is the difference between <code>Object.keys</code> and <code>Object.getOwnPropertyNames</code>?</summary></details>
-
-<details><summary>How does <code>Object.entries<code> work?</summary></details>
