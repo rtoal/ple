@@ -12,25 +12,25 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>How do you write a line of text to the console?</summary><code>console.log(<i>sometext</i>)</code></details>
 
-<details><summary>How do you change the text of an element in a web browser document?</summary><code>element.innerText = <i>sometext</i></code></details>
+<details><summary>How do you change the text of an element in a web browser document?</summary><code><i>element</i>.innerText = <i>sometext</i></code></details>
 
-<details><summary>How do you access the third command line argument of a script, run on the command line, with node.</summary><code>process.argv[2]</code></details>js?
+<details><summary>How do you access the third command line argument of a script, run on the command line, with node?</summary><code>process.argv[2]</code></details>?
 
 <details><summary>Name the 8 data types of JavaScript (as of ES2020).</summary>Undefined, Null, Boolean, Number, String, Symbol, BigInt, Object</details>
 
-<details><summary>What is the difference between `null` and `undefined`?</summary><code>null</code> indicates the known absence of informationl <code>undefined</code> indicates not knowing a value</details>
+<details><summary>What is the difference between <code>null</code> and <code>undefined</code>?</summary><code>null</code> indicates the known absence of informationl <code>undefined</code> indicates not knowing a value</details>
 
 <details><summary>How can you tell whether a number (a regular number, not a <code>BigInt</code>) is an integer or not?</summary><code>Number.isInteger(<i>x</i>)</code></details>
 
 <details><summary>What are <b>safe integers</b> in JavaScript?</summary>Numbers in the range where representable values are packed tightly enough together that all integers are representable</details>
 
-<details><summary>If <code>x</code> has the value <code>NaN</code>, what is the value of the expression `x === NaN`? Why? What is the correct way to determine if an expression has the value `NaN`?</summary><code>isNaN(x)</code></details>
+<details><summary>If <code>x</code> has the value <code>NaN</code>, what is the value of the expression <code>x === NaN</code>? Why? What is the correct way to determine if an expression has the value <code>NaN</code>?</summary>It’s <code>false</code> because <code>===</code> by definition produces <code>false</code> when one of its operands is <code>NaN</code>. You need to invoke <code>isNaN(x)</code></details>
 
-<details><summary>How can you tell whether string `s` is a substring of string `t`?</summary><code>t.includes(s)</code></details>
+<details><summary>How can you tell whether string <code>s</code> is a substring of string <code>t</code>?</summary><code>t.includes(s)</code></details>
 
 <details><summary>What two things can you do with backtick-delimited strings you can’t do with strings delimited with apostrophes or quotation marks?</summary>Interpolate and represent multiline strings directly</details>
 
-<details><summary>Why does `"🤣".length` have the value 2?</summary>The <code>length</code> method counts UTF-16 code units, not characters</details>
+<details><summary>Why does <code>"🤣".length</code> have the value 2?</summary>The <code>length</code> method counts UTF-16 code units, not characters</details>
 
 <details><summary>Give an example that shows the <code>==</code> operator is not transitive.</summary><code>"0x10" == 16</code>, <code>16 == "16"</code>, <code>"0x10" != "16"</code></details>
 
@@ -46,19 +46,19 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>What bad thing will happen if you forget to use <code>let</code>, <code>const</code>, or <code>var</code> when declaring an identifier?</summary>JavaScript creates a new property on the global object, a new global variable (!!), or if a variable already existed with that name, it is assigned to</details>
 
-<details><summary>What is the object literal `{ x, y }` a shorthand for?</summary><code>{ x: x, y: y}</code></details>
+<details><summary>What is the object literal <code>{ x, y }</code> a shorthand for?</summary><code>{ x: x, y: y}</code></details>
 
-<details><summary>What is the difference between `p.x` and `p[x]`?</summary><code>p.x</code> accesses the property of <code>p</code> named <code>"x"</code>; <code>p[x]</code> accesses the property of <code>p</code> whose name is the value stored in the variable <code>x</code></details>
+<details><summary>What is the difference between <code>p.x</code> and <code>p[x]</code>?</summary><code>p.x</code> accesses the property of <code>p</code> named <code>"x"</code>; <code>p[x]</code> accesses the property of <code>p</code> whose name is the value stored in the variable <code>x</code></details>
 
 <details><summary>If <code>x === 'y'</code> then what is <code>{ x: 3, [x]: 5 }</code>?</summary></details>
 
-<details><summary>Why is `[1,12] < [1,3]` true but `[1,42] < [1,3]` false?</summary></details>
+<details><summary>Why is <code>[1,12] < [1,3]</code> true but <code>[1,42] < [1,3]</code> false?</summary></details>
 
 <details><summary>What is the difference between a deep copy and a shallow copy?</summary></details>
 
-<details><summary>What is the **spread operator**? Give an example of its use.</summary></details>
+<details><summary>What is the <b>spread operator</b>? Give an example of its use.</summary></details>
 
-<details><summary>How do you write an _object_ to the console (beautifully formatted)?</summary></details>
+<details><summary>How do you write an <i>object</i> to the console (beautifully formatted)?</summary></details>
 
 <details><summary>Describe how a prototype-based language (like JavaScript) differs from a class-based language (like Java), in terms of thinking about collections of objects that share the same structure and behavior.</summary></details>
 
@@ -66,11 +66,11 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>What do we mean when we say arrays are objects in JavaScript?</summary></details>
 
-<details><summary>Describe how `splice` works.</summary></details>
+<details><summary>Describe how <code>splice</code> works.</summary></details>
 
-<details><summary>Why is using a spread operator inside `[` and `]` different from using it inside `{` and `}`?</summary></details>
+<details><summary>Why is using a spread operator inside <code>[</code> and <code>]</code> different from using it inside <code>{</code> and <code>}</code>?</summary></details>
 
-<details><summary>You might often see the expression `a.slice()`, for some array `a`. What does this expression do, </summary></details>exactly?
+<details><summary>You might often see the expression <code>a.slice()</code>, for some array <code>a</code>. What does this expression do, </summary></details>exactly?
 
 <details><summary>How does one best create an array of size 100 in which every element is 0? (Do not write a loop.)</summary></details>
 
@@ -78,13 +78,13 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>How does one create an array of 50 random number without a loop?</summary></details>
 
-<details><summary>Write an equivalent expression to `a.concat(b)`, where `a` and `b` are arrays, using spreads.</summary></details>
+<details><summary>Write an equivalent expression to <code>a.concat(b)</code>, where <code>a</code> and <code>b</code> are arrays, using spreads.</summary></details>
 
-<details><summary>`a.push()` mutates `a`. How do you do a non-mutating “push“?</summary></details>
+<details><summary><code>a.push()</code> mutates <code>a</code>. How do you do a non-mutating “push“?</summary></details>
 
-<details><summary>What does `unshift` do? Does it mutate or not? What does it return?</summary></details>
+<details><summary>What does <code>unshift</code> do? Does it mutate or not? What does it return?</summary></details>
 
-<details><summary>What is the difference between **value types** and **reference types**?</summary></details>
+<details><summary>What is the difference between <b>value types</b> and <b>reference types</b>?</summary></details>
 
 <details><summary>Why do you think the JavaScript designer decided that objects should be reference types?</summary></details>
 
@@ -92,17 +92,17 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>Write an IIFE that applies the (anonymous, arrow) function that squares its argument to the value </summary></details>100.
 
-<details><summary>In the function definition `function f(x, y) { return [x, y]; }`, what do we call `x` and `y`?</summary></details>
+<details><summary>In the function definition <code>function f(x, y) { return [x, y]; }</code>, what do we call <code>x</code> and <code>y</code>?</summary></details>
 
-<details><summary>In the function call `f(y, z)`, what do we call `y` and `z`?</summary></details>
+<details><summary>In the function call <code>f(y, z)</code>, what do we call <code>y</code> and <code>z</code>?</summary></details>
 
-<details><summary>A function is called **higher-order** if it does at least one of two things. What two things?</summary></details>
+<details><summary>A function is called <b>higher-order</b> if it does at least one of two things. What two things?</summary></details>
 
-<details><summary>What do the array methods `map`, `filter`, `every`, `some`, `find`, and `findIndex` do?</summary></details>
+<details><summary>What do the array methods <code>map</code>, <code>filter</code>, <code>every</code>, <code>some</code>, <code>find</code>, and <code>findIndex</code> do?</summary></details>
 
-<details><summary>Write an expression to compute the product of odd numbers in an arrays, using `filter`, `map`, and `reduce`?</summary></details>
+<details><summary>Write an expression to compute the product of odd numbers in an arrays, using <code>filter</code>, <code>map</code>, and <code>reduce</code>?</summary></details>
 
-<details><summary>Write the function `function f(x = 3) { return x * y }` (where `y` is some global variable) without using a default parameter.</summary></details>
+<details><summary>Write the function <code>function f(x = 3) { return x * y }</code> (where <code>y</code> is some global variable) without using a default parameter.</summary></details>
 
 <details><summary>What is a **rest parameter**? Give an example.</summary></details>
 
@@ -112,11 +112,11 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>In many languages, assignment has the form IDENTIFIER = EXPRESSION. In JavaScript, the left hand side is _not_ just an identifier. What exactly is the left hand side called?</summary></details>
 
-<details><summary>The old-fashioned to write a function that takes in an array and returns the sum of its first and third elements is: `function f(a) {return a[0] + a[2];}` Rewrite this in a modern fashion, where the function parameter is a pattern.</summary></details>
+<details><summary>The old-fashioned to write a function that takes in an array and returns the sum of its first and third elements is: <code>function f(a) {return a[0] + a[2];}</code> Rewrite this in a modern fashion, where the function parameter is a pattern.</summary></details>
 
-<details><summary>Write a function that takes in an object and returns the product of its `x` and `y` properties. If no argument is passed, return. Write the function using a pattern for its parameter. Supply defaults so the function body is simply `return x * y;`.</summary></details>
+<details><summary>Write a function that takes in an object and returns the product of its <code>x</code> and <code>y</code> properties. If no argument is passed, return. Write the function using a pattern for its parameter. Supply defaults so the function body is simply <code>return x * y;</code>.</summary></details>
 
-<details><summary>Show how to declare the function that is called like this: `push({onTheStack: s, theValue: v})`? Use an object pattern in the parameter list.</summary></details>
+<details><summary>Show how to declare the function that is called like this: <code>push({onTheStack: s, theValue: v})</code>? Use an object pattern in the parameter list.</summary></details>
 
 <details><summary>What are **global scope**, **function scope**, and **block scope**?</summary></details>
 
@@ -130,25 +130,25 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>Do JavaScript functions exhibit shallow binding or deep binding?</summary></details>
 
-<details><summary>Given `function* f() {yield 1; yield 2; yield 3;}`, what is wrong with writing `for (let i of f) </summary></details>{console.log(i)}`?
+<details><summary>Given <code>function* f() {yield 1; yield 2; yield 3;}</code>, what is wrong with writing <code>for (let i of f) </summary></details>{console.log(i)}</code>?
 
 <details><summary>Why must (pretty much all reasonable) _methods_ be non-arrow functions?</summary></details>
 
 <details><summary>Why should callbacks generally be arrow functions?</summary></details>
 
-<details><summary>What does the expression `this` refer to inside of a function called with the `new` operator?</summary></details>
+<details><summary>What does the expression <code>this</code> refer to inside of a function called with the <code>new</code> operator?</summary></details>
 
-<details><summary>Is `this` early-bound or late-bound?</summary></details>
+<details><summary>Is <code>this</code> early-bound or late-bound?</summary></details>
 
-<details><summary>For function `f` and object `x`, the expressions `f.call(x, 1, 2)` and `f.apply(x, [1, 2])` produce the same result. Write the equivalent expression using `bind`.</summary></details>
+<details><summary>For function <code>f</code> and object <code>x</code>, the expressions <code>f.call(x, 1, 2)</code> and <code>f.apply(x, [1, 2])</code> produce the same result. Write the equivalent expression using <code>bind</code>.</summary></details>
 
-<details><summary>JavaScript doesn’t have classes, but it does have the word `class`. But the keyword `class` does declare a function. How is this “function” defined? Give a short example.</summary></details>
+<details><summary>JavaScript doesn’t have classes, but it does have the word <code>class</code>. But the keyword <code>class</code> does declare a function. How is this “function” defined? Give a short example.</summary></details>
 
-<details><summary>What happens under the hood when you write `class A extends B`? In particular what does `A.prototype` look like in this case?</summary></details>
+<details><summary>What happens under the hood when you write <code>class A extends B</code>? In particular what does <code>A.prototype</code> look like in this case?</summary></details>
 
 <details><summary>How do you make a JavaScript object without a prototype?</summary></details>
 
-<details><summary>When would you see a `TypeError` thrown? A `RangeError`? A `SyntaxError`? A `ReferenceError`?</summary></details>
+<details><summary>When would you see a <code>TypeError</code> thrown? A <code>RangeError</code>? A <code>SyntaxError</code>? A <code>ReferenceError</code>?</summary></details>
 
 <details><summary>What is **callback hell**?</summary></details>
 
@@ -156,19 +156,19 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>What exactly _is_ a promise?</summary></details>
 
-<details><summary>What does the function `async function five() { return 5; }` actually return?</summary></details>
+<details><summary>What does the function <code>async function five() { return 5; }</code> actually return?</summary></details>
 
-<details><summary>Given `let f = async x => 1` and `let g = async => 2` what do the expressions `f()` and `g()` </summary></details>return? Why? Why is the definition of `g` even acceptable?
+<details><summary>Given <code>let f = async x => 1</code> and <code>let g = async => 2</code> what do the expressions <code>f()</code> and <code>g()</code> </summary></details>return? Why? Why is the definition of <code>g</code> even acceptable?
 
-<details><summary>What are the most common names given to the parameters of the `Promise` constructor? What are </summary></details>they for?
+<details><summary>What are the most common names given to the parameters of the <code>Promise</code> constructor? What are </summary></details>they for?
 
-<details><summary>What is the difference between `p.then(f, g)` and `p.then(f).catch(g)` for a promise `p`?</summary></details>
+<details><summary>What is the difference between <code>p.then(f, g)</code> and <code>p.then(f).catch(g)</code> for a promise <code>p</code>?</summary></details>
 
 <details><summary>Why do most API invocations, or operating system calls (like reading and writing files) take in </summary></details>callbacks or return promises?
 
-<details><summary>Give the expression, in client-side JavaScript using `fetch`, that hits the (hypothetical) endpoint `https://api.example.com/fortunes?limit=5` and, from its JSON response, places the first result in the DOM into the element with id `fortune`.</summary></details>
+<details><summary>Give the expression, in client-side JavaScript using <code>fetch</code>, that hits the (hypothetical) endpoint <code>https://api.example.com/fortunes?limit=5</code> and, from its JSON response, places the first result in the DOM into the element with id <code>fortune</code>.</summary></details>
 
-<details><summary>Does `await` actually wait (block) for anything? It not, what exactly does it do?</summary></details>
+<details><summary>Does <code>await</code> actually wait (block) for anything? It not, what exactly does it do?</summary></details>
 
 <details><summary>How does one “wait” for a whole bunch of async functions to all ”finish”?</summary></details>
 
@@ -182,6 +182,6 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>How do you set an object’s prototype after the object has already been created?</summary></details>
 
-<details><summary>What is the difference between `Object.keys` and `Object.getOwnPropertyNames`?</summary></details>
+<details><summary>What is the difference between <code>Object.keys</code> and <code>Object.getOwnPropertyNames</code>?</summary></details>
 
-<details><summary>How does `Object.entries` work?</summary></details>
+<details><summary>How does <code>Object.entries<code> work?</summary></details>
