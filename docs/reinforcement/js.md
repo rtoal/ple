@@ -64,7 +64,7 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>Properties defined directly within an object are called ________________ properties. Properties of an object accessible from the object’s prototype chain are called ________________ properties.</summary>Own; inherited</details>
 
-<details><summary>If <code>p == {x: 1, y: 8}</code> what is <code>Object.entries(x)</code>?</summary><code>[ [x, 1], [y, 8]]</details>
+<details><summary>If <code>p == {x: 1, y: 8}</code> what is <code>Object.entries(x)</code>?</summary><code>[ [x, 1], [y, 8] ]</code></details>
 
 <details><summary>If <code>a == ["x", "y"]</code> what is <code>a.entries()</code>?</summary><code>An iterator that produces <code>[0, "x"]</code> and then <code>[1, "y"]</code></details>
 
@@ -118,13 +118,21 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>The old-fashioned to write a function that takes in an array and returns the sum of its first and third elements is: <code>function f(a) {return a[0] + a[2];}</code> Rewrite this in a modern fashion, where the function parameter is a pattern.</summary></details>
 
-<details><summary>Write a function that takes in an object and returns the product of its <code>x</code> and <code>y</code> properties. If no argument is passed, return. Write the function using a pattern for its parameter. Supply defaults so the function body is simply <code>return x * y;</code>.</summary></details>
+<details><summary>Write a function that takes in an object and returns the product of its <code>x</code> and <code>y</code> properties. If no argument is passed, return 1. Write the function using a pattern for its parameter. Supply defaults so the function body is simply <code>return x * y</code>.</summary>
+<pre>
+function product({ x = 1, y = 1 }) {
+    return x * y
+}
+</pre></details>
 
-<details><summary>Show how to declare the function that is called like this: <code>push({onTheStack: s, theValue: v})</code>? Use an object pattern in the parameter list.</summary></details>
+<details><summary>Show how to declare the function that is called like this: <code>push({onTheStack: s, theValue: v})</code>? Use an object pattern in the parameter list.</summary>
+<pre>
+function push({ onTheStack, theValue })
+</pre></details>
 
 <details><summary>What are <b>global scope</b>, <b>function scope</b>, and <b>block scope</b>?</summary></details>
 
-<details><summary>How do let-bound and var-bound function-scope variables differ? (Make sure the phrase “temporal dead zone” appears in your answer.)</summary></details>
+<details><summary>How do let-bound and var-bound function-scope variables differ? (Make sure the phrase “temporal dead zone” appears in your answer.)</summary>Accessing <code>var</code>-bound function scope variables produce <code>undefined</code> in the temporal dead zone; accessing <code>let</code>-bound function scope variables throw a <code>ReferenceError</code></details>
 
 <details><summary>Write a function that takes in a number and returns a function that adds that number to its argument. Is the function you wrote higher-order? Why or why not? Does that function illustrate a closure? Why or why not? Does that function illustrate currying? Why or why not?</summary></details>
 
@@ -132,17 +140,17 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>Is JavaScript statically-scoped or dynamically scoped?</summary>Static</details>
 
-<details><summary>Do JavaScript functions exhibit shallow binding or deep binding?</summary></details>
+<details><summary>Do JavaScript functions exhibit shallow binding or deep binding?</summary>Deep</details>
 
 <details><summary>Given <code>function* f() {yield 1; yield 2; yield 3;}</code>, what is wrong with writing <code>for (let i of f) </summary></details>{console.log(i)}</code>?
 
 <details><summary>Why must (pretty much all reasonable) <em>methods</em> be non-arrow functions?</summary>If it’s a method, it’s more than likely using the <code>this</code> expression which you want to refer to the receiver. An arrow function’s <code>this</code> does not refer to the receiver</details>
 
-<details><summary>Why should callbacks generally be arrow functions?</summary></details>
+<details><summary>Why should callbacks generally be arrow functions?</summary>You don’t want the <code>this</code> expression to refer to the callback function itself</details>
 
-<details><summary>What does the expression <code>this</code> refer to inside of a function called with the <code>new</code> operator?</summary></details>
+<details><summary>What does the expression <code>this</code> refer to inside of a function called with the <code>new</code> operator?</summary>A newly created object</details>
 
-<details><summary>Is <code>this</code> early-bound or late-bound?</summary></details>
+<details><summary>Is <code>this</code> early-bound or late-bound?</summary>Late bound</details>
 
 <details><summary>For function <code>f</code> and object <code>x</code>, the expressions <code>f.call(x, 1, 2)</code> and <code>f.apply(x, [1, 2])</code> produce the same result. Write the equivalent expression using <code>bind</code>.</summary></details>
 
@@ -150,17 +158,17 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>What happens under the hood when you write <code>class A extends B</code>? In particular what does <code>A.prototype</code> look like in this case?</summary></details>
 
-<details><summary>How do you make a JavaScript object without a prototype?</summary></details>
+<details><summary>How do you make a JavaScript object without a prototype?</summary><code>Object.create(null)</code></details>
 
 <details><summary>When would you see a <code>TypeError</code> thrown? A <code>RangeError</code>? A <code>SyntaxError</code>? A <code>ReferenceError</code>?</summary></details>
 
-<details><summary>What is <b>callback hell</b>?</summary></details>
+<details><summary>What is <b>callback hell</b>?</summary>The ugly and complicated nesting that arises from callbacks within callbacks</details>
 
-<details><summary>What is an advantage of promises over callbacks?</summary></details>
+<details><summary>What are two advantages of promises over callbacks?</summary>One is no callback hell, as promises are elegantly “chained”. Another is error handling is much simpler: a single catch will do!</details>
 
 <details><summary>What exactly is a promise?</summary>An object representing a computation that may finish in the future</details>
 
-<details><summary>What does the function <code>async function five() { return 5; }</code> actually return?</summary></details>
+<details><summary>What does the function <code>async function five() { return 5; }</code> actually return?</summary>A promise that resolves to 5</details>
 
 <details><summary>Given <code>let f = async x => 1</code> and <code>let g = async => 2</code> what do the expressions <code>f()</code> and <code>g()</code> </summary></details>return? Why? Why is the definition of <code>g</code> even acceptable?
 
@@ -182,7 +190,7 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>What is the difference between sealing and freezing an object?</summary></details>
 
-<details><summary>How do you get the prototype of an object?</summary></details>
+<details><summary>How do you get the prototype of an object?</summary><code>Object.getPrototypeOf(<i>someobject</i>)</details>
 
 <details><summary>How do you set an object’s prototype after the object has already been created?</summary></details>
 
