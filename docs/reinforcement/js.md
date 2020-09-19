@@ -66,7 +66,7 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>If <code>p == {x: 1, y: 8}</code> what is <code>Object.entries(x)</code>?</summary><code>[ [x, 1], [y, 8] ]</code></details>
 
-<details><summary>If <code>a == ["x", "y"]</code> what is <code>a.entries()</code>?</summary><code>An iterator that produces <code>[0, "x"]</code> and then <code>[1, "y"]</code></details>
+<details><summary>If <code>a == ["x", "y"]</code> what is <code>a.entries()</code>?</summary>An iterator that produces <code>[0, "x"]</code> and then <code>[1, "y"]</code></details>
 
 <details><summary>What do we mean when we say arrays are objects in JavaScript?</summary>All types other than the seven primitive types in JavaScript are objects, hence arrays are objects</details>
 
