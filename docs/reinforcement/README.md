@@ -8,7 +8,7 @@ Most are the answers are covered in the [book](https://rtoal.github.io/ple/) or 
 
 Enjoy!
 
-- [JavaScript](js.md)
+- [JavaScript](js.html)
 - [Python](python.md)
 - [Ruby](ruby.md)
 - [Java](java.md)
