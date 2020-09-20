@@ -1,30 +1,30 @@
-<link rel="stylesheet" href="reinforcement/style.css">
+<link rel="stylesheet" href="style.css">
 
 <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/docs/resources/javascript-logo-64.png">
 
 <h1>JavaScript Reinforcement Practice</h1>
 
-Here are a set of problems designed to help you reinforce and retain some useful JavaScript knowledge. If you are an [Anki](https://apps.ankiweb.net/) fan, consider adding some of these questions into a deck. 😀
+<p></p>Here are a set of problems designed to help you reinforce and retain some useful JavaScript knowledge. If you are an <a href="https://apps.ankiweb.net/"></a> fan, consider adding some of these questions into a deck. 😀</p>
 
 <details><summary>Who created JavaScript and in what year?</summary>Brendan Eich, 1995</details>
 
 <details><summary>What was JavaScript originally called?</summary>Mocha</details>
 
-<details><summary>Why was JavaScript created?</summary>Because Java, the language that was supposed to “run code in the browser” turned out to be too heavy and too slow</details>
+<details><summary>Why was JavaScript created?</summary>Because Java, the language that was supposed to “run code in the browser,” turned out to be too heavy and too slow</details>
 
 <details><summary>How do you write a line of text to the console?</summary><code>console.log(<i>sometext</i>)</code></details>
 
-<details><summary>How do you change the text of an element in a web browser document?</summary><code><i>element</i>.innerText = <i>sometext</i></code></details>
+<details><summary>How do you change the text of an element in a web browser document?</summary><code><i>element</i>.textContent = <i>sometext</i></code></details>
 
 <details><summary>How do you access the third command line argument of a script, run on the command line, with node?</summary><code>process.argv[2]</code></details>
 
 <details><summary>Name the 8 data types of JavaScript (as of ES2020).</summary>Undefined, Null, Boolean, Number, String, Symbol, BigInt, Object</details>
 
-<details><summary>What is the difference between <code>null</code> and <code>undefined</code>?</summary><code>null</code> indicates the known absence of informationl <code>undefined</code> indicates not knowing a value</details>
+<details><summary>What is the difference between <code>boss === null</code> and <code>boss === undefined</code>?</summary><code>boss === null</code> means it is a fact there is no boss. <code>boss === undefined</code> indicates the boss may or may not exist, is unknown even it is does exist, or is no one’s business. </details>
 
 <details><summary>How can you tell whether a number (a regular number, not a <code>BigInt</code>) is an integer or not?</summary><code>Number.isInteger(<i>x</i>)</code></details>
 
-<details><summary>What are <b>safe integers</b> in JavaScript?</summary>Integers in the maximal range of numbers where the representable values are packed tightly enough to contain all integers in the range</details>
+<details><summary>What are <b>safe integers</b> in JavaScript?</summary>Integers in the maximal range of numbers where the representable values are packed tightly enough to contain all integers in the range. (Aside: this range is -9007199254740991 to 9007199254740991.)</details>
 
 <details><summary>If <code>x</code> has the value <code>NaN</code>, what is the value of the expression <code>x === NaN</code>? Why? What is the correct way to determine if an expression has the value <code>NaN</code>?</summary>It’s <code>false</code> because <code>===</code> by definition produces <code>false</code> when one of its operands is <code>NaN</code>. You need to invoke <code>isNaN(x)</code></details>
 
@@ -46,7 +46,7 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>When should you use <code>let</code> and when should you use <code>const</code>?</summary>Bind with <code>let</code> if you will be changing the value bound to the indentifier; bind with <code>const</code> when the binding should be permanent</details>
 
-<details><summary>What bad thing will happen if you forget to use <code>let</code>, <code>const</code>, or <code>var</code> when declaring an identifier?</summary>JavaScript creates a new property on the global object, a new global variable (!!), or if a variable already existed with that name, it is assigned to</details>
+<details><summary>What bad thing will happen if you forget to use <code>let</code>, <code>const</code>, or <code>var</code> when declaring an identifier?</summary>JavaScript creates a new property on the global object, a new global variable, or if a variable already existed with that name, it is assigned to</details>
 
 <details><summary>What is the object literal <code>{ x, y }</code> a shorthand for?</summary><code>{ x: x, y: y}</code></details>
 
@@ -54,11 +54,11 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>If <code>x === 'y'</code> then what is <code>{ x: 3, [x]: 5 }</code>?</summary><code>{x: 3, y: 5}</code></details>
 
-<details><summary>Why is <code>[1,12] < [1,3]</code> true but <code>[1,42] < [1,3]</code> false?</summary></details>
+<details><summary>Why is <code>[1,12] < [1,3]</code> true but <code>[1,42] < [1,3]</code> false?</summary>The <code>&lt;</code> operator compares strings unless both operators are numbers. So the first conversion is actually <code>"1,12" < "1,3"</code> which is true, but the second is <code>"1,42" < "1,3"</code> and is false because <code>"4"</code> is larger than <code>"3"</code></details>
 
 <details><summary>What is the difference between a deep copy and a shallow copy?</summary></details>
 
-<details><summary>What is the <b>spread operator</b>? Give an example of its use.</summary></details>
+<details><summary>What is the <b>spread operator</b>?</summary></details>
 
 <details><summary>How do you write an <i>object</i> to the console (beautifully formatted)?</summary><code>console.table(<i>someobject</i>)</code></details>
 
@@ -66,7 +66,7 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>Properties defined directly within an object are called ________________ properties. Properties of an object accessible from the object’s prototype chain are called ________________ properties.</summary>Own; inherited</details>
 
-<details><summary>If <code>p == {x: 1, y: 8}</code> what is <code>Object.entries(x)</code>?</summary><code>[ [x, 1], [y, 8] ]</code></details>
+<details><summary>If <code>p === {x: 1, y: 8}</code> what is <code>Object.entries(p)</code>?</summary><code>[ [x, 1], [y, 8] ]</code></details>
 
 <details><summary>If <code>a == ["x", "y"]</code> what is <code>a.entries()</code>?</summary>An iterator that produces <code>[0, "x"]</code> and then <code>[1, "y"]</code></details>
 
@@ -94,9 +94,9 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>Why do you think the JavaScript designer decided that objects should be reference types?</summary></details>
 
-<details><summary>Since strings can be very large, you might think strings would be reference types in JavaScript. After all, they are reference types in Java. But in JavaScript, they are considered primitive (value) types. This might lead you to believe JavaScript is necessarily slow because strings are always copied on assignment. However, this is not the case! Why?</summary>You don’t need to copy them because they are immutable! So behind the scenes they are probably implemented as references, but the programmer doesn’t care</details>
+<details><summary>Since strings can be very large, you might think strings would be reference types in JavaScript. After all, they are reference types in Java. But in JavaScript, they are considered primitive (value) types. This might lead you to believe JavaScript is necessarily slow because strings are always copied on assignment. However, this is not the case! Why?</summary>You don’t need to copy them because they are immutable! So behind the scenes they are probably implemented as references, but the programmer will never know the difference because they can’t change the contents (which is the only way to distinguish copying from sharing).</details>
 
-<details><summary>Write an IIFE that applies, to the argument 100, the (anonymous, arrow) function that squares its argument.</summary><code>(x => x ** 2)(100)</code></details>
+<details><summary>Write an IIFE that applies, to the argument 100, the anonymous arrow function that squares its argument.</summary><code>(x => x ** 2)(100)</code></details>
 
 <details><summary>In the function definition <code>function f(x, y) { return [x, y]; }</code>, what do we call <code>x</code> and <code>y</code>?</summary>Parameters</details>
 
@@ -120,7 +120,11 @@ numbers.filter(x => x % 2 === 1).map(x => x ** 3).reduce((x, y) => x * y, 1)
 
 <details><summary>In many languages, assignment has the form IDENTIFIER = EXPRESSION. In JavaScript, the left hand side is <em>not</em> just an identifier. What exactly is the left hand side called?</summary>A pattern</details>
 
-<details><summary>The old-fashioned to write a function that takes in an array and returns the sum of its first and third elements is: <code>function f(a) {return a[0] + a[2];}</code> Rewrite this in a modern fashion, where the function parameter is a pattern.</summary></details>
+<details><summary>The old-fashioned way to write a function that takes in an array and returns the sum of its first and third elements is: <code>function f(a) {return a[0] + a[2];}</code> Rewrite this in a modern fashion, where the function parameter is a pattern.</summary><pre>
+function f([x, ,y]) {
+  return x + y
+}
+</pre></details>
 
 <details><summary>Write a function that takes in an object and returns the product of its <code>x</code> and <code>y</code> properties. If no argument is passed, return 1. Write the function using a pattern for its parameter. Supply defaults so the function body is simply <code>return x * y</code>.</summary>
 <pre>
@@ -146,17 +150,19 @@ function push({ onTheStack, theValue })
 
 <details><summary>Do JavaScript functions exhibit shallow binding or deep binding?</summary>Deep</details>
 
-<details><summary>Given <code>function* f() {yield 1; yield 2; yield 3;}</code>, what is wrong with writing <code>for (let i of f) </summary></details>{console.log(i)}</code>?
+<details><summary>Given <code>function* f() {yield 1; yield 2; yield 3;}</code>, what is wrong with writing <code>for (let x of f) {console.log(x)}</code>?</summary>The function <code>f</code> is not iterable, but <code>f()</code> is</details>
+
+<details><summary>What is the <b>receiver</b> of a method call?</summary>The object on which the method is called, for example, in the expression <code>scores.push(99)</code>, the receiver is <code>scores</code>.</details>
 
 <details><summary>Why must (pretty much all reasonable) <em>methods</em> be non-arrow functions?</summary>If it’s a method, it’s more than likely using the <code>this</code> expression which you want to refer to the receiver. An arrow function’s <code>this</code> does not refer to the receiver</details>
 
-<details><summary>Why should callbacks generally be arrow functions?</summary>You don’t want the <code>this</code> expression to refer to the callback function itself</details>
+<details><summary>Why should callbacks generally be arrow functions?</summary>You generally <em>don’t</em> want the <code>this</code> expression to refer to the callback function itself, but rather get its value from the surrounding context</details>
 
-<details><summary>What does the expression <code>this</code> refer to inside of a function called with the <code>new</code> operator?</summary>A newly created object</details>
+<details><summary>What does the expression <code>this</code> refer to inside of a function called with the <code>new</code> operator?</summary>The object being created</details>
 
 <details><summary>Is <code>this</code> early-bound or late-bound?</summary>Late bound</details>
 
-<details><summary>For function <code>f</code> and object <code>x</code>, the expressions <code>f.call(x, 1, 2)</code> and <code>f.apply(x, [1, 2])</code> produce the same result. Write the equivalent expression using <code>bind</code>.</summary></details>
+<details><summary>For function <code>f</code> and object <code>x</code>, the expressions <code>f.call(x, 1, 2)</code> and <code>f.apply(x, [1, 2])</code> produce the same result. Write the equivalent expression using <code>bind</code>.</summary><code>f.bind(x)(1, 2)</code></details>
 
 <details><summary>JavaScript doesn’t have classes, but it does have the word <code>class</code>. But the keyword <code>class</code> does declare a function. How is this “function” defined? Give a short example.</summary></details>
 
@@ -168,7 +174,7 @@ function push({ onTheStack, theValue })
 
 <details><summary>What is <b>callback hell</b>?</summary>The ugly and complicated nesting that arises from callbacks within callbacks</details>
 
-<details><summary>What are two advantages of promises over callbacks?</summary>One is no callback hell, as promises are elegantly “chained”. Another is error handling is much simpler: a single catch will do!</details>
+<details><summary>What are two advantages of promises over callbacks?</summary>One is no callback hell, as promises are elegantly “chained”. Another is that error handling is much simpler: a single catch will do!</details>
 
 <details><summary>What are the three states a promise can be in?</summary>Pending, Fulfilled, and Rejected</details>
 
@@ -176,7 +182,7 @@ function push({ onTheStack, theValue })
 
 <details><summary>What does the function <code>async function five() { return 5; }</code> actually return?</summary>A promise that resolves to 5</details>
 
-<details><summary>Given <code>let f = async x => 1</code> and <code>let g = async => 2</code> what do the expressions <code>f()</code> and <code>g()</code> </summary></details>return? Why? Why is the definition of <code>g</code> even acceptable?
+<details><summary>Given <code>let f = async x => 1</code> and <code>let g = async => 2</code> what do the expressions <code>f()</code> and <code>g()</code> return? Why? Why is the definition of <code>g</code> even acceptable?</summary></details>
 
 <details><summary>What is the sole parameter of the <code>Promise</code> constructor and what kind of object is it?</summary>It’s called an executor and it is itself a function of two parameters, called <code>resolve</code> and <code>reject</code>, which are themselves functions. The body of the executor performs the asynchronous computation and calls <code>resolve</code> or <code>reject</code> as needed.</details>
 
@@ -184,7 +190,20 @@ function push({ onTheStack, theValue })
 
 <details><summary>Why do most API invocations, or operating system calls (like reading and writing files), take in callbacks or return promises?</summary>They take an indefinite and possibly long time to complete</details>
 
-<details><summary>Give the expression, in client-side JavaScript using <code>fetch</code>, that hits the (hypothetical) endpoint <code>https://api.example.com/fortunes?limit=5</code> and, from its JSON response, places the first result in the DOM into the element with id <code>fortune</code>.</summary></details>
+<details><summary>Give the expression, in client-side JavaScript using <code>fetch</code>, that hits the (hypothetical) endpoint <code>https://api.example.com/fortunes?limit=5</code> and, from its JSON response, places the first result in the DOM into the element with id <code>fortune</code>.</summary><pre>
+fetch("https://api.example.com/fortunes?limit=5")
+  .then(response => response.json())
+  .then(fortunes => document.getElementById("fortune").textContent = fortunes[0])
+</pre></details>
+
+<details><summary>Give a client-side function that hits the (hypothetical) endpoint <code>https://api.example.com/fortunes?limit=5</code> and, from its JSON response, places the first result in the DOM into the element with id <code>fortune</code>.</summary><pre>
+async function showFirstFortune() {
+  const response = await fetch("https://api.example.com/fortunes?limit=5")
+  const fortunes = await response.json()
+  document.getElementById("fortune").textContent = fortunes[0]
+}
+</pre>
+</details>
 
 <details><summary>Does <code>await</code> actually wait (block) for anything? It not, what exactly does it do?</summary></details>
 
@@ -200,4 +219,6 @@ function push({ onTheStack, theValue })
 
 <details><summary>How do you set an object’s prototype after the object has already been created?</summary><code>Object.setPrototypeOf(<i>someobject</i>, <i>newPrototype</i>)</code></details>
 
-<details><summary>What is the difference between <code>Object.keys</code> and <code>Object.getOwnPropertyNames</code>?</summary><code>keys<code> only returns the enumerable own property names</details>
+<details><summary>What is the difference between <code>Object.keys</code> and <code>Object.getOwnPropertyNames</code>?</summary><code>keys</code> only returns the <em>enumerable</em> own property names, while <code>getOwnPropertyNames</code> returns all of them, whether enumerable or not.</details>
+
+<details><summary>Given <code>x = { a: 3, [Symbol('y')]: 5 }</code>, what is returned by <code>Object.keys(x)</code> and <code>Object.getOwnPropertyNames(x)</code>? How do you get the own properties that these miss?</summary>They both return <code>[ 'a' ]</code>. To get the other property, use <code>Object.getOwnPropertySymbols(x)</code></details>

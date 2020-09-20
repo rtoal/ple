@@ -14,7 +14,22 @@ summary {
   margin-bottom: 1em;
 }
 
+details[open] {
+  margin-left: 2em;
+}
+
+details[open] summary {
+  margin-left: -2em;
+}
+
 summary:focus {
   outline: none;
   background-color: rgb(200, 220, 255);
+}
+
+pre,
+code {
+  font-size: 110%;
+  background-color: rgb(240, 240, 240);
+  padding: 1px;
 }
