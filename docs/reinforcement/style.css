@@ -1,0 +1,20 @@
+body {
+  margin: 3em auto;
+  max-width: 920px;
+  background-color: white;
+  color: #221c22;
+  font: 110%/1.5em sans-serif;
+}
+
+details {
+  margin-bottom: 1.5em;
+}
+
+summary {
+  margin-bottom: 1em;
+}
+
+summary:focus {
+  outline: none;
+  background-color: rgb(200, 220, 255);
+}
