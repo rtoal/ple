@@ -22,7 +22,7 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>How can you tell whether a number (a regular number, not a <code>BigInt</code>) is an integer or not?</summary><code>Number.isInteger(<i>x</i>)</code></details>
 
-<details><summary>What are <b>safe integers</b> in JavaScript?</summary>Numbers in the range where representable values are packed tightly enough together that all integers are representable</details>
+<details><summary>What are <b>safe integers</b> in JavaScript?</summary>Integers in the maximal range of numbers where the representable values are packed tightly enough to contain all integers in the range</details>
 
 <details><summary>If <code>x</code> has the value <code>NaN</code>, what is the value of the expression <code>x === NaN</code>? Why? What is the correct way to determine if an expression has the value <code>NaN</code>?</summary>It’s <code>false</code> because <code>===</code> by definition produces <code>false</code> when one of its operands is <code>NaN</code>. You need to invoke <code>isNaN(x)</code></details>
 
@@ -58,7 +58,7 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>What is the <b>spread operator</b>? Give an example of its use.</summary></details>
 
-<details><summary>How do you write an <i>object</i> to the console (beautifully formatted)?</summary></details>
+<details><summary>How do you write an <i>object</i> to the console (beautifully formatted)?</summary><code>console.table(<i>someobject</i>)</code></details>
 
 <details><summary>Describe how a prototype-based language (like JavaScript) differs from a class-based language (like Java), in terms of thinking about collections of objects that share the same structure and behavior.</summary></details>
 
@@ -80,13 +80,13 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>How does one create an array of 50 random numbers with a loop?</summary><code>const a = []; while (a.length < 50) { a.push(Math.random()) }</code></details>
 
-<details><summary>How does one create an array of 50 random number without a loop?</summary></details>
+<details><summary>How does one create an array of 50 random number without a loop?</summary><code>Array(50).fill().map(() => Math.random())</code></details>
 
 <details><summary>Write an equivalent expression to <code>a.concat(b)</code>, where <code>a</code> and <code>b</code> are arrays, using spreads.</summary><code>[...a, ...b]</code></details>
 
-<details><summary><code>a.push()</code> mutates <code>a</code>. How do you do a non-mutating “push“?</summary></details>
+<details><summary><code>a.push(x)</code> mutates <code>a</code>. How do you do a non-mutating “push“?</summary><code>[...a, x]</code></details>
 
-<details><summary>What does <code>unshift</code> do? Does it mutate or not? What does it return?</summary></details>
+<details><summary>What does <code>unshift</code> do? Does it mutate or not? What does it return?</summary>Adds an item to the front of an array; yes it mutates; it returns the new length of the array.</details>
 
 <details><summary>What is the difference between <b>value types</b> and <b>reference types</b>?</summary></details>
 
@@ -104,7 +104,9 @@ Here are a set of problems designed to help you reinforce and retain some useful
 
 <details><summary>What do the array methods <code>map</code>, <code>filter</code>, <code>every</code>, <code>some</code>, <code>find</code>, and <code>findIndex</code> do?</summary></details>
 
-<details><summary>Write an expression to compute the product of odd numbers in an arrays, using <code>filter</code>, <code>map</code>, and <code>reduce</code>?</summary></details>
+<details><summary>Write an expression to compute the product of the cubes of the odd numbers in an array <code>numbers</code>, using <code>filter</code>, <code>map</code>, and <code>reduce</code>?</summary><pre>
+numbers.filter(x => x % 2 === 1).map(x => x ** 3).reduce((x, y) => x * y, 1)
+</pre></details>
 
 <details><summary>Write the function <code>function f(x = 3) { return x * y }</code> (where <code>y</code> is some global variable) without using a default parameter.</summary></details>
 
@@ -166,13 +168,15 @@ function push({ onTheStack, theValue })
 
 <details><summary>What are two advantages of promises over callbacks?</summary>One is no callback hell, as promises are elegantly “chained”. Another is error handling is much simpler: a single catch will do!</details>
 
+<details><summary>What are the three states a promise can be in?</summary>Pending, Fulfilled, and Rejected</details>
+
 <details><summary>What exactly is a promise?</summary>An object representing a computation that may finish in the future</details>
 
 <details><summary>What does the function <code>async function five() { return 5; }</code> actually return?</summary>A promise that resolves to 5</details>
 
 <details><summary>Given <code>let f = async x => 1</code> and <code>let g = async => 2</code> what do the expressions <code>f()</code> and <code>g()</code> </summary></details>return? Why? Why is the definition of <code>g</code> even acceptable?
 
-<details><summary>What are the most common names given to the parameters of the <code>Promise</code> constructor? What are they for?</summary></details>
+<details><summary>What is the sole parameter of the <code>Promise</code> constructor and what kind of object is it?</summary>It’s called an executor and it is itself a function of two parameters, called <code>resolve</code> and <code>reject</code>, which are themselves functions. The body of the executor performs the asynchronous computation and calls <code>resolve</code> or <code>reject</code> as needed.</details>
 
 <details><summary>What is the difference between <code>p.then(f, g)</code> and <code>p.then(f).catch(g)</code> for a promise <code>p</code>?</summary></details>
 
@@ -182,7 +186,7 @@ function push({ onTheStack, theValue })
 
 <details><summary>Does <code>await</code> actually wait (block) for anything? It not, what exactly does it do?</summary></details>
 
-<details><summary>How does one “wait” for a whole bunch of async functions to all ”finish”?</summary></details>
+<details><summary>How does one “wait” for a whole bunch of async functions to all ”finish”?</summary><code>Promise.all</code> or <code>Promise.allSettled</code></details>
 
 <details><summary>What is the difference between an <b>accessor property</b> and a <b>data property</b>? (Your answer should include all of the attributes for each kind of property.)</summary></details>
 
@@ -190,8 +194,8 @@ function push({ onTheStack, theValue })
 
 <details><summary>What is the difference between sealing and freezing an object?</summary></details>
 
-<details><summary>How do you get the prototype of an object?</summary><code>Object.getPrototypeOf(<i>someobject</i>)</details>
+<details><summary>How do you get the prototype of an object?</summary><code>Object.getPrototypeOf(<i>someobject</i>)</code></details>
 
-<details><summary>How do you set an object’s prototype after the object has already been created?</summary></details>
+<details><summary>How do you set an object’s prototype after the object has already been created?</summary><code>Object.setPrototypeOf(<i>someobject</i>, <i>newPrototype</i>)</code></details>
 
-<details><summary>What is the difference between <code>Object.keys</code> and <code>Object.getOwnPropertyNames</code>?</summary></details>
+<details><summary>What is the difference between <code>Object.keys</code> and <code>Object.getOwnPropertyNames</code>?</summary><code>keys<code> only returns the enumerable own property names</details>
