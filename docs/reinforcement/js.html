@@ -20,7 +20,7 @@
 
 <details><summary>Name the 8 data types of JavaScript (as of ES2020).</summary>Undefined, Null, Boolean, Number, String, Symbol, BigInt, Object</details>
 
-<details><summary>What is the difference between <code>boss === null</code> and <code>boss === undefined</code>?</summary><code>boss === null</code> means it is a fact there is no boss. <code>boss === undefined</code> indicates the boss may or may not exist, is unknown even it is does exist, or is no one’s business. </details>
+<details><summary>What is the difference between <code>boss === null</code> and <code>boss === undefined</code>?</summary><code>boss === null</code> means there is in fact no boss. <code>boss === undefined</code> indicates the boss may or may not exist, is unknown even if it does exist, or it’s no one’s business whether it exists or not, or who it is if it does. </details>
 
 <details><summary>How can you tell whether a number (a regular number, not a <code>BigInt</code>) is an integer or not?</summary><code>Number.isInteger(<i>x</i>)</code></details>
 
@@ -30,7 +30,7 @@
 
 <details><summary>How can you tell whether string <code>s</code> is a substring of string <code>t</code>?</summary><code>t.includes(s)</code></details>
 
-<details><summary>What two things can you do with backtick-delimited strings you can’t do with strings delimited with apostrophes or quotation marks?</summary>Interpolate and represent multiline strings directly</details>
+<details><summary>What two things can you do with backtick-delimited strings you can’t do with strings delimited with apostrophes or quotation marks?</summary>(1) Interpolate and (2) represent multiline strings directly</details>
 
 <details><summary>Why does <code>"🤣".length</code> have the value 2?</summary>The <code>length</code> method counts UTF-16 code units, not characters</details>
 
@@ -42,11 +42,13 @@
 
 <details><summary>Name all the nullish values in JavaScript.</summary><code>undefined</code>, <code>null</code></details>
 
-<details><summary>How do you determine the type of an expression at runtime?</summary><code>typeof(<i>e</i>)</code> produces the true type, but sometimes, <code><i>e</i>.constructor</code> will give you what you think of a type</details>
+<details><summary>How do you determine the type of an expression at runtime?</summary><code>typeof(<i>e</i>)</code></details>
+
+<details><summary>How do you determine the “class” of an object?</summary><i>e</i>.constructor</code></details>
 
 <details><summary>When should you use <code>let</code> and when should you use <code>const</code>?</summary>Bind with <code>let</code> if you will be changing the value bound to the indentifier; bind with <code>const</code> when the binding should be permanent</details>
 
-<details><summary>What bad thing will happen if you forget to use <code>let</code>, <code>const</code>, or <code>var</code> when declaring an identifier?</summary>JavaScript creates a new property on the global object, a new global variable, or if a variable already existed with that name, it is assigned to</details>
+<details><summary>What bad thing will happen if you forget to use <code>let</code>, <code>const</code>, or <code>var</code> when declaring an identifier?</summary>A non-local variable of the same name will get overwritten (yikes!), or a new (unexpected) global variable will be created</details>
 
 <details><summary>What is the object literal <code>{ x, y }</code> a shorthand for?</summary><code>{ x: x, y: y}</code></details>
 
@@ -54,15 +56,15 @@
 
 <details><summary>If <code>x === 'y'</code> then what is <code>{ x: 3, [x]: 5 }</code>?</summary><code>{x: 3, y: 5}</code></details>
 
-<details><summary>Why is <code>[1,12] < [1,3]</code> true but <code>[1,42] < [1,3]</code> false?</summary>The <code>&lt;</code> operator compares strings unless both operators are numbers. So the first conversion is actually <code>"1,12" < "1,3"</code> which is true, but the second is <code>"1,42" < "1,3"</code> and is false because <code>"4"</code> is larger than <code>"3"</code></details>
+<details><summary>Why is <code>[1,12] &lt; [1,3]</code> true but <code>[1,42] &lt; [1,3]</code> false?</summary>The <code>&lt;</code> operator compares strings unless both operators are numbers. So the first conversion is actually <code>"1,12" &lt; "1,3"</code> which is true, but the second is <code>"1,42" &lt; "1,3"</code> and is false because <code>"4"</code> is larger than <code>"3"</code></details>
 
-<details><summary>What is the difference between a deep copy and a shallow copy?</summary></details>
+<details><summary>What is the difference between a deep copy and a shallow copy?</summary>A shallow copy produces a new object containing copies of the source object’s property values, which, if these values are pointers, copy <em>only</em> the pointers themselves. A deep copy is recursively makes copies of objects that are referenced by pointers in the source object structure.</details>
 
-<details><summary>What is the <b>spread operator</b>?</summary></details>
+<details><summary>What is the <b>spread operator</b>?</summary>An operator that “spreads out”, “unpacks”, or “explodes’ array values or object properties into multiple entities so they can be inserted into other arrays or others or passed as multiple arguments instead of as one</details>
 
 <details><summary>How do you write an <i>object</i> to the console (beautifully formatted)?</summary><code>console.table(<i>someobject</i>)</code></details>
 
-<details><summary>Describe how a prototype-based language (like JavaScript) differs from a class-based language (like Java), in terms of thinking about collections of objects that share the same structure and behavior.</summary></details>
+<details><summary>Describe how a prototype-based language (like JavaScript) differs from a class-based language (like Java), in terms of thinking about collections of objects that share the same structure and behavior.</summary>In a class-based OO language, the Point class is not a point, but rather a factory for making points. In a prototype-based language, you start with an actual point object, and derive new points from it (usually by cloning or referring back to the original with a prototype link)</details>
 
 <details><summary>Properties defined directly within an object are called ________________ properties. Properties of an object accessible from the object’s prototype chain are called ________________ properties.</summary>Own; inherited</details>
 
@@ -70,11 +72,11 @@
 
 <details><summary>If <code>a == ["x", "y"]</code> what is <code>a.entries()</code>?</summary>An iterator that produces <code>[0, "x"]</code> and then <code>[1, "y"]</code></details>
 
-<details><summary>What do we mean when we say arrays are objects in JavaScript?</summary>All types other than the seven primitive types in JavaScript are objects, hence arrays are objects</details>
+<details><summary>What do we mean when we say arrays are objects in JavaScript?</summary>All types other than the seven primitive types in JavaScript are objects, hence arrays are objects; in particular, arrays have properties 0, 1, 2, ... (and <code>length</code>, among others)</details>
 
-<details><summary>Describe how <code>splice</code> works.</summary>It deletes zero or more elements from a given position in an array and optionally replaces these values with (an arbitrary nunber of) new elements. It returns the deleted elements in a new array</details>
+<details><summary>Describe how <code>splice</code> works.</summary>It deletes zero or more elements from a given position in an array and optionally replaces these values with (an arbitrary number of) new elements. It returns the deleted elements in a new array</details>
 
-<details><summary>Why is using a spread operator inside <code>[</code> and <code>]</code> different from using it inside <code>{</code> and <code>}</code>?</summary></details>
+<details><summary>How is using a spread operator inside <code>[</code> and <code>]</code> different from using it inside <code>{</code> and <code>}</code>?</summary>Spreading an array into an array spreads the array values only; Spreading a non-array object into an array cannot be done. Spreading into a non-array object (<code>{ }</code>) spreads both the property names and values</details>
 
 <details><summary>You might often see the expression <code>a.slice()</code>, for some array <code>a</code>. What does this expression do, exactly?</summary>It makes a shallow copy of <code>a</code></details>
 
@@ -82,7 +84,7 @@
 
 <details><summary>How does one create an array of 50 random numbers with a loop?</summary><code>const a = []; while (a.length < 50) { a.push(Math.random()) }</code></details>
 
-<details><summary>How does one create an array of 50 random number without a loop?</summary><code>Array(50).fill().map(() => Math.random())</code></details>
+<details><summary>How does one create an array of 50 random number without a loop?</summary><code>Array(50).fill().map(Math.random)</code></details>
 
 <details><summary>Write an equivalent expression to <code>a.concat(b)</code>, where <code>a</code> and <code>b</code> are arrays, using spreads.</summary><code>[...a, ...b]</code></details>
 
@@ -90,9 +92,9 @@
 
 <details><summary>What does <code>unshift</code> do? Does it mutate or not? What does it return?</summary>Adds an item to the front of an array; yes it mutates; it returns the new length of the array.</details>
 
-<details><summary>What is the difference between <b>value types</b> and <b>reference types</b>?</summary></details>
+<details><summary>What is the difference between <b>value types</b> and <b>reference types</b>?</summary>Values of value types are actual values and behave as if they are always copied; values of reference types are references to other values, generally resulting in less memory usage and allowing “sharing” to be utilized</details>
 
-<details><summary>Why do you think the JavaScript designer decided that objects should be reference types?</summary></details>
+<details><summary>Why do you think the JavaScript designer decided that objects should be reference types?</summary>They are cheaper and easier to implement!</details>
 
 <details><summary>Since strings can be very large, you might think strings would be reference types in JavaScript. After all, they are reference types in Java. But in JavaScript, they are considered primitive (value) types. This might lead you to believe JavaScript is necessarily slow because strings are always copied on assignment. However, this is not the case! Why?</summary>You don’t need to copy them because they are immutable! So behind the scenes they are probably implemented as references, but the programmer will never know the difference because they can’t change the contents (which is the only way to distinguish copying from sharing).</details>
 
@@ -164,9 +166,13 @@ function push({ onTheStack, theValue })
 
 <details><summary>For function <code>f</code> and object <code>x</code>, the expressions <code>f.call(x, 1, 2)</code> and <code>f.apply(x, [1, 2])</code> produce the same result. Write the equivalent expression using <code>bind</code>.</summary><code>f.bind(x)(1, 2)</code></details>
 
-<details><summary>JavaScript doesn’t have classes, but it does have the word <code>class</code>. But the keyword <code>class</code> does declare a function. How is this “function” defined? Give a short example.</summary></details>
+<details><summary>JavaScript doesn’t have classes, but it does have the word <code>class</code>. But the keyword <code>class</code> does declare a function. How is this “function” defined? Give a short example.</summary>The function is defined with the pseudo-method named <code>constructor</code>.<pre>
+class Box {
+  constructor(contents) { this.contents = contents }
+}
+</pre></details>
 
-<details><summary>What happens under the hood when you write <code>class A extends B</code>? In particular what does <code>A.prototype</code> look like in this case?</summary></details>
+<details><summary>What happens under the hood when you write <code>class A extends B</code>? In particular what does <code>A.prototype</code> look like in this case?</summary>The prototype of <code>A.prototype</code> is set to <code>N.prototype</code></details>
 
 <details><summary>How do you make a JavaScript object without a prototype?</summary><code>Object.create(null)</code></details>
 
@@ -186,7 +192,7 @@ function push({ onTheStack, theValue })
 
 <details><summary>What is the sole parameter of the <code>Promise</code> constructor and what kind of object is it?</summary>It’s called an executor and it is itself a function of two parameters, called <code>resolve</code> and <code>reject</code>, which are themselves functions. The body of the executor performs the asynchronous computation and calls <code>resolve</code> or <code>reject</code> as needed.</details>
 
-<details><summary>What is the difference between <code>p.then(f, g)</code> and <code>p.then(f).catch(g)</code> for a promise <code>p</code>?</summary></details>
+<details><summary>What is the difference between <code>p.then(f, g)</code> and <code>p.then(f).catch(g)</code> for a promise <code>p</code>?</summary>In the latter, any errors in <code>f</code> will be “caught” by <code>g</code></details>
 
 <details><summary>Why do most API invocations, or operating system calls (like reading and writing files), take in callbacks or return promises?</summary>They take an indefinite and possibly long time to complete</details>
 
