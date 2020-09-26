@@ -10,7 +10,7 @@
 
 <details><summary>What was JavaScript originally called?</summary>Mocha</details>
 
-<details><summary>Why was JavaScript created?</summary>Because Java, the language that was supposed to “run code in the browser,” turned out to be too heavy and too slow</details>
+<details><summary>Why was JavaScript created?</summary>Because Java, the language that was supposed to “run code in the browser,” turned out to be too heavy and too slow for this purpose</details>
 
 <details><summary>How do you write a line of text to the console?</summary><code>console.log(<i>sometext</i>)</code></details>
 
@@ -32,6 +32,8 @@
 
 <details><summary>How can you tell whether string <code>s</code> is a substring of string <code>t</code>?</summary><code>t.includes(s)</code></details>
 
+<details><summary>What are the string methods for padding and trimming?</summary><code>padStart</code>, <code>padEnd</code>, <code>trimStart</code>, <code>trimEnd</code>, and <code>trim</code></details>
+
 <details><summary>What two things can you do with backtick-delimited strings you can’t do with strings delimited with apostrophes or quotation marks?</summary>(1) Interpolate and (2) represent multiline strings directly</details>
 
 <details><summary>Why does <code>"🤣".length</code> have the value 2?</summary>The <code>length</code> method counts UTF-16 code units, not characters</details>
@@ -40,21 +42,31 @@
 
 <details><summary>Why is <code>2 && 3</code> equal to 3, but <code>2 & 3</code> equal to 2?</summary>The former is a short circuit logical AND: since 2 is truthy it produces 3; the latter is just binary AND, and you can see that <code>0b0010 & 0b0011 === 0b0010</code></details>
 
-<details><summary>Name all the falsy values in JavaScript.</summary><code>undefined</code>, <code>null</code>, <code>false</code>, <code>+0</code>, <code>-0</code>, <code>0n</code>, <code>NaN</code>, <code>""</code></details>
+<details><summary>Name all the <b>falsy</b> values in JavaScript.</summary><code>undefined</code>, <code>null</code>, <code>false</code>, <code>+0</code>, <code>-0</code>, <code>0n</code>, <code>NaN</code>, <code>""</code></details>
 
-<details><summary>Name all the nullish values in JavaScript.</summary><code>undefined</code>, <code>null</code></details>
+<details><summary>Name all the <b>nullish</b> values in JavaScript.</summary><code>undefined</code>, <code>null</code></details>
+
+<details><summary>What is a more concise way to write <code>x ? x : y</code>?</summary><code>x || y</code></details>
+
+<details><summary>What is a more concise way to write <code>x ? y : x</code>?</summary><code>x &amp;&amp; y</code></details>
+
+<details><summary>Why is it better to use <code>??</code> than <code>||</code> to represent the idea of a “default value”?</summary>Using <code> myValue || defaultValue</code> would produce the default value if <code>myValue</code> were 0, false, or the empty string, but these are very likely acceptable values. <code>myValue ?? defaultValue</code> only produces the default for <code>null</code> and <code>undefined</code></details>
 
 <details><summary>How do you determine the type of an expression at runtime?</summary><code>typeof(<i>e</i>)</code></details>
 
-<details><summary>How do you determine the “class” of an object?</summary><i>e</i>.constructor</code></details>
+<details><summary>How do you determine the “class” of an object?</summary><i>o</i>.constructor</code></details>
 
 <details><summary>When should you use <code>let</code> and when should you use <code>const</code>?</summary>Bind with <code>let</code> if you will be changing the value bound to the indentifier; bind with <code>const</code> when the binding should be permanent</details>
 
-<details><summary>What bad thing will happen if you forget to use <code>let</code>, <code>const</code>, or <code>var</code> when declaring an identifier?</summary>A non-local variable of the same name will get overwritten (yikes!), or a new (unexpected) global variable will be created</details>
+<details><summary>When should you use <code>var</code>?</summary>Never</details>
+
+<details><summary>What bad things can happen if you forget to use <code>let</code>, <code>const</code>, or <code>var</code> when declaring an identifier?</summary>A non-local variable of the same name will get overwritten (yikes!), or a new (unexpected) global variable will be created</details>
+
+<details><summary>What is the difference between <code>p.x</code> and <code>p[x]</code>?</summary><code>p.x</code> accesses the property of <code>p</code> named <code>"x"</code>; <code>p[x]</code> accesses the property of <code>p</code> whose name is the value stored in the variable <code>x</code></details>
 
 <details><summary>What is the object literal <code>{ x, y }</code> a shorthand for?</summary><code>{ x: x, y: y}</code></details>
 
-<details><summary>What is the difference between <code>p.x</code> and <code>p[x]</code>?</summary><code>p.x</code> accesses the property of <code>p</code> named <code>"x"</code>; <code>p[x]</code> accesses the property of <code>p</code> whose name is the value stored in the variable <code>x</code></details>
+<details><summary>What happens in the expression <code>player.coach.address.city</code> if any of the properties are missing or null? How do you write this expression to produce <code>undefined</code> or <code>null</code> in this case?</summary>A <code>TypeError</code> will be thrown. Write <code>player?.coach?.address?.city</code> instead</details>
 
 <details><summary>If <code>x === 'y'</code> then what is <code>{ x: 3, [x]: 5 }</code>?</summary><code>{x: 3, y: 5}</code></details>
 
@@ -64,9 +76,9 @@
 
 <details><summary>What is the <b>spread operator</b>?</summary>An operator that “spreads out”, “unpacks”, or “explodes’ array values or object properties into multiple entities so they can be inserted into other arrays or others or passed as multiple arguments instead of as one</details>
 
-<details><summary>How do you write an <i>object</i> to the console (beautifully formatted)?</summary><code>console.table(<i>someobject</i>)</code></details>
+<details><summary>How do you write an object to the console (beautifully formatted)?</summary><code>console.table(<i>someobject</i>)</code></details>
 
-<details><summary>Describe how a prototype-based language (like JavaScript) differs from a class-based language (like Java), in terms of thinking about collections of objects that share the same structure and behavior.</summary>In a class-based OO language, the Point class is not a point, but rather a factory for making points. In a prototype-based language, you start with an actual point object, and derive new points from it (usually by cloning or referring back to the original with a prototype link)</details>
+<details><summary>Describe how a prototype-based language (like JavaScript) differs from a class-based language (like Java), in terms of thinking about collections of objects that share the same structure and behavior.</summary>In a class-based OO language, a Point class is not a point, but rather a factory for making points. In a prototype-based language, you start with an actual point object, and derive new points from it (usually by cloning or referring back to the original with a prototype link)</details>
 
 <details><summary>Properties defined directly within an object are called ________________ properties. Properties of an object accessible from the object’s prototype chain are called ________________ properties.</summary>Own; inherited</details>
 
@@ -84,7 +96,7 @@
 
 <details><summary>How does one best create an array of size 100 in which every element is 0? (Do not write a loop.)</summary><code>Array(100).fill(0)</code></details>
 
-<details><summary>How does one create an array of 50 random numbers with a loop?</summary><code>const a = []; while (a.length < 50) { a.push(Math.random()) }</code></details>
+<details><summary>How does one create an array of 50 random numbers with a loop?</summary><code>const a = []; while (a.length &lt; 50) { a.push(Math.random()) }</code></details>
 
 <details><summary>How does one create an array of 50 random number without a loop?</summary><code>Array(50).fill().map(Math.random)</code></details>
 
@@ -93,6 +105,14 @@
 <details><summary><code>a.push(x)</code> mutates <code>a</code>. How do you do a non-mutating “push“?</summary><code>[...a, x]</code></details>
 
 <details><summary>What does <code>unshift</code> do? Does it mutate or not? What does it return?</summary>Adds an item to the front of an array; yes it mutates; it returns the new length of the array.</details>
+
+<details><summary>In many languages, assignment has the form <i>identifier</i> = <i>expression</i>. In JavaScript, the left hand side is <em>not</em> just an identifier. What exactly is the left hand side called?</summary>A pattern</details>
+
+<details><summary>In <code>let {r: c, q: [, y, {p}]} = {q: Array(5).fill({p:5, q:1}), r: 13, s: true}</code> what variables are being declared and to what values are they being initialized? Or is there an error?</summary><pre>
+r === 13
+y === {p: 5, q: 1}
+p === 5
+</pre></details>
 
 <details><summary>What is the difference between <b>value types</b> and <b>reference types</b>?</summary>Values of value types are actual values and behave as if they are always copied; values of reference types are references to other values, generally resulting in less memory usage and allowing “sharing” to be utilized</details>
 
@@ -114,15 +134,20 @@
 numbers.filter(x => x % 2 === 1).map(x => x ** 3).reduce((x, y) => x * y, 1)
 </pre></details>
 
-<details><summary>Write the function <code>function f(x = 3) { return x * y }</code> (where <code>y</code> is some global variable) without using a default parameter.</summary></details>
+<details><summary>Write the function <code>function f(x = 3) { return x * y }</code> (where <code>y</code> is some global variable) without using a default parameter.</summary><pre>
+function f() {
+  if (x === undefined) {
+    x = 3
+  }
+  return x * y
+}
+</pre></details>
 
 <details><summary>What is a <b>rest parameter</b>?</summary>A parameter that rolls up all the excess arguments into a single array. If there are no excess parameters the parameter value will be an empty array</details>
 
 <details><summary>Can a function definition have multiple rest parameters? Why or why not?</summary>No, you wouldn’t know how many excess arguments to give each parameter (unless the language made up a weird rule, but it would be hard to remember and likely not useful in practice)</details>
 
 <details><summary>One could argue that all non-default parameters are really default parameters. Why?</summary>They have a default value of <code>undefined</code>!</details>
-
-<details><summary>In many languages, assignment has the form IDENTIFIER = EXPRESSION. In JavaScript, the left hand side is <em>not</em> just an identifier. What exactly is the left hand side called?</summary>A pattern</details>
 
 <details><summary>The old-fashioned way to write a function that takes in an array and returns the sum of its first and third elements is: <code>function f(a) {return a[0] + a[2];}</code> Rewrite this in a modern fashion, where the function parameter is a pattern.</summary><pre>
 function f([x, ,y]) {
@@ -168,13 +193,13 @@ function push({ onTheStack, theValue })
 
 <details><summary>For function <code>f</code> and object <code>x</code>, the expressions <code>f.call(x, 1, 2)</code> and <code>f.apply(x, [1, 2])</code> produce the same result. Write the equivalent expression using <code>bind</code>.</summary><code>f.bind(x)(1, 2)</code></details>
 
-<details><summary>JavaScript doesn’t have classes, but it does have the word <code>class</code>. But the keyword <code>class</code> does declare a function. How is this “function” defined? Give a short example.</summary>The function is defined with the pseudo-method named <code>constructor</code>.<pre>
+<details><summary>JavaScript doesn’t have classes, but it does have the keyword <code>class</code>, which declares a function. How is this “function” defined? Give a short example.</summary>The function is defined with the pseudo-method named <code>constructor</code>.<pre>
 class Box {
   constructor(contents) { this.contents = contents }
 }
 </pre></details>
 
-<details><summary>What happens under the hood when you write <code>class A extends B</code>? In particular what does <code>A.prototype</code> look like in this case?</summary>The prototype of <code>A.prototype</code> is set to <code>N.prototype</code></details>
+<details><summary>What happens under the hood when you write <code>class A extends B</code>? In particular what does <code>A.prototype</code> look like in this case?</summary>The prototype of <code>A.prototype</code> is set to <code>B.prototype</code></details>
 
 <details><summary>How do you make a JavaScript object without a prototype?</summary><code>Object.create(null)</code></details>
 
@@ -182,11 +207,11 @@ class Box {
 
 <details><summary>What is <b>callback hell</b>?</summary>The ugly and complicated nesting that arises from callbacks within callbacks</details>
 
-<details><summary>What are two advantages of promises over callbacks?</summary>One is no callback hell, as promises are elegantly “chained”. Another is that error handling is much simpler: a single catch will do!</details>
+<details><summary>What are two advantages of promises over callbacks?</summary>(1) No callback hell, as promises are elegantly “chained”. (2) Error handling is much simpler: a single catch will do!</details>
 
 <details><summary>What are the three states a promise can be in?</summary>Pending, Fulfilled, and Rejected</details>
 
-<details><summary>What exactly is a promise?</summary>An object representing a computation that may finish in the future</details>
+<details><summary>What exactly is a promise?</summary>An object representing a computation that may or may not be completed yet</details>
 
 <details><summary>What does the function <code>async function five() { return 5; }</code> actually return?</summary>A promise that resolves to 5</details>
 
@@ -217,11 +242,11 @@ async function showFirstFortune() {
 
 <details><summary>How does one “wait” for a whole bunch of async functions to all ”finish”?</summary><code>Promise.all</code> or <code>Promise.allSettled</code></details>
 
-<details><summary>What is the difference between an <b>accessor property</b> and a <b>data property</b>? (Your answer should include all of the attributes for each kind of property.)</summary></details>
+<details><summary>What are the two kinds of property descriptors, and how do they differ?</summary>A <b>data descriptor</b> gives the value of a property, whether the property is writable (or not), enumerable (or not), and configurable (or not). An <b>accessor descriptor</b> gives the property’s getter and setter functions, and whether the property is enumerable (or not) and configurable (or not)</details>
 
-<details><summary>How do you make a property read-only?</summary></details>
+<details><summary>How do you make a property read-only?</summary>Set its <code>writable</code> attribute to <code>false</code></details>
 
-<details><summary>What is the difference between sealing and freezing an object?</summary></details>
+<details><summary>What is the difference between sealing and freezing an object?</summary>Freezing makes the properties all read-only; you can still overwrite the properties of a sealed object.</details>
 
 <details><summary>How do you get the prototype of an object?</summary><code>Object.getPrototypeOf(<i>someobject</i>)</code></details>
 
@@ -229,4 +254,4 @@ async function showFirstFortune() {
 
 <details><summary>What is the difference between <code>Object.keys</code> and <code>Object.getOwnPropertyNames</code>?</summary><code>keys</code> only returns the <em>enumerable</em> own property names, while <code>getOwnPropertyNames</code> returns all of them, whether enumerable or not.</details>
 
-<details><summary>Given <code>x = { a: 3, [Symbol('y')]: 5 }</code>, what is returned by <code>Object.keys(x)</code> and <code>Object.getOwnPropertyNames(x)</code>? How do you get the own properties that these miss?</summary>They both return <code>[ 'a' ]</code>. To get the other property, use <code>Object.getOwnPropertySymbols(x)</code></details>
+<details><summary>Given <code>x = { a: 3, [Symbol('y')]: 5 }</code>, what are the values returned by <code>Object.keys(x)</code> and by <code>Object.getOwnPropertyNames(x)</code>? How do you get the own properties that these miss?</summary>They both return <code>[ 'a' ]</code>. To get the other property, use <code>Object.getOwnPropertySymbols(x)</code></details>

@@ -9,7 +9,7 @@ Most are the answers are covered in the [book](https://rtoal.github.io/ple/) or 
 Enjoy!
 
 - [JavaScript](js.html)
-- [Python](python.md)
+- [Python](python.html)
 - [Ruby](ruby.md)
 - [Java](java.md)
 - [Swift](swift.md)

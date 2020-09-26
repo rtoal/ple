@@ -1,0 +1,165 @@
+<img src="https://raw.githubusercontent.com/rtoal/polyglot/master/docs/resources/python-logo-64.png">
+
+<link rel="stylesheet" href="style.css">
+
+<h1>Python Reinforcement Practice</h1>
+
+<p></p>Here are a set of problems designed to help you <a href="https://ncase.me/remember/">reinforce and retain</a> some useful Python knowledge. If you are an <a href="https://apps.ankiweb.net/">Anki</a> or Quizlet fan, consider adding some of these questions into a deck. 😀</p><hr>
+
+<details><summary>Who created Python and in what year?</summary>Guido van Rossum, who started work on the language in 1989 but first released it to the world in 1991</details>
+
+<details><summary>How long was GvR’s tenure as the BDFL?</summary>From the language’s inception to July, 2018</details>
+
+<details><summary>Python doesn’t use curly braces; instead, structure is shown using indentation, with something known as the _________________ rule.</summary>Offside</details>
+
+<details><summary>How do you write a line of text to standard output?</summary><pre>
+print(<i>sometext</i>)
+</pre></details>
+
+<details><summary>How do you access the third command line argument of a script, run on the command line?</summary></details>
+
+<details><summary>How do you iterate through the lines of standard input?</summary></details>
+
+<details><summary>Why do we not have to worry about the expression <code>range(1, 10000000)</code> taking up a lot of memory?</summary></details>
+
+<details><summary>How do you write the (conditional) expression that evaluates to <code>y</code> if <code>x</code> is truthy and to <code>z</code> if <code>x</code> is falsy?</summary></details>
+
+<details><summary>How do you get the type of a Python expression at runtime?</summary></details>
+
+<details><summary>Why does Python not have primitive and reference types?</summary></details>
+
+<details><summary>If everything in Python is an object, does that mean even integers and booleans get allocated on the heap? What allows them to not have to be heap-allocated?</summary></details>
+
+<details><summary>Does Python have distinct types for integers and floating point numbers?</summary>Yes, <code>int</code> and <code>float</code></details>
+
+<details><summary>Does Python have distinct types for small integers and unbounded integers?</summary>Nope, the basic type <code>int</code> is unbounded</details>
+
+<details><summary>What is the difference between <code>is</code> and <code>==</code>?</summary></details>
+
+<details><summary>How can you tell whether string <code>s</code> is a substring of string <code>t</code>?</summary></details>
+
+<details><summary>How do you do string interpolation in Python?</summary></details>
+
+<details><summary>Why is <code>2 and 3</code> equal to 3, but <code>2 & 3</code> equal to 2?</summary></details>
+
+<details><summary>Name all the falsy values in Python.</summary></details>
+
+<details><summary>How do you write a one-element tuple?</summary><code>(x, )</code></details>
+
+<details><summary>How are tuples compared with <code>&lt;</code>, <code>&lt;=</code>, <code>></code>, and <code>>=</code>? Are lists compared the same way?</summary></details>
+
+<details><summary>If <code>{3, 5}</code> is a legal set expression, why is <code>{}</code> not a legal set expression?</summary></details>
+
+<details><summary>How do you “declare” a local variable in Python?</summary></details>
+
+<details><summary>What is the difference between <code>p.x</code> and <code>p[x]</code>?</summary></details>
+
+<details><summary>If <code>x == 'y'</code> then what is <code>{ x: 3, 'x': 5 }</code> ?</summary></details>
+
+<details><summary>Does Python have an analog to JavaScript’s spread operator? If so, give an example of its use.</summary></details>
+
+<details><summary>You might often see the expression <code>a[:]</code>, for some list <code>a</code>. What does this expression do, exactly?</summary></details>
+
+<details><summary>Explain why <code>a[::-1]</code> is the idiom for a reversed list.</summary></details>
+
+<details><summary>How does one best create an array of size 100 in which every element is 0? (Do not write a loop.)</summary><code>[0] * 100</code></details>
+
+<details><summary>What is the difference between <code>a+b</code> and <code>[*a,*b]</code> where <code>a</code> and <code>b</code> are lists?</summary></details>
+
+<details><summary><code>a.append(x)</code> mutates <code>a</code>. How do you do a non-mutating append?</summary><code>[*a, x]</code></details>
+
+<details><summary>How do you add an element to the front of a list, in a mutating fashion? Is this efficient? If not, what should you do instead?</summary></details>
+
+<details><summary>Write an IIFE that applies, to the argument 100, the anonymous arrow function that squares its argument.</summary><code>(lambda x: x ** 2)(100)</code></details>
+
+<details><summary>What important limitations does Python put on anonymous functions?</summary></details>
+
+<details><summary>In the function definition <code>def f(x, y): return [x, y]</code>, what do we call <code>x</code> and <code>y</code>?</summary>Parameters</details>
+
+<details><summary>In the function call <code>f(y, z)</code>, what do we call <code>y</code> and <code>z</code>?</summary>Arguments</details>
+
+<details><summary>What are kwargs?</summary></details>
+
+<details><summary>Can positional arguments ever appear after keyword arguments? Why or why not?</summary></details>
+
+<details><summary>Can a function definition have multiple “args’ parameters? Why or why not?</summary></details>
+
+<details><summary>Does Python allow assignments with array patterns on the left-hand side?</summary></details>
+
+<details><summary>Does Python allow assignments with dictionary patterns on the left-hand side?</summary></details>
+
+<details><summary>How do you force a function to take its arguments positionally (Python 3.8 and above)?</summary></details>
+
+<details><summary>How do you force a function to take its arguments as kwargs?</summary></details>
+
+<details><summary>Why should you be scared of using default arguments that are lists? Do you have to worry about this in JavaScript?</summary></details>
+
+<details><summary>In sense are Python anonymous functions limited compared to those of JavaScript?</summary>Python anonymous functions are limited to bodies that are single expression</details>
+
+<details><summary>Python has global scope and function scope, but does it have block scope?</summary></details>
+
+<details><summary>What is the difference between <code>global</code> and <code>nonlocal</code>?</summary></details>
+
+<details><summary>When do you use <code>nonlocal</code> and when do you use <code>global</code>?</summary></details>
+
+<details><summary>Does Python have an analog of JavaScript’s temporal dead zone? If so, how does it work? If not, why is such a concept incoherent in Python?</summary></details>
+
+<details><summary>Write a function that takes in a number and returns a function that adds that number to its argument. Is the function you wrote higher-order? Why or why not? Does that function illustrate a closure? Why or why not? Does that function illustrate currying? Why or why not?</summary></details>
+
+<details><summary>Why are <code>map</code> and <code>filter</code> rarely used in Python?</summary>List comprehensions are favored by the community over <code>map</code> and <code>filter</code></details>
+
+<details><summary>What is a list comprehension for all pairs (2-tuples) of integers where the first element is in the range 1..5 inclusive and the second is in the range 1..3 inclusive?</summary></details>
+
+<details><summary>What is a list comprehension for a 10x10 multiplication table?</summary></details>
+
+<details><summary>What is the first line of that block at the end of a module that allows you to “run” the module from the command line?</summary></details>
+
+<details><summary>What is the difference between <code>import M</code> and <code>from M import e</code>?</summary></details>
+
+<details><summary>Instead of <code>throw</code>, Python uses ________________.</summary><code>raise</code></details>
+
+<details><summary>The things inside of a class are called ________________.</summary></details>
+
+<details><summary>How do you create an instance of a class?</summary></details>
+
+<details><summary>What is the difference between a function and a method?</summary></details>
+
+<details><summary>What is the first parameter of a method for?</summary></details>
+
+<details><summary>Suppose class <code>Circle</code> has a method <code>area</code> and <code>c</code> is an instance of <code>Circle</code>. The invocation <code>c.area()</code> is actually sugar for what expression?</summary></details>
+
+<details><summary>What is the method <code>__init__</code> used for?</summary></details>
+
+<details><summary>What is the methods <code>__str__</code> used for?</summary></details>
+
+<details><summary>Is it possible to make an attribute of a class inaccessible to methods outside the class (like Java’s <code>private</code>)?</summary></details>
+
+<details><summary>What is the syntax for declaring a class that is a subtype of another class?</summary></details>
+
+<details><summary>What is a class attribute?</summary></details>
+
+<details><summary>How are class attributes defined in Python?</summary></details>
+
+<details><summary>How do you allow the operators <code>+</code> and <code>-</code> to apply to instances of a class you write yourself?</summary></details>
+
+<details><summary>Which two methods are required for an object to be an iterator? What behavior must these methods have?</summary></details>
+
+<details><summary>Iterators can be used in what Python statement?</summary></details>
+
+<details><summary>Rather than writing our own iterator object, we would write a ____________ instead.</summary></details>
+
+<details><summary>JavaScript defines generators with the syntax <code>function*</code>. How does Python define generators?</summary></details>
+
+<details><summary>Given <code>def f(): yield 1; yield 2; yield 3</code>, what is wrong with writing <code>for i in f: print(i)</code>? What should we write instead?</summary></details>
+
+<details><summary>What is a generator expression? Give an example.</summary></details>
+
+<details><summary>What does the <code>@property</code> decorator do?</summary></details>
+
+<details><summary>What does the <code>@classmethod</code> decorator do?</summary></details>
+
+<details><summary>What is PEP-8?</summary></details>
+
+<details><summary>What is PEP-20?</summary></details>
+
+
