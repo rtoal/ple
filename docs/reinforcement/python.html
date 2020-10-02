@@ -4,7 +4,7 @@
 
 <h1>Python Reinforcement Practice</h1>
 
-<p></p>Here are a set of problems designed to help you <a href="https://ncase.me/remember/">reinforce and retain</a> some useful Python knowledge. If you are an <a href="https://apps.ankiweb.net/">Anki</a> or Quizlet fan, consider adding some of these questions into a deck. 😀</p><hr>
+<p>Here are a set of problems designed to help you <a href="https://ncase.me/remember/">reinforce and retain</a> some useful Python knowledge. If you are an <a href="https://apps.ankiweb.net/">Anki</a> or Quizlet fan, consider adding some of these questions into a deck. 😀</p><hr>
 
 <details><summary>Who created Python and in what year?</summary>Guido van Rossum, who started work on the language in 1989 but first released it to the world in 1991</details>
 
@@ -16,23 +16,34 @@
 print(<i>sometext</i>)
 </pre></details>
 
-<details><summary>How do you access the third command line argument of a script, run on the command line?</summary></details>
+<details><summary>How do you access the third command line argument of a script, run on the command line?</summary><code>sys.argv[3]</code></details>
 
-<details><summary>How do you iterate through the lines of standard input?</summary></details>
+<details><summary>How do you iterate through the lines of standard input?</summary><pre>
+for line in sys.stdin:
+    ...
+</pre></details>
 
-<details><summary>Why do we not have to worry about the expression <code>range(1, 10000000)</code> taking up a lot of memory?</summary></details>
+<details><summary>What is the difference between <code>21 / 8</code> and <code>21 // 8</code>?</summary>The former does <strong>true division</strong>, producing 2.625; the later does <strong>floor division</strong>, producing 2</details>
 
-<details><summary>How do you write the (conditional) expression that evaluates to <code>y</code> if <code>x</code> is truthy and to <code>z</code> if <code>x</code> is falsy?</summary></details>
+<details><summary>Why do we not have to worry about the expression <code>range(1, 10000000)</code> taking up a lot of memory?</summary>A range object is not a fully-realized sequence; it is a small thing that produces objects only on demand</details>
 
-<details><summary>How do you get the type of a Python expression at runtime?</summary></details>
+<details><summary>How do you write the (conditional) expression that evaluates to <code>y</code> if <code>x</code> is truthy and to <code>z</code> if <code>x</code> is falsy?</summary><code>y if x else z</code></details>
 
-<details><summary>Why does Python not have primitive and reference types?</summary></details>
+<details><summary>How do you write an assignment statment to swap the bindings of <code>x</code> and <code>y</code>?</summary><pre>x, y = y, x</pre></details>
 
-<details><summary>If everything in Python is an object, does that mean even integers and booleans get allocated on the heap? What allows them to not have to be heap-allocated?</summary></details>
+<details><summmary>How do you write the Python value whose square is -1?</summmary><code>1j</code></details>
+
+<details><summary>How do you get the type of a Python expression at runtime?</summary><code>type(<i>e</i>)</code></details>
+
+<details><summary>Why does Python not have primitive and reference types?</summary>The distinction is not necessary; the language philosophy values simplicity</details>
+
+<details><summary>If everything in Python is an object, does that mean even integers and booleans get allocated on the heap? What allows them to not have to be heap-allocated?</summary>Because they are immutable, there is no difference between allocating on the heap (i.e., accessing them through references) and just allocating their values directly</details>
 
 <details><summary>Does Python have distinct types for integers and floating point numbers?</summary>Yes, <code>int</code> and <code>float</code></details>
 
 <details><summary>Does Python have distinct types for small integers and unbounded integers?</summary>Nope, the basic type <code>int</code> is unbounded</details>
+
+<details><summary>What are the types of the expressions <code>[x**2 for x in range(10)]</code> and <code>(x**2 for x in range(10))</code>?</summary><code>list</code>; <code>generator</code></details>
 
 <details><summary>What is the difference between <code>is</code> and <code>==</code>?</summary></details>
 
@@ -48,7 +59,21 @@ print(<i>sometext</i>)
 
 <details><summary>How are tuples compared with <code>&lt;</code>, <code>&lt;=</code>, <code>></code>, and <code>>=</code>? Are lists compared the same way?</summary></details>
 
-<details><summary>If <code>{3, 5}</code> is a legal set expression, why is <code>{}</code> not a legal set expression?</summary></details>
+<details><summary>If <code>{3, 5}</code> is a legal set expression, why is <code>{}</code> not a legal set expression?</summary>Python uses <code>{}</code> for the empty dict</details>
+
+<details><summary>How do you write the mathematical set operators ∈, ∉, ⋃, ⋂, &ndash;, ⊖, ⊂, ⊆, ⊃, ⊇ in Python?</summary><table border=1 cellpadding=3 cellspacing=0>
+<tr><th>Math</th><th>Python</th><th>Meaning</th></tr>
+<tr><td >∈</td><td><code>in</code></td><td>element of</td></tr>
+<tr><td >∉</td><td><code>not in</code></td><td>not element of</td></tr>
+<tr><td >⋃</td><td><code>|</code></td><td>union</td></tr>
+<tr><td >⋂</td><td><code>&amp;</code></td><td>intersection</td></tr>
+<tr><td >&ndash;</td><td><code>-</code></td><td>difference</td></tr>
+<tr><td >⊖</td><td><code>^</code></td><td>symmetric difference</td></tr>
+<tr><td >⊆</td><td><code>&lt;=</code></td><td>subset</td></tr>
+<tr><td >⊂</td><td><code>&lt;</code></td><td>proper subset</td></tr>
+<tr><td >⊇</td><td><code>>=</code></td><td>superset</td></tr>
+<tr><td >⊃</td><td><code>></code></td><td>proper superset</td></tr>
+</table></details>
 
 <details><summary>How do you “declare” a local variable in Python?</summary></details>
 

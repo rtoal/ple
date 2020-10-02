@@ -4,7 +4,7 @@
 
 <h1>JavaScript Reinforcement Practice</h1>
 
-<p></p>Here are a set of problems designed to help you <a href="https://ncase.me/remember/">reinforce and retain</a> some useful JavaScript knowledge. If you are an <a href="https://apps.ankiweb.net/">Anki</a> or Quizlet fan, consider adding some of these questions into a deck. 😀</p><hr>
+<p>Here are a set of problems designed to help you <a href="https://ncase.me/remember/">reinforce and retain</a> some useful JavaScript knowledge. If you are an <a href="https://apps.ankiweb.net/">Anki</a> or Quizlet fan, consider adding some of these questions into a deck. 😀</p><hr>
 
 <details><summary>Who created JavaScript and in what year?</summary>Brendan Eich, 1995</details>
 
@@ -24,7 +24,7 @@
 
 <details><summary>How can you tell whether a number (a regular number, not a <code>BigInt</code>) is an integer or not?</summary><code>Number.isInteger(<i>x</i>)</code></details>
 
-<details><summary>What are <b>safe integers</b> in JavaScript?</summary>Integers in the maximal range of numbers where the representable values are packed tightly enough to contain all integers in the range. (Aside: this range is -9007199254740991 to 9007199254740991.)</details>
+<details><summary>What are <b>safe integers</b> in JavaScript?</summary>Values of the Number type that are exactly representable and are the (IEEE-754 double) representation of exactly one integer. (Aside: this range is -9007199254740991 to 9007199254740991.)</details>
 
 <details><summary>If <code>x</code> has the value <code>NaN</code>, what is the value of the expression <code>x === NaN</code>? Why? What is the correct way to determine if an expression has the value <code>NaN</code>?</summary>It’s <code>false</code> because <code>===</code> by definition produces <code>false</code> when one of its operands is <code>NaN</code>. You need to invoke <code>isNaN(x)</code></details>
 
@@ -106,6 +106,8 @@
 
 <details><summary>What does <code>unshift</code> do? Does it mutate or not? What does it return?</summary>Adds an item to the front of an array; yes it mutates; it returns the new length of the array.</details>
 
+<details><summary>What is the difference between <code>s.split('')</code> and <code>[...s]</code> for a string <code>s</code>?</summary>The <code>split</code> method splits into code units; the spread operator splits into characters</details>
+
 <details><summary>In many languages, assignment has the form <i>identifier</i> = <i>expression</i>. In JavaScript, the left hand side is <em>not</em> just an identifier. What exactly is the left hand side called?</summary>A pattern</details>
 
 <details><summary>In <code>let {r: c, q: [, y, {p}]} = {q: Array(5).fill({p:5, q:1}), r: 13, s: true}</code> what variables are being declared and to what values are they being initialized? Or is there an error?</summary><pre>
@@ -116,7 +118,7 @@ p === 5
 
 <details><summary>What is the difference between <b>value types</b> and <b>reference types</b>?</summary>Values of value types are actual values and behave as if they are always copied; values of reference types are references to other values, generally resulting in less memory usage and allowing “sharing” to be utilized</details>
 
-<details><summary>Why do you think the JavaScript designer decided that objects should be reference types?</summary>They are cheaper and easier to implement!</details>
+<details><summary>Why do you think the JavaScript designer decided that objects should be reference types?</summary>It is a good default, because for massive objects, copying them can be very expensive, and therefore a programmer would have to go out of their way to say they <em>want</em> an expensive copy</details>
 
 <details><summary>Since strings can be very large, you might think strings would be reference types in JavaScript. After all, they are reference types in Java. But in JavaScript, they are considered primitive (value) types. This might lead you to believe JavaScript is necessarily slow because strings are always copied on assignment. However, this is not the case! Why?</summary>You don’t need to copy them because they are immutable! So behind the scenes they are probably implemented as references, but the programmer will never know the difference because they can’t change the contents (which is the only way to distinguish copying from sharing).</details>
 
@@ -203,7 +205,12 @@ class Box {
 
 <details><summary>How do you make a JavaScript object without a prototype?</summary><code>Object.create(null)</code></details>
 
-<details><summary>When would you see a <code>TypeError</code> thrown? A <code>RangeError</code>? A <code>SyntaxError</code>? A <code>ReferenceError</code>?</summary></details>
+<details><summary>When would you see a <code>TypeError</code> thrown? A <code>RangeError</code>? A <code>SyntaxError</code>? A <code>ReferenceError</code>?</summary><ul>
+<li>TypeError: when an operand’s type is not as expected and JavaScript will not coerce</li>
+<li>RangeError: when numeric operands are too big or too small, e.g. <code>Array(-5)</code></li>
+<li>SyntaxError: when interpreting syntactically invalid code, e.g. in <code>eval</code></li>
+<li>ReferenceError: when referencing a non-existent variable</li>
+</ul></details>
 
 <details><summary>What is <b>callback hell</b>?</summary>The ugly and complicated nesting that arises from callbacks within callbacks</details>
 
@@ -215,7 +222,7 @@ class Box {
 
 <details><summary>What does the function <code>async function five() { return 5; }</code> actually return?</summary>A promise that resolves to 5</details>
 
-<details><summary>Given <code>let f = async x => 1</code> and <code>let g = async => 2</code> what do the expressions <code>f()</code> and <code>g()</code> return? Why? Why is the definition of <code>g</code> even acceptable?</summary></details>
+<details><summary>Given <code>let f = async x => 1</code> and <code>let g = async => 2</code> what do the expressions <code>f()</code> and <code>g()</code> return? Why? Why is the definition of <code>g</code> even acceptable?</summary><code>f()</code> returns a promise that fulfills to 1. <code>g()</code> just returns 2, because <code>async</code> is not actually a reserved word, so <code>g</code> is a function with one parameter, werdly named <code>async</code>. The parameter is ignored and 2 is returned.</details>
 
 <details><summary>What is the sole parameter of the <code>Promise</code> constructor and what kind of object is it?</summary>It’s called an executor and it is itself a function of two parameters, called <code>resolve</code> and <code>reject</code>, which are themselves functions. The body of the executor performs the asynchronous computation and calls <code>resolve</code> or <code>reject</code> as needed.</details>
 
@@ -238,7 +245,7 @@ async function showFirstFortune() {
 </pre>
 </details>
 
-<details><summary>Does <code>await</code> actually wait (block) for anything? It not, what exactly does it do?</summary></details>
+<details><summary>Does <code>await</code> actually wait (block) for anything? It not, what exactly does it do?</summary>Well, kind of. It definitely pauses the execution flow of the currently executing function, but other computations can run during the pause (it doesn’t block the entire script). The function is able to continue after an awaited promise is settled.</details>
 
 <details><summary>How does one “wait” for a whole bunch of async functions to all ”finish”?</summary><code>Promise.all</code> or <code>Promise.allSettled</code></details>
 
