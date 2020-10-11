@@ -25,7 +25,7 @@ for line in sys.stdin:
 
 <details><summary>What is the difference between <code>21 / 8</code> and <code>21 // 8</code>?</summary>The former does <strong>true division</strong>, producing 2.625; the later does <strong>floor division</strong>, producing 2</details>
 
-<details><summary>Why do we not have to worry about the expression <code>range(1, 10000000)</code> taking up a lot of memory?</summary>A range object is not a fully-realized sequence; it is a tony object that produces objects only on demand</details>
+<details><summary>Why do we not have to worry about the expression <code>range(1, 10000000)</code> taking up a lot of memory?</summary>A range object is not a fully-realized sequence; it is a small, compact, tiny object that produces objects only on demand</details>
 
 <details><summary>How do you write the (conditional) expression that evaluates to <code>y</code> if <code>x</code> is truthy and to <code>z</code> if <code>x</code> is falsy?</summary><code>y if x else z</code></details>
 
@@ -141,7 +141,7 @@ for line in sys.stdin:
 if __name__ == '__main__':
 </pre></details>
 
-<details><summary>What is the difference between <code>import M</code> and <code>from M import e</code>?</summary></details>
+<details><summary>What is the difference between <code>import M</code> and <code>from M import e</code>?</summary>The former makes everything in module M avaiable to the current module, but they must be qualified (e.g., <code>M.e</code>). The latter makes only <code>e</code> available, without qualification (i.e., you just say <code>e</code>).</details>
 
 <details><summary>Instead of <code>throw</code>, Python uses ________________.</summary><code>raise</code></details>
 
@@ -155,7 +155,7 @@ if __name__ == '__main__':
 
 <details><summary>Suppose class <code>Circle</code> has a method <code>area</code> and <code>c</code> is an instance of <code>Circle</code>. The invocation <code>c.area()</code> is actually sugar for what expression?</summary><code>Circle.area(c)</code></details>
 
-<details><summary>What is the method <code>__init__</code> used for?</summary></details>
+<details><summary>What is the method <code>__init__</code> used for?</summary>Construction</details>
 
 <details><summary>What is the methods <code>__str__</code> used for?</summary></details>
 
@@ -185,8 +185,8 @@ if __name__ == '__main__':
 
 <details><summary>What does the <code>@classmethod</code> decorator do?</summary></details>
 
-<details><summary>What is PEP-8?</summary></details>
+<details><summary>What is PEP-8?</summary>The Python Style Guide</details>
 
-<details><summary>What is PEP-20?</summary></details>
+<details><summary>What is PEP-20?</summary>The Zen of Python</details>
 
 
