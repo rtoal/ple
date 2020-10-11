@@ -20,18 +20,18 @@ print(<i>sometext</i>)
 
 <details><summary>How do you iterate through the lines of standard input?</summary><pre>
 for line in sys.stdin:
-    ...
+    # do something with line
 </pre></details>
 
 <details><summary>What is the difference between <code>21 / 8</code> and <code>21 // 8</code>?</summary>The former does <strong>true division</strong>, producing 2.625; the later does <strong>floor division</strong>, producing 2</details>
 
-<details><summary>Why do we not have to worry about the expression <code>range(1, 10000000)</code> taking up a lot of memory?</summary>A range object is not a fully-realized sequence; it is a small thing that produces objects only on demand</details>
+<details><summary>Why do we not have to worry about the expression <code>range(1, 10000000)</code> taking up a lot of memory?</summary>A range object is not a fully-realized sequence; it is a tony object that produces objects only on demand</details>
 
 <details><summary>How do you write the (conditional) expression that evaluates to <code>y</code> if <code>x</code> is truthy and to <code>z</code> if <code>x</code> is falsy?</summary><code>y if x else z</code></details>
 
 <details><summary>How do you write an assignment statment to swap the bindings of <code>x</code> and <code>y</code>?</summary><pre>x, y = y, x</pre></details>
 
-<details><summmary>How do you write the Python value whose square is -1?</summmary><code>1j</code></details>
+<details><summary>How do you write the Python value whose square is -1?</summary><code>1j</code></details>
 
 <details><summary>How do you get the type of a Python expression at runtime?</summary><code>type(<i>e</i>)</code></details>
 
@@ -45,13 +45,13 @@ for line in sys.stdin:
 
 <details><summary>What are the types of the expressions <code>[x**2 for x in range(10)]</code> and <code>(x**2 for x in range(10))</code>?</summary><code>list</code>; <code>generator</code></details>
 
-<details><summary>What is the difference between <code>is</code> and <code>==</code>?</summary></details>
+<details><summary>What is the difference between <code>is</code> and <code>==</code>?</summary>The former compares the <strong>identity</strong> of two objects; the latter compares their <strong>values</strong></details>
 
-<details><summary>How can you tell whether string <code>s</code> is a substring of string <code>t</code>?</summary></details>
+<details><summary>How can you tell whether string <code>s</code> is a substring of string <code>t</code>?</summary><code>s in t</code></details>
 
-<details><summary>How do you do string interpolation in Python?</summary></details>
+<details><summary>How do you do string interpolation in Python?</summary><pre>f"text {expression} more text"</pre></details>
 
-<details><summary>Why is <code>2 and 3</code> equal to 3, but <code>2 & 3</code> equal to 2?</summary></details>
+<details><summary>Why is <code>2 and 3</code> equal to 3, but <code>2 & 3</code> equal to 2?</summary>The former is short-circuit logical conjunction; since 2 is truthy, 3 is produced. The latter is binary AND, 010 /\ 011 &rArr; 010.</details>
 
 <details><summary>Name all the falsy values in Python.</summary></details>
 
@@ -121,7 +121,7 @@ for line in sys.stdin:
 
 <details><summary>In sense are Python anonymous functions limited compared to those of JavaScript?</summary>Python anonymous functions are limited to bodies that are single expression</details>
 
-<details><summary>Python has global scope and function scope, but does it have block scope?</summary></details>
+<details><summary>Python has global scope and function scope, but does it have block scope?</summary>Nope</details>
 
 <details><summary>What is the difference between <code>global</code> and <code>nonlocal</code>?</summary></details>
 
@@ -137,21 +137,23 @@ for line in sys.stdin:
 
 <details><summary>What is a list comprehension for a 10x10 multiplication table?</summary></details>
 
-<details><summary>What is the first line of that block at the end of a module that allows you to “run” the module from the command line?</summary></details>
+<details><summary>What is the first line of that block at the end of a module that allows you to “run” the module from the command line?</summary><pre>
+if __name__ == '__main__':
+</pre></details>
 
 <details><summary>What is the difference between <code>import M</code> and <code>from M import e</code>?</summary></details>
 
 <details><summary>Instead of <code>throw</code>, Python uses ________________.</summary><code>raise</code></details>
 
-<details><summary>The things inside of a class are called ________________.</summary></details>
+<details><summary>The things inside of a class are called the ________________ of the class.</summary>Attributes</details>
 
-<details><summary>How do you create an instance of a class?</summary></details>
+<details><summary>How do you create an instance of a class?</summary><code>Classname(<i>args</i>)</code></details>
 
-<details><summary>What is the difference between a function and a method?</summary></details>
+<details><summary>What is the difference between a function and a method?</summary>A method is a function declared in a class</details>
 
-<details><summary>What is the first parameter of a method for?</summary></details>
+<details><summary>What is the first parameter of a method for?</summary>For instance methods, it’s the receiver. For class methods it’s the class object itself. For static methods, whatever you want.</details>
 
-<details><summary>Suppose class <code>Circle</code> has a method <code>area</code> and <code>c</code> is an instance of <code>Circle</code>. The invocation <code>c.area()</code> is actually sugar for what expression?</summary></details>
+<details><summary>Suppose class <code>Circle</code> has a method <code>area</code> and <code>c</code> is an instance of <code>Circle</code>. The invocation <code>c.area()</code> is actually sugar for what expression?</summary><code>Circle.area(c)</code></details>
 
 <details><summary>What is the method <code>__init__</code> used for?</summary></details>
 
@@ -159,21 +161,21 @@ for line in sys.stdin:
 
 <details><summary>Is it possible to make an attribute of a class inaccessible to methods outside the class (like Java’s <code>private</code>)?</summary></details>
 
-<details><summary>What is the syntax for declaring a class that is a subtype of another class?</summary></details>
+<details><summary>What is the syntax for declaring a class that is a subtype of another class?</summary>Just use a colon, for example <code>class Dog: Animal</code></details>
 
 <details><summary>What is a class attribute?</summary></details>
 
 <details><summary>How are class attributes defined in Python?</summary></details>
 
-<details><summary>How do you allow the operators <code>+</code> and <code>-</code> to apply to instances of a class you write yourself?</summary></details>
+<details><summary>How do you allow the operators <code>+</code> and <code>-</code> to apply to instances of a class you write yourself?</summary>Define <code>__add__</code> and <code>__sub__</code></details>
 
 <details><summary>Which two methods are required for an object to be an iterator? What behavior must these methods have?</summary></details>
 
-<details><summary>Iterators can be used in what Python statement?</summary></details>
+<details><summary>Iterators can be used in what Python statement?</summary><code>for</code></details>
 
-<details><summary>Rather than writing our own iterator object, we would write a ____________ instead.</summary></details>
+<details><summary>Rather than writing our own iterator object, we would write a ____________ instead.</summary>Generator</details>
 
-<details><summary>JavaScript defines generators with the syntax <code>function*</code>. How does Python define generators?</summary></details>
+<details><summary>JavaScript defines generators with the syntax <code>function*</code>. How does Python define generators?</summary>Just have a <code>yield</code> expression in it somewhere.</details>
 
 <details><summary>Given <code>def f(): yield 1; yield 2; yield 3</code>, what is wrong with writing <code>for i in f: print(i)</code>? What should we write instead?</summary></details>
 
