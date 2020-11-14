@@ -98,6 +98,10 @@ class C extends S implements A, B
 <tr><td>Predicate</td><td>Function with one args, returning a boolean</td><td><code>test: (T) &rarr; bool</code></td></tr>
 </table></details>
 
+<details><summary>What is the method reference for <code>s -> s.toUpperCase()</code>?</summary><pre>
+String::toUpperCase
+</pre></details>
+
 <details><summary>Is <code>null</code> a member of every reference type in Java? If so, what were the designers of the language thinking when they included this “feature”?</summary>Maybe they just didn’t know this was the billion dollar mistake. Maybe they were lazy and thought the billion-dollar mistake was no big deal. Maybe they thought it was too complex to introduce optionals in 1995, since technology wasn’t so advanced back then.</details>
 
 <details><summary>What is the decision to include <code>null</code> as a member of every reference type referred to as? Who called it that? Why?</summary>Tony Hoare called it the billion-dollar mistake because he felt bad about inventing it. He estimated many years ago that this decision caused a billion dollars of wasted productivity from programmers making mistakes surrounding that darn <code>null</code> masquerading as an actual object.</details>
@@ -108,17 +112,27 @@ class C extends S implements A, B
 Optional.empty()
 </pre></details>
 
-<details><summary>What is the equivalent of Swift’s <code>x ?. y</code> in Java?</summary></details>
+<details><summary>What is the equivalent of Swift’s <code>x ?. y</code> in Java?</summary><pre>
+x.map(y)
+</pre></details>
 
-<details><summary>What is the equivalent of Swift’s <code>x ?? y</code> in Java?</summary></details>
+<details><summary>What is the equivalent of Swift’s <code>x ?? y</code> in Java?</summary><pre>
+x.orElse(y)
+</pre></details>
 
 <details><summary>Suppose that <code>o</code> is an optional that wraps an integer, and <code>f</code> is a function that takes in an integer. How do you safely invoke <code>f</code> on the wrapped integer, given that <code>o</code> might be empty?</summary></details>
 
-<details><summary>How do you create a stream producing the integers 1 through 100?</summary></details>
+<details><summary>How do you create a stream producing the integers 1 through 100?</summary><pre>
+IntStream.range(1, 101)
+</pre></details>
 
-<details><summary>How do you create an infinite stream of the even numbers starting at 20?</summary></details>
+<details><summary>How do you create an infinite stream of the even numbers starting at 20?</summary><pre>
+Stream.iterate(20, x -> x + 2)
+</pre></details>
 
-<details><summary>How do you create an empty stream?</summary></details>
+<details><summary>How do you create an empty stream?</summary><pre>
+Stream.of()
+</pre></details>
 
 <details><summary>How do you create a stream of 100 zeros followed by 1000000 ones? (Note: the entire stream is to have exactly those 1000100 elements. The stream should, as streams do, generate elements on demand.)</summary></details>
 
@@ -164,5 +178,3 @@ Optional.empty()
 <details><summary>What is the difference between <code>List&lt;Object></code> and <code>List&lt;?></code>?</summary></details>
 
 <details><summary>Suppose <code>Animal</code> is a superclass of <code>Dog</code>. In Java, is <code>List&lt;Dog></code> a subclass of <code>List&lt;Animal></code>?</summary>NO WAY! Java lists are invariant.</details>
-
-
