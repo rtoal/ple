@@ -12,7 +12,7 @@ Enjoy!
 - [Python](python.html)
 - [Ruby](ruby.md)
 - [Java](java.html)
-- [Swift](swift.md)
+- [Swift](swift.html)
 - [Haskell](haskell.md)
 - [C++](cpp.md)
 - [Go](go.md)

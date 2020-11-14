@@ -1,0 +1,165 @@
+<img src="https://raw.githubusercontent.com/rtoal/polyglot/master/docs/resources/swift-logo-64.png">
+
+<link rel="stylesheet" href="style.css">
+
+<h1>Swift Reinforcement Practice</h1>
+
+<p>Here are a set of problems designed to help you <a href="https://ncase.me/remember/">reinforce and retain</a> some useful JavaScript knowledge. If you are an <a href="https://apps.ankiweb.net/">Anki</a> or Quizlet fan, consider adding some of these questions into a deck. 😀</p>
+<hr>
+
+<details><summary>Who created Swift and in what year?</summary>Chris Lattner and others at Apple started working on it in 2010 and first released it in 2014.</details>
+
+<details><summary>Swift was designed to replace what language?</summary>Objective-C</details>
+
+<details><summary>The three main goals for Swift was that it be safe, fast, and ________________.</summary>Expressive (or fun)</details>
+
+<details><summary>Does Swift use curly braces or indentation for structure?</summary>Curlies</details>
+
+<details><summary>What is the difference between the range operators <code>...</code> and <code>..&lt;</code>?</summary>The former (“through”) includes the end value; the latter (“upto”) excludes it.</details>
+
+<details><summary>What is the syntax for string interploation?</summary>Wrap the interpolated value in <code>\(</code> and <code>)</code></details>
+
+<details><summary>Parameters in Swift have both a parameter name and an ________________?</summary>Argument label</details>
+
+<details><summary>How do you mark that a change to a parameter changes it argument?</summary><code>inout</code></details>
+
+<details><summary>How do you mark the argument passed to an <code>inout</code> parameter?</summary>Prefix it with <code>&amp;</code></details>
+
+<details><summary>Many languages use <code>split</code> to break a string into a list of characters, and <code>join</code> to turn an array of characters into a string. How do you do these two operations in Swift?</summary></details>
+
+<details><summary>Mutable variables are introduced with ________ and immutable variables with ________.</summary><code>var</code>, <code>let</code></details>
+
+<details><summary>We use the <code>print</code> function to write to standard output. But how do we write to standard error?</summary></details>
+
+<details><summary>How are the command line arguments obtained?</summary></details>
+
+<details><summary>It is legal to write <code>var x = 1</code> but not legal to write <code>var a = []</code>. Why?</summary>The type of the empty array cannot be inferred.</details>
+
+<details><summary>When reading a line from a file in Python, an exception is raised when the file has been fully read. What happens in Swift? (In other words, What is the return type of <code>readLine</code> and why?)</summary></details>
+
+<details><summary>How do you access the second element of the tuple t?</summary><pre>t.1</pre></details>
+
+<details><summary>List all the integer types of Swift.</summary><code>Int8</code>, <code>Int16</code>, <code>Int32</code>, <code>Int64</code>, <code>Int</code>, <code>UInt8</code>, <code>UInt16</code>, <code>UInt32</code>, <code>UInt64</code>, <code>UInt</code>.</details>
+
+<details><summary>Are the built-in types <code>Float</code> and <code>Double</code> guaranteed to have a fixed implementation size, or are they implementation-dependent as in C++? If they do, what are these sizes?</summary>Fixed size, 32 bits, 64 bits.</details>
+
+<details><summary>What are the six type kinds?</summary>Structure, Class, Enum, Tuple, Function, Protocol.</details>
+
+<details><summary>How do structs and classes differ?</summary></details>
+
+<details><summary>Why is it that the type <code>Int</code> is acutally a <code>struct</code>?</summary></details>
+
+<details><summary>What is the nicer way of writing the type expressions <code>Array&lt;Int></code>,  <code>Dictionary&lt;String, Bool></code>, and <code>Optional&lt;Double></code>?</summary><pre>
+[Int]
+[String:Bool]
+Double?
+</pre></details>
+
+<details><summary>Are arrays, sets, and dictionaries structs or classes?</summary>Structs</details>
+
+<details><summary>Do the equality operators <code>==</code> and <code>!=</code> for arrays, sets, and dictionaries compare the elements of these objects or is the comparison done on object identities?</summary></details>
+
+<details><summary>What is the method for getting the number of array elements, the number of set elements, and the number of dictionary entries?</summary><code>count</code></details>
+
+<details><summary>How do you determine if a value is contained in a given array?</summary></details>
+
+<details><summary>How does the read-onliness of an array, set, or dictionary in Swift differ from the const-ness of an object in JavaScript?</summary></details>
+
+<details><summary>How do you arrange for a function call to <em>not</em> require the external name of a parameter?</summary>Use the argument label <code>_</code>.</details>
+
+<details><summary>Why are argument labels often prepositions, but local names are often nouns and noun phrases? Give a trivial example (both a definition and a call) that backs up your answer.</summary></details>
+
+<details><summary>For a function definition using <code>func</code>, are you allowed to omit the types of the parameters? Are you allowed to omit the return type?</summary></details>
+
+<details><summary>What is a <b>closure</b> in Swift?</summary></details>
+
+<details><summary>Write a closure that squares its argument with both the in-notation and the form with the shorthand argument names.</summary><pre>
+{ x in x * x }
+{ $0 * $0 }
+</pre></details>
+
+<details><summary>What are the four kinds of struct/class members?</summary>Initializers, properties, methods, subscripts</details>
+
+<details><summary>The two different kinds of properties are stored properties and ________________ properties.</summary>Computed</details>
+
+<details><summary>Suppose we had a struct called <code>Square</code> with a stored property called <code>sideLength</code>. Define the computed property <code>area</code> (which can be read and written).</summary></details>
+
+<details><summary>How do we employ the shorthand syntax for read-only computed properties? (That is, what exactly is omitted?)</summary></details>
+
+<details><summary>Give a definition for a Swift enumeration of the additive primary colors <code>red</code>, <code>green</code>, and <code>blue</code>.</summary><pre>
+enum PrimaryColor {
+    case red
+    case green
+    case blue
+}
+</pre></details>
+
+<details><summary>How do you obtain the raw value of an object of an enumeration type?</summary></details>
+
+<details><summary>How do you construct a value of an enumeration type from its raw value?</summary></details>
+
+<details><summary>Give an enumeration definition for a type whose values cover (1) the two boolean values, (2) the 8-bit signed integers, and (3) the value <code>file_not_found</code>.</summary></details>
+
+<details><summary>Define your very own generic linked list as an indirect enumeration, using the definition “A list is either empty or a value (called the head) connected to a list (called the tail).” (Just define the type, you don’t need to include any methods.)</summary></details>
+
+<details><summary>Write a <code>length</code> method for a generic linked list enumeration type defined according to the rule “A list is either empty or a value (called the head) connected to a list (called the tail).”</summary></details>
+
+<details><summary>Write a <code>head</code> for a generic linked list enumeration type defined according to the rule “A list is either empty or a value (called the head) connected to a list (called the tail).” If your type is called <code>MyLinkedList<T></code> then your method should return a <code>T?</code>.</summary></details>
+
+<details><summary>What is the syntax for a generic type parameter that is constrained to types that adopt a certain protocol?</summary></details>
+
+<details><summary>The three main syntactic forms for unwrapping optionals are <code>if-let</code>, <code>while-let</code> and _______________________.</summary></details>
+
+<details><summary>What is the <code>??</code> operator called?</summary>The nil-coalescing operator</details>
+
+<details><summary>What does it mean that the <code>??</code> operator is short-circuit?</summary>It means that if the left operand is a wrapped optional then the right operand is not evaluated.</details>
+
+<details><summary>Are <code>if-let</code>, <code>while-let</code>, or <code>guard-else</code> constructs required to access an element of an optional array? If not, what is a more concise way to access the element?</summary></details>
+
+<details><summary>Are <code>if-let</code>, <code>while-let</code>, or <code>guard-else</code> constructs required to access a property of an optional struct/class instance? If not, what is a more concise way to access the property?</summary></details>
+
+<details><summary>The <code>guard-else</code> handles scope weirdly compared to <code>if-let</code> and <code>while-let</code>. What is this odd scope rule, and why is it odd?</summary></details>
+
+<details><summary>If a function is defined to return a <code>String?</code>, can we simply place the statement <code>return "Hello"</code> in the body, or will this be a compile time error, or perhaps a run time error?</summary></details>
+
+<details><summary>What is a common alternative to throwing errors from a function to indicate failure?</summary>Returning <code>Result</code> objects</details>
+
+<details><summary>What is the difference between the operator <code>+</code> and the operator <code>&+</code>?</summary></details>
+
+<details><summary>There is actually a shorter way to write the expression <code>reduce(0, {$0+$1})</code>. What is it?</summary></details>
+
+<details><summary>In Swift, the operator <code>+</code> both concatenates string and adds numbers. This is known to lead to huge headaches and funny surprises in JavaScript, and yet, it is not really a big deal in Swift. Why not?</summary></details>
+
+<details><summary>Swift does not have an exponentation operator. Could you, in principle, define <code>**</code> yourself?</summary></details>
+
+<details><summary>True or false? Swift’s standard library has over 100 structs/classes/enums.</summary></details>
+
+<details><summary>Swift is the world’s first protocol-oriented language. What exactly is a protcol?</summary></details>
+
+<details><summary>If you declare your own class/struct/enum, how do you specify that your type adopt (conform to) one or more protocols? Give an example.</summary></details>
+
+<details><summary>How does Swift guarantee that any type you create to conform to the <code>Equatable</code> protocol require that you only define <code>==</code> and not <code>!=</code> as well?</summary></details>
+
+<details><summary>If you are using the dictionary type <code>[K:V]</code> for types <code>K</code>, and <code>V</code>, what protocol must type <code>K</code> adopt?</summary></details>
+
+<details><summary>Why are extensions so awesome? In particular, what do they allow you to do, that you can’t do, say, in Java?</summary>You can add properties and methods <em>without creating a subclass</em>.</details>
+
+<details><summary>Both Swift and Python programmers use <code>self</code> a lot. But their use is quite different. What is the essential difference between the two languages in the use of this keyword?</summary></details>
+
+<details><summary>How does Swift mark a property or method as belonging to the type instead of to an instance?</summary><code>static</code></details>
+
+<details><summary>How do extensions solve the famous <em>expression problem</em>?</summary></details>
+
+<details><summary>Why and when do we extend protocols?</summary></details>
+
+<details><summary>What is the difference between a definitive initialization language and a default implicit initialization language?</summary></details>
+
+<details><summary>Do Swift compilers generally give warnings if they detect a variable might not have been initialized when it is used?</summary>Actually it is an error.</details>
+
+<details><summary>What happens in Swift if a pattern match is not exhaustive?</summary>Compile-time error.</details>
+
+<details><summary>Why does ARC mean no tracing garbage collector is required?</summary></details>
+
+<details><summary>What is the advantage of ARC over tracing garbage collectors?</summary>You can make reliable performance predictions because you know exactly when instances are deallocated (there are no surprises with garbage collection kicking in at seemingly arbitrary times).</details>
+
+<details><summary>How do Swift programmers avoid memory leaks due to cycles of references on the heap? (Hint: they use a particular kind of reference. What is this reference called and how does it work?)</summary></details>
