@@ -14,6 +14,6 @@ Enjoy!
 - [Java](java.html)
 - [Swift](swift.html)
 - [Haskell](haskell.md)
-- [C++](cpp.md)
+- [C++](cpp.html)
 - [Go](go.html)
 - [Erlang](erlang.html)

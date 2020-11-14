@@ -1,0 +1,213 @@
+<link rel="stylesheet" href="style.css">
+
+<img src="https://raw.githubusercontent.com/rtoal/polyglot/master/docs/resources/cpp-logo-64.png">
+
+<h1>C++ Reinforcement Practice</h1>
+
+<p>Here are a set of problems designed to help you <a href="https://ncase.me/remember/">reinforce and retain</a> some useful JavaScript knowledge. If you are an <a href="https://apps.ankiweb.net/">Anki</a> or Quizlet fan, consider adding some of these questions into a deck. 😀</p><hr>
+
+<details><summary>Who created C++ and in what year?</summary>Bjarne Stroustrup, 1983</details>
+
+<details><summary>C++ was intended to be a proper superset of what language?</summary>C</details>
+
+<details><summary>What does it mean that C++ is a <strong>systems language</strong>?</summary></details>
+
+<details><summary>What does it mean that C++ is an <strong>unmanaged language</strong>?</summary>The programmer has to allocate and deallocate memory themself.</details>
+
+<details><summary>Unlike almost every other language with sophisticated modules that are imported, C++ wires together multifile programs with the weak <code>#include</code> directive. What exactly does <code>#include</code> do?</summary></details>
+
+<details><summary>How do you write a string to standard output?</summary><pre>
+std::cout &lt;&lt; s
+</pre></details>
+
+<details><summary>What does <code>using namespace</code> do and why is it so common in C++?</summary></details>
+
+<details><summary>Show how to compile and run <code>hello.cpp</code> from the command line, using the <code>g++</code> compiler, using the 2017 standard version of the language.</summary></details>
+
+<details><summary>C++17 has six different <a href="https://en.cppreference.com/w/cpp/language/types">built-in character types</a>. What are they? There is one new character type added in C++20. What is it?</summary></details>
+
+<details><summary>Integers can be signed or ________________. They can be short, regular-sized, or ________________.</summary>unsigned, long</details>
+
+<details><summary>In addition to <code>float</code> and <code>double</code>, C++ has one other floating-point type. What is it?</summary></details>
+
+<details><summary>You might see <code>int&</code> used where a type should appear (say, in a variable or parameter declaration). One can argue this is not a type at all! What does this expression mean, and why do we say it is not a real type?</summary></details>
+
+<details><summary>Is <code>void</code> a type? If not, what is it?</summary></details>
+
+<details><summary>Give three different syntaxes to declare an immutable integer variable named <code>dozen</code> initialized to the value 12.</summary></details>
+
+<details><summary>What are the types of the expressions <code>'$'</code>, <code>u'$'</code>, and <code>U'$'</code>?</summary></details>
+
+<details><summary>Do the types <code>int</code>, <code>float</code>, and <code>double</code> have fixed bit sizes? If so, what are they? If not, why not?</summary></details>
+
+<details><summary>Given <code>struct Point {int x; int y};</code> how do you declare a variable <code>p</code> of type <code>Point</code> whose <code>x</code> and <code>y</code> fields are initialized to 5 and 8, respectively?</summary></details>
+
+<details><summary>Do structs have value semantics or reference semantics? What about classes?</summary></details>
+
+<details><summary>Suppose <code>S</code> is a struct type whose instances are very large. How do you define a parameter of type <code>S</code> for a function in which the <code>S</code> object will not be changed?</summary></details>
+
+<details><summary>Since structs are copied when passed as parameters, how can you write a function that mutates a struct?</summary></details>
+
+<details><summary>C++ references, defined using <code>&</code> are really just aliases and nothing more. True or false?</summary></details>
+
+<details><summary>If we define both <code>void f(int& x) {}</code> and <code>void f(int&& x) {}</code> when would the first function be called and when would the second?</summary></details>
+
+<details><summary>Can the function <code>int f() {int x=2; int& y = x; return y;}</code> cause a dangling pointer when called? Why or why not?</summary></details>
+
+<details><summary>Can the function <code>int* f() {int x=2; int* y = &x; return y;}</code> cause a dangling pointer when called? Why or why not?</summary></details>
+
+<details><summary>Given <code>struct Point {int x; int y;}</code> is it legal to define and initialize a variable like this: <code>Point p = new Point {1,2}</code>? Why or why not?</summary></details>
+
+<details><summary>What things go in static storage? Stack storage? Heap storage?</summary></details>
+
+<details><summary>Every <code>new</code> must be matched with a what?</summary></details>
+
+<details><summary>What is the keyword for the expression meaning a “pointer that doesn’t point to anything”?</summary></details>
+
+<details><summary>What do you have when you allocate a pointer with <code>new</code> but forget to deallocate it?</summary></details>
+
+<details><summary>What do you have when a pointer has been deallocated but you try to dereference it?</summary></details>
+
+<details><summary>If we define <code>void inc(int* x) {(*x)++;}</code>, and we wanted to use this function to increment a global variable <code>y</code>, how would we call the function?</summary></details>
+
+<details><summary>It’s possible, but unusual, to write <code>(*p).x</code>. What do we write instead?</summary></details>
+
+<details><summary>What is the expression for “a pointer to x”?</summary></details>
+
+<details><summary>Explain what type <code>x</code> is given in the declarator <code>char ***x[13][21]</code>.</summary></details>
+
+<details><summary>Explain what type <code>c</code> is given in the declarator <code>int (*c)(long, long)</code>.</summary></details>
+
+<details><summary>What is the difference between an instance method and a class method?</summary></details>
+
+<details><summary>Python uses the <code>@classmethod</code> decorator to mark a class method. How do you mark a class method in C++?</summary></details>
+
+<details><summary>Why are constructors not considered to be methods?</summary></details>
+
+<details><summary>If you don’t write a constructor for a struct, can you still create an instance of the struct type and supply initial values to its fields? If so, how does this work?</summary></details>
+
+<details><summary>If you write a constructor for a struct type <code>S</code> that takes in a single argument, and no other constructor, can you define a variable like so: <code>S s;</code>. Why or why not? Can you define <code>S* p</code>? Why or why not?</summary></details>
+
+<details><summary>Why would you never see the expression <code>this.x</code> in C++?</summary></details>
+
+<details><summary>If you had an instance <code>x</code> of a struct type <code>S</code>, and no constructors were explicity defined for <code>S</code>, what does <code>S y(x);</code> do? Use the terms “construct,” “copy,” and “shallow” in your answer.</summary></details>
+
+<details><summary>If you had two instances <code>x</code> and <code>y</code> of a struct type <code>S</code>, and no methods were explicity defined for <code>S</code>, what does <code>x == y;</code> do? What, technically speaking, is invoked here?</summary></details>
+
+<details><summary>Suppose you were writing your very own <code>Set</code> class, for mathematical sets. Show how to declare (just declare, do not define) operators for intersection (use <code>&</code>), union (use <code>|</code>) and complement (use <code>~</code>).</summary></details>
+
+<details><summary>We know that <code>cout</code> is an instance of the class <code>ostream</code>. How did the creator of the <code>ostream</code> class get expressions like <code>cout &lt;&lt; x</code> to work?</summary></details>
+
+<details><summary>What are the three explicit access control modifiers for structs (and classes)?</summary></details>
+
+<details><summary>What is the only difference between structs and classes in C++?</summary></details>
+
+<details><summary>Although the difference between structs and classes is incredibly trivial, many C++ programmers use a particular rule of thumb to choose between them. What is this rule?</summary></details>
+
+<details><summary>What are three nice things about statically typed languages?</summary></details>
+
+<details><summary>What does C++ call its equivalent of Java generic types?</summary></details>
+
+<details><summary>C++ has a module called <code><list></code> that defines a template called <code>list</code>. So to use lists, you have to <code>#include <list></code>. But <code>list</code> is actually in a namespace as well. Which one?</summary></details>
+
+<details><summary>Is <code>list</code> a class in C++? If not, what is it?</summary></details>
+
+<details><summary>One of the goals of C++ was to make user-defined classes work just like the built-in types, in particular, that they have value semantics (a.k.a copy semantics). Why then are structs, or classes, with pointer members potentially worrisome?</summary></details>
+
+<details><summary>C++ tries to do a good job of hiding the details of the members of classes: generally speaking, users of a class don’t know what’s inside objects of the class, they only know about the methods&mdash;how the objects behave. In particular, clients don’t (or shouldn’t) know if there are any pointer members! So users cannot directly free up encapsulated pointers! This fact led to C++ having what kind of special class member?</summary></details>
+
+<details><summary>Which five members comprise the Rule of Five?</summary></details>
+
+<details><summary>What is a copy constructor supposed to do? What happens to the source of the copy?</summary></details>
+
+<details><summary>What is a move constructor supposed to do? What happens to the source of the move?</summary></details>
+
+<details><summary>What is the first thing you should do when overloading an assigment operator (either a copy assignment or a move assignment)?</summary></details>
+
+<details><summary>What should an assignment operator return? Why?</summary></details>
+
+<details><summary>What does <code>= default</code> do?</summary></details>
+
+<details><summary>What does <code>= delete</code> do?</summary></details>
+
+<details><summary>When does the compiler choose a move constructor over a copy constructor?</summary></details>
+
+<details><summary>When are <code>unique_ptr</code> objects deleted?</summary></details>
+
+<details><summary>When are <code>shared_ptr</code> objects deleted?</summary></details>
+
+<details><summary>Why can’t <code>unique_ptr</code> obejcts be copied?</summary></details>
+
+<details><summary>Even though C++ is all about helping you define your own classes with copy semantics, reference semantics is available if you want it. What language feature provides this?</summary></details>
+
+<details><summary>How are raw C-Style arrays different from  arrays in almost every other language (including Java, JavaScript, Swift)?</summary></details>
+
+<details><summary>If <code>a</code> is a raw C-Style array, why is it okay to use the expression <code>3[a]</code>?</summary></details>
+
+<details><summary>When writing a function to process a C-style array, it is generally not sufficient to pass only the array. What else must be passed and why?</summary></details>
+
+<details><summary>When writing a function to process a C-style array, the array contents can be modified simply by passing the array; there is no need to pass the array as <code>&a</code> or for the parameter to be a reference parameter! Why do C-style arrays behave so differently from everything else in the language?</summary></details>
+
+<details><summary>How is a C-style array allocated on the stack?</summary></details>
+
+<details><summary>How is a C-style array allocated on the heap? How is it deallocated in this case?</summary></details>
+
+<details><summary>If <code>a</code> and <code>b</code> are C-style arrays, what is the meaning of <code>a = b</code>?</summary></details>
+
+<details><summary>How are <code>std::array</code> objects different from <code>std::vector</code> objects?</summary></details>
+
+<details><summary>Define a 100-element <code>std::array</code> of doubles.</summary></details>
+
+<details><summary>Give expressions to get, for a vector <code>v</code>, (1) the first element, (2) the last element, (3) the 5th element, and (4) the number of elements.</summary></details>
+
+<details><summary>How do you add an element to the end of a vector?</summary></details>
+
+<details><summary>How do you insert an element into a vector between its 7th and 8th elements?</summary></details>
+
+<details><summary>How do you empty out a vector (remove all its elements and set its size to 0)? (Hint: the <code>.empty()</code> method does not do it!</summary></details>
+
+<details><summary>What is a <code>valarray</code> and why is it so cool?</summary></details>
+
+<details><summary>C++, because it is a superset of C, inherits C’s weird “strings.” What is the actual type of these weird things?</summary></details>
+
+<details><summary>Do C-strings “know” their own length? Can the length be computed? If so, how?</summary></details>
+
+<details><summary>If <code>s</code> and <code>t</code> are C-strings, assignment <code>s = t</code> does not copy the contents of <code>t</code> into <code>s</code>. How do you, then, copy each character?</summary></details>
+
+<details><summary>If <code>s</code> and <code>t</code> are <code>std::string</code>s, does assignment <code>s = t</code> copy each character?</summary></details>
+
+<details><summary>What are the types <code>u16string</code> and <code>u32string</code> for?</summary></details>
+
+<details><summary>C++ programs have to have a <code>main</code> function accepting the command line arguments. Are the arguments represented as a <code>std::vector</code> of <code>std:string</code> objects? If not, how are the arguments passed? Why?</summary></details>
+
+<details><summary>How do you get the address of an lvalue?</summary></details>
+
+<details><summary>How do make an object (instance of a struct or class) be callable (essentially, a function object)?</summary></details>
+
+<details><summary>Give a C++ lambda for a function accepting a string and a number and returning whether the string has a length greater than the number.</summary></details>
+
+<details><summary>What is the meaning of a lambda whose capture is <code>[=]</code>? What is the meaning of a lambda whose capture is <code>[&]</code>. What about <code>[]</code>?</summary></details>
+
+<details><summary>How do you fill the first 100 elements of the C-style array <code>a</code> of integers with 0s? (Use <code>std::fill</code>.)</summary></details>
+
+<details><summary>How do you fill the first 100 elements of the <code>std::array</code> <code>a</code> of integers with 0s? (Use <code>std::fill</code>.)</summary></details>
+
+<details><summary>Write an expression that computes whether every element of the integer vector  <code>v</code> is less than 10. (Use <code>std::all_of</code>.)</summary></details>
+
+<details><summary>Write an expression that gives the first even number in the vector of longs <code>v</code>. (Use <code>std::find_if</code>, and state what happens if there are no even numbers in the vector.)</summary></details>
+
+<details><summary>Given a vector of integers, <code>v</code>, write an expression to produce a new vector containing the squares of each of the elements in <code>v</code>. This operation would be called <code>map</code> in JavaScript, Python, Haskell, and most other languages, but it’s called something else in C++. Hint: the function you must use starts with t-r-a.</summary></details>
+
+<details><summary>What Swift and Python call a dictionary, C++ calls a ________________.</summary><code>map</code></details>
+
+<details><summary>Unlike Java, which marks classes <code>abstract</code>, C++ simply says a class is abstract iff it has a pure virtual function. How are pure virtual functions declared?</summary></details>
+
+<details><summary>C++ does not use the terms superclass and subclass. What does it use instead?</summary>Base type and derived type</details>
+
+<details><summary>Suppose <code>class Dog</code> was a derived class of <code>class Animal</code>. Can you assign a variable of <code>list&lt;Dog></code> to a variable of <code>list&lt;Animal></code>? If not, why not?</summary></details>
+
+<details><summary>Suppose <code>class Dog</code> was a derived class of <code>class Animal</code>. Suppose both <code>Dog</code> and <code>Animal</code> define a <code>speak</code> method. If we defined <code>Animal a = Dog(); a.speak()</code>, which <code>speak</code> would be called, the animal one or the dog one?</summary></details>
+
+<details><summary>Suppose <code>class Dog</code> was a derived class of <code>class Animal</code>. Suppose both <code>Dog</code> and <code>Animal</code> define a <code>speak</code> method. If we defined <code>Animal* a = new Dog(); a->speak()</code>, which <code>speak</code> would be called, the animal one or the dog one?</summary></details>
+
+<details><summary>What is the difference between a declaration and a definition?</summary></details>
