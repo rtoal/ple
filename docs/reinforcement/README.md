@@ -11,7 +11,7 @@ Enjoy!
 - [JavaScript](js.html)
 - [Python](python.html)
 - [Ruby](ruby.md)
-- [Java](java.md)
+- [Java](java.html)
 - [Swift](swift.md)
 - [Haskell](haskell.md)
 - [C++](cpp.md)
