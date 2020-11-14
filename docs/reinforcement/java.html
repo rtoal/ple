@@ -1,0 +1,168 @@
+<img src="https://raw.githubusercontent.com/rtoal/polyglot/master/docs/resources/java-logo-64.png">
+
+<link rel="stylesheet" href="style.css">
+
+<h1>Java Reinforcement Practice</h1>
+
+<p>Here are a set of problems designed to help you <a href="https://ncase.me/remember/">reinforce and retain</a> some useful JavaScript knowledge. If you are an <a href="https://apps.ankiweb.net/">Anki</a> or Quizlet fan, consider adding some of these questions into a deck. 😀</p><hr>
+
+<details><summary>Who created Java and in what year?</summary>James Gosling and others at Sun, 1995</details>
+
+<details><summary>Java programs are made up entirely of ________________ grouped into ________________.</summary>Classes, packages</details>
+
+<details><summary>What are the classic, if somewhat annoying, six words all beginners learn when writing their first command line app in Java?</summary>public, static, void, main, string, args</details>
+
+<details><summary>What is the line of code that writes <code>"Hello, world"</code> to standard output?</summary><pre>
+System.out.println("Hello, world");
+</pre></details>
+
+<details><summary>Suppose <i>Hello.java</i> contained a program intended to be run from the command line. How do you compile and run the program from a typical operating system terminal application?</summary><pre>
+java Hello.java
+</pre></details>
+
+<details><summary>Python, Swift, and Haskell require explcit <code>import</code> directives to use entities from a different module (or package). Does Java require one as well? Why or why not?</summary>No, if you simply mention a class in a Java source file, the compiler will look for the corresponding class file.</details>
+
+<details><summary>What does the <code>import</code> directive actually do?</summary>It simply allows code in this file to mention classes without using their fully-qualified name (provided there is no ambiguity).</details>
+
+<details><summary>What is the difference between plain <code>import</code> and <code>import static</code>?</summary>The former imports a class, and the latter imports a static member of a class.</details>
+
+<details><summary>What is special about the package <code>java.lang</code>?</summary>Classes from this package never need to be qualified.</details>
+
+<details><summary>What is the difference between <code>InputStream</code> and <code>Reader</code> on the one hand and <code>OutputStream</code> and <code>Writer</code> on the other?</summary><code>InputStream</code> and <code>OutputStream</code> read and write <em>bytes</em>, while <code>Reader</code> and <code>Writer</code> read and write characters.</details>
+
+<details><summary>Are <code>InputStream</code> and <code>OutputStream</code> actually the same kind of stream objects as those that the package <code>java.util.Stream</code> is concerned with?</summary>No, stop being silly.</details>
+
+<details><summary>How do you generally compile and run a multi-file Java command-line application?</summary><pre>
+javac *.java && java Main.java
+</pre></details>
+
+<details><summary>What kinds of members do classes have?</summary>Constructors, fields, methods, initializers, and (inner) classes.</details>
+
+<details><summary>What is the significance of fields and methods marked with <code>static</code>?</summary>These fields and methods are associated with the class itself, and not with any particular instance of the class.</details>
+
+<details><summary>What is the difference between a variable and an object in Java?</summary>Variables are those things you declare in your source code. Objects are the the entities created at run time.</details>
+
+<details><summary>A variable is _________________-constrained, while an object is an instance of a single ________________.</summary>Type, class.</details>
+
+<details><summary>What kind of names can Java infer the types of?</summary>Local variables and lambda expression parameters.</details>
+
+<details><summary>Java’s REPL is called ________________.</summary>JShell</details>
+
+<details><summary>What are the eight primitive types?</summary><code>boolean</code>, <code>byte</code>, <code>char</code>, <code>short</code>, <code>int</code>, <code>long</code>, <code>float</code>, <code>double</code>.</details>
+
+<details><summary>What is the difference between a primitive and a reference type?</summary>Values of entites having a primitive type are actual values, while values of reference types are references to an actual entity. Alternatively, primitives behave as if they are always copied while references behave as if they are always shared.</details>
+
+<details><summary>Are Java strings mutable or immutable?</summary>Immutable</details>
+
+<details><summary>Java <code>char</code> values are not actual Unicode characters, but are rather 16-bit code units. How do you get the actual Unicode characters from a string?</summary>You can get a stream of the code points of a string <code>s</code> via <code>s.codepoints()</code>.</details>
+
+<details><summary>Are Java arrays fixed-size or variable size? Mutable or immutable?</summary>Fixed-size, mutable.</details>
+
+<details><summary>How do you write the JavaScript array literal <code>[13, 5, 8, 2]</code> in Java?</summary><pre>
+new int[]{13, 5, 8, 2}
+</pre></details>
+
+<details><summary>How do you define a class C that has a superclass S and that implements two interfaces A and B?</summary><pre>
+class C extends S implements A, B
+</pre></details>
+
+<details><summary>What is an abstract method and why does Java have them?</summary>An abstract method is a method without a body. It can only appear in an abstract class, and is used to model behavior that concrete subclasses must implement in their own way, but for which no actual generalized implementation exists.</details>
+
+<details><summary>What are the two main differences between an interface and a class?</summary>(1) Interfaces cannot be instantiated but classes can. (2) Interfaces can only contain constants, abstract methods, static methods, and default methods, but classes can contain tons more things.</details>
+
+<details><summary>Sometimes you might hear people say an interface is a class. What might they mean?</summary>Interfaces are compiled into class files. So it’s like everything that isn’t primitive (i.e., arrays, interfaces, enums, and regular classes) are just, like, you know, classes.</details>
+
+<details><summary>How does Java handle the multiple inheritance problem when conflicting constants are inherited from two different interfaces?</summary></details>
+
+<details><summary>How does Java handle the multiple inheritance problem when conflicting static methods are inherited from two different interfaces?</summary></details>
+
+<details><summary>How does Java handle the multiple inheritance problem when conflicting default methods are inherited from two different interfaces?</summary></details>
+
+<details><summary>Is <code>flatMap</code> a method of arrays? What about <code>filter</code>? What about <code>map</code>?</summary>No, no, and no. These are methods of the <code>Stream</code> interface.</details>
+
+<details><summary>In Java, is <code>List</code> a type? Is <code>List&lt;Integer></code> a type?</summary>They are both types. The first one is left over from the early days of the language before generics existed. You should not use it.</details>
+
+<details><summary>What is the deal with generics and primitive types in Java?</summary>Java generics cannot be parameterized with primitive types.</details>
+
+<details><summary>What are collections, sets, and lists in Java?</summary>Interfaces. Collections are things that have their size queried,can be added to and removed from, and support membership tests. Sets are unordered collections in which all elements are unique. Lists are collections that are ordered and support adding and removing at arbitrary positions.</details>
+
+<details><summary>Why do most of the queue methods come in “pairs” (<code>add/offer</code>, <code>remove/poll</code>, <code>element/peek</code>)?</summary> The methods <code>add</code>, <code>remove</code>, and <code>element</code> throw an exception if they fail, while <code>offer</code>, <code>poll</code>, and <code>peek</code> return a value like <code>null</code> or <code>false</code> to indicate failure.</details>
+
+<details><summary>What is the main characteristic of lists, sets, and maps created with the static <code>of</code> methods (<code>List.of</code>, <code>Set.of</code>, <code>Map.of</code>)?</summary>The created objects are unmodifiable. (They also disallow null and are value-based.)</details>
+
+<details><summary>Java lambda functions impelement interfaces annotated with which annotation?</summary><code>@FunctionalInterface</code></details>
+
+<details><summary>What are suppliers, consumers, and predicates, and what are their characteristic operations?</summary><table border=1 cellpadding=3 cellspacing=0>
+<tr><td>Supplier</td><td>Function with no args, returning an object</td><td><code>get: () &rarr; T</code></td></tr>
+<tr><td>Consumer</td><td>Function with one arg, returning nothing</td><td><code>accept: (T) &rarr; void</code></td></tr>
+<tr><td>Predicate</td><td>Function with one args, returning a boolean</td><td><code>test: (T) &rarr; bool</code></td></tr>
+</table></details>
+
+<details><summary>Is <code>null</code> a member of every reference type in Java? If so, what were the designers of the language thinking when they included this “feature”?</summary>Maybe they just didn’t know this was the billion dollar mistake. Maybe they were lazy and thought the billion-dollar mistake was no big deal. Maybe they thought it was too complex to introduce optionals in 1995, since technology wasn’t so advanced back then.</details>
+
+<details><summary>What is the decision to include <code>null</code> as a member of every reference type referred to as? Who called it that? Why?</summary>Tony Hoare called it the billion-dollar mistake because he felt bad about inventing it. He estimated many years ago that this decision caused a billion dollars of wasted productivity from programmers making mistakes surrounding that darn <code>null</code> masquerading as an actual object.</details>
+
+<details><summary>Suppose variable <code>s</code> is declared to have type <code>String</code>, but at runtime, the value of <code>s</code> is <code>null</code>. What happens when executing <code>s.toLowerCase()</code>?</summary> A <code>NullPointerException</code> is thrown.</details>
+
+<details><summary>What is the equivalent of Swift’s <code>nil</code> in Java?</summary><pre>
+Optional.empty()
+</pre></details>
+
+<details><summary>What is the equivalent of Swift’s <code>x ?. y</code> in Java?</summary></details>
+
+<details><summary>What is the equivalent of Swift’s <code>x ?? y</code> in Java?</summary></details>
+
+<details><summary>Suppose that <code>o</code> is an optional that wraps an integer, and <code>f</code> is a function that takes in an integer. How do you safely invoke <code>f</code> on the wrapped integer, given that <code>o</code> might be empty?</summary></details>
+
+<details><summary>How do you create a stream producing the integers 1 through 100?</summary></details>
+
+<details><summary>How do you create an infinite stream of the even numbers starting at 20?</summary></details>
+
+<details><summary>How do you create an empty stream?</summary></details>
+
+<details><summary>How do you create a stream of 100 zeros followed by 1000000 ones? (Note: the entire stream is to have exactly those 1000100 elements. The stream should, as streams do, generate elements on demand.)</summary></details>
+
+<details><summary>How do you create a stream from an array?</summary></details>
+
+<details><summary>How do you create a stream from a <code>LinkedList</code>?</summary></details>
+
+<details><summary>Given an array <code>a</code>, what does <code>Arrays.stream(a).distinct().toArray()</code> do?</summary></details>
+
+<details><summary>Does <code>Stream.of(2,3,5,7,11).map(x -> x * x).toArray()</code> produce an integer array? If not, what does it produce, and how do you make it produce the expected integer array?</summary></details>
+
+<details><summary>For array <code>a</code>, what does <code>Arrays.stream(a).min()</code> return, exactly?</summary></details>
+
+<details><summary>Suppose <code>r</code> was a <code>Reader</code> object. Does <code>r.lines().count()</code> return the number of lines?</summary></details>
+
+<details><summary>Suppose <code>r</code> was a <code>Reader</code> object. How do you get the lines of the reader into an array?</summary></details>
+
+<details><summary>Suppose <code>r</code> was a <code>Reader</code> object. How do you get the lowercased lines of the reader into an array?</summary></details>
+
+<details><summary>Suppose <code>r</code> was a <code>Reader</code> object. How do you get the lowercased lines of the reader into an array, sorted by line?</summary></details>
+
+<details><summary>Suppose <code>r</code> was a <code>Reader</code> object. How do you get the lowercased lines of the reader into an array, eliminating all duplicates?</summary></details>
+
+<details><summary>Given a list <code>a</code>, what does <code>a.stream().anyMatch(x -> x &lt; 5)</code> produce? (Make sure to give the type of the result.)</summary></details>
+
+<details><summary>Write an expression that produces whether or not all elements of a list (not an array, but a list) of integers, are even.</summary></details>
+
+<details><summary>Does the expression <code>a.stream().reduce(0, (x, y) -> x + y)</code> produce the sum of the elements of list <code>a</code>? Why or why not?</summary></details>
+
+<details><summary>The expression <code>IntStream.range(1, n).reduce((x, y) -> x * y)</code> is a good attempt to produce the factorial of <code>n</code>, but it doesn’t produce an integer. What does it produce? How can you modify it (slightly) to produce the integer factorial?</summary></details>
+
+<details><summary>Java streams have many terminal operations, such as <code>findFirst</code>, <code>findAny</code>, <code>anyMatch</code>, <code>allMatch</code>, <code>noneMatch</code>, <code>min</code>, <code>max</code>, <code>count</code>, <code>toArray</code>, and <code>reduce</code>. There is also <code>forEach</code>. It is tempting to use <code>forEach</code> to post-process the stream by, say, adding the elements to a map. But this is a misuse of <code>forEach</code>. What <em>kind</em> of terminal operation should be used instead?</summary>
+</details>
+
+<details><summary>The collectors <code>Collectors.toList</code> and <code>Collectors.toSet</code> take no arguments. But <code>Collectors.toCollection</code> does take an argument. What kind of argument is this, and what is it for?</summary></details>
+
+<details><summary>If you wanted to average some integers, you could write <code>Stream.of(1,2,3).collect(Collectors.averagingInt(f))</code> for some particular function <code>f</code>. What should <code>f</code> be here?</summary></details>
+
+<details><summary>The <code>Collectors</code> class has static methods <code>toList</code>, <code>toSet</code>, <code>toMap</code>, and <code>toCollection</code>, but there is no <code>toArray</code>. Why not?</summary></details>
+
+<details><summary>What does <code>Stream.of(1,2,3,4,5,6,7).collect(Collectors.groupingBy(x->x%3))</code> produce?</summary></details>
+
+<details><summary>What is the difference between <code>List&lt;Object></code> and <code>List&lt;?></code>?</summary></details>
+
+<details><summary>Suppose <code>Animal</code> is a superclass of <code>Dog</code>. In Java, is <code>List&lt;Dog></code> a subclass of <code>List&lt;Animal></code>?</summary>NO WAY! Java lists are invariant.</details>
+
+
