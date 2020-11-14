@@ -15,5 +15,5 @@ Enjoy!
 - [Swift](swift.html)
 - [Haskell](haskell.md)
 - [C++](cpp.md)
-- [Go](go.md)
-- [Erlang](erlang.md)
+- [Go](go.html)
+- [Erlang](erlang.html)
