@@ -12,6 +12,8 @@ lua metatable_examples.lua && \
 lua more_table_examples.lua && \
 lua nested_function_declaration.lua && \
 lua recursive_fail.lua && \
+lua references.lua && \
+lua shallow.lua && \
 lua standard_library.lua && \
 lua table_examples.lua && \
 lua top_ten_scorers.lua < ../test/players_input | diff ../test/players_expected - && \
