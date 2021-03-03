@@ -18,6 +18,7 @@ lua standard_library.lua && \
 lua table_examples.lua && \
 lua top_ten_scorers.lua < ../test/players_input | diff ../test/players_expected - && \
 lua triple.lua | diff ../test/triple_expected - && \
+lua types.lua && \
 lua vectors.lua && \
 lua x_is_x.lua
 
