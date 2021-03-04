@@ -10,10 +10,9 @@ assert(3 or false)
 assert(0 or false)          -- yes, 0 is a true value
 assert("" or false)         -- yes, the empty string is a true value
 assert({} or false)         -- yes, the empty table is a true value
-
 assert(not (nil or false))  -- Only nil and false are false values
 
--- The following are errors and will not even run
+-- The following are errors
 -- false + 1                -- cannot do arithmetic on booleans
 -- "the answer is" .. true  -- cannot concatenate booleans
 -- false < true             -- cannot compare booleans

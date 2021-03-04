@@ -8,10 +8,5 @@ assert(3 ~= 5)                  -- not equals
 assert(-10 <= 3)                -- numbers can be compared
 assert("dog" < "dogs")          -- so can strings
 assert(#{5, 8, 13} == 3)        -- tables have a length
-
-assert(2 > 8 and 100 or 200)    -- approximation of: 
-                                --   if 2>8 then 100 else 200
-
--- string concatentation
-assert("dog" .. "house" == "doghouse")
+assert("Got" .. "7" == "Got7")  -- string concatenation
 

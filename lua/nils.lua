@@ -1,9 +1,9 @@
-assert(x == nil)     -- Does not fail! global x is nil
+assert(x == nil)     -- does not fail! global x is nil
 
-local y              -- Also fine
-assert(y == nil)
+local y              -- also fine
+assert(y == nil)     -- missing initializer is implicitly nil
 
 t = {a=1, b=2}
-assert(t.c == nil)   -- Unassigned table fields are just nil
+assert(t.c == nil)   -- unassigned table fields are just nil
 
-print(y, c, t.d)     -- perfectly fine to print them too
+print(y, c, t.d)     -- happily prints three nils
