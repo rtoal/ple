@@ -13,6 +13,6 @@ for index, player in ipairs(players) do
   if index > 10 then 
     break
   end
-  format = "%-22s%-4s%8.3f"
+  format = "%-22s%-4s%8.2f"
   print(string.format(format, player.name, player.team, player.ppg))
 end
