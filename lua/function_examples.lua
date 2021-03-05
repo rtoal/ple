@@ -1,7 +1,6 @@
 -- Function values can be declared or assigned
 function odd(x) return x % 2 == 1 end
 square = function (x) return x * x end
-less_than_ten = function (x) return x < 10 end
 twice = function (f, x) return f(f(x)) end
 
 -- We can call anonymous functions
@@ -23,4 +22,4 @@ assert(not is_odd_when_squared(0))
 assert((function (x) return x + 1 end)(8, 2) == 9) 
 
 -- Not passing enough arguments is fine, extras get nil
-;(function (x, y) assert(y == nil) end)(1)
+do (function (x, y) assert(y == nil) end)(1) end
