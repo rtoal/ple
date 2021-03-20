@@ -1,10 +1,11 @@
 a = {{x=0, y=0}, {x=8, y=21}, {x=3, y=5}}
 
-b = a;                 -- copies the reference, so we have sharing
+b = a;                 -- copies the reference: b and a share
+
 c = {}
 for key, value in pairs(a) do
   c[key] = value
-end                    -- makes a SHALLOW COPY of array elements
+end                    -- makes a shallow copy of a into c
 
 b[1] = 100
 assert(a[1] == 100)    -- demonstrate a and b are shared
