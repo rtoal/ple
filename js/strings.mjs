@@ -1,3 +1,4 @@
 import assert from "assert"
 
-assert("NOT DONE")
+assert("🤔".length === 2)
+assert([..."🤔"].length === 1)

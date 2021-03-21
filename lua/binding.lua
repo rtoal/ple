@@ -4,7 +4,7 @@ function second(f)
 end
 
 function first()
-  name = "old"
+  local name = "old"
   print_name = function () print(name) end
   second(print_name)
 end

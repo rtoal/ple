@@ -6,5 +6,5 @@ factorial = function (n)
 end
 
 ok, reason = pcall(factorial, 10)     -- hoping for 3628800
-assert(ok == false)
+assert(ok == false)                   -- but it fails!
 print(reason)                         -- your output will vary

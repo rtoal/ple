@@ -2,11 +2,9 @@ Vector = (function (class, meta, prototype)
   class.new = function (i, j)
     return setmetatable({i = i, j = j}, meta)
   end
-
   prototype.magnitude = function (self)
     return math.sqrt(self.i * self.i + self.j * self.j)
   end
-
   meta.__index = prototype
   meta.__add = function (self, v)
       return class.new(self.i + v.i, self.j + v.j)
