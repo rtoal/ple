@@ -1,1 +1,0 @@
-const s: string = null;
