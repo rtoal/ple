@@ -1,4 +1,4 @@
 import assert from "assert"
 
-assert("🤔".length === 2)
-assert([..."🤔"].length === 1)
+assert("\u{1f6b2}".length === 2)
+assert([..."\u{1f6b2}"].length === 1)
