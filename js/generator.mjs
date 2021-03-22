@@ -16,7 +16,7 @@ assert.deepStrictEqual(g.next(), { value: 25, done: false })
 assert.deepStrictEqual(g.next(), { value: undefined, done: true })
 
 // Use for-of to iterate through generated values
-for (let s of firstFiveSquares) {
+for (let s of firstFiveSquares()) {
   console.log(s)
 }
 

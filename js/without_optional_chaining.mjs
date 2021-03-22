@@ -1,3 +1,7 @@
+import assert from "assert"
+
+const employee = { supervisor: { city: { name: "LA" } } }
+
 const cityName = (() => {
   if (employee === null || employee === undefined) {
     return undefined
@@ -12,3 +16,5 @@ const cityName = (() => {
   }
   return _city.name
 })()
+
+assert(cityName === "LA")

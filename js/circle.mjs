@@ -16,7 +16,7 @@ Circle.prototype.circumference = function () {
 }
 
 const c = new Circle(1, 5)
-assert.deepEqual(c, { x: 1, y: 5, radius: 1, color: "black" })
+assert(c.x === 1 && c.y === 5 && c.radius === 1 && c.color === "black")
 assert(c.area() === Math.PI)
 assert(c.circumference() === 2 * Math.PI)
 assert(Object.getPrototypeOf(c) === Circle.prototype)

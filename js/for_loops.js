@@ -1,9 +1,9 @@
-let a = [], b = [];
+let [a, b] = [[], []]
 for (var x of [1, 2, 3]) {
-  a[x] = () => x;
+  a[x] = () => x
 }
 for (let y of [1, 2, 3]) {
-  b[y] = () => y;
+  b[y] = () => y
 }
-console.log(a[1]());
-console.log(b[1]());
+console.log(a[1]())
+console.log(b[1]())
