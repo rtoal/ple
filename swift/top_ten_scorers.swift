@@ -10,7 +10,6 @@ var players = [Player]()
 
 while let line = readLine() {
   let info = line.components(separatedBy: ",")
-  print(info)
   if Int(info[2])! >= 15 {
     players.append(Player(name: info[1], team: info[0], ppg: Double(info[3])!/Double(info[2])!))
   }

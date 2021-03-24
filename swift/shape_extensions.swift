@@ -35,7 +35,7 @@ extension Shape {
     var json: String { return "{\"area\": \(area())}" }
 }
 
-assert(s.json == "{\"area\": 100.0}")
+assert(s.json == "{\"kind\": \"square\", \"side\": 10.0}")
 
 extension Square {
     var json: String {return "{\"kind\": \"square\", \"side\": \(side)}"}
