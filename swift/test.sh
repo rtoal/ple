@@ -18,6 +18,7 @@ swift int_extensions.swift && \
 swift let_contents_immutable.swift && \
 swift median.swift && \
 swift overflow.swift && \
+swift permutations.swift && \
 swift raw_values.swift && \
 swift rectangles.swift && \
 swift ses.swift && \
