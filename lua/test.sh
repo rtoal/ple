@@ -16,8 +16,9 @@ lua more_table_examples.lua && \
 lua nested_function_declaration.lua && \
 lua nils.lua && \
 lua operators.lua && \
-lua permutations.lua && \
+lua permutations.lua I like carrots | diff ../test/carrots_expected - && \
 lua recursive_fail.lua && \
+lua recursive_ok.lua && \
 lua references.lua && \
 lua shallow.lua && \
 lua standard_library.lua && \
