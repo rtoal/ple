@@ -1,9 +1,14 @@
 import * as readline from "readline"
-const reader = readline.createInterface(process.stdin, null)
+const reader = readline.createInterface(process.stdin)
 
-const players = []
+interface Player {
+  name: string
+  team: string
+  ppg: number
+}
+const players: Player[] = []
 
-reader.on("line", line => {
+reader.on("line", (line: string) => {
   let [team, name, games, points] = line.split(",")
   if (Number(games) >= 15) {
     players.push({ name, team, ppg: Number(points) / Number(games) })
