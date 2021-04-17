@@ -1,2 +1,2 @@
 main =
-  getLine >>= \s -> putStrLn $ "Hello, " ++ s
+    getLine >>= \s -> putStrLn $ "Hello, " ++ s
