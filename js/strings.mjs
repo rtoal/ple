@@ -1,6 +1,6 @@
 import assert from "assert"
 
-assert("\u{1f6b2}".length === 2)
-assert([..."\u{1f6b2}"].length === 1)
-
-console.log("ℝℰ𝑎𝔐🜂")
+const s = "\u{1f363}\u{2669}"
+assert(s.length === 3) // sigh, not great
+assert([...s].length === 2) // ok, 2 code points
+assert(Buffer.from(s, "utf8").length === 7) // ok, 7 bytes utf-8

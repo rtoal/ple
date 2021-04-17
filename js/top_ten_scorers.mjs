@@ -1,5 +1,5 @@
 import readline from "readline"
-const reader = readline.createInterface(process.stdin, null)
+const reader = readline.createInterface(process.stdin)
 
 const players = []
 
