@@ -5,8 +5,7 @@ fun printPermutations(a: Array<String>, n: Int) {
         for (i in 0..n-1) {
             printPermutations(a, n-1)
             val j = if (n % 2 == 0) {0} else {i}
-            val (oldJ, oldN) = arrayOf(a[j], a[n])
-            a[j] = oldN; a[n] = oldJ
+            val oldLast = a[n]; a[n] = a[j]; a[j] = oldLast
         }
         printPermutations(a, n-1)
     }
