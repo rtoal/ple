@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void print_string_array(char** a, int size) {
+void print_string_array(char *a[], int size) {
     if (size == 0) {
         return;
     }
@@ -11,22 +11,22 @@ void print_string_array(char** a, int size) {
     printf("\n");
 }
 
-void generate_permutations(char **a, int n, int size) {
+void print_permutations(char *a[], int n, int size) {
     if (n == 0) {
         print_string_array(a, size);
     } else {
         for (int i = 0; i < n; i++) {
-            generate_permutations(a, n - 1, size);
+            print_permutations(a, n - 1, size);
             int j = n % 2 == 0 ? 0 : i;
             char* old_last = a[n];
             a[n] = a[j];
             a[j] = old_last;
         }
-        generate_permutations(a, n - 1, size);
+        print_permutations(a, n - 1, size);
     }
 }
 
-int main(int argc, char** argv) {
-    generate_permutations(argv + 1, argc - 2, argc - 1);
+int main(int argc, char *argv[]) {
+    print_permutations(argv + 1, argc - 2, argc - 1);
     return 0;
 }
