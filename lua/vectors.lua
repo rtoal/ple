@@ -7,7 +7,7 @@ Vector = (function (class, meta, prototype)
   end
   meta.__index = prototype
   meta.__add = function (self, v)
-      return class.new(self.i + v.i, self.j + v.j)
+    return class.new(self.i + v.i, self.j + v.j)
   end
   meta.__mul = function (self, v)
     return self.i * v.i + self.j * v.j
