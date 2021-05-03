@@ -6,8 +6,7 @@ func Example() {
 
 	capitals := map[string]string{
 		"NSW": "Sydney",
-		"VIC":
-		"Melbourne",
+		"VIC": "Melbourne",
 		"TAS": "Hobart",
 		"WA": "Perth",
 		"QLD": "Brisbane",
