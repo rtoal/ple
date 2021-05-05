@@ -3,7 +3,8 @@ assert(8 - 5 - 2 == 1)          -- illustration of left associativity
 assert(3 ^ 5 == 243)            -- exponentiation
 assert(19 / 5 == 3.8)           -- normal division
 assert(19 // 5 == 3)            -- floor division
-assert(0x1000 == 4096)          -- 0x lets us write numbers in hex
+assert(0x1000 == 4096)          -- hexadecimal numbers
+assert(9.3E-5 == 0.000093)      -- E is "times ten to the"
 assert(3 ~= 5)                  -- not equals
 assert(-10 <= 3)                -- numbers can be compared
 assert("dog" < "dogs")          -- so can strings
