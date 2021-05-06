@@ -1,4 +1,4 @@
-import assert from "assert"
+import assert from "assert/strict"
 
 function* firstFiveSquares() {
   for (let i = 1; i <= 5; i++) {
@@ -8,12 +8,12 @@ function* firstFiveSquares() {
 
 // Obtain the values on demand
 const g = firstFiveSquares()
-assert.deepStrictEqual(g.next(), { value: 1, done: false })
-assert.deepStrictEqual(g.next(), { value: 4, done: false })
-assert.deepStrictEqual(g.next(), { value: 9, done: false })
-assert.deepStrictEqual(g.next(), { value: 16, done: false })
-assert.deepStrictEqual(g.next(), { value: 25, done: false })
-assert.deepStrictEqual(g.next(), { value: undefined, done: true })
+assert.deepEqual(g.next(), { value: 1, done: false })
+assert.deepEqual(g.next(), { value: 4, done: false })
+assert.deepEqual(g.next(), { value: 9, done: false })
+assert.deepEqual(g.next(), { value: 16, done: false })
+assert.deepEqual(g.next(), { value: 25, done: false })
+assert.deepEqual(g.next(), { value: undefined, done: true })
 
 // Use for-of to iterate through generated values
 for (let s of firstFiveSquares()) {
@@ -21,4 +21,4 @@ for (let s of firstFiveSquares()) {
 }
 
 // Roll up generated values all at once
-assert.deepStrictEqual([...firstFiveSquares()], [1, 4, 9, 16, 25])
+assert.deepEqual([...firstFiveSquares()], [1, 4, 9, 16, 25])
