@@ -13,6 +13,7 @@ python3 log_decorator_example.py && \
 python3 memoized_fibonacci.py && \
 python3 mi.py && \
 python3 object_pool.py && \
+python3 top_ten_scorers.py < ../test/players_input | diff ../test/players_expected - && \
 python3 powers_of_two.py && \
 python3 powers_of_two_infinite.py && \
 python3 proxy.py && \
