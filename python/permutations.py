@@ -10,5 +10,4 @@ def print_permutations(a, n):
             a[j], a[n] = a[n], a[j]
         print_permutations(a, n - 1)
 
-values = sys.argv[1:]
-print_permutations(values, len(values) - 1)
+print_permutations(sys.argv[1:], len(sys.argv) - 2)
