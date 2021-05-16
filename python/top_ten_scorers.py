@@ -1,4 +1,4 @@
-import sys, re
+import sys
 from heapq import nlargest
 from operator import itemgetter
 
