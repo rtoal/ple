@@ -11,9 +11,9 @@ data Player = Player { name :: String
 getTopScores :: [[String]] -> [Player]
 getTopScores players topScoringPlayers = 
     case (lookup player players) of 
-        (player !! 3)::Int players) >= 15 -> topScores : Player ((player !! 1), (player !! 0), (ceiling (((player !! 3)::RealFrac)/((player !! 2)::RealFrac))))
+        (player !! 3)::Int players) >= 15 -> topScoringPlayers : Player ((player !! 1), (player !! 0), (ceiling (((player !! 3)::RealFrac)/((player !! 2)::RealFrac))))
         False -> return ()
-    return topScores
+    return topScoringPlayers
 
 
 sortPlayers :: [Player] -> [Player]
