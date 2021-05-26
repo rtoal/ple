@@ -34,7 +34,7 @@ swift sum_of_even_squares.swift && \
 swift throw.swift && \
 swift throw_turned_to_nil.swift && \
 swift token.swift && \
-swift top_ten_scorers.swift < ../test/players_input | diff ../test/players_expected - && \
+swift top_ten_scorers.swift < ../test/wnba_input | diff ../test/wnba_expected - && \
 swift triple.swift | diff ../test/triple_expected - && \
 swift trivial_arc_example.swift && \
 swift value_vs_reference.swift && \

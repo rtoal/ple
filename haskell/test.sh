@@ -8,6 +8,8 @@ ghc infix_as_prefix.hs && ./infix_as_prefix && \
 ghc permutations.hs && ./permutations one two three && \
 ghc primes.hs && ./primes && \
 ghc triple.hs && ./triple | diff ../test/triple_expected -
+# ghc top_ten_scorers.hs < ../test/wnba_input | diff ../test/wnba_expected - && \
+
 
 if [ $? -ne 0 ]; then
     echo

@@ -25,7 +25,7 @@ node simple_scopes.mjs && \
 node static_or_dynamic_scope.mjs && \
 node supervisor.mjs && \
 node this_examples.mjs && \
-node top_ten_scorers.mjs < ../test/players_input | diff ../test/players_expected - && \
+node top_ten_scorers.mjs < ../test/wnba_input | diff ../test/wnba_expected - && \
 node triple.mjs | diff ../test/triple_expected - && \
 node types_and_type_errors.mjs && \
 node without_optional_chaining.mjs && \

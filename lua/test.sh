@@ -26,7 +26,7 @@ lua static_or_dynamic_scope.lua && \
 lua string_examples.lua && \
 lua strong_and_weak_typing.lua && \
 lua table_examples.lua && \
-lua top_ten_scorers.lua < ../test/players_input | diff ../test/players_expected - && \
+lua top_ten_scorers.lua < ../test/wnba_input | diff ../test/wnba_expected - && \
 lua triple.lua | diff ../test/triple_expected - && \
 lua types.lua && \
 lua vectors.lua && \
