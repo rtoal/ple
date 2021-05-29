@@ -7,7 +7,7 @@ public class PermutationsApp {
         if (n <= 0) {
             System.out.println(String.join("\t", a));
         } else {
-            for (int i = 0; i < n; i++) {
+            for (var i = 0; i < n; i++) {
                 printPermutations(a, n-1);
                 swap(a, n % 2 == 0 ? 0 : i, n);
             }
@@ -16,8 +16,8 @@ public class PermutationsApp {
     }
 
     private static void swap(String[] a, int i, int j) {
-        var saved = a[i];
+        var oldValueAtIndexI = a[i];
         a[i] = a[j];
-        a[j] = saved;
+        a[j] = oldValueAtIndexI;
     }
 }
