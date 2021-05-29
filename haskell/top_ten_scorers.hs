@@ -1,47 +1,27 @@
 import System.IO (getContents)
-import Data.Text (pack, splitOn)
-import Data.List
+import Data.Text (pack, unpack, splitOn)
+import Data.List (sortOn)
+import Text.Printf (printf)
 
-data Player = Player { name :: String
-                 , team :: String
-                 , ppg :: Int
-                 } deriving (Show)
+splitOnComma :: String -> [String]
+splitOnComma = map unpack . splitOn (pack ",") . pack
 
+frequent :: [String] -> Bool
+frequent (_:_:games:_) = ((read games)::Int) >= 15
 
-getTopScores :: [[String]] -> [Player]
-getTopScores players topScoringPlayers = 
-    case (lookup player players) of 
-        (player !! 3)::Int players) >= 15 -> topScoringPlayers : Player ((player !! 1), (player !! 0), (ceiling (((player !! 3)::RealFrac)/((player !! 2)::RealFrac))))
-        False -> return ()
-    return topScoringPlayers
+data Player = 
+    Player { name :: String, team :: String, ppg :: Float }
 
+toPlayer :: [String] -> Player        
+toPlayer (team:name:games:points:_) = 
+    let ppg = ((read points)::Float) / ((read games)::Float) in
+        Player { name = name, team = team, ppg = ppg }
 
-sortPlayers :: [Player] -> [Player]
-sortPlayers player1 player2
-    | (ppg player1) < (ppg player2) = GT
-    | (ppg player1) > (ppg player2) = LT
-    | (ppg player1) == (ppg player2) = compare (ppg player1) (ppg player2)
+toString :: Player -> String
+toString player = 
+    printf "%-22s%-4s%8.2g" (name player) (team player) (ppg player)
 
-main = do
-  topScorers = []
-  getContents >>= (mapM_ (putStrLn . show . splitOn (pack ",") . pack) . lines)
-  players <- getContents
-  getTopScores players topScorers
-  sortBy sortPlayers topScorers
-  take 10 topScorers
-    
--- reader.on("line", line => {
---   let [team, name, games, points] = line.split(",")
---   if (games >= 15) {
---     players.push({ name, team, ppg: points / games })
---   }
--- })
--- reader.on("close", () => {
---   const topTen = players.sort((p1, p2) => p2.ppg - p1.ppg).slice(0, 10)
---   for (let { name, team, ppg } of topTen) {
---     console.log(
---       `${name.padEnd(22)}${team.padEnd(4)}${ppg.toFixed(2).padStart(8)}`
---     )
---   }
--- })
-
+main =
+    mapM_ putStrLn . map toString . take 10 . reverse . 
+    sortOn ppg .  map toPlayer . filter frequent .
+    map splitOnComma . lines =<< getContents
