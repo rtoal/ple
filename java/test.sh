@@ -12,11 +12,13 @@ java -ea IntrospectionExample && \
 java -ea ListAndSetExample && \
 java -ea MinMaxTester && \
 java -ea OptionalDemo && \
+java -ea PermutationsApp I like carrots | diff ../test/carrots_expected - && \
 java -ea PrimePrinter && \
 java -ea RaceConditionDemo && \
 java -ea ReflectionExample && \
 java -ea SheepAdder && \
 java -ea ThreeIsFive && \
+java -ea TopTenScorersApp.java < ../test/wnba_input | diff ../test/wnba_expected - && \
 java -ea TraditionalWordCountApp < ../test/wordcount_ascii_input | diff ../test/wordcount_ascii_expected - && \
 java -ea TripleApp | diff ../test/triple_expected - && \
 java -ea TwiceApp && \
