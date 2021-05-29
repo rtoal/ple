@@ -1,20 +1,27 @@
 import System.IO (getContents)
 import Data.Text (pack, unpack, splitOn)
-import Data.Char (toUpper)
+import Data.List (sortOn)
+import Text.Printf (printf)
+
+splitOnComma :: String -> [String]
+splitOnComma = map unpack . splitOn (pack ",") . pack
+
+frequent :: [String] -> Bool
+frequent (_:_:games:_) = ((read games)::Int) >= 15
+
 data Player = 
-    Player 
-        { name :: String
-        , team :: String
-        , ppg :: Float
-        } deriving (Show)
-toPlayer line = 
-    let components = (map unpack . splitOn (pack ",") . pack) line in
-        Player 
-            { name = components !! 1
-            , team = components !! 0
-            , ppg = (read (components !! 3)::Float) / (read (components !! 2)::Float)
-            }
+    Player { name :: String, team :: String, ppg :: Float }
+
+toPlayer :: [String] -> Player        
+toPlayer (team:name:games:points:_) = 
+    let ppg = ((read points)::Float) / ((read games)::Float) in
+        Player { name = name, team = team, ppg = ppg }
+
+toString :: Player -> String
 toString player = 
-    name player ++ "\t" ++ team player ++ "\t" ++ (show $ ppg player)
-main = do
-    getContents >>= mapM_ (putStrLn  . toString . toPlayer) . lines
+    printf "%-22s%-4s%8.2g" (name player) (team player) (ppg player)
+
+main =
+    mapM_ putStrLn . map toString . take 10 . reverse . 
+    sortOn ppg .  map toPlayer . filter frequent .
+    map splitOnComma . lines =<< getContents
