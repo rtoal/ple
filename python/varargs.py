@@ -1,5 +1,5 @@
 def f(x, y=1000, *z):
-  print('x={} y={} z={}'.format(x,y,z))
+  print(f'x={x} y={y} z={z}')
 
 f(0)                        # x=0, y=1000, z=()
 f(0,1)                      # x=0, y=1, z=()

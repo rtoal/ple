@@ -2,7 +2,7 @@ class Animal:
     def __init__(self, name):
         self.name = name
     def speak(self):
-        return '{} says {}'.format(self.name, self.sound())
+        return f'{self.name} says {self.sound()}'
 
 class Cow(Animal):
     def sound(self):

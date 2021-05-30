@@ -15,7 +15,7 @@ class Vector:
         return self.i * v.i + self.j * v.j
 
     def __str__(self):
-        return '<{},{}>'.format(self.i, self.j)
+        return f'<{self.i},{self.j}>'
 
 u = Vector(3, 4)
 v = Vector(-5, 10)
