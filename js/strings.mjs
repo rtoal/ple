@@ -1,4 +1,4 @@
-import assert from "assert"
+import assert from "assert/strict"
 
 const s = "\u{1f363}\u{2669}"
 assert(s.length === 3) // sigh, not great

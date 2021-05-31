@@ -1,4 +1,4 @@
-import assert from "assert"
+import assert from "assert/strict"
 
 function talkTo(message, suffix) {
   return message + ", " + this.name + suffix

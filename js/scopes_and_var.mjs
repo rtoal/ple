@@ -1,4 +1,4 @@
-import assert from "assert"
+import assert from "assert/strict"
 
 // JavaScript illustration of local variables
 var a = 0,
@@ -10,5 +10,5 @@ var a = 0,
   var d = 300 // Local, will not exist after return
 })()
 
-assert.deepStrictEqual([a, b, c], [0, 200, 2])
+assert.deepEqual([a, b, c], [0, 200, 2])
 assert.throws(() => d, ReferenceError)

@@ -1,4 +1,4 @@
-import assert from "assert"
+import assert from "assert/strict"
 
 assert(3 + 2 ** (3 ** 2) - 10 === 505)
 assert(13 / 5 === 2.6)

@@ -1,4 +1,4 @@
-import assert from "assert"
+import assert from "assert/strict"
 
 const colors = ["red", "green", "blue"]
 const tiles = { e: 1, q: 10, k: 5 }

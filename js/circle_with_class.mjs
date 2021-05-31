@@ -1,4 +1,4 @@
-import assert from "assert"
+import assert from "assert/strict"
 
 class Circle {
   constructor(centerX = 0, centerY = 0, radius = 1, color = "black") {

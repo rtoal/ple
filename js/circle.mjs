@@ -1,4 +1,4 @@
-import assert from "assert"
+import assert from "assert/strict"
 
 function Circle(centerX = 0, centerY = 0, radius = 1, color = "black") {
   this.x = centerX
