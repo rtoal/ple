@@ -1,17 +1,19 @@
 import assert from "assert/strict"
 
-// Function values can use `=>` or `function`
-const square = x => x * x
+// Three ways to introduce a function value
+function square(x) {
+  return x * x
+}
 const odd = x => Math.abs(x % 2) === 1
 const lessThanTen = function (x) {
   return x < 10
 }
-const twice = (f, x) => f(f(x))
 
 // An anonymous function call
 assert((x => x + 5)(10) === 15)
 
 // We can pass function values to other functions
+const twice = (f, x) => f(f(x))
 assert(twice(square, -3) === 81)
 assert(twice(x => x + 1, 5) === 7)
 
