@@ -22,6 +22,7 @@ toString player =
     printf "%-22s%-4s%8.2g" (name player) (team player) (ppg player)
 
 main =
-    mapM_ putStrLn . map toString . take 10 . reverse . 
-    sortOn ppg .  map toPlayer . filter frequent .
-    map splitOnComma . lines =<< getContents
+    getContents >>=
+        mapM_ putStrLn . map toString . take 10 . reverse . 
+        sortOn ppg .  map toPlayer . filter frequent .
+        map splitOnComma . lines
