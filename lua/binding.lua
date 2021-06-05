@@ -1,6 +1,6 @@
 function second(f)
   local name = "new"
-  f()
+  f()   -- how do we handle free variables in f?
 end
 
 function first()
