@@ -1,1 +1,8 @@
-<script src="pikachu.js"></script>
+<img alt="pikachu" />
+<script type="module">
+  const picture = document.querySelector("img")
+  const url = "https://pokeapi.co/api/v2/pokemon/pikachu"
+  const response = await fetch(url)
+  const pokemon = await response.json()
+  picture.src = pokemon.sprites.front_default
+</script>
