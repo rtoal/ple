@@ -1,6 +1,6 @@
-import Data.List (intercalate)
 import Control.Monad (guard)
 import Data.Char (toUpper)
+import Data.List (intercalate)
 
 isIncreasingTuple :: (Ord a) => (a,a) -> Bool -- this is our first type signature for the function isIncreasingTuple. It gives context to the tuple argument of type, a, which belongs to the typeclass Ord (more details on this to come), and returns a boolean value 
 isIncreasingTuple (x, y) = x < y -- this function compares two values within a tuple and returns a boolean
