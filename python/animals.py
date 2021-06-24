@@ -16,9 +16,8 @@ class Sheep(Animal):
     def sound(self):
         return 'baaaa'
 
-if __name__ == '__main__':
-    s = Horse('CJ')
-    assert s.speak() == 'CJ says neigh'
-    c = Cow('Bessie')
-    assert c.speak() == 'Bessie says moooo'
-    assert Sheep('Little Lamb').speak() == 'Little Lamb says baaaa'
+s = Horse('CJ')
+assert s.speak() == 'CJ says neigh'
+c = Cow('Bessie')
+assert c.speak() == 'Bessie says moooo'
+assert Sheep('Little Lamb').speak() == 'Little Lamb says baaaa'
