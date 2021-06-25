@@ -1,5 +1,8 @@
 import Control.Monad (guard)
 
+doubleAndAdd x y = 2 * x + y
+
+-- FEEL FREE TO KILL THE OTHER EXAMPLES I LIKE THE BOOK EXAMPLE THAT YOU USED, I JUST CREATED THE EXTRAS INITIALLY FOR FUN, BUT FIBONACCI MIGHT BE NICE TO USE ELSEWHERE SO IM GOING TO LEAVE EVERYTHING HERE
 fibonacci n
            | n == 0 = 0 -- handles the first base case that n is equal to 0 
            | n <= 2 = 1 -- handles the second base case that n is less than or equal to 2 
@@ -7,9 +10,17 @@ fibonacci n
 
 fibonacciToAPower nthFibonacciNumber power  = (fibonacci nthFibonacciNumber) ^ power -- finds the nth fibonacci number and finds the nth power of that number, based on what is passed to the function
 
-factorial n = product [1..n] -- this works for all cases including 0, since product of [] is 1, and the result of the range [1..0] is just the empty list
+factorial n = product [1..n] -- this works for all cases including 0, since product of [] is 1, and the result of the range [1..0] is just the empty list ALTHOUGH I DO NOT HANDLE NEGATIVE NUMBERS HERE 
 
 factorialToAPower nthFactorial power = (factorial nthFactorial) ^ power -- finds the nth factorial and finds the nth power of that number, based on what is passed to the function
+
+-- (*&+%) :: a -> a -> a
+-- b *&+% n = doubleAndAdd x y
+-- infix *&+% 8 
+
+-- (*&+) :: a -> a -> a
+-- b *&+ n = doubleAndAdd x y
+-- infix *&+ 3
 
 -- (^~) :: a -> a -> a
 -- b ^~ n = fibonacciToAPower n b
@@ -41,3 +52,9 @@ main =
         guard $ factorial 4 == 24
         guard $ factorialToAPower 4 2 == 576
         guard $ factorialToAPower 1 0 == 1
+        guard $ doubleAndAdd 5 6 == 16
+        guard $ doubleAndAdd 10 12 == 32
+        guard $ doubleAndAdd 0 0 == 0
+        guard $ doubleAndAdd (-1) 5 == 3
+        -- guard 5 *&+ 6 * 10
+        -- guard 5 *&+% 6 * 10
