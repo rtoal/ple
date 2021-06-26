@@ -1,6 +1,6 @@
-module University (Professor, Student, Class) where
+module University (Professor(..), Student(..), Class(..)) where
 
-data Professor = Professor {
+data Professor = Professor { 
     profFirstName :: String,
     profLastName :: String,
     almaMaters:: [String],
@@ -10,7 +10,7 @@ data Professor = Professor {
     classesCurrentlyTeaching:: [String],
     profDepartment :: String,
     college :: String
-} deriving (Show)
+} deriving (Eq, Show)
 
 data Student = Student {
     studentFirstName :: String,
@@ -20,7 +20,7 @@ data Student = Student {
     gpa :: Float,
     classesCurrentlyTaking :: [String],
     colleges :: [String]
-} deriving (Show)
+} deriving (Eq, Show)
 
 data Class = Class {
     courseNumber :: Int,
@@ -30,7 +30,7 @@ data Class = Class {
     department :: String,
     professor :: String,
     semester :: String
-} deriving (Show)
+} deriving (Eq, Show)
 
 
     
