@@ -14,13 +14,13 @@ factorial n = product [1..n] -- this works for all cases including 0, since prod
 
 factorialToAPower nthFactorial power = (factorial nthFactorial) ^ power -- finds the nth factorial and finds the nth power of that number, based on what is passed to the function
 
--- (*&+%) :: a -> a -> a
--- b *&+% n = doubleAndAdd x y
--- infix *&+% 8 
+(*&+%) :: (Num a) => a -> a -> a
+b *&+% n = doubleAndAdd b n
+infix 8 *&+% 
 
--- (*&+) :: a -> a -> a
--- b *&+ n = doubleAndAdd x y
--- infix *&+ 3
+(*&+) :: (Num a) => a -> a -> a
+b *&+ n = doubleAndAdd b n
+infix 3 *&+
 
 -- (^~) :: a -> a -> a
 -- b ^~ n = fibonacciToAPower n b
@@ -56,5 +56,5 @@ main =
         guard $ doubleAndAdd 10 12 == 32
         guard $ doubleAndAdd 0 0 == 0
         guard $ doubleAndAdd (-1) 5 == 3
-        -- guard 5 *&+ 6 * 10
-        -- guard 5 *&+% 6 * 10
+        guard $ (5 *&+ 6 * 10) == 70
+        guard $ 5 *&+% 6 * 10 == 160
