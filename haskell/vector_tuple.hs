@@ -14,27 +14,9 @@ main =
         twoDVector = (10.0,3.0)
     in do 
         guard $ calculateDirectionForTwoDVector twoDVector == 0.2914567944778671
-        guard $ curry curriedCalculateDirectionForTwoDVector 10.0 3.0 == calculateDirectionForTwoDVector twoDVector -- NEEDS DEBUGGING
-        guard $ uncurry calculateDirectionForTwoDVector twoDVector == curriedCalculateDirectionForTwoDVector 10.0 3.0 -- NEEDS DEBUGGING
+        guard $ curry calculateDirectionForTwoDVector 10.0 3.0 == 0.2914567944778671
+        guard $ uncurry curriedCalculateDirectionForTwoDVector (10.0, 3.0) == 0.2914567944778671
+        
         guard $ swap twoDVector == (3,10) -- the tuple operation swap can also be applied to a VectorTuple 
 
--- INITIAL ERRORS FOR LINES 17 AND 18:
--- WHEN YOU RUN curry curriedCalculateDirectionForTwoDVector 10.0 3.0 AFTER IMPORTING DATA.TUPLE IN GHCI YOU GET THE FOLLOWING:
 
--- <interactive>:4:1: error:
---     • Non type-variable argument in the constraint: Floating (a, b)
---       (Use FlexibleContexts to permit this)
---     • When checking the inferred type
---         it :: forall a b.
---               (Floating (a, b), Fractional a, Fractional b) =>
---               (a, b) -> (a, b)
-
--- WHEN YOU RUN uncurry calculateDirectionForTwoDVector (10.0,3.0) AFTER IMPORTING DATA.TUPLE IN GHCI YOU GET THE FOLLOWING:
-
--- <interactive>:4:1: error:
---     • Non type-variable argument in the constraint: Floating (a, b)
---       (Use FlexibleContexts to permit this)
---     • When checking the inferred type
---         it :: forall b c.
---               (Floating (b -> c), Fractional b, Fractional (b -> c, b -> c)) =>
---               c
