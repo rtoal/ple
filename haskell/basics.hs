@@ -8,7 +8,7 @@ main = do
     guard $ mod 19 5 == 4
     guard $ 2 ^ 128 == 340282366920938463463374607431768211456
     guard $ 2 ** 128 == 3.402823669209385e38
-    guard $ ord '¢' == 162
-    guard $ chr 162 == '¢' 
-    guard $ even 100 == True
-    guard $ (False && (1 < 5)) == False
+    guard $ ord '¢' == 162 && chr 162 == '¢' 
+    guard $ (False && (1 < 5) || even 100) == True
+    guard $ (let x = 3 in x + 10) == 13
+    guard $ (if 1 < 2 then 21 else 55) == 21

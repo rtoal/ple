@@ -3,16 +3,15 @@ import Data.List (intersperse, intercalate)
 
 main = do
     guard $ null []                        -- is empty
-    guard $ not (null [3,5,8,2,1])         -- is not empty
+    guard $ length [3,5,8,2,1] == 5
     guard $ head [3,5,8,2,1] == 3          -- first element
     guard $ tail [3,5,8,2,1] == [5,8,2,1]  -- all but first
-    guard $ 3 : [5,8,2,1] == [3,5,8,2,1]   -- construct from head & tail
-    guard $ init [3,5,8,2,1] == [3,5,8,2]  -- all but last
-    guard $ last [3,5,8,2,1] == 1 
-    guard $ length [3,5,8,2,1] == 5 
+    guard $ 3 : [5,8,2,1] == [3,5,8,2,1]   -- cons (fast)
+    guard $ [3,5,8] ++ [2] == [3,5,8,2]    -- append (slow)
     guard $ take 2 [3,5,8,2,1] == [3,5]    -- first n elements
     guard $ drop 2 [3,5,8,2,1] == [8,2,1]  -- all but the first n
-    guard $ len [3,5,8,2,1] == 5           -- number of elements
+    guard $ init [3,5,8,2,1] == [3,5,8,2]  -- all but last
+    guard $ last [3,5,8,2,1] == 1 
 
     -- Ranges and comprehensions
     guard $ [2..5] == [2,3,4,5]
@@ -24,7 +23,6 @@ main = do
     guard $ concat [[3],[5,8],[],[2,1]] == [3,5,8,2,1] 
     guard $ intersperse 0 [1,2,3] == [1,0,2,0,3]
     guard $ intercalate [0,0] [[1],[2,3]] == [1,0,0,2,3]
-    guard $ zip [1,2] ['a','b'] == [(1,'a'),(2,'b')]
     guard $ zip [1,2,3] ['a','b'] == [(1,'a'),(2,'b')]
 
     -- Higher order functions
@@ -36,7 +34,5 @@ main = do
     guard $ concatMap (\x -> [x,-x]) [1..3] == [1,-1,2,-2,3,-3]
     guard $ all even [3,5,8,2,1] == False 
     guard $ any even [3,5,8,2,1] == True
-    guard $ foldl (-) 1 [3,5,2,8] == -17    -- (((1-3)-5)-2)-8
-    guard $ foldr (-) 1 [3,5,2,8] == -7     -- 3-(5-(2-(8-1)))
     guard $ sum [1..10] == 55 
     guard $ product [1..10] == 3628800 
