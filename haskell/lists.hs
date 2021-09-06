@@ -12,6 +12,7 @@ main = do
     guard $ length [3,5,8,2,1] == 5 
     guard $ take 2 [3,5,8,2,1] == [3,5]    -- first n elements
     guard $ drop 2 [3,5,8,2,1] == [8,2,1]  -- all but the first n
+    guard $ len [3,5,8,2,1] == 5           -- number of elements
 
     -- Ranges and comprehensions
     guard $ [2..5] == [2,3,4,5]
