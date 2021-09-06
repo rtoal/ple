@@ -18,9 +18,8 @@ perimeter s =
         Rectangle h w ->
             2 * (h + w)
 
-main = 
-    do
-        guard $ area (Circle 10) == (100 * pi)
-        guard $ perimeter (Circle 10) == (20 * pi)
-        guard $ area (Rectangle 2 8) == 16
-        guard $ perimeter (Rectangle 2 8) == 20
+main = do
+    guard $ area (Circle 10) == (100 * pi)
+    guard $ perimeter (Circle 10) == (20 * pi)
+    guard $ area (Rectangle 2 8) == 16
+    guard $ perimeter (Rectangle 2 8) == 20

@@ -6,7 +6,6 @@ isThirtyFour num =
         34 -> True
         otherwise -> False
 
-main = 
-    do
-        guard $ not (isThirtyFour 8)
-        guard $ isThirtyFour 34
+main = do
+    guard $ not (isThirtyFour 8)
+    guard $ isThirtyFour 34

@@ -32,29 +32,28 @@ infix 3 *&+
 -- infix !~ 8 
 
 
-main = 
-    do 
-        guard $ fibonacci 0 == 0
-        guard $ fibonacci 1 == 1
-        guard $ fibonacci 2 == 1
-        guard $ fibonacci 3 == 2
-        guard $ fibonacci 4 == 3 
-        guard $ fibonacci 5 == 5
-        guard $ fibonacci 6 == 8
-        guard $ fibonacci 7 == 13
-        guard $ fibonacci 8 == 21
-        guard $ fibonacciToAPower 2 3 == 1
-        guard $ fibonacciToAPower 3 3 == 8 
-        guard $ factorial 0 == 1
-        guard $ factorial 1 == 1
-        guard $ factorial 2 == 2
-        guard $ factorial 3 == 6
-        guard $ factorial 4 == 24
-        guard $ factorialToAPower 4 2 == 576
-        guard $ factorialToAPower 1 0 == 1
-        guard $ doubleAndAdd 5 6 == 16
-        guard $ doubleAndAdd 10 12 == 32
-        guard $ doubleAndAdd 0 0 == 0
-        guard $ doubleAndAdd (-1) 5 == 3
-        guard $ (5 *&+ 6 * 10) == 70
-        guard $ 5 *&+% 6 * 10 == 160
+main = do 
+    guard $ fibonacci 0 == 0
+    guard $ fibonacci 1 == 1
+    guard $ fibonacci 2 == 1
+    guard $ fibonacci 3 == 2
+    guard $ fibonacci 4 == 3 
+    guard $ fibonacci 5 == 5
+    guard $ fibonacci 6 == 8
+    guard $ fibonacci 7 == 13
+    guard $ fibonacci 8 == 21
+    guard $ fibonacciToAPower 2 3 == 1
+    guard $ fibonacciToAPower 3 3 == 8 
+    guard $ factorial 0 == 1
+    guard $ factorial 1 == 1
+    guard $ factorial 2 == 2
+    guard $ factorial 3 == 6
+    guard $ factorial 4 == 24
+    guard $ factorialToAPower 4 2 == 576
+    guard $ factorialToAPower 1 0 == 1
+    guard $ doubleAndAdd 5 6 == 16
+    guard $ doubleAndAdd 10 12 == 32
+    guard $ doubleAndAdd 0 0 == 0
+    guard $ doubleAndAdd (-1) 5 == 3
+    guard $ (5 *&+ 6 * 10) == 70
+    guard $ 5 *&+% 6 * 10 == 160

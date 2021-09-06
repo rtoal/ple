@@ -54,25 +54,24 @@ capitalize phrase = map toUpper phrase -- strings in Haskell are just lists of C
 joinAndCapitalizedPhrases :: String -> [String] -> String
 joinAndCapitalizedPhrases separator phrases = joinPhrases separator (map capitalize phrases) -- another example of nesting function calls 
 
-main =
-    do
-        guard $ convertTuplesToListsWithValuesThatAreIncreasing [(1,2), (3,5)] == [[1,2],[3,5]]
-        guard $ convertTuplesToListsWithValuesThatAreIncreasing [(1,2), (2,1)] == [[1,2]]
-        guard $ curriedAdd 5 8 == add (5,8)
-        guard $ tellMeAbout "NY" == "I don't know anything about NY"
-        guard $ tellMeAbout "CA" == "The capital of CA is Sacramento"
-        guard $ show RED == "(\"RED\")"
-        guard $ show AMBER == "(\"AMBER\")"
-        guard $ show GREEN == "(\"GREEN\")"
-        guard $ RED == RED
-        guard $ AMBER == AMBER
-        guard $ GREEN == GREEN
-        guard $ GREEN /= AMBER
-        guard $ AMBER /= RED
-        guard $ RED /= GREEN 
-        guard $ squares [0..10] == [0.0,1.0,4.0,9.0,16.0,25.0,36.0,49.0,64.0,81.0,100.0]
-        guard $ notDivisibleByThreeAndFive [0..30] == [1,2,4,7,8,11,13,14,16,17,19,22,23,26,28,29]
-        guard $ twoToThePowerOf [3,5,8,2,1] == [8,32,256,4,2]
-        guard $ joinPhrases " & " ["swim", "bike", "run"] == "swim & bike & run"
-        guard $ joinAndCapitalizedPhrases "& " ["swim", "bike", "run"] == "SWIM & BIKE & RUN"
+main = do
+    guard $ convertTuplesToListsWithValuesThatAreIncreasing [(1,2), (3,5)] == [[1,2],[3,5]]
+    guard $ convertTuplesToListsWithValuesThatAreIncreasing [(1,2), (2,1)] == [[1,2]]
+    guard $ curriedAdd 5 8 == add (5,8)
+    guard $ tellMeAbout "NY" == "I don't know anything about NY"
+    guard $ tellMeAbout "CA" == "The capital of CA is Sacramento"
+    guard $ show RED == "(\"RED\")"
+    guard $ show AMBER == "(\"AMBER\")"
+    guard $ show GREEN == "(\"GREEN\")"
+    guard $ RED == RED
+    guard $ AMBER == AMBER
+    guard $ GREEN == GREEN
+    guard $ GREEN /= AMBER
+    guard $ AMBER /= RED
+    guard $ RED /= GREEN 
+    guard $ squares [0..10] == [0.0,1.0,4.0,9.0,16.0,25.0,36.0,49.0,64.0,81.0,100.0]
+    guard $ notDivisibleByThreeAndFive [0..30] == [1,2,4,7,8,11,13,14,16,17,19,22,23,26,28,29]
+    guard $ twoToThePowerOf [3,5,8,2,1] == [8,32,256,4,2]
+    guard $ joinPhrases " & " ["swim", "bike", "run"] == "swim & bike & run"
+    guard $ joinAndCapitalizedPhrases "& " ["swim", "bike", "run"] == "SWIM & BIKE & RUN"
         
