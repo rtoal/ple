@@ -31,6 +31,3 @@ data Class = Class {
     professor :: String,
     semester :: String
 } deriving (Show)
-
-
-    

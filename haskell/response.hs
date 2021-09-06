@@ -1,8 +1,13 @@
 import Control.Monad (guard)
 
-data Response a = Error [Char] | Ok a deriving (Show, Eq)
+data Response a
+    = Error [Char]
+    | Ok a
+    deriving (Show, Eq)
 
-squareRoot x | x < 0 = Error "negative" | otherwise = Ok (sqrt x)
+squareRoot x
+    | x < 0 = Error "negative"
+    | otherwise = Ok (sqrt x)
 
 main = do 
     guard $ squareRoot 9 == Ok 3
