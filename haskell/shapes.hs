@@ -5,18 +5,12 @@ data Shape
     | Rectangle Float Float
 
 area :: Shape -> Float
-area s =
-    case s of
-        Circle r -> pi * r * r
-        Rectangle h w -> h * w
+area (Circle r) = pi * r * r
+area (Rectangle h w) = h * w
 
 perimeter :: Shape -> Float
-perimeter s =
-    case s of
-        Circle r ->
-            2 * pi * r
-        Rectangle h w ->
-            2 * (h + w)
+perimeter (Circle r) = 2 * pi * r
+perimeter (Rectangle h w) = 2 * (h + w)
 
 main = do
     guard $ area (Circle 10) == (100 * pi)
