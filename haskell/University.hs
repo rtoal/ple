@@ -1,4 +1,7 @@
-module University (Professor(..), Student(..), Class(..)) where
+module University
+    ( Professor(..)
+    , Student(..)
+    , Class(..)) where
 
 data Professor = Professor { 
     profFirstName :: String,
@@ -31,6 +34,3 @@ data Class = Class {
     professor :: String,
     semester :: String
 } deriving (Eq, Show)
-
-
-    

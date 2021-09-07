@@ -1,13 +1,12 @@
 import Control.Monad (guard)
 
 data Response a
-    = Error [Char]
+    = Error String
     | Ok a
     deriving (Show, Eq)
 
-squareRoot x
-    | x < 0 = Error "negative"
-    | otherwise = Ok (sqrt x)
+squareRoot x =
+    if x < 0 then Error "negative" else Ok (sqrt x)
 
 main = do 
     guard $ squareRoot 9 == Ok 3
