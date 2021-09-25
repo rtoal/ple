@@ -11,5 +11,5 @@ function printPermutations(a, n) {
   }
 }
 
-const arguments = process.argv.slice(2)
-printPermutations(arguments, arguments.length - 1)
+const args = process.argv.slice(2)
+printPermutations(args, args.length - 1)
