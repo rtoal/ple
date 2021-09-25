@@ -1,4 +1,4 @@
-// Rookie mistake using var: alerts 10 for every button.
+// BAD CODE! Using var alerts 10 for every button!
 for (var i = 0; i < 10; i++) {
   const button = document.createElement("button")
   button.innerHTML = i

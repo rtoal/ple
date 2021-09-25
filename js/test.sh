@@ -36,6 +36,7 @@ node this_examples.mjs && \
 node top_ten_scorers.mjs < ../test/wnba_input | diff ../test/wnba_expected - && \
 node triple.mjs | diff ../test/triple_expected - && \
 node types_and_type_errors.mjs && \
+node queues.mjs && \
 node without_optional_chaining.mjs && \
 node wordcount-callback.mjs ../test/wordcount_input | diff ../test/wordcount_expected -
 node wordcount.mjs < ../test/wordcount_input | diff ../test/wordcount_expected -
