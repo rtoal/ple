@@ -1,4 +1,3 @@
-# a, b are positional-only; e, f are keyword-only
 def f(a, b, /, c, d, *, e, f):
     print(a, b, c, d, e, f)
 

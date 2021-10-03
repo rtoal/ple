@@ -10,6 +10,5 @@ class OneTwoThree:
                 return value
         return OneTwoThreeIterator()
 
-x = OneTwoThree()
-for i in x:
-    print(i)       # prints 1 then 2 then 3
+for i in OneTwoThree():
+    print(i)
