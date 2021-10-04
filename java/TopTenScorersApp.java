@@ -5,16 +5,11 @@ public class TopTenScorersApp {
 
     public static void main(String[] args) {
 
-        class Player {
-            final String name;
-            final String team;
-            final int games;
-            final double ppg;
-            Player(String[] line) {
-                this.team = line[0];
-                this.name = line[1];
-                this.games = Integer.parseInt(line[2]);
-                this.ppg = Double.parseDouble(line[3]) / games;
+        record Player(String team, String name, int games, double ppg) {
+            static Player fromLine(String[] line) {
+                var points = Double.parseDouble(line[3]);
+                var games = Integer.parseInt(line[2]);
+                return new Player(line[0], line[1], games, points / games);
             }
             String reportLine() {
                 return String.format("%-22s%-4s%8.2f", name, team, ppg);
@@ -24,7 +19,7 @@ public class TopTenScorersApp {
         new BufferedReader(new InputStreamReader(System.in))
             .lines()
             .map(line -> line.split(","))
-            .map(Player::new)
+            .map(Player::fromLine)
             .filter(p -> p.games >= 15)
             .sorted((p1, p2) -> Double.compare(p2.ppg, p1.ppg))
             .limit(10)
