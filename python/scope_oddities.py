@@ -4,7 +4,7 @@ assert x == 3 # x was not changed
 
 print([y for y in range(5)])
 try:
-    print(y) # did not leak
+    print(y) # will raise an error, since y did not leak
     assert False
 except Exception as e:
     assert e.__class__.__name__ == 'NameError'
