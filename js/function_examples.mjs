@@ -9,7 +9,7 @@ const lessThanTen = function (x) {
   return x < 10
 }
 
-// An anonymous function call
+// Essentially: { let x = 10; x + 5 }
 assert((x => x + 5)(10) === 15)
 
 // We can pass function values to other functions
