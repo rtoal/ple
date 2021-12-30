@@ -4,6 +4,7 @@ g++ -std=c++14 animals.cpp && ./a.out && \
 g++ -std=c++14 basic_types.cpp && ./a.out && \
 g++ -std=c++14 if_then_else.cpp && ./a.out && \
 g++ -std=c++14 maps.cpp && ./a.out && \
+g++ -std=c++14 permutations.cpp && ./a.out I like carrots | diff ../test/carrots_expected - && \
 g++ -std=c++14 smart_pointers.cpp && ./a.out && \
 g++ -std=c++14 sum_of_even_squares.cpp && ./a.out && \
 g++ -std=c++14 triple.cpp && ./a.out | diff ../test/triple_expected -

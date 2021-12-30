@@ -1,6 +1,5 @@
 #include <iostream>
 #include <utility>
-#include <cstring>
 
 void generatePermutations(char* s, int n) {
   if (n == 0) {
