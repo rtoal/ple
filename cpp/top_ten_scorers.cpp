@@ -3,6 +3,7 @@
 #include <utility>
 #include <vector>
 #include <string>
+#include <regex>
 
 using namespace std;
 
@@ -14,32 +15,26 @@ struct Player {
     Player(string team, string name, int games, int points): team(team), name(name), games(games), points(points) {}
 };
 
-void printTopTenScorers(vector<vector<string, int>> players) {
+void printTopTenScorers(vector<Player> players) {
 
 }
 
 vector<Player> parseInputFile(vector<string> input) {
     size_t pos = 0;
-    string token;
+    string line;
+    regex delimiter("\\,");
+    vector<string> tokens;
     vector<Player> parsedPlayers;
 
     for (int i = 0; i < input.size(); i++) {
-        string line = input[i];
-
-        for (int j = 0; j < 4; j++) {
-            pos = line.find(",");
-            token = line.substr(0, pos);
-            cout << token << endl;
-            line.erase(0, pos + 1);
-        }
+        line = input[i];
+        vector<string> tokens(sregex_token_iterator(line.begin(), line.end(), delimiter, -1),
+                    sregex_token_iterator());
+        Player newPlayer(tokens[0], tokens[1], stoi(tokens[2]), stoi(tokens[3]));
+        parsedPlayers.push_back(newPlayer);
     }
-
+    
     return parsedPlayers;
-}
-
-string getToken(string line) {
-    size_t pos = line.find(",");
-    return line.substr(0, pos);
 }
 
 int main() {
@@ -50,11 +45,10 @@ int main() {
 
     if (file.is_open()) {
         while (getline(file, line)) {
-            cout << line << '\n';
             lines.push_back(line);
         }
         file.close();
     }
 
-    parsedPlayers = parseInputFile(lines);
+    printTopTenScorers(parseInputFile(lines));
 }
