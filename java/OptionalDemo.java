@@ -1,11 +1,16 @@
 import java.util.Optional;
+
 public class OptionalDemo {
     public static void main(String[] args) {
-        Person alice = new Person("Alice");
-        Person bob = new Person("Bob", alice);
+        var alice = new Person("Alice");
+        var bob = new Person("Bob", alice);
 
-        bob.getBoss().ifPresent(p -> {assert p == alice;});
-        alice.getBoss().ifPresent(p -> {assert false;});
+        bob.getBoss().ifPresent(p -> {
+            assert p == alice;
+        });
+        alice.getBoss().ifPresent(p -> {
+            assert false;
+        });
         assert alice.getBoss().orElse(bob) == bob;
         assert bob.getBoss().orElse(bob) == alice;
 
@@ -16,4 +21,3 @@ public class OptionalDemo {
         assert alice.getBoss().map(Person::getName).orElse("").equals("");
     }
 }
-

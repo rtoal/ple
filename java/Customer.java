@@ -12,9 +12,10 @@ public class Customer extends Restaurant.Agent {
         meal.put(order);
     }
 
-    @Override public void run() {
+    @Override
+    public void run() {
         try {
-            for (int mealsEaten = 0; mealsEaten < 10;) {
+            for (var mealsEaten = 0; mealsEaten < 10;) {
                 if (Order.place(this, "pancakes", 7000)) {
                     Order order = meal.take();
                     act("eating " + order, 10000);

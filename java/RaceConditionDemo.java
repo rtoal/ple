@@ -7,10 +7,10 @@ public class RaceConditionDemo {
 
     public static void main(String[] args) throws Exception {
         ExecutorService service = Executors.newFixedThreadPool(3);
-        for (int i = 0; i < 3; i++) {
-            final int key = i;
+        for (var i = 0; i < 3; i++) {
+            final var key = i;
             service.submit(() -> {
-                for (int times = 0; times < 10000000; times++) {
+                for (var times = 0; times < 10000000; times++) {
                     bad.put(key, bad.getOrDefault(key, 0) + 1);
                     good.put(key, good.getOrDefault(key, 0) + 1);
                 }
