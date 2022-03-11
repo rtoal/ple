@@ -37,15 +37,15 @@ following language implementations and versions:
 <tr><td>C
     <td align="center"><img valign="middle" src="docs/resources/c-logo-24.png">
     <td>C11
-    <td>Apple LLVM version 8.1.0 (clang-802.0.42)
+    <td>Apple clang version 12.0.0 (clang-1200.0.32.29)
 <tr><td>C#
     <td align="center"><img valign="middle" src="docs/resources/csharp-logo-24.png">
     <td>
     <td>Mono C# compiler version 4.4.1.0
 <tr><td>C++
     <td align="center"><img valign="middle" src="docs/resources/cpp-logo-24.png">
-    <td>C++14
-    <td>Apple LLVM version 8.1.0 (clang-802.0.42)
+    <td>C++20
+    <td>Apple clang version 12.0.0 (clang-1200.0.32.29)
 <tr><td>Ceylon
     <td align="center"><img valign="middle" src="docs/resources/ceylon-logo-24.png">
     <td>
@@ -56,7 +56,7 @@ following language implementations and versions:
     <td>
 <tr><td>Clojure
     <td align="center"><img valign="middle" src="docs/resources/clojure-logo-24.png">
-    <td>1.10.0
+    <td>1.10.3.1087
     <td>
 <tr><td>CoffeeScript
     <td align="center"><img valign="middle" src="docs/resources/coffeescript-logo-24.png">
@@ -98,6 +98,10 @@ following language implementations and versions:
     <td align="center"><img valign="middle" src="docs/resources/fortran-logo-24.png">
     <td>GNU Fortran (GCC) 6.1.0
     <td>
+<tr><td>Futhark
+    <td>
+    <td>
+    <td>
 <tr><td>Go
     <td align="center"><img valign="middle" src="docs/resources/go-logo-24.png">
     <td>1.12.5
@@ -120,12 +124,12 @@ following language implementations and versions:
     <td>
 <tr><td>Java
     <td align="center"><img valign="middle" src="docs/resources/java-logo-24.png">
-    <td>11.0.1
+    <td>17
     <td>
 <tr><td>JavaScript
     <td align="center"><img valign="middle" src="docs/resources/javascript-logo-24.png">
-    <td>ES2016
-    <td>Node 12.3.0
+    <td>ES2022
+    <td>Node 17.6.0
 <tr><td>Julia
     <td align="center"><img valign="middle" src="docs/resources/julia-logo-24.png">
     <td>1.1.1
@@ -144,7 +148,7 @@ following language implementations and versions:
     <td>
 <tr><td>Lua
     <td align="center"><img valign="middle" src="docs/resources/lua-logo-24.png">
-    <td>5.3.4
+    <td>5.4.3
     <td>
 <tr><td>Mercury
     <td align="center"><img valign="middle" src="docs/resources/mercury-logo-24.png">
@@ -166,6 +170,10 @@ following language implementations and versions:
     <td align="center"><img valign="middle" src="docs/resources/ocaml-logo-24.png">
     <td>4.07.1
     <td>
+<tr><td>Octave
+    <td>
+    <td>
+    <td>
 <tr><td>Perl
     <td align="center"><img valign="middle" src="docs/resources/perl-logo-24.png">
     <td>5.26.0
@@ -180,7 +188,7 @@ following language implementations and versions:
     <td>
 <tr><td>Python
     <td align="center"><img valign="middle" src="docs/resources/python-logo-24.png">
-    <td>3.6.1
+    <td>3.10.0
     <td>
 <tr><td>R
     <td align="center"><img valign="middle" src="docs/resources/r-logo-24.png">
@@ -192,11 +200,11 @@ following language implementations and versions:
     <td>
 <tr><td>Ruby
     <td align="center"><img valign="middle" src="docs/resources/ruby-logo-24.png">
-    <td>2.4.1p111
+    <td>3.1.1p18
     <td>
 <tr><td>Rust
     <td align="center"><img valign="middle" src="docs/resources/rust-logo-24.png">
-    <td>1.18.0
+    <td>1.58.1
     <td>
 <tr><td>Scala
     <td align="center"><img valign="middle" src="docs/resources/scala-logo-24.png">
@@ -212,8 +220,8 @@ following language implementations and versions:
     <td>
 <tr><td>Swift
     <td align="center"><img valign="middle" src="docs/resources/swift-logo-24.png">
-    <td>4.2.1
-    <td>Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)
+    <td>5.3.2
+    <td>Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
 <tr><td>Tcl
     <td align="center"><img valign="middle" src="docs/resources/tcl-logo-24.png">
     <td>
