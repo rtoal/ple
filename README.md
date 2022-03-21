@@ -99,10 +99,10 @@ following language implementations and versions:
     <td>GNU Fortran (GCC) 6.1.0
     <td>
 <tr><td>Futhark
+    <td align="center"><img valign="middle" src="docs/resources/futhark-logo-24.png">
     <td>
     <td>
-    <td>
-<tr><td>Go
+<tr><td>Goq
     <td align="center"><img valign="middle" src="docs/resources/go-logo-24.png">
     <td>1.16.4
     <td>go version go1.16.4 darwin/amd64
@@ -139,7 +139,7 @@ following language implementations and versions:
     <td>Kona Win.3.39-69
     <td>Kona is an open source version of K
 <tr><td>Koka
-    <td>
+    <td align="center"><img valign="middle" src="docs/resources/koka-logo-24.png">
     <td>
     <td>
 <tr><td>Kotlin
@@ -175,7 +175,7 @@ following language implementations and versions:
     <td>4.07.1
     <td>
 <tr><td>Octave
-    <td>
+    <td align="center"><img valign="middle" src="docs/resources/octave-logo-24.png">
     <td>
     <td>
 <tr><td>Odin
@@ -239,7 +239,7 @@ following language implementations and versions:
     <td>
     <td>
 <tr><td>Zig
-    <td>
+    <td align="center"><img valign="middle" src="docs/resources/zig-logo-24.png">
     <td>
     <td>
 </table>
