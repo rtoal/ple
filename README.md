@@ -104,8 +104,8 @@ following language implementations and versions:
     <td>
 <tr><td>Go
     <td align="center"><img valign="middle" src="docs/resources/go-logo-24.png">
-    <td>1.12.5
-    <td>go version go1.12.5 darwin/amd64
+    <td>1.16.4
+    <td>go version go1.16.4 darwin/amd64
 <tr><td>Hack
     <td align="center"><img valign="middle" src="docs/resources/hack-logo-24.png">
     <td>
@@ -138,6 +138,10 @@ following language implementations and versions:
     <td align="center"><img valign="middle" src="docs/resources/k-logo-24.png">
     <td>Kona Win.3.39-69
     <td>Kona is an open source version of K
+<tr><td>Koka
+    <td>
+    <td>
+    <td>
 <tr><td>Kotlin
     <td align="center"><img valign="middle" src="docs/resources/kotlin-logo-24.png">
     <td>
@@ -171,6 +175,10 @@ following language implementations and versions:
     <td>4.07.1
     <td>
 <tr><td>Octave
+    <td>
+    <td>
+    <td>
+<tr><td>Odin
     <td>
     <td>
     <td>
@@ -226,12 +234,12 @@ following language implementations and versions:
     <td align="center"><img valign="middle" src="docs/resources/tcl-logo-24.png">
     <td>
     <td>
-<tr><td>Wake
-    <td align="center"><img valign="middle" src="docs/resources/wake-logo-24.png">
-    <td>
-    <td>
 <tr><td>Whiley
     <td align="center"><img valign="middle" src="docs/resources/whiley-logo-24.png">
+    <td>
+    <td>
+<tr><td>Zig
+    <td>
     <td>
     <td>
 </table>
