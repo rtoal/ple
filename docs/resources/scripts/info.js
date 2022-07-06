@@ -7,13 +7,12 @@ var langs = [
     g: "ada",
     rc: "Ada",
     pp: "ada",
-    d:
-      "Ada is a language designed for both ultra-large software systems and low-level, embedded systems.",
+    d: "Ada is a language designed for both ultra-large software systems and low-level, embedded systems.",
     f: 1983,
     v: ["83", "95", "2012"],
     r: "Code safety and maintainability",
     u: "Avionics, air-traffic control, satellites, defense systems",
-    t: ["Structured", "Imperative", "Static", "Concurrent"]
+    t: ["Structured", "Imperative", "Static", "Concurrent"],
   },
   {
     i: "apl",
@@ -23,13 +22,12 @@ var langs = [
     g: "apl",
     rc: "APL",
     pp: "apl",
-    d:
-      "APL is the earliest array-oriented language, known for its heavy use of non-ASCII operator symbols, and its ability to express complex algorithms in a single line of code.",
+    d: "APL is the earliest array-oriented language, known for its heavy use of non-ASCII operator symbols, and its ability to express complex algorithms in a single line of code.",
     f: 1962,
     v: ["APL\360 (1967)", "APL\1130 (1968)", "APL2 (1991)"],
     r: "Concise code, array-orientation, symbolic alphabet",
     u: "Finance, scientific research",
-    t: ["Array-based", "Dynamic"]
+    t: ["Array-based", "Dynamic"],
   },
   {
     i: "awk",
@@ -39,13 +37,12 @@ var langs = [
     g: "awk",
     rc: "AWK",
     pp: "awk",
-    d:
-      "AWK excels at terse scripts for processing text files, due to its implicit main loop over the lines of a file, implicit variables, and regular expression support.",
+    d: "AWK excels at terse scripts for processing text files, due to its implicit main loop over the lines of a file, implicit variables, and regular expression support.",
     f: 1977,
     v: ["System V Release 3.1 (1985)", "GNU (1986)"],
     r: "Being a successor of sed and a predecessor of Perl",
     u: "Text processing",
-    t: ["Dynamic", "Scripting", "Line-oriented"]
+    t: ["Dynamic", "Scripting", "Line-oriented"],
   },
   {
     i: "bash",
@@ -59,7 +56,7 @@ var langs = [
     v: ["3 (2004)", "4 (2009)", "4.2 (2011)"],
     r: "Shell scripting, text processing",
     u: "Primary shell for the popular GNU and macOS operating systems",
-    t: ["Scripting"]
+    t: ["Scripting"],
   },
   {
     i: "boo",
@@ -71,10 +68,10 @@ var langs = [
     pp: "boo",
     d: "Boo is a .NET language with a Python-inspired syntax.",
     f: 2003,
-    v: ["0.1.0 (2003)", "0.8.2 (2008)", "0.9.7 (2013)"], 
+    v: ["0.1.0 (2003)", "0.8.2 (2008)", "0.9.7 (2013)"],
     r: "Being a pleasant language for writing .NET applications",
     u: "Scripts for the Unity Game Engine",
-    t: ["Statically-typed"]
+    t: ["Statically-typed"],
   },
   {
     i: "c",
@@ -89,7 +86,7 @@ var langs = [
     v: ["K & R (1972)", "ISO (1989/90)", "99 (1999)", "11 (2011)"],
     r: "Systems programming",
     u: "Unix and Unix-like operating systems",
-    t: ["Imperative", "Low-level", "System", "Non-managed"]
+    t: ["Imperative", "Low-level", "System", "Non-managed"],
   },
   {
     i: "ceylon",
@@ -99,12 +96,11 @@ var langs = [
     g: "ceylon",
     rc: "Ceylon",
     pp: "ceylon",
-    d:
-      "Ceylon is an expessive language that can interoperate with both Java and JavaScript. It is known for a rich type system and flow-sensitive typing.",
+    d: "Ceylon is an expessive language that can interoperate with both Java and JavaScript. It is known for a rich type system and flow-sensitive typing.",
     f: 2011,
     v: ["1.2.0 (2015)", "1.3.0 (2016)"],
     r: "Modules",
-    t: ["Imperative", "Statically-typed"]
+    t: ["Imperative", "Statically-typed"],
   },
   {
     i: "chapel",
@@ -113,13 +109,12 @@ var langs = [
     w: "Chapel_(programming_language)",
     g: "chapel",
     rc: "Chapel",
-    d:
-      "Chapel is a expressive parallel programming language in which many aspects of parallelism are defined by language constructs rather than relegated to libraries.",
+    d: "Chapel is a expressive parallel programming language in which many aspects of parallelism are defined by language constructs rather than relegated to libraries.",
     f: 2009,
     v: ["1.7 (2013)", "1.13 (2016)"],
     r: "Separation of parallelism and locality",
     u: "High-performance computing",
-    t: ["Parallel", "Portable", "Scalable"]
+    t: ["Parallel", "Portable", "Scalable"],
   },
   {
     i: "clojure",
@@ -129,13 +124,12 @@ var langs = [
     g: "clojure",
     rc: "Clojure",
     pp: "../dialect/clojure",
-    d:
-      "Clojure is a modern Lisp dialect targeted to modern platforms such as the JVM.",
+    d: "Clojure is a modern Lisp dialect targeted to modern platforms such as the JVM.",
     f: 2007,
     v: ["1.0 (2009)", "1.7 (2015)"],
     r: "Macros, Lisp-ness, concurrency support, Java interoperability",
     u: "Data mining, Artificial intelligence",
-    t: ["Functional", "Dynamic", "Concurrent", "Homoiconic"]
+    t: ["Functional", "Dynamic", "Concurrent", "Homoiconic"],
   },
   {
     i: "coffeescript",
@@ -144,13 +138,12 @@ var langs = [
     w: "CoffeeScript",
     g: "coffeescript",
     rc: "CoffeeScript",
-    d:
-      "CoffeeScript attempts to &ldquo;expose the good parts of JavaScript in a simple way.&rdquo;",
+    d: "CoffeeScript attempts to &ldquo;expose the good parts of JavaScript in a simple way.&rdquo;",
     f: 2009,
     v: ["1.0 (2010)", "1.10 (2015)"],
     r: "Transpiling to JavaScript, expressiveness",
     u: "Web application clients",
-    t: ["Functional", "Expression-Oriented", "Dynamic"]
+    t: ["Functional", "Expression-Oriented", "Dynamic"],
   },
   {
     i: "commonlisp",
@@ -160,14 +153,12 @@ var langs = [
     g: "common-lisp",
     rc: "Common_Lisp",
     pp: "../dialect/common-lisp",
-    d:
-      "Common Lisp is one of the major dialects of Lisp. It was created in the early 1980s in the hopes of unifying a number of existing dialects into a single standard.",
+    d: "Common Lisp is one of the major dialects of Lisp. It was created in the early 1980s in the hopes of unifying a number of existing dialects into a single standard.",
     f: 1984,
     v: ["ANSI Standard (1994)"],
-    r:
-      "CLOS (the Common Lisp Object System), generic functions, methods, macros, homoiconicity",
+    r: "CLOS (the Common Lisp Object System), generic functions, methods, macros, homoiconicity",
     u: "Artificial intelligence, Graphics, Scheduling, Search",
-    t: ["Dynamic", "Homoiconic"]
+    t: ["Dynamic", "Homoiconic"],
   },
   {
     i: "cpp",
@@ -177,13 +168,12 @@ var langs = [
     g: "cpp",
     rc: "C++",
     pp: "c-plus-plus",
-    d:
-      "C++ is a general purpose language for both high-level and low-level applications.",
+    d: "C++ is a general purpose language for both high-level and low-level applications.",
     f: 1983,
     v: ["98 (1998)", "03 (2003)", "11 (2011)", "14 (2014)"],
     r: "Extending C with classes and much more",
     u: "Simulation, Game engines, General purpose computing",
-    t: ["Systems", "Procedural", "Static", "Class-based", "Non-managed"]
+    t: ["Systems", "Procedural", "Static", "Class-based", "Non-managed"],
   },
   {
     i: "crystal",
@@ -192,13 +182,12 @@ var langs = [
     w: "Crystal_(programming_language)",
     g: "crystal",
     rc: "Crystal",
-    d:
-      "Crystal is a modern, statically-typed programming language, with a syntax inspired by Ruby.",
+    d: "Crystal is a modern, statically-typed programming language, with a syntax inspired by Ruby.",
     f: 2013,
     v: ["0.1.0 (2014)", "0.23.0 (2017)"],
     r: "Looking like Ruby but compiled to LLVM",
     u: "Gaming, Analytics",
-    t: ["Static"]
+    t: ["Static"],
   },
   {
     i: "csharp",
@@ -213,7 +202,7 @@ var langs = [
     v: ["2.0 (2005)", "3.0 (2007)", "4.0 (2010)", "6.0 (2015)"],
     r: ".NET integration, delegates, properties, extension methods, LINQ",
     u: "Enterprise applications",
-    t: ["Static", "Object-oriented", "Multi-paradigm", "Safe"]
+    t: ["Static", "Object-oriented", "Multi-paradigm", "Safe"],
   },
   {
     i: "d",
@@ -228,7 +217,7 @@ var langs = [
     v: ["D2 (2007)"],
     r: "Optional garbage collection",
     u: "Operating systems, Data science",
-    t: ["Systems", "Static"]
+    t: ["Systems", "Static"],
   },
   {
     i: "dart",
@@ -238,13 +227,12 @@ var langs = [
     g: "dart",
     rc: "Dart",
     pp: "dart",
-    d:
-      "Dart is an language used to create very large applications. Originally seen as an alternative to JavaScript, the language features optional typing, abstract classes, and generics.",
+    d: "Dart is an language used to create very large applications. Originally seen as an alternative to JavaScript, the language features optional typing, abstract classes, and generics.",
     f: 2011,
     v: ["1.12.0 (2015)", "1.16.0 (2016)"],
     r: "Optional typing, isolates, SIMD support",
     u: "AdWords, AdSense, Google Fiber",
-    t: ["Object-oriented", "Imperative", "Functional"]
+    t: ["Object-oriented", "Imperative", "Functional"],
   },
   {
     i: "elixir",
@@ -253,13 +241,12 @@ var langs = [
     w: "Elixir_(programming_language)",
     g: "elixir",
     rc: "Elixir",
-    d:
-      "Elixir is a dynamic functional language targeted to the Erlang virtual machine with a Ruby-inspired syntax.",
+    d: "Elixir is a dynamic functional language targeted to the Erlang virtual machine with a Ruby-inspired syntax.",
     f: 2012,
     v: ["1.0 (2014)", "1.3.0 (2016)"],
     r: "Concurrency, reliability, interoperability with Erlang",
     u: "Applications within Pintrest and Brightcove",
-    t: ["Functional", "Concurrent", "Process-Oriented"]
+    t: ["Functional", "Concurrent", "Process-Oriented"],
   },
   {
     i: "elm",
@@ -273,7 +260,7 @@ var langs = [
     v: ["0.10 (2013)", "0.14 (2014)", "0.17 (2016)"],
     r: "Interactive functional programming",
     u: "User interfaces, Games",
-    t: ["Functional", "Statically-typed", "Subscription-oriented"]
+    t: ["Functional", "Statically-typed", "Subscription-oriented"],
   },
   {
     i: "erlang",
@@ -283,14 +270,12 @@ var langs = [
     g: "erlang",
     rc: "Erlang",
     pp: "Erlang",
-    d:
-      "Erlang was designed for building fault-tolerant, long-lived applications that handle a large number of concurrent activities, meet real-time constraints, scale across large distributed networks, and are able to be modified while running.",
+    d: "Erlang was designed for building fault-tolerant, long-lived applications that handle a large number of concurrent activities, meet real-time constraints, scale across large distributed networks, and are able to be modified while running.",
     f: 1986,
     v: ["R15B (2011)", "17.0 (2014)", "19.0 (2016)"],
-    r:
-      "Concurrency support through message passing, &ldquo;Let it Crash&rdquo; philosophy",
+    r: "Concurrency support through message passing, &ldquo;Let it Crash&rdquo; philosophy",
     u: "Telecom",
-    t: ["Concurrent", "Scalable"]
+    t: ["Concurrent", "Scalable"],
   },
   {
     i: "factor",
@@ -305,7 +290,7 @@ var langs = [
     v: ["0.97 (2014)"],
     r: "Flexibility, large standard library",
     u: "Research into optimization techniques",
-    t: ["Stack-based", "Concatenative"]
+    t: ["Stack-based", "Concatenative"],
   },
   {
     i: "falcon",
@@ -319,7 +304,7 @@ var langs = [
     v: ["0.9 (2009)"],
     r: "Interoperability with C++",
     u: "Data streaming, scripting",
-    t: ["Multi-paradigm"]
+    t: ["Multi-paradigm"],
   },
   {
     i: "fortran",
@@ -329,13 +314,12 @@ var langs = [
     g: "fortran",
     rc: "Fortran",
     pp: "Fortran",
-    d:
-      "Fortran debuted at a time when the need for high-level languages was still being question, so its designers worked hard to make sure generated code could be incredibly efficient.",
+    d: "Fortran debuted at a time when the need for high-level languages was still being question, so its designers worked hard to make sure generated code could be incredibly efficient.",
     f: 1957,
     v: ["I", "II", "IV", 66, 77, 90, 95, 2003, 2008, 2015],
     r: "Likely being the first high-level general purpose programming language",
     u: "Numeric computation, scientific computing",
-    t: ["Imperative", "High-performance"]
+    t: ["Imperative", "High-performance"],
   },
   {
     i: "fsharp",
@@ -350,22 +334,35 @@ var langs = [
     v: ["1.0 (2005)", "2.0 (2010)", "3.0 (2012)", "4.0 (2016)"],
     r: "Being a modern ML",
     u: "Machine learning, Business Intelligence, Analytics, Gaming",
-    t: ["Static", "Functional", "Multi-paradigm"]
+    t: ["Static", "Functional", "Multi-paradigm"],
+  },
+  {
+    i: "futhark",
+    n: "Futhark",
+    h: "https://futhark-lang.org/",
+    w: "Futhark_(programming_language)",
+    g: "futhark",
+    rc: "Futhark",
+    d: "Futhark is a data-parallel and purely functional array language",
+    f: 2014,
+    v: ["0.21.12 (2022)"],
+    r: "Parallel array processing in an ML language without writing CUDA or OpenCL by hand",
+    u: "High-performance applications on massively parallel hardware",
+    t: ["Static", "Array", "Data Parallel", "Pure Functional"],
   },
   {
     i: "gml",
     n: "GML",
-    h:
-      "https://docs.yoyogames.com/source/dadiospice/002_reference/001_gml%20language%20overview/",
+    h: "https://docs.yoyogames.com/source/dadiospice/002_reference/001_gml%20language%20overview/",
     w: "GameMaker_Studio",
-    g: "game-maker-language", 
+    g: "game-maker-language",
     rc: "GML",
     d: "GML is the scripting language used in GameMaker Studio",
     f: 1999,
     v: ["1.2 (2017)"],
     r: "Simplicity of using drag and drop actions to make games",
     u: "Games",
-    t: ["Scripting"]
+    t: ["Scripting"],
   },
   {
     i: "go",
@@ -375,13 +372,12 @@ var langs = [
     g: "go",
     rc: "Go",
     pp: "go",
-    d:
-      "Go is Google&rsquo;s open source anguage for building simple, reliable, and efficient software.",
+    d: "Go is Google&rsquo;s open source anguage for building simple, reliable, and efficient software.",
     f: 2009,
     v: ["1 (2012)", "1.5 (2015)"],
     r: "Being simpler than C++, goroutines",
     u: "Servers",
-    t: ["Statically Typed", "Concurrent", "Channel-Oriented"]
+    t: ["Statically Typed", "Concurrent", "Channel-Oriented"],
   },
   {
     i: "gosu",
@@ -393,10 +389,9 @@ var langs = [
     d: "Gosu is a pragmatic language designed to run on the JVM.",
     f: 2002,
     v: ["0.7 (2010)", "1.10 (2016)"],
-    r:
-      "Scripting language features in a statically-typed language, running on the JVM, templates, extensible types, reified generics",
+    r: "Scripting language features in a statically-typed language, running on the JVM, templates, extensible types, reified generics",
     u: "Insurance industry products",
-    t: ["Static", "Scripting"]
+    t: ["Static", "Scripting"],
   },
   {
     i: "gp",
@@ -407,7 +402,7 @@ var langs = [
     v: ["Beta (2015)"],
     r: "Expanding the range of application areas for blocks-based programming",
     u: "Multimedia, Simulation, Data analysis, Education",
-    t: ["Blocks", "General Purpose"]
+    t: ["Blocks", "General Purpose"],
   },
   {
     i: "groovy",
@@ -422,7 +417,7 @@ var langs = [
     v: ["1.0 (2007)", "2.0 (2012)"],
     r: "Java interoperability",
     u: "Gradle plugins",
-    t: ["Dynamic", "Scripting", "Object-oriented"]
+    t: ["Dynamic", "Scripting", "Object-oriented"],
   },
   {
     i: "hack",
@@ -432,13 +427,12 @@ var langs = [
     g: "hack",
     rc: "Hack",
     pp: "hack-vm",
-    d:
-      "Hack is a PHP-compatible language with a variety of modern features, such as type-annotations, generics, nullables, lambdas, type-aliasing, shapes, and async support.",
+    d: "Hack is a PHP-compatible language with a variety of modern features, such as type-annotations, generics, nullables, lambdas, type-aliasing, shapes, and async support.",
     f: 2014,
     v: ["HHVM (2011)"],
     r: "Being a better PHP",
     u: "Facebook",
-    t: ["Imperative", "Gradually Typed"]
+    t: ["Imperative", "Gradually Typed"],
   },
   {
     i: "haskell",
@@ -453,7 +447,7 @@ var langs = [
     v: ["1.0 (1990)", "98 (1998)", "2010 (2010)"],
     r: "Pure functions, non-strict semantics, type classes, monads",
     u: "Academia, Software validation and verification, Modeling, Compilers",
-    t: ["Non-strict", "Lazy", "Functional"]
+    t: ["Non-strict", "Lazy", "Functional"],
   },
   {
     i: "idris",
@@ -467,7 +461,7 @@ var langs = [
     v: ["0.10 (2016)", "0.11 (2016)"],
     r: "Dependent types",
     u: "Research, Mechanical Theorem Proving",
-    t: ["Pure", "Functional"]
+    t: ["Pure", "Functional"],
   },
   {
     i: "io",
@@ -482,7 +476,7 @@ var langs = [
     v: ["20080107 (2008)", "20151111 (2015)"],
     r: "Simplicity of design",
     u: "Exploratory software development",
-    t: ["Prototypal"]
+    t: ["Prototypal"],
   },
   {
     i: "java",
@@ -492,18 +486,17 @@ var langs = [
     g: "java",
     rc: "Java",
     pp: "java",
-    d:
-      "Java is an extremely popular enterprise programming language, designed with, among other things, thread-based concurrency and security in mind.",
+    d: "Java is an extremely popular enterprise programming language, designed with, among other things, thread-based concurrency and security in mind.",
     f: 1995,
     v: ["1.1 (1997)", "5 (2004)", "8 (2014)", "9 (2017)"],
     r: "Classes, threads, mature platform",
     u: "Enterprise computing, Android applications",
-    t: ["Architecture-neutral", "Multithreaded", "High-performance"]
+    t: ["Architecture-neutral", "Multithreaded", "High-performance"],
   },
   {
     i: "javascript",
     n: "JavaScript",
-    h: "https://www.javascript.com/", 
+    h: "https://www.javascript.com/",
     w: "JavaScript",
     g: "javascript",
     rc: "JavaScript",
@@ -513,7 +506,7 @@ var langs = [
     v: ["ES3 (1999)", "ES5 (2000)", "ES2015 (2015)"],
     r: "First-class functions, weak typing, prototypes",
     u: "Web application clients, Asynchronous servers",
-    t: ["Imperative", "Functional", "Dynamic", "Prototypal"]
+    t: ["Imperative", "Functional", "Dynamic", "Prototypal"],
   },
   {
     i: "julia",
@@ -527,7 +520,7 @@ var langs = [
     v: ["0.4 (2015)", "0.5 (2016)"],
     r: "Multi-dispatch, macros, multicore support",
     u: "Data Science, Statistics, Numerical Analysis",
-    t: ["High-performance", "Dynamic", "Multi-dispatch"]
+    t: ["High-performance", "Dynamic", "Multi-dispatch"],
   },
   {
     i: "k",
@@ -538,10 +531,10 @@ var langs = [
     pp: "k",
     d: "K is an array-oriented language influenced by APL.",
     f: 1993,
-    v: [], 
+    v: [],
     r: "Array operations, expressive syntax",
     u: "Finance",
-    t: ["Array-based", "Dynamic"]
+    t: ["Array-based", "Dynamic"],
   },
   {
     i: "kitten",
@@ -551,9 +544,18 @@ var langs = [
     d: "Kitten is a statically-typed, functional, concatenative language",
     f: 2011,
     v: [],
-    r:
-      "The notion of <em>effects</em> for bridging the functional and stack-based aspects of the language.",
-    t: ["Concatenative", "Functional"]
+    r: "The notion of <em>effects</em> for bridging the functional and stack-based aspects of the language.",
+    t: ["Concatenative", "Functional"],
+  },
+  {
+    i: "koka",
+    n: "Koka",
+    h: "https://koka-lang.github.io/koka/doc/index.html",
+    rc: "Koka",
+    d: "Koka is a strongly typed functional-style language with effect types and handlers",
+    f: 2020,
+    v: [],
+    t: ["Functional", "Effect-based"],
   },
   {
     i: "kotlin",
@@ -562,13 +564,12 @@ var langs = [
     w: "Kotlin_(programming_language)",
     g: "kotlin",
     rc: "Kotlin",
-    d:
-      "Kotlin is a Java-interoperable language intended to be a &ldquo;better Java.&rdquo; Its key contribution is its treatment of nullable vs non-nullable values",
+    d: "Kotlin is a Java-interoperable language intended to be a &ldquo;better Java.&rdquo; Its key contribution is its treatment of nullable vs non-nullable values",
     f: 2011,
     v: ["1.0 (2016)"],
     r: "Nullables, interoperability with Java",
     u: "Replacing Java",
-    t: ["Object-oriented", "Static"]
+    t: ["Object-oriented", "Static"],
   },
   {
     i: "lolcode",
@@ -578,13 +579,12 @@ var langs = [
     g: "lolcode",
     rc: "LOLCODE",
     pp: "lolcode",
-    d:
-      "LOLCODE (capitalized because cats talk in all caps) is an esoteric programming language with a syntax inspired by lolspeak.",
+    d: "LOLCODE (capitalized because cats talk in all caps) is an esoteric programming language with a syntax inspired by lolspeak.",
     f: 2007,
-    v: ["v0.10.5 (2014)", "v.0.11.2 (2014)"], 
+    v: ["v0.10.5 (2014)", "v.0.11.2 (2014)"],
     r: "lolcats-inspired keywords and grammar",
     u: "Amusement",
-    t: ["Esoteric", "Imperative"]
+    t: ["Esoteric", "Imperative"],
   },
   {
     i: "lua",
@@ -599,7 +599,7 @@ var langs = [
     v: ["5.0 (2003)", "5.1 (2006)", "5.2 (2011)", "5.3 (2015)"],
     r: "Tables, interoperability with C",
     u: "World of Warcraft, Angry Birds, Scripting",
-    t: ["Imperative", "Prototypal", "Scripting"]
+    t: ["Imperative", "Prototypal", "Scripting"],
   },
   {
     i: "luna",
@@ -611,7 +611,13 @@ var langs = [
     v: [],
     r: "Immediate feedback as you type via interactive programming, and automatic parallelism via functional programming.",
     u: "Data science, Iot, bioinformatics, graphic design, and architecture",
-    t: ["Visual programming", "Type inference", "Object-oriented", "Statically typed", "Purely functional"],
+    t: [
+      "Visual programming",
+      "Type inference",
+      "Object-oriented",
+      "Statically typed",
+      "Purely functional",
+    ],
   },
   {
     i: "matlab",
@@ -621,13 +627,12 @@ var langs = [
     g: "matlab",
     rc: "MATLAB",
     pp: "matlab",
-    d:
-      "MATLAB refers to both a programming language and a proprietary computing environment, with strengths in scientific computing.",
+    d: "MATLAB refers to both a programming language and a proprietary computing environment, with strengths in scientific computing.",
     f: 1984,
     v: ["6.0 (2000)", "7 (2004)", "8.2 (2013)", "9.0 (2016)"],
     r: "Matrix processing",
     u: "Scientific computing, education",
-    t: ["Numeric", "Dynamic"]
+    t: ["Numeric", "Dynamic"],
   },
   {
     i: "mercury",
@@ -639,10 +644,15 @@ var langs = [
     pp: "mercury",
     d: "Mercury is a logic programming langugae meant to create large-scale applications",
     f: 1995,
-    v: ["14.01 (2014)"], 
+    v: ["14.01 (2014)"],
     r: "Purely declarative programming style",
     u: "Acts as the new-and-improved Prolog, which is a logic programming language, often associated with computational lingustics and artificial intelligence.",
-    t: ["Static", "Logic Programming", "Dynamically allocated memory", "Strongly typed"]
+    t: [
+      "Static",
+      "Logic Programming",
+      "Dynamically allocated memory",
+      "Strongly typed",
+    ],
   },
   {
     i: "miranda",
@@ -651,7 +661,7 @@ var langs = [
     w: "Miranda_(programming_language)",
     d: "Miranda is a non-strict, polymorphic functional prograqmming language",
     f: 1986,
-    v: ["2.057 (2019)"], 
+    v: ["2.057 (2019)"],
     r: "Influencing widely used functional programming language, such as Haskell.",
     u: "Research and teaching functional programming",
     t: ["Polymorphic", "Functional", "Non-Strict", "Dynamic"],
@@ -663,17 +673,17 @@ var langs = [
     w: "Netwide_Assembler",
     rc: "NASM",
     d: "NASM is an assembler and disassembler for the Intel x86 architecture, its extensions and its macros",
-    f: 1996, 
-    v: ["0.90 (1996)", "2.00 (2007)",  "2.07 (2009)", "2.14.02 (2015)"], 
+    f: 1996,
+    v: ["0.90 (1996)", "2.00 (2007)", "2.07 (2009)", "2.14.02 (2015)"],
     r: "Being one of the most widely-used assemblers for Linux.",
     u: "Assembling and disassembling for the Intel x86 architecture",
-    t: ["x86 Assembler"]
+    t: ["x86 Assembler"],
   },
   {
     i: "nemerle",
     n: "Nemerle",
     h: "http://www.nemerle.org/",
-    g: "nemerle", 
+    g: "nemerle",
     rc: "Nemerle",
     pp: "nemerle",
     d: "Nemerle is a general-purpose, multi-paradigm programming language whose purpose is to help create platforms built on Common Language Infrastructures, such as .NET and Mono.",
@@ -681,7 +691,7 @@ var langs = [
     v: ["0.9.3 (2006)", "1.0.4 (2019)"],
     r: "Nemerle's developers were hired by JetBrains to create the language workbench, Nitra. Nitra will likely be used to create newer versions of Nemerle.",
     u: "Helps create platforms on Common Language Infrastructures.",
-    t: ["Functional", "Object-Oriented", "Metaprogramming", "Imperative"]
+    t: ["Functional", "Object-Oriented", "Metaprogramming", "Imperative"],
   },
   {
     i: "nim",
@@ -693,10 +703,17 @@ var langs = [
     pp: "nimrod",
     d: "Nim is a statically typed compiled systems programming language. It has a low barrier to entry to offer powerful features that are absent in other languages, such as the foreign function interface (FFI).",
     f: 2004,
-    v: ["0.8.8 (2010)"], 
+    v: ["0.8.8 (2010)"],
     r: "For being an efficient, expressive, elegant, and elevated version of older languages such as Python, Ada, or Modula.",
     u: "Act as a new-and-improved Python, Ada, or Modula, and help with game development, web servers, kernels, and command-line applications.",
-    t: ["Multi-paradigm", "Compile-Concurrent", "Object-Oriented", "Functional", "Metaprogramming", "Systems programming"]
+    t: [
+      "Multi-paradigm",
+      "Compile-Concurrent",
+      "Object-Oriented",
+      "Functional",
+      "Metaprogramming",
+      "Systems programming",
+    ],
   },
   {
     i: "ocaml",
@@ -711,19 +728,40 @@ var langs = [
     v: ["1.05 (1997)", "2.00 (1998)", "3.08 (2004)", "4.09 (2019)"],
     r: "Its large standard library which proves useful for many applications written in Python and Perl, and its modularity and its being object-oriented serves well to support large-scale applications.",
     u: "Initially, it's OCaml's main purpose was to support symbolic computation, e.g., automatic theorem proving, creating compilers and interpreters. It also ended up being widely used for teaching programming and supporting project, found in large code bases hosted by companies such as Microsoft and IBM.",
-    t: ["Multi-paradigm", "Functional", "Imperative", "Object-Oriented", "Pattern matching", "Polymorphic"]
+    t: [
+      "Multi-paradigm",
+      "Functional",
+      "Imperative",
+      "Object-Oriented",
+      "Pattern matching",
+      "Polymorphic",
+    ],
+  },
+  {
+    i: "odin",
+    n: "Odin",
+    h: "https://odin-lang.org/",
+    w: "Odin_(programming_language)",
+    g: "odin",
+    rc: "Odin",
+    d: "Odin supports high performance, modern systems, with built-in data-oriented data types",
+    f: 2016,
+    v: [],
+    r: "Array-based programming",
+    u: "High performance, modern systems and data-oriented programming",
+    t: ["Static", "Array"],
   },
   {
     i: "parasail",
     n: "ParaSail",
-    h: "https://forge.open-do.org/plugins/moinmoin/parasail/",
-    w: "ParaSail",
+    h: "http://parasail-lang.org/",
+    w: "ParaSail_(programming_language)",
     d: "ParaSail, or Parallel Specification and Implementation Language is meant to help impelement parallel applications.",
     f: 2009,
-    v: ["6.5 (2015)", "7.0 (2016)","8.0 (2019)", "8.4 (2019)"],
+    v: ["6.5 (2015)", "7.0 (2016)", "8.0 (2019)", "8.4 (2019)"],
     u: "Implementing parallel applications.",
     r: "Region-based garbage collection and parallelism.",
-    t: ["Concurrent", "Imperative", "Object-Oriented", "Parallelism"]
+    t: ["Concurrent", "Imperative", "Object-Oriented", "Parallelism"],
   },
   {
     i: "perl",
@@ -738,7 +776,14 @@ var langs = [
     v: ["Perl 1.0 (1987)", "Perl 5.0 (1994)", "Perl 5.30 (2019)"],
     r: `Its regular expressions and string parsing abilities, its lack of readibility, and its acting as a "glue language", or a language that is meant to write and manage programs that connect different software together.`,
     u: "System administration, network programming, finance, bioinformatics, and CGI.",
-    t: ["Multi-paradigm", "Functional", "Imperative", "Object-Oriented", "Reflective", "Dynamic"]
+    t: [
+      "Multi-paradigm",
+      "Functional",
+      "Imperative",
+      "Object-Oriented",
+      "Reflective",
+      "Dynamic",
+    ],
   },
   {
     i: "php",
@@ -749,10 +794,24 @@ var langs = [
     pp: "php",
     d: "PHP is a server-side scripting language, whose original purpose was to help support web development. It stands for hypertext pre-processor.",
     f: 1995,
-    v: ["1.0 (1995)", "2.0 (1997)", "4.3 (2002)", "5.3 (2009)", "5.5 (2013)", "7.4 (2019)"],
+    v: [
+      "1.0 (1995)",
+      "2.0 (1997)",
+      "4.3 (2002)",
+      "5.3 (2009)",
+      "5.5 (2013)",
+      "7.4 (2019)",
+    ],
     r: "Has built-in support for working with MySQL and is used to support over 20 million websites and internet applications.",
     u: "Web development, standalone graphical applications, and robotics.",
-    t: ["Imperative", "Functional", "Object-Oriented", "Procedural", "Reflective", "Dynamic"]
+    t: [
+      "Imperative",
+      "Functional",
+      "Object-Oriented",
+      "Procedural",
+      "Reflective",
+      "Dynamic",
+    ],
   },
   {
     i: "purescript",
@@ -764,7 +823,7 @@ var langs = [
     v: ["0.13.5 (2019)"],
     r: "An alternative Haskell that compiles to JavaScript",
     u: "Web development, web servers, and web applications.",
-    t: ["Functional", "Polymorphic", "Pattern matching"]
+    t: ["Functional", "Polymorphic", "Pattern matching"],
   },
   {
     i: "python",
@@ -774,13 +833,12 @@ var langs = [
     g: "python",
     rc: "Python",
     pp: "python",
-    d:
-      "Python is a powerful and expressive programming language that &ldquo;lets you work quickly and integrate systems more effectively.&rdquo;",
+    d: "Python is a powerful and expressive programming language that &ldquo;lets you work quickly and integrate systems more effectively.&rdquo;",
     f: 1991,
     v: ["2.2 (2001)", "3.0 (2008)", "2.7 (2010)", "3.5 (2015)"],
     r: "Expressiveness",
     u: "Web servers, Scripting, Data science",
-    t: ["Imperative", "Glue", "Dynamic", "Scripting"]
+    t: ["Imperative", "Glue", "Dynamic", "Scripting"],
   },
   {
     i: "quorum",
@@ -791,7 +849,7 @@ var langs = [
     r: "Being the first evidence-oriented programming language, meaning it is written based on research comparing different computer programming language's performance in relation to human efficacy factors.",
     u: "Education to make programming accessible to all.",
     v: ["2.4.0 (2019)", "1.0.0 (2016)"],
-    t: ["Object-Oriented"]
+    t: ["Object-Oriented"],
   },
   {
     i: "r",
@@ -803,10 +861,22 @@ var langs = [
     pp: "r",
     d: "R is an object-oriented, functional programming language whose aim is to support statistical computing and assist in data mining and data analysis.",
     f: 1993,
-    v: ["0.49 (1997)", "1.0.0 (2000)", "2.0.0 (2004)", "3.0.0 (2013)", "3.6.2 (2019)"],
+    v: [
+      "0.49 (1997)",
+      "1.0.0 (2000)",
+      "2.0.0 (2004)",
+      "3.0.0 (2013)",
+      "3.6.2 (2019)",
+    ],
     r: "Statistical graphics",
     u: "Data science and statistical analysis.",
-    t: ["Multi-paradigm", "Imperative", "Reflective", "Functional", "Object-Oriented"]
+    t: [
+      "Multi-paradigm",
+      "Imperative",
+      "Reflective",
+      "Functional",
+      "Object-Oriented",
+    ],
   },
   {
     i: "racket",
@@ -820,19 +890,26 @@ var langs = [
     v: ["Version 5.0 (2010)", "Version 7.5 (2019)"],
     r: "It's the world's first ecosystem for language-oriented programming.",
     u: "Creating other programming languages, scripting, computer science education, and research.",
-    t: ["Multi-paradigm", "Functional", "Imperative", "Metaprogramming", "Object-Oriented", "Reflective", "Dynamic"]
+    t: [
+      "Multi-paradigm",
+      "Functional",
+      "Imperative",
+      "Metaprogramming",
+      "Object-Oriented",
+      "Reflective",
+      "Dynamic",
+    ],
   },
   {
     i: "roy",
     n: "Roy",
     h: "http://roy.brianmckenna.org/",
-    d:
-      "Roy is an experimental language that compiles to JavaScript. It contains many features of ML-style languages such as Hindley-Milner type inference, pattern matching, and structural typing.",
+    d: "Roy is an experimental language that compiles to JavaScript. It contains many features of ML-style languages such as Hindley-Milner type inference, pattern matching, and structural typing.",
     f: 2011,
     v: [],
     r: "Being a precursor to PureScript",
     u: "Research",
-    t: ["Static", "Research", "Experimental"]
+    t: ["Static", "Research", "Experimental"],
   },
   {
     i: "ruby",
@@ -842,13 +919,12 @@ var langs = [
     g: "ruby",
     rc: "Ruby",
     pp: "ruby",
-    d:
-      "Ruby was created, in the words of its designer, to help every programmer in the world to be productive, and to enjoy programming, and to be happy.",
+    d: "Ruby was created, in the words of its designer, to help every programmer in the world to be productive, and to enjoy programming, and to be happy.",
     f: 1995,
     v: ["1.8 (2003)", "1.9 (2007)", "2.0 (2013)", "2.3 (2015)"],
     r: "OOP, metaprogramming, DSL construction",
     u: "Web servers, Scripting",
-    t: ["Object-oriented", "Expression-oriented", "Dynamic"]
+    t: ["Object-oriented", "Expression-oriented", "Dynamic"],
   },
   {
     i: "rust",
@@ -860,10 +936,16 @@ var langs = [
     pp: "rust",
     d: "Rust is a functional, statically-typed programming language. It is meant to be act as a kind of new-and-improved version of C++, but with beter memory saftety, wildst still maintaining high performance time.",
     f: 2010,
-    v: ["0.1 (2012)","1.40.0 (2019)"],
+    v: ["0.1 (2012)", "1.40.0 (2019)"],
     r: "Listed as Stack Overflow's most loved programming language since 2016.",
     u: "It is meant to be used to create, maintain, and perserve large systems with its memory layout and concurrency.",
-    t: ["Multi-paradigm", "Concurrent", "Functional", "Imperative", "System language"]
+    t: [
+      "Multi-paradigm",
+      "Concurrent",
+      "Functional",
+      "Imperative",
+      "System language",
+    ],
   },
   {
     i: "scala",
@@ -878,7 +960,14 @@ var langs = [
     v: ["1.0.0-b2 (2003)", "1.1.1 (2004)", "2.13.0 (2019)"],
     r: "Being highly scalable.",
     u: "Acting to replace and resolve many of the flaws of Java",
-    t: ["Multi-paradigm", "Concurrent", "Functional", "Imperative", "Object-Oriented", "Pattern matching"]
+    t: [
+      "Multi-paradigm",
+      "Concurrent",
+      "Functional",
+      "Imperative",
+      "Object-Oriented",
+      "Pattern matching",
+    ],
   },
   {
     i: "scratch",
@@ -888,11 +977,11 @@ var langs = [
     rc: "Scratch",
     pp: "scratch",
     d: "Scratch is a educational, block-based, visual programming language whose primary aim is to teach people the general paradigms associated with programming by means of a visual and interactive coding interface.",
-    f:  2007,
+    f: 2007,
     v: ["Scratch 1.0 (2007)", "Scratch 3.0 (2019)"],
     r: "Educational, fun, and easy to learn to create games, art, and simulations.",
     u: "Computer-science education",
-    t: ["Block-Based programming",  "Event-Driven", "Visual"]
+    t: ["Block-Based programming", "Event-Driven", "Visual"],
   },
   {
     i: "self",
@@ -905,7 +994,7 @@ var langs = [
     r: "For being prototype-based and having high performance.",
     u: "It began as a better version of Smalltalk and evolved as an experimental test system for language design.",
     v: ["2017.1 (2017)"],
-    t: ["Object-oriented"]
+    t: ["Object-oriented"],
   },
   {
     i: "smalltalk",
@@ -914,14 +1003,12 @@ var langs = [
     g: "smalltalk",
     rc: "Smalltalk",
     pp: "smalltalk",
-    d:
-      "Smalltalk was conceived and grew up in the same laboratory&mdash;Xerox PARC&mdash; as did the mouse-driven user interface, Ethernet, and the laser printer.",
+    d: "Smalltalk was conceived and grew up in the same laboratory&mdash;Xerox PARC&mdash; as did the mouse-driven user interface, Ethernet, and the laser printer.",
     f: 1972,
     v: [71, 72, 74, 76, 80],
-    r:
-      "GUI Workstations, metaprogramming, Object-orientation (Objects all the way down)",
+    r: "GUI Workstations, metaprogramming, Object-orientation (Objects all the way down)",
     u: "Education, Financial analysis and modeling",
-    t: ["Object-oriented", "Dynamic", "Reflective"]
+    t: ["Object-oriented", "Dynamic", "Reflective"],
   },
   {
     i: "sml",
@@ -930,13 +1017,12 @@ var langs = [
     g: "standard-ml",
     rc: "Standard_ML",
     pp: "standard-ml",
-    d:
-      'Standard ML is one of the major languages in the ML family, with an excellent module system. (<a href="http://blog.bugyo.tk/lyrical/archives/1877"><small>Logo found here)</small></a>',
+    d: 'Standard ML is one of the major languages in the ML family, with an excellent module system. (<a href="http://blog.bugyo.tk/lyrical/archives/1877"><small>Logo found here)</small></a>',
     f: 1984,
     v: ["90 (1990)", "97 (1997)"],
     r: "Pattern matching, Hindley-Milner typing, sophisticated modules",
     u: "Theorem proving",
-    t: ["Functional"]
+    t: ["Functional"],
   },
   {
     i: "snap",
@@ -949,7 +1035,13 @@ var langs = [
     u: "Replace Scratch.",
     r: "Offers anonymous and nested functions, high order functions, prototyping, and 2D-lists. These are all features that Scratch lacks.",
     v: ["5.1.1 (2019)"],
-    t: ["Block-Based programming",  "Event-Driven", "Visual", "Object-Oriented", "Prototype-oriented"]
+    t: [
+      "Block-Based programming",
+      "Event-Driven",
+      "Visual",
+      "Object-Oriented",
+      "Prototype-oriented",
+    ],
   },
   {
     i: "swift",
@@ -959,13 +1051,12 @@ var langs = [
     g: "swift",
     rc: "Swift",
     pp: "swift",
-    d:
-      "Swift is an innovative, open source language developed by Apple to make software safer, faster, and more fun to create.",
+    d: "Swift is an innovative, open source language developed by Apple to make software safer, faster, and more fun to create.",
     f: 2014,
     v: ["1.0 (2014)", "2 (2015)", "3 (2016)"],
     r: "Being the modern alternative to Objective-C",
     u: "Native applications for macOS, iOS, watchOS, and tvOS",
-    t: ["Imperative", "Safe"]
+    t: ["Imperative", "Safe"],
   },
   {
     i: "tcl",
@@ -980,7 +1071,13 @@ var langs = [
     v: ["8.0 (1997)", "8.6.10 (2019)"],
     r: "For being very compact.",
     u: "It is often used to embed into C applications for rapid prototyping, scripted applications, GUIs, and testing. It can also be purely used to create web and desktop applications, networking, and administration.",
-    t: ["Event-Driven", "Functional", "Imperative", "Object-Oriented", "Dynamic"]
+    t: [
+      "Event-Driven",
+      "Functional",
+      "Imperative",
+      "Object-Oriented",
+      "Dynamic",
+    ],
   },
   {
     i: "typescript",
@@ -990,10 +1087,10 @@ var langs = [
     rc: "TypeScript",
     d: "TypeScript is a statically typed superset of JavaScript",
     f: 2012,
-    v: ["1.1.0.1 (2014)","3.7.4 (2019)"],
+    v: ["1.1.0.1 (2014)", "3.7.4 (2019)"],
     r: "Adding optional static typing to JavaScript.",
     u: "To support large applications, specifically those written in JavaScript for both server-side and client-side exection.",
-    t: ["Functional", "Imperative", "Object-Oriented"]
+    t: ["Functional", "Imperative", "Object-Oriented"],
   },
   {
     i: "whiley",
@@ -1006,7 +1103,7 @@ var langs = [
     v: ["v0.2.7 (2010)", "v0.4.2 (2018)"],
     r: "Precondition, postconditions, and loop invariants to act as specifications to achieve the language's general aim to help test and eliminate bugs from existing code.",
     u: "Testing and debugging",
-    t: ["Experimental", "Functional", "Imperative"]
+    t: ["Experimental", "Functional", "Imperative"],
   },
   {
     i: "zig",
@@ -1019,13 +1116,13 @@ var langs = [
     v: ["0.6.0 (2020)", "0.1.1 (2017)"],
     r: "Systems programming made easy.",
     u: "Creating, maintaining, and managing large systems software.",
-    t: ["Imperative"]
+    t: ["Imperative"],
   },
 ];
 
-var languageNames = langs.map(lang => lang.i);
+var languageNames = langs.map((lang) => lang.i);
 
-var iconFor = function(iconName, uri) {
+var iconFor = function (iconName, uri) {
   return (
     "<a href=" +
     uri +
@@ -1048,7 +1145,7 @@ langs.forEach((lang, index) => {
   span.setAttributeNode(attribute);
   span.style.backgroundImage = "url(resources/" + lang.i + "-logo-64.png)";
   document.getElementById("content").appendChild(span);
-  span.onclick = function() {
+  span.onclick = function () {
     show(lang);
   };
   if ((lang.h || lang.w || lang.g || lang.rc || lang.pp) && lang.d) {
@@ -1094,7 +1191,7 @@ var tags = document.getElementById("tags");
 var prev = document.getElementById("prev");
 var next = document.getElementById("next");
 
-var show = function(language) {
+var show = function (language) {
   document.getElementById("content").style.display = "none";
   document.getElementById("single-language").style.display = "block";
   document.getElementById("bar").innerHTML = language.n;
@@ -1131,7 +1228,7 @@ var show = function(language) {
   if (language.t) {
     tags.style.display = "block";
     tags.innerHTML = language.t
-      .map(function(t) {
+      .map(function (t) {
         return '<span class="tag">' + t + "</span>";
       })
       .join(" ");
@@ -1155,7 +1252,7 @@ function home() {
   document.getElementById("bar").innerHTML = "Programming Languages";
 }
 
-addEventListener("keydown", function(event) {
+addEventListener("keydown", function (event) {
   var key = window.location.hash.substring(1);
   var index = languageNames.indexOf(key);
   if (isNaN(index) || index < 0 || index >= langs.length) {
@@ -1170,7 +1267,7 @@ addEventListener("keydown", function(event) {
   }
 });
 
-window.onload = window.onpopstate = function() {
+window.onload = window.onpopstate = function () {
   var key = window.location.hash.substring(1);
   var index = languageNames.indexOf(key);
   if (index >= 0) {
