@@ -1,4 +1,4 @@
-import * as assert from "assert"
+import { strict as assert } from "assert"
 
 function next(n: number): any {
   return n + 1

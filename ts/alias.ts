@@ -1,4 +1,4 @@
-import * as assert from "assert"
+import { strict as assert } from "assert"
 
 type smallPrime = 2 | 3 | 5 | 7 | 11 | 13
 type Point = { x: number; y: number }
