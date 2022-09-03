@@ -1,3 +1,16 @@
+import { strict as assert } from "assert"
+
+function move(entity: { x: number; y: number }, dx: number, dy: number) {
+  entity.x += dx
+  entity.y += dy
+}
+
+const robot = { name: "Mari", x: 2, y: 2 }
+const mars = { type: "Planet", x: 3, y: 20, radius: 100 }
+move(robot, 7, 20)
+move(mars, 55, -13)
+assert(robot.y == 22)
+
 type Point = {
   x: number
   y: number
@@ -17,3 +30,29 @@ const party: Coordinate = {
   longitude: -118.437333,
   when: new Date("2022-08-25T00:30:00Z"),
 }
+
+interface Person {
+  name: string
+}
+
+interface Employee extends Person {
+  title: string
+}
+
+let e: Employee = { name: "Allie", title: "CFO" }
+
+type Duration = {
+  seconds: number
+}
+
+type Instant = {
+  when: Date
+}
+
+type Period = Instant & Duration
+
+interface Shape {
+  area: () => number
+}
+
+//class Circle extends Shape {}

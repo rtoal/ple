@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # tsc --strict animals.ts && node animals.js && \
 tsc --strict --target esnext --module esnext alias.ts && node alias.js && \
+tsc --strict --target esnext --module esnext object_types.ts && node object_types.js && \
 tsc --strict --target esnext --module esnext bad_any.ts && node bad_any.js && \
 tsc --strict --target esnext --module esnext top_ten_scorers.ts && node top_ten_scorers.js < ../test/wnba_input | diff ../test/wnba_expected - && \
 tsc --strict --target esnext --module esnext triple.ts && node triple.js | diff ../test/triple_expected - && \
