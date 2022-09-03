@@ -14,3 +14,10 @@ interface B {
 //         f();
 //     }
 // }
+
+class D implements A, B {
+    @Override
+    public void f() {
+        System.out.println(A.X + B.X);
+    }
+}
