@@ -8,10 +8,10 @@ interface B {
     default void f() {}   // implicitly public
 }
 
-// class C implements A, B { // WILL NOT COMPILE DUE TO f()
+// class C implements A, B {
+//     // WILL NOT COMPILE: unrelated defaults for f()
 //     public static void main(String[] args) {
-//         System.out.println(X); // WILL NOT COMPILE (X ambiguous)
-//         f();
+//         // System.out.println(X); // WILL NOT COMPILE (X ambiguous)
 //     }
 // }
 
