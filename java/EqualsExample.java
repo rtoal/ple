@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class EqualsDemo {
+public class EqualsExample {
     public static void main(String[] args) {
         var d1 = LocalDate.of(2020, 2, 29);
         var d2 = LocalDate.of(2020, 2, 29);

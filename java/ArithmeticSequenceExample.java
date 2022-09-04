@@ -1,4 +1,4 @@
-public class ArithmeticSequenceDemo {
+public class ArithmeticSequenceExample {
     public static void main(String[] args) {
         var g1 = new ArithmeticSequence(10, 3);
         assert g1.next() == 10;

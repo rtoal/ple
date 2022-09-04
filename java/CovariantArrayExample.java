@@ -1,5 +1,4 @@
-public class CovariantArrayDemo {
-
+public class CovariantArrayExample {
     public static void main(String[] args) {
         Animal[] animals = new Sheep[10];       // Covariance, sadly
         try {

@@ -1,4 +1,4 @@
-public class BillionDollarMistakeDemo {
+public class BillionDollarMistakeExample {
     public static void main(String[] args) {
         try {
             String message = null; // WHY IS THIS ALLOWED?

@@ -1,4 +1,4 @@
-public class VariableDemo {
+public class VariableExample {
     public static void main(String[] args) {
         String mood = "happy"; // ok, but redundant
         var message = "WAIT"; // sensibly inferred

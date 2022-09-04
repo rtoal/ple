@@ -3,7 +3,7 @@ interface DoubleToDouble {
     double apply(double x);
 }
 
-public class TwiceApp {
+public class TwiceExample {
     private static double twice(DoubleToDouble f, double x) {
         return f.apply(f.apply(x));
     }

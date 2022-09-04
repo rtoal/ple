@@ -1,7 +1,7 @@
 import java.util.List;
 import java.util.Arrays;
 
-public class AnimalChorusApp {
+public class AnimalChorusExample {
     public static void chorus(List<? extends Animal> animals) {
         for (Animal animal : animals) {
             System.out.println(animal.speak());

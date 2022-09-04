@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.concurrent.*;
 
-public class RaceConditionDemo {
+public class RaceConditionExample {
     private static Map<Integer, Integer> bad = new HashMap<>();
     private static Map<Integer, Integer> good = new ConcurrentHashMap<>();
 
