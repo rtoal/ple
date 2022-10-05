@@ -18,6 +18,6 @@ class Person {
         this(name, Optional.of(boss));
     }
 
-    public String getName() {return name;}
-    public Optional<Person> getBoss() {return boss;}
+    public String name() {return name;}
+    public Optional<Person> boss() {return boss;}
 }

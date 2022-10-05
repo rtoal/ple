@@ -7,5 +7,6 @@ public class ArithmeticSequenceExample {
         var g2 = new ArithmeticSequence(21, -2);
         assert g2.next() == 21;
         assert g2.next() == 19;
+        assert g2.next() == 17;
     }
- }
+}
