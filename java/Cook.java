@@ -8,12 +8,13 @@ class Cook extends Restaurant.Agent {
     @Override public void run() {
         try {
             while (true) {
-                Order order = Order.begin();
+                var order = Order.begin();
                 act("cooking " + order, 12000);
                 order.serve();
             }
         } catch (InterruptedException e) {
-            log("got fired from the restaurant");
+            log("has quit");
+            Thread.currentThread().interrupt();
         }
     }
 }

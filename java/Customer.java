@@ -15,9 +15,10 @@ public class Customer extends Restaurant.Agent {
     @Override
     public void run() {
         try {
-            for (var mealsEaten = 0; mealsEaten < 10;) {
+            var mealsEaten = 0;
+            while (mealsEaten < 10) {
                 if (Order.place(this, "pancakes", 7000)) {
-                    Order order = meal.take();
+                    var order = meal.take();
                     act("eating " + order, 10000);
                     mealsEaten++;
                 } else {
@@ -26,7 +27,8 @@ public class Customer extends Restaurant.Agent {
             }
             log("going home");
         } catch (InterruptedException e) {
-            log("banished from restaurant");
+            log("has stopped coming to this restaurant");
+            Thread.currentThread().interrupt();
         }
     }
 }

@@ -17,7 +17,7 @@ public class Order {
 
     static boolean place(Customer customer, String content, int maxWait)
             throws InterruptedException {
-        Order order = new Order(customer, content);
+        var order = new Order(customer, content);
         return orders.offer(order, maxWait, TimeUnit.MILLISECONDS);
     }
 

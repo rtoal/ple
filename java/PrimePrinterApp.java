@@ -1,9 +1,9 @@
-public class PrimePrinter {
+public class PrimePrinterApp {
     public static void main(String[] args) {
         for (var i = 1; i <= 100; i++) {
-            final int candidate = i;
+            final var candidate = i;
             new Thread(() -> {
-                for (int divisor = 2; divisor <= candidate; divisor++) {
+                for (var divisor = 2; divisor <= candidate; divisor++) {
                     if (divisor == candidate) {
                         synchronized (System.out) {
                             System.out.print(" " + candidate);
