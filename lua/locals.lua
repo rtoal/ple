@@ -4,4 +4,4 @@ do
   local x = x + 2   -- uses global x on right-hand side
   assert(x == 3)    -- now, FINALLY, we see the local x
 end
-assert(x == 1)      -- back in the global scope, local gone
+assert(x == 1)      -- back in the global scope!
