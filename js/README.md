@@ -30,4 +30,5 @@ Studying, and contributing to, open source projects is an excellent way to impro
 - [React](https://github.com/facebook/react)
 - [d3](https://github.com/mbostock/d3)
 - [date-fns](https://github.com/date-fns/date-fns)
-- [Lodash](https://github.com/lodash/lodash}
+- [Lodash](https://github.com/lodash/lodash)
+- [three.js](https://github.com/mrdoob/three.js)
