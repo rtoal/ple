@@ -16,6 +16,8 @@ To run the tests:
 
 # Python Resources
 
-* [Awesome Python](https://github.com/vinta/awesome-python)
-* [Python Home](https://www.python.org/)
-* [Python Docs Home](https://www.python.org/doc/)
+- [Awesome Python](https://github.com/vinta/awesome-python)
+- [Python Home](https://www.python.org/)
+- [Python Docs Home](https://www.python.org/doc/)
+
+# Python Open Source Projects
