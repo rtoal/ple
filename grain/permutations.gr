@@ -5,22 +5,22 @@ import List from "list"
 import String from "string"
 
 let rec permutations = (a, n) => {
-    if (n == 0) {
-        print(Array.join("", a))
+  if (n == 0) {
+    print(Array.join("", a))
+  }
+  else {
+    for(let mut i = 0; i < n; i += 1) {
+      permutations(a, n-1)
+      let mut j = i
+      if (n % 2 == 0) {
+        j = 0
+      }
+      let temp = a[n]
+      a[n] = a[j]
+      a[j] = temp
     }
-    else {
-        for(let mut i = 0; i < n; i += 1) {
-            permutations(a, n-1)
-            let mut j = i
-            if (n % 2 == 0) {
-                j = 0
-            }
-            let temp = a[n]
-            a[n] = a[j]
-            a[j] = temp
-        }
-        permutations(a, n - 1)  
-    }
+    permutations(a, n - 1)  
+  }
 }
 
 
@@ -28,8 +28,8 @@ let arr = Result.unwrap(Process.argv())
 let length = Array.length(arr)
 let split = Array.slice(3, length, arr)
 if ((length - 3) != 1) {
-    print("Exactly one argument is required\n")
-    Result.unwrap(Process.exit(1))
+  print("Exactly one argument is required\n")
+  Result.unwrap(Process.exit(1))
 }
 let word = split[0]
 permutations(String.split("", word), String.length(word) - 1)
