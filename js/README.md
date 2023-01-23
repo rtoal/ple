@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/rtoal/ple/main/docs/resources/js-logo-64.png">
+<img src="https://raw.githubusercontent.com/rtoal/ple/main/docs/resources/javascript-logo-64.png">
 
 # JavaScript Examples
 

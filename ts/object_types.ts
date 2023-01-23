@@ -51,6 +51,8 @@ type Instant = {
 
 type Period = Instant & Duration
 
+let p: Period = { seconds: 120, when: new Date(1969, 6, 20) }
+
 interface Shape {
   area: () => number
 }
