@@ -18,7 +18,7 @@ and run the tests with:
 
 “I hope to see Ruby help every programmer in the world to be productive, and to enjoy programming, and to be happy. That is the primary purpose of Ruby language.” —Yukihiro Matsumoto, creator of Ruby
 
-## Python Resources
+## Ruby Resources
 
 Continue your exploration of Ruby via:
 
