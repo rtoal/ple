@@ -30,6 +30,6 @@ To get Grain:
 
 # Grain Open Source Projects
 
-Studying, and contributing to, open source projects is an excellent way to improve your proficiency in any language. Of the many projects using Lua, you may enjoy:
+Studying, and contributing to, open source projects is an excellent way to improve your proficiency in any language. Grain is an open-sourced project so that would be an excellent place to start:
 
 - [Grain Open Source](https://github.com/grain-lang/grain)
