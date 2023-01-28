@@ -4,12 +4,11 @@ class Circle
     @y = y
     @r = r
   end
-  def center()
-    [@x, @y]
-  end
-  def area()
-    Math::PI * @r * @r
-  end
+  
+  def center() = [@x, @y]
+  
+  def area() = Math::PI * @r * @r
+
   def to_s()
     "Circle at (#{@x}, #{@y}) with radius #{@r}"
   end

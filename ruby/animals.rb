@@ -8,21 +8,15 @@ class Animal
 end
 
 class Cow < Animal
-  def sound()
-    "moooo"
-  end
+  def sound() = "moooo"
 end
 
 class Horse < Animal
-  def sound()
-    "neigh"
-  end
+  def sound() = "neigh"
 end
 
 class Sheep < Animal
-  def sound()
-    "baaaa"
-  end
+  def sound() = "baaaa"
 end
 
 if __FILE__ == $0
