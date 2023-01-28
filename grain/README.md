@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/rtoal/ple/master/docs/resources/grain-logo-64.jpeg">
+<img src="https://raw.githubusercontent.com/rtoal/ple/master/docs/resources/grain-logo-64.jpeg" width="64" height="64">
 
 # Grain Examples
 
