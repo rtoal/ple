@@ -20,6 +20,9 @@ To get Grain:
   ```  
 </details>
 
+# About Grain
+
+Grain is a Web3 language focused on providing strongly-typed functional language for use in both academic and professional settings. Compiling directly with WebAssembly, this language ensures a flawless experience with sensible types and flexible language format to encourage programmers from any background!
 
 # Grain Resources
 
