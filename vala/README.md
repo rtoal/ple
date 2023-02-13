@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/rtoal/polyglot/master/docs/resources/kotlin-logo-64.png">
+<img src="https://raw.githubusercontent.com/rtoal/polyglot/master/docs/resources/vala-logo-64.png">
 
 # Vala
 
