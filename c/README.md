@@ -2,7 +2,7 @@
 
 # C Examples
 
-To get Grain:
+To get C:
 <details><summary><b>MacOS</b></summary>
   
 Note: Mac automatically has Clang which can be used to compile C programs and files but for this I will show an example using gcc, or the gnu compiler collection: 
