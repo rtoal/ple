@@ -25,8 +25,8 @@ To get Ada:
 
 # About Ada
 
-Ada is a statically-typed, imperative, and object oriented language. The language, conceived around 1980, is favored for its high-level programming aspects, compiler checking rather than runtime errors, increased safety, and mantainability. Primarily developed for embedded systems, the language has since become a focal point for the design and specification of data.
-
+Ada is a statically-typed, imperative, and object oriented language. The language, conceived around 1980, is favored for its high-level programming aspects, compiler checking rather than runtime errors, increased safety, and mantainability. Primarily developed for embedded systems, the language has since become a focal point for the design and specification of data but more so for its long lived applications where efficiency and reliability are paramount.
+ 
 # Ada Resources
 
 - [Ada Home](https://ada-lang.io/)
