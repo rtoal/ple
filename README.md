@@ -106,6 +106,10 @@ following language implementations and versions:
     <td align="center"><img valign="middle" src="docs/resources/go-logo-24.png">
     <td>1.16.4
     <td>go version go1.16.4 darwin/amd64
+<tr><td>Grain
+    <td align="center"><img valign="middle" src="docs/resources/grain-logo-64.png" width=24 height=24>
+    <td>v0.5 Durum
+    <td>
 <tr><td>Hack
     <td align="center"><img valign="middle" src="docs/resources/hack-logo-24.png">
     <td>
