@@ -238,6 +238,10 @@ following language implementations and versions:
     <td align="center"><img valign="middle" src="docs/resources/tcl-logo-24.png">
     <td>
     <td>
+<tr><td>Verse
+    <td align="center"><img valign="middle" src="docs/resources/verse-logo-64.png" width="24" height="24">
+    <td>
+    <td>
 <tr><td>Whiley
     <td align="center"><img valign="middle" src="docs/resources/whiley-logo-24.png">
     <td>
