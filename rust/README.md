@@ -24,7 +24,7 @@ To get Rust:
 
 ## About Rust:
 
-Rust was created by a software developer named Graydon Hoare as a personal project. Once stable and released, the language was used by larger companies such as Google and Facebook. Rust was also influenced by other programming languages such as C# and C++. It is mainly known for enforcing memory safety.
+Rust was created by a software developer named Graydon Hoare as a personal project. Once stable and released, the language was used by larger companies such as Google and Facebook. Rust was also influenced by other programming languages such as C# and C++. It is mainly known for enforcing memory safety and will not compile code if there is an error.
 
 ## Rust Resources:
 
@@ -35,6 +35,8 @@ Rust was created by a software developer named Graydon Hoare as a personal proje
 - [W3schools Rust Tutorial](https://www.w3schools.io/languages/rust-tutorials/)
 
 - [Rust in 100 Seconds](https://youtu.be/5C_HPTJg5ek)
+
+- [Rust Online Book](https://doc.rust-lang.org/book/)
 
 
 ## Rust Open Source Resources:
