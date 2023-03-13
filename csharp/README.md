@@ -17,7 +17,7 @@ Note: You will need to install .NET for this to work
 <details><summary><b>Windows</b></summary>
   
 <br />We should install .NET for C#: <br />
-  Go <a href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.402-windows-x64-installer">HERE</a> and install the .NET SDK
+  Go <a href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.402-windows-x64-installer">HERE</a> and install the .NET SDK <br />
   Congratulations! You now have .NET installed and can start working with C#
 </details>
 
