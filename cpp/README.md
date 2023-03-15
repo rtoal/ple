@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/rtoal/ple/master/docs/resources/c-logo-64.png" width="64" height="64">
+<img src="https://raw.githubusercontent.com/rtoal/ple/master/docs/resources/cpp-logo-64.png" width="64" height="64">
 
 # CPP Examples
 
