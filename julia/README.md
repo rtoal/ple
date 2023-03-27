@@ -26,7 +26,7 @@ Julia is a high-level, dynamic programming language designed for scientific and 
 
 # Julia Open Source Projects
 
-Studying, and contributing to, open source projects is an excellent way to improve your proficiency in any language. Due to its long history, there is no possible way to contain all the Julia open-source projects but a few will be provided here:
+Studying, and contributing to, open source projects is an excellent way to improve your proficiency in any language. Due to its capabilities, there is no possible way to contain all the Julia open-source projects but a few will be provided here:
 - [Julia itself is Open-Source](https://github.com/JuliaLang/julia)
 - [Modeling Toolkit](https://github.com/SciML/ModelingToolkit.jl)
 - [JuMP](https://github.com/jump-dev/JuMP.jl)
