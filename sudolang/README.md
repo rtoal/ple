@@ -11,7 +11,7 @@ Congratulations! You now can run and learn a new generation of AI technology dir
 
 ## About SudoLang
 
-SudoLang is a practical psuedolanguage with the primary goal of interacting with and providing clear, consise prompts for Large Language Models (LLMs). The language combines natural language expressions along with programming constructs such as logical operators to allow for smooth interactions with LLMs such as GPT3.5 and GPT4. The syntax is simple and easy to use and the language allows LLMs to generate code and solve complex problems and questions. Additionally, becuase the language is primarily compiled and the syntax is decided by the user and the LLM, the possibilities are endless. The langauge has capabilities to use the pipe operator (|>) and template strings (``) which allow the user to chain together psuedocode and format in specific, user-defined ways.
+SudoLang is a practical psuedolanguage with the primary goal of interacting with and providing clear, consise prompts for Large Language Models (LLMs). The language combines natural language expressions along with programming constructs such as logical operators to allow for smooth interactions with LLMs such as GPT3.5 and GPT4. The syntax is simple and easy to use and the language allows LLMs to generate code and solve complex problems and questions. Additionally, becuase the language is primarily compiled and the syntax is decided by the user and the LLM, the possibilities are endless. The langauge has capabilities to use the pipe operator (|>) and template strings ("") which allow the user to chain together psuedocode and format in specific, user-defined ways.
 
 ## SudoLang Resources
 
