@@ -1,0 +1,12 @@
+set limit 40
+repeat range(1, limit) as a {
+    repeat range(a+1, limit) as b {
+        repeat range(b+1, limit) as c {
+            if a^2 + b^2 == c^2 {
+                print "$a, $b, $c"
+            }
+        }
+    }
+}
+
+
