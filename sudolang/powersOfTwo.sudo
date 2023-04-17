@@ -1,0 +1,6 @@
+set n = 10
+set result = 1
+repeat range(0, n) as i {
+    print(result)
+    result = result * 2
+}
