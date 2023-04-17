@@ -1,0 +1,18 @@
+set places = ["California", "Florida", "Alabama", "New York"]
+
+def good(place) {
+    return place.startswith("N")
+}
+
+for place in places {
+    if good(place) {
+        print("${place} is such a nice location!")
+        break
+    } else {
+        continue
+    }
+}
+
+if not good(places[-1]) {
+    print("No good places found")
+}
