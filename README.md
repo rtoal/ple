@@ -162,6 +162,10 @@ following language implementations and versions:
     <td align="center"><img valign="middle" src="docs/resources/mercury-logo-24.png">
     <td>
     <td>
+<tr><td>Mojo
+    <td align="center"><img valign="middle" src="docs/resources/mojo-logo-24.png">
+    <td>
+    <td>
 <tr><td>Nasm
     <td align="center"><img valign="middle" src="docs/resources/nasm-logo-24.png">
     <td>2.13.01
@@ -229,6 +233,10 @@ following language implementations and versions:
 <tr><td>Standard&nbsp;ML
     <td align="center"><img valign="middle" src="docs/resources/sml-logo-24.png">
     <td>mlton-20180207
+    <td>
+<tr><td>SudoLang
+    <td>
+    <td>
     <td>
 <tr><td>Swift
     <td align="center"><img valign="middle" src="docs/resources/swift-logo-24.png">
