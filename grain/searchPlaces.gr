@@ -1,0 +1,8 @@
+import {filter} from "list"
+import {startsWith} from "string"
+
+let places = ["California", "Florida", "New York"]
+
+
+let good = filter((s => startsWith("N",s)), places)
+print(good)
