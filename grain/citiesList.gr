@@ -1,0 +1,6 @@
+import List from "list"
+let bestCities = (statement) => {
+    let newList = List.append(["Los Angeles,", "New York,", "and San Francisco"], statement)
+    List.join(" ", newList)
+}
+print(bestCities(["are", "great", "cities!"]))
