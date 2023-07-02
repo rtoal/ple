@@ -1,45 +1,45 @@
 #!/usr/bin/env bash
-node animals.mjs && \
-node arrays_and_objects.mjs && \
-node bad_constructor.mjs && \
-node binding.mjs && \
-node circle_with_class.mjs && \
-node circle_with_object_create.mjs && \
-node circle.mjs && \
-node default_arguments.mjs && \
-node destructure_examples.mjs && \
-node emoji_character_count_sad.mjs && \
-node exploring_parameters.mjs && \
-node for_loops.mjs && \
-node for_of_examples.mjs && \
-node function_examples.mjs && \
-node generator.mjs && \
-node iterators.mjs && \
-node method_example_short_syntax.mjs && \
-node method_example.mjs && \
-node more_destructuring.mjs && \
-node numbers.mjs && \
-node object_pattern_as_parameter.mjs && \
-node parameters.mjs && \
-node permutations.mjs I like carrots | diff ../test/carrots_expected - && \
+node animals.js && \
+node arrays_and_objects.js && \
+node bad_constructor.js && \
+node binding.js && \
+node circle_with_class.js && \
+node circle_with_object_create.js && \
+node circle.js && \
+node default_arguments.js && \
+node destructure_examples.js && \
+node emoji_character_count_sad.js && \
+node exploring_parameters.js && \
+node for_loops.js && \
+node for_of_examples.js && \
+node function_examples.js && \
+node generator.js && \
+node iterators.js && \
+node method_example_short_syntax.js && \
+node method_example.js && \
+node more_destructuring.js && \
+node numbers.js && \
+node object_pattern_as_parameter.js && \
+node parameters.js && \
+node permutations.js I like carrots | diff ../test/carrots_expected - && \
 node primitives_and_references.js && \
-node promise_demo.mjs && \
-node reference_error.mjs && \
-node references.mjs && \
-node scopes_and_var.mjs && \
-node shallow.mjs && \
-node simple_scopes.mjs && \
-node static_or_dynamic_scope.mjs && \
-node strings.mjs && \
-node supervisor.mjs && \
-node this_examples.mjs && \
-node top_ten_scorers.mjs < ../test/wnba_input | diff ../test/wnba_expected - && \
-node triple.mjs | diff ../test/triple_expected - && \
-node types_and_type_errors.mjs && \
-node queues.mjs && \
-node without_optional_chaining.mjs && \
-node wordcount-callback.mjs ../test/wordcount_input | diff ../test/wordcount_expected -
-node wordcount.mjs < ../test/wordcount_input | diff ../test/wordcount_expected -
+node promise_demo.js && \
+node reference_error.js && \
+node references.js && \
+node scopes_and_var.js && \
+node shallow.js && \
+node simple_scopes.js && \
+node static_or_dynamic_scope.js && \
+node strings.js && \
+node supervisor.js && \
+node this_examples.js && \
+node top_ten_scorers.js < ../test/wnba_input | diff ../test/wnba_expected - && \
+node triple.js | diff ../test/triple_expected - && \
+node types_and_type_errors.js && \
+node queues.js && \
+node without_optional_chaining.js && \
+node wordcount-callback.js ../test/wordcount_input | diff ../test/wordcount_expected -
+node wordcount.js < ../test/wordcount_input | diff ../test/wordcount_expected -
 
 if [ $? -ne 0 ]; then
     echo
