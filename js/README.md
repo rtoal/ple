@@ -2,17 +2,15 @@
 
 # JavaScript Examples
 
-To get JavaScript:
+To get JavaScript for writing command line scripts and servers, download and install Node.js from the [Node home page](https://nodejs.org)
 
-```
-brew install node
-```
-
-To run the tests:
+To run the tests on a Unix-like shell:
 
 ```
 ./test.sh
 ```
+
+Note that this folder contains the file **package.json** to enable each of the command line **.js** files to run as module scripts, rather than classic scripts. Modules are the preferred way to write JavaScript, as they enable a host of newer modern features and are much more safe and secure. For the differences between scripts and modules, see [this article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) from MDN’s JavaScript Guide.
 
 # JavaScript Resources
 
@@ -25,7 +23,7 @@ To run the tests:
 
 # JavaScript Open Source Projects
 
-Studying, and contributing to, open source projects is an excellent way to improve your proficiency in any language. Of the many projects using Lua, you may enjoy:
+Studying, and contributing to, open source projects is an excellent way to improve your proficiency in any language. Of the many projects using JavaScript, you may enjoy:
 
 - [React](https://github.com/facebook/react)
 - [d3](https://github.com/mbostock/d3)
