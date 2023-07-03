@@ -6,11 +6,11 @@
   canvas.style.border = "2px solid purple"
   canvas.addEventListener("mousedown", e => {
     drawing = true
-    ctx.moveTo(e.clientX, e.clientY)
+    ctx.moveTo(e.offsetX, e.offsetY)
   })
   canvas.addEventListener("mousemove", e => {
     if (drawing) {
-      ctx.lineTo(e.clientX, e.clientY)
+      ctx.lineTo(e.offsetX, e.offsetY)
       ctx.stroke()
     }
   })

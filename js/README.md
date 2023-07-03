@@ -1,8 +1,8 @@
 <img src="https://raw.githubusercontent.com/rtoal/ple/main/docs/resources/javascript-logo-64.png">
 
-# JavaScript Examples
+# JavaScript Explorations
 
-To get JavaScript for writing command line scripts and servers, download and install Node.js from the [Node home page](https://nodejs.org)
+To get JavaScript for writing command line scripts and servers, download and install Node.js from the [Node home page](https://nodejs.org) or use your favorite package manager.
 
 To run the tests on a Unix-like shell:
 
@@ -12,7 +12,11 @@ To run the tests on a Unix-like shell:
 
 Note that this folder contains the file **package.json** to enable each of the command line **.js** files to run as module scripts, rather than classic scripts. Modules are the preferred way to write JavaScript, as they enable a host of newer modern features and are much more safe and secure. For the differences between scripts and modules, see [this article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) from MDN’s JavaScript Guide.
 
-# JavaScript Resources
+## About JavaScript
+
+JavaScript is a modern, expressive, dynamic, event-driven programming language that powers both web and mobile applications. The first version of JavaScript was famously created in 10 days in May of 1995 by Brendan Eich, then at Netscape. It was originally called Mocha, then LiveScript, and finally JavaScript (borrowing part of its name from a competing language that also debuted the same year). While its infancy was spent as a small, novice-friendly scripting language, today’s JavaScript is a powerful, sophisticated, complex language used on a wide variety of computing platforms servicing both individuals interacting with web browsers and large-scale enterprise applications.
+
+## JavaScript Resources
 
 - [Awesome JavaScript](https://github.com/sorrycc/awesome-javascript)
 - Another [Awesome JavaScript](https://js.libhunt.com/)
@@ -21,7 +25,7 @@ Note that this folder contains the file **package.json** to enable each of the c
 - [Axel Rauschmayer's Books](https://exploringjs.com/)
 - [Axel Rauschmayer's Blog](http://www.2ality.com/)
 
-# JavaScript Open Source Projects
+## JavaScript Open Source Projects
 
 Studying, and contributing to, open source projects is an excellent way to improve your proficiency in any language. Of the many projects using JavaScript, you may enjoy:
 
