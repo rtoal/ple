@@ -1,261 +1,85 @@
 # Programming Language Explorations
 
-Source code for the examples in <a href="https://rtoal.github.io/ple">a book</a>.
+Source code for the examples in [a book](https://rtoal.github.io/ple). And more.
 
-See the `test.sh` files within the individual directories to see how to build
-and run the examples, most of which are scripts with internal assertions.
+Nearly every program or script in this repo can be run at [Replit](https://replit.com).
+Many (especially the smaller single-file examples) can also be run [TIO](tio.run) or
+[OneCompiler](https://onecompiler.com/). Many languages feature their own online
+playgrounds.
 
-The examples here have been tested on a machine running macOS using the
-following language implementations and versions:
+You are welcome to clone this repository and run the examples locally on your own
+machine. See the specific README files within the language sub folders for instructions
+running the examples this way. You'll generally have to first download and install a
+language implementation for your particular operating system and architecture; such
+information is generally available online, but the individual language READMEs will
+often have pointers.
 
-<table>
-<tr><th colspan="2">Language<th>Version<th>Notes
-<tr><td>Ada
-    <td align="center"><img valign="middle" src="docs/resources/ada-logo-24.png">
-    <td>2015
-    <td>
-<tr><td>APL
-    <td align="center"><img valign="middle" src="docs/resources/apl-logo-24.png">
-    <td><a href="http://ngn.github.io/apl/web/index.html">ngn/apl demo</a>
-    <td>
-<tr><td>AWK
-    <td align="center"><img valign="middle" src="docs/resources/awk-logo-24.png">
-    <td>20070501
-    <td>
-<tr><td>Bash
-    <td align="center"><img valign="middle" src="docs/resources/bash-logo-24.png">
-    <td>3.2.57
-    <td>(This was the version pre-installed on my MacBook Pro, though newer versions exist)
-<tr><td>Befunge
-    <td align="center">
-    <td>
-    <td>
-<tr><td>Brainfuck
-    <td align="center">
-    <td>
-    <td>
-<tr><td>C
-    <td align="center"><img valign="middle" src="docs/resources/c-logo-24.png">
-    <td>C11
-    <td>Apple clang version 12.0.0 (clang-1200.0.32.29)
-<tr><td>C#
-    <td align="center"><img valign="middle" src="docs/resources/csharp-logo-24.png">
-    <td>
-    <td>Mono C# compiler version 4.4.1.0
-<tr><td>C++
-    <td align="center"><img valign="middle" src="docs/resources/cpp-logo-24.png">
-    <td>C++20
-    <td>Apple clang version 12.0.0 (clang-1200.0.32.29)
-<tr><td>Ceylon
-    <td align="center"><img valign="middle" src="docs/resources/ceylon-logo-24.png">
-    <td>
-    <td>
-<tr><td>Chapel
-    <td align="center"><img valign="middle" src="docs/resources/chapel-logo-24.png">
-    <td>1.19.0
-    <td>
-<tr><td>Clojure
-    <td align="center"><img valign="middle" src="docs/resources/clojure-logo-24.png">
-    <td>1.10.3.1087
-    <td>
-<tr><td>CoffeeScript
-    <td align="center"><img valign="middle" src="docs/resources/coffeescript-logo-24.png">
-    <td>1.12.2
-    <td>(Run under Node 8.1.3)
-<tr><td>Crystal
-    <td align="center"><img valign="middle" src="docs/resources/crystal-logo-24.png">
-    <td>
-    <td>
-<tr><td>D
-    <td align="center"><img valign="middle" src="docs/resources/d-logo-24.png">
-    <td>DMD64 D Compiler v2.076.0
-    <td>
-<tr><td>Dart
-    <td align="center"><img valign="middle" src="docs/resources/dart-logo-24.png">
-    <td>1.24.2
-    <td>
-<tr><td>Elixir
-    <td align="center"><img valign="middle" src="docs/resources/elixir-logo-24.png">
-    <td>
-    <td>
-<tr><td>Elm
-    <td align="center"><img valign="middle" src="docs/resources/elm-logo-24.png">
-    <td>0.18.0
-    <td>
-<tr><td>Erlang
-    <td align="center"><img valign="middle" src="docs/resources/erlang-logo-24.png">
-    <td>Erlang/OTP 21
-    <td>
-<tr><td>Factor
-    <td align="center"><img valign="middle" src="docs/resources/factor-logo-24.png">
-    <td>
-    <td>
-<tr><td>F#
-    <td align="center"><img valign="middle" src="docs/resources/fsharp-logo-24.png">
-    <td>
-    <td>
-<tr><td>Fortran
-    <td align="center"><img valign="middle" src="docs/resources/fortran-logo-24.png">
-    <td>GNU Fortran (GCC) 6.1.0
-    <td>
-<tr><td>Futhark
-    <td align="center"><img valign="middle" src="docs/resources/futhark-logo-24.png">
-    <td>
-    <td>
-<tr><td>Goq
-    <td align="center"><img valign="middle" src="docs/resources/go-logo-24.png">
-    <td>1.16.4
-    <td>go version go1.16.4 darwin/amd64
-<tr><td>Grain
-    <td align="center"><img valign="middle" src="docs/resources/grain-logo-64.png" width=24 height=24>
-    <td>v0.5 Durum
-    <td>
-<tr><td>Hack
-    <td align="center"><img valign="middle" src="docs/resources/hack-logo-24.png">
-    <td>
-    <td>
-<tr><td>Haskell
-    <td align="center"><img valign="middle" src="docs/resources/haskell-logo-24.png">
-    <td>2010
-    <td>The Glorious Glasgow Haskell Compilation System, version 8.0.2
-<tr><td>Idris
-    <td align="center"><img valign="middle" src="docs/resources/idris-logo-24.png">
-    <td>1.3.1
-    <td>
-<tr><td>Io
-    <td align="center"><img valign="middle" src="docs/resources/io-logo-24.png">
-    <td>20140919
-    <td>
-<tr><td>Java
-    <td align="center"><img valign="middle" src="docs/resources/java-logo-24.png">
-    <td>17
-    <td>
-<tr><td>JavaScript
-    <td align="center"><img valign="middle" src="docs/resources/javascript-logo-24.png">
-    <td>ES2022
-    <td>Node 17.6.0
-<tr><td>Julia
-    <td align="center"><img valign="middle" src="docs/resources/julia-logo-24.png">
-    <td>1.1.1
-    <td>
-<tr><td>K
-    <td align="center"><img valign="middle" src="docs/resources/k-logo-24.png">
-    <td>Kona Win.3.39-69
-    <td>Kona is an open source version of K
-<tr><td>Koka
-    <td align="center"><img valign="middle" src="docs/resources/koka-logo-24.png">
-    <td>
-    <td>
-<tr><td>Kotlin
-    <td align="center"><img valign="middle" src="docs/resources/kotlin-logo-24.png">
-    <td>
-    <td>
-<tr><td>LOLCODE
-    <td align="center"><img valign="middle" src="docs/resources/lolcode-logo-24.png">
-    <td>0.11.2
-    <td>
-<tr><td>Lua
-    <td align="center"><img valign="middle" src="docs/resources/lua-logo-24.png">
-    <td>5.4.3
-    <td>
-<tr><td>Mercury
-    <td align="center"><img valign="middle" src="docs/resources/mercury-logo-24.png">
-    <td>
-    <td>
-<tr><td>Mojo
-    <td align="center"><img valign="middle" src="docs/resources/mojo-logo-24.png">
-    <td>
-    <td>
-<tr><td>Nasm
-    <td align="center"><img valign="middle" src="docs/resources/nasm-logo-24.png">
-    <td>2.13.01
-    <td>
-<tr><td>Nemerle
-    <td align="center"><img valign="middle" src="docs/resources/nemerle-logo-24.png">
-    <td>
-    <td>
-<tr><td>Nim
-    <td align="center"><img valign="middle" src="docs/resources/nim-logo-24.png">
-    <td>
-    <td>
-<tr><td>OCaml
-    <td align="center"><img valign="middle" src="docs/resources/ocaml-logo-24.png">
-    <td>4.07.1
-    <td>
-<tr><td>Octave
-    <td align="center"><img valign="middle" src="docs/resources/octave-logo-24.png">
-    <td>
-    <td>
-<tr><td>Odin
-    <td>
-    <td>
-    <td>
-<tr><td>Perl
-    <td align="center"><img valign="middle" src="docs/resources/perl-logo-24.png">
-    <td>5.26.0
-    <td>
-<tr><td>Prolog
-    <td>
-    <td>
-    <td>
-<tr><td>PureScript
-    <td align="center"><img valign="middle" src="docs/resources/purescript-logo-24.png">
-    <td>0.11.5
-    <td>
-<tr><td>Python
-    <td align="center"><img valign="middle" src="docs/resources/python-logo-24.png">
-    <td>3.10.0
-    <td>
-<tr><td>R
-    <td align="center"><img valign="middle" src="docs/resources/r-logo-24.png">
-    <td>
-    <td>
-<tr><td>Racket
-    <td align="center"><img valign="middle" src="docs/resources/racket-logo-24.png">
-    <td>
-    <td>
-<tr><td>Ruby
-    <td align="center"><img valign="middle" src="docs/resources/ruby-logo-24.png">
-    <td>3.1.1p18
-    <td>
-<tr><td>Rust
-    <td align="center"><img valign="middle" src="docs/resources/rust-logo-24.png">
-    <td>1.58.1
-    <td>
-<tr><td>Scala
-    <td align="center"><img valign="middle" src="docs/resources/scala-logo-24.png">
-    <td>2.12.8
-    <td>
-<tr><td>Smalltalk
-    <td align="center"><img valign="middle" src="docs/resources/smalltalk-logo-24.png">
-    <td>
-    <td>
-<tr><td>Standard&nbsp;ML
-    <td align="center"><img valign="middle" src="docs/resources/sml-logo-24.png">
-    <td>mlton-20180207
-    <td>
-<tr><td>SudoLang
-    <td>
-    <td>
-    <td>
-<tr><td>Swift
-    <td align="center"><img valign="middle" src="docs/resources/swift-logo-24.png">
-    <td>5.3.2
-    <td>Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
-<tr><td>Tcl
-    <td align="center"><img valign="middle" src="docs/resources/tcl-logo-24.png">
-    <td>
-    <td>
-<tr><td>Verse
-    <td align="center"><img valign="middle" src="docs/resources/verse-logo-64.png" width="24" height="24">
-    <td>
-    <td>
-<tr><td>Whiley
-    <td align="center"><img valign="middle" src="docs/resources/whiley-logo-24.png">
-    <td>
-    <td>
-<tr><td>Zig
-    <td align="center"><img valign="middle" src="docs/resources/zig-logo-24.png">
-    <td>
-    <td>
-</table>
+All of the examples here have been tested on a machine running macOS using the
+language versions in the table below. The tests are executed via the `test.sh`
+script in each language folder. Modify the test script or install a suitable
+Unix-like virtual machine if you desire to run the test scripts yourself.
+
+| **Language** |       | **Version** | **Notes** |
+| :---         | :---: | :---        | :---
+| Ada          | ![](docs/resources/ada-logo-24.png)          | 2015         | |
+| APL          | ![](docs/resources/apl-logo-24.png)          |              | |
+| AWK          | ![](docs/resources/awk-logo-24.png)          | 20070501     | |
+| Bash         | ![](docs/resources/bash-logo-24.png)         | 3.2.57       | |
+| Befunge      |                                              |              | |
+| Brainfuck    |                                              |              | |
+| C            | ![](docs/resources/c-logo-24.png)            | C17          | Apple clang 14.0.3 |
+| C#           | ![](docs/resources/csharp-logo-24.png)       |              | Mono C# compiler version 4.4.1.0 |
+| C++          | ![](docs/resources/cpp-logo-24.png)          | C++20        | Apple clang 14.0.3 |
+| Ceylon       | ![](docs/resources/ceylon-logo-24.png)       |              | |
+| Chapel       | ![](docs/resources/chapel-logo-24.png)       | 1.19.0       | |
+| Clojure      | ![](docs/resources/clojure-logo-24.png)      | 1.11.1.1347  | |
+| CoffeeScript | ![](docs/resources/coffeescript-logo-24.png) | 1.12.2       | |
+| Crystal      | ![](docs/resources/crystal-logo-24.png)      |              | |
+| D            | ![](docs/resources/d-logo-24.png)            |              | DMD64 D Compiler v2.076.0 |
+| Dart         | ![](docs/resources/dart-logo-24.png)         | 1.24.2       | |
+| Elixir       | ![](docs/resources/elixir-logo-24.png)       |              | |
+| Elm          | ![](docs/resources/elm-logo-24.png)          | 0.18.0       | |
+| Erlang       | ![](docs/resources/erlang-logo-24.png)       | 21           | Erlang/OTP 21 |
+| Factor       | ![](docs/resources/factor-logo-24.png)       |              | |
+| F#           | ![](docs/resources/fsharp-logo-24.png)       |              | |
+| Fortran      | ![](docs/resources/erlang-logo-24.png)       |              | GNU Fortran (GCC) 6.1.0 |
+| Futhark      | ![](docs/resources/futhark-logo-24.png)      |              | |
+| Go           | ![](docs/resources/go-logo-24.png)           | 1.16.4       | |
+| Grain        | ![](docs/resources/grain-logo-24.png)        | 0.5          | |
+| Hack         | ![](docs/resources/hack-logo-24.png)         |              | |
+| Haskell      | ![](docs/resources/haskell-logo-24.png)      | 2010         | The Glorious Glasgow Haskell Compilation System, version 8.0.2 |
+| Idris        | ![](docs/resources/idris-logo-24.png)        | 1.3.1        | |
+| Io           | ![](docs/resources/io-logo-24.png)           | 20140919     | |
+| Java         | ![](docs/resources/java-logo-24.png)         | 20           | |
+| JavaScript   | ![](docs/resources/javascriptlogo-24.png)    | ES2023       | Node 20.3.1 |
+| Julia        | ![](docs/resources/julia-logo-24.png)        | 1.1.1        | |
+| K            | ![](docs/resources/k-logo-24.png)            |              | Kona Win.3.39-69|
+| Koka         | ![](docs/resources/koka-logo-24.png)         |              | |
+| Kotlin       | ![](docs/resources/kotlin-logo-24.png)       |              | |
+| LOLCODE      | ![](docs/resources/lolcode-logo-24.png)      | 0.11.2       | |
+| Lua          | ![](docs/resources/lua-logo-24.png)          | 5.4.3        | |
+| Mercury      | ![](docs/resources/mercury-logo-24.png)      |              | |
+| Mojo         | ![](docs/resources/mojo-logo-24.png)         |              | |
+| Nasm         | ![](docs/resources/nasm-logo-24.png)         | 2.13.01      | |
+| Nemerle      | ![](docs/resources/nemerle-logo-24.png)      |              | |
+| Nim          | ![](docs/resources/nim-logo-24.png)          |              | |
+| OCaml        | ![](docs/resources/ocaml-logo-24.png)        | 4.07.1       | |
+| Octave       | ![](docs/resources/octave-logo-24.png)       |              | |
+| Odin         | ![](docs/resources/odin-logo-24.png)         |              | |
+| Perl         | ![](docs/resources/perl-logo-24.png)         | 5.26.0       | |
+| Prolog       |                                              |              | |
+| PureScript   | ![](docs/resources/purescript-logo-24.png)   | 0.11.5       | |
+| Python       | ![](docs/resources/python-logo-24.png)       | 3.10.0       | |
+| R            | ![](docs/resources/r-logo-24.png)            |              | |
+| Racket       | ![](docs/resources/racket-logo-24.png)       |              | |
+| Ruby         | ![](docs/resources/ruby-logo-24.png)         | 3.2.2        | |
+| Rust         | ![](docs/resources/rust-logo-24.png)         | 1.69.0       | |
+| Scala        | ![](docs/resources/scala-logo-24.png)        | 2.12.8       | |
+| Smalltalk    | ![](docs/resources/smalltalk-logo-24.png)    |              | |
+| Standard ML  | ![](docs/resources/sml-logo-24.png)          |              | mlton-20180207 |
+| SudoLang     |                                              |              | |
+| Swift        | ![](docs/resources/swift-logo-24.png)        | 5.8.1        | |
+| Tcl          | ![](docs/resources/tcl-logo-24.png)          |              | |
+| Verse        | ![](docs/resources/verse-logo-24.png)        |              | |
+| Whiley       | ![](docs/resources/whiley-logo-24.png)       |              | |
+| Zig          | ![](docs/resources/zig-logo-24.png)          |              | |
