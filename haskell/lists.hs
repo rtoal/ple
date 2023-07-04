@@ -16,7 +16,7 @@ main = do
     -- Ranges and comprehensions
     guard $ [2..5] == [2,3,4,5]
     guard $ [x | x <- [3..8], even x] == [4, 6, 8]
-    guard $ [x + y | x <- [1,2], y <- [9,0,2]] == []
+    guard $ [x + y | x <- [1,2], y <- [9,0,2]] == [10,1,3,11,2,4]
 
     -- Splits, joins, and zips
     guard $ splitAt 3 [3,5,8,2,1] == ([3,5,8],[2,1])
