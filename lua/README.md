@@ -4,6 +4,20 @@
 
 To build and run Lua programs on your local machine, download and install the Lua system from the [Lua downlaods page](https://www.lua.org/download.html) or use your favorite package manager.
 
+Once installed, programs in this folder can be run from the command line like so:
+
+```
+lua triple.lua
+```
+
+```
+lua permutations.lua I like carrots
+```
+
+```
+lua top_ten_scorers.lua < ../test/wnba_input
+```
+
 To run the tests on a Unix-like shell:
 
 ```
@@ -12,9 +26,9 @@ To run the tests on a Unix-like shell:
 
 ## About Lua
 
-Lua is a lightweight and efficient programming language. It was designed and implemented by a team led by Roberto Ierusalimschy at the Pontifical Catholic University of Rio de Janeiro, in Brazil. The first version of Lua was released in 1993. Lua is a popular choice for game programming, and iterface well with other languages, being able to be embedded in C, C++, Java, Fortran, Smalltalk, and Erlang.
+Lua is a lightweight and efficient programming language. It was designed and implemented by a team led by Roberto Ierusalimschy at PUC-Rio, Pontifícia Universidade Católica do Rio de Janeiro, in Brazil. The first version of Lua was released in 1993 and it is still being actively developed today. Lua is a popular choice for game programming and was the implementation language for titles such as World of Warcraft and Angry Birds. It interoperates well with other languages, and can easily be embedded into C, C++, Java, Fortran, Smalltalk, and Erlang implementations.
 
-# Lua Resources
+## Lua Resources
 
 - [Awesome Lua](https://github.com/LewisJEllis/awesome-lua)
 - [Lua Home](http://www.lua.org/)
@@ -23,7 +37,7 @@ Lua is a lightweight and efficient programming language. It was designed and imp
 - Book _Programming in Lua_ by Lua’s creator, Roberto Ierusalimschy
 - Books on Lua in game programming
 
-# Lua Open Source Projects
+## Lua Open Source Projects
 
 Studying, and contributing to, open source projects is an excellent way to improve your proficiency in any language. Of the many projects using Lua, you may enjoy:
 
