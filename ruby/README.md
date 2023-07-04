@@ -18,7 +18,7 @@ ruby permutations.rb I like carrots
 ruby top_ten_scorers.rb < ../test/wnba_input
 ```
 
-Running the command `ruby` with no arguments give you a repl.
+Running the command `ruby` with no arguments gives you a repl.
 
 To run the tests on a Unix-like shell:
 
@@ -34,7 +34,7 @@ Ruby is a dynamic, reflective, object-oriented, general-purpose programming lang
 
 ## Ruby Resources
 
-Continue your exploration of Ruby via:
+Continue your study of Ruby via:
 
 - [Awesome Ruby](https://github.com/markets/awesome-ruby)
 - [Ruby home page](https://www.ruby-lang.org/), with links to the Getting Started Guide, the User's Guide, the Language Reference, and the Library Reference
@@ -52,7 +52,7 @@ Continue your exploration of Ruby via:
 
 ## Ruby Open Source Projects
 
-Studying, and contributing to, open source projects is an excellent way to improve your proficiency in any language. You may enjoy:
+Studying, and contributing to, open source projects is an excellent way to improve your proficiency in any language. Of the many projects using Ruby, you may enjoy:
 
 - [Rails](https://github.com/rails/rails)
 - [Homebrew](https://github.com/Homebrew/homebrew)

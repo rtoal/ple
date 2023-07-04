@@ -18,7 +18,7 @@ lua permutations.lua I like carrots
 lua top_ten_scorers.lua < ../test/wnba_input
 ```
 
-Running the command `lua` with no arguments give you a repl.
+Running the command `lua` with no arguments gives you a repl.
 
 To run the tests on a Unix-like shell:
 
@@ -32,12 +32,14 @@ Lua is a lightweight and efficient programming language. It was designed and imp
 
 ## Lua Resources
 
+Continue your study of Lua via:
+
 - [Awesome Lua](https://github.com/LewisJEllis/awesome-lua)
 - [Lua Home](http://www.lua.org/)
 - [List of Lua Books](http://www.lua.org/docs.html#books)
 - [Lua Reference Manual](http://www.lua.org/manual/5.4/)
-- Book _Programming in Lua_ by Lua’s creator, Roberto Ierusalimschy
-- Books on Lua in game programming
+- [The book _Programming in Lua_ by Lua’s creator, Roberto Ierusalimschy](http://www.lua.org/pil/)
+- [List of Lua Books](https://realtoughcandy.com/best-lua-books/)
 
 ## Lua Open Source Projects
 

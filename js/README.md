@@ -18,7 +18,7 @@ node permutations.js I like carrots
 node top_ten_scorers.js < ../test/wnba_input
 ```
 
-Running the command `node` with no arguments give you a repl.
+Running the command `node` with no arguments gives you a repl.
 
 To run the tests on a Unix-like shell:
 
@@ -33,6 +33,8 @@ Note that this folder contains the file **package.json** to enable each of the c
 JavaScript is a modern, expressive, dynamic, event-driven programming language that powers both web and mobile applications. The first version of JavaScript was famously created in 10 days in May of 1995 by Brendan Eich, then at Netscape. It was originally called Mocha, then LiveScript, and finally JavaScript (borrowing part of its name from a competing language that also debuted the same year). While its infancy was spent as a small, novice-friendly scripting language, today’s JavaScript is a powerful, sophisticated, complex language used on a wide variety of computing platforms servicing both individuals interacting with web browsers and large-scale enterprise applications.
 
 ## JavaScript Resources
+
+Continue your study of JavaScript via:
 
 - [Awesome JavaScript](https://github.com/sorrycc/awesome-javascript)
 - Another [Awesome JavaScript](https://js.libhunt.com/)

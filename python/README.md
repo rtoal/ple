@@ -18,7 +18,7 @@ python3 permutations.py I like carrots
 python3 top_ten_scorers.py < ../test/wnba_input
 ```
 
-Running the command `python3` with no arguments give you a repl.
+Running the command `python3` with no arguments gives you a repl.
 
 To run the tests on a Unix-like shell:
 
@@ -32,7 +32,7 @@ Python is a powerful and expressive programming language that “lets you work q
 
 ## Python Resources
 
-Continue your exploration of Python via:
+Continue your study of Python via:
 
 - [Awesome Python](https://github.com/vinta/awesome-python)
 - [Python Home](https://www.python.org/)
@@ -42,7 +42,7 @@ Continue your exploration of Python via:
 
 ## Python Open Source Projects
 
-Studying, and contributing to, open source projects is an excellent way to improve your proficiency in any language. You may enjoy:
+Studying, and contributing to, open source projects is an excellent way to improve your proficiency in any language. Of the many projects using Python, you may enjoy:
 
 - [Requests](https://github.com/kennethreitz/requests)
 - [Flask](https://github.com/mitsuhiko/flask)
