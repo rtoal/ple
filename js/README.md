@@ -2,7 +2,7 @@
 
 # JavaScript Explorations
 
-To get JavaScript for writing command line scripts and servers, download and install Node.js from the [Node home page](https://nodejs.org) or use your favorite package manager.
+JavaScript is already installed in every modern web browser. To develop command line scripts and servers, download and install Node.js from the [Node home page](https://nodejs.org) or use your favorite package manager.
 
 To run the tests on a Unix-like shell:
 

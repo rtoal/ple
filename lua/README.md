@@ -1,18 +1,18 @@
 <img src="https://raw.githubusercontent.com/rtoal/ple/master/docs/resources/lua-logo-64.png">
 
-# Lua Examples
+# Lua Explorations
 
-To get Lua:
+To build and run Lua programs on your local machine, download and install the Lua system from the [Lua downlaods page](https://www.lua.org/download.html) or use your favorite package manager.
 
-```
-brew install lua
-```
-
-To run the tests:
+To run the tests on a Unix-like shell:
 
 ```
 ./test.sh
 ```
+
+## About Lua
+
+Lua is a lightweight and efficient programming language. It was designed and implemented by a team led by Roberto Ierusalimschy at the Pontifical Catholic University of Rio de Janeiro, in Brazil. The first version of Lua was released in 1993. Lua is a popular choice for game programming, and iterface well with other languages, being able to be embedded in C, C++, Java, Fortran, Smalltalk, and Erlang.
 
 # Lua Resources
 

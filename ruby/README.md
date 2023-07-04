@@ -1,14 +1,10 @@
 <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/docs/resources/ruby-logo-64.png">
 
-# Ruby
+# Ruby Explorations
 
-Feel free to browse the examples in this folder and run them in your favorite runner. To run the examples on your local machine, you may obtain a Ruby interpreter:
+To build and run Ruby programs on your local machine, download and install the most recent language version from the [Ruby home page](https://www.ruby-lang.org/en/) or use your favorite package manager.
 
-```
-brew install ruby
-```
-
-and run the tests with:
+To run the tests on a Unix-like shell:
 
 ```
 ./test.sh

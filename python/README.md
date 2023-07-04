@@ -1,16 +1,10 @@
 <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/docs/resources/python-logo-64.png">
 
-# Python
+# Python Explorations
 
-## Running the Examples
+To build and run Python programs on your local machine, download and install the most recent language version from the [Python home page](https://www.python.org/) or use your favorite package manager.
 
-Feel free to browse the examples in this folder and run them in your favorite runner. To run the examples on your local machine, you may obtain a Python interpreter:
-
-```
-brew install python3
-```
-
-and run the tests with:
+To run the tests on a Unix-like shell:
 
 ```
 ./test.sh
