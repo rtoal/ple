@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 # ghc another_mystery.hs && \
-ghc clockhands.hs && ./clockhands && \
-ghc double.hs && ./double && \
-ghc hello.hs && ./hello && \
-ghc infix_as_prefix.hs && ./infix_as_prefix && \
-# ghc mystery.hs && \
-ghc permutations.hs && ./permutations I like carrots
-ghc primes.hs && ./primes && \
-ghc triple.hs && ./triple | diff ../test/triple_expected -
-ghc top_ten_scorers.hs && ./top_ten_scorers < ../test/wnba_input | diff ../test/wnba_expected - && \
+runhaskell clockhands.hs && \
+runhaskell double.hs && \
+runhaskell hello.hs && \
+runhaskell infix_and_prefix.hs && \
+# runhaskell mystery.hs && \
+runhaskell permutations.hs I like carrots && \
+runhaskell primes.hs&& \
+runhaskell triple.hs | diff ../test/triple_expected - && \
+runhaskell top_ten_scorers.hs < ../test/wnba_input | diff ../test/wnba_expected -
 
 
 if [ $? -ne 0 ]; then
