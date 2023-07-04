@@ -4,6 +4,22 @@
 
 To build and run Python programs on your local machine, download and install the most recent language version from the [Python home page](https://www.python.org/) or use your favorite package manager.
 
+Once installed, programs in this folder can be run from the command line like so:
+
+```
+python3 triple.py
+```
+
+```
+python3 permutations.py I like carrots
+```
+
+```
+python3 top_ten_scorers.py < ../test/wnba_input
+```
+
+Running the command `python3` with no arguments give you a repl.
+
 To run the tests on a Unix-like shell:
 
 ```
@@ -12,7 +28,7 @@ To run the tests on a Unix-like shell:
 
 ## About Python
 
-Python is a powerful and expressive programming language that “lets you work quickly and integrate systems more effectively.”
+Python is a powerful and expressive programming language that “lets you work quickly and integrate systems more effectively.” It was created by Guido van Rossum and first released in 1991. Python is widely used in industry and academia, and is particularly popular in the scientific community for data analysis and machine learning. Python is also a popular choice for web development, and is the implementation language for popular web frameworks like Django and Flask.
 
 ## Python Resources
 

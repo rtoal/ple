@@ -4,6 +4,22 @@
 
 To build and run Ruby programs on your local machine, download and install the most recent language version from the [Ruby home page](https://www.ruby-lang.org/en/) or use your favorite package manager.
 
+Once installed, programs in this folder can be run from the command line like so:
+
+```
+ruby triple.rb
+```
+
+```
+ruby permutations.rb I like carrots
+```
+
+```
+ruby top_ten_scorers.rb < ../test/wnba_input
+```
+
+Running the command `ruby` with no arguments give you a repl.
+
 To run the tests on a Unix-like shell:
 
 ```
@@ -11,6 +27,8 @@ To run the tests on a Unix-like shell:
 ```
 
 ## About Ruby
+
+Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. It was designed and developed in the early 1990s by Yukihiro "Matz" Matsumoto in Japan. Ruby is influenced by Perl, Smalltalk, Eiffel, Ada, and Lisp. It supports multiple programming paradigms, but does particulary well with functional and object-oriented programming. Its metaprogramming capabilities are widely appreciated making Ruby a good choice for Domain Specific Languages (DSLs).
 
 “I hope to see Ruby help every programmer in the world to be productive, and to enjoy programming, and to be happy. That is the primary purpose of Ruby language.” —Yukihiro Matsumoto, creator of Ruby
 

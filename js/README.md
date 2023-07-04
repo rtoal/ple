@@ -4,13 +4,29 @@
 
 JavaScript is already installed in every modern web browser. To develop command line scripts and servers, download and install Node.js from the [Node home page](https://nodejs.org) or use your favorite package manager.
 
+Once installed, programs in this folder can be run from the command line like so:
+
+```
+node triple.js
+```
+
+```
+node permutations.js I like carrots
+```
+
+```
+node top_ten_scorers.js < ../test/wnba_input
+```
+
+Running the command `node` with no arguments give you a repl.
+
 To run the tests on a Unix-like shell:
 
 ```
 ./test.sh
 ```
 
-Note that this folder contains the file **package.json** to enable each of the command line **.js** files to run as module scripts, rather than classic scripts. Modules are the preferred way to write JavaScript, as they enable a host of newer modern features and are much more safe and secure. For the differences between scripts and modules, see [this article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) from MDN’s JavaScript Guide.
+Note that this folder contains the file **package.json** to enable each of the command line **.js** files to run as _module_ scripts, rather than _classic_ scripts. Modules are the preferred way to write JavaScript, as they enable a host of newer modern features and are much more safe and secure. For the differences between scripts and modules, see [this article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) from MDN’s JavaScript Guide.
 
 ## About JavaScript
 

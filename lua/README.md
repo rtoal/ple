@@ -18,6 +18,8 @@ lua permutations.lua I like carrots
 lua top_ten_scorers.lua < ../test/wnba_input
 ```
 
+Running the command `lua` with no arguments give you a repl.
+
 To run the tests on a Unix-like shell:
 
 ```
