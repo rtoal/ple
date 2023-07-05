@@ -82,6 +82,9 @@ Unix-like virtual machine if you desire to run the test scripts yourself.
 | SudoLang     |                                              |             |                                                    |
 | Swift        |    ![](docs/resources/swift-logo-24.png)     | 5.8.1       |                                                    |
 | Tcl          |     ![](docs/resources/tcl-logo-24.png)      |             |                                                    |
+| TypeScript   |  ![](docs/resources/typescript-logo-24.png)  | 5.0.4       |                                                    |
+| V            |      ![](docs/resources/v-logo-24.png)       |             |                                                    |
+| Vala         |     ![](docs/resources/vala-logo-24.png)     |             |                                                    |
 | Verse        |    ![](docs/resources/verse-logo-24.png)     |             |                                                    |
 | Whiley       |    ![](docs/resources/whiley-logo-24.png)    |             |                                                    |
 | Zig          |     ![](docs/resources/zig-logo-24.png)      |             |                                                    |
