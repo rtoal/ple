@@ -1,4 +1,4 @@
-function optionalsExample() {
+function optionalsAsPropertyValuesExample() {
   type Person = {
     name: string
     birthdate: Date

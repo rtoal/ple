@@ -42,7 +42,7 @@ Continue your study of Clojure via:
 - [Community-curated resources](http://clojure.org/community/resources)
 - [Clojure Koans](http://clojurekoans.com/)
 
-## Open Source Projects Using Clojure
+## Clojure Open Source Projects
 
 Studying, and contributing to, open source projects is an excellent way to improve your proficiency in any language. Of the many projects using Clojure, you may enjoy:
 
