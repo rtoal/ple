@@ -1,6 +1,6 @@
 <img src="https://raw.githubusercontent.com/rtoal/ple/main/docs/resources/typescript-logo-64.png">
 
-# TypeScript Examples
+# TypeScript Explorations
 
 To get TypeScript:
 
