@@ -32,7 +32,8 @@ fn main() {
         .collect();
 
     let mut sorted_players = players;
-    sorted_players.sort_by(|a, b| b.ppg.partial_cmp(&a.ppg).unwrap_or(Ordering::Equal));
+    sorted_players.sort_by(|a, b|
+        b.ppg.partial_cmp(&a.ppg).unwrap_or(Ordering::Equal));
 
     for player in sorted_players.iter().take(10) {
         println!("{:22}{:4}{:8.2}", player.name, player.team, player.ppg);
