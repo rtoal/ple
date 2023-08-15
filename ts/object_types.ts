@@ -53,8 +53,15 @@ type Period = Instant & Duration
 
 let p: Period = { seconds: 120, when: new Date(1969, 6, 20) }
 
-interface Shape {
-  area: () => number
+class Product {
+  readonly name: string
+  price: number
+  constructor(name: string, price: number) {
+    this.name = name
+    this.price = price
+  }
 }
 
-//class Circle extends Shape {}
+let product = new Product("Apple", 1.99)
+product.price = 2.99
+// product.name = "Banana" // ERROR
