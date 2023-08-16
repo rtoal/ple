@@ -1,10 +1,8 @@
 import { strict as assert } from "assert"
 
-class Animal {
-  constructor(private name: String) {}
-  protected sound(): String {
-    return ""
-  }
+abstract class Animal {
+  constructor(private readonly name: String) {}
+  protected abstract sound(): String
   public speak(): String {
     return `${this.name} says ${this.sound()}`
   }
