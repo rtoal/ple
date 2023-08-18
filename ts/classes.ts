@@ -29,23 +29,3 @@ class Globe {
 let globe: Globe = new Globe(3, "blue")
 assert(globe.radius === 3)
 assert(globe.color === "blue")
-
-// interface Moveable {
-//   move(dx: number, dy: number): void
-// }
-
-// class Point2D implements Moveable {
-//   x: number = 0
-//   y: number = 0
-//   move() {}
-// }
-
-// class Point3D extends Point2D {
-//   z: number = 0
-// }
-
-// class Vehicle implements Moveable {
-//   move(): void {
-//     console.log("Moving...")
-//   }
-// }

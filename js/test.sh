@@ -3,6 +3,7 @@ node animals.js && \
 node arrays_and_objects.js && \
 node bad_constructor.js && \
 node binding.js && \
+node bracket.js && \
 node circle_with_class.js && \
 node circle_with_object_create.js && \
 node circle.js && \

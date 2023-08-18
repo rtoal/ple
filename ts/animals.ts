@@ -26,8 +26,8 @@ class Sheep extends Animal {
   }
 }
 
-const h = new Horse("CJ")
-assert(h.speak() === "CJ says neigh")
-const c = new Cow("Bessie")
-assert(c.speak() === "Bessie says moooo")
+const horse = new Horse("CJ")
+assert(horse.speak() === "CJ says neigh")
+const cow = new Cow("Bessie")
+assert(cow.speak() === "Bessie says moooo")
 assert(new Sheep("Little Lamb").speak() === "Little Lamb says baaaa")

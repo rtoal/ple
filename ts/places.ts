@@ -1,3 +1,0 @@
-namespace Places {
-  class Place {}
-}
