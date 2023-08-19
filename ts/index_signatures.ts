@@ -6,16 +6,16 @@ interface Rating {
   [key: string]: Score // you can create other scores of your choice
 }
 
-let r: Rating = {
+let rating: Rating = {
   plot: 5,
   originality: 4,
   idea: 3,
 }
 
 const metric = "clarity"
-r[metric] = 3 // Computed property access
+rating[metric] = 3 // Computed property access
 
-for (const key in r) {
+for (const key in rating) {
   // Iteration through property names
-  console.log(`${key} score is ${r[key]}`)
+  console.log(`${key} score is ${rating[key]}`)
 }

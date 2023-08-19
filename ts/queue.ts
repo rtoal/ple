@@ -14,8 +14,7 @@ class Queue<T> {
   }
 }
 
-// Two ways to declare queue variables
-let queue: Queue<number> = new Queue()
+let queue: Queue<number> = new Queue<number>()
 queue.enqueue(1)
 let anotherQueue = new Queue<string>()
 anotherQueue.enqueue("first")
