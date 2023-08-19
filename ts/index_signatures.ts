@@ -16,6 +16,6 @@ const metric = "clarity"
 r[metric] = 3 // Computed property access
 
 for (const key in r) {
-  // Iteration through property name
+  // Iteration through property names
   console.log(`${key} score is ${r[key]}`)
 }
