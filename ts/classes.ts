@@ -6,8 +6,8 @@ class Ball {
 }
 
 let smallBall: Ball = new Ball()
-let largeBall: Ball = { radius: 20, color: "red" }
 assert(smallBall.radius === 1 && smallBall.color === "white")
+let largeBall: Ball = { radius: 20, color: "red" }
 assert(largeBall.radius === 20 && largeBall.color === "red")
 
 class Sphere {
