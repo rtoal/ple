@@ -21,6 +21,7 @@ extension Square: Boundaried {
 assert(s.perimeter() == 40)
 
 import Foundation
+
 struct Circle: Shape, Boundaried {
     var radius: Double
     func area() -> Double {return Double.pi * radius * radius}
