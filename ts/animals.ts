@@ -31,3 +31,9 @@ assert(horse.speak() === "CJ says neigh")
 const cow = new Cow("Bessie")
 assert(cow.speak() === "Bessie says moooo")
 assert(new Sheep("Little Lamb").speak() === "Little Lamb says baaaa")
+
+let animals: Animal[] = []
+let cows: Cow[] = [new Cow("Bessie")]
+animals = cows
+animals.push(new Sheep("Little Lamb"))
+assert(cows[1].speak() === "Little Lamb says baaaa") // WHAT?!
