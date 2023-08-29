@@ -14,9 +14,9 @@ class Circle
   end
 end
 
-c = Circle.new(5, 4, 10)
-fail unless c.center == [5, 4]
+c = Circle.new(5, 3, 10)
+fail unless c.center == [5, 3]
 fail unless c.area == 100 * Math::PI
 
 # to_s is automatically called when in string context
-fail unless "#{c}" == "Circle at (5, 4) with radius 10"
+fail unless "#{c}" == "Circle at (5, 3) with radius 10"

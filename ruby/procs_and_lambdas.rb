@@ -9,9 +9,12 @@ p [plusThree.call(10), plusThree.class, plusThree.lambda?]
 p [plusFour.call(10), plusThree.class, plusFour.lambda?]
 p [plusFive.call(10), plusThree.class, plusFive.lambda?]
 
-plusTwo.call(100, 200, 300)     # Extra args? No problem!
+# Extra args are no problem for procs
+plusTwo.call(100, 200, 300)
+
+# ...but they are a problem for lambdas
 begin
-  plusFour.call(100, 200, 300)  # But it's a problem here!
+  plusFour.call(100, 200, 300)
 rescue ArgumentError
   puts 'Rescued'                # Message will be output
 end

@@ -12,6 +12,7 @@ ruby circle.rb && \
 ruby class_definition.rb && \
 ruby class_new_example.rb && \
 ruby common_class_summary.rb && \
+ruby data_example.rb && \
 ruby globals.rb && \
 ruby make_enum.rb && \
 ruby mixin_example.rb && \

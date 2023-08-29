@@ -14,3 +14,4 @@ fail unless t.select {|x| x.even?} == [2]
 fail unless t.all? {|x| x > 0} == true
 fail unless t.one? {|x| x > 2} == true
 fail unless t.reduce(0, :+) == 6
+fail unless t.take(2) == [1, 2]

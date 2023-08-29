@@ -1,11 +1,7 @@
 def positional(x, y, z) = "#{x} #{y} #{z}"
-
 def named(x:, y:, z:) = "#{x} #{y} #{z}"
-
 def splatted(x, *y) = "#{x} #{y}"
-
 def defaulted(x, y=100) = "#{x} #{y}"
-
 def defaulted_and_named(x, y:2) = "#{x} #{y}"
 
 fail unless positional(1, 2, 3) == "1 2 3"
