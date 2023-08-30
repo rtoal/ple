@@ -1,8 +1,8 @@
 for (c in 1..40) {
-    for (b in 1..c-1) {
-        for (a in 1..b-1) {
+    for (b in 1..<c) {
+        for (a in 1..<b) {
             if (a * a + b * b == c * c) {
-                println("${a}, ${b}, ${c}");
+                println("$a, $b, $c");
             }
         }
     }
