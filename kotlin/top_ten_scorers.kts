@@ -1,4 +1,9 @@
-data class Player(val team: String, val name: String, val games: Int, val ppg: Double) {
+data class Player(
+    val team: String,
+    val name: String,
+    val games: Int,
+    val ppg: Double
+) {
     companion object {
         fun fromLine(line: List<String>): Player {
             val points = line[3].toDouble()
