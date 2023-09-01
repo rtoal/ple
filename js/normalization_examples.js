@@ -15,7 +15,8 @@ const longS = "\u{017f}"
 assert(longS !== "s")
 assert(longS.normalize("NFKD") === "s")
 
-// NKFC is compat decomposition followed by canon composition
+// NKFC is actually two steps: compatibility decomposition
+// followed by canonical composition
 const dzWithCaron = "\u{01c4}"
 const dThenZThenCaron = "DZ\u{030c}"
 const dThenZCaron = "D\u{017d}"
