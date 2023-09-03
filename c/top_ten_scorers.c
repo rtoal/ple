@@ -2,61 +2,59 @@
 #include <stdlib.h>
 #include <string.h>
 
-struct Player {
-    char name[50];
+typedef struct {
     char team[50];
+    char name[50];
     int games;
     int points;
-    float ppg;
-};
+    double ppg;
+} Player;
 
-void addPlayer(struct Player** players, char* team, char* name, int games, int points, int* size, int* capacity) {
-    if (games >= 15) {
-        if (*size >= *capacity) {
-            *capacity *= 2; // Double the capacity
-            *players = realloc(*players, (*capacity) * sizeof(struct Player));
-            if (*players == NULL) {
-                printf("Memory reallocation failed.\n");
-                exit(1);
-            }
-        }
-        struct Player* player = &((*players)[*size]);
-        strcpy(player->name, name);
-        strcpy(player->team, team);
-        player->games = games;
-        player->points = points;
-        player->ppg = (float)points / games;
-        (*size)++;
-    }
-}
-
-int comparePlayers(const void* a, const void* b) {
-    const struct Player* playerA = (const struct Player*)a;
-    const struct Player* playerB = (const struct Player*)b;
-    return (playerB->ppg - playerA->ppg) > 0 ? 1 : -1;
+int compare(const void *a, const void *b) {
+    double ppg_a = ((Player*)a)->ppg;
+    double ppg_b = ((Player*)b)->ppg;
+    return (ppg_a < ppg_b) ? 1 : (ppg_a > ppg_b) ? -1 : 0;
 }
 
 int main() {
-    int capacity = 8;
-    struct Player* players = malloc(capacity * sizeof(struct Player));
-    int size = 0;
+    Player players[1000];
+    int playerCount = 0;
 
-    char line[100];
+    char line[256];
+
     while (fgets(line, sizeof(line), stdin)) {
+        if (strlen(line) >= sizeof(line) - 1) {
+            fprintf(stderr, "Line too long. Exiting.\n");
+            return -1;
+        }
+
         char team[50], name[50];
         int games, points;
-        sscanf(line, "%[^,],%[^,],%d,%d", team, name, &games, &points);
-        addPlayer(&players, team, name, games, points, &size, &capacity);
+        if (sscanf(line, "%49[^,],%49[^,],%d,%d", team, name, &games, &points) != 4) {
+            fprintf(stderr, "Invalid input format. Exiting.\n");
+            return -2;
+        }
+        if (games >= 15) {
+            if (playerCount >= 1000) {
+                fprintf(stderr, "Too many players. Exiting.\n");
+                return -3;
+            }
+            strcpy(players[playerCount].team, team);
+            strcpy(players[playerCount].name, name);
+            players[playerCount].games = games;
+            players[playerCount].points = points;
+            players[playerCount].ppg = (double)points / games;
+            playerCount++;
+        }
     }
 
-    qsort(players, size, sizeof(struct Player), comparePlayers);
+    qsort(players, playerCount, sizeof(Player), compare);
 
-    for (int i = 0; i < size && i < 10; i++) {
-        struct Player* player = &players[i];
-        printf("%-22s%-4s%8.2f\n", player->name, player->team, player->ppg);
+    int numPlayersToPrint = playerCount < 10 ? playerCount : 10;
+    for (int i = 0; i < numPlayersToPrint; i++) {
+        Player player = players[i];
+        printf("%-22s%-4s%8.2lf\n", player.name, player.team, player.ppg);
     }
-
-    free(players);
 
     return 0;
 }

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     for (int c = 1; c <= 40; c++) {
@@ -10,5 +11,5 @@ int main() {
             }
         }
     }
-    return 0;
+    return EXIT_SUCCESS;
 }
