@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void print_string_array(char *a[], int size) {
     if (size == 0) {
@@ -28,5 +29,5 @@ void print_permutations(char *a[], int n, int size) {
 
 int main(int argc, char *argv[]) {
     print_permutations(argv + 1, argc - 2, argc - 1);
-    return 0;
+    return EXIT_SUCCESS;
 }

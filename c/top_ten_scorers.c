@@ -3,8 +3,8 @@
 #include <string.h>
 
 typedef struct {
-    char team[50];
-    char name[50];
+    char team[8];   // room for 7 characters + null terminator
+    char name[64];  // room for 63 characters + null terminator
     int games;
     int points;
     double ppg;
@@ -24,19 +24,20 @@ int main() {
 
     while (fgets(line, sizeof(line), stdin)) {
         if (strlen(line) >= sizeof(line) - 1) {
-            fprintf(stderr, "Line too long. Exiting.\n");
+            fprintf(stderr, "Error: Line too long\n");
             return -1;
         }
 
-        char team[50], name[50];
+        char team[8], name[64];
         int games, points;
-        if (sscanf(line, "%49[^,],%49[^,],%d,%d", team, name, &games, &points) != 4) {
-            fprintf(stderr, "Invalid input format. Exiting.\n");
+        if (sscanf(line, "%7[^,],%63[^,],%d,%d", 
+                team, name, &games, &points) != 4) {
+            fprintf(stderr, "Error: Invalid input line format\n");
             return -2;
         }
         if (games >= 15) {
             if (playerCount >= 1000) {
-                fprintf(stderr, "Too many players. Exiting.\n");
+                fprintf(stderr, "Error: Too many players\n");
                 return -3;
             }
             strcpy(players[playerCount].team, team);
@@ -50,11 +51,11 @@ int main() {
 
     qsort(players, playerCount, sizeof(Player), compare);
 
-    int numPlayersToPrint = playerCount < 10 ? playerCount : 10;
-    for (int i = 0; i < numPlayersToPrint; i++) {
+    int printedPlayerCount = playerCount < 10 ? playerCount : 10;
+    for (int i = 0; i < printedPlayerCount; i++) {
         Player player = players[i];
         printf("%-22s%-4s%8.2lf\n", player.name, player.team, player.ppg);
     }
 
-    return 0;
+    return EXIT_SUCCESS;
 }
