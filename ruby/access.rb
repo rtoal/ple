@@ -23,9 +23,7 @@ a.log(-999) rescue puts "Whew: Can't call protected method"
 
 # But protected does not help you from subclasses
 class BadAccount < Account
-  def mess_up_log(otherAccount)
-    otherAccount.log(-999)
-  end
+  def mess_up_log(otherAccount); otherAccount.log(-999); end
 end
 
 BadAccount.new.mess_up_log(a)   # Oh no!
