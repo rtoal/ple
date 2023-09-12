@@ -14,6 +14,7 @@ assert(twice(function (x) return x + 1 end, 5) == 7)
 function compose(f, g)
   return function (x) return f(g(x)) end
 end
+
 is_odd_when_squared = compose(odd, square)
 assert(is_odd_when_squared(7))
 assert(not is_odd_when_squared(0))

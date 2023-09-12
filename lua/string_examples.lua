@@ -16,8 +16,5 @@ assert("\u{106}\u{2190}\u{61}\u{66}\u{e9}" == s)
 -- Or assembled from UTF-8 bytes (must be in hex)
 assert("\xc4\x86\xe2\x86\x90\x61\x66\xc3\xa9" == s)
 
--- Print each code point
-print(utf8.codepoint(s, 1, #s))
-
--- Print each byte
-print(string.byte(s, 1, #s))
+print(utf8.codepoint(s, 1, #s))    -- print each code point
+print(string.byte(s, 1, #s))       -- print each byte
