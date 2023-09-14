@@ -16,6 +16,6 @@ public class WordCountApp {
             .collect(Collectors.groupingBy(Function.identity(),
                 TreeMap::new, Collectors.counting()))
             .forEach((word, count) ->
-                System.out.printf("%s %d\n", word, count));
+                System.out.printf("%s %d%n", word, count));
     }
 }
