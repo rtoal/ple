@@ -10,7 +10,7 @@ public class PokeApiApp {
     static String baseUrl = "https://pokeapi.co/api/v2/pokemon/";
     static HttpClient httpClient = HttpClient.newHttpClient();
     static String[] pokemonNames = {
-            "ditto", "pikachu", "mew", "weedle", "eeveen" };
+            "ditto", "pikachu", "mew", "weedle", "eevee" };
 
     public static void main(String[] args) {
         try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
@@ -30,14 +30,16 @@ public class PokeApiApp {
                     request, HttpResponse.BodyHandlers.ofString());
             if (response.statusCode() >= 400) {
                 throw new RuntimeException(
-                        "Received status code " + response.statusCode());
+                        "HTTP status code " + response.statusCode());
             }
             var jsonObject = new JSONObject(response.body());
-            System.out.printf(
-                    "Name: %s, Height: %d, Weight: %d%n",
-                    jsonObject.getString("name"),
-                    jsonObject.getInt("height"),
-                    jsonObject.getInt("weight"));
+            synchronized (System.out) {
+                System.out.printf(
+                        "Name: %s, Height: %d, Weight: %d%n",
+                        jsonObject.getString("name"),
+                        jsonObject.getInt("height"),
+                        jsonObject.getInt("weight"));
+            }
         } catch (Exception e) {
             System.err.println("Failed to fetch " + name + ": "
                     + e.getLocalizedMessage());
