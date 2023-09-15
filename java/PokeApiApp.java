@@ -7,13 +7,14 @@ import java.util.concurrent.Executors;
 import org.json.JSONObject;
 
 public class PokeApiApp {
+    static String baseUrl = "https://pokeapi.co/api/v2/pokemon/";
     static HttpClient httpClient = HttpClient.newHttpClient();
     static String[] pokemonNames = {
-            "ditto", "pikachu", "mew", "weedle", "eevee" };
+            "ditto", "pikachu", "mew", "weedle", "eeveen" };
 
     public static void main(String[] args) {
         try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
-            for (String name : pokemonNames) {
+            for (var name : pokemonNames) {
                 executor.submit(() -> {
                     fetchPokemon(name);
                 });
@@ -22,24 +23,24 @@ public class PokeApiApp {
     }
 
     private static void fetchPokemon(String name) {
-        var url = URI.create(
-                "https://pokeapi.co/api/v2/pokemon/" + name);
-        var httpRequest = HttpRequest.newBuilder(url).build();
+        var url = URI.create(baseUrl + name);
+        var request = HttpRequest.newBuilder(url).build();
         try {
-            HttpResponse<String> response = httpClient.send(
-                    httpRequest, HttpResponse.BodyHandlers.ofString());
-            if (response.statusCode() < 400) {
-                var jsonObject = new JSONObject(response.body());
-                System.out.printf(
-                        "Name: %s, Height: %d, Weight: %d%n",
-                        jsonObject.getString("name"),
-                        jsonObject.getInt("height"),
-                        jsonObject.getInt("weight"));
-            } else {
-                System.err.println("Failed to fetch " + name);
+            var response = httpClient.send(
+                    request, HttpResponse.BodyHandlers.ofString());
+            if (response.statusCode() >= 400) {
+                throw new RuntimeException(
+                        "Received status code " + response.statusCode());
             }
-        } catch (IOException | InterruptedException e) {
-            System.err.println("Failed to fetch " + name);
+            var jsonObject = new JSONObject(response.body());
+            System.out.printf(
+                    "Name: %s, Height: %d, Weight: %d%n",
+                    jsonObject.getString("name"),
+                    jsonObject.getInt("height"),
+                    jsonObject.getInt("weight"));
+        } catch (Exception e) {
+            System.err.println("Failed to fetch " + name + ": "
+                    + e.getLocalizedMessage());
         }
     }
 }
