@@ -34,9 +34,7 @@ let r = Rectangle(width: 20, height: 30)
 assert(r.width == 20)
 assert(r.area() == 600)
 assert(r.description == "Rectangle 20.0 x 30.0")
-
 let s = Square(side: 50)
 assert(s.width == 50)
 assert(s.area() == 2500)
 assert(s.description == "Square with side 50.0")
-
