@@ -6,4 +6,5 @@ a.out
 *.exe
 *.hi
 .*
+!/**/.prettierrc.json
 node_modules
