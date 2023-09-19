@@ -1,4 +1,3 @@
-import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -13,9 +12,9 @@ public class PokeApiApp {
             "ditto", "pikachu", "mew", "weedle", "eevee" };
 
     public static void main(String[] args) {
-        try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
+        try (var service = Executors.newVirtualThreadPerTaskExecutor()) {
             for (var name : pokemonNames) {
-                executor.submit(() -> {
+                service.submit(() -> {
                     fetchPokemon(name);
                 });
             }
