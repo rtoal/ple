@@ -3,7 +3,11 @@ package binarytree
 import "fmt"
 
 func ExampleTree() {
-    s := &Tree{7, &Tree{Value:2}, &Tree{8, &Tree{Value:1}, nil}}
+    s := &Tree[int]{
+        7,
+        &Tree[int]{Value:2},
+        &Tree[int]{8, &Tree[int]{Value:1}, nil},
+    }
     fmt.Println(s)
     fmt.Println(s.Size())
     // Output: ((()2())7((()1())8()))
