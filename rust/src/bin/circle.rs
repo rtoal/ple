@@ -1,34 +1,30 @@
-use std::f64::consts::PI;
-use std::fmt;
 
-struct Circle {
-    x: f64,
-    y: f64,
+pub struct Circle {
+    center: (f64, f64),
     radius: f64,
 }
 
 impl Circle {
-    fn area(&self) -> f64 {
-        PI * (self.radius * self.radius)
+    pub fn new(center: (f64, f64), radius: f64) -> Self {
+        Circle { center, radius }
     }
 
-    fn circumference(&self) -> f64 {
-        PI * 2f64 * self.radius
+    pub fn center(&self) -> (f64, f64) {
+        self.center
+    }
+
+    pub fn area(&self) -> f64 {
+        std::f64::consts::PI * self.radius * self.radius
     }
 }
 
-impl fmt::Display for Circle {
-    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+impl std::fmt::Display for Circle {
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
         write!(
             f,
-            "Circle {{ x: {}, y: {}, radius: {} }}",
-            self.x, self.y, self.radius
+            "(x: {}, y: {}, radius: {})",
+            self.center.0, self.center.1, self.radius
         )
     }
 }
 
-fn main() {
-    let origin = Circle { x: 1.0, y: 5.0, radius: 1.0};
-    println!("{}", origin);
-    println!("{} {}", origin.area(), origin.circumference());
-}

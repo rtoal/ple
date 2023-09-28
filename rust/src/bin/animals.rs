@@ -16,7 +16,7 @@ impl Animal for Horse {
         "neigh"
     }
     fn new(name: &'static str) -> Horse {
-        Horse {name: name}
+        Horse {name}
     }
     fn name(&self) -> &'static str { self.name }
 }
