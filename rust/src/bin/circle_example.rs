@@ -1,6 +1,4 @@
-mod circle;
-
-use circle::Circle;
+use rust_examples::circle::Circle;
 
 fn main() {
     // Create a Circle instance

@@ -1,8 +1,9 @@
 [package]
-name = "rust-examples"
+name = "rust_examples"
 version = "0.0.1"
 authors = ["example@example.com"]
 description = "A collection of Rust examples"
+edition = "2018"
 
 [dependencies]
 regex = "1.5.5"

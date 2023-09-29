@@ -1,4 +1,3 @@
-
 pub struct Circle {
     center: (f64, f64),
     radius: f64,
@@ -27,4 +26,3 @@ impl std::fmt::Display for Circle {
         )
     }
 }
-
