@@ -9,13 +9,18 @@ target/debug/closure && \
 target/debug/generator && \
 target/debug/hello_world && \
 target/debug/lifetimes && \
+target/debug/only_one_mutable_borrow && \
 target/debug/open_rectangle && \
 target/debug/permutations I like carrots | diff ../test/carrots_expected - && \
 target/debug/rectangle && \
 target/debug/safe_string_sort && \
+target/debug/shadow && \
+target/debug/simple_borrow && \
 target/debug/slices && \
 target/debug/static_or_dynamic_scope && \
+target/debug/string_generator && \
 target/debug/strings && \
+target/debug/sum_of_even_squares && \
 target/debug/top_ten_scorers < ../test/wnba_input | diff ../test/wnba_expected - && \
 target/debug/triple | diff ../test/triple_expected - && \
 target/debug/turbofish && \
