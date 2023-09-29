@@ -5,4 +5,5 @@ fn main() {
     let v_slice = &v[2..4];           // type &[i32]
     assert_eq!(a_slice, &[30, 40]);
     assert_eq!(v_slice, &[30, 40]);
+    // println!("{}", v[99]);         // panics
 }
