@@ -1,6 +1,6 @@
 abstract class Animal(val name: String) {
   fun speak(): String {
-    return name + " says " + sound()
+    return "$name says ${sound()}"
   }
   abstract fun sound(): String
 }
@@ -28,4 +28,3 @@ assert(s.speak() == "CJ says neigh")
 val c = Cow("Bessie")
 assert(c.speak() == "Bessie says moooo")
 assert(Sheep("Little Lamb").speak() == "Little Lamb says baaaa")
-println("All tests pass!")
