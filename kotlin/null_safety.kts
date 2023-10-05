@@ -3,7 +3,6 @@ val supervisor: String? = null
 val name: String? = null
 val message = "Hello, ${name ?: "World"}!"
 
-safe call
 val user: User? = getUserById(id)
 val name = user?.name
 

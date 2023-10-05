@@ -1,30 +1,22 @@
 abstract class Animal(val name: String) {
-  fun speak(): String {
-    return "$name says ${sound()}"
-  }
-  abstract fun sound(): String
+    fun speak() = "$name says ${sound()}"
+    abstract fun sound(): String
 }
 
-class Cow(name: String): Animal (name = name) {
-    override fun sound(): String {
-        return "moooo"
-    }
+class Cow(name: String): Animal(name) {
+    override fun sound() = "moooo"
 }
 
-class Horse(name: String): Animal (name = name) {
-    override fun sound(): String {
-        return "neigh"
-    }
+class Horse(name: String): Animal(name) {
+    override fun sound() = "neigh"
 }
 
-class Sheep(name: String): Animal (name = name) {
-    override fun sound(): String {
-        return "baaaa"
-    }
+class Sheep(name: String): Animal(name) {
+    override fun sound() = "baaaa"
 }
 
-val s = Horse("CJ")
-assert(s.speak() == "CJ says neigh")
+val h = Horse("CJ")
+assert(h.speak() == "CJ says neigh")
 val c = Cow("Bessie")
 assert(c.speak() == "Bessie says moooo")
 assert(Sheep("Little Lamb").speak() == "Little Lamb says baaaa")

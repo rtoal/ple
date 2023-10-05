@@ -1,5 +1,5 @@
 fun Int.factorial(): Int {
-    return (1..this).fold(1) { acc, i -> acc * i }
+    return (1..this).fold(1) { x, y -> x * y }
 }
 
 assert(0.factorial() == 1)

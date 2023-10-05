@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-kotlin animals.kts && \
+kotlin -J-ea animals.kts && \
 kotlin closures.kts && \
 kotlin codepoints.kts && \
 kotlin companions.kts && \
