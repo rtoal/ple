@@ -1,4 +1,4 @@
-val berries = listOf("blueberry", "balckberry", "strawberry")
+val berries = listOf("blueberry", "blackberry", "strawberry")
 val team = mutableListOf<String>()
 team.add("Ashleigh")
 val smallPrimes = mutableSetOf(2, 3, 5, 7, 11)
