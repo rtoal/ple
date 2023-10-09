@@ -2,7 +2,6 @@
 kotlin -J-ea animals.kts && \
 kotlin -J-ea binary_tree.kts && \
 kotlin circle.kts && \
-kotlin closures.kts && \
 kotlin codepoints.kts && \
 kotlin collections.kts && \
 kotlin companions.kts && \
