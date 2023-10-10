@@ -3,7 +3,7 @@ addprocs(3)
 
 trials = 4000000
 hits = @distributed (+) for i = 1:trials
-  Int(sum(rand(2).^2) < 1)
+    Int(sum(rand(2).^2) < 1)
 end
 
 approximation = hits/trials * 4

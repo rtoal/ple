@@ -12,7 +12,7 @@ dogs = Set([Dog("rex"), Dog("spot")])
 function something(animals::Set{Animal}) end
 
 @assert (try
-  something(dogs)                     # Not allowed!
+    something(dogs)                   # Not allowed!
 catch e
-  1
+    1
 end) == 1
