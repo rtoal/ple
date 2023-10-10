@@ -13,8 +13,7 @@ function Player(line::Vector{SubString{String}})
     return Player(line[1], line[2], games, points / games)
 end
 
-reportLine(p::Player) = @sprintf(
-    "%-22s%-4s%8.2f", p.name, p.team, p.ppg)
+report(p::Player) = @sprintf("%-22s%-4s%8.2f", p.name, p.team, p.ppg)
 
 players = Vector{Player}()
 for line in eachline(stdin)
@@ -25,5 +24,5 @@ for line in eachline(stdin)
 end
 sort!(players, by=player -> player.ppg, rev=true)
 for player in players[1:10]
-    println(reportLine(player))
+    println(report(player))
 end

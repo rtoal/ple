@@ -22,6 +22,7 @@ julia new_arrays.jl && \
 julia parallel_pi.jl && \
 julia parameter_packing_and_unpacking.jl && \
 julia parametric_types.jl && \
+julia permutations.jl I like carrots | diff - ../test/carrots_expected && \
 julia remote_factor.jl && \
 julia remote_factor_with_spawn.jl && \
 julia remote_pi_computation.jl && \
@@ -29,6 +30,7 @@ julia scopes.jl && \
 julia simple_macro_example.jl && \
 julia splicing.jl && \
 julia times.jl && \
+julia top_ten_scorers.jl < ../test/wnba_input | diff ../test/wnba_expected - && \
 julia triple.jl | diff ../test/triple_expected - && \
 julia tuple_covariance.jl && \
 julia tuple_types.jl && \
