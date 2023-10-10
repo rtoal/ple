@@ -25,6 +25,7 @@ kotlin triple.kts | diff ../test/triple_expected -
 kotlin -J-ea unit_and_nothing.kts && \
 kotlin -J-ea user.kts && \
 kotlin -J-ea variables.kts && \
+kotlin -J-ea vectors.kts && \
 
 if [ $? -ne 0 ]; then
     echo

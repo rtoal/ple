@@ -13,7 +13,7 @@ python3 log_decorator_example.py && \
 python3 memoized_fibonacci.py && \
 python3 mi.py && \
 python3 object_pool.py && \
-python3 top_ten_scorers.py < ../test/wnba_input | diff ../test/wnba_expected - && \
+python3 permutations.py I like carrots | diff - ../test/carrots_expected && \
 python3 powers_of_two.py && \
 python3 powers_of_two_infinite.py && \
 python3 proxy.py && \
@@ -21,6 +21,7 @@ python3 scope.py && \
 python3 simple_keyword_arguments.py && \
 python3 simple_types.py && \
 python3 sum_of_even_squares.py && \
+python3 top_ten_scorers.py < ../test/wnba_input | diff ../test/wnba_expected - && \
 python3 triple_comprehensions.py && \
 python3 triple.py | diff ../test/triple_expected - && \
 python3 types_are_types.py && \
