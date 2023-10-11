@@ -1,9 +1,18 @@
-a = [1 2 3; 4 5 6; 7 8 9]
-b = [1 0 0; 0 2 0; 9 9 9]
+using LinearAlgebra
 
-@assert a + b == [2 2 3; 4 7 6; 16 17 18]
-@assert a * 2 == [2 4 6; 8 10 12; 14 16 18]
-@assert a * b == [28 31 27; 58 64 54; 88 97 81]  # Matrix multiply
-@assert a .* b == [1 0 0; 0 10 0; 63 72 81]      # Elementwise mul
+a = [2 -1 0; 1 1 1; 0 1 2]
+b = [2 1 0; -1 1 -1; 0 -1 2]
+u = [1, 2, 3]
+v = [1, 0, 0]
 
-@assert -a == [-1 -2 -3; -4 -5 -6; -7 -8 -9]
+@assert tr(a) == 5
+@assert det(a) == 4.0
+@assert cross(u, v) == [0, 3, -2]
+@assert UnitUpperTriangular(a) == [1 -1 0; 0 1 1; 0 0 1]
+@assert UpperHessenberg(a) == [2 -1 0; 1 1 1; 0 1 2]
+@assert dot(a, b) == 5
+
+rotate!(u, v, 3, 8)             # ! indicates mutation of u and v
+reflect!(v, u, 1, 10)           # ! indicates mutation of u and v
+@assert u == [-61, -166, -249]
+@assert v == [105, 44, 66]

@@ -12,4 +12,5 @@ a, b, c = 1, 2, 3       # three globals
     @assert (a,b,c,d,e) == (10,20,3,40,50)
     @assert (try f catch e sqrt(100) end) == 10
 end)()
+
 @assert (a,b,c) == (1,20,3)
