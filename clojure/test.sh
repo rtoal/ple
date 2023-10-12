@@ -19,6 +19,7 @@ clojure -M mystery.clj && \
 clojure -M namespace_example.clj && \
 clojure -M or.clj && \
 clojure -M overflow.clj && \
+clojure -M permutations.clj I like carrots | diff ../test/carrots_expected - && \
 clojure -M persistent_example.clj && \
 clojure -M shape_multi.clj && \
 clojure -M shape_protocol.clj && \
@@ -27,6 +28,7 @@ clojure -M stm.clj && \
 clojure -M sum_of_even_squares.clj && \
 clojure -M thread_locking.clj && \
 clojure -M thread_mess.clj && \
+clojure -M top_ten_scorers.clj < ../test/wnba_input | diff ../test/wnba_expected - && \
 clojure -M triple.clj | diff ../test/triple_expected - && \
 clojure -M unless.clj && \
 clojure -M varargs.clj && \
