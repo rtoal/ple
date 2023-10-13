@@ -3,6 +3,7 @@ import Control.Monad (guard)
 data Shape
     = Circle {radius :: Float}
     | Rectangle {width :: Float, height :: Float}
+    deriving (Show)
 
 area :: Shape -> Float
 area (Circle {radius = r}) = pi * r * r
@@ -21,4 +22,6 @@ main =
         guard $ area c == 100 * pi
         guard $ perimeter c == 20 * pi
         guard $ width r == 8 && height r == 2
-        guard $ area r == 16 && perimeter r == 20
+        guard $ (area r, perimeter r) == (16, 20)
+        guard $ show c == "Circle {radius = 10.0}"
+        guard $ show r == "Rectangle {width = 8.0, height = 2.0}"
