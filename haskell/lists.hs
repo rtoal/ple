@@ -25,7 +25,7 @@ main = do
     guard $ intercalate [0,0] [[1],[2,3]] == [1,0,0,2,3]
     guard $ zip [1,2,3] ['a','b'] == [(1,'a'),(2,'b')]
 
-    -- Higher order functions
+    -- Higher order and anonymous functions
     guard $ takeWhile (\x -> x < 7) [3,5,8,2,1] == [3,5]
     guard $ dropWhile (not . even) [3,5,8,2,1] == [8,2,1] 
     guard $ filter (\x -> x < 7) [3,5,8,2,1] == [3,5,2,1]

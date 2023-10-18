@@ -1,4 +1,4 @@
-isIncreasingTuple :: (Ord a) => (a, a) -> Bool
+isIncreasingTuple :: Ord a => (a, a) -> Bool
 isIncreasingTuple (x, y) = x < y
 
 advance :: (Eq a, Bounded a, Enum a) => a -> a

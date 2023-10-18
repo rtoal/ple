@@ -1,6 +1,6 @@
 import Control.Monad (guard)
 
-grade :: (Num a, Ord a) => a -> [Char]
+grade :: Int -> [Char]
 grade score 
     | score >= 90 = "A"
     | score >= 80 = "B"
@@ -14,7 +14,7 @@ comp x y
     | x < y     = "Lower"
     | otherwise = "Same"
 
-quadrant :: (Ord a, Num a) => a -> a -> [Char]
+quadrant :: Double -> Double -> [Char]
 quadrant x y 
     | xPositive && yPositive = "1"
     | xNegative && yPositive = "2"
