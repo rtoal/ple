@@ -3,8 +3,8 @@
 #include <string.h>
 
 typedef struct {
-    char team[8];   // room for 7 characters + null terminator
-    char name[64];  // room for 63 characters + null terminator
+    char team[8];   // room for 7 characters + the terminator
+    char name[64];  // room for 63 characters + the terminator
     int games;
     int points;
     double ppg;
