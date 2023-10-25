@@ -1,29 +1,24 @@
 #include <iostream>
+#include <vector>
 #include <utility>
 
-void printStringArray(char *a[], int size) {
-    if (size != 0) {
-        std::cout << a[0];
-        for (int i = 1; i < size; i++) {
-            std::cout << "\t" << a[i];
-        }
-        std::cout << "\n";
-    }
-}
-
-void printPermutations(char *a[], int n, int size) {
+void generate_permutations(int n, std::vector<std::string>& a) {
     if (n == 0) {
-        printStringArray(a, size);
+        for (const std::string& s : a) {
+            std::cout << s << "\t";
+        }
+        std::cout << std::endl;
     } else {
         for (int i = 0; i < n; i++) {
-            printPermutations(a, n - 1, size);
-            int j = n % 2 == 0 ? 0 : i;
-            std::swap(a[n], a[j]);
+            generate_permutations(n - 1, a);
+            std::swap(a[n % 2 == 0 ? 0 : i], a[n]);
         }
-        printPermutations(a, n - 1, size);
+        generate_permutations(n - 1, a);
     }
 }
 
-int main(int argc, char *argv[]) {
-  printPermutations(argv + 1, argc - 2, argc - 1);
+int main(int argc, char* argv[]) {
+    std::vector<std::string> args(argv + 1, argv + argc);
+    generate_permutations(args.size() - 1, args);
+    return 0;
 }
