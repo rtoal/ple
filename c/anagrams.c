@@ -34,5 +34,5 @@ int main(int argc, const char* argv[]) {
     generate_permutations(word, len-1);
 
     free(word);
-    return 0;
+    return EXIT_SUCCESS;
 }

@@ -1,3 +1,6 @@
+#include <assert.h>
+#include <stdlib.h>
+
 int sum_of_even_squares(int* a, unsigned int length) {
     int total = 0;
     for (unsigned int i = 0; i < length; i++) {
@@ -7,8 +10,6 @@ int sum_of_even_squares(int* a, unsigned int length) {
     }
     return total;
 }
-
-#include <assert.h>
 
 static int a[] = {7, 3, -8, 4, 1, 0, 11, 2};
 
@@ -22,5 +23,5 @@ int main() {
     assert(sum_of_even_squares(a, 6) == 80);
     assert(sum_of_even_squares(a, 7) == 80);
     assert(sum_of_even_squares(a, 8) == 84);
-    return 0;
+    return EXIT_SUCCESS;
 }

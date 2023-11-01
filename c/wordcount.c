@@ -42,5 +42,5 @@ int main(int argc, char const *argv[]) {
         printf("%s %d\n", words[i]->string, words[i]->count);
     }
 
-    return 0;
+    return EXIT_SUCCESS;
 }
