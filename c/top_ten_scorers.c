@@ -5,8 +5,6 @@
 typedef struct {
     char team[8];   // room for 7 characters + the terminator
     char name[64];  // room for 63 characters + the terminator
-    int games;
-    int points;
     double ppg;
 } Player;
 
@@ -35,26 +33,24 @@ int main() {
             fprintf(stderr, "Error: Invalid input line format\n");
             return -2;
         }
-        if (games >= 15) {
-            if (playerCount >= 1000) {
-                fprintf(stderr, "Error: Too many players\n");
-                return -3;
-            }
-            strcpy(players[playerCount].team, team);
-            strcpy(players[playerCount].name, name);
-            players[playerCount].games = games;
-            players[playerCount].points = points;
-            players[playerCount].ppg = (double)points / games;
-            playerCount++;
+        if (games < 15) continue;
+        if (playerCount >= sizeof players / sizeof(Player)) {
+            fprintf(stderr, "Error: Too many players\n");
+            return -3;
         }
+        Player* player = &players[playerCount];
+        strlcpy(player->team, team, sizeof player->team);
+        strlcpy(player->name, name, sizeof player->name);
+        player->ppg = (double)points / games;
+        playerCount++;
     }
 
     qsort(players, playerCount, sizeof(Player), compare);
 
     int printedPlayerCount = playerCount < 10 ? playerCount : 10;
     for (int i = 0; i < printedPlayerCount; i++) {
-        Player player = players[i];
-        printf("%-22s%-4s%8.2lf\n", player.name, player.team, player.ppg);
+        printf("%-22s%-4s%8.2lf\n", players[i].name, players[i].team,
+            players[i].ppg);
     }
 
     return EXIT_SUCCESS;

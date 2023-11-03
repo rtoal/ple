@@ -10,7 +10,7 @@ int main() {
 
     alice = bob;                   // ok, copies all 12 bytes
     alice.diceRolls[1] = 1;        // also ok!
-    assert(bob.diceRolls[1] == 3); // unchanged!
+    assert(bob.diceRolls[1] == 3); // unchanged! Array was copied
     // bob.diceRolls = { 1, 2 };   // NOT ok
     return EXIT_SUCCESS;
 }

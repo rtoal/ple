@@ -17,7 +17,8 @@ int main() {
     p = q;           // all 8 bytes copied
     p.x = 0;         // writing to p's memory, not q's
     p.y = 0;
-    assert(q.x == -3 && q.y == 21); // q unchanged!
+    assert(q.x == -3);
+    assert(q.y == 21); // q unchanged!
 
     return EXIT_SUCCESS;
 }
