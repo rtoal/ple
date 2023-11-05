@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 int* f() {
+    static int z;  // z has static storage duration
     int x = 5;     // x has automatic storage duration
     return &x;     // Terrible code, will return a dangling pointer
 }                  // Compiling this code should generate a warning

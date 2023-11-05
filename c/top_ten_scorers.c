@@ -8,7 +8,7 @@ typedef struct {
     double ppg;
 } Player;
 
-int compare(const void *a, const void *b) {
+int ppg_compare(const void *a, const void *b) {
     double ppg_a = ((Player*)a)->ppg;
     double ppg_b = ((Player*)b)->ppg;
     return (ppg_a < ppg_b) ? 1 : (ppg_a > ppg_b) ? -1 : 0;
@@ -45,8 +45,7 @@ int main() {
         playerCount++;
     }
 
-    qsort(players, playerCount, sizeof(Player), compare);
-
+    qsort(players, playerCount, sizeof(Player), ppg_compare);
     int printedPlayerCount = playerCount < 10 ? playerCount : 10;
     for (int i = 0; i < printedPlayerCount; i++) {
         printf("%-22s%-4s%8.2lf\n", players[i].name, players[i].team,
