@@ -4,8 +4,6 @@ data <- data.frame(
 )
 
 model = lm(y ~ x, data = data)
-
 plot(data$x, data$y, main = "Prices", xlab = "Rooms", ylab = "Price")
 abline(model, col = "red")
-
 hist(data$y, main = "Prices", col = "green")
