@@ -1,0 +1,26 @@
+# D (Dlang)
+- **Creator**: Walter Bright at Digital Mars <br/>
+- **Released**: 2001<br/>
+- **Unique features**:
+  - Static typing with C-like syntax (inspired by CPP and ALGOL style languages)
+  - Draws from CPP originally but expanded to include features from other languages such as Java, Ruby, Python, C#, and Eiffel
+  - Combines aspects from modern dynamic and functional languages
+    - Dynamic
+      - No need for re-typing types
+      - Uses static inference to deduce types
+      - Automatic Memory Management
+      - Linear arrays and Maps with Pythonic slicing capabilities
+    - Functional
+      - Closures
+      - Function Literals
+      - Map, Filter, Reduce
+  - It also uses aspects of the concurrent, object-oriented, imperative, and metaprogramming paradigms
+  - Offers aspects of OOP such as polymorphism, generics, inheritance, interfaces, overloading, modules, nested classes
+  - Security features such as true immutability for data and controlled mutability across threads
+  - Similar to Python allows for function decorators (@safe, @trusted, and @system) that allow for specific security protocols and overall greater control
+  - Allows for everything from low-level data abstraction to Haskell-style abstractions
+- **Notes**:
+  - Originally was a re-engineered version of CPP
+  - Implemented many notable features before CPP did
+  - Utilizes CPP/C backends to ensure fast code compilation and execution (as fast as CPP with generally less code)
+  - Some people believe that D was created with the focus of forcing the C++ developers to implement specific new features into their language and used D as a conduit to fuel that
