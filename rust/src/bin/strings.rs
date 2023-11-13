@@ -1,6 +1,6 @@
 
 fn main() {
-    let s = "Ć←afé";
+    let s = "Ć←afé";                          // inferred type is &str
     assert_eq!(s.len(), 9);                   // 9 bytes
     assert_eq!(s.bytes().count(), 9);         // 9 bytes
     assert_eq!(s.chars().count(), 5);         // 5 scalars
