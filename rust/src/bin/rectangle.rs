@@ -21,7 +21,7 @@ mod shapes {
 
 fn main() {
     let r = shapes::Rectangle::new(5.0, 10.0);
-    println!("Area: {}", r.area());             // Common syntax
+    println!("Area: {}", r.area());
     assert_eq!(r.dimensions(), (5.0, 10.0));
 }
 

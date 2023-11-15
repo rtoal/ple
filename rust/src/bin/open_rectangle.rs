@@ -24,5 +24,5 @@ fn main() {
     println!("Area: {}", Rectangle::area(&r));  // Rare syntax
     println!("Area: {}", r.area());             // Common syntax
     assert_eq!(r.dimensions(), (5.0, 10.0));
-    println!("{}", r.width);                    // Visible, is this ok?
+    println!("{}", r.width);
 }

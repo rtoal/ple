@@ -1,9 +1,9 @@
 fn main() {
-    let mut a = 3;
-    f(&mut a);
-    assert!(a == 5);
+    let mut a = String::from("wo"); // owned by variable a
+    add_ah(&mut a);                 // pass a reference to borrow
+    println!("{a}");                // a still owns the string
 }
 
-fn f(b: &mut u8) {  // borrow the 8-bit unigned value
-    *b = 5;
-}                   // transfer ownership back
+fn add_ah(b: &mut String) {         // b is just borrowing
+    b.push_str("ah")                // (i.e., b is not the owner)
+}                                   // done borrowing

@@ -14,6 +14,6 @@ enum Token {
     }
 }
 
-let expression: [Token] = [.number(4.0), .plus, .identifier("x")]
+let expression: [Token] = [.number(3.0), .plus, .identifier("x")]
 let text = expression.map{$0.lexeme()}.joined(separator: " ")
-assert(text == "4.0 + x")
+assert(text == "3.0 + x")

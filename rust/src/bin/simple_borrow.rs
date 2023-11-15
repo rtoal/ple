@@ -1,7 +1,9 @@
 fn main() {
-    let a = vec![0, 1, 2];  // owned by variable a
-    println!("{a:?}");
-    let b = &a;             // b is just borrowing
-    println!("{a:?}");      // Totally fine, a still the owner
-    println!("{b:?}");      // Also fine, b is borrowing
+    let a = String::from("hi");   // owned by variable a
+    println!("{}", is_long(&a));  // pass a reference to borrow
+    println!("{a}");              // a still owns the string
 }
+
+fn is_long(b: &String) -> bool {  // b is just borrowing
+    b.len() > 10                  // (i.e., b is not the owner)
+}                                 // done borrowing
