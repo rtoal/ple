@@ -4,7 +4,7 @@ enum RaceResult {
 }
 
 fn main() {
-    let alice_result = RaceResult::Time(54.23);
+    let alice_result = RaceResult::Time(53.23);
     let _bob_result = RaceResult::DidNotFinish;
 
     if let RaceResult::Time(alice_time) = alice_result {
