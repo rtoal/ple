@@ -3,9 +3,7 @@ import Foundation
 struct Player {
     let name: String
     let team: String
-    let games: Int
-    let points: Int
-    var ppg: Double { return Double(points) / Double(games) }
+    let ppg: Double
 }
 
 var players = [Player]()
@@ -16,10 +14,9 @@ while let line = readLine() {
     let player = Player(
         name: info[1],
         team: info[0],
-        games: games,
-        points: points
+        ppg: Double(points) / Double(games)
     )
-    if player.games >= 15 {
+    if games >= 15 {
         players.append(player)
     }
 }
