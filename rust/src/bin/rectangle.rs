@@ -24,4 +24,3 @@ fn main() {
     println!("Area: {}", r.area());
     assert_eq!(r.dimensions(), (5.0, 10.0));
 }
-

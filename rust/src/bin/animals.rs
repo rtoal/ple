@@ -1,58 +1,34 @@
-trait Animal {
-    fn sound(&self) -> &'static str;
+trait Speaker {
     fn name(&self) -> &'static str;
+    fn sound(&self) -> &'static str;
     fn speak(&self) -> String {
         format!("{} says {}", self.name(), self.sound())
     }
-    fn new(name: &'static str) -> Self;
 }
 
 struct Horse {
     name: &'static str,
 }
 
-impl Animal for Horse {
-    fn sound(&self) -> &'static str {
-        "neigh"
-    }
-    fn new(name: &'static str) -> Horse {
-        Horse {name}
-    }
+impl Speaker for Horse {
     fn name(&self) -> &'static str { self.name }
+    fn sound(&self) -> &'static str { "neigh" }
 }
 
 struct Cow {
     name: &'static str,
 }
 
-impl Animal for Cow {
-    fn sound(&self) -> &'static str {
-        "moooo"
-    }
-    fn new(name: &'static str) -> Cow {
-        Cow {name: name}
-    }
+impl Speaker for Cow {
     fn name(&self) -> &'static str { self.name }
-}
-
-struct Sheep {
-    name: &'static str,
-}
-
-impl Animal for Sheep {
-    fn sound(&self) -> &'static str {
-        "baaaa"
-    }
-    fn new(name: &'static str) -> Sheep {
-        Sheep {name: name}
-    }
-    fn name(&self) -> &'static str { self.name }
+    fn sound(&self) -> &'static str { "moooo" }
 }
 
 fn main() {
-    let h = Horse::new("CJ");
-    println!("{}", h.speak());
-    let c : Cow = Animal::new("Bessie");
-    println!("{}", Animal::speak(&c));
-    println!("{}", Sheep::speak(&Sheep::new("Little Lamb")));
+    let h = Horse { name: "CJ" };
+    let c = Cow { name: "Bessie" };
+    let animals: Vec<&dyn Speaker> = vec![&h, &c];
+    for animal in animals.iter() {
+        println!("{}", animal.speak());
+    }
 }
