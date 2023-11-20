@@ -24,9 +24,18 @@ impl Speaker for Cow {
     fn sound(&self) -> &'static str { "moooo" }
 }
 
+// Static dispatch example (trait bounds)
+fn print_dialog_line<T: Speaker>(animal: &T) {
+    println!("Narrator: {}", animal.speak());
+}
+
 fn main() {
     let h = Horse { name: "CJ" };
     let c = Cow { name: "Bessie" };
+
+    print_dialog_line(&h);
+
+    // Dynamic dispatch example (trait objects)
     let animals: Vec<&dyn Speaker> = vec![&h, &c];
     for animal in animals.iter() {
         println!("{}", animal.speak());
