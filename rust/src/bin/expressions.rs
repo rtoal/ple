@@ -2,11 +2,11 @@ fn main() {
     // Value of block expression is the last expression
     let eight = {
         let x = 3;
-        x + 5                     // No final semicolon, returns 9
+        x + 5                     // No final semicolon, produces 9
     };
     let unit = {
         let x = 3;
-        x + 5;                    // Final semicolon, returns ()
+        x + 5;                    // Final semicolon, produces ()
     };
     assert_eq!(eight, 8);
     assert_eq!(unit, ());
