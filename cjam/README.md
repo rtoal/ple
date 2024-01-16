@@ -26,7 +26,7 @@ Continue your study of CJam via:
 - [CJam Interpreter](https://tio.run/#cjam)
 - [CJam Code](https://sourceforge.net/p/cjam/code/ci/default/tree/src/net/aditsu/cjam/)
 
-## Lean Open Source Projects
+## CJam Open Source Projects
 
 There are some ticket requests on the CJam forum, which you can study and contribute to.
 
