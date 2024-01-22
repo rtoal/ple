@@ -5,8 +5,8 @@ import "core:strings"
 permutations :: proc(arr: []rune, n: int) {
     if n == 0 {
         builder := strings.builder_make()
-        for rune, _ in arr {
-            strings.write_encoded_rune(&builder, rune, false)
+        for r, _ in arr {
+            strings.write_encoded_rune(&builder, r, false)
         }
         fmt.println(strings.to_string(builder))
     } else {
