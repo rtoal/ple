@@ -1,21 +1,23 @@
 PROC to roman = (INT number) STRING:
   BEGIN 
-    INT n := number,
-    STRING roman,
-    [] STRUCT (INT value, STRING r) mapping = (
+    INT remaining := number,
+    STRING roman := "",
+    [] STRUCT (INT value, STRING part) mapping = (
       (1000, "M"), (900, "CM"), (500, "D"), (400, "CD"),
       (100, "C"), (90, "XC"), (50, "L"), (40, "XL"),
       (10, "X"), (9, "IX"), (5, "V"), (4, "IV"), (1, "I")
     );
     FOR i TO UPB mapping DO
-      INT v = value OF mapping[i],
-      STRING r = r OF mapping[i];
-      WHILE v LE n DO (roman +:= r, n -:= v) OD
+      INT value = value OF mapping[i];
+      WHILE value LE remaining DO
+        roman +:= part OF mapping[i];
+        remaining -:= value
+      OD
     OD;
     roman
   END;
 
+COMMENT A few test cases COMMENT
 print ((to roman (1968), new line));
 print ((to roman (6999), new line));
 print ((to roman (888), new line))
-
