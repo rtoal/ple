@@ -1,0 +1,25 @@
+begin
+  class Counter(count);
+    integer count;
+  
+  begin
+    procedure increment();
+      count := count + 1;
+
+    procedure decrement();
+      if count > 0 then count := count - 1;
+
+    procedure show();
+    begin
+      outtext("Value: "); outint(count, 0); outimage;
+    end;
+  end;
+
+  ref(Counter) c;
+  c :- new Counter(10);
+  c.increment;
+  c.increment;
+  c.decrement;
+  c.show;
+end;
+
