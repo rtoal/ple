@@ -1,23 +1,41 @@
 <img src="https://raw.githubusercontent.com/rtoal/ple/master/docs/resources/nim-logo-64.png" width="64" height="64">
 
-# Nim
-- **Creator**: Andreas Rumpf <br/>
-- **Released**: 2008 <br/>
-- **Unique Features**:
-    - Adopts an indentation-based syntax and has multiple language constructs which are inspired by Python
-    - **Advanced Language Features**:
-      - Incorporates features such as multi-line lambdas, subrange types, distinct types, and safe variants inspired by Ada
-      - Also distinguishes between traced and untraced pointers, borrowing from Modula
-    - Statically typed, providing the benefits of early error detection. In addition, it supports object-oriented programming principles
-    - **Metaprogramming Capabilities**:
-      - Leverages metaprogramming with the support of templates and macros
-      - Templates declaratively specify code generation, while macros enable compile-time transformations
-    - **Cross-Compilation**:
-      - The compiler defaults to generating optimized C code
-      - Can also emit C++ and Javascript code, causing smooth interaction with APIs written in those languages
-    - **Deterministic Memory Management**:
-      - Employs a reference counting-based memory management strategy, ensuring deterministic memory handling
-      - Allows developers to customize memory management according to their needs
-- **Notes**
-  - Nim introduces a "stropping" feature that enables the use of any name for a variable, even if it coincides with a keyword. This is achieved using backticks.
-  - Nim has gained popularity in the ethical hacking community due to its simplicity and cross-compilation capabilities.
+# Nim Explorations
+
+To program with Nim on a Unix system you will need to download `choosenim`, an installer for the language. To do so, run the following code in your terminal.
+
+```
+curl https://nim-lang.org/choosenim/init.sh -sSf | sh
+```
+
+To install Nim on a Windows machine, download the latest zip file located on the [install Windows page](https://nim-lang.org/install_windows.html).
+
+Once installed, programs can be compiled from the terminal like so:
+
+```
+nim c helloworld.nim
+```
+
+It can then be run on a Unix system by typing `./helloworld` and for Windows by typing `helloworld.exe`.
+
+## About Nim
+
+Nim, a statically-typed and compiled systems language, began development in 2008. Nim was created by Andreas Rumpf and his team with the purpose of being efficient, expressive, and elegant. In addition, Nim contains many improvements from the languages it has been inspired by. An example of this is how, unlike Python, Nim implements static typing and allows for simple type conversions.
+
+Notably, the language is very popular among the ethical hacking community due to its simplicity and robust cross-compilation capabilities.
+
+## Nim Resources
+
+Continue your study of Nim via:
+
+- [Nim Home](https://nim-lang.org)
+- [Nim Docs Home](https://nim-lang.org/documentation.html)
+- [Nim Basics Tutorial](https://narimiran.github.io/nim-basics/)
+- [Nim for Beginners](https://youtube.com/playlist?list=PLvwc2YT9MFOlPPexrsY-t7BNTdg2Vsx06&si=xZxnFrkUMWBZE5E5)
+- [Nim Programming Book](https://nimprogrammingbook.com)
+
+## Nim Open Source Projects
+
+There are some issue requests on the Nim GitHub, which you can study and contribute to.
+
+- [Nim GitHub](https://github.com/nim-lang/Nim/issues)
