@@ -6,13 +6,13 @@ To build and run Verse programs, you will need access to the Unreal Editor for F
 
 Access to a great walkthrough can be found on their [official page](https://dev.epicgames.com/documentation/en-us/uefn/run-your-first-verse-program-in-unreal-editor-for-fortnite)
 
-# About Verse
+## About Verse
 
 Verse was first conceived by Tim Sweeny and is the product of Simon Peyton Jones and the members of his team. It debuted at the Haskell eXchange in 2022 along with a foundational research paper explaining the core calculus for functional logic programming. Its official launch occurred in March 2023 at the Game Developers Conference, coinciding with the release of the Unreal Editor for Fortnite. Scheduled for integration with all Unreal Engine Users by 2025, Verse eventually aims to be used for even larger applications, including influencing the metaverse.
 
 The language is a member of the functional logic programming category, which has been researched by Simon Peyton Jones for the majority of his professional life. His goal was to make that type of programming more accessible. With aims to combine diverse applications—from code to proofs—Verse aspires to become the singular language for these multifaceted tasks.
 
-# Verse Resources
+## Verse Resources
 
 Continue your study of Verse via:
 
@@ -22,6 +22,6 @@ Continue your study of Verse via:
 - [Exploring Verse, Haskell, Language Design and Teaching](https://www.youtube.com/watch?v=UBgam9XUHs0)
 - [The Verse Calculus](https://simon.peytonjones.org/assets/pdfs/verse-March23.pdf)
 
-# Verse Open Source Projects
+## Verse Open Source Projects
 
 We are not yet aware of any open source projects in Verse, but if you know any send us a pull request.
