@@ -38,7 +38,7 @@ Continue your study of JavaScript via:
 
 - [Awesome JavaScript](https://github.com/sorrycc/awesome-javascript)
 - Another [Awesome JavaScript](https://js.libhunt.com/)
-- [The Official Language Specification](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/)
+- [The Official Language Specification](https://tc39.es/ecma262/)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web)
 - [Axel Rauschmayer's Books](https://exploringjs.com/)
 - [Axel Rauschmayer's Blog](http://www.2ality.com/)
