@@ -10,7 +10,7 @@ Once you install, you can run files in this repository with `gleam run` with an 
 
 ## About Gleam
 
-⁤Gleam, created by Louis Pilfold, is a modern, type-safe programming language designed for crafting scalable systems with ease and safety. ⁤⁤Set on the highly concurrent and fault-tolerant Erlang virtual machine, it borrows the reliability of Erlang's ecosystem while offering a familiar and contemporary syntax, emphasizing type safety and functional programming paradigms. ⁤⁤Gleam boasts seamless interoperability with BEAM languages like Erlang and Elixir, allowing developers to leverage the extensive library ecosystem, and it extends its versatility by compiling to JavaScript for browser-based applications.
+⁤Gleam, created by Louis Pilfold, is a modern, type-safe programming language designed for crafting scalable systems with ease and safety. ⁤⁤Set on the Erlang virtual machine, it borrows the reliability of Erlang's ecosystem, implementing a familiar and contemporary syntax and emphasizing type safety and functional programming paradigms. ⁤⁤Gleam boasts seamless interoperability with BEAM languages like Erlang and Elixir, allowing developers to leverage the extensive library ecosystem while introducing new features. Additionally, it compiles to JavaScript allowing for browser-based applications.
 
 ⁤An [interactive language tour](https://tour.gleam.run/) available online covers all aspects of the language, allowing developers to write, compile, and evaluate Gleam code directly in their browsers. ⁤⁤For more information, including documentation, community resources, and learning materials, visit the [official website and documentation page](https://gleam.run/).
 
