@@ -1,1 +1,17 @@
+CreatePolygonCube;
+
+//dimensions and position of polyCube1
+polyCube -w 1 -h 1 -d 1 -sx 2 -sy 2 -sz 2 -ax 0 1 0 -cuv 4 -ch 1;
+
+//sets the # of subdivisions on each side of the cube equal to 1; it becomes a smooth cube
+
+setAttr "polyCube1.subdivisionsWidth" 1;
+setAttr "polyCube1.subdivisionsHeight" 1;
+setAttr "polyCube1.subdivisionsDepth" 1;
+
+//sets the # of subdivisions on each side of the cube equal to 4; it is subdivided on all axes
+
+setAttr "polyCube1.subdivisionsWidth" 4;
+setAttr "polyCube1.subdivisionsHeight" 4;
+setAttr "polyCube1.subdivisionsDepth" 4;
 
