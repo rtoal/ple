@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/rtoal/polyglot/master/docs/resources/gleam-logo-64.png">
+<img src="https://raw.githubusercontent.com/rtoal/polyglot/master/docs/resources/gleam-logo-full.png">
 
 # Gleam Explorations
 
