@@ -4,7 +4,7 @@
 
 The easiest way to begin coding with Gleam is to use the [Gleam Tutorial's Interpreter](https://tour.gleam.run/). This web-based tool allows you to write and run Gleam code without needing to install anything on your computer.
 
-For those who want to download and code straight from your desired editor, you can visit [Gleam's Webpage](https://gleam.run/getting-started/installing/#installing-gleam) for instructions for downloading for your OS.
+For those who want to download and code from your desired editor, you can visit [Gleam's Webpage](https://gleam.run/getting-started/installing/#installing-gleam) for instructions to download straight to your OS.
 
 Once you install, you can run files in this repository with `gleam run` with an optional [-m filename] to run a specific module.
 
