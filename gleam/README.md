@@ -6,7 +6,7 @@ The easiest way to begin coding with Gleam is to use the [Gleam Tutorial's Inter
 
 For those who want to download and code from your desired editor, you can visit [Gleam's Webpage](https://gleam.run/getting-started/installing/#installing-gleam) for instructions to download straight to your OS.
 
-Once you install, you can run files in this repository with `gleam run` with an optional [-m filename] to run a specific module.
+Once you install, it is reccomended to use a Gleam Project structure which can be created by running `gleam new [project_name]` in your desired folder. The folder will contain a src directory that will contain a main file under the name `[project_name].gleam`. To run the project, type `gleam run` in the terminal with an optional -m to run a specific module.
 
 ## About Gleam
 
