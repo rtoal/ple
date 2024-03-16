@@ -6,8 +6,16 @@ export function variableDeclaration(variable, initializer) {
   return { kind: "VariableDeclaration", variable, initializer }
 }
 
+export function variable(name) {
+  return { kind: "Variable", name }
+}
+
 export function functionDeclaration(fun, params, body) {
   return { kind: "FunctionDeclaration", fun, params, body }
+}
+
+export function fun(name, paramCount) {
+  return { kind: "Function", name, paramCount }
 }
 
 export function assignment(target, source) {
@@ -37,21 +45,3 @@ export function binary(op, left, right) {
 export function unary(op, operand) {
   return { kind: "UnaryExpression", op, operand }
 }
-
-export function variable(name, readOnly) {
-  return { kind: "Variable", name, readOnly }
-}
-
-export function fun(name, paramCount) {
-  return { kind: "Function", name, paramCount }
-}
-
-export const standardLibrary = Object.freeze({
-  π: variable("π", true),
-  sqrt: fun("sqrt", 1),
-  sin: fun("sin", 1),
-  cos: fun("cos", 1),
-  exp: fun("exp", 1),
-  ln: fun("ln", 1),
-  hypot: fun("hypot", 2),
-})

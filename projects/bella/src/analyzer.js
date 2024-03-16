@@ -7,9 +7,9 @@
 import * as core from "./core.js"
 
 class Context {
-  constructor({ parent, locals = {} }) {
+  constructor({ parent = null }) {
     this.parent = parent
-    this.locals = new Map(Object.entries(locals))
+    this.locals = new Map()
   }
   add(name, entity) {
     this.locals.set(name, entity)
@@ -25,7 +25,7 @@ export default function analyze(match) {
   // as necessary. When needing to descent into a new scope, create a new
   // context with the current context as its parent. When leaving a scope,
   // reset this variable to the parent context.
-  let context = new Context({ locals: core.standardLibrary })
+  let context = new Context({})
 
   // The single gate for error checking. Pass in a condition that must be true.
   // Use errorLocation to give contextual information about the error that will
@@ -53,10 +53,6 @@ export default function analyze(match) {
 
   function mustBeAFunction(entity, at) {
     must(entity?.kind === "Function", `${entity.name} is not a function`, at)
-  }
-
-  function mustNotBeReadOnly(entity, at) {
-    must(!entity.readOnly, `${entity.name} is read only`, at)
   }
 
   function mustHaveCorrectArgumentCount(argCount, paramCount, at) {
@@ -113,7 +109,6 @@ export default function analyze(match) {
 
     Statement_assign(id, _eq, exp, _semicolon) {
       const target = id.rep()
-      mustNotBeReadOnly(target, { at: id })
       return core.assignment(target, exp.rep())
     },
 
@@ -186,11 +181,11 @@ export default function analyze(match) {
     },
 
     true(_) {
-      return true
+      return 1
     },
 
     false(_) {
-      return false
+      return 0
     },
 
     num(_whole, _point, _fraction, _e, _sign, _exponent) {

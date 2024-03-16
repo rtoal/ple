@@ -9,7 +9,6 @@ const x = core.variable("x", false)
 const neg = x => core.unary("-", x)
 const power = (x, y) => core.binary("**", x, y)
 const cond = (x, y, z) => core.conditional(x, y, z)
-const sqrt = core.standardLibrary.sqrt
 const call = (f, args) => core.call(f, args)
 const letXEq1 = core.variableDeclaration(x, 1)
 const print = e => core.printStatement(e)
@@ -37,19 +36,12 @@ const tests = [
   ["folds negation", expression("- 8"), -8],
   ["optimizes 1**", expression("1 ** x"), 1],
   ["optimizes **0", expression("x ** 0"), 1],
-  ["optimizes sqrt", expression("sqrt(16)"), 4],
-  ["optimizes sin", expression("sin(0)"), 0],
-  ["optimizes cos", expression("cos(0)"), 1],
-  ["optimizes exp", expression("exp(1)"), Math.E],
-  ["optimizes ln", expression("ln(2)"), Math.LN2],
   ["optimizes deeply", expression("8 * (-5) + 2 ** 3"), -32],
-  ["optimizes arguments", expression("sqrt(20 + 61)"), 9],
   ["optimizes true conditionals", expression("1?3:5"), 3],
   ["optimizes false conditionals", expression("0?3:5"), 5],
   ["leaves nonoptimizable binaries alone", expression("x ** 5"), power(x, 5)],
   ["leaves 0**0 alone", expression("0 ** 0"), power(0, 0)],
   ["leaves nonoptimizable conditionals alone", expression("x?x:2"), cond(x, x, 2)],
-  ["leaves nonoptimizable calls alone", expression("sqrt(x)"), call(sqrt, [x])],
   ["leaves nonoptimizable negations alone", expression("-x"), neg(x)],
   [
     "optimizes in function body",
@@ -59,8 +51,8 @@ const tests = [
   ["removes x=x", program("let x=1; x=x; print(x);"), core.program([letXEq1, print(x)])],
   [
     "optimizes while test",
-    program("while sqrt(25) {}"),
-    core.program([core.whileStatement(5, [])]),
+    program("while 1+2 {}"),
+    core.program([core.whileStatement(3, [])]),
   ],
 ]
 

@@ -2,8 +2,6 @@
 // accepts a program representation and returns the JavaScript translation
 // as a string.
 
-import { standardLibrary } from "./core.js"
-
 export default function generate(program) {
   // When generating code for statements, we'll accumulate the lines of
   // the target code here. When we finish generating, we'll join the lines
@@ -35,7 +33,6 @@ export default function generate(program) {
       output.push(`let ${targetName(d.variable)} = ${gen(d.initializer)};`)
     },
     Variable(v) {
-      if (v === standardLibrary.π) return "Math.PI"
       return targetName(v)
     },
     FunctionDeclaration(d) {
@@ -45,15 +42,7 @@ export default function generate(program) {
       output.push("}")
     },
     Function(f) {
-      const standard = new Map([
-        [standardLibrary.sqrt, "Math.sqrt"],
-        [standardLibrary.sin, "Math.sin"],
-        [standardLibrary.cos, "Math.cos"],
-        [standardLibrary.exp, "Math.exp"],
-        [standardLibrary.ln, "Math.log"],
-        [standardLibrary.hypot, "Math.hypot"],
-      ]).get(f)
-      return standard ?? targetName(f)
+      return targetName(f)
     },
     PrintStatement(s) {
       const argument = gen(s.argument)

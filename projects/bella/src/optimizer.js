@@ -46,13 +46,6 @@ const optimizers = {
   Call(c) {
     c.callee = optimize(c.callee)
     c.args = c.args.map(optimize)
-    if (c.args.length === 1 && c.args[0].constructor === Number) {
-      if (c.callee.name === "sqrt") return Math.sqrt(c.args[0])
-      if (c.callee.name === "sin") return Math.sin(c.args[0])
-      if (c.callee.name === "cos") return Math.cos(c.args[0])
-      if (c.callee.name === "ln") return Math.log(c.args[0])
-      if (c.callee.name === "exp") return Math.exp(c.args[0])
-    }
     return c
   },
   Conditional(c) {

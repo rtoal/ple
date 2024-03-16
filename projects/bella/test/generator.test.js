@@ -19,9 +19,9 @@ const fixtures = [
     `,
     expected: dedent`
       let x_1 = 21;
-      let y_2 = true;
-      y_2 = ((((5 ** -(x_1)) / 100) > -(x_1)) || false);
-      console.log(((y_2 && y_2) || (false || ((x_1 * 2) != 5))));
+      let y_2 = 1;
+      y_2 = ((((5 ** -(x_1)) / 100) > -(x_1)) || 0);
+      console.log(((y_2 && y_2) || (0 || ((x_1 * 2) != 5))));
     `,
   },
   {
@@ -60,17 +60,6 @@ const fixtures = [
         return (((y_2 == 0)) ? (x_1) : (gcd_3(y_2,(x_1 % y_2))));
       }
       console.log(gcd_3(22,33));
-    `,
-  },
-  {
-    name: "standard library",
-    source: `
-      let x = π;
-      print(sin(x) - cos(x) + exp(x) * ln(x) / hypot(2.3, x));
-    `,
-    expected: dedent`
-      let x_1 = Math.PI;
-      console.log(((Math.sin(x_1) - Math.cos(x_1)) + ((Math.exp(x_1) * Math.log(x_1)) / Math.hypot(2.3,x_1))));
     `,
   },
 ]
