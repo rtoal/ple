@@ -1,0 +1,7 @@
+let dozen = 12;
+print(dozen % 3 ** 1);
+function gcd(x, y) = y == 0 ? x : gcd(y, x % y);
+while (!(dozen >= 3 || (gcd(1, 10) != 5 && true))) {
+  let y = dozen + 8 < 2 ? 1 : dozen;
+  dozen = dozen - 2.75E+19 ** 1 ** 3;
+}
