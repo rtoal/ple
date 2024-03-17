@@ -1,32 +1,21 @@
 import * as fs from "node:fs/promises"
-import stringify from "graph-stringify"
-import compile from "./compiler.js"
+import process from "node:process"
+import parse from "./parser.js"
+import analyze from "./analyzer.js"
+import optimize from "./optimizer.js"
+import generate from "./generator.js"
 
-const help = `Bella compiler
-
-Syntax: bella <filename> <outputType>
-
-Prints to stdout according to <outputType>, which must be one of:
-
-  parsed     a message that the program was matched ok by the grammar
-  analyzed   the statically analyzed representation
-  optimized  the optimized semantically analyzed representation
-  js         the translation to JavaScript
-`
-
-async function compileFromFile(filename, outputType) {
-  try {
-    const buffer = await fs.readFile(filename)
-    const compiled = compile(buffer.toString(), outputType)
-    console.log(stringify(compiled, "kind") || compiled)
-  } catch (e) {
-    console.error(`\u001b[31m${e}\u001b[39m`)
-    process.exitCode = 1
-  }
+function compile(source) {
+  return generate(optimize(analyze(parse(source))))
 }
 
-if (process.argv.length !== 4) {
-  console.log(help)
-} else {
-  compileFromFile(process.argv[2], process.argv[3])
+try {
+  if (process.argv.length !== 3) {
+    throw new Error("Must have exactly one argument, a file name")
+  }
+  const buffer = await fs.readFile(process.argv[2])
+  console.log(compile(buffer.toString()))
+} catch (e) {
+  console.error(`\u001b[31m${e}\u001b[39m`)
+  process.exitCode = 1
 }
