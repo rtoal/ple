@@ -16,12 +16,12 @@ const semanticErrors = [
   [
     "too few arguments",
     "function i(x)=x; print(i());",
-    /1 argument\(s\) required but 0 passed/,
+    /1 arg\(s\) required but 0 passed/,
   ],
   [
     "too many arguments",
     "function i(x)=x; print(i(5, 10));",
-    /1 argument\(s\) required but 2 passed/,
+    /1 arg\(s\) required but 2 passed/,
   ],
 ]
 
@@ -41,13 +41,13 @@ describe("The analyzer", () => {
   it(`produces the expected graph for the simple sample program`, () => {
     const program = analyze(parse(sample))
     let x = core.variable("x", false)
-    let f = core.fun("f", 1)
     let localX = core.variable("x", true)
+    let f = core.fun("f", [localX])
     assert.deepEqual(
       program,
       core.program([
         core.variableDeclaration(x, 3),
-        core.functionDeclaration(f, [localX], core.binary("*", 3, localX)),
+        core.functionDeclaration(f, core.binary("*", 3, localX)),
         core.whileStatement(1, [
           core.assignment(x, 3),
           core.printStatement(core.conditional(0, core.call(f, [x]), 2)),

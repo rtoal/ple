@@ -39,12 +39,11 @@ class Context {
   checkIsFunction(entity, name, at) {
     check(entity?.kind === "Function", `${name} is not a function`, at)
   }
-  checkArgumentCount(argCount, paramCount, at) {
-    check(
-      argCount === paramCount,
-      `${paramCount} argument(s) required but ${argCount} passed`,
-      at
-    )
+  checkArgumentCount(args, callee, at) {
+    const argCount = args.length
+    const paramCount = callee.params.length
+    const error = `${paramCount} arg(s) required but ${argCount} passed`
+    check(argCount === paramCount, error, at)
   }
 }
 
@@ -76,20 +75,19 @@ export default function analyze(match) {
       // Start by adding a new function object to this context. We won't
       // have the number of params yet; that will come later. But we have
       // to get the function in the context right way, to allow recursion.
-      const fun = core.fun(id.sourceString)
+      const fun = core.fun(id.sourceString, [])
       context.checkNotDeclared(id.sourceString, { at: id })
       context.add(id.sourceString, fun)
 
       // Add the params and body to the child context, updating the
       // function object with the parameter count once we have it.
       context = new Context({ parent: context })
-      const params = parameters.rep()
-      fun.paramCount = params.length
+      fun.params = parameters.rep()
       const body = exp.rep()
       context = context.parent
 
       // Now that the function object is created, we can make the declaration.
-      return core.functionDeclaration(fun, params, body)
+      return core.functionDeclaration(fun, body)
     },
 
     Params(_open, idList, _close) {
@@ -161,7 +159,7 @@ export default function analyze(match) {
       context.checkFound(callee, id.sourceString, { at: id })
       context.checkIsFunction(callee, id.sourceString, { at: id })
       const args = expList.asIteration().children.map(arg => arg.rep())
-      context.checkArgumentCount(args.length, callee.paramCount, { at: id })
+      context.checkArgumentCount(args, callee, { at: id })
       return core.call(callee, args)
     },
 

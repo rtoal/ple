@@ -9,10 +9,9 @@ const x = core.variable("x", false)
 const neg = x => core.unary("-", x)
 const power = (x, y) => core.binary("**", x, y)
 const cond = (x, y, z) => core.conditional(x, y, z)
-const call = (f, args) => core.call(f, args)
 const letXEq1 = core.variableDeclaration(x, 1)
 const print = e => core.printStatement(e)
-const parameterless = name => core.fun(name, 0)
+const parameterless = name => core.fun(name, [])
 const program = p => analyze(parse(p))
 const expression = e => program(`let x=1; print ${e};`).statements[1].argument
 
@@ -46,7 +45,7 @@ const tests = [
   [
     "optimizes in function body",
     program("function f() = 1+1;"),
-    core.program([core.functionDeclaration(parameterless("f"), [], 2)]),
+    core.program([core.functionDeclaration(parameterless("f"), 2)]),
   ],
   ["removes x=x", program("let x=1; x=x; print(x);"), core.program([letXEq1, print(x)])],
   [

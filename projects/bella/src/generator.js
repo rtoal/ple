@@ -36,7 +36,7 @@ export default function generate(program) {
       return targetName(v)
     },
     FunctionDeclaration(d) {
-      const params = d.params.map(targetName).join(", ")
+      const params = d.fun.params.map(targetName).join(", ")
       output.push(`function ${targetName(d.fun)}(${params}) {`)
       output.push(`return ${gen(d.body)};`)
       output.push("}")

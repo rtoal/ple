@@ -10,12 +10,12 @@ export function variable(name) {
   return { kind: "Variable", name }
 }
 
-export function functionDeclaration(fun, params, body) {
-  return { kind: "FunctionDeclaration", fun, params, body }
+export function functionDeclaration(fun, body) {
+  return { kind: "FunctionDeclaration", fun, body }
 }
 
-export function fun(name, paramCount) {
-  return { kind: "Function", name, paramCount }
+export function fun(name, params) {
+  return { kind: "Function", name, params }
 }
 
 export function assignment(target, source) {
