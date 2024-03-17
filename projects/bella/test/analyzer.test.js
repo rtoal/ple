@@ -10,13 +10,9 @@ const semanticChecks = [
 
 const semanticErrors = [
   ["using undeclared identifiers", "print(x);", /Identifier x not declared/],
-  ["a variable used as function", "x = 1; x(2);", /Expected "="/],
-  [
-    "a function used as variable",
-    "function f()=1; print(f + 1);",
-    /Functions can not appear here/,
-  ],
-  ["re-declared identifier", "let x = 1; let x = 2;", /Identifier x already declared/],
+  ["a variable used as function", "let x = 1; print x(2);", /x is not a function/],
+  ["a function used as variable", "function f()=1; print(f + 1);", /f is not a variable/],
+  ["re-declared identifier", "let x = 1; let x = 2;", /x already declared/],
   [
     "too few arguments",
     "function i(x)=x; print(i());",
