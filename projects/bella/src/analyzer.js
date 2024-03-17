@@ -21,29 +21,20 @@ class Context {
   constructor({ parent = null } = {}) {
     Object.assign(this, { parent, locals: new Map() })
   }
-  add(name, entity) {
+  add(id, entity) {
+    const name = id.sourceString
+    check(!this.locals.has(name), `${name} redeclared`, { at: id })
     this.locals.set(name, entity)
   }
-  lookup(name) {
-    return this.locals.get(name) || this.parent?.lookup(name)
+  get(name) {
+    return this.locals.get(name) || this.parent?.get(name)
   }
-  checkNotDeclared(name, at) {
-    check(!this.locals.has(name), `${name} already declared`, at)
-  }
-  checkFound(entity, name, at) {
-    check(entity, `Identifier ${name} not declared`, at)
-  }
-  checkIsVariable(entity, name, at) {
-    check(entity?.kind === "Variable", `${name} is not a variable`, at)
-  }
-  checkIsFunction(entity, name, at) {
-    check(entity?.kind === "Function", `${name} is not a function`, at)
-  }
-  checkArgumentCount(args, callee, at) {
-    const argCount = args.length
-    const paramCount = callee.params.length
-    const error = `${paramCount} arg(s) required but ${argCount} passed`
-    check(argCount === paramCount, error, at)
+  lookup(id, { expecting: kind }) {
+    const name = id.sourceString
+    const entity = this.get(name)
+    check(entity, `${name} not declared`, { at: id })
+    check(entity?.kind === kind, `${name} is not a ${kind}`, { at: id })
+    return entity
   }
 }
 
@@ -54,7 +45,9 @@ export default function analyze(match) {
   // reset this variable to its parent context.
   let context = new Context()
 
-  const builder = match.matcher.grammar.createSemantics().addOperation("rep", {
+  const semantics = match.matcher.grammar.createSemantics()
+
+  const builder = semantics.addOperation("rep", {
     Program(statements) {
       return core.program(statements.children.map(s => s.rep()))
     },
@@ -66,18 +59,16 @@ export default function analyze(match) {
       // was already defined in an outer scope.)
       const initializer = exp.rep()
       const variable = core.variable(id.sourceString, false)
-      context.checkNotDeclared(id.sourceString, { at: id })
-      context.add(id.sourceString, variable)
+      context.add(id, variable)
       return core.variableDeclaration(variable, initializer)
     },
 
     Statement_fundec(_fun, id, parameters, _equals, exp, _semicolon) {
-      // Start by adding a new function object to this context. We won't
-      // have the number of params yet; that will come later. But we have
-      // to get the function in the context right way, to allow recursion.
+      // Start by adding a new function object to this context. We
+      // won't have the params yet; we'll get them later. But we need
+      // the function in the context right way, to allow recursion.
       const fun = core.fun(id.sourceString, [])
-      context.checkNotDeclared(id.sourceString, { at: id })
-      context.add(id.sourceString, fun)
+      context.add(id, fun)
 
       // Add the params and body to the child context, updating the
       // function object with the parameter count once we have it.
@@ -86,16 +77,15 @@ export default function analyze(match) {
       const body = exp.rep()
       context = context.parent
 
-      // Now that the function object is created, we can make the declaration.
+      // Now everything is ready to make the declaration entity.
       return core.functionDeclaration(fun, body)
     },
 
     Params(_open, idList, _close) {
+      // Add all to current context and return them in an array.
       return idList.asIteration().children.map(id => {
         const param = core.variable(id.sourceString, true)
-        // All of the parameters have to be unique
-        context.checkNotDeclared(id.sourceString, { at: id })
-        context.add(id.sourceString, param)
+        context.add(id, param)
         return param
       })
     },
@@ -153,23 +143,20 @@ export default function analyze(match) {
     },
 
     Exp7_call(id, _open, expList, _close) {
-      // ids used in calls must have already been declared and must be
-      // bound to function entities, not to variable entities.
-      const callee = context.lookup(id.sourceString)
-      context.checkFound(callee, id.sourceString, { at: id })
-      context.checkIsFunction(callee, id.sourceString, { at: id })
+      // ids used in calls must have been declared and must be bound
+      // to function entities, not to variable entities.
+      const callee = context.lookup(id, { expecting: "Function" })
       const args = expList.asIteration().children.map(arg => arg.rep())
-      context.checkArgumentCount(args, callee, { at: id })
+      const [argCount, paramCount] = [args.length, callee.params.length]
+      const error = `${paramCount} arg(s) required but ${argCount} passed`
+      check(argCount === paramCount, error, { at: id })
       return core.call(callee, args)
     },
 
     Exp7_id(id) {
-      // ids used in expressions must have been already declared and
-      // must be bound to variable entities, not function entities.
-      const entity = context.lookup(id.sourceString)
-      context.checkFound(entity, id.sourceString, { at: id })
-      context.checkIsVariable(entity, id.sourceString, { at: id })
-      return entity
+      // ids used in expressions must have been declared and must be
+      // bound to variable entities, not to function entities.
+      return context.lookup(id, { expecting: "Variable" })
     },
 
     true(_) {

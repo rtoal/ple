@@ -45,8 +45,7 @@ export default function generate(program) {
       return targetName(f)
     },
     PrintStatement(s) {
-      const argument = gen(s.argument)
-      output.push(`console.log(${argument});`)
+      output.push(`console.log(${gen(s.argument)});`)
     },
     Assignment(s) {
       output.push(`${targetName(s.target)} = ${gen(s.source)};`)
