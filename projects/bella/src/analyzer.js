@@ -39,24 +39,23 @@ class Context {
 }
 
 export default function analyze(match) {
-  // Track the context manually via a simple variable. Add to this context
-  // as necessary. When needing to descent into a new scope, create a new
-  // context with the current context as its parent. When leaving a scope,
-  // reset this variable to its parent context.
+  // Track the context manually via a simple variable. Add bindings to
+  // the context as necessary. When needing to descend into a new scope,
+  // create a new context with the current context as its parent. When
+  // leaving a scope, reset this variable to its parent context.
   let context = new Context()
 
   const semantics = match.matcher.grammar.createSemantics()
-
   const builder = semantics.addOperation("rep", {
     Program(statements) {
       return core.program(statements.children.map(s => s.rep()))
     },
 
     Statement_vardec(_let, id, _eq, exp, _semicolon) {
-      // Analyze the initializer *before* adding the variable to the context,
-      // because we don't want the variable to come into scope until after
-      // the declaration. That is, "let x=x;" should be an error (unless x
-      // was already defined in an outer scope.)
+      // Analyze the initializer *before* adding the variable to the
+      // context, because we don't want the variable to come into scope
+      // until after the declaration. That is, "let x=x;" should be an
+      // error (unless x was already defined in an outer scope.)
       const initializer = exp.rep()
       const variable = core.variable(id.sourceString, false)
       context.add(id, variable)
@@ -66,12 +65,11 @@ export default function analyze(match) {
     Statement_fundec(_fun, id, parameters, _equals, exp, _semicolon) {
       // Start by adding a new function object to this context. We
       // won't have the params yet; we'll get them later. But we need
-      // the function in the context right way, to allow recursion.
+      // the function in the context right away, to allow recursion.
       const fun = core.fun(id.sourceString, [])
       context.add(id, fun)
 
-      // Add the params and body to the child context, updating the
-      // function object with the parameter count once we have it.
+      // The params and body go in a the child context.
       context = new Context({ parent: context })
       fun.params = parameters.rep()
       const body = exp.rep()

@@ -1,11 +1,7 @@
-// The code generator exports a single function, generate(program), which
-// accepts a program representation and returns the JavaScript translation
-// as a string.
-
 export default function generate(program) {
   // When generating code for statements, we'll accumulate the lines of
-  // the target code here. When we finish generating, we'll join the lines
-  // with newlines and return the result.
+  // the target code here. When we finish generating, we'll join the
+  // lines with newlines and return the result.
   const output = []
 
   // Variable names in JS will be suffixed with _1, _2, _3, etc. This is
@@ -24,13 +20,16 @@ export default function generate(program) {
   const gen = node => generators?.[node?.kind]?.(node) ?? node
 
   const generators = {
-    // Key idea: when generating an expression, just return the JS string; when
-    // generating a statement, write lines of translated JS to the output array.
+    // Key idea: when generating an expression, return the translated
+    // string; when generating a statement, write lines of translated
+    // code to the output array.
     Program(p) {
       p.statements.forEach(gen)
     },
     VariableDeclaration(d) {
-      output.push(`let ${targetName(d.variable)} = ${gen(d.initializer)};`)
+      const target = targetName(d.variable)
+      const source = gen(d.initializer)
+      output.push(`let ${target} = ${source};`)
     },
     Variable(v) {
       return targetName(v)
@@ -61,7 +60,10 @@ export default function generate(program) {
       return `${callee}(${args.join(",")})`
     },
     Conditional(e) {
-      return `((${gen(e.test)}) ? (${gen(e.consequent)}) : (${gen(e.alternate)}))`
+      const test = gen(e.test)
+      const consequent = gen(e.consequent)
+      const alternate = gen(e.alternate)
+      return `((${test}) ? (${consequent}) : (${alternate}))`
     },
     BinaryExpression(e) {
       return `(${gen(e.left)} ${e.op} ${gen(e.right)})`
