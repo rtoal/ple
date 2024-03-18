@@ -1,5 +1,4 @@
 import * as fs from "node:fs/promises"
-import process from "node:process"
 import parse from "./parser.js"
 import analyze from "./analyzer.js"
 import optimize from "./optimizer.js"
