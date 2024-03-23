@@ -8,3 +8,4 @@ a.out
 .*
 !/**/.prettierrc.json
 node_modules
+coverage
