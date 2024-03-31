@@ -6,7 +6,7 @@ The process to start coding with onyx is os-independent and can be done in a few
 
 First, run the command `sh <(curl https://get.onyxlang.io -sSfL)` which will install onyx on your machine. Once this is done, you can run `onyx build -V [filename].onyx`.
 
-Note that you can test out code online by visiting the [Onyx Online Compiler](try.onyxlang.io) without installing the compiler on your machine.
+You can also try out Onyx online by visiting the [Onyx Online Compiler](https://try.onyxlang.io) without installing the compiler on your machine.
 
 ## About Onyx
 
