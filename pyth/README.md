@@ -1,23 +1,22 @@
 # Pyth Explorations
 
-The easiest way to program with Pyth would be to use this [online interpreter](https://pyth-docker.azurewebsites.net). 
+The easiest way to get started with Pyth is to use this [online interpreter](https://pyth-docker.azurewebsites.net). 
 
-If you want to download the language, you will need to clone the github repository by typing `git clone https://github.com/isaacg1/pyth.git` in your terminal. 
+To run Pyth programs locally, you can clone the github repository by typing `git clone https://github.com/isaacg1/pyth.git` in your terminal. 
 
-Then add the following command to your .bashrc:
+Then add the following command to your .bashrc, .zshrc, or equivalent:
 
 ```
 alias pyth="python3 <path to pyth>/pyth.py"
 ```
 
-Windows users will have to use the PATH and call `pyth.py`.
+Windows users can set up their PATH variable and use `pyth.py`.
 
 ## About Pyth
 
-Pyth, developed by Izzy Grosof in 2014, is a golfing language that's heavily influenced by Python. Unlike other golfing languages, Pyth operates with a procedural approach instead of relying on stacks. It can also compile into Python programs. What sets Pyth apart is its simplicity and ability to be concise. For example, all functions, variables, and statements are represented by a single character. Additionally, printing is implicit, meaning it will automatically display the top item on the stack. 
+Pyth, developed by Izzy Grosof in 2014, is a golfing language that's heavily influenced by Python. Unlike other golfing languages, Pyth operates with a procedural approach instead of relying on a stack. It can also compile into Python programs. What sets Pyth apart is its simplicity and ability to be concise. For example, all functions, variables, and statements are represented by a single character. Additionally, printing is implicit, and ending quotes are automatically added for you at the end of a program.
 
-If you're interested, you can check out the formal specifications of Pyth commands [here](https://pyth.readthedocs.io/en/latest/spec_vars.html).
-
+The language features excellent documentation at [Read The Docs](https://pyth.readthedocs.io/en/latest/index.html).
 ## Pyth Resources
 
 Continue your study of Pyth via:
@@ -27,6 +26,6 @@ Continue your study of Pyth via:
 - [Pyth Interpreter](https://pyth-docker.azurewebsites.net)
 - [Pyth Esolang Wiki](https://esolangs.org/wiki/Pyth#Language_Overview)
 
-## Pyth Open Source Projects
+## Pyth Open Source
 
 The [GitHub issues page](https://github.com/isaacg1/pyth/issues) has opportunities to contribute to the development of the language.
