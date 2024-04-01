@@ -2,13 +2,33 @@
 
 # C++ Explorations
 
-To get C++:
-
 If you don't have a text editor or IDE installed, you can use <a href="https://replit.com/">replit</a> to write and compile simple C++ programs.
 
 To build and run C++ programs locally, you will likely be able to take advantage of a pre-installed C++ compiler such as <code>g++</code> (Unix) or <code>clang++</code> (MacOS). On MacOS, the command <code>g++</code> is likely aliased to <code>clang++</code>.
 
 For Windows, a simple approach is to install <a href="https://www.mingw-w64.org/">MinGW-w64</a>.
+
+Once installed, programs in this folder can be run from the command line like so:
+
+```
+g++ -std=c++20 triple.cpp && ./a.out
+```
+
+```
+g++ -std=c++20 permutations.cpp && ./a.out I like carrots
+```
+
+```
+g++ -std=c++20 top_ten_scorers.cpp && ./a.out
+```
+
+You may have to replace `a.out` with `a.exe` on Windows platforms.
+
+To run the tests on a Unix-like shell:
+
+```
+./test.sh
+```
 
 # About C++
 

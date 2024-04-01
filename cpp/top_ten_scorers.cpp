@@ -40,7 +40,6 @@ int main() {
             << std::left << std::setw(22) << player.name
             << std::left << std::setw(4) << player.team
             << std::right << std::fixed << std::setprecision(2) << std::setw(8) << player.ppg
-             << std::endl;
+            << std::endl;
     }
-    return 0;
 }
