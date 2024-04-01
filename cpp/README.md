@@ -48,7 +48,7 @@ These two sources are widely considered to be the best sources.
 Studying, and contributing to, open source projects is an excellent way to improve your proficiency in any language. Here is just a tiny sampling the thousands of projects featuring C++:
 
 - [TensorFlow](https://github.com/tensorflow/tensorflow)
-- [React Electron](https://github.com/electron/electron)
+- [Electron](https://github.com/electron/electron)
 - [Godot](https://github.com/godotengine/godot)
 - [Google Test](https://github.com/google/googletest)
 - [ClickHouse](https://github.com/ClickHouse/ClickHouse)
