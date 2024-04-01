@@ -34,18 +34,18 @@ To run the tests on a Unix-like shell:
 
 C++ originated in the 1970s, when Bjarne Stroustrup implemented a simulator to study communication between programs in a distributed environment. After finding existing unsatisfactory for various reasons, Stroustup designed a new language, a superset of C with Simula's classes, but without garbage collection, run-time type checking, and the impossibly low-level near-typelessness of BCPL. The language went by the name C with Classes and evolved, by 1983, into C++, popularizing object-oriented programming like no other language before it.
 
-As a superset of C, C++ necessarily permits manual memory management, but encourages memory-safe programming patterns such as \defn{smart pointers} and the use of class constructors to allocate memory and destructors to deallocate, hiding management details from users of the class. C++ encourages all user-defined data types to act as if they were copied, but provides mechanisms to avoid copies via moves. Pointers and aliases (confusingly termed references in C++) are available when explicit sharing is desired. C++ is statically typed with extensive type inference, range-based \verb!for!-loops, atomics, and anonymous functions (even supporting generics). The combination of expressive constructs and system-level memory operations with incredible high performance have kept the language relevant and widely-used.
+As a superset of C, C++ necessarily permits manual memory management, but encourages memory-safe programming patterns such as **smart pointers** and the use of class constructors to allocate memory and destructors to deallocate, hiding management details from users of the class. C++ encourages all user-defined data types to act as if they were copied, but provides mechanisms to avoid copies via **moves**. Pointers and aliases (confusingly termed **references** in C++) are available when explicit sharing is desired. C++ is statically typed with extensive type inference, range-based for-loops, atomics, and anonymous functions (even supporting generics). The combination of expressive constructs and system-level memory operations with incredible high performance have kept the language relevant and widely-used.
 
 # C++ Resources
 
 These two sources are widely considered to be the best sources.
 
-- [C++ reference](https://en.cppreference.com/w/)
+- [C++ Reference](https://en.cppreference.com/w/)
 - [LearnCPP.com](https://www.learncpp.com/)
 
 # C++ Open Source Projects
 
-Studying, and contributing to, open source projects is an excellent way to improve your proficiency in any language. Due to its long history, there is no possible way to contain all the C++ open-source projects but a few will be provided here:
+Studying, and contributing to, open source projects is an excellent way to improve your proficiency in any language. Here is just a tiny sampling the thousands of projects featuring C++:
 
 - [TensorFlow](https://github.com/tensorflow/tensorflow)
 - [React Electron](https://github.com/electron/electron)
