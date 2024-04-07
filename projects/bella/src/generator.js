@@ -17,7 +17,10 @@ export default function generate(program) {
     }
   })(new Map())
 
-  const gen = node => generators?.[node?.kind]?.(node) ?? node
+  function gen(node) {
+    // Node types without explicit handlers just "pass through"
+    return generators?.[node?.kind]?.(node) ?? node
+  }
 
   const generators = {
     // Key idea: when generating an expression, return the translated
