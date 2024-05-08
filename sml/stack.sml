@@ -18,10 +18,10 @@ struct
 end;
 
 val s = Stack.empty;
-val s = Stack.push(10, s);
+val s = Stack.push(5, s);
 val s = Stack.push(3, s);
-val s = Stack.push(6, s);
-val s = Stack.push(12, s);
+val s = Stack.push(8, s);
+val s = Stack.push(13, s);
 val (x, s) = Stack.pop(s);
 
 Stack.size(s) = 3 orelse raise Fail "failure";
