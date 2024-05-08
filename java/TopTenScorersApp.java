@@ -9,7 +9,7 @@ public class TopTenScorersApp {
             static Player fromLine(String[] line) {
                 var points = Double.parseDouble(line[3]);
                 var games = Integer.parseInt(line[2]);
-                return new Player(line[0], line[1], games, points / games);
+                return new Player(line[0], line[1], games, points/games);
             }
 
             String reportLine() {
