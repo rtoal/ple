@@ -8,7 +8,7 @@ For MacOS users, installation via Homebrew is straightforward. Simply type the f
 brew install algol68g
 ``` 
 
-To start writing code you can write from these [example programs]. (https://jmvdveer.home.xs4all.nl/en.browse.algol-68-genie-current.html)
+To start writing code you can write from these [example programs](https://jmvdveer.home.xs4all.nl/en.browse.algol-68-genie-current.html).
 
 Programs can be run from the command line like so:
 
