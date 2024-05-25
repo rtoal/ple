@@ -17,11 +17,18 @@ struct
    fun size (s) = length s;
 end;
 
+(* Tests *)
 val s = Stack.empty;
+Stack.size s = 0 orelse raise Fail "failure";
+Stack.pop s handle Domain => (0, s);
+
 val s = Stack.push(5, s);
 val s = Stack.push(3, s);
 val s = Stack.push(8, s);
 val s = Stack.push(13, s);
-val (x, s) = Stack.pop(s);
 
-Stack.size(s) = 3 orelse raise Fail "failure";
+val (x, s) = Stack.pop(s);
+x = 13 orelse raise Fail "failure";
+Stack.size s = 3 orelse raise Fail "failure";
+
+val _ = print("All tests passed\n");
