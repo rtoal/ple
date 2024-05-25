@@ -17,5 +17,4 @@ let () = s#push 8
 let () = s#push 13
 let x = s#pop
 let size = s#size
-
 let () = Printf.printf "x = %d, size = %d\n" x size

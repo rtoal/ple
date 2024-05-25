@@ -21,5 +21,4 @@ let s = Stack.push 8 s
 let s = Stack.push 13 s
 let (x, s) = Stack.pop s
 let size = Stack.size s
-
 let () = Printf.printf "x = %d, size = %d\n" x size
