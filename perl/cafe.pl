@@ -1,5 +1,4 @@
-# This script uses hashes to take a customer's order
-# Hashes with key-value pairs, where the drinks/syrups are the keys
+# An illustration of hashes and user input
 
 %drinks_available = (
     "mocha" => 1,
@@ -16,8 +15,8 @@
 
 print("What drink would you like to order? We have mocha, matcha, and tea.\n");
 $customer_drink = <STDIN>;
-chomp($customer_drink); # Removes a newline character at the end of the input
-$customer_drink = lc($customer_drink); # Convert to lowercase
+chomp($customer_drink);
+$customer_drink = lc($customer_drink);
 
 print("Which syrup? We have raspberry, lavender, blueberry, and vanilla.\n");
 $customer_syrup = <STDIN>;
@@ -29,4 +28,3 @@ if ($drinks_available{$customer_drink} and $syrups_available{$customer_syrup}) {
 } else {
     print("Unfortunately, we do not have at least one of those items.\n");
 }
-

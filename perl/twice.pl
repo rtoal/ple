@@ -7,7 +7,7 @@ sub twice {
 }
 
 sub square { $_[0] * $_[0]; }
-sub addSix { $_[0] + 6; }
+sub addFive { $_[0] + 5; }
 
-die unless twice(\&square, 5) == 625;
-die unless twice(\&addSix, 8) == 20;
+die unless twice(\&square, 3) == 81;
+die unless twice(\&addFive, 8) == 18;

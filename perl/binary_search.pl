@@ -1,18 +1,19 @@
-# This script uses binary search to find a target number in an ordered array
+# A handcoded binary search, to illustrate some Perl features
 
-sub BinarySearch {
-    ($element_to_find, @ordered_array) = @_; # Parameters that will be defined outside the function
+sub binary_search {
+    # Arugments are passed as the list @_
+    ($element_to_find, @ordered_array) = @_;
 
     $array_length = scalar @ordered_array;
     $start_index = 0;
     $end_index = $array_length - 1;
 
-    while($start_index <= $end_index) {
+    while ($start_index <= $end_index) {
         $middle_index = int(($start_index + $end_index) / 2);
         $middle_element = @ordered_array[$middle_index];
 
         if ($middle_element == $element_to_find) {
-            return 1; # Return 1 for true  
+            return 1; # 1 means true
         }
         elsif ($middle_element < $element_to_find) {
             $start_index = $middle_index + 1;
@@ -22,18 +23,12 @@ sub BinarySearch {
         }
     }
 
-    return 0; # Return 0 for false
+    return 0; # 0 means false
 } 
 
-@ordered_array = (1, 3, 5, 7);
-$element_to_find = 5;
-
-$result = BinarySearch($element_to_find, @ordered_array); # Calling the function with parameters
-
-if ($result) {
-    print "Element found!\n";
-} else {
-    print "Element not found.\n";
-}
-
+die unless binary_search(3, (1, 3, 5, 7, 9)) == 1;
+die unless binary_search(5, (1, 3, 5, 7, 9)) == 1;
+die unless binary_search(8, (1, 3, 5, 7, 9)) == 0;
+die unless binary_search(5, ()) == 0;
+die unless binary_search(5, (5)) == 1;
 
