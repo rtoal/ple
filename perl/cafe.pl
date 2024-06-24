@@ -1,5 +1,10 @@
 # An illustration of hashes and user input
 
+use strict;
+use warnings;
+use utf8;
+use open qw(:std :utf8);
+
 %drinks_available = (
     "mocha" => 1,
     "matcha" => 1,

@@ -6,7 +6,6 @@ use threads;
 
 # Returns the sum of the values in its first argument which
 # should be an array reference.
-
 sub sum {
     my $array = shift;
     my $length = scalar @$array;

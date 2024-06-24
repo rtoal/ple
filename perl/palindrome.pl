@@ -1,24 +1,17 @@
-# This script takes a user's word and determines if it is a palindrome or not
-print("Please enter a word to determine if it is a palindrome: ");
+use strict;
+use warnings;
+use utf8;
+use open qw(:std :utf8);
 
-$user_word = lc(<STDIN>);
-chomp($user_word);
-
-$reverse = reverse($user_word);
-
-if ($user_word =~ /^[A-Za-z]+$/){
-    # Confirms that the input only contains alphabetic characters
-
-    print("The reverse of the word $user_word is: $reverse \n");
-
-    if ($user_word eq $reverse) {
-    print("The word $user_word IS a palindrome. \n");
-    } 
-    else {
-        print("The word $user_word is NOT a palindrome. \n");
-    }
+sub palindrome {
+    my ($word) = @_;
+    my $reversed = reverse($word);
+    return $word eq $reversed
 }
 
-else {
-    print("Error: Input should contain alphabetic characters only. \n");
-}
+die unless palindrome("racecar") == 1;
+die unless palindrome("hello") == 0;
+die unless palindrome("a") == 1;
+die unless palindrome("ab") == 0;
+die unless palindrome("aba") == 1;
+die unless palindrome("キツツキ") == 1;

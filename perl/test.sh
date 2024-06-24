@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+perl binary_search.pl && \
 perl hello.pl && \
 perl primes.pl 100 && \
 perl ses.pl && \

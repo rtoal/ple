@@ -1,3 +1,5 @@
+use strict;
+use warnings;
 use List::Util qw(sum0);
 
 sub sum_of_even_squares {
