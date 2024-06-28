@@ -2,7 +2,9 @@
 
 # Nim Explorations
 
-To program with Nim on a Unix system you will need to download `choosenim`, an installer for the language. To do so, run the following code in your terminal.
+On macOs, `brew install nim`.
+
+On Unix systems in general, download `choosenim`, an installer for the language:
 
 ```
 curl https://nim-lang.org/choosenim/init.sh -sSf | sh
