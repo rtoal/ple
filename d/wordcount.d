@@ -15,6 +15,7 @@ void main() {
             word_count[match.hit.toLower()]++;
         }
     }
+
     foreach (word; sort(word_count.keys)) {
         writeln(format!"%s %s"(word, word_count[word]));
     }
