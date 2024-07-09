@@ -1,11 +1,11 @@
 class Cow
   def initialize(name : String) @name = name end
-  def speak: String "Moooo, my name is #{@name}" end
+  def speak() "Moooo, my name is #{@name}" end
 end
 
 class Sheep
   def initialize(name : String) @name = name end
-  def speak: String "Baaaa, my name is #{@name}" end
+  def speak() "Baaaa, my name is #{@name}" end
 end
 
 alias Animal = Cow | Sheep
