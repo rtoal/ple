@@ -10,6 +10,6 @@ end
 
 alias Animal = Cow | Sheep
 
-a : Animal = Cow.new "Bessie"
-a = Sheep.new "Little Lamb"
+a : Animal = Cow.new "Bessie"   # ok because a Cow is an Animal
+a = Sheep.new "Little Lamb"     # ok because a Sheep is an Animal
 print a.speak

@@ -4,14 +4,14 @@ open class Animal(private val name: String) {
 }
 
 class Cow(name: String): Animal(name) {
-    override fun sound() = "moooo"
+    override fun sound() = "Moooo"
 }
 
 class Sheep(name: String): Animal(name) {
-    override fun sound() = "baaaa"
+    override fun sound() = "Baaaa"
 }
 
-var a: Animal = Cow("Bessie")
-a = Animal("Stitch")
-a = Sheep("Little Lamb")
-assert(a.speak() == "baaaa, my name is Little Lamb")
+var a: Animal = Cow("Bessie")  // create an instance of class Cow
+a = Animal("Stitch")           // create an instance of class Animal
+a = Sheep("Little Lamb")       // create an instance of class Sheep
+assert(a.speak() == "Baaaa, my name is Little Lamb")
