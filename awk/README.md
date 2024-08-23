@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/rtoal/polyglot/master/docs/resources/awk-logo-64.png">
+
 # Awk Explorations
 
 Awk is usually pre-installed on GNU/Linux systems. To check, type `which awk` in the terminal. If it’s not available, follow the instructions on this [Environment Setup](https://www.tutorialspoint.com/awk/awk_environment.htm) page. 
