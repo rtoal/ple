@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-idris hello.idr -o a.out && ./a.out
+idris2 hello.idr -o hello && ./build/exec/hello
 
 if [ $? -ne 0 ]; then
     echo

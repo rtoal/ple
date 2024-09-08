@@ -30,7 +30,7 @@ To run the tests on a Unix-like shell:
 
 Haskell is a general-purpose, statically typed, purely functional programming language with type inference and lazy evaluation. It was created by a committee of researchers in 1990, and is named after the logician Haskell Curry. It is perhaps the most popular of the “pure“ functional languages, and is used in industry for a variety of purposes, including web development, data analysis, and machine learning.
 
-# Haskell Resources
+## Haskell Resources
 
 Continue your study of Haskell via:
 
