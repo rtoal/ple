@@ -6,11 +6,13 @@ To download AssemblyScript ensure that you are running the [latest version of No
 
 Then go into a new directory and enter the following commands into the terminal:
 
-```npm init```
+```
+npm init
 
-```npm install --save @assemblyscript/loader```
+npm install --save @assemblyscript/loader
 
-```npm install --save-dev assemblyscript```
+npm install --save-dev assemblyscript
+```
 
 The language also provides an easy way to scaffold up an AssemblyScript project by typing the command `npx asinit .`
 
