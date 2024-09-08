@@ -1,4 +1,5 @@
-#include <iostream>
+#include <stdexcept>
+#include <cassert>
 
 template <typename T, size_t N>
 class Tuple {
@@ -28,7 +29,5 @@ int main() {
     Tuple<int, y> u;
     u[0] = 1, u[1] = 2, u[2] = 3, u[3] = 4, u[4] = 5;
     Tuple<int, 8> v = append(t, u);
-    for (size_t i = 0; i < 8; i++) {
-        std::cout << v[i] << std::endl;
-    }
+    assert(v[1] == 20 && v[5] == 3);
 }
