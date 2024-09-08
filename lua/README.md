@@ -28,7 +28,7 @@ To run the tests on a Unix-like shell:
 
 ## About Lua
 
-Lua is a lightweight and efficient programming language. It was designed and implemented by a team led by Roberto Ierusalimschy at PUC-Rio, Pontifícia Universidade Católica do Rio de Janeiro, in Brazil. The first version of Lua was released in 1993 and it is still being actively developed today. Lua is a popular choice for game programming and was the implementation language for titles such as World of Warcraft and Angry Birds. It interoperates well with other languages, and can easily be embedded into C, C++, Java, Fortran, Smalltalk, and Erlang implementations.
+Lua is a lightweight and efficient programming language. It was designed and implemented by a team led by Roberto Ierusalimschy at PUC-Rio, Pontifícia Universidade Católica do Rio de Janeiro, in Brazil. The first version of Lua was released in 1993 and it is still being actively developed today. Lua is a popular choice for game programming and was the implementation language for titles such as World of Warcraft, Angry Birds, Hades II, Diner Dash, Roblox, and SimCity 4. It interoperates well with other languages, and can easily be embedded into C, C++, Java, Fortran, Smalltalk, and Erlang implementations.
 
 ## Lua Resources
 
@@ -40,6 +40,7 @@ Continue your study of Lua via:
 - [Lua Reference Manual](http://www.lua.org/manual/5.4/)
 - [The book _Programming in Lua_ by Lua’s creator, Roberto Ierusalimschy](http://www.lua.org/pil/)
 - [List of Lua Books](https://realtoughcandy.com/best-lua-books/)
+- [List of video games scripted in Lua](<https://en.wikipedia.org/wiki/Category:Lua_(programming_language)-scripted_video_games>)
 
 ## Lua Open Source Projects
 
