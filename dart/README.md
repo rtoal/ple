@@ -2,7 +2,7 @@
 
 # Dart Explorations:
 
-To build and run Dart programs on your local machine, download and install the latest version of the Dart SDK from the [Get the Dart SDK](https://dart.dev/get-dart) page. You can also [Try Dart](https://dart.dev/#try-dart)directly in your browser.
+To build and run Dart programs on your local machine, download and install the latest version of the Dart SDK from the [Get the Dart SDK](https://dart.dev/get-dart) page. You can also [Try Dart](https://dart.dev/#try-dart) directly in your browser.
 
 Once installed, you can compile and run Dart programs from the command line like this:
 
