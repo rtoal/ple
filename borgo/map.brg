@@ -1,0 +1,15 @@
+use fmt
+
+fn main() {
+    let m = Map.new()
+    m.Insert(3, "mice")
+    m.Insert(5, "cats")
+
+    let mut keys = []
+    fmt.Println("For loop over maps")
+    for (key, value) in m {
+        fmt.Println(key, value)
+        keys = keys.Append(key)
+    }
+    fmt.Println("Length of key list after adding keys:", keys.Len())
+}
