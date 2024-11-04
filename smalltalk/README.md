@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/rtoal/polyglot/master/docs/resources/smalltalk-logo-64.png">
+
 # Smalltalk Explorations:
 
 To begin coding with Smalltalk, start by installing the [Pharo Smalltalk environment](https://pharo.org/), which provides a modern, open-source Smalltalk development environment.
