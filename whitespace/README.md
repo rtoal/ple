@@ -15,3 +15,6 @@ Continue your study of Whitespace via:
 [Whitespace Mini-Tutorial](https://hackage.haskell.org/package/whitespace-0.4/src/docs/tutorial.html)  
 [Whitespace Wiki](https://esolangs.org/wiki/Whitespace)  
 [Whitespace Playground](https://www.dcode.fr/whitespace-language)  
+
+## TODO
+* Add alternative way to write whitespace using "s" for spaces and "t" for tabs created by a constructor program.
