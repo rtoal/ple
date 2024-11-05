@@ -7,5 +7,5 @@ var q6 = q1 * q4		# Quaternion(39, 33, 51, 3)
 
 print(q5 == Quaternion(6, 4, 11, 13))	# true
 print(q2 == q5)		# false
-print(q3)			# (-1, -2, -3, -4)
+print(q3)			# (-1, -2, -3, 4)
 print(q6)			# (39, 33, 51, 3)
