@@ -1,2 +1,4 @@
-func _init():
-    print("Hello World!")
+extends Node
+
+func _ready():
+	print("Hello world!")

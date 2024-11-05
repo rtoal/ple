@@ -1,37 +1,25 @@
+<img src="https://raw.githubusercontent.com/rtoal/polyglot/master/docs/resources/gdscript-logo-64.png">
+
 # GDScript Explorations:
 
-To begin coding with GDScript, start by installing the [Befunge93 interpreter](https://github.com/amicloud/befunge93). 
+![](https://sl.bing.net/is1fhrpSHlI)
 
-You can also explore other interpreters listed on the [Esolange Interpreters page](https://esolangs.org/wiki/Befunge#Interpreters).
-
-Once you have the interpreter installed, run a Befunge-93 program by calling `run` with your code as the argument. Here’s an example from the Befunge93 GitHub README:
-
-```
-const Befunge = require('befunge93');
-let befunge = new Befunge();
-
-befunge.run("1234v\n>9 #5>:#._@\n^876<")
-    .then((output) => {
-        console.log(output);
-    });
-```
+To begin coding with GDScript, start by installing the [GDScript Interpretor (Currently WIP)](). 
 
 ## About GDScript:
 
-Befunge is an Object Oriented programming language for the Godot Game Engine developed by _ ...
+GDScript is a high-level, object-oriented, imperative, and gradually typed programming language for the Godot Game Engine developed by _ . The aim of this programming language is to give game developers using Godot to reduce the complexity of code by utilizing built-in types within the code such as 2D/3D Vectors.
 
 ## GDScript Resources:
 
-Continue your study of Befunge via:
+Continue your study of GDScript via:
 
-[GDScript GitHub]()
-[GDScript Documentation]()
-[GDScript Tutorial](https://gdquest.github.io/learn-gdscript/?ref=godot-docs)
-[GDScript Interactive Interpreter]()
-[GDScript Wiki]()
+[Godot Game Engine](https://godotengine.org/)  
+[GDScript GitHub](https://github.com/godotengine/godot/tree/master/modules/gdscript)  
+[GDScript Main Documentation](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/index.html)  
+[GDScript Smaller Documentation](https://gdscript.com/)  
+[GDScript Tutorial](https://gdquest.github.io/learn-gdscript/?ref=godot-docs)  
+[GDScript Playground](https://gd.tumeo.space/#)  
+[GDScript Wiki]()  
 
-## Befunge Open Source Projects:
-
-Studying and contributing to open-source projects is a great way to build proficiency in any programming language. The GitHub repository for Befunge includes issues that are open for contribution:
-
-[Befunge GitHub Issues](https://github.com/catseye/Befunge-93/issues)
+Extas (for myself): https://www.francogarcia.com/en/blog/development-environments-gdscript/#interpreter-and-text-editor
