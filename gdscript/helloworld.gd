@@ -1,4 +1,5 @@
-extends Node
+extends SceneTree
 
-func _ready():
-    print("Hello world!")
+func _init():
+    print("Hello!")
+    quit()
