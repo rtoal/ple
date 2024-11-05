@@ -13,7 +13,7 @@ godot -s helloworld.gd
 ```
 Note that the files are formatted differently from the online playgrounds. This is because in order for the files to properly run, each of the files must extend the `SceneTree` class and have the name of the main function be `_init`. Online interpretors, however, extend to `Node` and the main function is named `_ready`.
 
-If you are unable to install Godot on your computer, then you can write on the third-party 
+If you are unable to install Godot on your computer, then you can write on the online third-party 
 [GDScript Playground](https://gd.tumeo.space/#).
 
 ## About GDScript:
