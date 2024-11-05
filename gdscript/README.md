@@ -3,7 +3,7 @@
 # GDScript Explorations:
 To begin coding with GDScript, start by installing the [GDScript Interpretor](https://docs.godotengine.org/en/3.3/getting_started/editor/command_line_tutorial.html). Another way to install the interpretor can be done [here](https://www.francogarcia.com/en/blog/development-environments-gdscript/#interpreter-and-text-editor).
 
-If you are on Windows and want to install Godot on the command line, type in the following command in Windows Powershell through the Administrator role (you will need to install [Chocolatey](https://chocolatey.org/install) if you have not yet done):
+If you are on Windows and want to install Godot on the command line, type in the following command in Windows Powershell through the Administrator role (you will need to install [Chocolatey](https://chocolatey.org/install) if you have not yet done so already):
 ```
 choco install godot
 ```
