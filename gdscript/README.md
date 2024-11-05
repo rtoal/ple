@@ -1,9 +1,6 @@
 <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/docs/resources/gdscript-logo-64.png">
 
 # GDScript Explorations:
-
-![](https://sl.bing.net/is1fhrpSHlI)
-
 To begin coding with GDScript, start by installing the [GDScript Interpretor (Currently WIP)](). 
 
 ## About GDScript:
