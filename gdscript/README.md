@@ -7,9 +7,9 @@ If you are on Windows and want to install Godot on the command line, type in the
 ```
 choco install godot
 ```
-To run a gdscript like helloworld.gd, type the following command:
+To run a gdscript like hello_world.gd, type the following command:
 ```
-godot -s helloworld.gd
+godot -s hello_world.gd
 ```
 Note that the files are formatted differently from the online playgrounds. This is because in order for the files to properly run, each of the files must extend the `SceneTree` class and have the name of the main function be `_init`. Online interpretors, however, extend to `Node` and the main function is named `_ready`.
 
