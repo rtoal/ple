@@ -64,3 +64,6 @@
     [++++++++++>-<]             Move c1 to c2 and divide c2 by 10
     <                           Go to c0
 ]
+
+TESTING (Prints ASCII value of the integer at c2):
+>>.
