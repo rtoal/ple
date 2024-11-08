@@ -15,7 +15,7 @@
 ----- ---
 
 >,,                     Store second boolean to c1
------ -----             Convert c0 from ASCII to boolean
+----- -----             Convert c1 from ASCII to boolean
 ----- -----
 ----- -----
 ----- -----
