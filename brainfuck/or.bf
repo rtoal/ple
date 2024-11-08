@@ -32,9 +32,10 @@
     > +                 Go to c2 and add 1
     < -                 Go to c1 and subtract by 1 
 ]
+<                       Go to c0 to end the program
 
 TESTING:
->                       Go to c2
+>>                      Go to c2
 +++++ +++++             Convert c2 from boolean to ASCII
 +++++ +++++
 +++++ +++++

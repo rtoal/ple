@@ -27,10 +27,10 @@
 [-<+>]                  Move c2 to c1                 
 <                       Go to c1      
 [>-<-]>+<               NOT operator where not(c1): c2
-
+<                       Go to c0
 
 TESTING:
->                       Go to c2
+>>                      Go to c2
 +++++ +++++             Convert c2 from boolean to ASCII
 +++++ +++++
 +++++ +++++

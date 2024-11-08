@@ -25,7 +25,7 @@
 [                       If c0 is 1 then run
     >> +                Go to c2 and add 1               
     <                   Go to c1
-    [>-<-]             If c1 is 1 then subtract 2 from c2 and 1 from c1
+    [>-<-]              If c1 is 1 then subtract 2 from c2 and 1 from c1
     < -                 Go to c0 and subtract by 1
 ]
 >                       Go to c1
@@ -33,9 +33,10 @@
     > +                 Go to c2 and add 1
     < -                 Go to c1 and subtract by 1 
 ]
+<                       Go to c0 to end the program
 
 TESTING:
->                       Go to c2
+>>                      Go to c2
 +++++ +++++             Convert c2 from boolean to ASCII
 +++++ +++++
 +++++ +++++
