@@ -33,10 +33,10 @@
 
 TESTING:
 >>                      Go to c2
-+++++ +++++             Convert c1 from boolean to ASCII
++++++ +++++             Convert c2 from boolean to ASCII
 +++++ +++++
 +++++ +++++
 +++++ +++++
 +++++ +++
-.                       Print c1
+.                       Print c2
 
