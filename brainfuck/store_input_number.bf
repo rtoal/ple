@@ -1,6 +1,7 @@
 [
-    Converts a string of digits to an integer number.
-    Edgecase: If the number is negative, then output a negative number.
+    Converts a string of digits to an integer number and store it to c2. 
+    If the first character is negative, then store the negative number 
+    of that input.
 
     Things to note:
         - c0 is the accumulator
@@ -14,7 +15,6 @@
 ----- -----         
 ----- -----
 -----
-
 [                               Checks if the first character of the substring is not a minus symbol
     +++++ +++++                 Adds 32 back to c0
     +++++ +++++
