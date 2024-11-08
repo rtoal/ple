@@ -2,6 +2,7 @@
     Converts a string of digits to an integer number and store it to c2. 
     If the first character is negative, then store the negative number 
     of that input.
+    INPUT: [int]
 
     Things to note:
         - c0 is the accumulator
