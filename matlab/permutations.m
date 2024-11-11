@@ -1,5 +1,5 @@
 function permutations(items)
     for scrambled = perms(items).'
-        disp(scrambled.');
+        disp(scrambled.')
     end
 end
