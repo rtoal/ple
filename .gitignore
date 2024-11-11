@@ -5,6 +5,8 @@ a.out
 *.obj
 *.exe
 *.hi
+*.asv
+*.mat
 .*
 !/**/.prettierrc.json
 node_modules
