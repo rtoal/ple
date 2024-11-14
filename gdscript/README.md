@@ -31,10 +31,17 @@ Continue your study of GDScript via:
 [GDScript GitHub](https://github.com/godotengine/godot/tree/master/modules/gdscript)  
 [GDScript Main Documentation](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/index.html)  
 [GDScript Smaller Documentation](https://gdscript.com/)  
+[GDScript Extra Documentation](https://www.francogarcia.com/en/blog/development-environments-gdscript/#interpreter-and-text-editor)
+[GDScript Cheat-Cheat](https://godot.community/topic/78/gdscript-cheatsheet/2)
 [GDScript Tutorial](https://gdquest.github.io/learn-gdscript/?ref=godot-docs)  
 [GDScript Playground](https://gd.tumeo.space/#)  
 
 Godot and GDScript is a free and open source programming language, and you can contribute to the program here:
 [Godot Engine Contributions](https://docs.godotengine.org/en/stable/contributing/how_to_contribute.html)
 
-Extra Resources: https://www.francogarcia.com/en/blog/development-environments-gdscript/#interpreter-and-text-editor
+## Extra Facts About GDScript:
+One feature that is not included in GDScript is catching exceptions. Unlike most other languages, GDScript does not have a way to catch exceptions similar to how the try... catch keywords work. In response to the suggestion of including a exception catching mechanism, the developer stated that: 
+> Exceptions won't happen. Godot is designed for things to keep working even if state is inconsistent, while at the same time reporting errors
+
+
+
