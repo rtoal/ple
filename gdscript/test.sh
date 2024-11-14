@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-godot -s hello_world.gd && \
-godot -s triple.gd | diff ../test/triple_expected - && \
-
+godot --display-driver headless -s hello_world.gd && \
+godot --display-driver headless -s triple.gd | diff ../test/triple_expected - && \
+godot --display-driver headless -s vectors.gd && \
 
 if [ $? -ne 0 ]; then
     echo
