@@ -19,10 +19,10 @@ func _init():
     var vec9 = Vector3i(4, 2, 6)
     var vec10 = Vector3i(20, 3, 0)
 
-    # assert(vec1 == vec4) Invalid types.
+    #assert(vec1 == vec4) Invalid types.
     assert(vec1 == Vector2(vec4)) # Valid!
     assert(vec7 == Vector3(vec9)) # Valid!
-    # assert(Vector3(vec1) == vec8) # Cannot cast Vector2 to Vector3.
+    #assert(Vector3(vec1) == vec8) # Cannot cast Vector2 to Vector3.
     assert(vec3 == Vector2(0.2, 0.9))
     assert(vec6 == Vector2i(0, 0))
     assert(vec1 + vec2 == Vector2(9.3, 8.6))
