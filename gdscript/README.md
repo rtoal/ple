@@ -9,7 +9,7 @@ choco install godot
 ```
 To run a gdscript like hello_world.gd, run the following command:
 ```
-godot -s hello_world.gd --display-driver headless
+godot --display-driver headless --no-header -s hello_world.gd
 ```
 Note that the files are formatted differently from the online playgrounds. This is because in order for the files to properly run, each of the files must extend the `SceneTree` class and have the name of the main function be `_init`. Online interpretors, however, extend to `Node` and the main function is named `_ready`.
 
@@ -31,8 +31,8 @@ Continue your study of GDScript via:
 [GDScript GitHub](https://github.com/godotengine/godot/tree/master/modules/gdscript)  
 [GDScript Main Documentation](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/index.html)  
 [GDScript Smaller Documentation](https://gdscript.com/)  
-[GDScript Extra Documentation](https://www.francogarcia.com/en/blog/development-environments-gdscript/#interpreter-and-text-editor)
-[GDScript Cheat-Cheat](https://godot.community/topic/78/gdscript-cheatsheet/2)
+[GDScript Extra Documentation](https://www.francogarcia.com/en/blog/development-environments-gdscript/#interpreter-and-text-editor)  
+[GDScript Cheat-Cheat](https://godot.community/topic/78/gdscript-cheatsheet/2)  
 [GDScript Tutorial](https://gdquest.github.io/learn-gdscript/?ref=godot-docs)  
 [GDScript Playground](https://gd.tumeo.space/#)  
 
