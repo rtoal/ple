@@ -12,7 +12,7 @@ To run a PowerShell file (`.ps1` files), you can run the following command in th
 .\hello_world.ps1
 ```
 
-## About Windows PoweShell:
+## About Windows PowerShell:
 
 PowerShell is a cross-platform task automation softwawre that consists of a command-line shell, scripting language, and a configuration management framework developed by Microsoft on November 14, 2006.
 
