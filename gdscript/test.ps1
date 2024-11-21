@@ -18,9 +18,9 @@ godot --display-driver headless --no-header -s "$PSScriptRoot\static_variables.g
 godot --display-driver headless --no-header -s "$PSScriptRoot\sum_of_even_squares.gd" &&
 godot --display-driver headless --no-header -s "$PSScriptRoot\triple.gd" | Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") | Assert-MatchTests &&
 godot --display-driver headless --no-header -s "$PSScriptRoot\vectors.gd" &&
-ForEach-Object 'foo'
+ForEach-Object 'foo';
 
-if ($Error) {
+if ($Error -or !$?) {
     "*** GDSCRIPT TESTS FAILED ***"
 }
 else {
