@@ -6,5 +6,5 @@ func _init():
 		print("ERROR: you must have exactly 1 argument.")
 		quit()
 		return
-	print(FileAccess.open(args[2], FileAccess.READ).get_as_text())
+	print(FileAccess.open(args[2], FileAccess.READ).get_as_text().trim_suffix('\n'))
 	quit()
