@@ -38,7 +38,7 @@ kotlin -J-ea "$PSScriptRoot\variables.kt" &&
 kotlin -J-ea "$PSScriptRoot\vectors.kt" &&
 ForEach-Object 'foo';
 
-if ($Error) { 
+if ($Error -or $?) { 
     "*** KOTLIN TESTS FAILED ***" 
 }
 else { 
