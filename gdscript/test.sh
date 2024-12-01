@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 godot --display-driver headless --no-header -s anagrams.gd | diff - ../test/rats_heap_expected && \
+godot --display-driver headless --no-header -s clockhands.gd | diff - ../test/clockhands_expected && \
 godot --display-driver headless --no-header -s file_reader.gd ../test/carrots_expected | diff ../test/carrots_expected && \
 godot --display-driver headless --no-header -s fibonacci.gd && \
 godot --display-driver headless --no-header -s hello_world.gd && \

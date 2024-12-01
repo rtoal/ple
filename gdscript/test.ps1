@@ -12,6 +12,9 @@ $Error.clear()
 godot --display-driver headless --no-header -s "$PSScriptRoot\anagrams.gd" rats | 
     Compare-Object (Get-Content "$PSScriptRoot\..\test\rats_heap_expected") | 
     Assert-MatchTests &&
+godot --display-driver headless --no-header -s "$PSScriptRoot\clockhands.gd" |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
+    Assert-MatchTests && 
 godot --display-driver headless --no-header -s "$PSScriptRoot\fibonacci.gd" &&
 godot --display-driver headless --no-header -s "$PSScriptRoot\file_reader.gd" "$PSScriptRoot\..\test\carrots_expected" | 
     Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") | 
