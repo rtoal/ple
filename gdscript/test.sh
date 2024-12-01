@@ -3,6 +3,7 @@ godot --display-driver headless --no-header -s anagrams.gd | diff - ../test/rats
 godot --display-driver headless --no-header -s file_reader.gd ../test/carrots_expected | diff ../test/carrots_expected && \
 godot --display-driver headless --no-header -s fibonacci.gd && \
 godot --display-driver headless --no-header -s hello_world.gd && \
+#godot --display-driver headless --no-header -s lcs.gd ../test/lcs_input | diff - ../test/lcs_expected && \
 godot --display-driver headless --no-header -s permutations.gd I like carrots | diff - ../test/carrots_expected && \
 godot --display-driver headless --no-header -s quaternions.gd && \
 godot --display-driver headless --no-header -s static_variables.gd && \
