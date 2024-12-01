@@ -20,6 +20,7 @@ haxe -main HelloWorld --interp &&
 haxe -main Triple --interp | 
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") | 
     Assert-MatchTests &&
+haxe -main TypeDef --interp &&
 ForEach-Object 'foo';
 
 if ($Error -or !$?) { 
