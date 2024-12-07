@@ -27,7 +27,7 @@ GDScript is a high-level, object-oriented, imperative, and gradually typed progr
 
 The aim of this programming language is to give game developers at any skill level using Godot to reduce the complexity of code by reducing the amount of time needed to run Godot and the overall burden of maintenance. Syntactically, the language is very similar to Python, one of the most popular languages in the world.
 
-To learn more about GDScript, see the [Godot FAQs](https://docs.godotengine.org/en/stable/about/faq.html#doc-faq-what-is-gdscript).
+To learn more about the history of GDScript, see the [Godot FAQs](https://docs.godotengine.org/en/stable/about/faq.html#doc-faq-what-is-gdscript).
 
 ## GDScript Resources:
 
