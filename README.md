@@ -49,6 +49,7 @@ Unix-like virtual machine if you desire to run the test scripts yourself.
 | F#           |    ![](docs/resources/fsharp-logo-24.png)    |             |                                            |
 | Fortran      |    ![](docs/resources/erlang-logo-24.png)    |             | GNU Fortran (GCC) 6.1.0                    |
 | Futhark      |   ![](docs/resources/futhark-logo-24.png)    |             |                                            |
+| GDScript     |   ![](docs/resources/gdscript-logo-24.png)   |             |                                            |
 | Go           |      ![](docs/resources/go-logo-24.png)      | 1.16.4      |                                            |
 | Grain        |    ![](docs/resources/grain-logo-24.png)     | 0.5         |                                            |
 | Hack         |     ![](docs/resources/hack-logo-24.png)     |             |                                            |
@@ -57,7 +58,7 @@ Unix-like virtual machine if you desire to run the test scripts yourself.
 | Io           |      ![](docs/resources/io-logo-24.png)      | 20140919    |                                            |
 | J            |                                              |             |                                            |
 | Java         |     ![](docs/resources/java-logo-24.png)     | 20          |                                            |
-| JavaScript   |  ![](docs/resources/javascriptlogo-24.png)   | ES2023      | Node 20.3.1                                |
+| JavaScript   |  ![](docs/resources/javascript-logo-24.png)  | ES2023      | Node 20.3.1                                |
 | Julia        |    ![](docs/resources/julia-logo-24.png)     | 1.1.1       |                                            |
 | K            |      ![](docs/resources/k-logo-24.png)       |             | Kona Win.3.39-69                           |
 | Koka         |     ![](docs/resources/koka-logo-24.png)     |             |                                            |
