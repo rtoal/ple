@@ -1,6 +1,6 @@
 class OptionalArgs {
     static function describe(name : String, ?age : Int, ?job : String = "unenemployed") {
-        haxe.Log.trace('$name is age $age who is $job.');
+        haxe.Log.trace('$name is age ${age ?? 25} who is $job.');
     }
 
     static public function main():Void {
