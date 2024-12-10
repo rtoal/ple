@@ -13,10 +13,14 @@ choco install haxe
 To run a Haxe file like HelloWorld.hx, go to the same directory as the file and then run the following command:
 
 ```
-haxe -main HelloWorld --interp
+haxe --run HelloWorld
 ```
 
-Note that you omit the file extension when running.
+You can run the tests below on Powershell below using the following command:
+
+```
+.\test.ps1
+```
 
 ## About Haxe:
 
