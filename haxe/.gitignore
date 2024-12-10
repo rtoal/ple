@@ -1,0 +1,17 @@
+# Folders
+bin
+lib
+
+# Compiled Languages 
+*.js
+*.swf
+*.n
+*.php
+*.cpp
+*.cs
+*.java
+*.jar
+*.py
+*.lua
+*.hl
+*.cppia
