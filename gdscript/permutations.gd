@@ -15,7 +15,7 @@ func print_permutations(a, n):
 func _init():
 	var args = Array(OS.get_cmdline_args())
 	if len(args) < 3:
-		print("")
+		print("More than 1 argument is required.")
 	else:
 		print_permutations(args.slice(2), len(args.slice(2)) - 1)
 	quit()
