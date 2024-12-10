@@ -52,7 +52,7 @@ class Sheep extends Animal {
 }
 
 class Animals {
-  static public function main():Void {
+  public static function main():Void {
     var s = new Horse("CJ");
     Assert.expect(s.speak() == "CJ says neigh");
     var c = new Cow("Bessie");

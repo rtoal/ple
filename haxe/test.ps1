@@ -13,14 +13,26 @@ $currentLocation = $pwd
 Set-Location "$PSScriptRoot"
 
 $Error.clear()
-haxe -main ClockHands --interp |
+haxe --run Anagrams rats |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\rats_heap_expected") |
+    Assert-MatchTests &&
+haxe --run Animals |
+haxe --run ClockHands |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
-haxe -main HelloWorld --interp &&
-haxe -main Triple --interp | 
+haxe "$PSScriptRoot\ConditionalCompilation.hxml" &&
+haxe --run DynamicAccess &&
+haxe --run DynamicTypes &&
+haxe --run HelloWorld &&
+haxe --run Monomorph &&
+haxe --run OptionalArgs &&
+haxe --run Permutations I like carrots |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |
+    Assert-MatchTests &&
+haxe --run Triple | 
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") | 
     Assert-MatchTests &&
-haxe -main TypeDef --interp &&
+haxe --run TypeDef &&
 ForEach-Object 'foo';
 
 if ($Error -or !$?) { 

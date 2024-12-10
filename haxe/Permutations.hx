@@ -14,7 +14,7 @@ class Permutations {
       }
     }
   
-    static public function main():Void {
+    public static function main():Void {
       if (Sys.args().length < 1) {
         throw "More than 1 argument is required.";
       }

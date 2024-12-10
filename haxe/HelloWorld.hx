@@ -1,5 +1,5 @@
 class HelloWorld {
-  static public function main():Void {
+  public static function main():Void {
     trace("Hello World");
   }
 }

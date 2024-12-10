@@ -5,7 +5,7 @@ typedef Dancer = {
 }
 
 class TypeDef {
-  static public function main():Void {
+  public static function main():Void {
     var dancer:Dancer = {name: "Amy", age: 27, dance:dance};   
     haxe.Log.trace('${dancer.name} is aged ${dancer.age}', null);
     dancer.dance();

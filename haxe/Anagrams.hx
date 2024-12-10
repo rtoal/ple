@@ -14,7 +14,7 @@ class Anagrams {
     }
   }
 
-  static public function main():Void {
+  public static function main():Void {
     if (Sys.args().length != 1) {
       throw "Exactly one argument is required";
     }
