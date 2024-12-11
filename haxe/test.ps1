@@ -12,6 +12,10 @@ function Assert-MatchTests {
 $currentLocation = $pwd
 Set-Location "$PSScriptRoot"
 
+# Remove Python files in inline before clearing out errors.
+Remove-Item "$PSScriptRoot\inline\inline.py"
+Remove-Item "$PSScriptRoot\inline\inlineExcluded.py"
+
 $Error.clear()
 haxe --run Anagrams rats |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\rats_heap_expected") |
