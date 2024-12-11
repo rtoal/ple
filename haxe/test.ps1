@@ -24,6 +24,7 @@ haxe "$PSScriptRoot\ConditionalCompilation.hxml" &&
 haxe --run DynamicAccess &&
 haxe --run DynamicTypes &&
 haxe --run HelloWorld &&
+haxe "$PSScriptRoot\InlineTests.hxml" &&
 haxe --run Monomorph &&
 haxe --run OptionalArgs &&
 haxe --run Permutations I like carrots |
@@ -33,6 +34,10 @@ haxe --run Triple |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") | 
     Assert-MatchTests &&
 haxe --run TypeDef &&
+Get-Content "$PSScriptRoot\..\test\wordcount_ascii_input" |
+    haxe --run WordCount |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\wordcount_ascii_expected") |
+    Assert-MatchTests &&
 ForEach-Object 'foo';
 
 if ($Error -or !$?) { 
