@@ -34,6 +34,7 @@ haxe --run OptionalArgs &&
 haxe --run Permutations I like carrots |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |
     Assert-MatchTests &&
+haxe --run SumOfEvenSquares &&
 haxe --run Triple | 
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") | 
     Assert-MatchTests &&
