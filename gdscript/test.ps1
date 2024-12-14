@@ -29,10 +29,18 @@ godot --display-driver headless --no-header -s "$PSScriptRoot\permutations.gd" I
 godot --display-driver headless --no-header -s "$PSScriptRoot\quaternions.gd" &&
 godot --display-driver headless --no-header -s "$PSScriptRoot\static_variables.gd" &&
 godot --display-driver headless --no-header -s "$PSScriptRoot\sum_of_even_squares.gd" &&
+Get-Content "$PSScriptRoot\..\test\wnba_input" | 
+    godot --display-driver headless --no-header -s "$PSScriptRoot\top_ten_scorers.gd" | 
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\wnba_expected") |
+    Assert-MatchTests &&
 godot --display-driver headless --no-header -s "$PSScriptRoot\triple.gd" | 
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") | 
     Assert-MatchTests &&
 godot --display-driver headless --no-header -s "$PSScriptRoot\vectors.gd" &&
+Get-Content "$PSScriptRoot\..\test\wordcount_ascii_input" | 
+    godot --display-driver headless --no-header -s "$PSScriptRoot\word_count.gd" | 
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\wordcount_ascii_expected") |
+    Assert-MatchTests &&
 ForEach-Object 'foo';
 
 if ($Error -or !$?) {
