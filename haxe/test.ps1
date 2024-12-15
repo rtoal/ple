@@ -3,7 +3,7 @@ function Assert-MatchTests {
         [Parameter(Mandatory = $true, ValueFromPipeline)] $TestResult
     )
     $TestResult
-    if ($null -ne $TestResult) {
+    if ($TestResult) {
         Write-Error "Output does not match expected results."
     }
 }
@@ -22,6 +22,9 @@ haxe --run Anagrams rats |
     Assert-MatchTests &&
 haxe --run Animals |
 haxe --run ClockHands |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
+    Assert-MatchTests &&
+haxe --run ClockHandsPadding |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
 haxe "$PSScriptRoot\ConditionalCompilation.hxml" &&
