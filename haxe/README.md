@@ -4,7 +4,7 @@
 
 To begin coding with Haxe, start by installing the [Haxe Compiler](https://docs.godotengine.org/en/3.3/getting_started/editor/command_line_tutorial.html).
 
-If you are on Windows and want to install Godot on the command line, type in the following command in Windows Powershell through the Administrator role (you will need to install [Chocolatey](https://chocolatey.org/install) if you have not yet done so already):
+If you are on Windows and want to install Haxe on the command line, type in the following command in Windows Powershell through the Administrator role (you will need to install [Chocolatey](https://chocolatey.org/install) if you have not yet done so already):
 
 ```
 choco install haxe
@@ -22,6 +22,8 @@ You can run the tests below on Powershell below using the following command:
 .\test.ps1
 ```
 
+Note that the test for "InlineTests.hxml" won't work if you do not have Python installed/working on Powershell. If you don't have Python, comment that line for that test.
+
 ## About Haxe:
 
 Haxe is a high-level, object-oriented language TODO
@@ -32,4 +34,5 @@ Continue your study of Haxe via:
 
 [Haxe GitHub](https://github.com/HaxeFoundation)  
 [Haxe Documentation](https://haxe.org/documentation/introduction/)  
-[Haxelib Documentation](https://lib.haxe.org/)
+[Haxelib Documentation](https://lib.haxe.org/)  
+[Haxe Examples](https://ashes999.github.io/learnhaxe/index.html)
