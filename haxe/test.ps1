@@ -24,6 +24,9 @@ haxe --run Animals |
 haxe --run ClockHands |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
+haxe --run ClockHandsDateTools |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
+    Assert-MatchTests &&
 haxe --run ClockHandsPadding |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
