@@ -1,1 +1,25 @@
 *.py
+
+# Unfinished Files
+AbstractTypes.hx
+AlgebraicDataTypes.hx
+BinarySearchTree.hx
+Default.hx
+Leniency.hx
+LocalFunctions.hx
+Metadata.hx
+NullSafety.hx
+PartialFunction.hx
+PatternMatching.hx
+Reflexion.hx
+TypeParameters.hx
+Reflection.hx
+
+# Extra Files to Rename
+icon.hx
+ListOfStuff.hx
+livescript.hx
+LMU_Logo Package.hx
+
+# Gitignore
+.gitignore

@@ -33,6 +33,7 @@ haxe --run ClockHandsPadding |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
 haxe "$PSScriptRoot\ConditionalCompilation.hxml" &&
+haxe --run DefaultArgs &&
 haxe --run DynamicAccess &&
 haxe --run DynamicTypes &&
 haxe --run Fibonacci &&
@@ -41,7 +42,6 @@ haxe --run HelloWorld &&
 haxe "$PSScriptRoot\InlineTests.hxml" &&
 haxe --run Monomorph &&
 haxe --run NullType &&
-haxe --run OptionalArgs &&
 haxe --run Permutations I like carrots |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |
     Assert-MatchTests &&
