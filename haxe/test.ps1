@@ -54,6 +54,10 @@ Get-Content "$PSScriptRoot\..\test\wordcount_ascii_input" |
     haxe --run WordCount |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\wordcount_ascii_expected") |
     Assert-MatchTests &&
+Get-Content "$PSScriptRoot\..\test\wordcount_input" |
+    haxe --run WordCount > a.out |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\wordcount_expected") |
+    Assert-MatchTests &&
 ForEach-Object 'foo';
 
 if ($Error -or !$?) { 
