@@ -22,6 +22,7 @@ haxe --run Anagrams rats |
     Assert-MatchTests &&
 haxe --run Animals |
 haxe --run Blocks |
+haxe --run Casting |
 haxe --run ClockHands |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
