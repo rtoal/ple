@@ -1,4 +1,5 @@
 using StringTools;
+
 class TopTenScorers {
   public static function formatFloat(num:Float):String {
     var floatStr = '${num}';
