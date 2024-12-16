@@ -36,6 +36,7 @@ haxe "$PSScriptRoot\ConditionalCompilation.hxml" &&
 haxe --run DynamicAccess &&
 haxe --run DynamicTypes &&
 haxe --run Fibonacci &&
+haxe --run FunctionArguments &&
 haxe --run HelloWorld &&
 haxe "$PSScriptRoot\InlineTests.hxml" &&
 haxe --run Monomorph &&
