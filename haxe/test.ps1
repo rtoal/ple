@@ -50,7 +50,7 @@ Get-Content "$PSScriptRoot\..\test\wnba_input" |
     haxe --run TopTenScorers |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\wnba_expected") |
     Assert-MatchTests &&
-haxe --run Template &&
+haxe --run TemplateJokes &&
 haxe --run Triple | 
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") | 
     Assert-MatchTests &&
