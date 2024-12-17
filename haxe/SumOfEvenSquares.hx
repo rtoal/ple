@@ -1,4 +1,5 @@
 using Lambda;
+
 // Assertion tests were not included in Haxe or its standard library.
 class Assert {
   public static function expect(expr:Bool):Void {
