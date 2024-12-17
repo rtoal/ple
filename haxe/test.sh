@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 haxe --run Anagrams rats | diff ../test/rats_heap_expected - && \
 haxe --run Animals && \
+haxe --run ArrayComprehension && \
 haxe --run Blocks && \
 haxe --run Casting && \
 haxe --run ClockHands | diff ../test/clockhands_expected - && \
@@ -18,6 +19,7 @@ haxe --run HelloWorld && \
 haxe --run Immutability && \
 haxe InlineTests.hxml && \
 haxe --run Leniency && \
+haxe --run LocalStaticVariables && \
 haxe --run Monomorph && \
 haxe --run NullType && \
 haxe --run OptionEnum && \

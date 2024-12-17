@@ -21,6 +21,7 @@ haxe --run Anagrams rats |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\rats_heap_expected") |
     Assert-MatchTests &&
 haxe --run Animals |
+haxe --run ArrayComprehension |
 haxe --run Blocks |
 haxe --run Casting |
 haxe --run ClockHands |
@@ -44,6 +45,7 @@ haxe --run HelloWorld &&
 haxe --run Immutability &&
 haxe "$PSScriptRoot\InlineTests.hxml" &&
 haxe --run Leniency &&
+haxe --run LocalStaticVariables &&
 haxe --run Monomorph &&
 haxe --run NullType &&
 haxe --run OptionEnum &&
