@@ -1,4 +1,4 @@
-class OptionalArgs {
+class DefaultArgs {
   static function describe(name : String, ?age : Int, ?job : String = "unenemployed") {
     haxe.Log.trace('$name is age ${age ?? 25} who is $job.');
   }

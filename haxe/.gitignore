@@ -4,8 +4,6 @@
 AbstractTypes.hx
 AlgebraicDataTypes.hx
 BinarySearchTree.hx
-Default.hx
-Leniency.hx
 LocalFunctions.hx
 Metadata.hx
 NullSafety.hx

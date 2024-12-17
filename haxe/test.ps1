@@ -35,6 +35,7 @@ haxe --run ClockHandsPadding |
 haxe "$PSScriptRoot\ConditionalCompilation.hxml" &&
 haxe --run Copy &&
 haxe --run DefaultArgs &&
+haxe --run DefaultType &&
 haxe --run DynamicAccess &&
 haxe --run DynamicTypes &&
 haxe --run Fibonacci &&
