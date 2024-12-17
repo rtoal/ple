@@ -8,7 +8,7 @@ class TemplateJokes {
       Finally, ::pronoun:: must ::verb2:: ::possessive:: ::product::.
       And that's how ::pronoun:: achieve ::possessive:: dreams using ::if (number != 1)::some::else::a::end:: ::storeItem::!
       ";
-    var user1 = {
+    var fillIn1 = {
       personType: "girl",
       name: "Joanne", 
       pronoun: "she",
@@ -21,7 +21,7 @@ class TemplateJokes {
       verb2: "demolish",
       product: "bread machine",
     };
-    var user2 = {
+    var fillIn2 = {
       personType: "dinosaur",
       name: "Max", 
       pronoun: "he",
