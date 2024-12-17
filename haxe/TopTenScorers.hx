@@ -30,7 +30,6 @@ class TopTenScorers {
       '${'${players[i][0]}'.rpad(" ", 22)}' +
       '${'${players[i][1]}'.rpad(" ", 4)}' +
       '${formatFloat(players[i][2]).lpad(" ", 8)}'
-      , 
-    null);
+      , null);
   }
 }
