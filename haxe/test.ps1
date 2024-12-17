@@ -33,24 +33,28 @@ haxe --run ClockHandsPadding |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
 haxe "$PSScriptRoot\ConditionalCompilation.hxml" &&
+haxe --run Copy &&
 haxe --run DefaultArgs &&
 haxe --run DynamicAccess &&
 haxe --run DynamicTypes &&
 haxe --run Fibonacci &&
 haxe --run FunctionArguments &&
 haxe --run HelloWorld &&
+haxe --run Immutability &&
 haxe "$PSScriptRoot\InlineTests.hxml" &&
+haxe --run Leniency &&
 haxe --run Monomorph &&
 haxe --run NullType &&
+haxe --run OptionEnum &&
 haxe --run Permutations I like carrots |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |
     Assert-MatchTests &&
 haxe --run SumOfEvenSquares &&
+haxe --run TemplateJokes &&
 Get-Content "$PSScriptRoot\..\test\wnba_input" |
     haxe --run TopTenScorers |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\wnba_expected") |
     Assert-MatchTests &&
-haxe --run TemplateJokes &&
 haxe --run Triple | 
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") | 
     Assert-MatchTests &&
