@@ -8,7 +8,7 @@ class TemplateJokes {
       Finally, ::pronoun:: must ::verb2:: ::possessive:: ::product::.
       And that's how ::pronoun:: achieve ::possessive:: dreams using ::if (number != 1)::some::else::a::end:: ::storeItem::!
       ";
-    var fillIn1 = {
+    var answers1 = {
       personType: "girl",
       name: "Joanne", 
       pronoun: "she",
@@ -21,7 +21,7 @@ class TemplateJokes {
       verb2: "demolish",
       product: "bread machine",
     };
-    var fillIn2 = {
+    var answers2 = {
       personType: "dinosaur",
       name: "Max", 
       pronoun: "he",
@@ -35,7 +35,7 @@ class TemplateJokes {
       product: "coconut",
     };
     var template = new haxe.Template(story);
-    trace(template.execute(user1));
-    trace(template.execute(user2));
+    trace(template.execute(answers1));
+    trace(template.execute(answers2));
   }
 }
