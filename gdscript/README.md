@@ -44,9 +44,3 @@ Continue your study of GDScript via:
 
 Godot and GDScript is a free and open source programming language, and you can contribute to the program here:
 [Godot Engine Contributions](https://docs.godotengine.org/en/stable/contributing/how_to_contribute.html)
-
-## Extra Facts About GDScript:
-
-One feature that is not included in GDScript is catching exceptions. Unlike most other languages, GDScript does not have a way to catch exceptions similar to how the try... catch keywords work. In response to the suggestion of adding a way to handle potential exceptions similar to how `try...catch` works in other languages, the developer stated that:
-
-> Exceptions won't happen. Godot is designed for things to keep working even if state is inconsistent, while at the same time reporting errors
