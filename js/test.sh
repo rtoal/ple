@@ -16,6 +16,7 @@ node for_of_examples.js && \
 node function_examples.js && \
 node generator.js && \
 node iterators.js && \
+node jsfuck.js && \
 node method_example_short_syntax.js && \
 node method_example.js && \
 node more_destructuring.js && \

@@ -1,0 +1,14 @@
+--class-path inline
+--dce full 
+
+--each
+
+--python inline\inline.py
+--main Inline
+--cmd python inline\inline.py
+
+--next
+
+--python inline\inlineExcluded.py
+--main InlineExcluded
+--cmd python inline\inlineExcluded.py

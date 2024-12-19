@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+lci clockhands.lol | diff ../test/clockhands_expected - && \
+lci hello_world.lol && \
 lci triple.lol | diff ../test/triple_expected -
 
 if [ $? -ne 0 ]; then
