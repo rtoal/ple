@@ -9,6 +9,7 @@ function Assert-MatchTests {
 }
 
 $Error.clear()
+lci "$PSScriptRoot\casting.lol" &&
 lci "$PSScriptRoot\clockhands.lol" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
@@ -18,6 +19,7 @@ lci "$PSScriptRoot\hello_world.lol" &&
 lci "$PSScriptRoot\triple.lol" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
     Assert-MatchTests &&
+lci "$PSScriptRoot\srs.lol" &&
 ForEach-Object 'foo';
 
 if ($Error -or !$?) { 
