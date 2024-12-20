@@ -12,6 +12,8 @@ $Error.clear()
 lci "$PSScriptRoot\clockhands.lol" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
+lci "$PSScriptRoot\concatenation.lol" &&
+lci "$PSScriptRoot\fibonacci.lol" &&
 lci "$PSScriptRoot\hello_world.lol" &&
 lci "$PSScriptRoot\triple.lol" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
