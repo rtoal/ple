@@ -13,6 +13,8 @@ lci "$PSScriptRoot\casting.lol" &&
 lci "$PSScriptRoot\clockhands.lol" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
+lci "$PSScriptRoot\days.lol" &&
+lci "$PSScriptRoot\deallocation.lol" &&
 lci "$PSScriptRoot\concatenation.lol" &&
 lci "$PSScriptRoot\fibonacci.lol" &&
 lci "$PSScriptRoot\hello_world.lol" &&
