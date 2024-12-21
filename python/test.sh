@@ -3,6 +3,7 @@ python3 anagrams.py rats | diff ../test/rats_heap_expected - && \
 python3 anagrams_itertools.py rats && \
 python3 animals.py && \
 python3 basic_iterables.py && \
+python3 clockhands.py | diff ../test/clockhands_expected - && \
 python3 custom_iterable.py && \
 python3 custom_type.py && \
 python3 early_declaration_error.py && \

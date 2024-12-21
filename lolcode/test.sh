@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
-lci triple.lol | diff ../test/triple_expected -
+lci casting.lol && \
+lci clockhands.lol | diff ../test/clockhands_expected - && \
+lci concatenation.lol && \
+lci days.lol && \
+lci deallocation.lol && \
+lci fibonacci.lol && \
+lci hello_world.lol && \
+lci triple.lol | diff ../test/triple_expected - && \
+lci srs.lol
 
 if [ $? -ne 0 ]; then
     echo

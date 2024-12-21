@@ -7,5 +7,10 @@ func sum_of_even_squares(a):
 	return sum
 
 func _init():
-	print(sum_of_even_squares([4,6,7,2]))
+	assert(sum_of_even_squares([]) == 0)
+	assert(sum_of_even_squares([1]) == 0)
+	assert(sum_of_even_squares([1,2]) == 4)
+	assert(sum_of_even_squares([1,2,3]) == 4)
+	assert(sum_of_even_squares([1,2,3,4]) == 20)
+	assert(sum_of_even_squares([4,6,7,2]) == 56)
 	quit()
