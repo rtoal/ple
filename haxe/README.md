@@ -2,7 +2,7 @@
 
 # Haxe Explorations:
 
-To begin coding with Haxe, start by installing the [Haxe Compiler](https://docs.godotengine.org/en/3.3/getting_started/editor/command_line_tutorial.html).
+To begin coding with Haxe, start by installing the [Haxe Compiler](https://haxe.org/download/).
 
 If you are on Windows and want to install Haxe on the command line, type in the following command in Windows Powershell through the Administrator role (you will need to install [Chocolatey](https://chocolatey.org/install) if you have not yet done so already):
 
