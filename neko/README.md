@@ -26,8 +26,10 @@ To get Neko:
 <br/>To run a Neko script, you must first compile the Neko code to make the byte file then run that byte file. To do this, run the following:
 
 ```
-  nekoc hello_world.neko && neko hello_world
+  nekoc hello_world.neko && neko hello_world.n
 ```
+
+<br/>To avoid making too much clutter, you can instead compile the Neko code into a bin folder and run the executable files from there.
 
 For more information about installing Neko, you can click [here](https://nekovm.org/download/).
 
@@ -39,6 +41,8 @@ The intent behind making the language is that it was designed to be easy to pars
 
 # Neko Resources
 
+Continue your study of Neko via:
+
 - [Neko Home](https://nekovm.org/)
 - [Neko Documentation](https://nekovm.org/doc/begin/)
-- [Neko GitHub]()
+- [Neko GitHub](https://github.com/HaxeFoundation/neko)
