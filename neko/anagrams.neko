@@ -25,12 +25,12 @@ var generate_permutations = function(a, n, generate_permutations) {
 
 var args = file_stdin()
 var word = ""
-var c = $smake(1)
-$sset(c, 0, file_read_char(args))
 
-while ($sget(c,0) != 10) {
-	word += c
-	$sset(c, 0, file_read_char(args)) 
+var char = $smake(1)
+$sset(char, 0, file_read_char(args))
+while ($sget(char,0) != 10) {
+	word += char
+	$sset(char, 0, file_read_char(args)) 
 }
 
 var chars = $amake($ssize(word))
