@@ -1,0 +1,48 @@
+var file_stdin = $loader.loadprim("std@file_stdin", 0)
+var file_read_char = $loader.loadprim("std@file_read_char", 1)
+var string_split = $loader.loadprim("std@string_split", 2)
+
+var generate_permutations = function(a, n, generate_permutations) {
+	if (n <= 0) {
+		var i = 0
+		while (i < $asize(a)) {
+			$print(a[i ++= 1])
+		}
+		$print("\n");
+	} else {
+		var i = 0
+		while (i < n) {
+			generate_permutations(a, n - 1, generate_permutations)
+			var j = if (n % 2 == 0) 0 else i
+			var temp = a[j]
+			a[j] = a[n]
+			a[n] = temp
+			i += 1
+		}
+		generate_permutations(a, n - 1, generate_permutations)
+	}
+}
+
+var args = file_stdin()
+var word = ""
+var c = $smake(1)
+$sset(c, 0, file_read_char(args))
+
+while ($sget(c,0) != 10) {
+	word += c
+	$sset(c, 0, file_read_char(args)) 
+}
+
+var chars = $amake($ssize(word))
+var word_split = string_split(word, "")
+var i = 0
+while (i < $ssize(word)) {
+	chars[(i ++= 1)] = word_split[0]
+	word_split = word_split[1]
+}
+
+if ($ssize(word) == 0 || $sfind(word, 0, " ")) {
+	$throw("ERROR: There must be exactly 1 argument.")
+} else {
+	generate_permutations(chars, $ssize(word) - 1, generate_permutations)
+}
