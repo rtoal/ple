@@ -18,7 +18,9 @@
                            SET LEG1 TO A
                            SET LEG2 TO B
                            SET HYP TO C
-                           DISPLAY LEG1, ', ', LEG2, ', ', HYP
+                           DISPLAY FUNCTION TRIM( LEG1 LEADING ), ', ',
+                           FUNCTION TRIM( LEG2 LEADING), ', ',
+                           FUNCTION TRIM( HYP LEADING)
                        END-IF
                    END-PERFORM
                END-PERFORM
