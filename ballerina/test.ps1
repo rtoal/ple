@@ -9,6 +9,9 @@ function Assert-MatchTests {
 }
 
 $Error.clear()
+bal run "$PSScriptRoot\clockhands.bal" |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
+    Assert-MatchTests &&
 bal run "$PSScriptRoot\helloWorld.bal" &&
 bal run "$PSScriptRoot\triple.bal" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
