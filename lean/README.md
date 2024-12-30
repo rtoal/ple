@@ -10,6 +10,8 @@ Once installed, programs can be run from the command line like so:
 lean --run Hello.lean
 ```
 
+Note: it is **very important** that the program is ran on the latest version, 4.14.0; otherwise, it won't work. If you have lean and it does not work, make sure to check the version and update it to the latest version. In addition, using the [TIO Sandbox](https://tio.run/#) won't work either as it runs on the older version of Lean.
+
 ## About Lean
 
 Lean, a functional programming language, has been in development since 2013 and was introduced by Leonardo de Moura at Microsoft Research. It was created in order to cater to both general-purpose programming needs and those looking to delve into proof automations. In Lean, the theorem proving aspect comes into play, aiding in the verification of mathematical theorems and ensuring program correctness.
