@@ -4,8 +4,8 @@ class ClockHands {
       var t = Math.floor((i + 0.5) * 43200 / 11);
       var h = Math.floor(t / 3600);
       var m = t % 3600;
-      var zeroBuffer = function(str) return (str.length <= 1) ? ((str.length == 0) ? "00" : '0${str}') : str;
-      haxe.Log.trace('${zeroBuffer('${(h != 0)? h : 12}')}:${zeroBuffer('${Math.floor(m / 60)}')}:${zeroBuffer('${m % 60}')}', null);
+      var pad = function(n) return (n < 10) ? '0${n}' : '${n}';
+      haxe.Log.trace('${pad((h != 0) ? h : 12)}:${pad(Math.floor(m / 60))}:${pad(m % 60)}', null);
     }
   }
 }
