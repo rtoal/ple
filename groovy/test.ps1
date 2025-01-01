@@ -13,6 +13,9 @@ groovy "$PSScriptRoot\clockhands.groovy" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
 groovy "$PSScriptRoot\hello.groovy" &&
+groovy "$PSScriptRoot\triple.groovy" |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
+    Assert-MatchTests &&
 ForEach-Object 'foo'
 
 if ($Error -or !$?) { 
