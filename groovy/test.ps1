@@ -16,6 +16,7 @@ groovy "$PSScriptRoot\hello.groovy" &&
 groovy "$PSScriptRoot\triple.groovy" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
     Assert-MatchTests &&
+groovy "$PSScriptRoot\sumOfEvenSquares.groovy" &&
 ForEach-Object 'foo'
 
 if ($Error -or !$?) { 
