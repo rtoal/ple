@@ -9,10 +9,16 @@ function Assert-MatchTests {
 }
 
 $Error.clear()
+groovy "$PSScriptRoot\anagrams.groovy" rats |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\rats_heap_expected") |
+    Assert-MatchTests &&
 groovy "$PSScriptRoot\clockhands.groovy" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
 groovy "$PSScriptRoot\hello.groovy" &&
+groovy "$PSScriptRoot\permutations.groovy" I like carrots |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |
+    Assert-MatchTests &&
 groovy "$PSScriptRoot\triple.groovy" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
     Assert-MatchTests &&
