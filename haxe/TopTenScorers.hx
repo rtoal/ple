@@ -1,4 +1,13 @@
+import haxe.rtti.CType.Platforms;
 using StringTools;
+
+typedef Player = {
+  var team : String;
+  var name : String;
+  var games : Float;
+  var points : Float;
+  var average : Float;
+}
 
 class TopTenScorers {
   public static function formatFloat(num:Float):String {
@@ -12,24 +21,29 @@ class TopTenScorers {
   }
 
   public static function main():Void {
-    var player:Array<String>;
-    var players:Array<Dynamic> = [];
+    var players:Array<Player> = [];
     try {
+      // Not sure if there's a better way to do this than 
+      // "making an infinite loop then breaking it."
       while (true) {
-        player = Sys.stdin().readLine().split(",");
-        var team = player[0];
-        var name = player[1];
-        var games = Std.parseFloat(player[2]);
-        var points = Std.parseFloat(player[3]);
-        if (games >= 15) players.push([name, team, Math.round(points / games * 100) / 100]);
+        var data:Array<Dynamic> = Sys.stdin().readLine().split(",");
+        var player:Player = {
+          team: data[0], 
+          name: data[1], 
+          games: Std.parseFloat(data[2]), 
+          points: Std.parseFloat(data[3]),
+          average: Math.round(Std.parseFloat(data[3]) / Std.parseFloat(data[2]) * 100) / 100
+        }
+        if (player.games >= 15) players.push(player);
       }
     }
     catch (e:haxe.io.Eof) {}
-    players.sort((a, b) -> b[2] * 100 - a[2] * 100); // Multiply by 100 to avoid floating point errors.
-    for (i in 0...10) haxe.Log.trace(
-      '${'${players[i][0]}'.rpad(" ", 22)}' +
-      '${'${players[i][1]}'.rpad(" ", 4)}' +
-      '${formatFloat(players[i][2]).lpad(" ", 8)}'
+    // Multiply by 100 to prevent floating point errors.
+    players.sort((a, b) -> Math.round(b.average * 100 - a.average * 100));
+    for (player in players.slice(0, 10)) haxe.Log.trace(
+      '${player.name.rpad(" ", 22)}' +
+      '${player.team.rpad(" ", 4)}' +
+      '${formatFloat(player.average).lpad(" ", 8)}'
       , null);
   }
 }
