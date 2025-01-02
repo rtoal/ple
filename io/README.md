@@ -2,15 +2,15 @@
 
 # Io Explorations
 
-To install Io, go and install the [Io Binaries](https://iolanguage.org/binaries.html) from the official website. After installing and unzipping the file, activate the executable file and then store that new file in your system.
-
 If you have a Mac, instead of downloading the binaries, you can run the following command:
 
 ```
 brew install io
 ```
 
-If you are on Windows, make sure that you add the location of the bin folder to your Path in your "Environmental Variables."
+To install Io on Windows, go and install the [Io Binaries](https://iolanguage.org/binaries.html) from the official website for the Windows OS.
+
+After downloading and unzipping the folder, activate the executable file inside of the unzipped folder and then store that new file in your system. Then, copy the file location of the bin folder and add it to your Path in the "Environmental Variables."
 
 After setting you, you can run the Io examples using the command below.
 
