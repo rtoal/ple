@@ -1,4 +1,3 @@
-import haxe.rtti.CType.Platforms;
 using StringTools;
 
 typedef Player = {

@@ -2,7 +2,7 @@ function Assert-MatchTests {
     param (
         [Parameter(Mandatory = $true, ValueFromPipeline)] $TestResult
     )
-    $TestResult
+
     if ($TestResult) {
         Write-Error "Output does not match expected results."
     }
