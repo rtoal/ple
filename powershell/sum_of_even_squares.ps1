@@ -19,7 +19,7 @@ function Get-Sum-Of-Even-Squares {
 }
 
 Assert-Equals (Get-Sum-Of-Even-Squares (@())) (0)
-Assert-Equals (Get-Sum-Of-Even-Squares (@(1))) (0)
+Assert-Equals (Get-Sum-Of-Even-Squares (,1)) (0)
 Assert-Equals (Get-Sum-Of-Even-Squares (1..2)) (4)
 Assert-Equals (Get-Sum-Of-Even-Squares (1..3)) (4)
 Assert-Equals (Get-Sum-Of-Even-Squares (1..4)) (20)
