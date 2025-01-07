@@ -9,13 +9,20 @@ function Assert-MatchTests {
 }
 
 $Error.clear()
-& "$PSScriptRoot\clockhands.ps1" | 
+. "$PSScriptRoot\anagrams.ps1" rats | 
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\rats_heap_expected") |
+    Assert-MatchTests &&
+. "$PSScriptRoot\clockhands.ps1" | 
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") | 
     Assert-MatchTests &&
-& "$PSScriptRoot\hello_world.ps1" &&
-& "$PSScriptRoot\script_root.ps1" &&
-& "$PSScriptRoot\sum_of_even_squares.ps1" &&
-& "$PSScriptRoot\triple.ps1" | 
+. "$PSScriptRoot\fizzbuzz.ps1" && 
+. "$PSScriptRoot\hello_world.ps1" &&
+. "$PSScriptRoot\permutations.ps1" I like carrots | 
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |
+    Assert-MatchTests &&
+. "$PSScriptRoot\script_root.ps1" &&
+. "$PSScriptRoot\sum_of_even_squares.ps1" &&
+. "$PSScriptRoot\triple.ps1" | 
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") | 
     Assert-MatchTests &&
 ForEach-Object 'foo';
