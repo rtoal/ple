@@ -1,6 +1,6 @@
-for ($c = 1 ; $c -lt 41 ; $c++) {
-    for ($b = 1 ; $b -lt $c ; $b++) {
-        for ($a = 1 ; $a -lt $b ; $a++) {
+foreach ($c in 1..40) {
+    foreach ($b in 1..$c) {
+        foreach ($a in 1..$b) {
             if ($a * $a + $b * $b -eq $c * $c) {
                 "$a, $b, $c"
             }

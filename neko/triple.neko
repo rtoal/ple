@@ -1,0 +1,12 @@
+var c = 0
+while ((c ++= 1) < 40) {
+	var b = 0
+	while ((b ++= 1) < c) {
+		var a = 0
+		while ((a ++= 1) < b) {
+			if (a * a + b * b == c * c) {
+				$print(a + ", " + b + ", " + c + "\n")
+			}
+		}
+	}
+}

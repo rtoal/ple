@@ -9,20 +9,18 @@ function Assert-MatchTests {
 }
 
 $Error.clear()
-php "$PSScriptRoot\clockhands.php" | 
+bal run "$PSScriptRoot\clockhands.bal" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
-php "$PSScriptRoot\hello_world.php" &&
-php "$PSScriptRoot\html_escaping" &&
-php "$PSScriptRoot\ternary_madness.php" &&
-php "$PSScriptRoot\triples.php" | 
-    Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") | 
+bal run "$PSScriptRoot\helloWorld.bal" &&
+bal run "$PSScriptRoot\triple.bal" |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
     Assert-MatchTests &&
 ForEach-Object 'foo'
 
-if ($Error -or !$?) {
-    "*** PHP TESTS FAILED ***"
+if ($Error -or !$?) { 
+    "*** BALLERINA TESTS FAILED ***" 
 }
-else {
-    "PHP TESTS PASSED"
-}
+else { 
+    "BALLERINA TESTS PASSED" 
+} 

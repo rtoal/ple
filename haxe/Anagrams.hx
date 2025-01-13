@@ -4,7 +4,7 @@ class Anagrams {
       haxe.Log.trace(a.join(""), null);
     } else {
       for (i in 0...n) {
-        generatePermutations(a, n - 1);
+        generatePermutations(a, n-1);
         var j:Int = (n % 2 == 0) ? 0 : i;
         var temp:String = a[j];
         a[j] = a[n];

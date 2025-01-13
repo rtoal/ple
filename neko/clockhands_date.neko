@@ -1,0 +1,5 @@
+var date_format = $loader.loadprim("std@date_format", 2)
+var i = 0
+while (i < 11) {
+	$print(date_format($int(((i ++= 1) + 0.5) * 43200 / 11 + 3600 * 8), "%I:%M:%S"), "\n")
+}
