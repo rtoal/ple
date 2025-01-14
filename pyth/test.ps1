@@ -20,6 +20,9 @@ python $path -c (Get-Content "$PSScriptRoot\five_hellos.pyth") &&
 python $path -c (Get-Content "$PSScriptRoot\hello.pyth") &&
 # python $path -c (Get-Content "$PSScriptRoot\hypot.pyth") &&
 python $path -c (Get-Content "$PSScriptRoot\triangle.pyth") &&
+python $path -c (Get-Content "$PSScriptRoot\triple.pyth") | 
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
+    Assert-MatchTests &&
 ForEach-Object 'foo';
 
 if ($Error -or !$?) { 
