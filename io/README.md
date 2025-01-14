@@ -31,8 +31,10 @@ To continue learning about Io, you can take a look at the following:
 - [Io GitHub](https://github.com/IoLanguage/io)
 - [Io Examples](https://github.com/IoLanguage)
 - [Io Website](https://iolanguage.org/)
-- [Io Docs](https://iolanguage.org/guide/guide.html#Objects-Forward)
+- [Io Docs](https://iolanguage.org/guide/guide.html)
 - [Io Repl](https://iolanguage.org/repl/index.html)
-- [Io Book by Steve Dekorte (the developer of this language)](https://books.apple.com/us/book/io/id497620067)
+- [Io Book](https://books.apple.com/us/book/io/id497620067) by Steve Dekorte
 - [Io, Smalltalk, Eiffel, and Ruby Comparisons](http://jackmyers.info/docs/ObjectOrientedImplementationApproaches.pdf)
-- [Io Presentation Slides](https://www.lua.org/wshop05/Dekorte.pdf)
+- [Io Presentation Slides](https://www.lua.org/wshop05/Dekorte.pdf) by Steve Dekorte
+- [Another Io presentation](https://soft.vub.ac.be/~tvcutsem/talks/presentations/IO-tvcutsem-26-11-04.pdf) by Tom Van Cutsem
+- [A language overview](https://www.bushido.codes/io-lang) at Bushido Codes
