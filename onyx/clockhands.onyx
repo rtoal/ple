@@ -1,0 +1,10 @@
+use core {printf}
+
+main :: () {
+    for i in 0 ..= 10 {
+        t: i32 = (i * 43200 + 21600) / 11;
+        h: i32 = t / 3600
+        m: i32 = t % 3600
+        printf("{w2}:{w2}:{w2}\n", 12 if h == 0 else h, m / 60, m % 60);
+    }
+}
