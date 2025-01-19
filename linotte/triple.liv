@@ -4,7 +4,7 @@ pour c de 1 à 40
 	pour b de 1 à c
 		pour a de 1 à b
 			si (carré a + carré b) = (carré c) 
-				Affiche a + ", " + b + ", " + c
+				affiche a + ", " + b + ", " + c
 			ferme
 		ferme
 	ferme
