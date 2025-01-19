@@ -26,6 +26,7 @@ nekoc -o $bin "$PSScriptRoot\clockhands.neko" && neko "$bin\clockhands.n" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
 nekoc -o $bin "$PSScriptRoot\factorial_generator.neko" && neko "$bin\factorial_generator.n" &&
+nekoc -o $bin "$PSScriptRoot\gotos.neko" && neko "$bin\gotos.n" &&
 nekoc -o $bin "$PSScriptRoot\hello_world.neko" && neko "$bin\hello_world.n" &&
 nekoc -o $bin "$PSScriptRoot\loop_value.neko" && neko "$bin\loop_value.n" &&
 nekoc -o $bin "$PSScriptRoot\optimized_operations.neko"&& neko "$bin\optimized_operations.n" &&
