@@ -1,8 +1,8 @@
 { :i
-        >> hms := ((i - 0.5) × 43200 ÷ 11) floor.
-        >> h := (hms ÷ 3600) floor.
-        >> m := ((hms modulo: 3600) ÷ 60) floor.
-        >> s := hms modulo: 60.
+        >> t := ((i - 0.5) × 43200 ÷ 11) floor.
+        >> h := (t ÷ 3600) floor.
+        >> m := ((t modulo: 3600) ÷ 60) floor.
+        >> s := t modulo: 60.
         h = 0 true: { h := 12.}.
         >> pad := { :n <- (n < 10 either: ['0'] or: ['']) + n.}.
         Out write: (pad apply: h) + [':'] + 
