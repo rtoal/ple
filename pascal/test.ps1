@@ -16,12 +16,12 @@ if (!(Test-Path -Path $bin)) {
 } 
 
 $Error.clear()
-fpc "$PSScriptRoot\clockhands.pas" && . "$PSScriptRoot\clockhands.exe" |
+fpc "$PSScriptRoot\clockhands.pas" -FE"$bin" && . "$bin\clockhands.exe" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
-fpc "$PSScriptRoot\hello.pas" && . "$PSScriptRoot\hello.exe" &&
-fpc "$PSScriptRoot\reserved_word_identifiers.pas" && . "$PSScriptRoot\reserved_word_identifiers.exe" &&
-fpc "$PSScriptRoot\triple.pas" && . "$PSScriptRoot\triple.exe" |
+fpc "$PSScriptRoot\hello.pas" -FE"$bin" && . "$bin\hello.exe" &&
+fpc "$PSScriptRoot\reserved_word_identifiers.pas" -FE"$bin" && . "$bin\reserved_word_identifiers.exe" &&
+fpc "$PSScriptRoot\triple.pas" -FE"$bin" && . "$bin\triple.exe" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
     Assert-MatchTests &&  
 ForEach-Object 'foo';
