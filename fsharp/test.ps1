@@ -9,13 +9,13 @@ function Assert-MatchTests {
 }
 
 $Error.clear()
-dotnet fsi --exec "$PSScriptRoot\clockhands.fsx" |
+dotnet fsi "$PSScriptRoot\clockhands.fsx" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
-dotnet fsi --exec "$PSScriptRoot\hello.fsx" &&
-100 | dotnet fsi --exec "$PSScriptRoot\lbToKg.fsx" &&
-dotnet fsi --exec "$PSScriptRoot\mlUnits.fsx" &&
-dotnet fsi --exec "$PSScriptRoot\sum_of_even_squares.fsx" &&
+dotnet fsi "$PSScriptRoot\hello.fsx" &&
+100 | dotnet fsi "$PSScriptRoot\lbToKg.fsx" &&
+dotnet fsi "$PSScriptRoot\mlUnits.fsx" &&
+dotnet fsi "$PSScriptRoot\sum_of_even_squares.fsx" &&
 ForEach-Object 'foo';
 
 if ($Error -or !$?) {
