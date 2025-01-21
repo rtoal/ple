@@ -1,5 +1,5 @@
 { :i
-        >> t := ((i - 0.5) × 43200 ÷ 11) floor.
+        >> t := ((43200 × i - 21600) ÷ 11) floor.
         >> h := (t ÷ 3600) floor.
         >> m := ((t modulo: 3600) ÷ 60) floor.
         >> s := t modulo: 60.
