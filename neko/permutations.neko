@@ -6,7 +6,7 @@ var print_permutations = function(a, n, print_permutations) {
 	if (n <= 0) {
 		var i = 0
 		while (i < $asize(a)) {
-            if (i != 0) $print("\t")
+			if (i != 0) $print("\t")
 			$print(a[i ++= 1])
 		}
 		$print("\n");
@@ -33,9 +33,9 @@ $sset(char, 0, file_read_char(args))
 while ($sget(char,0) != 10) {
 	phrase += char
 	$sset(char, 0, file_read_char(args))
-    if (char == " ") {
-        total_words += 1
-    }
+	if (char == " ") {
+		total_words += 1
+	}
 }
 
 var words = $amake(total_words)

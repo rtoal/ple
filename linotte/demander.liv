@@ -1,0 +1,5 @@
+prénom est un texte
+
+affiche "Quel est ton prénom?"
+demande prénom
+affiche "Bonjour " + prénom + "!"

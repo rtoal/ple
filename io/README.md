@@ -12,7 +12,7 @@ To install Io on Windows, go and install the [Io Binaries](https://iolanguage.or
 
 After downloading and unzipping the folder, activate the executable file inside of the unzipped folder and then store that new file in your system. Then, copy the file location of the bin folder and add it to your Path in the "Environmental Variables."
 
-After setting you, you can run the Io examples using the command below.
+After setting up, you can run the Io examples using the command below.
 
 ```
 io .\hello.io

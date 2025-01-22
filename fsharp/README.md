@@ -8,10 +8,10 @@ Visit the [Use F#](https://fsharp.org/use/mac/) page and select the download ins
 
 Alternatively, you can run F# programs directly in your browser by visiting the [Try F#](https://try.fsharp.org/) site.
 
-After installation, you can run F# programs with a `.fs` extension from the command line. For example, to compile and run `hello.fs`, use the following command:
+After installation, you can run F# programs with a `.fsx` extension from the command line. For example, to compile and run `hello.fsx`, use the following command:
 
 ```
-dotnet fsi hello.fs
+dotnet fsi hello.fsx
 ```
 
 ## About F#
@@ -33,5 +33,5 @@ Continue your study of F# via:
 
 Studying, and contributing to, open source projects is an excellent way to improve your proficiency in any language. Here are a few projects in F# you may enjoy:
 
-- [F# Compiler, F# Core Library, F# Editor Tools](https://github.com/dotnet/fsharp/#contributing) 
+- [F# Compiler, F# Core Library, F# Editor Tools](https://github.com/dotnet/fsharp/#contributing)
 - [F# Community Projects](https://fsharp.org/community/projects/)

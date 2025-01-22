@@ -15,9 +15,12 @@ python "$PSScriptRoot\anagrams.py" rats |
 python "$PSScriptRoot\anagrams_itertools.py" rats &&
 python "$PSScriptRoot\animals.py" &&
 python "$PSScriptRoot\basic_iterables.py" &&
+python "$PSScriptRoot\clockhands_time.py" |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
+    Assert-MatchTests &&
 python "$PSScriptRoot\clockhands.py" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
-    Assert-MatchTests
+    Assert-MatchTests &&
 python "$PSScriptRoot\custom_iterable.py" &&
 python "$PSScriptRoot\custom_type.py" &&
 python "$PSScriptRoot\early_declaration_error.py" &&
