@@ -1,20 +1,20 @@
 <img src="https://raw.githubusercontent.com/rtoal/polyglot/master/docs/resources/citrine-logo-64.png" width="64" height="64">
 
-# Citrine Explorations:
+# Citrine Explorations
 
 To install Citrine, go to [Citrine Installation](https://citrine-lang.org/download.ctr) and download the binary based on your operating system. Note that there are multiple versions of Citrine based on different world languages. If you want to run the tests in this folder, you will need to install the English version of the Citrine compiler.
 
-After installing (and added the path to your environmental variables if needed), you can run the Citrine examples in this folder using the following command:
+After installing (and added the path to your environment variables if needed), you can run the Citrine examples in this folder using the following command:
 
 ```
 ctren .\hello_world.ctr
 ```
 
-## About Citrine:
+## About Citrine
 
-Citrine is a object-oriented, multi-lingual programming language made by Gabor de Mooij. While the project started in 1993 with the orginal name being Basic-NL, the project restarted in 2009. Aimed to allow users to code within their native world language, Citrine supports around 110 different world languages, allowing users to program apps and games.
+Citrine is a object-oriented, multi-lingual programming language made by Gabor de Mooij. While the project started in 1993 with the original name being Basic-NL, the project restarted in 2009. Aimed to allow users to code within their native language, Citrine supports around 110 different human languages, allowing users to program apps and games.
 
-## Citrine Resources:
+## Citrine Resources
 
 Continue your study of Citrine via:
 
@@ -22,8 +22,6 @@ Continue your study of Citrine via:
 - [Citrine Doc (Minimalist)](https://citrine-lang.org/docs/en/27c4553ad78ede1de736f6aa4b3bbf6e0dd05c24.html?v2023)
 - [Citrine GitHub](https://github.com/gabordemooij/citrine)
 
-## Citrine Open Source Projects:
-
-Studying, and contributing to, open source projects is an excellent way to improve your proficiency in any language. The language Borgo itself is open source and can be accessed here:
+## Patreon
 
 - [Citrine Patreon](https://www.patreon.com/CitrineProgrammingLanguage)
