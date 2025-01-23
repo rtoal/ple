@@ -12,13 +12,13 @@ choco install linotte
 
 ## About Linotte:
 
-Linotte is an imperative, educational, French programming language. Designed to make
+Linotte is an imperative, educational, French programming language. Designed to make...
 
 TODO
 
 ## Linotte Resources:
 
-Continue your study of Haxe via:
+Continue your study of Linotte via:
 
 - [Linotte Website](http://langagelinotte.free.fr/wordpress/?p=328)
 - [Linotte Documentation](https://github.com/cpc6128/LangageLinotte/wiki)
