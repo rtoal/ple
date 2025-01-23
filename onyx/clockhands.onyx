@@ -2,7 +2,7 @@ use core {printf}
 
 main :: () {
     for i in 0 ..= 10 {
-        t: i32 = (i * 43200 + 21600) / 11;
+        t: i32 = (43200 * i + 21600) / 11;
         h, m, s: i32 = t / 3600, t % 3600 / 60, t % 60
         printf("{w2}:{w2}:{w2}\n", 12 if h == 0 else h, m, s);
     }
