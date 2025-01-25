@@ -47,7 +47,7 @@ Unix-like virtual machine if you desire to run the test scripts yourself.
 | Erlang       |    ![](docs/resources/erlang-logo-24.png)    | 21          | Erlang/OTP 21                              |
 | Factor       |    ![](docs/resources/factor-logo-24.png)    |             |                                            |
 | F#           |    ![](docs/resources/fsharp-logo-24.png)    |             |                                            |
-| Fortran      |    ![](docs/resources/erlang-logo-24.png)    |             | GNU Fortran (GCC) 6.1.0                    |
+| Fortran      |    ![](docs/resources/fortran-logo-24.png)    |             | GNU Fortran (GCC) 6.1.0                    |
 | Futhark      |   ![](docs/resources/futhark-logo-24.png)    |             |                                            |
 | GDScript     |   ![](docs/resources/gdscript-logo-24.png)   |             |                                            |
 | Go           |      ![](docs/resources/go-logo-24.png)      | 1.16.4      |                                            |
@@ -77,7 +77,7 @@ Unix-like virtual machine if you desire to run the test scripts yourself.
 | Odin         |     ![](docs/resources/odin-logo-24.png)     |             |                                            |
 | ParaSail     |                                              |             |                                            |
 | Perl         |     ![](docs/resources/perl-logo-24.png)     | 5.26.0      |                                            |
-| PHP          |                                              |             |                                            |
+| PHP          |     ![](docs/resources/php-logo-24.png)      |             |                                            |
 | Prolog       |                                              |             |                                            |
 | PureScript   |  ![](docs/resources/purescript-logo-24.png)  | 0.11.5      |                                            |
 | Pyth         |                                              |             |                                            |
