@@ -1,8 +1,8 @@
 def printTimes : List (IO Unit) → IO Unit
   | [] => pure ()
-  | act :: actions => do
-    printTimes actions
-    act
+  | doPrint :: printStatements => do
+    printTimes printStatements
+    doPrint
 
 def pad : Nat → String
   | n + 10 => s!"{n + 10}"
@@ -13,6 +13,6 @@ def clock (t : Nat) : String :=
 
 def countdown : Nat → List (IO Unit)
   | 0 => []
-  | n + 1 => IO.println (clock ((43200 * (n) + 21600) / 11)) :: countdown n
+  | i + 1 => IO.println (clock ((43200 * i + 21600) / 11)) :: countdown i
 
 def main : IO Unit := printTimes (countdown 11)
