@@ -12,6 +12,9 @@ $Error.clear()
 . "$PSScriptRoot\anagrams.ps1" rats | 
     Compare-Object (Get-Content "$PSScriptRoot\..\test\rats_heap_expected") |
     Assert-MatchTests &&
+. "$PSScriptRoot\clockhands_getdate.ps1" | 
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") | 
+    Assert-MatchTests &&
 . "$PSScriptRoot\clockhands.ps1" | 
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") | 
     Assert-MatchTests &&
