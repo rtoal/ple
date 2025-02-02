@@ -2,7 +2,7 @@
 
 # Lua Explorations
 
-To build and run Lua programs on your local machine, download and install the Lua system from the [Lua downlaods page](https://www.lua.org/download.html) or use your favorite package manager.
+To build and run Lua programs on your local machine, download and install the Lua system from the [Lua downloads page](https://www.lua.org/download.html) or use your favorite package manager.
 
 Once installed, programs in this folder can be run from the command line like so:
 
