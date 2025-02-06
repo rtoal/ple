@@ -3,7 +3,10 @@ lua anagrams.lua rats | diff ../test/rats_heap_expected - && \
 lua and_or_demo.lua && \
 lua basic_latin_wordcount.lua < ../test/wordcount_ascii_input | diff ../test/wordcount_ascii_expected -  && \
 lua binding.lua && \
+lua character_counts.lua && \
+lua clockhands.lua && \
 lua coroutine_demo.lua && \
+lua coroutine_wrap_demo.lua && \
 lua delegation_example.lua && \
 lua errors.lua && \
 lua exploring_parameters.lua && \
