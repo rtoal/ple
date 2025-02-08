@@ -32,7 +32,7 @@ fish hello.fish
 
 ## About Fish:
 
-Fish, also known as the **F**riendly **I**nterface **SH**ell, and like the name sggests, it aims to be a smart and user-friendly command line shell for Linux and macOS. It claims to add more convenient features that other shells may not have built-in, such as type autosuggestion, syntax highlighting, abbreiations, and more, allowing users to be more productive within their command line terminal.
+Fish, also known as the **F**riendly **I**nterface **SH**ell, is, like the name sggests, aims to be a smart and user-friendly command line shell for Linux and macOS. It claims to add more convenient features that other shells may not have built-in, such as type autosuggestion, syntax highlighting, abbreiations, and more, allowing users to be more productive within their command line terminal.
 
 ## Fish Resources:
 
