@@ -1,6 +1,6 @@
 # George Explorations
 
-This language is quite antique and, as such, does not have a dedicated, sponsored compiler or repl. That being said, there is a straightforward tutoirial to implement a interpreter created by `georgjz` hosted on <a href="https://georgjz.github.io/george-01/">GitHub</a>
+This language is quite antique and, as such, does not have a dedicated, sponsored compiler or repl. That being said, there is a straightforward tutorial to implement a interpreter created by `georgjz` hosted on <a href="https://georgjz.github.io/george-01/">GitHub</a>
 
 ## About George
 
