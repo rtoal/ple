@@ -9,9 +9,13 @@ function Assert-MatchTests {
 }
 
 $Error.clear()
+sq "$PSScriptRoot\clockhands_time.nut" |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
+    Assert-MatchTests &&
 sq "$PSScriptRoot\clockhands.nut" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
+sq "$PSScriptRoot\floating_point_mystery.nut" &&
 sq "$PSScriptRoot\hello.nut" &&
 sq "$PSScriptRoot\triple.nut" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
