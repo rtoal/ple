@@ -30,6 +30,7 @@ Get-Content "$PSScriptRoot\..\test\wnba_input" |
     sq "$PSScriptRoot\top_ten_scorers.nut" | 
     Compare-Object (Get-Content "$PSScriptRoot\..\test\wnba_expected") |
     Assert-MatchTests &&
+sq "$PSScriptRoot\table.nut" &&
 sq "$PSScriptRoot\triple.nut" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
     Assert-MatchTests &&

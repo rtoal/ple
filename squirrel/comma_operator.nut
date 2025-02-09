@@ -1,6 +1,6 @@
 local a, b, x
-x = a = 5, b = 9, a * a + b * b
+x = (a = 5, b = 9, a * a + b * b)
 
-print(a + "\n")
-print(b + "\n")
-print(x + "\n")
+assert(a == 5)
+assert(b == 9)
+assert(x == 106)
