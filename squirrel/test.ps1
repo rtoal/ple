@@ -18,6 +18,7 @@ sq "$PSScriptRoot\clockhands_time.nut" |
 sq "$PSScriptRoot\clockhands.nut" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
+sq "$PSScriptRoot\debug_keywords.nut" &&
 sq "$PSScriptRoot\floating_point_mystery.nut" &&
 sq "$PSScriptRoot\hello.nut" &&
 "I like carrots" | sq "$PSScriptRoot\permutations.nut" |
