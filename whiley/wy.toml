@@ -1,0 +1,10 @@
+[package]
+name="main"
+authors=["Joe Bloggs"]
+version="0.1.0"
+
+[build]
+platforms=["whiley"]
+
+[dependencies]
+std="0.3.2"
