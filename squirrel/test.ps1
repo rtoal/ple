@@ -23,6 +23,7 @@ sq "$PSScriptRoot\hello.nut" &&
 "I like carrots" | sq "$PSScriptRoot\permutations.nut" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |
     Assert-MatchTests &&
+sq "$PSScriptRoot\sum_of_even_squares.nut" &&
 Get-Content "$PSScriptRoot\..\test\wnba_input" | 
     sq "$PSScriptRoot\top_ten_scorers.nut" | 
     Compare-Object (Get-Content "$PSScriptRoot\..\test\wnba_expected") |
