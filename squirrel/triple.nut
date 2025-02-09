@@ -4,7 +4,7 @@ for (local c = 1; c < 41; c++)
     {
         for (local a = 1; a < b; a++)
         {
-            if (a * a + b * b == c * c)
+            if (pow(a, 2) + pow(b, 2) == pow(c, 2))
             {
                 printf("%d, %d, %d\n", a, b, c)
             }
