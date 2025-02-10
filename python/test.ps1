@@ -15,6 +15,7 @@ python "$PSScriptRoot\anagrams.py" rats |
 python "$PSScriptRoot\anagrams_itertools.py" rats &&
 python "$PSScriptRoot\animals.py" &&
 python "$PSScriptRoot\basic_iterables.py" &&
+python "$PSScriptRoot\built_in_function_override.py" &&
 python "$PSScriptRoot\clockhands_time.py" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
