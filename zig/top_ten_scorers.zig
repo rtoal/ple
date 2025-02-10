@@ -1,5 +1,4 @@
 const std = @import("std");
-const Allocator = std.mem.Allocator;
 
 const Player = struct {
     name: []const u8,
@@ -10,16 +9,13 @@ const Player = struct {
 pub fn main() !void {
     const allocator = std.heap.page_allocator;
     const reader = std.io.getStdIn().reader();
+    var stdout = std.io.getStdOut().writer();
 
     var players = std.ArrayList(Player).init(allocator);
 
     var buf: [1000]u8 = undefined;
     while (try reader.readUntilDelimiterOrEof(&buf, '\n')) |line| {
         const fields = splitByComma(line);
-        // if (fields.len != 4) {
-        //     continue;
-        // }
-
         const games = std.fmt.parseInt(i32, fields[2], 10) catch continue;
         const points = std.fmt.parseInt(i32, fields[3], 10) catch continue;
 
@@ -28,8 +24,8 @@ pub fn main() !void {
         }
 
         try players.append(Player{
-            .name = fields[1],
-            .team = fields[0],
+            .name = try allocator.dupe(u8, fields[1]),
+            .team = try allocator.dupe(u8, fields[0]),
             .ppg = @as(f64, @floatFromInt(points)) / @as(f64, @floatFromInt(games)),
         });
     }
@@ -37,7 +33,7 @@ pub fn main() !void {
     std.mem.sort(Player, players.items, {}, compareByPPG);
     const count = @min(10, players.items.len);
     for (players.items[0..count]) |player| {
-        std.debug.print("{s:<22}{s:<4}{d:8.2}\n", .{ player.name, player.team, player.ppg });
+        try stdout.print("{s:<22}{s:<4}{d:8.2}\n", .{ player.name, player.team, player.ppg });
     }
 }
 
