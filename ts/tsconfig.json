@@ -2,7 +2,8 @@
   "compilerOptions": {
     "strict": true,
     "outDir": "dist",
-    "module": "esnext",
-    "target": "esnext"
+    "module": "nodenext",
+    "target": "esnext",
+    "moduleResolution": "nodenext"
   }
 }
