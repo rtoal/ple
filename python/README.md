@@ -4,7 +4,7 @@
 
 To build and run Python programs on your local machine, download and install the most recent language version from the [Python home page](https://www.python.org/) or use your favorite package manager.
 
-Once installed, programs in this folder can be run from the command line like so:
+Programs in this folder can be run from the command line like so:
 
 ```
 python3 triple.py
@@ -20,11 +20,9 @@ python3 top_ten_scorers.py < ../test/wnba_input
 
 Running the command `python3` with no arguments gives you a repl.
 
-To run the tests on a Unix-like shell:
+If you, as you may have already, are using virtual environments or have aliased `python3` to `python`, you may replace `python3` with `python` in the above commands.
 
-```
-./test.sh
-```
+Tests can be run with `test.sh` or `test.ps1`.
 
 ## About Python
 
@@ -34,16 +32,20 @@ Python is a powerful and expressive programming language that “lets you work q
 
 Continue your study of Python via:
 
-- [Awesome Python](https://github.com/vinta/awesome-python)
 - [Python Home](https://www.python.org/)
-- [Python Docs Home](https://www.python.org/doc/)
+- [Official Documentation](https://www.python.org/doc/)
+- [Awesome Python](https://github.com/vinta/awesome-python)
 - [A curated list of Python books](https://wiki.python.org/moin/PythonBooks)
 - [An online Python course](https://developers.google.com/edu/python/)
+- [Python at Rosetta Code](https://rosettacode.org/wiki/Category:Python)
 
-## Python Open Source Projects
+## Python in Open Source
 
-Studying, and contributing to, open source projects is an excellent way to improve your proficiency in any language. Of the many projects using Python, you may enjoy:
+You may enjoy:
 
+- [The GitHub Topic Page](https://github.com/topics/python)
+- [Trending Lua Repositories on GitHub](https://github.com/trending/python)
+- [Top 100 Starred Lua Repositories on GitHub](https://github.com/EvanLi/Github-Ranking/blob/master/Top100/Python.md)
 - [Requests](https://github.com/kennethreitz/requests)
 - [Flask](https://github.com/mitsuhiko/flask)
 - [Reddit](https://github.com/reddit/reddit)
