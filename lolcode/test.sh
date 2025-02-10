@@ -6,8 +6,8 @@ lci days.lol && \
 lci deallocation.lol && \
 lci fibonacci.lol && \
 lci hello_world.lol && \
-lci triple.lol | diff ../test/triple_expected - && \
 lci srs.lol
+lci triple.lol | diff ../test/triple_expected - && \
 
 if [ $? -ne 0 ]; then
     echo
