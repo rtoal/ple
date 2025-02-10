@@ -20,7 +20,13 @@ ruby top_ten_scorers.rb < ../test/wnba_input
 
 Running the command `ruby` with no arguments gives you a repl.
 
-Tests can be run with `test.sh` or `test.ps1`.
+To run the tests on a Unix-like shell:
+
+```
+./test.sh
+```
+
+Run `test.ps1` in PowerShell.
 
 ## About Ruby
 
@@ -30,7 +36,7 @@ Ruby is a dynamic, reflective, object-oriented, general-purpose programming lang
 
 ## Ruby Resources
 
-Continue your study of Ruby via:
+Continue your study of Ruby with:
 
 - [Ruby home page](https://www.ruby-lang.org/), with links to the Getting Started Guide, the User's Guide, the Language Reference, and the Library Reference
 - [Ruby docs for Core API](http://ruby-doc.org/core)
@@ -49,7 +55,7 @@ Continue your study of Ruby via:
 
 ## Ruby in Open Source
 
-You may enjoy:
+Browse open source activity in Ruby at:
 
 - [The GitHub Topic Page](https://github.com/topics/ruby)
 - [Trending Repositories on GitHub](https://github.com/trending/ruby)

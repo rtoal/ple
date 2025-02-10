@@ -24,7 +24,13 @@ However, several of these example programs are made up of multiple source code f
 javac AnimalChorusExample.java && java AnimalChorusExample
 ```
 
-Tests can be run with `test.sh`.
+To run the tests on a Unix-like shell:
+
+```
+./test.sh
+```
+
+Run `test.ps1` in PowerShell.
 
 ## About Java
 
@@ -32,7 +38,7 @@ Java is a high-level, object-oriented language created by Sun Microsystems in 19
 
 ## Java Resources
 
-Continue your study of Java via:
+Continue your study of Java with:
 
 - [Documentation](https://docs.oracle.com/en/java/)
 - [Official Specifications](https://docs.oracle.com/javase/specs/)
@@ -44,15 +50,8 @@ Continue your study of Java via:
 
 ## Java in Open Source
 
-You may enjoy:
+Browse open source activity in Java at:
 
 - [The GitHub Topic Page](https://github.com/topics/java)
 - [Trending Repositories on GitHub](https://github.com/trending/java)
 - [Top 100 Starred Repositories on GitHub](https://github.com/EvanLi/Github-Ranking/blob/master/Top100/Java.md)
-- [News Android](https://github.com/nextcloud/news-android)
-- [Elasticsearch](https://github.com/elastic/elasticsearch)
-- [Retrofit](https://github.com/square/retrofit)
-- [Spring Framework](https://github.com/spring-projects/spring-framework)
-- [Guava](https://github.com/google/guava)
-- [Open LaTeX Studio](https://github.com/sebbrudzinski/Open-LaTeX-Studio/)
-- [Dropwizard Jobs](https://github.com/dropwizard-jobs/dropwizard-jobs)

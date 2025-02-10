@@ -20,7 +20,13 @@ node top_ten_scorers.js < ../test/wnba_input
 
 Running the command `node` with no arguments gives you a repl.
 
-Tests can be run with `test.sh` or `test.ps1`.
+To run the tests on a Unix-like shell:
+
+```
+./test.sh
+```
+
+Run `test.ps1` in PowerShell.
 
 Note that this folder contains the file **package.json** to enable each of the command line **.js** files to run as _module_ scripts, rather than _classic_ scripts. Modules are the preferred way to write JavaScript, as they enable a host of newer modern features and are much more safe and secure. For the differences between scripts and modules, see [this article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) from MDN’s JavaScript Guide.
 
@@ -42,7 +48,7 @@ Continue your study of JavaScript via:
 
 ## JavaScript in Open Source
 
-You may enjoy:
+Browse open source activity in JavaScript at:
 
 - [The GitHub Topic Page](https://github.com/topics/javascript)
 - [Trending Repositories on GitHub](https://github.com/trending/javascript)

@@ -36,9 +36,11 @@ To run the tests on a Unix-like shell:
 ./test.sh
 ```
 
+Run `test.ps1` in PowerShell.
+
 # TypeScript Resources
 
-Continue your study of TypeScript via:
+Continue your study of TypeScript with:
 
 - [Awesome TypeScript](https://github.com/dzharii/awesome-typescript)
 - Another [Awesome TypeScript](https://github.com/semlinker/awesome-typescript)
@@ -50,7 +52,7 @@ Continue your study of TypeScript via:
 
 # TypeScript in Open Source
 
-You may enjoy:
+Browse open source activity in TypeScript at:
 
 - [The GitHub Topic Page](https://github.com/topics/typescript)
 - [Trending Repositories on GitHub](https://github.com/trending/typescript)

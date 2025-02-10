@@ -22,7 +22,13 @@ Running the command `python3` with no arguments gives you a repl.
 
 If you, as you may have already, are using virtual environments or have aliased `python3` to `python`, you may replace `python3` with `python` in the above commands.
 
-Tests can be run with `test.sh` or `test.ps1`.
+To run the tests on a Unix-like shell:
+
+```
+./test.sh
+```
+
+Run `test.ps1` in PowerShell.
 
 ## About Python
 
@@ -30,7 +36,7 @@ Python is a powerful and expressive programming language that “lets you work q
 
 ## Python Resources
 
-Continue your study of Python via:
+Continue your study of Python with:
 
 - [Python Home](https://www.python.org/)
 - [Official Documentation](https://www.python.org/doc/)
@@ -41,7 +47,7 @@ Continue your study of Python via:
 
 ## Python in Open Source
 
-You may enjoy:
+Browse open source activity in Python at:
 
 - [The GitHub Topic Page](https://github.com/topics/python)
 - [Trending Repositories on GitHub](https://github.com/trending/python)
