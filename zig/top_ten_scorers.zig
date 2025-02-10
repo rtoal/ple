@@ -1,4 +1,7 @@
 const std = @import("std");
+const reader = std.io.getStdIn().reader();
+const stdout = std.io.getStdOut().writer();
+const allocator = std.heap.page_allocator;
 
 const Player = struct {
     name: []const u8,
@@ -7,10 +10,6 @@ const Player = struct {
 };
 
 pub fn main() !void {
-    const allocator = std.heap.page_allocator;
-    const reader = std.io.getStdIn().reader();
-    var stdout = std.io.getStdOut().writer();
-
     var players = std.ArrayList(Player).init(allocator);
 
     var buf: [1000]u8 = undefined;

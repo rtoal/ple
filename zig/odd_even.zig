@@ -1,12 +1,11 @@
-const std = @import("std");
-const print = std.debug.print;
+var stdout = @import("std").io.getStdOut().writer();
 
-pub fn main() void {
+pub fn main() !void {
     const number: i32 = 21;
 
     if (number % 2 == 0) {
-        print("The number {} is even\n", .{number});
+        try stdout.print("The number {} is even\n", .{number});
     } else {
-        print("The number {} is odd\n", .{number});
+        try stdout.print("The number {} is odd\n", .{number});
     }
 }

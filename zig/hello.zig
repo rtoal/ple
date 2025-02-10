@@ -1,5 +1,5 @@
-const print = @import("std").debug.print;
+var stdout = @import("std").io.getStdOut().writer();
 
-pub fn main() void {
-    print("Hello, world!\n", .{});
+pub fn main() !void {
+    try stdout.print("{s}\n", .{"Hello, world!"});
 }

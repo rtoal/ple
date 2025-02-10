@@ -1,16 +1,12 @@
-const std = @import("std");
-const math = @import("std").math;
-const print = std.debug.print;
+const stdout = @import("std").io.getStdOut().writer();
 
-pub fn main() void {
-    const limit: usize = 40;
-    for (1..limit) |a| {
-        for (a..limit) |b| {
-            const c_squared: usize = a * a + b * b;
-            const c: usize = @intCast(math.sqrt(c_squared));
-
-            if (a * a + b * b == c * c and c <= limit) {
-                print("{}, {}, {}\n", .{ a, b, c });
+pub fn main() !void {
+    for (1..41) |c| {
+        for (1..c) |b| {
+            for (1..b) |a| {
+                if (a * a + b * b == c * c) {
+                    try stdout.print("{}, {}, {}\n", .{ a, b, c });
+                }
             }
         }
     }

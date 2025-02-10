@@ -1,10 +1,12 @@
 const std = @import("std");
-const print = std.debug.print;
+const stdout = std.io.getStdOut().writer();
 
-fn coord(x: i32, y: i32, z: i32) void {
-    print("The coordinates are: x = {}, y = {}, z = {}\n", .{ x, y, z });
+fn showCoordinates(x: i32, y: i32, z: i32) void {
+    stdout.print("Got: x = {}, y = {}, z = {}\n", .{ x, y, z }) catch {
+        std.debug.panic("{s}\n", .{"Failed to print"});
+    };
 }
 
 pub fn main() void {
-    coord(20, 40, 0);
+    showCoordinates(5, 8, 3);
 }
