@@ -44,8 +44,8 @@ Continue your study of Lua via:
 You may enjoy:
 
 - [The GitHub Topic Page](https://github.com/topics/lua)
-- [Trending Lua Repositories on GitHub](https://github.com/trending/lua)
-- [Top 100 Starred Lua Repositories on GitHub](https://github.com/EvanLi/Github-Ranking/blob/master/Top100/Lua.md)
+- [Trending Repositories on GitHub](https://github.com/trending/lua)
+- [Top 100 Starred Repositories on GitHub](https://github.com/EvanLi/Github-Ranking/blob/master/Top100/Lua.md)
 - [Luvit](https://github.com/luvit/luvit)
 - [KOReader](https://github.com/koreader/koreader)
 - [CorsixTH](https://github.com/CorsixTH/CorsixTH)

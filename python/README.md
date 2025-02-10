@@ -44,8 +44,8 @@ Continue your study of Python via:
 You may enjoy:
 
 - [The GitHub Topic Page](https://github.com/topics/python)
-- [Trending Lua Repositories on GitHub](https://github.com/trending/python)
-- [Top 100 Starred Lua Repositories on GitHub](https://github.com/EvanLi/Github-Ranking/blob/master/Top100/Python.md)
+- [Trending Repositories on GitHub](https://github.com/trending/python)
+- [Top 100 Starred Repositories on GitHub](https://github.com/EvanLi/Github-Ranking/blob/master/Top100/Python.md)
 - [Requests](https://github.com/kennethreitz/requests)
 - [Flask](https://github.com/mitsuhiko/flask)
 - [Reddit](https://github.com/reddit/reddit)

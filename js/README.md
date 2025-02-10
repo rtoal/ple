@@ -45,8 +45,8 @@ Continue your study of JavaScript via:
 You may enjoy:
 
 - [The GitHub Topic Page](https://github.com/topics/javascript)
-- [Trending Lua Repositories on GitHub](https://github.com/trending/javascript)
-- [Top 100 Starred Lua Repositories on GitHub](https://github.com/EvanLi/Github-Ranking/blob/master/Top100/JavaScript.md)
+- [Trending Repositories on GitHub](https://github.com/trending/javascript)
+- [Top 100 Starred Repositories on GitHub](https://github.com/EvanLi/Github-Ranking/blob/master/Top100/JavaScript.md)
 - [React](https://github.com/facebook/react)
 - [d3](https://github.com/mbostock/d3)
 - [date-fns](https://github.com/date-fns/date-fns)
