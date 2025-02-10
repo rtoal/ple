@@ -10,7 +10,7 @@ Once installed, programs in this folder can be run from the command line like so
 lci triple.lol
 ```
 
-## About LOLCODE:
+## About LOLCODE
 
 LOLCODE is an esoteric programming language inspired by the language of the "LOLCATS" meme. It’s easily recognized by its humorous, distinctive syntax and playful approach to coding. Since its introduction around 2007, LOLCODE has maintained a small but enthusiastic community, continually iterating on the existing codebase.
 
@@ -19,7 +19,7 @@ LOLCODE is an esoteric programming language inspired by the language of the "LOL
 Continue your exploration of LOLCODE via:
 
 - [Official LOLCODE Website](http://www.lolcode.org/)
-- [LOLCODE Language Reference](https://github.com/justinmeza/lolcode-spec/blob/master/v1.2/lolcode-spec-v1.2.md)
+- [LOLCODE Language Reference](https://github.com/justinmeza/lolcode-spec/blob/master/v1.3/lolcode-spec-v1.3.md)
 - [LCI (LOLCODE Interpreter) GitHub](https://github.com/justinmeza/lci)
 - [Rosetta Code LOLCODE Examples](https://rosettacode.org/wiki/Category:LOLCODE)
 
