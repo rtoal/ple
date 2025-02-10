@@ -24,30 +24,34 @@ However, several of these example programs are made up of multiple source code f
 javac AnimalChorusExample.java && java AnimalChorusExample
 ```
 
+To run the tests on a Unix-like shell:
+
+```
+./test.sh
+```
+
+Run `test.ps1` in PowerShell.
+
 ## About Java
 
 Java is a high-level, object-oriented language created by Sun Microsystems in 1995. Since then, it has taken over as one of the most widely-used languages in Computer Science for its use in a wide range of applications, including desktop, web, and mobile applications, as well as enterprise software systems. Java is propped up by the use of the Java Virtual Machine (JVM) which works as an interpreter of sorts which allows for abstraction and the use of its key feature of "write once, run anywhere" capability. Furthermore, it has been praised over the years for its successes in strong memory management, security, and scalability features which allow it to be used in developing large-scale applications, primarily in the realm of big data.
 
 ## Java Resources
 
-Continue your study of Java via:
+Continue your study of Java with:
 
 - [Documentation](https://docs.oracle.com/en/java/)
+- [Official Specifications](https://docs.oracle.com/javase/specs/)
+- [Java Tutorials](https://docs.oracle.com/javase/tutorial/)
 - [Geeks for Geeks](https://www.geeksforgeeks.org/java/)
 - [W3 Schools](https://www.w3schools.com/java/)
 - [Codecademy](https://www.codecademy.com/learn/learn-java)
-- [Official Specifications](https://docs.oracle.com/javase/specs/)
-- [Java Tutorials](https://docs.oracle.com/javase/tutorial/)
+- [Java at Rosetta Code](https://rosettacode.org/wiki/Category:Java)
 
-## Java Open Source Projects
+## Java in Open Source
 
-Studying, and contributing to, open source projects is an excellent way to improve your proficiency in any language. Of the many projects using Java, you may enjoy:
+Browse open source activity in Java at:
 
-- [Execrism](https://github.com/exercism/java)
-- [Open LaTeX Studio](https://github.com/sebbrudzinski/Open-LaTeX-Studio/)
-- [Dropwizard Jobs](https://github.com/dropwizard-jobs/dropwizard-jobs)
-- [News Android](https://github.com/nextcloud/news-android)
-- [Elasticsearch](https://github.com/elastic/elasticsearch)
-- [Retrofit](https://github.com/square/retrofit)
-- [Spring Framework](https://github.com/spring-projects/spring-framework)
-- [Guava](https://github.com/google/guava)
+- [The GitHub Topic Page](https://github.com/topics/java)
+- [Trending Repositories on GitHub](https://github.com/trending/java)
+- [Top 100 Starred Repositories on GitHub](https://github.com/EvanLi/Github-Ranking/blob/master/Top100/Java.md)

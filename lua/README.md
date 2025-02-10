@@ -20,7 +20,13 @@ lua top_ten_scorers.lua < ../test/wnba_input
 
 Running the command `lua` with no arguments gives you a repl.
 
-Tests can be run with `test.sh` or `test.ps1`.
+To run the tests on a Unix-like shell:
+
+```
+./test.sh
+```
+
+Run `test.ps1` in PowerShell.
 
 ## About Lua
 
@@ -28,7 +34,7 @@ Lua is a lightweight and efficient programming language. It was designed and imp
 
 ## Lua Resources
 
-Continue your study of Lua via:
+Continue your study of Lua with:
 
 - [Lua Home](http://www.lua.org/)
 - [Official Documentation](http://www.lua.org/docs.html)
@@ -41,13 +47,8 @@ Continue your study of Lua via:
 
 ## Lua in Open Source
 
-You may enjoy:
+Browse open source activity in Lua at:
 
 - [The GitHub Topic Page](https://github.com/topics/lua)
 - [Trending Repositories on GitHub](https://github.com/trending/lua)
 - [Top 100 Starred Repositories on GitHub](https://github.com/EvanLi/Github-Ranking/blob/master/Top100/Lua.md)
-- [Luvit](https://github.com/luvit/luvit)
-- [KOReader](https://github.com/koreader/koreader)
-- [CorsixTH](https://github.com/CorsixTH/CorsixTH)
-- [termtris](https://github.com/tylerneylon/termtris)
-- [PacPac](https://github.com/tylerneylon/pacpac)
