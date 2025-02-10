@@ -31,15 +31,16 @@ Continue your exploration of Zig via:
 - [Intro to Zig](https://www.youtube.com/watch?v=YXrb-DqsBNU)
 - [ZigLearn](https://ziglearn.org/learn/)
 - [Wikipedia](<https://en.wikipedia.org/wiki/Zig_(programming_language)>)
+- The book [Introduction to Zig](https://github.com/pedropark99/zig-book)
 
 ## Zig Open Source Projects
 
 Studying, and contributing to, open source projects is an excellent way to improve your proficiency in any language. Of the many projects using Lua, you may enjoy:
 
-- [Trending Lua Repositories on GitHub](https://github.com/trending/zig)
+- [Trending Zig Repositories on GitHub](https://github.com/trending/zig)
 - [tigerbeetle](https://github.com/tigerbeetle/tigerbeetle)
 - [asciigen](https://github.com/seatedro/asciigen)
 
 You can contribute to Zig itself:
 
-- [Zig](https://github.com/ziglang/zig)
+- [Language Repository at GitHub](https://github.com/ziglang/zig)
