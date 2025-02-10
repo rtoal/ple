@@ -9,16 +9,16 @@ fn printPermutations(a: []u8, n: usize) void {
             printPermutations(a, n - 1);
             const j = if (n % 2 == 0) 0 else i;
 
-            const temp = a[j];
+            const old_a_j = a[j];
             a[j] = a[n];
-            a[n] = temp;
+            a[n] = old_a_j;
         }
         printPermutations(a, n - 1);
     }
 }
 
 pub fn main() anyerror!void {
-    var args = try std.process.argsAlloc(std.heap.page_allocator);
+    const args = try std.process.argsAlloc(std.heap.page_allocator);
     defer std.process.argsFree(std.heap.page_allocator, args);
 
     // Skip the first argument which is the program's own path
