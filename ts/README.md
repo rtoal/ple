@@ -46,8 +46,9 @@ Continue your study of TypeScript via:
 - [Effective TypeScript book](https://effectivetypescript.com/)
 - [Type Challenges](https://github.com/type-challenges/type-challenges)
 - [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/)
+- [TypeScript at Rosetta Code](https://rosettacode.org/wiki/Category:TypeScript)
 
-# TypeScript Open Source Projects
+# TypeScript in Open Source
 
 You may enjoy:
 

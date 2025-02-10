@@ -4,7 +4,7 @@
 
 To build and run Julia programs on your local machine, download and install the most recent language version from the [Julia downloads page](https://julialang.org/downloads/) or use your favorite package manager.
 
-Once installed, programs in this folder can be run from the command line like so:
+Programs in this folder can be run from the command line like so:
 
 ```
 julia triple.jl
@@ -35,16 +35,19 @@ Julia is a high-level, dynamic programming language designed for scientific and 
 Continue your study of Julia via:
 
 - [Language Home](https://julialang.org/)
-- [Documentation](https://docs.julialang.org/), with links to the language manual and standard library reference. Don't miss the [Performance Tips](https://docs.julialang.org/en/v1/manual/performance-tips/) section.
-- [TutorialsPoint](https://www.tutorialspoint.com/julia/julia_overview.htm)
+- [Official Documentation](https://docs.julialang.org/), with links to the language manual and standard library reference. Don't miss the [Performance Tips](https://docs.julialang.org/en/v1/manual/performance-tips/) section.
 - [Gitbook Julia](https://syl1.gitbook.io/julia-language-a-concise-tutorial/language-core/getting-started)
 - [Curated Learning Resources](https://julialang.org/learning/)
 - [Advanced Publications](https://julialang.org/publications/)
+- [Julia at Rosetta Code](https://rosettacode.org/wiki/Category:Julia)
 
-## Julia Open Source Projects
+## Julia in Open Source
 
-Studying, and contributing to, open source projects is an excellent way to improve your proficiency in any language. Of the many projects using Julia, you may enjoy:
+You may enjoy:
 
+- [The GitHub Topic Page](https://github.com/topics/julia)
+- [Trending Repositories on GitHub](https://github.com/trending/julia)
+- [Top 100 Starred Repositories on GitHub](https://github.com/EvanLi/Github-Ranking/blob/master/Top100/Julia.md)
 - [Julia itself is Open-Source](https://github.com/JuliaLang/julia)
 - [Modeling Toolkit](https://github.com/SciML/ModelingToolkit.jl)
 - [JuMP](https://github.com/jump-dev/JuMP.jl)
