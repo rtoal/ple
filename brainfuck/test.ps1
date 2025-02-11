@@ -14,6 +14,9 @@ function Assert-MatchTests {
 
 $Error.clear()
 Get-Content "$PSScriptRoot\and.bf" | java -ea "$PSScriptRoot\BrainfuckInterp.java" 0 1 | Compare-Object ("0") | Assert-MatchTests &&
+Get-Content "$PSScriptRoot\clockhands.bf" | java -ea "$PSScriptRoot\BrainfuckInterp.java" |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
+    Assert-MatchTests &&
 Get-Content "$PSScriptRoot\copy_values.bf" | java -ea "$PSScriptRoot\BrainfuckInterp.java" &&
 Get-Content "$PSScriptRoot\destructive_addition.bf" | java -ea "$PSScriptRoot\BrainfuckInterp.java" &&
 Get-Content "$PSScriptRoot\equality.bf" | java -ea "$PSScriptRoot\BrainfuckInterp.java" 241 241 | Compare-Object ("1") | Assert-MatchTests &&

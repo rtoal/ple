@@ -95,6 +95,6 @@ public class BrainfuckInterp {
         return output;
     }
     public static void main(String args[]) {
-        System.out.println(interpretCode(String.join(" ", args)));
+        System.out.print(interpretCode(String.join(" ", args)));
     }
 }
