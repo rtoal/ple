@@ -15,7 +15,6 @@ python "$PSScriptRoot\anagrams.py" rats |
 python "$PSScriptRoot\anagrams_itertools.py" rats &&
 python "$PSScriptRoot\animals.py" &&
 python "$PSScriptRoot\basic_iterables.py" &&
-python "$PSScriptRoot\built_in_function_override.py" &&
 python "$PSScriptRoot\clockhands_time.py" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
@@ -31,6 +30,7 @@ python "$PSScriptRoot\kwargs_examples.py" &&
 python "$PSScriptRoot\log_decorator_example.py" &&
 python "$PSScriptRoot\memoized_fibonacci.py" &&
 #python "$PSScriptRoot\mi.py" &&
+python "$PSScriptRoot\monkey_patching.py" &&
 python "$PSScriptRoot\object_pool.py" &&
 python "$PSScriptRoot\permutations.py" I like carrots |
 Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |

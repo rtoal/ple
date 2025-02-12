@@ -13,6 +13,7 @@ python3 kwargs_examples.py && \
 python3 log_decorator_example.py && \
 python3 memoized_fibonacci.py && \
 python3 mi.py && \
+python3 monkey_patching.py && \
 python3 object_pool.py && \
 python3 permutations.py I like carrots | diff - ../test/carrots_expected && \
 python3 powers_of_two.py && \
