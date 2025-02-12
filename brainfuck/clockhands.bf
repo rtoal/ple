@@ -84,7 +84,7 @@ Start the clockhands loop   { for i in range(10) }
         >>                      Go to c6
         [-<<+>>]                Move c6 to c4
         <<<                     Go to c3 
-    ] DONE!!!
+    ]
 
     Do expression t = t plus 21600
     >
@@ -157,7 +157,7 @@ Start the clockhands loop   { for i in range(10) }
             [-]                 Clear c11
         ]
         <<<<<                   Go to c6
-    ] DONE!!!
+    ]
 
     Do expression t = t // 11
     <<<                         Go to c3
@@ -260,7 +260,7 @@ Start the clockhands loop   { for i in range(10) }
     ]
     +++++ +++++                 Set c3 to 11
     +
-    [           ///////////////////////////////////////////////////////
+    [
         [->+>+>+<<<]            Move c3 to c4 c5 and c6
         >                       Go to c4
         [-<+>]                  Move c4 to c3
@@ -354,7 +354,7 @@ Start the clockhands loop   { for i in range(10) }
             [-]                 Clear c5
         ]
         <<                      Go to c3
-    ] ////////////////////////////////////////////////////////////////////
+    ]
 
     Do expression h s = divmod(t 60)
     >>>>>>                      Go to c9
