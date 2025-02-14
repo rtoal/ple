@@ -63,6 +63,8 @@ langs.forEach((lang, index) => {
     }
   }
 });
+console.log(`We have ${langs.length} languages`);
+console.log(langs.filter((lang) => !lang.noLogo).length + " with logos");
 
 var imageElement = document.querySelector("#logo img");
 var description = document.getElementById("description");

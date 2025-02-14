@@ -1,5 +1,11 @@
 var langs = [
   {
+    i: "05ab1e",
+    n: "05AB1E",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
     i: "ada",
     n: "Ada",
     h: "http://www.adaic.org/",
@@ -35,6 +41,12 @@ var langs = [
     r: "Concise code, array-orientation, symbolic alphabet",
     u: "Finance, scientific research",
     t: ["Array-oriented", "Dynamic"],
+  },
+  {
+    i: "assemblyscript",
+    n: "AssemblyScript",
+    d: "Description coming soon",
+    noLogo: true,
   },
   {
     i: "awk",
@@ -106,6 +118,18 @@ var langs = [
     t: ["Statically-typed"],
   },
   {
+    i: "borgo",
+    n: "Borgo",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
+    i: "brainfuck",
+    n: "Brainfuck",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
     i: "c",
     n: "C",
     h: "https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html",
@@ -154,6 +178,18 @@ var langs = [
     t: ["Parallel", "Portable", "Scalable"],
   },
   {
+    i: "cjam",
+    n: "CJam",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
+    i: "citrine",
+    n: "Citrine",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
     i: "clojure",
     n: "Clojure",
     h: "http://clojure.org/",
@@ -167,6 +203,12 @@ var langs = [
     r: "Macros, Lisp-ness, concurrency support, Java interoperability",
     u: "Data mining, Artificial intelligence",
     t: ["Functional", "Dynamic", "Concurrent", "Homoiconic"],
+  },
+  {
+    i: "clu",
+    n: "CLU",
+    d: "Description coming soon",
+    noLogo: true,
   },
   {
     i: "cobol",
@@ -344,18 +386,10 @@ var langs = [
     t: ["Stack-based", "Concatenative"],
   },
   {
-    i: "falcon",
-    n: "Falcon",
-    h: "http://www.falconpl.org/",
-    w: "Falcon_(programming_language)",
-    rc: "Falcon",
-    pp: "falcon",
-    d: "Falcon is a simple and easy-to-learn multiparadigm language.",
-    f: 2003,
-    v: ["0.9 (2009)"],
-    r: "Interoperability with C++",
-    u: "Data streaming, scripting",
-    t: ["Multi-paradigm"],
+    i: "fish",
+    n: "Fish",
+    d: "Description coming soon",
+    noLogo: true,
   },
   {
     i: "forth",
@@ -415,6 +449,18 @@ var langs = [
     r: "Parallel array processing in an ML language without writing CUDA or OpenCL by hand",
     u: "High-performance applications on massively parallel hardware",
     t: ["Static", "Array", "Data Parallel", "Pure Functional"],
+  },
+  {
+    i: "gdscript",
+    n: "GDScript",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
+    i: "george",
+    n: "GEORGE",
+    d: "Description coming soon",
+    noLogo: true,
   },
   {
     i: "gleam",
@@ -540,6 +586,18 @@ var langs = [
     t: ["Non-strict", "Lazy", "Functional"],
   },
   {
+    i: "haxe",
+    n: "Haxe",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
+    i: "hylo",
+    n: "Hylo",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
     i: "idris",
     n: "Idris",
     h: "http://www.idris-lang.org/",
@@ -567,6 +625,12 @@ var langs = [
     r: "Simplicity of design",
     u: "Exploratory software development",
     t: ["Prototypal"],
+  },
+  {
+    i: "j",
+    n: "J",
+    d: "Description coming soon",
+    noLogo: true,
   },
   {
     i: "java",
@@ -660,6 +724,42 @@ var langs = [
     r: "Nullables, interoperability with Java",
     u: "Replacing Java",
     t: ["Object-oriented", "Static"],
+  },
+  {
+    i: "lean",
+    n: "LEAN",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
+    i: "modula",
+    n: "Modula",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
+    i: "modula2",
+    n: "Modula-2",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
+    i: "linotte",
+    n: "Linotte",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
+    i: "livescript",
+    n: "LiveScript",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
+    i: "lobster",
+    n: "Lobster",
+    d: "Description coming soon",
+    noLogo: true,
   },
   {
     i: "lolcode",
@@ -780,6 +880,12 @@ var langs = [
     t: ["x86 Assembler"],
   },
   {
+    i: "neko",
+    n: "Neko",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
     i: "nemerle",
     n: "Nemerle",
     h: "http://www.nemerle.org/",
@@ -792,6 +898,12 @@ var langs = [
     r: "Nemerle's developers were hired by JetBrains to create the language workbench, Nitra. Nitra will likely be used to create newer versions of Nemerle.",
     u: "Helps create platforms on Common Language Infrastructures.",
     t: ["Functional", "Object-Oriented", "Metaprogramming", "Imperative"],
+  },
+  {
+    i: "nile",
+    n: "Nile",
+    d: "Description coming soon",
+    noLogo: true,
   },
   {
     i: "nim",
@@ -876,6 +988,12 @@ var langs = [
     t: ["Concurrent", "Imperative", "Object-Oriented", "Parallelism"],
   },
   {
+    i: "pascal",
+    n: "Pascal",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
     i: "perl",
     n: "Perl",
     h: "https://www.perl.org/",
@@ -926,6 +1044,18 @@ var langs = [
     ],
   },
   {
+    i: "powershell",
+    n: "PowerShell",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
+    i: "prolog",
+    n: "Prolog",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
     i: "purescript",
     n: "PureScript",
     h: "http://www.purescript.org/",
@@ -936,6 +1066,12 @@ var langs = [
     r: "An alternative Haskell that compiles to JavaScript",
     u: "Web development, web servers, and web applications.",
     t: ["Functional", "Polymorphic", "Pattern matching"],
+  },
+  {
+    i: "pyth",
+    n: "Pyth",
+    d: "Description coming soon",
+    noLogo: true,
   },
   {
     i: "python",
@@ -1092,6 +1228,12 @@ var langs = [
     ],
   },
   {
+    i: "scheme",
+    n: "Scheme",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
     i: "scratch",
     n: "Scratch",
     h: "https://scratch.mit.edu/",
@@ -1233,6 +1375,12 @@ var langs = [
     t: ["Functional", "Imperative", "Object-Oriented"],
   },
   {
+    i: "unison",
+    n: "Unison",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
     i: "v",
     n: "V",
     h: "https://vlang.io/",
@@ -1252,11 +1400,23 @@ var langs = [
     t: ["System"],
   },
   {
+    i: "verilog",
+    n: "Verilog",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
     i: "verse",
     n: "Verse",
     h: "https://verseprogramming.com/",
     d: "Verse is a functional-logic language created by Epic Games.",
     f: 2023,
+    noLogo: true,
+  },
+  {
+    i: "virgil",
+    n: "Virgil",
+    d: "Description coming soon",
     noLogo: true,
   },
   {
@@ -1271,6 +1431,12 @@ var langs = [
     r: "Precondition, postconditions, and loop invariants to act as specifications to achieve the language's general aim to help test and eliminate bugs from existing code.",
     u: "Testing and debugging",
     t: ["Experimental", "Functional", "Imperative"],
+  },
+  {
+    i: "whitespace",
+    n: "Whitespace",
+    d: "Description coming soon",
+    noLogo: true,
   },
   {
     i: "zig",
