@@ -56,6 +56,8 @@ nav > div:hover {
   padding: 16px 16px 16px 48px;
   position: fixed;
   left: 232px;
+  font-family: serif;
+  font-size: 1.25rem;
   height: calc(100vh - 80px);
   overflow: scroll;
 }
@@ -73,4 +75,15 @@ nav > div:hover {
   padding: 3px;
   color: white;
   background-color: blue;
+}
+
+span.cell {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 1px solid white;
+  margin: 3px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
 }

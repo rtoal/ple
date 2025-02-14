@@ -19,7 +19,6 @@ var iconFor = function (iconName, uri) {
 };
 
 langs.forEach((lang, index) => {
-  console.log(lang);
   lang.index = index;
   var span = document.createElement("span");
   var attribute = document.createAttribute("class");
@@ -27,10 +26,7 @@ langs.forEach((lang, index) => {
   span.data = lang;
   span.setAttributeNode(attribute);
   span.style.backgroundImage = "url(resources/" + lang.i + "-logo-64.png)";
-  document.getElementById("canvas").appendChild(span);
-  span.onclick = function () {
-    show(lang);
-  };
+  document.querySelector("#index").appendChild(span);
   if ((lang.h || lang.w || lang.g || lang.rc || lang.pp) && lang.d) {
     var icons = [];
     if (lang.h) icons.push(iconFor("home", lang.h));
@@ -75,7 +71,9 @@ var prev = document.getElementById("prev");
 var next = document.getElementById("next");
 
 function show(language) {
+  document.querySelector("#index").style.display = "none";
   imageElement.src = "resources/" + language.i + "-logo-240.png";
+  imageElement.alt = `Logo for ${language.n}`;
   if (language.d) {
     description.innerHTML = language.d;
     description.style.display = "block";
@@ -113,6 +111,4 @@ function show(language) {
   } else {
     tags.style.display = "none";
   }
-
-  window.location.hash = "#" + language.i;
 }
