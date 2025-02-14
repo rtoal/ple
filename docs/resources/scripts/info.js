@@ -572,7 +572,6 @@ var langs = [
     i: "haxe",
     n: "Haxe",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "hylo",
@@ -1262,7 +1261,6 @@ var langs = [
     g: "squirrel",
     d: "Squirrel is a high-level imperative, object-oriented programming language.",
     f: 2003,
-    noLogo: true,
   },
   {
     i: "snap",
