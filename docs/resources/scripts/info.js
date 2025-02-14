@@ -728,7 +728,6 @@ var langs = [
     i: "lean",
     n: "LEAN",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "modula",
@@ -752,13 +751,11 @@ var langs = [
     i: "livescript",
     n: "LiveScript",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "lobster",
     n: "Lobster",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "lolcode",
