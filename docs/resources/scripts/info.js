@@ -712,18 +712,6 @@ var langs = [
     d: "Description coming soon",
   },
   {
-    i: "modula",
-    n: "Modula",
-    d: "Description coming soon",
-    noLogo: true,
-  },
-  {
-    i: "modula2",
-    n: "Modula-2",
-    d: "Description coming soon",
-    noLogo: true,
-  },
-  {
     i: "linotte",
     n: "Linotte",
     d: "Description coming soon",
@@ -827,6 +815,18 @@ var langs = [
     r: "Influencing widely used functional programming language, such as Haskell.",
     u: "Research and teaching functional programming",
     t: ["Polymorphic", "Functional", "Non-Strict", "Dynamic"],
+  },
+  {
+    i: "modula",
+    n: "Modula",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
+    i: "modula2",
+    n: "Modula-2",
+    d: "Description coming soon",
+    noLogo: true,
   },
   {
     i: "mojo",
