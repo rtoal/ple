@@ -200,6 +200,8 @@ var langs = [
   {
     i: "clu",
     n: "CLU",
+    h: "https://pmg.csail.mit.edu/CLU.html",
+    w: "CLU_(programming_language)",
     d: "Description coming soon",
     noLogo: true,
   },
@@ -382,7 +384,6 @@ var langs = [
     i: "fish",
     n: "Fish",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "forth",
@@ -714,7 +715,6 @@ var langs = [
     i: "linotte",
     n: "Linotte",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "livescript",
@@ -895,6 +895,11 @@ var langs = [
     ],
   },
   {
+    i: "oberon",
+    n: "Oberon",
+    d: "Description coming soon",
+  },
+  {
     i: "ocaml",
     n: "OCaml",
     h: "https://ocaml.org/",
@@ -918,7 +923,6 @@ var langs = [
     i: "octave",
     n: "Octave",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "odin",
@@ -1008,7 +1012,6 @@ var langs = [
     i: "powershell",
     n: "PowerShell",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "prolog",
@@ -1330,7 +1333,6 @@ var langs = [
     i: "unison",
     n: "Unison",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "v",
@@ -1363,7 +1365,6 @@ var langs = [
     h: "https://verseprogramming.com/",
     d: "Verse is a functional-logic language created by Epic Games.",
     f: 2023,
-    noLogo: true,
   },
   {
     i: "virgil",
