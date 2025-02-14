@@ -453,7 +453,6 @@ var langs = [
     i: "gdscript",
     n: "GDScript",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "george",
@@ -629,7 +628,6 @@ var langs = [
     i: "j",
     n: "J",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "java",
@@ -879,7 +877,6 @@ var langs = [
     i: "neko",
     n: "Neko",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "nemerle",
@@ -942,6 +939,12 @@ var langs = [
       "Pattern matching",
       "Polymorphic",
     ],
+  },
+  {
+    i: "octave",
+    n: "Octave",
+    d: "Description coming soon",
+    noLogo: true,
   },
   {
     i: "odin",
@@ -1067,7 +1070,6 @@ var langs = [
     i: "pyth",
     n: "Pyth",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "python",
@@ -1083,6 +1085,18 @@ var langs = [
     r: "Expressiveness",
     u: "Web servers, Scripting, Data science",
     t: ["Imperative", "Glue", "Dynamic", "Scripting"],
+  },
+  {
+    i: "qsharp",
+    n: "Q#",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
+    i: "quipper",
+    n: "Quipper",
+    d: "Description coming soon",
+    noLogo: true,
   },
   {
     i: "quorum",
