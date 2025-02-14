@@ -1,11 +1,9 @@
+const title = document.querySelector("#title");
 const nav = document.querySelector("nav");
-
-for (let lang of langs) {
-  const item = document.createElement("div");
-  item.appendChild(document.createTextNode(lang.n));
-  item.onclick = () => show(lang);
-  nav.appendChild(item);
-}
+const imageElement = document.querySelector("#logo img");
+const description = document.getElementById("description");
+const info = document.getElementById("info");
+const tags = document.getElementById("tags");
 
 function iconFor(iconName, uri) {
   return (
@@ -17,61 +15,13 @@ function iconFor(iconName, uri) {
   );
 }
 
-langs.forEach((lang, index) => {
-  lang.index = index;
-  if (!lang.noLogo) {
-    var span = document.createElement("span");
-    var attribute = document.createAttribute("class");
-    attribute.value = "cell";
-    span.data = lang;
-    span.setAttributeNode(attribute);
-    span.style.backgroundImage = "url(resources/" + lang.i + "-logo-64.png)";
-    document.querySelector("#index").appendChild(span);
-  }
-  if ((lang.h || lang.w || lang.g || lang.rc || lang.pp) && lang.d) {
-    var icons = [];
-    if (lang.h) icons.push(iconFor("home", lang.h));
-    if (lang.w)
-      icons.push(
-        iconFor("wikipedia", "https://en.wikipedia.org/wiki/" + lang.w)
-      );
-    if (lang.g)
-      icons.push(
-        iconFor(
-          "github",
-          "https://github.com/search?l=" +
-            lang.g +
-            "&q=stars%3A%3E1&s=stars&type=Repositories"
-        )
-      );
-    if (lang.rc)
-      icons.push(
-        iconFor(
-          "rosetta-code",
-          "https://rosettacode.org/wiki/Category:" + lang.rc
-        )
-      );
-    if (lang.pp)
-      icons.push(
-        iconFor("progopedia", "http://progopedia.com/language/" + lang.pp + "/")
-      );
-    if (icons) {
-      lang.d +=
-        '&nbsp;<span style="white-space:nowrap">' +
-        icons.join("&nbsp;") +
-        "</span>";
-    }
-  }
-});
-console.log(`We have ${langs.length} languages`);
-console.log(langs.filter((lang) => !lang.noLogo).length + " with logos");
-
-var imageElement = document.querySelector("#logo img");
-var description = document.getElementById("description");
-var info = document.getElementById("info");
-var tags = document.getElementById("tags");
+function showIndex() {
+  document.querySelector("#index").style.display = "block";
+  document.querySelector("#single").style.display = "none";
+}
 
 function show(language) {
+  document.querySelector("#single").style.display = "block";
   document.querySelector("#index").style.display = "none";
   if (language.noLogo) {
     imageElement.style.display = "none";
@@ -89,24 +39,23 @@ function show(language) {
   }
   if (language.f || language.v || language.r || language.u) {
     info.style.display = "block";
-    var text = [];
+    var items = "";
     if (language.f) {
-      text.push("<b>First appeared</b>: " + language.f);
+      items += `<li><b>First appeared</b>: ${language.f}</li>`;
     }
     if (language.v && language.v.length > 0) {
-      text.push("<b>Notable Versions</b>: " + language.v.join(", "));
+      items += `<li><b>Notable Versions</b>: ${language.v.join(", ")}</li>`;
     }
     if (language.r) {
-      text.push("<b>Recognized for</b>: " + language.r);
+      items += `<li><b>Recognized for</b>: ${language.r}</li>`;
     }
     if (language.u) {
-      text.push("<b>Used in</b>: " + language.u);
+      items += `<li><b>Used in</b>: ${language.u}</li>`;
     }
-    info.innerHTML = text.join(" &bull; ");
+    info.innerHTML = items;
   } else {
     info.style.display = "none";
   }
-
   if (language.t) {
     tags.style.display = "block";
     tags.innerHTML = language.t
@@ -118,3 +67,66 @@ function show(language) {
     tags.style.display = "none";
   }
 }
+
+function load() {
+  for (let lang of langs) {
+    const item = document.createElement("div");
+    item.appendChild(document.createTextNode(lang.n));
+    item.onclick = () => show(lang);
+    nav.appendChild(item);
+  }
+  langs.forEach((lang, index) => {
+    lang.index = index;
+    if (!lang.noLogo) {
+      const span = document.createElement("span");
+      const attribute = document.createAttribute("class");
+      attribute.value = "cell";
+      span.data = lang;
+      span.setAttributeNode(attribute);
+      span.style.backgroundImage = "url(resources/" + lang.i + "-logo-64.png)";
+      document.querySelector("#index").appendChild(span);
+    }
+    if ((lang.h || lang.w || lang.g || lang.rc || lang.pp) && lang.d) {
+      let icons = [];
+      if (lang.h) icons.push(iconFor("home", lang.h));
+      if (lang.w)
+        icons.push(
+          iconFor("wikipedia", "https://en.wikipedia.org/wiki/" + lang.w)
+        );
+      if (lang.g)
+        icons.push(
+          iconFor(
+            "github",
+            "https://github.com/search?l=" +
+              lang.g +
+              "&q=stars%3A%3E1&s=stars&type=Repositories"
+          )
+        );
+      if (lang.rc)
+        icons.push(
+          iconFor(
+            "rosetta-code",
+            "https://rosettacode.org/wiki/Category:" + lang.rc
+          )
+        );
+      if (lang.pp)
+        icons.push(
+          iconFor(
+            "progopedia",
+            "http://progopedia.com/language/" + lang.pp + "/"
+          )
+        );
+      if (icons) {
+        lang.d +=
+          '&nbsp;<span style="white-space:nowrap">' +
+          icons.join("&nbsp;") +
+          "</span>";
+      }
+    }
+  });
+  console.log(`We have ${langs.length} languages`);
+  console.log(langs.filter((lang) => !lang.noLogo).length + " with logos");
+}
+
+title.addEventListener("click", showIndex);
+document.addEventListener("DOMContentLoaded", load);
