@@ -69,6 +69,11 @@ nav > div:hover {
   background-repeat: no-repeat;
 }
 
+h1 {
+  font-size: 2.25rem;
+  font-family: sans-serif;
+}
+
 .tag {
   font-family: Arial, sans-serif;
   font-size: 90%;

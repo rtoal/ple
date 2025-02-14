@@ -9,7 +9,7 @@ for (let lang of langs) {
 
 function iconFor(iconName, uri) {
   return (
-    "<a href=" +
+    "<a target='more' href=" +
     uri +
     "><img src=resources/" +
     iconName +
@@ -19,13 +19,15 @@ function iconFor(iconName, uri) {
 
 langs.forEach((lang, index) => {
   lang.index = index;
-  var span = document.createElement("span");
-  var attribute = document.createAttribute("class");
-  attribute.value = "cell";
-  span.data = lang;
-  span.setAttributeNode(attribute);
-  span.style.backgroundImage = "url(resources/" + lang.i + "-logo-64.png)";
-  document.querySelector("#index").appendChild(span);
+  if (!lang.noLogo) {
+    var span = document.createElement("span");
+    var attribute = document.createAttribute("class");
+    attribute.value = "cell";
+    span.data = lang;
+    span.setAttributeNode(attribute);
+    span.style.backgroundImage = "url(resources/" + lang.i + "-logo-64.png)";
+    document.querySelector("#index").appendChild(span);
+  }
   if ((lang.h || lang.w || lang.g || lang.rc || lang.pp) && lang.d) {
     var icons = [];
     if (lang.h) icons.push(iconFor("home", lang.h));
@@ -69,15 +71,20 @@ var tags = document.getElementById("tags");
 
 function show(language) {
   document.querySelector("#index").style.display = "none";
-  imageElement.src = "resources/" + language.i + "-logo-240.png";
-  imageElement.alt = `Logo for ${language.n}`;
+  if (language.noLogo) {
+    imageElement.style.display = "none";
+  } else {
+    imageElement.style.display = "block";
+    imageElement.src = "resources/" + language.i + "-logo-240.png";
+    imageElement.alt = `Logo for ${language.n}`;
+  }
+  document.querySelector("h1").textContent = language.n;
   if (language.d) {
     description.innerHTML = language.d;
     description.style.display = "block";
   } else {
     description.style.display = "none";
   }
-
   if (language.f || language.v || language.r || language.u) {
     info.style.display = "block";
     var text = [];
