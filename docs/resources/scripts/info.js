@@ -146,6 +146,12 @@ var langs = [
     t: ["Imperative", "Low-level", "System", "Non-managed"],
   },
   {
+    i: "carbon",
+    n: "Carbon",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
     i: "ceylon",
     n: "Ceylon",
     h: "http://ceylon-lang.org/",
@@ -828,6 +834,11 @@ var langs = [
     noLogo: true,
   },
   {
+    i: "modula3",
+    n: "Modula-3",
+    d: "Description coming soon",
+  },
+  {
     i: "mojo",
     n: "Mojo",
     h: "https://www.modular.com/mojo",
@@ -1354,6 +1365,12 @@ var langs = [
     t: ["System"],
   },
   {
+    i: "vale",
+    n: "Vale",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
     i: "verilog",
     n: "Verilog",
     d: "Description coming soon",
@@ -1401,5 +1418,10 @@ var langs = [
     r: "Systems programming made easy.",
     u: "Creating, maintaining, and managing large systems software.",
     t: ["Imperative"],
+  },
+  {
+    i: "zsh",
+    n: "Zsh",
+    d: "Description coming soon",
   },
 ];
