@@ -46,7 +46,6 @@ var langs = [
     i: "assemblyscript",
     n: "AssemblyScript",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "awk",
