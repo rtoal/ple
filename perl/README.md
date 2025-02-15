@@ -11,6 +11,10 @@ perl triple.pl
 ```
 
 ```
+perl permutations.pl I like carrots
+```
+
+```
 perl top_ten_scorers.pl < ../test/wnba_input
 ```
 
@@ -18,6 +22,7 @@ To run the tests on a Unix-like shell:
 
 ```
 ./test.sh
+
 ```
 
 ## About Perl
