@@ -1,4 +1,4 @@
-# A handcoded binary search, to illustrate some Perl features
+# A hand coded binary search, to illustrate some Perl features
 
 use strict;
 use warnings;
@@ -6,7 +6,7 @@ use utf8;
 use open qw(:std :utf8);
 
 sub binary_search {
-    # Arugments are passed as the list @_
+    # Arguments are passed as the list @_
     my ($element_to_find, @ordered_array) = @_;
 
     my $array_length = scalar @ordered_array;
