@@ -3,6 +3,7 @@ perl binary_search.pl && \
 echo 'tea\nlavender\n' | perl cafe.pl && \
 perl hello.pl && \
 perl palindrome.pl && \
+perl permutations.pl I like carrots | diff ../test/carrots_expected - && \
 perl primes.pl 100 && \
 perl ses.pl && \
 perl summer.pl && \
