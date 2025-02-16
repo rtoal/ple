@@ -84,7 +84,10 @@ function load() {
       span.data = lang;
       span.setAttributeNode(attribute);
       span.style.backgroundImage = "url(resources/" + lang.i + "-logo-64.png)";
-      span.onclick = () => show(lang);
+      span.onclick = () => {
+        history.pushState({}, "", "");
+        show(lang);
+      };
       document.querySelector("#index").appendChild(span);
     }
     if ((lang.h || lang.w || lang.g || lang.rc || lang.pp) && lang.d) {
@@ -131,3 +134,4 @@ function load() {
 
 title.addEventListener("click", showIndex);
 document.addEventListener("DOMContentLoaded", load);
+window.addEventListener("popstate", showIndex);
