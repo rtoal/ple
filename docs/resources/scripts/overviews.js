@@ -84,6 +84,7 @@ function load() {
       span.data = lang;
       span.setAttributeNode(attribute);
       span.style.backgroundImage = "url(resources/" + lang.i + "-logo-64.png)";
+      span.onclick = () => show(lang);
       document.querySelector("#index").appendChild(span);
     }
     if ((lang.h || lang.w || lang.g || lang.rc || lang.pp) && lang.d) {

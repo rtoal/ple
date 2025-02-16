@@ -21,10 +21,20 @@ var langs = [
     t: ["Structured", "Imperative", "Static", "Concurrent"],
   },
   {
+    i: "agda",
+    n: "Agda",
+    d: "Agda is a dependently typed programming language. It is an extension of Per Martin-Löf’s type theory and is the latest in the tradition of languages developed in the programming logic group at Chalmers. The current incarnation of the language, originally named “Agda 2” is a complete rewrite of the original Agda from 1999.",
+    f: 2007,
+    h: "https://wiki.portal.chalmers.se/agda/pmwiki.php",
+    w: "Agda_(programming_language)",
+    u: "Formal verification, proof assistance",
+  },
+  {
     i: "algol68",
     n: "Algol 68",
+    d: "Algol 68 is a language that was designed to be a successor to Algol 60, with significantly more capabilities and a more rigorously defined syntax and semantics.",
+    h: "https://www.algol68.org/",
     w: "ALGOL_68",
-    d: "Algol 68 is a language that was designed to be a successor to Algol 60.",
     noLogo: true,
   },
   {
@@ -45,6 +55,8 @@ var langs = [
     i: "assemblyscript",
     n: "AssemblyScript",
     d: "Description coming soon",
+    h: "https://www.assemblyscript.org/",
+    w: "AssemblyScript",
   },
   {
     i: "awk",
@@ -186,7 +198,6 @@ var langs = [
     i: "citrine",
     n: "Citrine",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "clojure",
@@ -597,7 +608,6 @@ var langs = [
     i: "hylo",
     n: "Hylo",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "idris",
