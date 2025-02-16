@@ -149,7 +149,6 @@ var langs = [
     i: "carbon",
     n: "Carbon",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "ceylon",
@@ -394,6 +393,11 @@ var langs = [
     r: "Flexibility, large standard library",
     u: "Research into optimization techniques",
     t: ["Stack-based", "Concatenative"],
+  },
+  {
+    i: "fantom",
+    n: "Fantom",
+    d: "Description coming soon",
   },
   {
     i: "fish",
@@ -920,6 +924,12 @@ var langs = [
     d: "Description coming soon",
   },
   {
+    i: "objective-c",
+    n: "Objective-C",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
     i: "ocaml",
     n: "OCaml",
     h: "https://ocaml.org/",
@@ -1027,6 +1037,12 @@ var langs = [
       "Reflective",
       "Dynamic",
     ],
+  },
+  {
+    i: "pli",
+    n: "PL/I",
+    d: "Description coming soon",
+    noLogo: true,
   },
   {
     i: "powershell",
@@ -1247,7 +1263,6 @@ var langs = [
     r: "Object-oriented programming",
     u: "Simulation",
     t: ["Object-oriented"],
-    noLogo: true,
   },
   {
     i: "smalltalk",
@@ -1353,6 +1368,11 @@ var langs = [
   {
     i: "unison",
     n: "Unison",
+    d: "Description coming soon",
+  },
+  {
+    i: "ur",
+    n: "Ur",
     d: "Description coming soon",
   },
   {
