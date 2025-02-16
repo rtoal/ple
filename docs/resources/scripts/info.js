@@ -21,10 +21,20 @@ var langs = [
     t: ["Structured", "Imperative", "Static", "Concurrent"],
   },
   {
+    i: "agda",
+    n: "Agda",
+    d: "Agda is a dependently typed programming language. It is an extension of Per Martin-Löf’s type theory and is the latest in the tradition of languages developed in the programming logic group at Chalmers. The current incarnation of the language, originally named “Agda 2” is a complete rewrite of the original Agda from 1999.",
+    f: 2007,
+    h: "https://wiki.portal.chalmers.se/agda/pmwiki.php",
+    w: "Agda_(programming_language)",
+    u: "Formal verification, proof assistance",
+  },
+  {
     i: "algol68",
     n: "Algol 68",
+    d: "Algol 68 is a language that was designed to be a successor to Algol 60, with significantly more capabilities and a more rigorously defined syntax and semantics.",
+    h: "https://www.algol68.org/",
     w: "ALGOL_68",
-    d: "Algol 68 is a language that was designed to be a successor to Algol 60.",
     noLogo: true,
   },
   {
@@ -45,6 +55,8 @@ var langs = [
     i: "assemblyscript",
     n: "AssemblyScript",
     d: "Description coming soon",
+    h: "https://www.assemblyscript.org/",
+    w: "AssemblyScript",
   },
   {
     i: "awk",
@@ -139,11 +151,16 @@ var langs = [
       "K & R (1972)",
       "ISO (1989/90)",
       "99 (1999)",
-      "11 (2011), 17 (2018), 23 (2023)",
+      "11 (2011), 17 (2018), 23 (2024)",
     ],
     r: "Systems programming",
     u: "Unix and Unix-like operating systems",
     t: ["Imperative", "Low-level", "System", "Non-managed"],
+  },
+  {
+    i: "carbon",
+    n: "Carbon",
+    d: "Description coming soon",
   },
   {
     i: "ceylon",
@@ -181,7 +198,6 @@ var langs = [
     i: "citrine",
     n: "Citrine",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "clojure",
@@ -200,6 +216,8 @@ var langs = [
   {
     i: "clu",
     n: "CLU",
+    h: "https://pmg.csail.mit.edu/CLU.html",
+    w: "CLU_(programming_language)",
     d: "Description coming soon",
     noLogo: true,
   },
@@ -326,6 +344,15 @@ var langs = [
     t: ["Object-oriented", "Imperative", "Functional"],
   },
   {
+    i: "eiffel",
+    n: "Eiffel",
+    h: "https://www.eiffel.org/",
+    w: "Eiffel_(programming_language)",
+    g: "eiffel",
+    rc: "Eiffel",
+    d: "Description coming soon",
+  },
+  {
     i: "elixir",
     n: "Elixir",
     h: "http://elixir-lang.org/",
@@ -379,10 +406,14 @@ var langs = [
     t: ["Stack-based", "Concatenative"],
   },
   {
+    i: "fantom",
+    n: "Fantom",
+    d: "Description coming soon",
+  },
+  {
     i: "fish",
     n: "Fish",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "forth",
@@ -572,13 +603,11 @@ var langs = [
     i: "haxe",
     n: "Haxe",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "hylo",
     n: "Hylo",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "idris",
@@ -715,7 +744,6 @@ var langs = [
     i: "linotte",
     n: "Linotte",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "livescript",
@@ -829,6 +857,11 @@ var langs = [
     noLogo: true,
   },
   {
+    i: "modula3",
+    n: "Modula-3",
+    d: "Description coming soon",
+  },
+  {
     i: "mojo",
     n: "Mojo",
     h: "https://www.modular.com/mojo",
@@ -896,6 +929,17 @@ var langs = [
     ],
   },
   {
+    i: "oberon",
+    n: "Oberon",
+    d: "Description coming soon",
+  },
+  {
+    i: "objective-c",
+    n: "Objective-C",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
     i: "ocaml",
     n: "OCaml",
     h: "https://ocaml.org/",
@@ -919,7 +963,6 @@ var langs = [
     i: "octave",
     n: "Octave",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "odin",
@@ -1006,10 +1049,15 @@ var langs = [
     ],
   },
   {
+    i: "pli",
+    n: "PL/I",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
     i: "powershell",
     n: "PowerShell",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "prolog",
@@ -1173,9 +1221,10 @@ var langs = [
     rc: "Scala",
     pp: "scala",
     d: "Scala is a statically-typed, functional, and object-oriented language that interoperates with Java.",
-    f: 2003,
-    r: "Being highly scalable.",
-    u: "Acting to replace and resolve many of the flaws of Java",
+    f: 2004,
+    r: "Supporting both functional and object-oriented styles and being highly scalable.",
+    u: "Distributed data processing, web servers",
+    v: ["2 (2006)", "3 (2021)"],
     t: [
       "Multi-paradigm",
       "Concurrent",
@@ -1224,7 +1273,6 @@ var langs = [
     r: "Object-oriented programming",
     u: "Simulation",
     t: ["Object-oriented"],
-    noLogo: true,
   },
   {
     i: "smalltalk",
@@ -1262,7 +1310,6 @@ var langs = [
     g: "squirrel",
     d: "Squirrel is a high-level imperative, object-oriented programming language.",
     f: 2003,
-    noLogo: true,
   },
   {
     i: "snap",
@@ -1332,7 +1379,11 @@ var langs = [
     i: "unison",
     n: "Unison",
     d: "Description coming soon",
-    noLogo: true,
+  },
+  {
+    i: "ur",
+    n: "Ur",
+    d: "Description coming soon",
   },
   {
     i: "v",
@@ -1354,6 +1405,12 @@ var langs = [
     t: ["System"],
   },
   {
+    i: "vale",
+    n: "Vale",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
     i: "verilog",
     n: "Verilog",
     d: "Description coming soon",
@@ -1365,7 +1422,6 @@ var langs = [
     h: "https://verseprogramming.com/",
     d: "Verse is a functional-logic language created by Epic Games.",
     f: 2023,
-    noLogo: true,
   },
   {
     i: "virgil",
@@ -1395,12 +1451,18 @@ var langs = [
     i: "zig",
     n: "Zig",
     h: "https://ziglang.org/",
+    w: "Zig_(programming_language)",
     g: "zig",
     rc: "Zig",
-    d: "Zig is a general-purpose, statically typed systems language.",
+    d: "Zig is a general-purpose, statically typed systems language, which can serve as an alternative to C.",
     f: 2015,
-    r: "Systems programming made easy.",
-    u: "Creating, maintaining, and managing large systems software.",
-    t: ["Imperative"],
+    r: "Systems programming without surprises—the language has no hidden control flow, no hidden function calls, no hidden memory allocations, and no macros.",
+    u: "Systems software, embedded systems, financial transaction databases.",
+    t: ["Imperative", "Systems", "Static"],
+  },
+  {
+    i: "zsh",
+    n: "Zsh",
+    d: "Description coming soon",
   },
 ];

@@ -5,13 +5,13 @@ use warnings;
 use utf8;
 use open qw(:std :utf8);
 
-%drinks_available = (
+my %drinks_available = (
     "mocha" => 1,
     "matcha" => 1,
     "tea" => 1
 );
 
-%syrups_available = (
+my %syrups_available = (
     "raspberry" => 1,
     "lavender" => 1,
     "blueberry" => 1,
@@ -19,12 +19,12 @@ use open qw(:std :utf8);
 );
 
 print("What drink would you like to order? We have mocha, matcha, and tea.\n");
-$customer_drink = <STDIN>;
+my $customer_drink = <STDIN>;
 chomp($customer_drink);
 $customer_drink = lc($customer_drink);
 
 print("Which syrup? We have raspberry, lavender, blueberry, and vanilla.\n");
-$customer_syrup = <STDIN>;
+my $customer_syrup = <STDIN>;
 chomp($customer_syrup);
 $customer_syrup = lc($customer_syrup); 
 
