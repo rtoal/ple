@@ -219,7 +219,6 @@ var langs = [
     h: "https://pmg.csail.mit.edu/CLU.html",
     w: "CLU_(programming_language)",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "cobol",
@@ -642,6 +641,11 @@ var langs = [
     d: "Description coming soon",
   },
   {
+    i: "jai",
+    n: "Jai",
+    d: "Description coming soon",
+  },
+  {
     i: "java",
     n: "Java",
     h: "https://www.oracle.com/java/",
@@ -832,6 +836,12 @@ var langs = [
       "Dynamically allocated memory",
       "Strongly typed",
     ],
+  },
+  {
+    i: "mesa",
+    n: "Mesa",
+    d: "Description coming soon",
+    noLogo: true,
   },
   {
     i: "miranda",
