@@ -1059,6 +1059,12 @@ var langs = [
     ],
   },
   {
+    i: "piet",
+    n: "Piet",
+    d: "Description coming soon",
+    noLogo: true,
+  },
+  {
     i: "pli",
     n: "PL/I",
     d: "Description coming soon",
@@ -1418,7 +1424,6 @@ var langs = [
     i: "vale",
     n: "Vale",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "verilog",
