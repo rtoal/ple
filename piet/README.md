@@ -19,3 +19,7 @@ Continue your study of Piet via:
 - [Seminar Report of Piet](http://cl-informatik.uibk.ac.at/teaching/ss15/bob/reports/ss15-MM.pdf) by Manfred Moosleitner
 - [Piet Online Editor](https://piet-editor.github.io/)
 - [Piet Esolang Wiki](https://esolangs.org/wiki/Piet)
+
+## Piet Examples Citations
+
+- hello.png is from the "Hello, World!" example from the[Piet Esolang Wiki](https://esolangs.org/wiki/Piet).
