@@ -22,4 +22,4 @@ Continue your study of Piet via:
 
 ## Piet Examples Citations
 
-- hello.png is from the "Hello, World!" example from the[Piet Esolang Wiki](https://esolangs.org/wiki/Piet).
+- hello.png is from the[Piet Esolang Wiki](https://esolangs.org/wiki/Piet).
