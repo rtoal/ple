@@ -9,6 +9,9 @@ function Assert-MatchTests {
 }
 
 $Error.clear()
+racket -f "$PSScriptRoot\clockhands_imperative.rkt" |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
+    Assert-MatchTests &&
 racket -f "$PSScriptRoot\clockhands.rkt" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests && 
