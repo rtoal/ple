@@ -1115,7 +1115,6 @@ var langs = [
     i: "qsharp",
     n: "Q#",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "quipper",
