@@ -1,6 +1,6 @@
 # Piet Explorations
 
-Because Piet is a visual programming language, you can use the online editor to [online editor](https://piet-editor.github.io/). You can use the online editor to est out the programs by uploading the png files in the example onto the editor (note that the codet pixel size is 20, not 10). Afterwards, you are free to run the program (you may need to reset after uploading as the editor is a bit buggy).
+Because Piet is a visual programming language, use the following [online editor](https://piet-editor.github.io/) to code in Piet. To save your work, be sure to export the work after you are done, as your changes are not saved locally. This online editor allows you to upload programs by uploading the png files in the example onto the editor (note that the codet pixel size is 20, not 10). Afterwards, you are free to run the program (you may need to reset after uploading as the editor is a bit buggy).
 
 Alternatively, though not recommended, you can still code in Piet by going to [TIO compiler](https://tio.run/#piet) to run Piet in text format.
 
