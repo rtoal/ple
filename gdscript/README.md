@@ -2,19 +2,39 @@
 
 # GDScript Explorations:
 
-To begin coding with GDScript, start by installing the [Godot Engine](https://godotengine.org/) to be able to write in GDScript. Another way to install Godot can be done [here](https://www.francogarcia.com/en/blog/development-environments-gdscript/#interpreter-and-text-editor).
+To build and run GDScript programs on your local machine, download and install the most recent game engine version from the [Godot downloads page](https://godotengine.org/) or use your favorite package manager.
 
-If you are on Windows and want to install Godot via the command line, type in the following command in Windows Powershell through the Administrator role (you will need to install [Chocolatey](https://chocolatey.org/install) if you have not yet done so already):
-
-```
-choco install godot
-```
-
-To run a gdscript like hello_world.gd, run the following command:
+Programs in this folder can be run from the command line like so:
 
 ```
-godot --display-driver headless --no-header -s hello_world.gd
+godot -s triple.gd
 ```
+
+```
+godot -s permutations.gd I like carrots
+```
+
+```
+godot -s top_ten_scorers.gd < ../test/wnba_input
+```
+
+Running the command `godot` with at any time will open the Godot game engine. To avoid this, add the flag `--display-driver headless`.
+
+To make sure that your test matches properly to the test files, you will need to add the `--no-header` flag.
+
+The test files will have this command ran. It is quite verbose, but it allows you to run GDScript programs without any inconveniences.
+
+```
+godot --display-driver headless --no-header -s triple.gd
+```
+
+To run the tests on a Unix-like shell:
+
+```
+./test.sh
+```
+
+Run `test.ps1` in PowerShell.
 
 If you are unable to install Godot on your computer, then you can write on the online third-party
 [GDScript Playground](https://gd.tumeo.space/#).
