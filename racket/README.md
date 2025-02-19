@@ -11,11 +11,11 @@ racket -f triple.rkt
 ```
 
 ```
-racket permutations.py I like carrots
+racket permutations.rkt I like carrots      # HAVE NOT TESTED YET
 ```
 
 ```
-racket top_ten_scorers.py < ../test/wnba_input
+racket top_ten_scorers.rkt < ../test/wnba_input     # HAVE NOT TESTED YET
 ```
 
 Running the command `racket` with no arguments gives you a repl.
