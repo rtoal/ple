@@ -17,6 +17,7 @@ Windows users can set up their PATH variable and use `pyth.py`.
 Pyth, developed by Izzy Grosof in 2014, is a golfing language that's heavily influenced by Python. Unlike other golfing languages, Pyth operates with a procedural approach instead of relying on a stack. It can also compile into Python programs. What sets Pyth apart is its simplicity and ability to be concise. For example, all functions, variables, and statements are represented by a single character. Additionally, printing is implicit, and ending quotes are automatically added for you at the end of a program.
 
 The language features excellent documentation at [Read The Docs](https://pyth.readthedocs.io/en/latest/index.html).
+
 ## Pyth Resources
 
 Continue your study of Pyth via:
