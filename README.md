@@ -8,7 +8,7 @@ You are welcome to clone this repository and run the examples locally on your ow
 
 The README files in each programming language folder contain language information and links to various resources for you to continue your study of the language or contribute to open source projects featuring the language.
 
-For quick reference information on the languages covered in this project, visit our [Language Overviews](https://rtoal.github.io/ple/docs/overviews.html). Source code for this little browser can be found in the docs folder of this repo.
+For quick reference information on the languages covered in this project, visit our [Language Overviews](https://rtoal.github.io/ple/overviews.html). Source code for this little browser can be found in the docs folder of this repo.
 
 ---
 
