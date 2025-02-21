@@ -1,28 +1,14 @@
 # Programming Language Explorations
 
-A collection of illustrative examples in close to 100 programming languages,
-including every code snippet used in the book
-[Programming Language Explorations](https://rtoal.github.io/ple).
+A collection of illustrative examples in close to 100 programming languages, including every code snippet used in each edition of the book [Programming Language Explorations](https://rtoal.github.io/ple).
 
-Nearly every program in this repo can be run at [Replit](https://replit.com). Many
-(especially the smaller single-file scripts) can also be run at [TIO](https://tio.run)
-or [OneCompiler](https://onecompiler.com/). Many languages feature their own
-”official” online playgrounds, notably [Rust](https://play.rust-lang.org/),
-[Go](https://play.golang.com/), [TypeScript](https://www.typescriptlang.org/play),
-and [Haskell](https://play.haskell.org/).
+Most of the programs in this repo can be run at [Replit](https://replit.com) or [JDoodle](https://www.jdoodle.com/). Many can also be run at [TIO](https://tio.run) or [OneCompiler](https://onecompiler.com/). Many languages feature their own ”official” online playgrounds, notably [Rust](https://play.rust-lang.org/), [Go](https://play.golang.com/), [TypeScript](https://www.typescriptlang.org/play), and [Haskell](https://play.haskell.org/).
 
-You are welcome to clone this repository and run the examples locally on your own
-machine. See the specific README files within the language sub folders for instructions
-running the examples this way. You'll generally have to first download and install a
-language implementation for your particular operating system and architecture; such
-information is generally available online, but the individual language READMEs will
-often have pointers.
+You are welcome to clone this repository and run the examples locally on your own machine. See the specific README files within the language sub folders for instructions running the examples this way. You'll generally have to first download and install a language implementation for your particular operating system and architecture; such information is generally available online, but the individual language READMEs will often have pointers. Look in each folder for a test runner named _test.sh_ for Bash and _test.ps1_ for PowerShell.
 
-Each of the examples here have been tested on a machine running macOS using the
-language versions in the table below. The tests are executed via the `test.sh`
-script in each language folder. Modify the test script or install a suitable
-Unix-like virtual machine if you desire to run the test scripts yourself.
+The README files in each programming language folder contain language information and links to various resources for you to continue your study of the language or contribute to open source projects featuring the language.
 
+<<<<<<< Updated upstream
 | **Language**   |                                                | **Version** | **Platform**                               |
 | :------------- | :--------------------------------------------: | :---------- | :----------------------------------------- |
 | 05ab1e         |     ![](docs/resources/05ab1e-logo-24.png)     |             |                                            |
@@ -118,3 +104,6 @@ Unix-like virtual machine if you desire to run the test scripts yourself.
 | Whiley         |     ![](docs/resources/whiley-logo-24.png)     |             |                                            |
 | Zig            |      ![](docs/resources/zig-logo-24.png)       |             |                                            |
 | Zsh            |      ![](docs/resources/zsh-logo-24.png)       |             |                                            |
+=======
+For quick reference information on the languages covered in this project, visit our [Language Overviews](https://rtoal.github.io/ple/docs/overviews.html). Source code for this little browser can be found in the docs folder of this repo.
+>>>>>>> Stashed changes
