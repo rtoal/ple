@@ -1,59 +1,82 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  margin: 0 auto;
-  background-color: white;
-  text-align: center;
-  font: 20px serif;
-}
-
-span.cell {
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-  border: 1px solid white;
-  margin: 3px;
-  background-color: white;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-span.cell:hover {
-  border: 1px dotted grey;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-#bar {
   margin: 0;
-  background-color: black;
-  text-align: center;
-  padding: 5px;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
   color: white;
-  font: 18px Helvetica, sans-serif;
-}
-
-#wrapper {
-  background-color: white;
+  padding: 10px;
+  font-family: sans-serif;
+  box-sizing: border-box;
   width: 100%;
-  margin: 0;
+  position: fixed;
+  height: 50px;
+  top: 0;
+  left: 0;
 }
 
-#content,
-#single-language {
-  margin: 0 auto;
-  padding-top: 20px;
-  max-width: 1200px;
+header a {
+  color: white;
+  text-decoration: none;
 }
 
-#single-language {
-  display: none;
+main {
+  margin-top: 50px;
+  display: grid;
+}
+
+nav {
+  background-color: #f0f0f0;
+  padding: 16px;
+  font-family: sans-serif;
+  position: fixed;
+  width: 200px;
+  height: calc(100vh - 80px);
+  overflow: scroll;
+}
+
+nav > div {
+  display: block;
+  padding: 0.5em;
+  text-decoration: none;
+  color: #333;
+}
+
+nav > div:hover {
+  background-color: #aaa;
+}
+
+#canvas {
+  padding: 16px 16px 16px 48px;
+  position: fixed;
+  left: 232px;
+  font-family: serif;
+  font-size: 1.25rem;
+  height: calc(100vh - 80px);
+  overflow: scroll;
+  background-color: white;
 }
 
 #logo {
-  height: 320px;
   margin-bottom: 20px;
   vertical-align: middle;
   background-repeat: no-repeat;
-  background-position: center;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-family: sans-serif;
 }
 
 .tag {
@@ -65,29 +88,13 @@ span.cell:hover {
   background-color: blue;
 }
 
-#text {
-  max-width: 816px;
-  margin: 32px auto;
-}
-
-#footer {
-  color: blue;
-  font-family: Helvetica, sans-serif;
-  font-size: 75%;
-  padding-top: 8px;
-  margin-top: 80px;
-  width: 100%;
-}
-
-#mainfooter {
-  font: italic 85% Georgia, serif;
-  margin-top: 60px;
-}
-
-#prev {
-  float: left;
-}
-
-#next {
-  float: right;
+span.cell {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 1px solid white;
+  margin: 3px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
 }

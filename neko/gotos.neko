@@ -1,0 +1,18 @@
+$goto(next)
+var x = 0
+next:
+$print(x + "\n")
+
+$goto(enter)
+{
+	$print("Hi!\n")
+	enter:
+	$print("Bye!\n")
+}
+
+{
+	$print("Hola!\n")
+	$goto(exit)
+	$print("Adios!\n")
+}
+exit:

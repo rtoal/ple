@@ -1,0 +1,7 @@
+{ :i
+        >> date := Moment new.
+        date year: 1970.
+        date second: ((i - 0.5) × 43200 ÷ 11) floor.
+        >> clock := date text from: 12 length: 8.
+        Out write: (date hour = 0 either: (['12'] + (clock copy from: 3 length: 6)) or: (clock)) + ['\n'].
+} × 11.

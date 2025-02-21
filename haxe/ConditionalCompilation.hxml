@@ -1,0 +1,25 @@
+--cmd haxe --main ConditionalCompilation --interp
+
+--next
+
+--cmd haxe --main ConditionalCompilation --interp --debug 
+
+--next
+
+--cmd haxe --main ConditionalCompilation --interp --debug -D debug_type=pos
+
+--next
+
+--cmd haxe --main ConditionalCompilation --interp --debug -D debug_type=neg
+
+--next
+
+--cmd haxe --main ConditionalCompilation --interp --debug -D debug_type=mixed
+
+--next
+
+--cmd haxe --main ConditionalCompilation --interp --debug -D debug_type=random
+
+--next
+
+--cmd haxe --main ConditionalCompilation --interp -D debug_type=neg

@@ -1,0 +1,4 @@
+$print("Addition: " + $iadd(7,5) + "\n");
+$print("Subtraction: " + $isub(7,5) + "\n");
+$print("Multiplication: " + $imult(7,5) + "\n");
+$print("Division: " + $idiv(7,5) + "\n");

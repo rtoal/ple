@@ -1,5 +1,5 @@
 # This script runs a thread for all values in 2..n where n is the first
-# command line argument.  Each thread writes its value to STDOUT if it is
+# command line argument. Each thread writes its value to STDOUT if it is
 # prime.
 
 use strict;

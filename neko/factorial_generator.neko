@@ -1,0 +1,18 @@
+var factorial = function() {
+    var i = 1
+    var n = 1
+    return function() { return (n *= (i ++= 1)) }
+}
+
+f1 = factorial()
+f2 = factorial()
+
+$print(f1(), "\n")
+$print(f1(), "\n")
+$print(f1(), "\n")
+
+$print(f2(), "\n")
+$print(f2(), "\n")
+$print(f2(), "\n")
+$print(f2(), "\n")
+$print(f2(), "\n")

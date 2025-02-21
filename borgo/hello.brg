@@ -1,0 +1,6 @@
+use fmt
+
+fn main() {
+    let msg = "Hello world"
+    fmt.Println(msg)
+}

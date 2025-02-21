@@ -1,0 +1,1 @@
+for (i, 0, 10, Date fromNumber((43200 * i + 21600) / 11 + Date gmtOffsetSeconds) asString("%I:%M:%S") println)

@@ -1,0 +1,29 @@
+stack = cluster [T: type] is new, push, pop, peek, empty
+    rep = array[T]
+    
+    new = proc () returns (cvt)
+        return (rep$new())
+    end new
+    
+    empty = proc (s: cvt) returns (bool)
+        return (rep$size(s) = 0)
+    end empty;
+    
+    push = proc (s: cvt, val: T)
+        rep$addh(s, val)
+    end push;
+    
+    pop = proc (s: cvt) returns (T) signals (empty)
+        if rep$empty(s)
+            then signal empty
+            else return(rep$remh(s))
+        end
+    end pop
+    
+    peek = proc (s: cvt) returns (T) signals (empty)
+        if rep$empty(s)
+            then signal empty
+            else return(s[rep$high(s)])
+        end
+    end peek
+end stack

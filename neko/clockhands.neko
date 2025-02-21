@@ -1,0 +1,7 @@
+var sprintf = $loader.loadprim("std@sprintf", 2)
+var i = 0
+while (i < 11) {
+	var t = $int(((i ++= 1) + 0.5) * 43200 / 11)
+	var h = $int(t / 3600), m = $int(t / 60) % 60, s = t % 60
+	$print(sprintf("%0.2d:%0.2d:%0.2d\n", $array(if (h == 0) 12 else h, m, s)))
+}

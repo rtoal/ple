@@ -28,11 +28,11 @@ To run the tests on a Unix-like shell:
 ./test.sh
 ```
 
-## About Kotlin:
+## About Kotlin
 
 Kotlin is a statically typed programming language that runs on the Java virtual machine and also can be compiled to JavaScript source code or use the LLVM compiler infrastructure. Kotlin is a general purpose, open source, statically typed “pragmatic” programming language. It is focused on interoperability, safety, clarity, and tooling support. Versions of Kotlin targeting JavaScript and native code (using LLVM) are in production as well.
 
-## Kotlin Resources:
+## Kotlin Resources
 
 - [Kotlin Language Home Page](https://kotlinlang.org)
 - [Kotlin Docs Page](https://kotlinlang.org/docs/home.html)
@@ -41,7 +41,7 @@ Kotlin is a statically typed programming language that runs on the Java virtual 
 - [Kotlin IntelliJ IDEA Test](https://www.jetbrains.com/help/idea/tdd-with-kotlin.html)
 - [Kotlin in 100 Seconds](https://youtu.be/xT8oP0wy-A0)
 
-## Kotlin Open Source Resources:
+## Kotlin Open Source Resources
 
 Kotlin is an open source project so feel free to add any contributions!
 

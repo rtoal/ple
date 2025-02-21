@@ -1,0 +1,15 @@
+var random_new = $loader.loadprim("std@random_new", 0)
+var random_int = $loader.loadprim("std@random_int", 2)
+
+var null_loop = while (true) {
+	var number = random_int(random_new(), 100)
+	if (number % 13 == 7) break;
+}
+
+var number_loop = while (true) {
+	var number = random_int(random_new(), 100)
+	if (number % 13 == 7) break number
+}
+
+$print("Value for break without return value: " + null_loop + "\n")
+$print("Value for break with return value: " + number_loop + "\n")

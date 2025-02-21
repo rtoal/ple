@@ -11,6 +11,7 @@ ruby blocks_and_scope_experiments.rb && \
 ruby circle.rb && \
 ruby class_definition.rb && \
 ruby class_new_example.rb && \
+ruby clockhands.rb | diff ../test/clockhands_expected - && \
 ruby common_class_summary.rb && \
 ruby data_example.rb && \
 ruby globals.rb && \
@@ -30,6 +31,7 @@ ruby procs_and_lambdas.rb && \
 ruby simple_messaging.rb && \
 ruby singleton_example.rb && \
 ruby sum_of_even_squares.rb && \
+ruby top_ten_scorers.rb < ../test/wnba_input | diff ../test/wnba_expected - && \
 ruby triple.rb | diff ../test/triple_expected - && \
 ruby unityping.rb && \
 ruby wordcount.rb < ../test/wordcount_ascii_input | diff ../test/wordcount_ascii_expected -

@@ -1,0 +1,4 @@
+helloWorldMsg : '{IO, Exception} ()
+helloWorldMsg _ = printLine "Hello World"
+
+-- you can run the program by typing "run helloWorldMsg"

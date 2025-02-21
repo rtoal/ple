@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 runhaskell alias.hs && \
 runhaskell basics.hs && \
+runhaskell capitals.hs && \
 runhaskell clockhands.hs && \
 runhaskell custom_operators.hs && \
 runhaskell datatype_with_record.hs && \
@@ -23,8 +24,9 @@ runhaskell shapes_with_records.hs && \
 runhaskell shapes.hs && \
 runhaskell strings.hs && \
 runhaskell triple.hs | diff ../test/triple_expected - && \
-runhaskell top_ten_scorers.hs < ../test/wnba_input | diff ../test/wnba_expected -
-
+runhaskell top_ten_scorers.hs < ../test/wnba_input | diff ../test/wnba_expected - && \
+runhaskell us_change.hs && \
+runhaskell zero.hs && \
 
 if [ $? -ne 0 ]; then
     echo

@@ -1,22 +1,32 @@
-# Pyth Programming Guide
+# Pyth Explorations
 
-To run Pyth programs, you have two options: use the online interpreter, or run it locally for more control. For local execution, Python 3 is required. Clone the Pyth repository from GitHub and execute your Pyth code via the command line.
+The easiest way to get started with Pyth is to use this [online interpreter](https://pyth-docker.azurewebsites.net). 
 
-Discover how to get started with Pyth on the [official documentation page](https://pyth.readthedocs.io/en/latest/).
+To run Pyth programs locally, you can clone the github repository by typing `git clone https://github.com/isaacg1/pyth.git` in your terminal. 
 
-# About Pyth
+Then add the following command to your .bashrc, .zshrc, or equivalent:
 
-Pyth is a programming language optimized for code golfing, created by Isaac G. It prioritizes conciseness through single-character commands and implicit operations. Built atop Python, Pyth offers a compact syntax for programming competitions, while still leveraging Python's extensive libraries.
+```
+alias pyth="python3 <path to pyth>/pyth.py"
+```
 
-# Learn Pyth
+Windows users can set up their PATH variable and use `pyth.py`.
 
-Further your understanding of Pyth with these resources:
+## About Pyth
 
-- [Comprehensive Tutorial and Documentation](https://pyth.readthedocs.io/en/latest/)
-- [Pyth GitHub Repository](https://github.com/isaacg1/pyth)
-- [Online Pyth Interpreter](https://pyth-docker.azurewebsites.net/)
-- [Recent Changes to Pyth](https://github.com/isaacg1/pyth/blob/master/README.md)
+Pyth, developed by Izzy Grosof in 2014, is a golfing language that's heavily influenced by Python. Unlike other golfing languages, Pyth operates with a procedural approach instead of relying on a stack. It can also compile into Python programs. What sets Pyth apart is its simplicity and ability to be concise. For example, all functions, variables, and statements are represented by a single character. Additionally, printing is implicit, and ending quotes are automatically added for you at the end of a program.
 
-# Contribute to Pyth
+The language features excellent documentation at [Read The Docs](https://pyth.readthedocs.io/en/latest/index.html).
 
-Pyth welcomes contributions! Whether you've found a bug, have a feature suggestion, or wish to contribute code, you can do so via the [Pyth GitHub page](https://github.com/isaacg1/pyth). For guidance on making contributions, refer to the [Adding to Pyth](https://pyth.readthedocs.io/en/latest/adding.html) documentation.
+## Pyth Resources
+
+Continue your study of Pyth via:
+
+- [Pyth Github Page](https://github.com/isaacg1/pyth) 
+- [Pyth Docs](https://pyth.readthedocs.io/en/latest/getting-started.html)
+- [Pyth Interpreter](https://pyth-docker.azurewebsites.net)
+- [Pyth Esolang Wiki](https://esolangs.org/wiki/Pyth#Language_Overview)
+
+## Pyth Open Source
+
+The [GitHub issues page](https://github.com/isaacg1/pyth/issues) has opportunities to contribute to the development of the language.

@@ -1,0 +1,9 @@
+FOR c TO 40
+  DO FOR b TO c
+    DO FOR a TO b
+      DO IF a ** 2 + b ** 2 = c ** 2 THEN
+        printf (($%d$, a, $2a$, ", ", $%d$, b, $2a$, ", ", $%dl$, c))
+      FI
+    OD
+  OD
+OD

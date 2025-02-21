@@ -1,0 +1,13 @@
+*.py
+
+# Unfinished Files
+AbstractTypes.hx
+AlgebraicDataTypes.hx
+BinarySearchTree.hx
+LocalFunctions.hx
+Metadata.hx
+NullSafety.hx
+PartialFunction.hx
+PatternMatching.hx
+TypeParameters.hx
+Reflection.hx

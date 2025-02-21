@@ -1,0 +1,15 @@
+pour chaque 11
+	t prend sol ((43200 * joker + 21600) / 11)
+	h prend sol (t / 3600)
+	m prend sol (t / 60) mod 60
+	s prend t mod 60
+	si (non h), h prend 12
+	affiche remplir (h) + ":" + remplir (m) + ":" + remplir (s)
+ferme
+
+remplir : y
+	si (y < 10) retourne "0" + y 
+	sinon retourne y
+
+sol : x
+	retourne x - x mod 1

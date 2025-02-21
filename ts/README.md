@@ -36,9 +36,11 @@ To run the tests on a Unix-like shell:
 ./test.sh
 ```
 
+Run `test.ps1` in PowerShell.
+
 # TypeScript Resources
 
-Continue your study of TypeScript via:
+Continue your study of TypeScript with:
 
 - [Awesome TypeScript](https://github.com/dzharii/awesome-typescript)
 - Another [Awesome TypeScript](https://github.com/semlinker/awesome-typescript)
@@ -46,11 +48,15 @@ Continue your study of TypeScript via:
 - [Effective TypeScript book](https://effectivetypescript.com/)
 - [Type Challenges](https://github.com/type-challenges/type-challenges)
 - [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/)
+- [TypeScript at Rosetta Code](https://rosettacode.org/wiki/Category:TypeScript)
 
-# TypeScript Open Source Projects
+# TypeScript in Open Source
 
-Studying, and contributing to, open source projects is an excellent way to improve your proficiency in any language. Of the many projects using TypeScript, you may enjoy:
+Browse open source activity in TypeScript at:
 
+- [The GitHub Topic Page](https://github.com/topics/typescript)
+- [Trending Repositories on GitHub](https://github.com/trending/typescript)
+- [Top 100 Starred Repositories on GitHub](https://github.com/EvanLi/Github-Ranking/blob/master/Top100/TypeScript.md)
 - [VsCode](https://github.com/microsoft/vscode)
 - [Storybook](https://github.com/storybookjs/storybook)
 - [React-Three-Fiber](https://github.com/pmndrs/react-three-fiber)

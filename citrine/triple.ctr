@@ -1,0 +1,9 @@
+{ :c
+        { :b
+                { :a
+                        (a power: 2) + (b power: 2) = (c power: 2) true: {
+                                Out write: a + [', '] + b + [', '] + c + ['\n'].
+                        }.
+                } * b.
+        } * c.
+} * 40.

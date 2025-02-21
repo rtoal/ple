@@ -1,0 +1,2 @@
+for t in [Math.floor (i + 0.5) * 43200 / 11 for i from 0 to 10]
+  console.log "#{("#{(Math.floor t / 3600 - 1) %% 12 + 1}").padStart(2, \0)}:#{("#{Math.floor t % 3600 / 60}").padStart(2, \0)}:#{("#{t % 60}").padStart(2, \0)}"
