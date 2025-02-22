@@ -29,6 +29,6 @@ Continue your study of Pyth via:
 - [Pyth Interpreter](https://pyth-docker.azurewebsites.net)
 - [Pyth Esolang Wiki](https://esolangs.org/wiki/Pyth#Language_Overview)
 
-## Pyth Open Source
+## Pyth in Open Source
 
 The [GitHub issues page](https://github.com/isaacg1/pyth/issues) has opportunities to contribute to the development of the language.
