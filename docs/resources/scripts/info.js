@@ -112,6 +112,11 @@ var langs = [
     noLogo: true,
   },
   {
+    i: "berry",
+    n: "Berry",
+    d: "Description coming soon",
+  },
+  {
     i: "boo",
     n: "Boo",
     h: "http://boo-lang.org/",
