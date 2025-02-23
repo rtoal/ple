@@ -1444,6 +1444,11 @@ var langs = [
     noLogo: true,
   },
   {
+    i: "vyxal",
+    n: "Vyxal",
+    d: "Description coming soon",
+  },
+  {
     i: "whiley",
     n: "Whiley",
     h: "http://whiley.org/",
