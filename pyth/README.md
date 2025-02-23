@@ -4,7 +4,9 @@
 
 The easiest way to get started with Pyth is to use this [online interpreter](https://pyth-docker.azurewebsites.net).
 
-To run Pyth programs locally, you can clone the github repository by typing `git clone https://github.com/isaacg1/pyth.git` in your terminal. Then add the following command to your .bashrc, .zshrc, or equivalent:
+To run Pyth programs locally, you can clone the github repository by typing `git clone https://github.com/isaacg1/pyth.git` in your terminal.
+
+Then add the following command to your .bashrc, .zshrc, or equivalent:
 
 ```
 alias pyth="python3 <path to pyth>/pyth.py"
