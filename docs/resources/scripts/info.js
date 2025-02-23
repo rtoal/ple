@@ -238,7 +238,6 @@ var langs = [
     r: "Business applications",
     u: "Banking, Insurance, Government",
     t: ["Imperative"],
-    noLogo: true,
   },
   {
     i: "coffeescript",
