@@ -3,7 +3,6 @@ var langs = [
     i: "05ab1e",
     n: "05AB1E",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "ada",
