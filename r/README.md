@@ -2,7 +2,7 @@
 
 # R Explorations
 
-To build and run Scala programs on your local machine, download and install the most recent language version from the [R project home page](https://www.r-project.org/) or use your favorite package manager.
+To build and run R programs on your local machine, download and install the most recent language version from the [R project home page](https://www.r-project.org/) or use your favorite package manager.
 
 Programs in this folder can be run from the command line like so:
 
@@ -34,9 +34,8 @@ TODO
 
 ## R Resources
 
-Continue your study of Scala with:
+Continue your study of R with:
 
 - [R Home](https://www.r-project.org/)
 - [Official Documentation](https://cran.r-project.org/manuals.html)
-- [Scala Online Playground](https://scastie.scala-lang.org/)
 - [Awesome R](https://github.com/qinwf/awesome-R)
