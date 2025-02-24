@@ -3,7 +3,6 @@ var langs = [
     i: "05ab1e",
     n: "05AB1E",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "ada",
@@ -110,6 +109,11 @@ var langs = [
     u: "Amusement",
     t: ["Esoteric", "Stack-based"],
     noLogo: true,
+  },
+  {
+    i: "berry",
+    n: "Berry",
+    d: "Description coming soon",
   },
   {
     i: "boo",
@@ -233,7 +237,6 @@ var langs = [
     r: "Business applications",
     u: "Banking, Insurance, Government",
     t: ["Imperative"],
-    noLogo: true,
   },
   {
     i: "coffeescript",
@@ -1442,6 +1445,11 @@ var langs = [
     n: "Virgil",
     d: "Description coming soon",
     noLogo: true,
+  },
+  {
+    i: "vyxal",
+    n: "Vyxal",
+    d: "Description coming soon",
   },
   {
     i: "whiley",
