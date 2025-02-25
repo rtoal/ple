@@ -30,9 +30,9 @@ Run `test.ps1` in PowerShell.
 
 ## About Berry
 
-Berry is an ultra-lightweight dynamically typed scripting language, designed for lower-performance embedded devices. It is used in scripting tasks for embedded devices, primary ESP32 devices running Tasmota firmware. Berry’s advanced features can be used to extend Tasmota by adding commands, adding drivers (I2C, serial…), extending the web UI, adding full applications (TAPP files), driving advanced graphics with LVGL. The core Berry interpreter requires under 40KiB.
+Berry is an ultra-lightweight dynamically typed scripting language, designed for lower-performance embedded devices. It is used in scripting tasks for embedded devices, primary ESP32 devices running Tasmota firmware. Berry’s advanced features can be used to extend Tasmota by adding commands, adding drivers, extending the web UI, adding full applications (TAPP files), driving advanced graphics with LVGL. The core Berry interpreter requires under 40KiB.
 
-## Python Resources
+## Berry Resources
 
 Continue your study of Berry with:
 
@@ -42,4 +42,6 @@ Continue your study of Berry with:
 
 ## Berry in Open Source
 
-- [GitHub](https://github.com/berry-lang/berry)
+- [The GitHub Topic Page](https://github.com/topics/berry)
+- [GitHub repositories using Berry](https://github.com/search?l=berry&q=stars%3A%3E1&s=stars&type=Repositories)
+- [Berry itself is open source](https://github.com/berry-lang/berry)
