@@ -15,8 +15,9 @@ def print_permutations(a, n)
     end
 end
 
-args = string.split(input(), " ")
-if (!args[0])
+args = _argv
+args.remove(0)
+if (size(args) == 0)
     raise "ERROR: There must be at least 1 argument."
 end
 print_permutations(args, size(args)-1)

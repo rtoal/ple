@@ -33,8 +33,7 @@ def generate_permutations(a, n)
     end
 end
 
-args = string.split(input(), " ")
-if (size(args) != 1 || size(args[0]) == 0)
+if (size(_argv) != 2)
     raise "ERROR: There must be exactly 1 argument."
 end
-generate_permutations(to_char_array(args[0]), size(args[0])-1)
+generate_permutations(to_char_array(_argv[1]), size(_argv[1])-1)

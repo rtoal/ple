@@ -11,7 +11,7 @@ berry triple.be
 ```
 
 ```
-berry permutations.be I like carrots          # NOT TESTED YET
+berry permutations.be I like carrots
 ```
 
 ```
