@@ -4,7 +4,7 @@
 
 To build and run Python programs on your local machine, download and install the most recent language version from the [Python home page](https://www.python.org/) or use your favorite package manager.
 
-Programs in this folder can be run from the command line like so:
+Programs in this folder have been tested on Python 3.13.0 can be run from the command line like so:
 
 ```
 python3 triple.py
@@ -29,6 +29,8 @@ To run the tests on a Unix-like shell:
 ```
 
 Run `test.ps1` in PowerShell.
+
+Tested
 
 ## About Python
 
