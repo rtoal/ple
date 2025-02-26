@@ -1,7 +1,6 @@
 using Printf
-for i = 0:10
-    t = div(43200 * i + 21600, 11)
-    h, t = divrem(t, 3600)
-    m, s = divrem(t, 60)
-    @printf("%02d:%02d:%02d\n", (h == 0 ? 12 : h), m, s)
-end
+
+seconds(i) = div(43200 * i + 21600, 11)
+zeroTo12(h) = h == 0 ? 12 : h
+parts(t) = (zeroTo12(div(t, 3600)), rem(div(t, 60), 60), rem(t, 60))
+0:10 .|> seconds .|> parts .|> t -> @printf("%02d:%02d:%02d\n", t...)
