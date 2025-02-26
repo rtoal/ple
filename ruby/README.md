@@ -4,7 +4,7 @@
 
 To build and run Ruby programs on your local machine, download and install the most recent language version from the [Ruby home page](https://www.ruby-lang.org/en/) or use your favorite package manager.
 
-Programs in this folder can be run from the command line like so:
+Programs in this folder have been tested on ruby 3.4.2 can be run from the command line like so:
 
 ```
 ruby triple.rb
@@ -18,7 +18,7 @@ ruby permutations.rb I like carrots
 ruby top_ten_scorers.rb < ../test/wnba_input
 ```
 
-Running the command `ruby` with no arguments gives you a repl.
+Running the command `irb` with no arguments gives you a repl.
 
 To run the tests on a Unix-like shell:
 
