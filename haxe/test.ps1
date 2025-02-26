@@ -20,17 +20,17 @@ $Error.clear()
 haxe --run Anagrams rats |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\rats_heap_expected") |
     Assert-MatchTests &&
-haxe --run Animals |
-haxe --run ArrayComprehension |
-haxe --run Blocks |
-haxe --run Casting |
+haxe --run Animals &&
+haxe --run ArrayComprehension &&
+haxe --run Blocks &&
+haxe --run Casting &&
 haxe --run ClockHands |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
 haxe --run ClockHandsDateTools |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
-haxe --run ClockHandsPadding |
+haxe --run ClockHandsStringTools |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
 haxe "$PSScriptRoot\ConditionalCompilation.hxml" &&
