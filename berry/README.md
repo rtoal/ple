@@ -2,7 +2,7 @@
 
 # Berry Explorations
 
-To build and run Berry programs on your local machine, download the zip file and build the compiler from the [Berry GitHub page](https://github.com/berry-lang/berry) or use your favorite package manager. Note that if you are building it, you will need to have make installed.
+To build and run Berry programs on your local machine, download the zip file and build the compiler from the [Berry GitHub page](https://github.com/berry-lang/berry) or use your favorite package manager. As the standard Berry distribution is written in C, you will need to have `make` installed to build the compiler.
 
 Programs in this folder can be run from the command line like so:
 
@@ -30,11 +30,11 @@ Run `test.ps1` in PowerShell.
 
 ## About Berry
 
-TODO
+Berry is an ultra-lightweight dynamically typed scripting language, designed for lower-performance embedded devices. It is used in scripting tasks for embedded devices, primary ESP32 devices running Tasmota firmware. Berry’s advanced features can be used to extend Tasmota by adding commands, adding drivers, extending the web UI, adding full applications (TAPP files), driving advanced graphics with LVGL. The core Berry interpreter requires under 40KiB.
 
-## Python Resources
+## Berry Resources
 
-Continue your study of Python with:
+Continue your study of Berry with:
 
 - [Berry Home](https://berry-lang.github.io/)
 - [Official Documentation](https://berry.readthedocs.io/en/latest/)
@@ -42,4 +42,6 @@ Continue your study of Python with:
 
 ## Berry in Open Source
 
-- [GitHub](https://github.com/berry-lang/berry)
+- [The GitHub Topic Page](https://github.com/topics/berry)
+- [GitHub repositories using Berry](https://github.com/search?l=berry&q=stars%3A%3E1&s=stars&type=Repositories)
+- [Berry itself is open source](https://github.com/berry-lang/berry)
