@@ -29,7 +29,7 @@ python "$PSScriptRoot\inheritance.py" &&
 python "$PSScriptRoot\kwargs_examples.py" &&
 python "$PSScriptRoot\log_decorator_example.py" &&
 python "$PSScriptRoot\memoized_fibonacci.py" &&
-#python "$PSScriptRoot\mi.py" &&
+# python "$PSScriptRoot\mi.py" &&                   # Only works on iOS
 python "$PSScriptRoot\monkey_patching.py" &&
 python "$PSScriptRoot\object_pool.py" &&
 python "$PSScriptRoot\permutations.py" I like carrots |
