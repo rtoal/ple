@@ -4,7 +4,7 @@
 
 To build and run Lua programs on your local machine, download and install the most recent language version from the [Lua downloads page](https://www.lua.org/download.html) or use your favorite package manager.
 
-Programs in this folder can be run from the command line like so:
+Programs in this folder have been tested on Lua 5.4.7 can be run from the command line like so:
 
 ```
 lua triple.lua
