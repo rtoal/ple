@@ -22,7 +22,7 @@ Running the command `ghci` with no arguments gives you a repl.
 
 To run the tests, invoke `./test.sh` in a Unix-friendly shell.
 
-## About Haskell
+## About
 
 Haskell is a general-purpose, statically typed, purely functional programming language with type inference and lazy evaluation. It was created by a number of researchers the late 1980s and first released in 1990. The language is named after the logician Haskell Curry. It is perhaps the most popular of the “pure“ functional languages, and is used in industry for a variety of purposes, including web development, data analysis, and machine learning.
 
@@ -39,7 +39,7 @@ Haskell is a general-purpose, statically typed, purely functional programming la
 - [Haskell at Rosetta Code](https://rosettacode.org/wiki/Category:Haskell)
 - [Haskell in 100 Seconds](https://www.youtube.com/watch?v=Qa8IfEeBJqk)
 
-Browse open source activity in Haskell at:
+## In Open Source
 
 - [The GitHub Topic Page](https://github.com/topics/haskell)
 - [Trending Repositories on GitHub](https://github.com/trending/haskell)
