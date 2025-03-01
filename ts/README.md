@@ -2,7 +2,7 @@
 
 # TypeScript Explorations
 
-All of the TypeScript examples in this folder are designed to be compiled with the TypeScript compiler `tsc` and run with Node.js. Download and install Node.js from the [Node home page](https://nodejs.org) or use your favorite package manager, then run:
+The TypeScript examples in this folder are designed to be compiled with the TypeScript compiler `tsc` and run with Node.js. Download and install Node.js from the [Node home page](https://nodejs.org) or use your favorite package manager, then run:
 
 ```
 npm install -g typescript
@@ -14,7 +14,7 @@ to get the TypeScript compiler. As this folder already contains the configuratio
 tsc
 ```
 
-This compiles each of the `.ts` files in this folder into `.js` files which are written to a subfolder called `dist`. You can then switch to that folder and run any of the programs like so:
+This compiles each of the `.ts` files in this folder into `.js` files which are written to a subfolder called `dist`. (We’ve tested them with Typescript 5.8.0.) You can then switch to that folder and run any of the programs like so:
 
 ```
 node triple.js
@@ -30,29 +30,20 @@ node top_ten_scorers.js < ../test/wnba_input
 
 Rather than working with a REPL, TypeScript experimentation is usually done in the official [TypeScript Playground](https://www.typescriptlang.org/play).
 
-To run the tests on a Unix-like shell:
+To run the tests, invoke `./test.sh` in a Unix-friendly shell or `test.ps1` in PowerShell. The test script compiles the files, moves to the dist folder, runs the tests, and moves you back to this folder.
 
-```
-./test.sh
-```
+# Resources
 
-Run `test.ps1` in PowerShell.
-
-# TypeScript Resources
-
-Continue your study of TypeScript with:
-
+- [Language Home](https://www.typescriptlang.org/)
 - [Awesome TypeScript](https://github.com/dzharii/awesome-typescript)
 - Another [Awesome TypeScript](https://github.com/semlinker/awesome-typescript)
-- [TypeScript home page](https://www.typescriptlang.org/)
 - [Effective TypeScript book](https://effectivetypescript.com/)
 - [Type Challenges](https://github.com/type-challenges/type-challenges)
 - [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/)
 - [TypeScript at Rosetta Code](https://rosettacode.org/wiki/Category:TypeScript)
+- [TypeScript in 100 Seconds](https://www.youtube.com/watch?v=zQnBQ4tB3ZA)
 
-# TypeScript in Open Source
-
-Browse open source activity in TypeScript at:
+# In Open Source
 
 - [The GitHub Topic Page](https://github.com/topics/typescript)
 - [Trending Repositories on GitHub](https://github.com/trending/typescript)
