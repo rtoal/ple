@@ -32,7 +32,11 @@ Rather than working with a REPL, TypeScript experimentation is usually done in t
 
 To run the tests, invoke `./test.sh` in a Unix-friendly shell or `test.ps1` in PowerShell. The test script compiles the files, moves to the dist folder, runs the tests, and moves you back to this folder.
 
-# Resources
+## About
+
+TypeScript is a superset of JavaScript adding static type checking, optional type annotations, interfaces and more. Type checking of identifiers is sensitive to the location of the identifier in the code. The language was created by Anders Hejlsberg at Microsoft and first released in 2012.
+
+## Resources
 
 - [Language Home](https://www.typescriptlang.org/)
 - [Awesome TypeScript](https://github.com/dzharii/awesome-typescript)
@@ -43,7 +47,7 @@ To run the tests, invoke `./test.sh` in a Unix-friendly shell or `test.ps1` in P
 - [TypeScript at Rosetta Code](https://rosettacode.org/wiki/Category:TypeScript)
 - [TypeScript in 100 Seconds](https://www.youtube.com/watch?v=zQnBQ4tB3ZA)
 
-# In Open Source
+## In Open Source
 
 - [The GitHub Topic Page](https://github.com/topics/typescript)
 - [Trending Repositories on GitHub](https://github.com/trending/typescript)

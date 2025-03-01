@@ -22,7 +22,7 @@ Running the command `julia` with no arguments gives you a repl.
 
 To run the tests, invoke `./test.sh` in a Unix-friendly shell or `test.ps1` in PowerShell.
 
-# About
+## About
 
 Julia is a high-level, dynamic programming language designed for scientific and numerical computing, where it competes with Fortran, MATLAB, and Python. As a gradually typed language, it features the ease-of-use of interpreted languages, while exhibiting performance close to that of traditionally compiled languages. It provides object-orientation via multimethods, and has a powerful macro system. The language was created by Jeff Bezanson, Stefan Karpinski, Viral B. Shah, and Alan Edelman, and first released in 2012.
 
