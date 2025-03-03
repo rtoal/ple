@@ -13,14 +13,16 @@ osabie hello.abe < /dev/null
 ```
 
 ```
-osabie five_hellos.abe < /dev/null
-```
-
-```
 osabie clockhands.abe < /dev/null
 ```
 
 For programs that _do_ read from standard input, remember to include a blank line at the end of your input file (or type a blank line when finished if running interactively).
+
+Alternatively, you can be fancy:
+
+```
+osabie hypot.abe < <(echo -e "12\n9\n")
+```
 
 To run the tests, invoke `./test.sh` in a Unix-friendly shell. This assumes you have built the `osabie` executable and placed it in your command path.
 
@@ -36,6 +38,7 @@ Explore its extensive command list on the language's [GitHub wiki](https://githu
 
 - [05AB1E Wiki Home](https://github.com/Adriandmen/05AB1E/wiki)
 - [05AB1E at the Esolang Wiki](https://esolangs.org/wiki/05AB1E)
+- [Tips for golfing 05AB1E](https://codegolf.stackexchange.com/questions/96361/tips-for-golfing-in-05ab1e)
 
 ## In Open Source
 
