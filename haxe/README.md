@@ -4,7 +4,7 @@
 
 To build and run Haxe programs on your local machine, download and install the most recent language version from the [Haxe downloads page](https://haxe.org/download/) or use your favorite package manager.
 
-Programs in this folder can be run from the command line like so:
+Programs in this folder can be run using Haxe 4.3.4 from the command line like so:
 
 ```
 haxe --run Triple
