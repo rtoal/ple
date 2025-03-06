@@ -11,7 +11,7 @@ bal run helloWorld.bal
 ```
 
 ```
-bal run permutation.bal I like carrots     # NOT TESTED YET
+bal run permutation.bal -- I like carrots
 ```
 
 ```
