@@ -19,6 +19,9 @@ bal run "$PSScriptRoot\hello_world.bal" &&
 bal run "$PSScriptRoot\permutations.bal" -- I like carrots |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |
     Assert-MatchTests &&
+bal run "$PSScriptRoot\top_ten_scorers.bal" -- (Get-Content "$PSScriptRoot\..\test\wnba_input") |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\wnba_expected") |
+    Assert-MatchTests &&
 bal run "$PSScriptRoot\triple.bal" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
     Assert-MatchTests &&

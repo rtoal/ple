@@ -18,6 +18,8 @@ bal run permutation.bal -- I like carrots
 bal run topTenScorers.bal < ../test/wnba_input      # NOT TESTED YET
 ```
 
+Running `bal shell` will give you a repl.
+
 To run the tests on a Unix-like shell:
 
 ```
@@ -36,3 +38,4 @@ Continue your study of Ballerina via:
 
 - [Ballerina Official Website](https://ballerina.io/)
 - [Ballerina Central Library](https://central.ballerina.io/ballerina-library)
+- [Ballerina Presenation](https://ballerina.io/learn/slides/language-walkthrough/Ballerina_Language_Presentation-2021-03-08.pdf)
