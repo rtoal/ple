@@ -1,7 +1,7 @@
 import ballerina/io;
 
 function printPermutations(string[] a, int n) {
-    if (n <= 0) {
+    if n <= 0 {
         io:println(string:'join("\t", ...a));
     } else {
         foreach int i in 0 ..< n {
@@ -16,7 +16,7 @@ function printPermutations(string[] a, int n) {
 }
 
 public function main(string[] input) returns error? {
-    if (input.length() < 1) {
+    if input.length() < 1 {
         return error("ERROR: There must be at least 1 argument.");
     }
     printPermutations(input, input.length()-1);
