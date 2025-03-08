@@ -1,0 +1,34 @@
+module Anagrams
+
+from "wasi/process" include Process
+from "result" include Result
+from "array" include Array
+from "string" include String
+
+let rec generatePermutations = (a, n) => {
+  if (n == 0) {
+    print(String.implode(a))
+  }
+  else {
+    for (let mut i = 0; i < n; i += 1) {
+      generatePermutations(a, n-1)
+      let mut j = i
+      if (n % 2 == 0) {
+        j = 0
+      }
+      let temp = a[n]
+      a[n] = a[j]
+      a[j] = temp
+    }
+    generatePermutations(a, n - 1)  
+  }
+}
+
+let input = Result.unwrap(Process.argv())
+print(input)
+if (Array.length(input) != 2) {
+  print("Exactly one argument is required")
+  Result.unwrap(Process.exit(1))
+}
+let word = input[1]
+generatePermutations(String.explode(word), String.length(word) - 1)

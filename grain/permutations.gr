@@ -1,16 +1,17 @@
-import Process from "sys/process"
-import Result from "result"
-import Array from "array"
-import List from "list"
-import String from "string"
+module Permutations
 
-let rec permutations = (a, n) => {
+from "wasi/process" include Process
+from "result" include Result
+from "array" include Array
+from "string" include String
+
+let rec printPermutations = (a, n) => {
   if (n == 0) {
-    print(Array.join("", a))
+    print(Array.join("\t", a))
   }
   else {
     for(let mut i = 0; i < n; i += 1) {
-      permutations(a, n-1)
+      printPermutations(a, n-1)
       let mut j = i
       if (n % 2 == 0) {
         j = 0
@@ -19,17 +20,15 @@ let rec permutations = (a, n) => {
       a[n] = a[j]
       a[j] = temp
     }
-    permutations(a, n - 1)  
+    printPermutations(a, n - 1)  
   }
 }
 
 
-let arr = Result.unwrap(Process.argv())
-let length = Array.length(arr)
-let split = Array.slice(3, length, arr)
-if ((length - 3) != 1) {
-  print("Exactly one argument is required\n")
+let input = Result.unwrap(Process.argv())
+if (Array.length(input) < 2) {
+  print("At least one argument is required")
   Result.unwrap(Process.exit(1))
 }
-let word = split[0]
-permutations(String.split("", word), String.length(word) - 1)
+let phrase = Array.slice(1, input)
+printPermutations(phrase, Array.length(phrase) - 1)
