@@ -1,8 +1,8 @@
 module Permutations
 
+from "array" include Array
 from "wasi/process" include Process
 from "result" include Result
-from "array" include Array
 from "string" include String
 
 let rec printPermutations = (a, n) => {
