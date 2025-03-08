@@ -1,11 +1,12 @@
+module Triple
+
+from "array" include Array
+
 for (let mut c = 1; c < 41; c+=1) {
   for (let mut b = 1; b < c; b+=1) {
     for (let mut a = 1; a < b; a+=1) {
       if (a * a + b * b == c * c) {
-        print("Output:")
-        print(c)
-        print(b)
-        print(a)
+        print(Array.join(", ", [> toString(a), toString(b), toString(c)]))
       }
     }
   }   

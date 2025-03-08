@@ -4,8 +4,7 @@ from "number" include Number
 
 let pad = (n) => if (n < 10) "0" ++ toString(n) else toString(n) 
 for (let mut i = 0; i <= 10; i += 1) {
-  let hms = Number.trunc((i + 0.5) * 43200 / 11)
-  let h = Number.trunc(hms / 3600) and ms = hms % 3600
-  let m = Number.trunc(ms / 60) and s = ms % 60
+  let t = Number.trunc((43200 * i + 21600) / 11)
+  let h = Number.trunc(t / 3600) and m = Number.trunc(t / 60) % 60 and s = t % 60
   print(pad(if (h == 0) 12 else h) ++ ":" ++ pad(m) ++ ":" ++ pad(s))
 }
