@@ -1,4 +1,7 @@
-import List from "list"
+module CitiesList
+
+from "list" include List
+
 let bestCities = (statement) => {
     let newList = List.append(["Los Angeles,", "New York,", "and San Francisco"], statement)
     List.join(" ", newList)
