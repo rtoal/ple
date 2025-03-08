@@ -1,8 +1,10 @@
-import {filter} from "list"
-import {startsWith} from "string"
+module SearchPlaces
+
+from "list" include List
+from "string" include String
 
 let places = ["California", "Florida", "New York"]
 
 
-let good = filter((s => startsWith("N",s)), places)
+let good = List.filter((s => String.startsWith("N",s)), places)
 print(good)
