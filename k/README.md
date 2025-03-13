@@ -21,3 +21,4 @@ To run the tests:
 * [oK on Github](https://github.com/JohnEarnest/ok)
 * [hakank's K page](http://www.hakank.org/k/)
 * [Another K page](http://vrabi.web.elte.hu/k/)
+* [K as a Prototyping Language](https://web.archive.org/web/20230521013222/https://cs.nyu.edu/courses/fall07/G22.2965-001/kintro.html)
