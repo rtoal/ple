@@ -10,11 +10,11 @@ k triple.k < /dev/null
 
 To run the tests, invoke `./test.sh` in a Unix-friendly shell.
 
-# About
+## About
 
 K is an array processing programming language derived from APL and developed by Arthur Whitney in 1993. The kdb+ database and several high-speed financial products use K.
 
-# Resources
+## Resources
 
 * [Arthur Whitney's 1993 article in Vector](http://archive.vector.org.uk/art10010830)
 * [Language Overview, with many additional links](http://www.math.bas.bg/bantchev/place/k.html)
@@ -23,7 +23,7 @@ K is an array processing programming language derived from APL and developed by 
 * [Another K page](http://vrabi.web.elte.hu/k/)
 * [K as a Prototyping Language](https://web.archive.org/web/20230521013222/https://cs.nyu.edu/courses/fall07/G22.2965-001/kintro.html)
 
-# In Open Source
+## In Open Source
 
 * [Kona is an open source project](https://github.com/kevinlawler/kona)
 * [oK is also open source](https://github.com/JohnEarnest/ok)
