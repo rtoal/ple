@@ -7,7 +7,8 @@ int g2 = 3;    // initialized global
 int g3;        // uninitialized global
 
 void f() {
-    double x; printf("x @ %p\n", &x);
+    double x;
+    printf("x @ %p\n", &x);
     if (g2-- > 0) f();
 }
 
