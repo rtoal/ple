@@ -1,0 +1,11 @@
+using System.Console;
+
+foreach (c in $[1..40]){
+  foreach (b in $[1..c]) {
+    foreach (a in $[1..b]) {
+      when (a * a + b * b == c * c) {
+        WriteLine($"$a, $b, $c")
+      }
+    }
+  }
+}

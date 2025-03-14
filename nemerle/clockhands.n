@@ -1,0 +1,16 @@
+using System.Console;
+
+def pad (n : int) {
+  match (n) {
+    | x when x < 10 => $"0$x";
+    | x => $"$x";
+  }
+}
+
+foreach (i in $[0..10]) {
+  def t = (43200 * i + 21600) / 11;
+  def h = t / 3600;
+  def m = t / 60 % 60;
+  def s = t % 60;
+  WriteLine($"$(pad(if (h == 0) 12 else h)):$(pad(m)):$(pad(s))");
+}
