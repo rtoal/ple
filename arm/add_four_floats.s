@@ -6,8 +6,8 @@
         .p2align 2
 
 _add_four_floats:
-        ld1     {v0.4s}, [x0]           ; Load 4 floats from x into v0
-        ld1     {v1.4s}, [x1]           ; Load 4 floats from y into v1
-        fadd    v0.4s, v0.4s, v1.4s     ; Add corresponding floats
-        st1     {v0.4s}, [x0]           ; Store result back to x
+        ld1.4s     {v0}, [x0]     ; Load 4 floats from x into v0
+        ld1.4s     {v1}, [x1]     ; Load 4 floats from y into v1
+        fadd.4s    v0, v0, v1     ; Add corresponding floats
+        st1.4s     {v0}, [x0]     ; Store result back to x
         ret
