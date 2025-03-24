@@ -25,6 +25,9 @@ $Error.clear()
     Assert-MatchTests &&
 . "$PSScriptRoot\script_root.ps1" &&
 . "$PSScriptRoot\sum_of_even_squares.ps1" &&
+. "$PSScriptRoot\top_ten_scorers.ps1" (Get-Content "$PSScriptRoot\..\test\wnba_input") | 
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\wnba_expected") |
+    Assert-MatchTests &&
 . "$PSScriptRoot\triple.ps1" | 
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") | 
     Assert-MatchTests &&
