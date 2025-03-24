@@ -1,6 +1,6 @@
 param (
     [Parameter(Mandatory)]
-    [String]$Word
+    [String] $Word
 )
 
 function Get-Permutations {

@@ -1,6 +1,6 @@
 param (
     [Parameter(Mandatory, ValueFromRemainingArguments)]
-    [string[]]$Phrase
+    [string[]] $Phrase
 )
 
 function Get-Permutations {
