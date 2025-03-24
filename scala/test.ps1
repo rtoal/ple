@@ -19,6 +19,10 @@ scala "$PSScriptRoot\clockhands.scala" |
 scala "$PSScriptRoot\clockhandsTime.scala" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
+scala "$PSScriptRoot\permutations.scala" -- I like carrots |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |
+    Assert-MatchTests &&
+scala "$PSScriptRoot\sumOfEvenSquares.scala" &&
 scala "$PSScriptRoot\triple.scala" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
     Assert-MatchTests &&
