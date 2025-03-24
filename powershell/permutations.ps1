@@ -1,23 +1,23 @@
 param (
     [Parameter(Mandatory, ValueFromRemainingArguments)]
-    [string[]]$phrase
+    [string[]]$Phrase
 )
 
 function Get-Permutations {
     param (
-        [Parameter(Mandatory = $true)] $a,
-        [Parameter(Mandatory = $true)] $n
+        [Parameter(Mandatory = $true)] $A,
+        [Parameter(Mandatory = $true)] $N
     )
-    if ($n -le 0) {
-        "$($a -join "`t`")"
+    if ($N -le 0) {
+        $($A -join "`t")
     } else {
-        foreach ($i in 0..($n-1)) {
-            Get-Permutations ($a) ($n-1)
-            $j = ($n % 2 -eq 0) ? 0 : $i
-            $a[$j], $a[$n] = $a[$n], $a[$j]
+        foreach ($i in 0..($N-1)) {
+            Get-Permutations ($A) ($N-1)
+            $j = ($N % 2 -eq 0) ? 0 : $i
+            $A[$j], $A[$N] = $A[$N], $A[$j]
         }
-        Get-Permutations ($a) ($n-1)
+        Get-Permutations ($A) ($N-1)
     }
 }
 
-Get-Permutations ($phrase) ($phrase.count-1)
+Get-Permutations ($Phrase) ($Phrase.count-1)
