@@ -1,8 +1,6 @@
-<img src="https://raw.githubusercontent.com/rtoal/polyglot/master/docs/resources/ruby-logo-64.png">
-
 # Verilog Explorations
 
-To build and run Ruby programs on your local machine, download and install the most recent language version from the [Icarus compiler downloads page](https://bleyer.org/icarus/) or use your favorite package manager.
+To build and run Verilog programs on your local machine, download and install the most recent language version from the [Icarus compiler downloads page](https://bleyer.org/icarus/) or use your favorite package manager.
 
 Programs in this folder have been tested using Icarus Verilog version 12.0 and can be run from the command line like so:
 
