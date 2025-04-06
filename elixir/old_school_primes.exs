@@ -1,6 +1,6 @@
 # A line by line translation of the Erlang version
 defmodule Primes do
-  def main(_args) do
+  def main() do
     max = 1000
 
     2..max
@@ -37,4 +37,4 @@ defmodule Primes do
   end
 end
 
-Primes.main(System.argv())
+Primes.main()

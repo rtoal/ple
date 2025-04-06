@@ -1,13 +1,5 @@
 defmodule Primes do
-  def main(_args) do
-    2..1000
-    |> Task.async_stream(
-        &print_if_prime/1,
-        max_concurrency: System.schedulers_online())
-    |> Stream.run()
-  end
-
-  defp print_if_prime(n) do
+  def print_if_prime(n) do
     if is_prime?(n), do: IO.write("#{n} ")
   end
 
@@ -20,4 +12,9 @@ defmodule Primes do
   end
 end
 
-Primes.main(System.argv())
+2..1000
+|> Task.async_stream(
+    &Primes.print_if_prime/1,
+    max_concurrency: System.schedulers_online(),
+    ordered: false)
+|> Stream.run()
