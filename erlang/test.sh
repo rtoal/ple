@@ -12,7 +12,7 @@ escript hello.erl && \
 escript if_and_case.erl && \
 escript more_matching.erl && \
 escript non_streaming_triple.erl | diff ../test/triple_expected - && \
-erlc prime_checker.erl && erlc printer.erl && escript primes.erl && \
+erlc prime_checker.erl && escript primes.erl && \
 escript sweeper.erl && \
 escript triple.erl | diff ../test/triple_expected - && \
 escript types.erl && \

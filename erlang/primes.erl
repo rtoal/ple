@@ -1,10 +1,9 @@
-% First line is ignored when running with escript
+% A command line application to print primes in 2..1000.
 main(_) ->
   Max = 1000,
-  Printer = spawn(printer, print_server, [self()]),
   lists:foreach(
     fun (N) ->
-      spawn(prime_checker, is_prime, [N, Printer])
+      spawn(prime_checker, is_prime, [N, self()])
     end,
     lists:seq(2, Max)),
   wait(Max-1).
