@@ -12,8 +12,10 @@ $Error.clear()
 rscript "$PSScriptRoot\clockhands.r" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests && 
+rscript "$PSScriptRoot\fizzbuzz.r" &&
 rscript "$PSScriptRoot\hello.r" &&
 rscript "$PSScriptRoot\prices.r" &&
+rscript "$PSScriptRoot\vector_logic.r" &&
 ForEach-Object 'foo';
 
 if ($Error -or !$?) { 
