@@ -9,6 +9,9 @@ function Assert-MatchTests {
 }
 
 $Error.clear()
+rscript "$PSScriptRoot\clockhands_time.r" |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
+    Assert-MatchTests && 
 rscript "$PSScriptRoot\clockhands.r" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests && 

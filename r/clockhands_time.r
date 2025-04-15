@@ -1,0 +1,1 @@
+write(format(.POSIXct(((0:10)*43200+21600)/11, tz="GMT"), "%I:%M:%S"), stdout())
