@@ -51,3 +51,6 @@ m[c(NA, TRUE, FALSE)]       # NA 2 NA 5 NA 8 NA
 n <- 1:26
 n[c("Hello, ", TRUE)]       # NA NA
 n[c(TRUE, FALSE, "hi")]     # NA NA NA
+
+o <- 1:2
+o[c(TRUE, TRUE, TRUE)]      # 1 2 NA
