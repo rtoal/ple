@@ -18,6 +18,9 @@ rscript "$PSScriptRoot\clockhands.r" |
 rscript "$PSScriptRoot\fizzbuzz.r" &&
 rscript "$PSScriptRoot\hello.r" &&
 rscript "$PSScriptRoot\prices.r" &&
+rscript "$PSScriptRoot\triple.r" |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
+    Assert-MatchTests && 
 rscript "$PSScriptRoot\vector_logic.r" &&
 rscript "$PSScriptRoot\vector.r" &&
 ForEach-Object 'foo';
