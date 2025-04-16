@@ -19,6 +19,7 @@ rscript "$PSScriptRoot\fizzbuzz.r" &&
 rscript "$PSScriptRoot\hello.r" &&
 rscript "$PSScriptRoot\prices.r" &&
 rscript "$PSScriptRoot\vector_logic.r" &&
+rscript "$PSScriptRoot\vector.r" &&
 ForEach-Object 'foo';
 
 if ($Error -or !$?) { 
