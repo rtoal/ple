@@ -18,6 +18,7 @@ export default function generate(program) {
   })(new Map())
 
   function gen(node) {
+    // Dispatch the node to the appropriate handler if present.
     // Node types without explicit handlers just "pass through"
     return generators?.[node?.kind]?.(node) ?? node
   }
