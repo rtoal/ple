@@ -12,7 +12,7 @@ function generatepermutations(a, n)
 end
 
 if length(ARGS) != 1
-    println(STDERR, "Exactly one argument is required")
+    println(stderr::IO, "Exactly one argument is required")
     exit(1)
 end
 generatepermutations(split(ARGS[1], ""), length(ARGS[1]))
