@@ -14,11 +14,13 @@ racket -f "$PSScriptRoot\clockhands_imperative.rkt" |
     Assert-MatchTests &&
 racket -f "$PSScriptRoot\clockhands.rkt" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
-    Assert-MatchTests && 
+    Assert-MatchTests &&
 racket -f "$PSScriptRoot\hello.rkt" &&
+racket -f "$PSScriptRoot\list_syntax.rkt" &&
+racket -f "$PSScriptRoot\sum_of_even_squares.rkt" &&
 racket -f "$PSScriptRoot\triple_imperative.rkt" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
-    Assert-MatchTests && 
+    Assert-MatchTests &&
 ForEach-Object 'foo';
 
 if ($Error -or !$?) { 
