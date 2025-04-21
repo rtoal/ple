@@ -9,6 +9,7 @@ function Assert-MatchTests {
 }
 
 $Error.clear()
+racket -f "$PSScriptRoot\boolean_logic.rkt" &&
 racket -f "$PSScriptRoot\clockhands_imperative.rkt" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
