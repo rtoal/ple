@@ -32,7 +32,7 @@ TODO
 
 ## Nemerle Resources
 
-Continue your study of Python with:
+Continue your study of Nemerle with:
 
 - [Nemerle Home](http://www.nemerle.org/About#ID0EZD)
 - [Official Documentation](https://github.com/rsdn/nemerle/wiki)
