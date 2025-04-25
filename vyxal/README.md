@@ -2,7 +2,7 @@
 
 # Vyxal Explorations
 
-To run Vyxal programs on your local machine, download and install the most recent language version from the [Vyxal downloads page](https://www.python.org/downloads/) or use your favorite package manager.
+To run Vyxal programs on your local machine, download and install the most recent language version from the [Vyxal GitHub releases page](https://github.com/Vyxal/Vyxal/releases) or use your favorite package manager.
 
 TODO 
 <!-- Programs in this folder have been tested using Python 3.13.2 and can be run from the command line like so:
