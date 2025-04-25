@@ -4,14 +4,14 @@
 
 To build and run Racket programs on your local machine, download and install the most recent language version from the [Racket home page](https://racket-lang.org/) or use your favorite package manager.
 
-Programs in this folder can be run from the command line like so:
+Programs in this folder have been tested using Racket v8.16 and can be run from the command line like so:
 
 ```
 racket -f triple.rkt
 ```
 
 ```
-racket permutations.rkt I like carrots      # HAVE NOT TESTED YET
+racket permutations.rkt I like carrots
 ```
 
 ```
@@ -30,7 +30,7 @@ Run `test.ps1` in PowerShell.
 
 ## About Racket
 
-Racket is
+Racket is (TODO)
 
 ## Racket Resources
 
