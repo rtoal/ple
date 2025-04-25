@@ -4,7 +4,8 @@
 
 To run Vyxal programs on your local machine, download and install the most recent language version from the [Vyxal downloads page](https://www.python.org/downloads/) or use your favorite package manager.
 
-Programs in this folder have been tested using Python 3.13.2 and can be run from the command line like so:
+TODO 
+<!-- Programs in this folder have been tested using Python 3.13.2 and can be run from the command line like so:
 
 ```
 python3 triple.py
@@ -22,7 +23,7 @@ Running the command `python3` with no arguments gives you a repl.
 
 If you, as you may have already, are using virtual environments or have aliased `python3` to `python`, you may replace `python3` with `python` in the above commands.
 
-To run the tests, invoke `./test.sh` in a Unix-friendly shell or `test.ps1` in PowerShell.
+To run the tests, invoke `./test.sh` in a Unix-friendly shell or `test.ps1` in PowerShell. -->
 
 ## About
 
