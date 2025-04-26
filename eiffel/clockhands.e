@@ -21,12 +21,7 @@ feature
                 if h = 0 then
                     h := 12
                 end
-                print (pad (h))
-                print (":")
-                print (pad (m))
-                print (":")
-                print (pad (s))
-                print ("%N")
+                print (pad (h) + ":" + pad (m) + ":" + pad (s) + "%N")
             end
         end
 
