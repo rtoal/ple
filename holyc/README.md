@@ -36,4 +36,4 @@ Continue your study of HolyC with:
 
 - [HolyC Home](https://holyc-lang.com/)
 - [Official Documentation](https://github.com/rsdn/nemerle/wiki)
-- [Nemerle at Rosetta Code](https://rosettacode.org/wiki/Category:Nemerle)
+- [Nemerle at Rosetta Code](https://rosettacode.org/wiki/Category:HolyC)
