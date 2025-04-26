@@ -6,8 +6,6 @@ To build and run Eiffel programs on your local machine, download and install the
 
 Programs in this folder can be run from the command line like so:
 
-jgdsfjjdsgodjofgjdofjgdojgfgijdfoigjsoifjgosdjgojidsfigjdsoifgoijdsfgoijdsfoigjidsojgoidsfjgoidjsfgiojdfgoijdsfoigjsdiofjgiodsjfgiosdjfgoijdsfiogjdsfoigjdsoifgjoidsfgjoidfgjjgdsfjjdsgodjofgjdofjgdojgfoifgoijsfoifoigoisfgdoifgoijigsoifgjodisjfgiojdfgijdfoigjsoifjgosdjgojidsfigjdsoifgoijdsfgoijdsfoigjidsojgoidsfjgoidjsfgiojdfgoijdsfoigjsdiofjgiodsjfgiosdjfgoijdsfiogjdsfoigjdsoifgjoidsfgjoidfgj
-
 ```
 ec triple.e
 ```
