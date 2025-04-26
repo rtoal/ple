@@ -11,7 +11,7 @@ ec triple.e
 ```
 
 ```
-ec permutations.e I like carrots    # NOT TESTED YET
+ec permutations.e I like carrots 
 ```
 
 ```
