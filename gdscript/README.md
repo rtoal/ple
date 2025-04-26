@@ -18,7 +18,7 @@ godot -s permutations.gd I like carrots
 godot -s top_ten_scorers.gd < ../test/wnba_input
 ```
 
-Running the command `godot` with at any time will open the Godot game engine. To avoid this, add the flag `--display-driver headless`.
+Running the command `godot` will always open the Godot game engine. To avoid this, add the flag `--display-driver headless`.
 
 To make sure that your test matches properly to the test files, you will need to add the `--no-header` flag.
 
