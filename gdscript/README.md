@@ -2,7 +2,7 @@
 
 # GDScript Explorations:
 
-To build and run GDScript programs on your local machine, download and install the most recent game engine version from the [Godot downloads page](https://godotengine.org/) or use your favorite package manager.
+To build and run GDScript programs on your local machine, download and install the most recent game engine version from the [Godot Engine downloads page](https://godotengine.org/) or use your favorite package manager.
 
 Programs in this folder can be run from the command line like so:
 
