@@ -607,6 +607,13 @@ var langs = [
     d: "Description coming soon",
   },
   {
+    i: "holyc",
+    n: "HolyC",
+    d: "Description coming soon",
+    h: "https://holyc-lang.com/",
+    w: "https://en.wikipedia.org/wiki/HolyC",
+  },
+  {
     i: "hylo",
     n: "Hylo",
     d: "Description coming soon",
@@ -1187,6 +1194,14 @@ var langs = [
     t: ["Scripting", "Gradually Typed"],
   },
   {
+    i: "reason",
+    n: "Reason",
+    h: "https://reasonml.github.io/",
+    w: "https://en.wikipedia.org/wiki/Reason_(programming_language)",
+    d: "Description coming soon",
+    f: 2016,
+  },
+  {
     i: "roy",
     n: "Roy",
     h: "http://roy.brianmckenna.org/",
@@ -1449,6 +1464,13 @@ var langs = [
   {
     i: "vyxal",
     n: "Vyxal",
+    d: "Description coming soon",
+  },
+  {
+    i: "wasm",
+    n: "WebAssembly",
+    h: "https://webassembly.org/",
+    w: "https://en.wikipedia.org/wiki/WebAssembly",
     d: "Description coming soon",
   },
   {
