@@ -21,7 +21,6 @@ gleam run -m generics &&
 gleam run -m hello &&
 gleam run -m pipelines &&
 gleam run -m unqualified_imports &&
-gleam clean &&
 ForEach-Object 'foo';
 
 if ($Error -or !$?) { 
@@ -30,6 +29,9 @@ if ($Error -or !$?) {
 else { 
     "GLEAM TESTS PASSED" 
 } 
+
+# Clean up Gleam Folder
+gleam clean
 
 # Returns the powershell back to its location. 
 Set-Location "$currentLocation"
