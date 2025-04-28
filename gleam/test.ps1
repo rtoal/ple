@@ -8,11 +8,17 @@ function Assert-MatchTests {
     }
 }
 
-# Running the test requires the powershell to be in the Haxe folder.
+# Running the test requires the powershell to be in the Gleam root older.
 $currentLocation = $pwd
 Set-Location "$PSScriptRoot"
 
+# Download dependencies if needed.
+gleam add argv
+
 $Error.clear()
+gleam run -m anagrams_library rats |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\rats_heap_expected") |
+    Assert-MatchTests &&
 gleam run -m clockhands |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
