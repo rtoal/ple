@@ -1,10 +1,11 @@
 //// Factorial: Recursive implementation of factorial function
 
+import gleam/int
 import gleam/io
 
 pub fn main() {
-  io.debug(factorial(5))
-  io.debug(factorial(7))
+  io.println(int.to_string(factorial(5)))
+  io.println(int.to_string(factorial(7)))
 }
 
 /// Recursively calculates factorial of given int

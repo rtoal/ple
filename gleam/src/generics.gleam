@@ -5,14 +5,14 @@
 import gleam/io
 
 pub fn main() {
-  let add_one = fn(x) { x + 1 }
+  let _add_one = fn(x) { x + 1 }
   let exclaim = fn(x) { x <> "!" }
 
   // Invalid: Value must remain constant (Int vs. String)
   //twice(10, exclaim)
 
   // Now value generic type will be the same in the twice function
-  io.debug(twice("Hello", exclaim))
+  io.println(twice("Hello", exclaim))
 }
 
 /// value is a generic type and used here for the types of the variables and return type

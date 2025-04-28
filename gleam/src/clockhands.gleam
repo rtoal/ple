@@ -4,7 +4,7 @@ import gleam/list
 import gleam/string
 
 pub fn main() {
-  let pad = fn(n: Int) { string.pad_left(int.to_string(n), 2, "0") }
+  let pad = fn(n: Int) { string.pad_start(int.to_string(n), 2, "0") }
  
   list.range(0, 10) |> list.map(fn (i) {
     let t = {i * 43200 + 21600} / 11
