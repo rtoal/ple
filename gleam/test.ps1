@@ -25,6 +25,9 @@ gleam run -m clockhands |
 gleam run -m factorial &&
 gleam run -m generics &&
 gleam run -m hello &&
+gleam run -m permutations I like carrots |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |
+    Assert-MatchTests &&
 gleam run -m pipelines &&
 gleam run -m sum_of_even_squares &&
 gleam run -m triple_pipelines |
