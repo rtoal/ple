@@ -1,6 +1,6 @@
-import gleam/io
+import gleam/io.{println}
 
 pub fn main() {
-    io.println("Hello Sandra!")
-    io.println("Hello to you too, Bob!")
+    println("Hello Sandra!")
+    println("Hello to you too, Bob!")
 }

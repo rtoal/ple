@@ -20,6 +20,12 @@ gleam run -m factorial &&
 gleam run -m generics &&
 gleam run -m hello &&
 gleam run -m pipelines &&
+gleam run -m triple_pipelines |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
+    Assert-MatchTests &&
+gleam run -m triple |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
+    Assert-MatchTests &&
 gleam run -m unqualified_imports &&
 ForEach-Object 'foo';
 
