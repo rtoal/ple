@@ -8,13 +8,6 @@ function Assert-MatchTests {
     }
 }
 
-$bin = "$PSScriptRoot\bin"
-
-# First check if folder bin exists. If not, make a new bin folder.
-if (!(Test-Path -Path $bin)) {
-    New-Item -Path $bin -Type Directory
-} 
-
 $Error.clear()
 nim c "$PSScriptRoot\permutations.nim" && . "$PSScriptRoot\permutations.exe" I like carrots |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |
