@@ -9,6 +9,9 @@ function Assert-MatchTests {
 }
 
 $Error.clear()
+nim c "$PSScriptRoot\clockhands.nim" && . "$PSScriptRoot\clockhands.exe" |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
+    Assert-MatchTests &&
 nim c "$PSScriptRoot\permutations.nim" && . "$PSScriptRoot\permutations.exe" I like carrots |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |
     Assert-MatchTests &&
