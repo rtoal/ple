@@ -1,6 +1,6 @@
 import std/[strutils, cmdline]
 
-type InputArgumentError* = object of Exception
+type InputArgumentError* = object of IOError
 
 proc printPermutations(a: var seq[string], n: int) =
   if n <= 0:

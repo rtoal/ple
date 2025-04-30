@@ -9,6 +9,9 @@ function Assert-MatchTests {
 }
 
 $Error.clear()
+nim c "$PSScriptRoot\anagrams.nim" && . "$PSScriptRoot\anagrams.exe" rats |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\rats_heap_expected") |
+    Assert-MatchTests &&
 nim c "$PSScriptRoot\clockhands.nim" && . "$PSScriptRoot\clockhands.exe" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
