@@ -25,6 +25,7 @@ gleam run -m clockhands |
 gleam run -m factorial &&
 gleam run -m generics &&
 gleam run -m hello &&
+gleam run -m pattern_matching &&
 gleam run -m permutations I like carrots |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |
     Assert-MatchTests &&
@@ -36,6 +37,7 @@ gleam run -m triple_pipelines |
 gleam run -m triple |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
     Assert-MatchTests &&
+gleam run -m type_enum &&
 gleam run -m unqualified_imports &&
 ForEach-Object 'foo';
 
