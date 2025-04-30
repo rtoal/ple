@@ -1,5 +1,7 @@
 import std/[strutils, cmdline]
 
+type InputArgumentError* = object of Exception
+
 proc printPermutations(a: var seq[string], n: int) =
   if n <= 0:
     echo a.join("\t")
@@ -12,4 +14,6 @@ proc printPermutations(a: var seq[string], n: int) =
 
 when isMainModule:
   var args = commandLineParams()
+  if len(args) == 0:
+    raise newException(InputArgumentError, "ERROR: There must be at least 1 argument.")
   printPermutations(args, len(args) - 1)
