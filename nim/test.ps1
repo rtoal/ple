@@ -12,9 +12,11 @@ $Error.clear()
 nim c "$PSScriptRoot\clockhands.nim" && . "$PSScriptRoot\clockhands.exe" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
+nim c "$PSScriptRoot\fibonacci_iterator.nim" && . "$PSScriptRoot\fibonacci_iterator.exe" &&
 nim c "$PSScriptRoot\permutations.nim" && . "$PSScriptRoot\permutations.exe" I like carrots |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |
     Assert-MatchTests &&
+nim c "$PSScriptRoot\sum_of_even_squares.nim" && . "$PSScriptRoot\sum_of_even_squares.exe" &&
 nim c "$PSScriptRoot\triple.nim" && . "$PSScriptRoot\triple.exe" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
     Assert-MatchTests &&
