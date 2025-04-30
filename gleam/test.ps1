@@ -37,7 +37,9 @@ gleam run -m triple_pipelines |
 gleam run -m triple |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
     Assert-MatchTests &&
+gleam run -m type_aliases &&
 gleam run -m type_enum &&
+gleam run -m type_record &&
 gleam run -m unqualified_imports &&
 ForEach-Object 'foo';
 
