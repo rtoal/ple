@@ -9,7 +9,7 @@ import gleam/string
 
 pub fn main() {
   //////////////////////////////////////////////////////////////
-  // Warning constantly stated if you don't use the Option type.
+  // Warning constantly outputted if you don't use the Option type.
   // This is implemented to not get bombarded by Gleam warning 
   // messages when running some of the examples. This is not
   // apart of the example whatsoever.
