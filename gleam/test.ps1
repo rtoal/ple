@@ -14,6 +14,7 @@ Set-Location "$PSScriptRoot"
 
 # Download dependencies if needed.
 gleam add argv
+gleam add gleam_erlang
 
 $Error.clear()
 gleam run -m anagrams_library rats |
@@ -31,6 +32,9 @@ gleam run -m permutations I like carrots |
     Assert-MatchTests &&
 gleam run -m pipelines &&
 gleam run -m sum_of_even_squares &&
+gleam run -m top_ten_scorers (Get-Content "$PSScriptRoot\..\test\wnba_input") | 
+    Compare-Object (Get-Content  "$PSScriptRoot\..\test\wnba_expected") |
+    Assert-MatchTests &&
 gleam run -m triple_pipelines |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
     Assert-MatchTests &&
