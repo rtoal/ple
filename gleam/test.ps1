@@ -14,7 +14,7 @@ Set-Location "$PSScriptRoot"
 
 # Download dependencies if needed.
 gleam add argv
-gleam add gleam_erlang
+gleam add gleam_regexp@1
 
 $Error.clear()
 gleam run -m anagrams_library rats |
@@ -45,6 +45,9 @@ gleam run -m type_aliases &&
 gleam run -m type_enum &&
 gleam run -m type_record &&
 gleam run -m unqualified_imports &&
+gleam run -m wordcount (Get-Content "$PSScriptRoot\..\test\wordcount_ascii_input") |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\wordcount_ascii_expected") |
+    Assert-MatchTests &&
 ForEach-Object 'foo';
 
 if ($Error -or !$?) { 
