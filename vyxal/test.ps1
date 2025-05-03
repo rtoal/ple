@@ -13,6 +13,9 @@ function Assert-MatchTests {
 $vyxal = "$PSScriptRoot\vyxal.jar"
 
 $Error.clear()
+java -jar $vyxal --file "$PSScriptRoot\anagrams.vy" rats |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\rats_heap_expected") |
+    Assert-MatchTests &&
 java -jar $vyxal --file "$PSScriptRoot\codepage.vy" &&
 java -jar $vyxal --file "$PSScriptRoot\hello.vy" &&
 ForEach-Object 'foo';
