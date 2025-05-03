@@ -24,6 +24,9 @@ java -jar $vyxal --file "$PSScriptRoot\clockhands.vy" |
     Assert-MatchTests &&
 java -jar $vyxal --file "$PSScriptRoot\codepage.vy" &&
 java -jar $vyxal --file "$PSScriptRoot\hello.vy" &&
+java -jar $vyxal --file "$PSScriptRoot\permutations.vy" I like carrots|
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |
+    Assert-MatchTests &&
 ForEach-Object 'foo';
 
 if ($Error -or !$?) { 
