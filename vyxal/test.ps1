@@ -27,6 +27,9 @@ java -jar $vyxal --file "$PSScriptRoot\hello.vy" &&
 java -jar $vyxal --file "$PSScriptRoot\permutations.vy" I like carrots|
     Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |
     Assert-MatchTests &&
+java -jar $vyxal --file "$PSScriptRoot\sum_of_even_squares.vy" 6 7 4 2 |
+    Compare-Object 56 |
+    Assert-MatchTests &&
 ForEach-Object 'foo';
 
 if ($Error -or !$?) { 
