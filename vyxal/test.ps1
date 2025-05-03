@@ -23,6 +23,7 @@ java -jar $vyxal --file "$PSScriptRoot\clockhands.vy" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
 java -jar $vyxal --file "$PSScriptRoot\codepage.vy" &&
+java -jar $vyxal --file "$PSScriptRoot\first_twelve_fibs.vy" &&
 java -jar $vyxal --file "$PSScriptRoot\five_hellos.vy" &&
 java -jar $vyxal --file "$PSScriptRoot\hello.vy" &&
 java -jar $vyxal --file "$PSScriptRoot\hypot.vy" 3 4 &&
