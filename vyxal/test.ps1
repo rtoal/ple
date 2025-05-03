@@ -23,7 +23,9 @@ java -jar $vyxal --file "$PSScriptRoot\clockhands.vy" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
 java -jar $vyxal --file "$PSScriptRoot\codepage.vy" &&
+java -jar $vyxal --file "$PSScriptRoot\five_hellos.vy" &&
 java -jar $vyxal --file "$PSScriptRoot\hello.vy" &&
+java -jar $vyxal --file "$PSScriptRoot\hypot.vy" 3 4 &&
 java -jar $vyxal --file "$PSScriptRoot\permutations.vy" I like carrots|
     Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |
     Assert-MatchTests &&
@@ -33,6 +35,7 @@ java -jar $vyxal --file "$PSScriptRoot\sum_of_even_squares.vy" 6 7 4 2 |
 java -jar $vyxal --file "$PSScriptRoot\triple.vy" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
     Assert-MatchTests &&
+java -jar $vyxal --file "$PSScriptRoot\triangle.vy" &&
 ForEach-Object 'foo';
 
 if ($Error -or !$?) { 
