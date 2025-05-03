@@ -30,6 +30,9 @@ java -jar $vyxal --file "$PSScriptRoot\permutations.vy" I like carrots|
 java -jar $vyxal --file "$PSScriptRoot\sum_of_even_squares.vy" 6 7 4 2 |
     Compare-Object 56 |
     Assert-MatchTests &&
+java -jar $vyxal --file "$PSScriptRoot\triple.vy" |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
+    Assert-MatchTests &&
 ForEach-Object 'foo';
 
 if ($Error -or !$?) { 
