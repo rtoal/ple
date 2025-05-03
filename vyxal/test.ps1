@@ -26,6 +26,7 @@ java -jar $vyxal --file "$PSScriptRoot\codepage.vy" &&
 java -jar $vyxal --file "$PSScriptRoot\five_hellos.vy" &&
 java -jar $vyxal --file "$PSScriptRoot\hello.vy" &&
 java -jar $vyxal --file "$PSScriptRoot\hypot.vy" 3 4 &&
+java -jar $vyxal --file "$PSScriptRoot\no_output.vy" &&
 java -jar $vyxal --file "$PSScriptRoot\permutations.vy" I like carrots|
     Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |
     Assert-MatchTests &&
