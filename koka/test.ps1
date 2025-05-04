@@ -9,6 +9,7 @@ function Assert-MatchTests {
 }
 
 $Error.clear()
+koka -v0 -e "$PSScriptRoot\brace-elison.kk" &&
 koka -v0 -e "$PSScriptRoot\clockhands.kk" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
