@@ -1,9 +1,10 @@
-#include <iostream>
-#include <fstream>
-#include <vector>
-#include <string>
-#include <sstream>
 #include <algorithm>
+#include <fstream>
+#include <iomanip>
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <vector>
 
 struct Player {
   std::string name;
