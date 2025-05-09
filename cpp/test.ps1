@@ -16,6 +16,9 @@ g++ -std=c++20 "$PSScriptRoot\anagrams.cpp" && . $run rats |
     Assert-MatchTests &&
 g++ -std=c++20 "$PSScriptRoot\animals.cpp" && . $run &&
 g++ -std=c++20 "$PSScriptRoot\basic_types.cpp" && . $run &&
+g++ -std=c++20 "$PSScriptRoot\clockhands.cpp" && . $run |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
+    Assert-MatchTests &&
 g++ -std=c++20 "$PSScriptRoot\if_then_else.cpp" && . $run &&
 g++ -std=c++20 "$PSScriptRoot\maps.cpp" && . $run &&
 g++ -std=c++20 "$PSScriptRoot\permutations.cpp" && . $run I like carrots |
