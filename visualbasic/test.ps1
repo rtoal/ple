@@ -30,6 +30,7 @@ $Error.clear()
     Initialize-File("Permutations.vb") && dotnet run --project $project I like carrots |
         Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |
         Assert-MatchTests &&
+    Initialize-File("SumOfEvenSquares.vb") && dotnet run --project $project &&
     Initialize-File("Triple.vb") && dotnet run --project $project |
         Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
         Assert-MatchTests &&
