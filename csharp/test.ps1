@@ -21,6 +21,9 @@ function Initialize-File {
 $project = "$PSScriptRoot\project"
 
 $Error.clear()
+    Initialize-File("Clockhands.cs") && dotnet run --project $project |
+        Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
+        Assert-MatchTests &&
     Initialize-File("Greeter.cs") && dotnet run --project $project &&
     Initialize-File("ReifiedExample.cs") && dotnet run --project $project &&
     Initialize-File("TraditionalWordCounter.cs") && Get-Content "$PSScriptRoot\..\test\wordcount_ascii_input" |
