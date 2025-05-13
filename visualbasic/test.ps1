@@ -20,10 +20,16 @@ function Initialize-File {
 $project = "$PSScriptRoot\project"
 
 $Error.clear()
+    Initialize-File("Anagrams.vb") && dotnet run --project $project rats |
+        Compare-Object (Get-Content "$PSScriptRoot\..\test\rats_heap_expected") |
+        Assert-MatchTests &&
     Initialize-File("Clockhands.vb") && dotnet run --project $project |
         Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
         Assert-MatchTests &&
     Initialize-File("Hello.vb") && dotnet run --project $project &&
+    Initialize-File("Permutations.vb") && dotnet run --project $project I like carrots |
+        Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |
+        Assert-MatchTests &&
     Initialize-File("Triple.vb") && dotnet run --project $project |
         Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
         Assert-MatchTests &&
