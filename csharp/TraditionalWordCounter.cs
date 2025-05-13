@@ -10,7 +10,7 @@ namespace Examples
         {
             var counts = new SortedDictionary<string, int>();
             var wordRegex = new Regex(@"[\p{L}']+");
-            string line;
+            string? line;
             while ((line = Console.ReadLine()?.ToLower()) != null)
             {
                 foreach (Match match in wordRegex.Matches(line))
