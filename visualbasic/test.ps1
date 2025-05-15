@@ -26,6 +26,9 @@ $Error.clear()
     Initialize-File("Clockhands.vb") && dotnet run --project $project |
         Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
         Assert-MatchTests &&
+    Initialize-File("ClockhandsTime.vb") && dotnet run --project $project |
+        Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
+        Assert-MatchTests &&
     Initialize-File("Hello.vb") && dotnet run --project $project &&
     Initialize-File("Permutations.vb") && dotnet run --project $project I like carrots |
         Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |
