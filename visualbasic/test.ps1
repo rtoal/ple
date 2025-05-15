@@ -31,6 +31,9 @@ $Error.clear()
         Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |
         Assert-MatchTests &&
     Initialize-File("SumOfEvenSquares.vb") && dotnet run --project $project &&
+    Initialize-File("TopTenScorers.vb") && dotnet run --project $project (Get-Content "$PSScriptRoot\..\test\wnba_input") |
+        Compare-Object (Get-Content "$PSScriptRoot\..\test\wnba_expected") |
+        Assert-MatchTests &&
     Initialize-File("Triple.vb") && dotnet run --project $project |
         Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
         Assert-MatchTests &&
