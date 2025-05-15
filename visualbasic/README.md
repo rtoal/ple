@@ -11,11 +11,11 @@ cat Triple.vb > project/Program.vb && dotnet run --project project
 ```
 
 ```
-cat Triple.vb > project/Program.vb && dotnet run --project project I like carrots
+cat Permutations.vb > project/Program.vb && dotnet run --project project I like carrots
 ```
 
 ```
-cat Triple.vb > project/Program.vb && dotnet run --project project < ../test/wnba_input
+cat TopTenScorers.vb > project/Program.vb && dotnet run --project project < ../test/wnba_input
 ```
 
 To run the tests on a Unix-like shell:
