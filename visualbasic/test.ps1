@@ -37,6 +37,9 @@ $Error.clear()
     Initialize-File("Triple.vb") && dotnet run --project $project |
         Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
         Assert-MatchTests &&
+    Initialize-File("Wordcount.vb") && dotnet run --project $project (Get-Content "$PSScriptRoot\..\test\wordcount_ascii_input") |
+        Compare-Object (Get-Content "$PSScriptRoot\..\test\wordcount_ascii_expected") |
+        Assert-MatchTests &&
 ForEach-Object 'foo'
 
 if ($Error -or !$?) {
