@@ -2,28 +2,27 @@
 
 # Vyxal Explorations
 
-To run Vyxal programs on your local machine, download and install the most recent language version from the [Vyxal GitHub releases page](https://github.com/Vyxal/Vyxal/releases) or use your favorite package manager.
+To run Vyxal programs on your local machine, download and install the most recent language version from the [Vyxal GitHub releases page](https://github.com/Vyxal/Vyxal/releases) or use your favorite package manager. Add the 
 
-TODO 
-<!-- Programs in this folder have been tested using Python 3.13.2 and can be run from the command line like so:
+In addition, you will need to download the latest version of Java, so if you have not installed Java, visit to the [PLE's Java README page](https://github.com/rtoal/ple/tree/main/java).
 
-```
-python3 triple.py
-```
+Programs in this folder have been tested using Vyxal 3.7.0 and can be run from the command line like so:
 
 ```
-python3 permutations.py I like carrots
+java -jar vyxal.jar --file triple.vy
 ```
 
 ```
-python3 top_ten_scorers.py < ../test/wnba_input
+java -jar vyxal.jar --file permutations.vy I like carrots
 ```
 
-Running the command `python3` with no arguments gives you a repl.
+```
+java -jar vyxal.jar --file top_ten_scorers.vy < ../test/wnba_input
+```
 
-If you, as you may have already, are using virtual environments or have aliased `python3` to `python`, you may replace `python3` with `python` in the above commands.
+Running the command `java -jar vyxal.jar` with no arguments gives you a repl.
 
-To run the tests, invoke `./test.sh` in a Unix-friendly shell or `test.ps1` in PowerShell. -->
+To run the tests, invoke `test.sh` in a Unix-friendly shell or `test.ps1` in PowerShell.
 
 ## About
 
