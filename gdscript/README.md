@@ -36,10 +36,12 @@ To run the tests on a Unix-like shell:
 
 Run `test.ps1` in PowerShell.
 
-If you are unable to install Godot on your computer, then you can write on the online third-party
-[GDScript Playground](https://gd.tumeo.space/#).
+Alternatively, you can use the existing online interpreters:
 
-Note that the files are formatted differently from the online playgrounds. This is because in order for the files to properly run, each of the files must extend the `SceneTree` class and have the name of the main function be `_init`. Online interpretors, however, extend to `Node` and the main function is named `_ready`.
+[GDScript Playground](https://gd.tumeo.space/#)*  
+[GDScript Online](https://gdscript-online.github.io/)*  
+
+*Note that the example files are formatted differently from these online playgrounds. This is because in order for the files to properly run, each of the files must extend the `SceneTree` class and have the name of the main function be `_init`. Online interpreters, however, extend to `Node` and the main function is named `_ready`.
 
 ## About GDScript:
 
