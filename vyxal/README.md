@@ -22,11 +22,16 @@ java -jar vyxal.jar --file top_ten_scorers.vy < ../test/wnba_input
 
 Running the command `java -jar vyxal.jar` with no arguments gives you a repl.
 
-To run the tests, invoke `test.sh` in a Unix-friendly shell or `test.ps1` in PowerShell.
+To run the tests, invoke `.\test.sh` in a Unix-friendly shell or `test.ps1` in PowerShell.
+
+Alternatively, you can use the existing online interpreters:
+
+[Official Online Interpreter](https://vyxal.github.io/latest.html)  
+[Attempt This Online](https://ato.pxeger.com/run?1=m720rLIiMWfBgqWlJWm6FguWFCclF8M4UBoA) (Not Recommended)  
 
 ## About
 
-Vyxal is a golf programming language that (TODO)
+Vyxal (pronounced Vike-sal) is a stack-based golf language developed by Lyxal in 2020 that is aimed to be terse, readable, convenient, and elegant. Each character has one or multiple commands based on their input types, which include Numbers, Strings, Lists, and Generators, or a command that affects the stack. The language also supports lambda functions that can be ran immediately or stored in a variable. 
 
 ## Resources
 
