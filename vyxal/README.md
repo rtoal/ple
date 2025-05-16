@@ -2,7 +2,7 @@
 
 # Vyxal Explorations
 
-To run Vyxal programs on your local machine, download and install the most recent language version from the [Vyxal GitHub releases page](https://github.com/Vyxal/Vyxal/releases) or use your favorite package manager. Add the 
+To run Vyxal programs on your local machine, download and install the most recent language version from the [Vyxal GitHub releases page](https://github.com/Vyxal/Vyxal/releases) or use your favorite package manager. Add the .jar file into this Vyxal folder.
 
 In addition, you will need to download the latest version of Java, so if you have not installed Java, visit to the [PLE's Java README page](https://github.com/rtoal/ple/tree/main/java).
 
