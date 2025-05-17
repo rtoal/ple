@@ -34,6 +34,9 @@ java -jar $cjam "$PSScriptRoot\triangle.cjam" &&
 java -jar $cjam "$PSScriptRoot\triple.cjam" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
     Assert-MatchTests &&
+Get-Content "$PSScriptRoot\..\test\wordcount_ascii_input" | java -jar $cjam "$PSScriptRoot\wordcount.cjam" |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\wordcount_ascii_expected") |
+    Assert-MatchTests &&
 ForEach-Object 'foo';
 
 if ($Error -or !$?) { 
