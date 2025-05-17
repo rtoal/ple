@@ -15,6 +15,7 @@ $Error.clear()
 java -jar $cjam "$PSScriptRoot\clockhands.cjam" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
+java -jar $cjam "$PSScriptRoot\debug.cjam" &&
 java -jar $cjam "$PSScriptRoot\first_twelve_fibs.cjam" &&
 java -jar $cjam "$PSScriptRoot\five_hellos.cjam" &&
 java -jar $cjam "$PSScriptRoot\hello.cjam" &&
