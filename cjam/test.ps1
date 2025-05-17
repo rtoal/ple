@@ -12,6 +12,9 @@ function Assert-MatchTests {
 $cjam = "$PSScriptRoot\cjam-0.6.5.jar"
 
 $Error.clear()
+"rats" | java -jar $cjam "$PSScriptRoot\anagrams.cjam" |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\rats_heap_expected") |
+    Assert-MatchTests &&
 java -jar $cjam "$PSScriptRoot\clockhands.cjam" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
@@ -20,7 +23,13 @@ java -jar $cjam "$PSScriptRoot\first_twelve_fibs.cjam" &&
 java -jar $cjam "$PSScriptRoot\five_hellos.cjam" &&
 java -jar $cjam "$PSScriptRoot\hello.cjam" &&
 "3 4" | java -jar $cjam "$PSScriptRoot\hypot.cjam" &&
+"I like carrots" | java -jar $cjam "$PSScriptRoot\permutations.cjam" |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |
+    Assert-MatchTests &&
 java -jar $cjam "$PSScriptRoot\triangle.cjam" &&
+java -jar $cjam "$PSScriptRoot\triple.cjam" |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
+    Assert-MatchTests &&
 ForEach-Object 'foo';
 
 if ($Error -or !$?) { 
