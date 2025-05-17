@@ -18,7 +18,7 @@ java -jar $cjam "$PSScriptRoot\clockhands.cjam" |
 java -jar $cjam "$PSScriptRoot\first_twelve_fibs.cjam" &&
 java -jar $cjam "$PSScriptRoot\five_hellos.cjam" &&
 java -jar $cjam "$PSScriptRoot\hello.cjam" &&
-java -jar $cjam "$PSScriptRoot\hypot.cjam" 3 4 &&
+"3 4" | java -jar $cjam "$PSScriptRoot\hypot.cjam" &&
 java -jar $cjam "$PSScriptRoot\triangle.cjam" &&
 ForEach-Object 'foo';
 

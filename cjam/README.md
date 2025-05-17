@@ -18,6 +18,8 @@ java -jar cjam-0.6.5.jar permutations.cjam I like carrots
 java -jar cjam-0.6.5.jar top_ten_scorers.cjam < ../test/wnba_input
 ```
 
+Running the command `java -cp cjam-0.6.5.jar net/aditsu.cjam.Shell` with no arguments gives you a repl.
+
 To run the tests, invoke `.\test.sh` in a Unix-friendly shell or `test.ps1` in PowerShell.
 
 Alternatively, you can use the existing online interpreters:
