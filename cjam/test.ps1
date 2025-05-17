@@ -27,6 +27,9 @@ java -jar $cjam "$PSScriptRoot\hello.cjam" &&
     Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |
     Assert-MatchTests &&
 "1 2 3 4 5 6 7 8 9 10" | java -jar $cjam "$PSScriptRoot\sum_of_even_squares.cjam" &&
+Get-Content "$PSScriptRoot\..\test\wnba_input" | java -jar $cjam "$PSScriptRoot\top_ten_scorers.cjam" |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\wnba_expected") |
+    Assert-MatchTests &&
 java -jar $cjam "$PSScriptRoot\triangle.cjam" &&
 java -jar $cjam "$PSScriptRoot\triple.cjam" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
