@@ -40,6 +40,7 @@ Continue your study of CJam via:
 - [CJam Wiki Home](https://sourceforge.net/p/cjam/wiki/Home/)
 - [CJam Tutorial and Docs](https://cjam.readthedocs.io/en/latest/intro.html)
 - [CJam Cheat Sheet](http://foldr.moe/cjam.pdf)
+- [CJam Operator List](https://sourceforge.net/p/cjam/wiki/Operators/)
 - [CJam Interpreter](https://tio.run/#cjam)
 - [CJam Code](https://sourceforge.net/p/cjam/code/ci/default/tree/src/net/aditsu/cjam/)
 
