@@ -1,14 +1,31 @@
 # CJam Explorations
 
-The easiest way to program with CJam would be to use this [online CJam interpreter](https://tio.run/#cjam).
+To run CJam programs on your local machine, download and install the most recent language version from the [CJam download page](https://sourceforge.net/p/cjam/wiki/Home/) or use your favorite package manager. Add the 
 
-If you want to download the language, make sure Java is installed, and click the download button at the bottom of the [home wiki](https://sourceforge.net/p/cjam/wiki/Home/) page.
+In addition, you will need to download the latest version of Java, so if you have not installed Java, visit to the [PLE's Java README page](https://github.com/rtoal/ple/tree/main/java).
 
-Once installed, run this command (where cjam-0.6.5.jar is the latest jar file):
+Programs in this folder have been tested using CJam 0.6.5 and can be run from the command line like so:
 
 ```
-java -jar cjam-0.6.5.jar file.cjam
+java -jar cjam-0.6.5.jar triple.cjam
 ```
+
+```
+java -jar cjam-0.6.5.jar permutations.cjam I like carrots
+```
+
+```
+java -jar cjam-0.6.5.jar top_ten_scorers.cjam < ../test/wnba_input
+```
+
+Running the command `java -cp cjam-0.6.5.jar net/aditsu.cjam.Shell` with no arguments gives you a repl.
+
+To run the tests, invoke `.\test.sh` in a Unix-friendly shell or `test.ps1` in PowerShell.
+
+Alternatively, you can use the existing online interpreters:
+
+[Official Online Interpreter by Aditsu](https://cjam.aditsu.net/)  
+[Try It Online](https://tio.run/#cjam)
 
 ## About CJam
 
@@ -23,6 +40,7 @@ Continue your study of CJam via:
 - [CJam Wiki Home](https://sourceforge.net/p/cjam/wiki/Home/)
 - [CJam Tutorial and Docs](https://cjam.readthedocs.io/en/latest/intro.html)
 - [CJam Cheat Sheet](http://foldr.moe/cjam.pdf)
+- [CJam Operator List](https://sourceforge.net/p/cjam/wiki/Operators/)
 - [CJam Interpreter](https://tio.run/#cjam)
 - [CJam Code](https://sourceforge.net/p/cjam/code/ci/default/tree/src/net/aditsu/cjam/)
 

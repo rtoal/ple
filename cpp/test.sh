@@ -2,6 +2,7 @@
 g++ -std=c++20 anagrams.cpp && ./a.out rats | diff ../test/rats_heap_expected - && \
 g++ -std=c++20 animals.cpp && ./a.out && \
 g++ -std=c++20 basic_types.cpp && ./a.out && \
+g++ -std=c++20 clockhands.cpp && ./a.out | diff ../test/clockhands_expected - && \
 g++ -std=c++20 if_then_else.cpp && ./a.out && \
 g++ -std=c++20 maps.cpp && ./a.out && \
 g++ -std=c++20 permutations.cpp && ./a.out I like carrots | diff ../test/carrots_expected - && \
