@@ -3,7 +3,7 @@ with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 
 procedure Antiparallel_Clock_Hands is
    T, H, M, S : Integer;
-   
+
    procedure Show(N: Integer) is
    begin
        if n < 10 then
