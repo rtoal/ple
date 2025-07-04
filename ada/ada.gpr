@@ -6,10 +6,10 @@ project Ada is
    for Create_Missing_Dirs use "True";
    for Exec_Dir use "bin";
    for Main use (
+      "antiparallel_clock_hands.adb",
       "min.adb",
+      "parallel_summer.adb",
       "sieve.adb",
-      "sum_demo.adb",
-      "summer.adb",
       "task_demo.adb",
       "trinary.adb",
       "triple.adb"
