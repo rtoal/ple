@@ -37,10 +37,7 @@ procedure Sieve is
    --  "new Filter" but there is a rule about the task type name in the
    --  task body referring to the currently executing task object of that
    --  type (so, like, it could abort itself if it had to.)
-   function New_Filter (D : Natural) return Filter_Link is
-   begin
-      return new Filter (D);
-   end New_Filter;
+   function New_Filter (D : Natural) return Filter_Link is (new Filter (D));
 
    task body Filter is
       Test : Natural;                             -- value being tested

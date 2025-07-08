@@ -7,3 +7,6 @@ maintainers = ["rtoal <rtoal@lmu.edu>"]
 maintainers-logins = ["rtoal"]
 licenses = "MIT"
 website = "https://github.com/rtoal/ple"
+
+[build-switches]
+"*".ada_version = ["-gnat2022"]

@@ -11,13 +11,7 @@ procedure Min is
    function Minimum (X : T; Y : T) return T;
 
    function Minimum (X : T; Y : T) return T is
-   begin
-      if X < Y then
-         return X;
-      else
-         return Y;
-      end if;
-   end Minimum;
+      (if X < Y then X else Y);
 
    --  Make a user defined type called A, with "<" and Put operations.
    type A is record

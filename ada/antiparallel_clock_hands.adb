@@ -18,9 +18,7 @@ begin
       H := T / 3600;
       M := (T / 60) mod 60;
       S := T mod 60;
-      if H = 0 then
-         H := 12;
-      end if;
+      H := (if H = 0 then 12 else H);
       Show (H); Put (":"); Show (M); Put (":"); Show (S);
       New_Line;
    end loop;
