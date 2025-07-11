@@ -1,22 +1,21 @@
 ! An illustration of simple Fortran functions
 
 program main
-
     implicit none
-    write (*,*) collatz(9)
-    write (*,*) collatz(10)
+    print *, f(5)
+    print *, f(0)
+    print *, f(11)
+    print *, f(100)
 
 contains
 
-    integer function collatz (n)
-        implicit none
+    integer function f (n)
         integer, intent(in) :: n
         if (mod(n, 2) == 0) then
-            collatz = 3 * n + 1
+            f = 3 * n + 1
         else
-            collatz = 4 * n - 3
+            f = 4 * n - 3
         end if
-    end function collatz
+    end function f
 
 end program main
-
