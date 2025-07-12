@@ -69,14 +69,21 @@ nav > div:hover {
 }
 
 #logo {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   vertical-align: middle;
   background-repeat: no-repeat;
+  padding-bottom: 30px;
+}
+
+#card {
+  padding: 2em 1em 1em 1em;
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 4rem;
   font-family: sans-serif;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .tag {

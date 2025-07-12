@@ -17,11 +17,11 @@ function iconFor(iconName, uri) {
 
 function showIndex() {
   document.querySelector("#index").style.display = "block";
-  document.querySelector("#single").style.display = "none";
+  document.querySelector("article").style.display = "none";
 }
 
 function show(language) {
-  document.querySelector("#single").style.display = "block";
+  document.querySelector("article").style.display = "block";
   document.querySelector("#index").style.display = "none";
   if (language.noLogo) {
     imageElement.style.display = "none";
