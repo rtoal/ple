@@ -162,6 +162,12 @@ var langs = [
     t: ["Imperative", "Low-level", "System", "Non-managed"],
   },
   {
+    i: "c3",
+    n: "C3",
+    h: "https://c3-lang.org/",
+    d: "Description coming soon",
+  },
+  {
     i: "carbon",
     n: "Carbon",
     d: "Description coming soon",
@@ -632,6 +638,12 @@ var langs = [
     t: ["Pure", "Functional"],
   },
   {
+    i: "inko",
+    n: "Inko",
+    h: "https://inko-lang.org/",
+    d: "Description coming soon",
+  },
+  {
     i: "io",
     n: "Io",
     h: "http://iolanguage.org/",
@@ -892,6 +904,12 @@ var langs = [
     t: ["Static", "Fast"],
   },
   {
+    i: "moonbit",
+    n: "MoonBit",
+    h: "https://www.moonbitlang.com/",
+    d: "Description coming soon",
+  },
+  {
     i: "nasm",
     n: "NASM",
     h: "http://www.nasm.us/",
@@ -1079,6 +1097,13 @@ var langs = [
     n: "PL/I",
     d: "Description coming soon",
     noLogo: true,
+  },
+  {
+    i: "pony",
+    n: "Pony",
+    h: "https://www.ponylang.io/",
+    w: "Pony_(programming_language)",
+    d: "Description coming soon",
   },
   {
     i: "powershell",

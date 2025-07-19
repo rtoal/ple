@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-gfortran collatz.f95 && ./a.out
+gfortran functions.f90 && ./a.out && \
+gfortran ses.f90 && ./a.out && \
+gfortran triple.f90 && ./a.out | diff ../test/triple_expected - && \
 
 if [ $? -ne 0 ]; then
     echo

@@ -1,0 +1,12 @@
+name = "ada"
+description = "Ada Explorations"
+version = "0.1.0"
+
+authors = ["rtoal"]
+maintainers = ["rtoal <rtoal@lmu.edu>"]
+maintainers-logins = ["rtoal"]
+licenses = "MIT"
+website = "https://github.com/rtoal/ple"
+
+[build-switches]
+"*".ada_version = ["-gnat2022"]
