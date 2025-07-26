@@ -11,8 +11,5 @@ actor Main
       var h = t / 3600
       var m = (t / 60) % 60
       var s = t % 60
-      if h == 0 then
-        h = 12
-      end
-      env.out.print(pad(h) + ":" + pad(m) + ":" + pad(s))
+      env.out.print(pad(if h == 0 then 12 else h end) + ":" + pad(m) + ":" + pad(s))
     end
