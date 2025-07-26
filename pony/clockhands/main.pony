@@ -3,7 +3,7 @@ use "format"
 
 actor Main
   fun pad(n: USize): String =>
-    Format.int[USize](n where width = 2, align = AlignRight, fill = 48)
+    Format.int[USize](n where width = 2, align = AlignRight, fill = '0')
 
   new create(env: Env) =>
     for i in Range(0, 11) do
