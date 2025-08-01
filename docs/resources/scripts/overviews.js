@@ -24,9 +24,13 @@ function show(language) {
   document.querySelector("article").style.display = "block";
   document.querySelector("#index").style.display = "none";
   if (language.noLogo) {
-    imageElement.style.display = "none";
+    imageElement.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect width='300' height='300' fill='%23EEEEEE'/%3E%3C/svg%3E";
+
   } else {
     imageElement.style.display = "block";
+    imageElement.style.removeProperty("width");
+    imageElement.style.removeProperty("height");
+    imageElement.style.backgroundColor = "transparent";
     imageElement.src = "resources/" + language.i + "-logo-240.png";
     imageElement.alt = `Logo for ${language.n}`;
   }

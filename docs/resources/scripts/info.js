@@ -34,7 +34,6 @@ var langs = [
     d: "Algol 68 is a language that was designed to be a successor to Algol 60, with significantly more capabilities and a more rigorously defined syntax and semantics.",
     h: "https://www.algol68.org/",
     w: "ALGOL_68",
-    noLogo: true,
   },
   {
     i: "apl",
@@ -208,6 +207,12 @@ var langs = [
     i: "citrine",
     n: "Citrine",
     d: "Description coming soon",
+  },
+  {
+    i: "clean",
+    n: "Clean",
+    d: "Description coming soon",
+    h: "https://clean-lang.org/"
   },
   {
     i: "clojure",
@@ -668,6 +673,11 @@ var langs = [
     d: "Description coming soon",
   },
   {
+    i: "janet",
+    n: "Janet",
+    d: "Description coming soon",
+  },
+  {
     i: "java",
     n: "Java",
     h: "https://www.oracle.com/java/",
@@ -763,7 +773,7 @@ var langs = [
   },
   {
     i: "lean",
-    n: "LEAN",
+    n: "Lean",
     d: "Description coming soon",
   },
   {
@@ -965,6 +975,15 @@ var langs = [
       "Metaprogramming",
       "Systems programming",
     ],
+  },
+  {
+    i: "nix",
+    n: "Nix",
+    d: "Description coming soon",
+    h: "https://nix.dev/tutorials/nix-language",
+    w: "Nix_(package_manager)",
+    g: "nix",
+    rc: "Nix",
   },
   {
     i: "oberon",
@@ -1485,6 +1504,12 @@ var langs = [
     n: "Virgil",
     d: "Description coming soon",
     noLogo: true,
+  },
+  {
+    i: "vyper",
+    n: "Vyper",
+    d: "Description coming soon",
+    h: "https://vyperlang.org/",
   },
   {
     i: "vyxal",
