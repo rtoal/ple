@@ -937,6 +937,12 @@ var langs = [
     d: "Description coming soon",
   },
   {
+    i: "nelua",
+    n: "Nelua",
+    d: "Description coming soon",
+    h: "https://nelua.io/",
+  },
+  {
     i: "nemerle",
     n: "Nemerle",
     h: "http://www.nemerle.org/",
@@ -1441,6 +1447,12 @@ var langs = [
     ],
   },
   {
+    i: "triton",
+    n: "Triton",
+    d: "Description coming soon",
+    h: "https://triton-lang.org/",
+  },
+  {
     i: "typescript",
     n: "TypeScript",
     h: "https://www.typescriptlang.org/",
@@ -1540,6 +1552,13 @@ var langs = [
     n: "Whitespace",
     d: "Description coming soon",
     noLogo: true,
+  },
+  {
+    i: "wolfram",
+    n: "Wolfram Language",
+    d: "Description coming soon",
+    h: "https://wolfram.com/language/",
+    w: "Wolfram_Language",
   },
   {
     i: "zig",
