@@ -1,5 +1,4 @@
 // 12 hour Antiparallel clockhands in ARM64
-//
 // clang -arch arm64 clockhands.s && ./a.out
 
 .section __TEXT,__text,regular,pure_instructions
@@ -13,8 +12,8 @@ _main:
     mov x4, #0                      // i = 0
 
 .top:
-    cmp x4, #11                     // Check if i < 11
-    b.ge .bottom
+    cmp x4, #11                     // if i >= 11
+    b.ge .bottom                    // ...exit the loop
 
     // t = (43200 * i + 21600) / 11
     mov x5, #43200
@@ -38,12 +37,12 @@ _main:
     cmp x1, #0                      // Check if h >= 12
     csel x1, x5, x1, eq             // If h == 0, set h to 12
 
-    adrp x0, L_.fmt@PAGE
-    add  x0, x0, L_.fmt@PAGEOFF     // x0 = format string
-    stp x3, x4, [sp, #-16]!
+    adrp x0, hms_format@PAGE
+    add  x0, x0, hms_format@PAGEOFF // x0 = format string
+    stp x3, x4, [sp, #-16]!         // push printf args AND save x4
     stp x1, x2, [sp, #-16]!
     bl _printf
-    ldp x1, x2, [sp], #16
+    ldp x1, x2, [sp], #16           // restore x1...x4
     ldp x3, x4, [sp], #16
 
     add x4, x4, #1                  // i++
@@ -55,5 +54,5 @@ _main:
     ret
 
 .section __TEXT,__cstring,cstring_literals
-L_.fmt:
+hms_format:
     .asciz "%02d:%02d:%02d\n"
