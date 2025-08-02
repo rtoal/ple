@@ -30,10 +30,7 @@ procedure Parallel_Summer is
 
       begin
          if A'Length < 100 then
-            for I in A'Range loop
-               Total := Total + A (I);
-            end loop;
-            return Total;
+            return A'Reduce("+", 0);
          end if;
 
          for I in 1 .. NUM_TASKS loop
@@ -51,10 +48,7 @@ procedure Parallel_Summer is
       end;
 
       --  All tasks are guaranteed to finish before we get here.
-      for I in Results'Range loop
-         Total := Total + Results (I);
-      end loop;
-      return Total;
+      return Results'Reduce ("+", 0);
    end Sum;
 
 begin
