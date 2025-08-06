@@ -15,14 +15,6 @@ end
 
 report(p::Player) = @sprintf("%-22s%-4s%8.2f", p.name, p.team, p.ppg)
 
-players = Vector{Player}()
-for line in eachline(stdin)
-    player = Player(split(line, ","))
-    if player.games >= 15
-        push!(players, player)
-    end
-end
-sort!(players, by=player -> player.ppg, rev=true)
-for player in players[1:10]
-    println(report(player))
-end
+players = [Player(split(line, ",")) for line in eachline(stdin)]
+top_players = sort(filter(p -> p.games >= 15, players), by = p -> p.ppg, rev = true)[1:10]
+println.(report.(top_players))
