@@ -1386,15 +1386,6 @@ var langs = [
     t: ["Functional"],
   },
   {
-    i: "squirrel",
-    n: "Squirrel",
-    h: "http://www.squirrel-lang.org/",
-    w: "Squirrel_(programming_language)",
-    g: "squirrel",
-    d: "Squirrel is a high-level imperative, object-oriented programming language.",
-    f: 2003,
-  },
-  {
     i: "snap",
     n: "Snap!",
     h: "http://snap.berkeley.edu/",
@@ -1411,6 +1402,15 @@ var langs = [
       "Object-Oriented",
       "Prototype-oriented",
     ],
+  },
+  {
+    i: "squirrel",
+    n: "Squirrel",
+    h: "http://www.squirrel-lang.org/",
+    w: "Squirrel_(programming_language)",
+    g: "squirrel",
+    d: "Squirrel is a high-level imperative, object-oriented programming language.",
+    f: 2003,
   },
   {
     i: "swift",
