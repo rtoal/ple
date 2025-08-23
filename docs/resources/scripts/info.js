@@ -1404,6 +1404,15 @@ var langs = [
     ],
   },
   {
+    i: "solidity",
+    n: "Solidity",
+    h: "https://soliditylang.org/",
+    w: "Solidity_(programming_language)",
+    g: "solidity",
+    d: "Solidity is a high-level, contract-oriented programming language for implementing smart contracts.",
+    noLogo: true,
+  },
+  {
     i: "squirrel",
     n: "Squirrel",
     h: "http://www.squirrel-lang.org/",
@@ -1411,6 +1420,14 @@ var langs = [
     g: "squirrel",
     d: "Squirrel is a high-level imperative, object-oriented programming language.",
     f: 2003,
+  },
+  {
+    i: "sway",
+    n: "Sway",
+    h: "https://fuellabs.github.io/sway/",
+    g: "sway",
+    d: "Sway is a domain-specific programming language for implementing smart contracts on blockchain platforms, most notably for the Fuel Virtual Machine (Fuel VM). It aims to bring modern programming language features and tooling to smart contract development while retaining performance and making extensive use of static analysis to prevent common security issues.",
+    noLogo: true,
   },
   {
     i: "swift",
