@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://c38oi8gdgh1jo"]
+
+[ext_resource type="Script" uid="uid://kbxtmq2c1nb" path="res://ui.gd" id="1_b3bc3"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("1_b3bc3")
+
+[node name="HelloButton" type="Button" parent="CanvasLayer"]
+offset_left = 38.0
+offset_top = 32.0
+offset_right = 139.0
+offset_bottom = 131.0
+text = "Click Me!"
+
+[connection signal="button_down" from="CanvasLayer/HelloButton" to="CanvasLayer" method="_on_hello_button_button_down"]
+[connection signal="pressed" from="CanvasLayer/HelloButton" to="CanvasLayer" method="_on_hello_button_pressed"]
