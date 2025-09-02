@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://c38oi8gdgh1jo"]
 
-[ext_resource type="Script" uid="uid://kbxtmq2c1nb" path="res://ui.gd" id="1_b3bc3"]
+[ext_resource type="Script" uid="uid://kbxtmq2c1nb" path="res://Scripts/ui.gd" id="1_w371h"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -11,7 +11,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-script = ExtResource("1_b3bc3")
+script = ExtResource("1_w371h")
 
 [node name="HelloButton" type="Button" parent="CanvasLayer"]
 offset_left = 38.0
