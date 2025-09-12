@@ -6,7 +6,6 @@ var previous = 0.0
 
 func _process(delta: float) -> void:
 	if timer > 0.0:
-		print(timer)
 		timer -= Time.get_ticks_usec() - previous
 	elif timer <= 0.0:
 		set_frame(0)
