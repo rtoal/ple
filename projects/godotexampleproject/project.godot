@@ -13,4 +13,4 @@ config_version=5
 config/name="GodotExampleProject"
 run/main_scene="uid://c38oi8gdgh1jo"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://Sprites/icon.svg"

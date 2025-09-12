@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://c38oi8gdgh1jo"]
+[gd_scene load_steps=6 format=3 uid="uid://c38oi8gdgh1jo"]
 
 [ext_resource type="Script" uid="uid://kbxtmq2c1nb" path="res://Scripts/ui.gd" id="1_w371h"]
+[ext_resource type="Texture2D" uid="uid://bsrjoexquvt8m" path="res://Sprites/icon.svg" id="2_nxvpl"]
+[ext_resource type="Script" uid="uid://bv24umyufw8cj" path="res://Scripts/custom_signal.gd" id="3_dewlx"]
+[ext_resource type="Texture2D" uid="uid://hgtinef74cvv" path="res://Sprites/LightBulb.png" id="4_qwshj"]
+[ext_resource type="Script" uid="uid://bhe52qhp0pt3t" path="res://Scripts/custom_signal_listener.gd" id="6_48q88"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -20,5 +24,17 @@ offset_right = 139.0
 offset_bottom = 131.0
 text = "Click Me!"
 
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(630, 117)
+texture = ExtResource("2_nxvpl")
+script = ExtResource("3_dewlx")
+
+[node name="LightBulb" type="Sprite2D" parent="."]
+position = Vector2(918, 141)
+texture = ExtResource("4_qwshj")
+hframes = 2
+script = ExtResource("6_48q88")
+
 [connection signal="button_down" from="CanvasLayer/HelloButton" to="CanvasLayer" method="_on_hello_button_button_down"]
 [connection signal="pressed" from="CanvasLayer/HelloButton" to="CanvasLayer" method="_on_hello_button_pressed"]
+[connection signal="custom_signal" from="Icon" to="LightBulb" method="_on_icon_custom_signal"]
