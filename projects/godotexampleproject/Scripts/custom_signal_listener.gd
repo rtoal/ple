@@ -1,5 +1,7 @@
 extends Sprite2D
 
+# Feel free to readjust this variable on the editor UI! This below is the
+# default value.
 @export var TIMER_SET = 1000000.0
 var timer: float = 0.0
 var previous = 0.0
