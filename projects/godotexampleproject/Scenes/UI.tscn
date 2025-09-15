@@ -24,6 +24,20 @@ offset_right = 139.0
 offset_bottom = 131.0
 text = "Click Me!"
 
+[node name="ColorSlider" type="HSlider" parent="CanvasLayer"]
+modulate = Color(0, 0, 1, 1)
+offset_left = 209.0
+offset_top = 314.0
+offset_right = 645.0
+offset_bottom = 334.0
+
+[node name="RainbowSlider" type="HSlider" parent="CanvasLayer"]
+modulate = Color(1, 0, 0, 1)
+offset_left = 209.0
+offset_top = 362.0
+offset_right = 645.0
+offset_bottom = 382.0
+
 [node name="Icon" type="Sprite2D" parent="."]
 position = Vector2(630, 117)
 texture = ExtResource("2_nxvpl")
@@ -37,4 +51,6 @@ script = ExtResource("6_48q88")
 
 [connection signal="button_down" from="CanvasLayer/HelloButton" to="CanvasLayer" method="_on_hello_button_button_down"]
 [connection signal="pressed" from="CanvasLayer/HelloButton" to="CanvasLayer" method="_on_hello_button_pressed"]
+[connection signal="value_changed" from="CanvasLayer/ColorSlider" to="CanvasLayer" method="_on_color_slider_value_changed"]
+[connection signal="value_changed" from="CanvasLayer/RainbowSlider" to="CanvasLayer" method="_on_rainbow_slider_value_changed"]
 [connection signal="custom_signal" from="Icon" to="LightBulb" method="_on_icon_custom_signal"]
