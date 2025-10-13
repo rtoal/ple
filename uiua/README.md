@@ -11,11 +11,11 @@ uiua triple.ua
 ```
 
 ```
-uiua permutations.py I like carrots     # NOT TESTED
+uiua permutations.ua I like carrots     # NOT TESTED
 ```
 
 ```
-uiua top_ten_scorers.py < ../test/wnba_input       # NOT TESTED
+uiua top_ten_scorers.ua < ../test/wnba_input       # NOT TESTED
 ```
 
 Running the command `uiua repl` with no arguments gives you a repl.
