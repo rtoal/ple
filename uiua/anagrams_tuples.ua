@@ -1,0 +1,1 @@
+⨬(&ep"Exactly one argument is required")(≡&p⧅≠∞°□⊣)=2⧻.&args

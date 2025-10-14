@@ -10,6 +10,9 @@ function Assert-MatchTests {
 
 $Error.clear()
 
+uiua "$PSScriptRoot\anagrams_tuples.ua" rats |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\rats_recursive_expected") |
+    Assert-MatchTests &&
 uiua "$PSScriptRoot\clockhands.ua" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
