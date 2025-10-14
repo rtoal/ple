@@ -1482,6 +1482,11 @@ var langs = [
     t: ["Functional", "Imperative", "Object-Oriented"],
   },
   {
+    i: "uiua",
+    n: "Uiua",
+    d: "Description coming soon",
+  },
+  {
     i: "unison",
     n: "Unison",
     d: "Description coming soon",
