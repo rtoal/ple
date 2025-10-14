@@ -15,6 +15,9 @@ uiua "$PSScriptRoot\clockhands.ua" |
     Assert-MatchTests &&
 uiua "$PSScriptRoot\disambiguation.ua" &&
 uiua "$PSScriptRoot\glyph.ua" &&
+uiua "$PSScriptRoot\triple.ua" |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
+    Assert-MatchTests &&
 
 ForEach-Object 'foo'
 
