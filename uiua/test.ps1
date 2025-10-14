@@ -10,6 +10,9 @@ function Assert-MatchTests {
 
 $Error.clear()
 
+uiua "$PSScriptRoot\clockhands.ua" |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
+    Assert-MatchTests &&
 uiua "$PSScriptRoot\disambiguation.ua" &&
 uiua "$PSScriptRoot\glyph.ua" &&
 
