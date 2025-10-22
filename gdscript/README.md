@@ -45,6 +45,8 @@ Alternatively, you can use the existing online interpreters:
 
 *Note that the example files are formatted differently from these online playgrounds. This is because in order for the files to properly run, each of the files must extend the `SceneTree` class and have the name of the main function be `_init`. Online interpreters, however, extend to `Node` and the main function is named `_ready`.
 
+Because GDScript is a native programming langauge to the Godot Game Engine, certain files can only be ran inside a Godot project folder, which can be found in the PLE's [project folder](../projects/godotexampleproject)
+
 ## About GDScript:
 
 GDScript is a high-level, object-oriented, imperative, and gradually typed programming language for the Godot Game Engine that was aimed to replace Lua.The motivations on making a new custom programming language was that existing programming languages during that time was not ideal candidates for running Godot.
