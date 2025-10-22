@@ -12,6 +12,7 @@ $Error.clear()
 godot --display-driver headless --no-header -s "$PSScriptRoot\anagrams.gd" rats | 
     Compare-Object (Get-Content "$PSScriptRoot\..\test\rats_heap_expected") | 
     Assert-MatchTests &&
+godot --display-driver headless --no-header -s "$PSScriptRoot\animal.gd" &&
 godot --display-driver headless --no-header -s "$PSScriptRoot\clockhands.gd" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests && 
@@ -36,6 +37,7 @@ Get-Content "$PSScriptRoot\..\test\wnba_input" |
 godot --display-driver headless --no-header -s "$PSScriptRoot\triple.gd" | 
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") | 
     Assert-MatchTests &&
+godot --display-driver headless --no-header -s "$PSScriptRoot\variadic_functions.gd" &&
 godot --display-driver headless --no-header -s "$PSScriptRoot\vectors.gd" &&
 Get-Content "$PSScriptRoot\..\test\wordcount_ascii_input" | 
     godot --display-driver headless --no-header -s "$PSScriptRoot\word_count.gd" | 
