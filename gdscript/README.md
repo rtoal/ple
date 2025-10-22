@@ -4,7 +4,7 @@
 
 To build and run GDScript programs on your local machine, download and install the most recent game engine version from the [Godot Engine downloads page](https://godotengine.org/) or use your favorite package manager.
 
-Programs in this folder can be run from the command line like so:
+Programs in this folder have been tested using Godot Engine 4.5.1 and can be run from the command line like so:
 
 ```
 godot -s triple.gd
@@ -17,6 +17,8 @@ godot -s permutations.gd I like carrots
 ```
 godot -s top_ten_scorers.gd < ../test/wnba_input
 ```
+
+When you download the file from the downloads page, make sure to rename the file to `godot` or `godot.exe` to be able to run these exact commands shown above. Make sure, if needed, to add environmental variables to run the command.
 
 Running the command `godot` will always open the Godot game engine. To avoid this, add the flag `--display-driver headless`.
 
