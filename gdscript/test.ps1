@@ -20,6 +20,7 @@ godot --display-driver headless --no-header -s "$PSScriptRoot\clockhands_time.gd
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests && 
 godot --display-driver headless --no-header -s "$PSScriptRoot\code_regions.gd" &&
+godot --display-driver headless --no-header -s "$PSScriptRoot\documentation_comment.gd" &&
 godot --display-driver headless --no-header -s "$PSScriptRoot\fibonacci.gd" &&
 godot --display-driver headless --no-header -s "$PSScriptRoot\file_reader.gd" "$PSScriptRoot\..\test\carrots_expected" | 
     Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") | 
