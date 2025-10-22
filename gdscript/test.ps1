@@ -28,7 +28,7 @@ godot --display-driver headless --no-header -s "$PSScriptRoot\permutations.gd" I
     Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") | 
     Assert-MatchTests &&
 godot --display-driver headless --no-header -s "$PSScriptRoot\quaternions.gd" &&
-godot --display-driver headless --no-header -s "$PSScriptRoot\static_variables.gd" &&
+godot --display-driver headless --no-header -s "$PSScriptRoot\static_typing.gd" &&
 godot --display-driver headless --no-header -s "$PSScriptRoot\sum_of_even_squares.gd" &&
 Get-Content "$PSScriptRoot\..\test\wnba_input" | 
     godot --display-driver headless --no-header -s "$PSScriptRoot\top_ten_scorers.gd" | 
