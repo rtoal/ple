@@ -13,6 +13,9 @@ $Error.clear()
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
 . "$PSScriptRoot\hello.bat" &&
+. "$PSScriptRoot\triple.bat" |
+    Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
+    Assert-MatchTests &&
 ForEach-Object 'foo'
 
 if ($Error -or !$?) { 
