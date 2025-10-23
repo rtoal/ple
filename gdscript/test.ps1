@@ -21,6 +21,7 @@ godot --display-driver headless --no-header -s "$PSScriptRoot\clockhands_time.gd
     Assert-MatchTests && 
 godot --display-driver headless --no-header -s "$PSScriptRoot\code_regions.gd" &&
 godot --display-driver headless --no-header -s "$PSScriptRoot\documentation_comment.gd" &&
+godot --display-driver headless --no-header -s "$PSScriptRoot\enum.gd" && 
 godot --display-driver headless --no-header -s "$PSScriptRoot\fibonacci.gd" &&
 godot --display-driver headless --no-header -s "$PSScriptRoot\file_reader.gd" "$PSScriptRoot\..\test\carrots_expected" | 
     Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") | 
