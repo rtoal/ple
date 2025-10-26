@@ -2,7 +2,7 @@
 
 # Beluga Explorations
 
-To build and run Beluga programs on your local machine, download and install the most recent game engine version from the [Beluga installation page](https://complogic.cs.mcgill.ca/beluga/#installation) or use your favorite package manager.
+To build and run Beluga programs on your local machine, download and install the most recent version from the [Beluga installation page](https://complogic.cs.mcgill.ca/beluga/#installation) or use your favorite package manager.
 
 Programs in this folder have yet to be tested.
 <!-- and can be run from the command line like so: -->
