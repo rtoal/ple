@@ -13,11 +13,12 @@ php "$PSScriptRoot\clockhands.php" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
 php "$PSScriptRoot\hello_world.php" &&
-php "$PSScriptRoot\html_escaping" &&
+php "$PSScriptRoot\html_escaping.php" &&
 php "$PSScriptRoot\ternary_madness.php" &&
 php "$PSScriptRoot\triples.php" | 
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") | 
     Assert-MatchTests &&
+php "$PSScriptRoot\truthy.php"
 ForEach-Object 'foo'
 
 if ($Error -or !$?) {
