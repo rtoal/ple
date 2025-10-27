@@ -34,7 +34,7 @@ TODO
 
 ## PHP Resources
 
-Continue your study of R with:
+Continue your study of PHP with:
 
 - [PHP Home](https://www.php.net/)
 - [Official Documentation](https://www.php.net/docs.php)
