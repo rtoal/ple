@@ -1,13 +1,11 @@
 # Script illustrating a concurrent list summer.
 
-use strict;
-use warnings;
+use v5.40;
 use threads;
 
 # Returns the sum of the values in its first argument which
 # should be an array reference.
-sub sum {
-    my $array = shift;
+sub sum($array) {
     my $length = scalar @$array;
     my $mid = $length/2;
 
@@ -36,3 +34,4 @@ die unless (sum [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) == 55;
 die unless (sum [100, 200, 300, 400]) == 1000;
 die unless (sum []) == 0;
 die unless (sum [(7) x 20000]) == 140000;
+say "All tests passed";

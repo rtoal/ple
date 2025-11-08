@@ -1,9 +1,7 @@
 # An illustration of hashes and user input
 
-use strict;
-use warnings;
+use v5.40;
 use utf8;
-use open qw(:std :utf8);
 
 my %drinks_available = (
     "mocha" => 1,
@@ -18,18 +16,18 @@ my %syrups_available = (
     "vanilla" => 1
 );
 
-print("What drink would you like to order? We have mocha, matcha, and tea.\n");
+say "What drink would you like to order? We have mocha, matcha, and tea.";
 my $customer_drink = <STDIN>;
 chomp($customer_drink);
 $customer_drink = lc($customer_drink);
 
-print("Which syrup? We have raspberry, lavender, blueberry, and vanilla.\n");
+say "Which syrup? We have raspberry, lavender, blueberry, and vanilla.";
 my $customer_syrup = <STDIN>;
 chomp($customer_syrup);
-$customer_syrup = lc($customer_syrup); 
+$customer_syrup = lc($customer_syrup);
 
 if ($drinks_available{$customer_drink} and $syrups_available{$customer_syrup}) {
-    print("One order of $customer_drink with $customer_syrup!\n");
+    say "One order of $customer_drink with $customer_syrup!";
 } else {
-    print("Unfortunately, we do not have at least one of those items.\n");
+    say "Unfortunately, we do not have at least one of those items.";
 }
