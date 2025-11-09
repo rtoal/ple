@@ -13,7 +13,7 @@ procedure Task_Demo is
       loop
          select
             accept Square (X : Integer) do Y := X; end Square;
-            Put_Line (Integer'Image (Y) & "^2 = " & Integer'Image (Y * Y));
+            Put_Line (Y'Image & "^2 = " & Integer'Image (Y * Y));
          or
             accept Ping;
             Put ("....");
@@ -26,7 +26,7 @@ procedure Task_Demo is
    Workers : array (0 .. 6) of Worker;
 
 begin
-   for I in Integer range 1 .. 100 loop
+   for I in 1 .. 100 loop
       if I mod 2 = 0 then
          Workers (I rem 7).Square (I);
       else
