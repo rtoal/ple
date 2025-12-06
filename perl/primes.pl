@@ -2,15 +2,13 @@
 # command line argument. Each thread writes its value to STDOUT if it is
 # prime.
 
-use strict;
-use warnings;
+use v5.40;
 use threads;
 use threads::shared;
 
 my $output_lock: shared;
 
-sub print_primes {
-    my $n = shift;
+sub print_primes($n) {
     my @checkers;
     for my $i (2 .. $n) {
         $checkers[$i-2] = threads->new(

@@ -1,13 +1,8 @@
 # A hand coded binary search, to illustrate some Perl features
 
-use strict;
-use warnings;
-use utf8;
-use open qw(:std :utf8);
+use v5.40;
 
-sub binary_search {
-    # Arguments are passed as the list @_
-    my ($element_to_find, @ordered_array) = @_;
+sub binary_search($element_to_find, @ordered_array) {
 
     my $array_length = scalar @ordered_array;
     my $start_index = 0;
@@ -32,10 +27,11 @@ sub binary_search {
 
     # No booleans in Perl, 0 means false
     return 0;
-} 
+}
 
 die unless binary_search(3, (1, 3, 5, 7, 9)) == 1;
 die unless binary_search(5, (1, 3, 5, 7, 9)) == 1;
 die unless binary_search(8, (1, 3, 5, 7, 9)) == 0;
 die unless binary_search(5, ()) == 0;
 die unless binary_search(5, (5)) == 1;
+say "All tests passed";

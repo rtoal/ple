@@ -1,15 +1,13 @@
-use strict;
-use warnings;
+use v5.40;
 
 my $random_number = int(rand(9)) + 1;
 my $user_guess = 0;
 
-print("Welcome to the guessing game!\n");
-print("Type \'exit\' to leave the program\n");
+say "Welcome to the guessing game!";
+say "Type 'exit' to leave the program";
 
 while ($user_guess != $random_number and lc($user_guess) ne "exit") {
-    print("Please enter an integer between 1-10: \n");
-
+    say "Please enter an integer between 1-10:";
     $user_guess = <STDIN>;
     chomp($user_guess);
 
@@ -18,15 +16,15 @@ while ($user_guess != $random_number and lc($user_guess) ne "exit") {
     }
 
     if ($user_guess == $random_number) {
-        print("You guessed correctly!\n");
+        say "You guessed correctly!";
     }
     elsif ($user_guess < $random_number) {
-        print("Too low!\n");
+        say "Too low!";
     }
     elsif ($user_guess > $random_number) {
-        print("Too high!\n");
+        say "Too high!";
     }
     else {
-        print("There was an error\n");
+        say "There was an error";
     }
 }

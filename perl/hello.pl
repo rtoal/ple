@@ -1,4 +1,3 @@
-use strict;
-use warnings;
+use v5.40;
 
-print "Hello World!\n";
+say "Hello World!";

@@ -1,8 +1,6 @@
-use strict;
-use warnings;
+use v5.40;
 
-sub print_permutations {
-    my ($a, $n) = @_;
+sub print_permutations($a, $n) {
     if ($n <= 0) {
         print join("\t", @$a), "\n";
     } else {

@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 mlton clockhands.sml && ./clockhands | diff ../test/clockhands_expected - && \
 mlton hello.sml && ./hello && \
+mlton precedence_switch.sml && ./precedence_switch && \
 mlton quicksort.sml && ./quicksort && \
 mlton stack.sml && ./stack
 

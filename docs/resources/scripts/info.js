@@ -198,15 +198,20 @@ var langs = [
     t: ["Parallel", "Portable", "Scalable"],
   },
   {
-    i: "cjam",
-    n: "CJam",
+    i: "choral",
+    n: "Choral",
     d: "Description coming soon",
-    noLogo: true,
   },
   {
     i: "citrine",
     n: "Citrine",
     d: "Description coming soon",
+  },
+  {
+    i: "cjam",
+    n: "CJam",
+    d: "Description coming soon",
+    noLogo: true,
   },
   {
     i: "clean",

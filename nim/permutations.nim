@@ -15,5 +15,6 @@ proc printPermutations(a: var seq[string], n: int) =
 when isMainModule:
   var args = commandLineParams()
   if len(args) == 0:
-    raise newException(InputArgumentError, "ERROR: There must be at least 1 argument.")
+    raise newException(InputArgumentError,
+      "ERROR: At least one argument is required")
   printPermutations(args, len(args) - 1)

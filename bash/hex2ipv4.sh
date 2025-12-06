@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 function hex2dottedquad {
     counter=0
     while [ $counter -le 6 ]; do
