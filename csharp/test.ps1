@@ -10,6 +10,9 @@ function Assert-MatchTests {
 }
 
 $Error.clear()
+    dotnet run "$PSScriptRoot\Anagrams.cs" rats |
+        Compare-Object (Get-Content "$PSScriptRoot\..\test\rats_heap_expected") |
+        Assert-MatchTests &&
     dotnet run "$PSScriptRoot\Animal.cs" &&
     dotnet run "$PSScriptRoot\Clockhands.cs" |
         Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
