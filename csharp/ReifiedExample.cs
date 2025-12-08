@@ -1,11 +1,8 @@
 using System;
 
-class Box<T>
-{
-    T? Value { get; set; }
-}
+class Box<T> {}
 
-class ReifiedExample
+static class ReifiedExample
 {
     static void Main()
     {
