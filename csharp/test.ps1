@@ -18,6 +18,9 @@ $Error.clear()
         Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
         Assert-MatchTests &&
     dotnet run "$PSScriptRoot\Greeter.cs" &&
+    dotnet run "$PSScriptRoot\Permutations.cs" I like carrots |
+        Compare-Object (Get-Content "$PSScriptRoot\..\test\carrots_expected") |
+        Assert-MatchTests &&
     dotnet run "$PSScriptRoot\ReifiedExample.cs" &&
     Get-Content "$PSScriptRoot\..\test\wordcount_ascii_input" |  
         dotnet run "$PSScriptRoot\TraditionalWordCounter.cs" |
