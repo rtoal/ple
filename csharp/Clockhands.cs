@@ -1,7 +1,8 @@
 using System;
-public class AntiparallelClockHandsComputer
+
+class AntiparallelClockHandsComputer
 {
-    public static void Main()
+    static void Main()
     {
         for (var i = 0; i < 11; i++)
         {

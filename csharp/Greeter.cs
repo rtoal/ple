@@ -1,7 +1,9 @@
+using System;
+
 class Greeter
 {
-    static void Main ()
+    static void Main()
     {
-        System.Console.WriteLine ("Hello, world");
+        Console.WriteLine("Hello, world");
     }
 }

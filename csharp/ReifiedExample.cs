@@ -1,15 +1,17 @@
-public class Box<T>
+using System;
+
+class Box<T>
 {
-    public T? Value { get; set; }
+    T? Value { get; set; }
 }
 
-public class ReifiedExample
+class ReifiedExample
 {
-    public static void Main()
+    static void Main()
     {
         Box<int> intBox = new Box<int>();
         Box<string> stringBox = new Box<string>();
-        System.Console.WriteLine(intBox.GetType()); // Box`1[System.Int32]
-        System.Console.WriteLine(stringBox.GetType()); // Box`1[System.String]
+        Console.WriteLine(intBox.GetType()); // Box`1[System.Int32]
+        Console.WriteLine(stringBox.GetType()); // Box`1[System.String]
     }
 }
