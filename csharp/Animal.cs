@@ -1,34 +1,18 @@
 using System;
 using System.Diagnostics;
 
-abstract class Animal
+abstract class Animal(string name)
 {
-    public string Name { get; }
-
-    public Animal(string name) => Name = name;
+    public string Name { get; } = name;
 
     public virtual string Speak() => $"{Name} says {Sound()}";
     
     public abstract string Sound();
 }
 
-class Cow : Animal 
-{ 
-    public Cow(string name) : base(name) { }
-    public override string Sound() => "moooo";
-}
-
-class Horse : Animal 
-{
-    public Horse(string name) : base(name) { }
-    public override string Sound() => "neigh"; 
-}
-
-class Sheep : Animal 
-{
-    public Sheep(string name) : base(name) { }  
-    public override string Sound() => "baaaa"; 
-}
+class Cow(string name) : Animal(name) { public override string Sound() => "moooo"; }
+class Horse(string name) : Animal(name) { public override string Sound() => "neigh"; }
+class Sheep(string name) : Animal(name) { public override string Sound() => "baaaa"; }
 
 static class AnimalPlay
 {
