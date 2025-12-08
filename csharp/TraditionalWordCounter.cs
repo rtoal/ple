@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 
 static class TraditionalWordCounter
 {
-    static void Main(string[] args)
+    static void Main()
     {
         var counts = new SortedDictionary<string, int>();
         var wordRegex = new Regex(@"[\p{L}']+");
