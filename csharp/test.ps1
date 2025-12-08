@@ -20,6 +20,7 @@ $Error.clear()
         dotnet run "$PSScriptRoot\TraditionalWordCounter.cs" |
         Compare-Object (Get-Content "$PSScriptRoot\..\test\wordcount_ascii_expected") |
         Assert-MatchTests &&
+    dotnet run "$PSScriptRoot\SumOfEvenSquares.cs"
     dotnet run "$PSScriptRoot\Tripler.cs" |
         Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
         Assert-MatchTests &&
