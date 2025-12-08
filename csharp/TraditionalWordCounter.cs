@@ -13,8 +13,7 @@ static class TraditionalWordCounter
         {
             foreach (Match match in wordRegex.Matches(line))
             {
-                int count;
-                counts.TryGetValue(match.Value, out count);
+                counts.TryGetValue(match.Value, out int count);
                 counts[match.Value] = count + 1;
             }
         }
