@@ -34,6 +34,7 @@ $Error.clear()
     dotnet run "$PSScriptRoot\Tripler.cs" |
         Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
         Assert-MatchTests &&
+    dotnet run "$PSScriptRoot\VerbatimIdentifier.cs" &&
     Get-Content "$PSScriptRoot\..\test\wordcount_ascii_input" |  
         dotnet run "$PSScriptRoot\WordCounter.cs" |
         Compare-Object (Get-Content "$PSScriptRoot\..\test\wordcount_ascii_expected") |
