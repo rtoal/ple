@@ -1,6 +1,6 @@
 using System;
 
-class Greeter
+static class Greeter
 {
     static void Main()
     {
