@@ -1,6 +1,6 @@
 using System;
 
-class AntiparallelClockHandsComputer
+static class AntiparallelClockHandsComputer
 {
     static void Main()
     {

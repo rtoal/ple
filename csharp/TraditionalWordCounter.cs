@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-class TraditionalWordCounter
+static class TraditionalWordCounter
 {
     static void Main(string[] args)
     {
