@@ -14,7 +14,7 @@ func generate_permutations(a, n):
 
 func _init():
 	var args = Array(OS.get_cmdline_args())
-	if len(args) < 3:
+	if len(args) != 3:
 		print("ERROR: There must be exactly 1 argument.")
 		quit()
 		return
