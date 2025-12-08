@@ -6,6 +6,15 @@ using System.Linq;
 
 static class WordCounter
 {
+    static IEnumerable<string> StandardInputLines()
+    {
+        string? line;
+        while ((line = Console.ReadLine()) != null)
+        {
+            yield return line;
+        }
+    }
+
     static void Main()
     {
         Regex wordRegex = new Regex(@"[\p{L}']+");
@@ -16,14 +25,5 @@ static class WordCounter
         .OrderBy(x => x.Key)
         .ToList()
         .ForEach(p => Console.WriteLine("{0} {1}", p.Key, p.Count()));
-    }
-
-    static IEnumerable<string> StandardInputLines()
-    {
-        string? line;
-        while ((line = Console.ReadLine()) != null)
-        {
-            yield return line;
-        }
     }
 }
