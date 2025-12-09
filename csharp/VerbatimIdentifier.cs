@@ -13,6 +13,5 @@ static class VerbatimIdentifier
         string @class = "Dr. Toal - Programming Languages and Explorations I";
         string @interface = "Windows 11";
         Console.Write($"{@event}\n{@class}\n{@interface}");
-        
     }
 }
