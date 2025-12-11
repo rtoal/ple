@@ -1,8 +1,7 @@
 <?php
-    function voidReturn(): void
-    {
 
-    }
-    
-    echo gettype(voidReturn());
+function voidReturn(): void {}
+
+echo gettype(voidReturn());
+
 ?>
