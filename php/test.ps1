@@ -9,11 +9,12 @@ function Assert-MatchTests {
 }
 
 $Error.clear()
+php "$PSScriptRoot\animal.php" &&
 php "$PSScriptRoot\clockhands.php" | 
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
 php "$PSScriptRoot\float_cast_error.php" &&
-php "$PSScriptRoot\hello_world.php" &&
+php "$PSScriptRoot\hello.php" &&
 php "$PSScriptRoot\html_escaping.php" &&
 php "$PSScriptRoot\integer_overflow.php" &&
 php "$PSScriptRoot\never_function.php" &&
