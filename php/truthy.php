@@ -1,24 +1,24 @@
 <?php
 
 // Falsy for different types
-var_dump(boolval(NULL));
-var_dump(boolval(FALSE));
-var_dump(boolval(0));
-var_dump(boolval(-0));
-var_dump(boolval(0.0));
-var_dump(boolval(-0.0));
-var_dump(boolval(""));
-var_dump(boolval("0"));
-var_dump(boolval([]));
+assert(!boolval(NULL));
+assert(!boolval(FALSE));
+assert(!boolval(0));
+assert(!boolval(-0));
+assert(!boolval(0.0));
+assert(!boolval(-0.0));
+assert(!boolval(""));
+assert(!boolval("0"));
+assert(!boolval([]));
 
 // Truthy for different types
-var_dump(boolval(TRUE));
-var_dump(boolval(1));
-var_dump(boolval(-1));
-var_dump(boolval(NAN));
-var_dump(boolval(INF));
-var_dump(boolval(-INF));
-var_dump(boolval("FALSE"));
-var_dump(boolval([0]));
+assert(boolval(TRUE));
+assert(boolval(1));
+assert(boolval(-1));
+assert(boolval(NAN));
+assert(boolval(INF));
+assert(boolval(-INF));
+assert(boolval("FALSE"));
+assert(boolval([0]));
 
 ?>
