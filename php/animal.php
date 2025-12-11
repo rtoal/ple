@@ -30,9 +30,9 @@ class Sheep extends Animal {
 }
 
 $h = new Horse('CJ');
-assert($h->speak() == 'CJ says neigh');
+assert($h->speak() === 'CJ says neigh');
 $c = new Cow('Bessie');
-assert($c->speak() == 'Bessie says moooo');
-assert(new Sheep('Little Lamb')->speak() == 'Little Lamb says baaaa');
+assert($c->speak() === 'Bessie says moooo');
+assert(new Sheep('Little Lamb')->speak() === 'Little Lamb says baaaa');
 
 ?>
