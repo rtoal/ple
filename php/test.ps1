@@ -18,6 +18,7 @@ php "$PSScriptRoot\hello.php" &&
 php "$PSScriptRoot\html_escaping.php" &&
 php "$PSScriptRoot\integer_overflow.php" &&
 php "$PSScriptRoot\never_function.php" &&
+php "$PSScriptRoot\sum_of_even_squares.php" &&
 php "$PSScriptRoot\ternary_madness.php" &&
 php "$PSScriptRoot\triples.php" | 
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") | 
