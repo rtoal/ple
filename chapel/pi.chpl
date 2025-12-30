@@ -9,12 +9,13 @@ proc approximatePi(): real {
   var hits: int = 0;
 
   forall i in 1..trials with (
-    + reduce hits, var randStream = new randomStream(real)) {
-      const x = randStream.next();
-      const y = randStream.next();
-      if x*x + y*y < 1.0 then
-        hits += 1;
-    }
+      + reduce hits,
+      var randStream = new randomStream(real)) {
+    const x = randStream.next();
+    const y = randStream.next();
+    if x*x + y*y < 1.0 then
+      hits += 1;
+  }
 
   return 4.0 * hits / trials;
 }
