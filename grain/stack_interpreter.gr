@@ -6,13 +6,13 @@ from "array" include Array
 from "list" include List
 from "wasi/process" include Process
 
-enum Instr { Push(Number), Add, Sub, Mul, Div, Neg, Print }
+enum Instruction { Push(Number), Add, Sub, Mul, Div, Neg, Print }
 
 exception ParseError(String)
 exception RuntimeError(String)
 
-let parseToken = (tok) =>
-  match (tok) {
+let parseToken = (token) =>
+  match (token) {
     "+" => Add,
     "-" => Sub,
     "*" => Mul,
@@ -20,9 +20,9 @@ let parseToken = (tok) =>
     "N" => Neg,
     "P" => Print,
     _ =>
-      match (Number.parseInt(tok, 10)) {
+      match (Number.parseInt(token, 10)) {
         Ok(n) => Push(n),
-        _ => throw ParseError("Illegal instruction: " ++ tok)
+        _ => throw ParseError("Illegal instruction: " ++ token)
       }
   }
 
@@ -45,7 +45,6 @@ let step = (stack, instr) =>
   match (instr) {
     Push(n) =>
       [n, ...stack],
-
     Add => {
       let (a, b, s) = pop2(stack)
       [a + b, ...s]
@@ -67,7 +66,6 @@ let step = (stack, instr) =>
       let (a, s) = pop1(stack)
       [0-a, ...s]
     },
-
     Print => {
       let (a, s) = pop1(stack)
       print(a)
