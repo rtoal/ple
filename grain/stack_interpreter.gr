@@ -43,45 +43,21 @@ let pop1 = (stack) =>
 
 let step = (stack, instr) =>
   match (instr) {
-    Push(n) =>
-      [n, ...stack],
-    Add => {
-      let (a, b, s) = pop2(stack)
-      [a + b, ...s]
-    },
-    Sub => {
-      let (a, b, s) = pop2(stack)
-      [a - b, ...s]
-    },
-    Mul => {
-      let (a, b, s) = pop2(stack)
-      [a * b, ...s]
-    },
+    Push(n) => [n, ...stack],
+    Add => { let (a, b, s) = pop2(stack); [a + b, ...s] },
+    Sub => { let (a, b, s) = pop2(stack); [a - b, ...s] },
+    Mul => { let (a, b, s) = pop2(stack); [a * b, ...s] },
     Div => {
       let (a, b, s) = pop2(stack)
       if (b == 0) { throw RuntimeError("Division by zero") }
       [a / b, ...s]
     },
-    Neg => {
-      let (a, s) = pop1(stack)
-      [0-a, ...s]
-    },
-    Print => {
-      let (a, s) = pop1(stack)
-      print(a)
-      s
-    }
+    Neg => { let (a, s) = pop1(stack); [0-a, ...s] },
+    Print => { let (a, s) = pop1(stack); print(a); s }
   }
 
-let interpret = (prog) => {
-  ignore(
-    List.reduce(
-      (stack, instr) => step(stack, instr),
-      [],
-      Array.toList(prog)
-    )
-  )
-}
+let interpret = (prog) =>
+  ignore(List.reduce(step, [], Array.toList(prog)))
 
 match (Process.argv()) {
   Ok(args) => interpret(parseProgram(Array.get(1, args))),
