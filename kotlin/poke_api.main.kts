@@ -15,10 +15,7 @@ import org.json.JSONObject
 val baseUrl = "https://pokeapi.co/api/v2/pokemon/"
 val pokemonNames = listOf("ditto", "pikachu", "mew", "weedle", "eevee")
 
-data class PokeInfo(val name: String, val height: Int, val weight: Int)
-
 suspend fun fetchPokemon(name: String) {
-    println("Fetching $name on ${Thread.currentThread().name}")
     val request = Request.Builder().url("$baseUrl$name").build()
     val response = OkHttpClient().newCall(request).execute()
     if (!response.isSuccessful) {
@@ -26,10 +23,11 @@ suspend fun fetchPokemon(name: String) {
         return
     }
     val jsonObject = JSONObject(response.body?.string() ?: return)
-    println(PokeInfo(
-        jsonObject.getString("name"),
-        jsonObject.getInt("height"),
-        jsonObject.getInt("weight")))
+    println(
+        "Name: ${jsonObject.getString("name")}, " +
+        "Height: ${jsonObject.getInt("height")}, " +
+        "Weight: ${jsonObject.getInt("weight")}, " +
+        "Thread: ${Thread.currentThread().threadId()}")
 }
 
 runBlocking {
@@ -38,7 +36,4 @@ runBlocking {
             fetchPokemon(name)
         }
     }
-    println("The fetches are underway")
 }
-println("The fetches are done")
-

@@ -31,12 +31,13 @@ void fetchPokemon(String name) {
         var jsonObject = new JSONObject(response.body());
         IO.println(
                 String.format(
-                        "Name: %s, Height: %d, Weight: %d",
+                        "Name: %s, Height: %d, Weight: %d (Thread %d)",
                         jsonObject.getString("name"),
                         jsonObject.getInt("height"),
-                        jsonObject.getInt("weight")));
+                        jsonObject.getInt("weight"),
+                        Thread.currentThread().threadId()));
     } catch (Exception e) {
-        System.err.println("Failed to fetch " + name + ": "
-                + e.getLocalizedMessage());
+        IO.println(
+            "Failed to fetch " + name + ": " + e.getLocalizedMessage());
     }
 }
