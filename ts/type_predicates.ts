@@ -6,7 +6,7 @@ function isSphere(shape: Shape): shape is Sphere {
   return "radius" in shape
 }
 
-function volume(shape: Shape) {
+function volume(shape: Shape): number {
   if (isSphere(shape)) {
     return (4 / 3) * Math.PI * shape.radius ** 3
   } else {

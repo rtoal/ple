@@ -1,0 +1,65 @@
+module Main
+
+from "number" include Number
+from "string" include String
+from "array" include Array
+from "list" include List
+from "wasi/process" include Process
+
+enum Instruction { Push(Number), Add, Sub, Mul, Div, Neg, Print }
+
+exception ParseError(String)
+exception RuntimeError(String)
+
+let parseToken = (token) =>
+  match (token) {
+    "+" => Add,
+    "-" => Sub,
+    "*" => Mul,
+    "/" => Div,
+    "N" => Neg,
+    "P" => Print,
+    _ =>
+      match (Number.parseInt(token, 10)) {
+        Ok(n) => Push(n),
+        _ => throw ParseError("Illegal instruction: " ++ token)
+      }
+  }
+
+let parseProgram = (src: String) =>
+  Array.map(parseToken, String.split(" ", src))
+
+let pop2 = (stack) =>
+  match (stack) {
+    [b, a, ...rest] => (a, b, rest),
+    _ => throw RuntimeError("Not enough operands")
+  }
+
+let pop1 = (stack) =>
+  match (stack) {
+    [a, ...rest] => (a, rest),
+    _ => throw RuntimeError("Not enough operands")
+  }
+
+let step = (stack, instr) =>
+  match (instr) {
+    Push(n) => [n, ...stack],
+    Add => { let (a, b, s) = pop2(stack); [a + b, ...s] },
+    Sub => { let (a, b, s) = pop2(stack); [a - b, ...s] },
+    Mul => { let (a, b, s) = pop2(stack); [a * b, ...s] },
+    Div => {
+      let (a, b, s) = pop2(stack)
+      if (b == 0) { throw RuntimeError("Division by zero") }
+      [a / b, ...s]
+    },
+    Neg => { let (a, s) = pop1(stack); [0-a, ...s] },
+    Print => { let (a, s) = pop1(stack); print(a); s }
+  }
+
+let interpret = (prog) =>
+  ignore(List.reduce(step, [], Array.toList(prog)))
+
+match (Process.argv()) {
+  Ok(args) => interpret(parseProgram(Array.get(1, args))),
+  _ => print("At least one argument required")
+}
