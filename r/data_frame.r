@@ -1,0 +1,1 @@
+data.frame(letters = letters[1:10], booleans = c(TRUE, FALSE, NULL), missing_data = "?")

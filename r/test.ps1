@@ -9,15 +9,19 @@ function Assert-MatchTests {
 }
 
 $Error.clear()
+rscript "$PSScriptRoot\boolean_vector_operators.r" &&
 rscript "$PSScriptRoot\clockhands_time.r" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests && 
 rscript "$PSScriptRoot\clockhands.r" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests && 
+rscript "$PSScriptRoot\data_frame.r" &&
 rscript "$PSScriptRoot\fizzbuzz.r" &&
 rscript "$PSScriptRoot\hello.r" &&
+rscript "$PSScriptRoot\matrices.r" &&
 rscript "$PSScriptRoot\prices.r" &&
+rscript "$PSScriptRoot\ranges.r" &&
 rscript "$PSScriptRoot\triple.r" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
     Assert-MatchTests && 
