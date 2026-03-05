@@ -1,0 +1,16 @@
+to pad :n
+output ifelse :n < 10 [word "0 :n] [:n]
+end
+
+for [i 0 10] [
+make "t 43200 * :i + 21600
+make "t :t - modulo :t 11
+make "t :t / 11
+make "h :t - modulo :t 3600
+make "h :h / 3600
+make "h ifelse :h = 0 12 :h
+make "m :t - modulo :t 60
+make "m modulo :m / 60 60
+make "s modulo :t 60
+print word pad :h word ": word pad :m word ": pad :s
+]
