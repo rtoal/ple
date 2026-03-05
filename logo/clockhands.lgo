@@ -1,16 +1,16 @@
-to pad :n
-output ifelse :n < 10 [word "0 :n] [:n]
+TO pad :n
+OUTPUT IFELSE :n < 10 [WORD "0 :n] [:n]
 end
 
-for [i 0 10] [
-make "t 43200 * :i + 21600
-make "t :t - modulo :t 11
-make "t :t / 11
-make "h :t - modulo :t 3600
-make "h :h / 3600
-make "h ifelse :h = 0 12 :h
-make "m :t - modulo :t 60
-make "m modulo :m / 60 60
-make "s modulo :t 60
-print word pad :h word ": word pad :m word ": pad :s
+FOR [i 0 10] [
+    MAKE "t 43200 * :i + 21600
+    MAKE "t :t - MODULO :t 11
+    MAKE "t :t / 11
+    MAKE "h :t - MODULO :t 3600
+    MAKE "h :h / 3600
+    MAKE "h IFELSE :h = 0 12 :h
+    MAKE "m :t - MODULO :t 60
+    MAKE "m MODULO :m / 60 60
+    MAKE "s MODULO :t 60
+    PRINT WORD pad :h WORD ": WORD pad :m WORD ": pad :s
 ]
