@@ -22,6 +22,8 @@ rscript "$PSScriptRoot\hello.r" &&
 rscript "$PSScriptRoot\matrices.r" &&
 rscript "$PSScriptRoot\prices.r" &&
 rscript "$PSScriptRoot\ranges.r" &&
+rscript "$PSScriptRoot\ses.r" &&
+rscript "$PSScriptRoot\set.r" &&
 rscript "$PSScriptRoot\triple.r" |
     Compare-Object (Get-Content "$PSScriptRoot\..\test\triple_expected") |
     Assert-MatchTests && 
