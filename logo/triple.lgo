@@ -1,0 +1,9 @@
+FOR [c 1 40] [
+    FOR [b 1 :c] [
+        FOR [a 1 :b] [
+            IF :a * :a + :b * :b = :c * :c [
+                PRINT WORD :a WORD ",\  WORD :b WORD ",\  :c
+            ]
+        ]
+    ]
+]

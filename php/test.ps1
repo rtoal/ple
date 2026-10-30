@@ -10,6 +10,7 @@ function Assert-MatchTests {
 
 $Error.clear()
 php "$PSScriptRoot\animal.php" &&
+php "$PSScriptRoot\casting.php" &&
 php "$PSScriptRoot\clockhands.php" | 
     Compare-Object (Get-Content "$PSScriptRoot\..\test\clockhands_expected") |
     Assert-MatchTests &&
